@@ -804,6 +804,7 @@ const ACT = {
     try { await Sync.fb.signIn(); } finally { if (t.isConnected) { t.disabled = false; t.textContent = "Sign in with Google"; } }
   },
   reload: () => location.reload(),
+  "dsk-hide": () => { LS.raw("lus.dskHint", dkey()); renderDesktopHint(); },
   guest: () => { startGuest(); toast("Guest run started. Nothing will be saved."); },
   signout: async () => { if (!Sync.fb) return; await Sync.fb.signOut(); toast("Signed out. Your progress stays in your account."); },
   reset: () => {
@@ -882,11 +883,28 @@ SCORE: x/10
   } finally { btn.disabled = false; }
 }
 
+/* ---------- phone browser stuck in "Desktop site" mode ---------- */
+// Chrome's Desktop site mode ignores the viewport tag and lays the page out ~980px wide, so a phone sees a shrunken desktop UI.
+// A page can't turn that mode off, so detect it (touch screen, phone-sized screen, much wider layout) and say how to fix it.
+function renderDesktopHint() {
+  const el = $("#dsk");
+  if (!el) return;
+  const short = Math.min(screen.width, screen.height);
+  const stuck = navigator.maxTouchPoints > 0 && short > 0 && short <= 600 && innerWidth > short * 1.6;
+  el.hidden = !stuck || LS.raw("lus.dskHint") === dkey();
+  if (el.hidden) return;
+  el.innerHTML = `<div class="dsk-card"><b>📱 Chrome is showing the desktop version, so everything looks tiny.</b>
+    <span>Tap <b>⋮</b> (top right) and untick <b>Desktop site</b>. If it comes back: Chrome Settings → Site settings → Desktop site → off.</span>
+    <button class="btn sm" data-act="dsk-hide">Hide for today</button></div>`;
+}
+addEventListener("resize", renderDesktopHint);
+
 /* ---------- boot ---------- */
 function boot() {
   ensureDaily();
   checkBadges();
   render();
+  renderDesktopHint();
   initSync();
   initCoach();
 }

@@ -468,3 +468,8 @@ a, button, select, summary, .tab, [data-act] { touch-action: manipulation; -webk
 @media (prefers-reduced-motion: reduce) { .gate-wait { animation: none; } }
 .gate-or { text-align: center; font-family: var(--f-mono); text-transform: uppercase; letter-spacing: 0.1em; }
 .gate-warn { margin: 0; padding: 10px 12px; border-radius: var(--r-sm); background: var(--hot-soft); border-left: 4px solid var(--hot); color: var(--ink); }
+
+/* "Desktop site" warning: sized for a ~980px-wide layout squeezed onto a phone, so it is drawn large */
+#dsk { position: fixed; inset: 0 0 auto 0; z-index: 55; padding: 12px; }
+.dsk-card { display: grid; gap: 10px; max-width: 980px; margin: 0 auto; padding: 18px 20px; border-radius: var(--r); background: var(--gold-soft); color: var(--gold-ink); border: 3px solid var(--gold); box-shadow: 0 8px 24px var(--shadow); font-size: 1.6rem; line-height: 1.35; }
+.dsk-card .btn { justify-self: start; font-size: 1.3rem; min-height: 56px; }

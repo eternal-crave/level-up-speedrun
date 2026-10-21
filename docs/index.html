@@ -488,6 +488,11 @@ a, button, select, summary, .tab, [data-act] { touch-action: manipulation; -webk
 @media (prefers-reduced-motion: reduce) { .gate-wait { animation: none; } }
 .gate-or { text-align: center; font-family: var(--f-mono); text-transform: uppercase; letter-spacing: 0.1em; }
 .gate-warn { margin: 0; padding: 10px 12px; border-radius: var(--r-sm); background: var(--hot-soft); border-left: 4px solid var(--hot); color: var(--ink); }
+
+/* "Desktop site" warning: sized for a ~980px-wide layout squeezed onto a phone, so it is drawn large */
+#dsk { position: fixed; inset: 0 0 auto 0; z-index: 55; padding: 12px; }
+.dsk-card { display: grid; gap: 10px; max-width: 980px; margin: 0 auto; padding: 18px 20px; border-radius: var(--r); background: var(--gold-soft); color: var(--gold-ink); border: 3px solid var(--gold); box-shadow: 0 8px 24px var(--shadow); font-size: 1.6rem; line-height: 1.35; }
+.dsk-card .btn { justify-self: start; font-size: 1.3rem; min-height: 56px; }
 </style>
 <div id="app">
   <header class="hud" id="hud"></header>
@@ -501,6 +506,7 @@ a, button, select, summary, .tab, [data-act] { touch-action: manipulation; -webk
   </nav>
 </div>
 <div id="gate" hidden></div>
+<div id="dsk" hidden role="alert"></div>
 <div id="toasts" aria-live="polite"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
 <script>window.FIREBASE_CONFIG = {"apiKey":"AIzaSyApH7Axiyu9rcAf7O1yJl06kWiEUsZ3KJk","authDomain":"level-up-speedrun.firebaseapp.com","projectId":"level-up-speedrun","messagingSenderId":"346099429156","appId":"1:346099429156:web:da5a890ef646020eeecdb1"};</script>
@@ -1791,6 +1797,7 @@ const ACT = {
     try { await Sync.fb.signIn(); } finally { if (t.isConnected) { t.disabled = false; t.textContent = "Sign in with Google"; } }
   },
   reload: () => location.reload(),
+  "dsk-hide": () => { LS.raw("lus.dskHint", dkey()); renderDesktopHint(); },
   guest: () => { startGuest(); toast("Guest run started. Nothing will be saved."); },
   signout: async () => { if (!Sync.fb) return; await Sync.fb.signOut(); toast("Signed out. Your progress stays in your account."); },
   reset: () => {
@@ -1869,11 +1876,28 @@ SCORE: x/10
   } finally { btn.disabled = false; }
 }
 
+/* ---------- phone browser stuck in "Desktop site" mode ---------- */
+// Chrome's Desktop site mode ignores the viewport tag and lays the page out ~980px wide, so a phone sees a shrunken desktop UI.
+// A page can't turn that mode off, so detect it (touch screen, phone-sized screen, much wider layout) and say how to fix it.
+function renderDesktopHint() {
+  const el = $("#dsk");
+  if (!el) return;
+  const short = Math.min(screen.width, screen.height);
+  const stuck = navigator.maxTouchPoints > 0 && short > 0 && short <= 600 && innerWidth > short * 1.6;
+  el.hidden = !stuck || LS.raw("lus.dskHint") === dkey();
+  if (el.hidden) return;
+  el.innerHTML = `<div class="dsk-card"><b>📱 Chrome is showing the desktop version, so everything looks tiny.</b>
+    <span>Tap <b>⋮</b> (top right) and untick <b>Desktop site</b>. If it comes back: Chrome Settings → Site settings → Desktop site → off.</span>
+    <button class="btn sm" data-act="dsk-hide">Hide for today</button></div>`;
+}
+addEventListener("resize", renderDesktopHint);
+
 /* ---------- boot ---------- */
 function boot() {
   ensureDaily();
   checkBadges();
   render();
+  renderDesktopHint();
   initSync();
   initCoach();
 }
