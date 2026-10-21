@@ -17,7 +17,18 @@
 <div id="gate" hidden></div>
 <div id="dsk" hidden role="alert"></div>
 <div id="toasts" aria-live="polite"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<div id="boot" role="status"><div class="boot-card"><div class="boot-logo">LV</div><p class="boot-msg">Loading your run…</p><button class="btn sm" id="boot-retry" onclick="location.reload()" hidden>Refresh</button></div></div>
+<script>
+// Startup guard: until the app finishes booting, any script error replaces the loading screen with the message and a Refresh button
+window.__bootErr = function (msg) {
+  var b = document.getElementById("boot"); if (!b) return;
+  b.hidden = false; b.className = "err";
+  b.querySelector(".boot-msg").textContent = "Something broke while starting: " + msg + ". Try Refresh. If it keeps happening, send a screenshot of this.";
+  document.getElementById("boot-retry").hidden = false;
+};
+window.addEventListener("error", function (e) { if (!window.__booted) window.__bootErr(e.message || "unknown error"); });
+</script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
 <script>window.COURSE = /*__DATA__*/;</script>
 <script>(() => {
 /*__JS__*/

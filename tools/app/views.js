@@ -326,9 +326,10 @@ const LTABS = [["read", "📖 Read"], ["bites", "🍪 Bites"], ["boss", "⚔️ 
 const notesCache = {};
 function notesHtml(id) {
   if (notesCache[id]) return notesCache[id];
+  const formatted = !!(window.marked && typeof window.marked.parse === "function"); // marked loads deferred; don't cache the plain fallback
   const md = (C.notes && C.notes[id]) || "";
   let html;
-  if (window.marked && typeof window.marked.parse === "function") html = window.marked.parse(md, { gfm: true });
+  if (formatted) html = window.marked.parse(md, { gfm: true });
   else html = `<pre>${esc(md)}</pre>`;
   const box = document.createElement("div");
   box.innerHTML = html;
@@ -343,7 +344,7 @@ function notesHtml(id) {
     span.innerHTML = esc(n.nodeValue).replace(/\b(L(?:0\d|1[0-7])|BX|F2P[12])\b/g, (m) => (BY[m] && m !== id ? `<a class="lv" href="#${m}" title="${esc(BY[m].title)}">${m}</a>` : m));
     n.replaceWith(...span.childNodes);
   }
-  notesCache[id] = box.innerHTML;
+  if (formatted) notesCache[id] = box.innerHTML;
   return notesCache[id];
 }
 function viewLevel(id) {
@@ -931,10 +932,15 @@ addEventListener("resize", renderDesktopHint);
 
 /* ---------- boot ---------- */
 function boot() {
-  ensureDaily();
-  checkBadges();
-  render();
-  renderDesktopHint();
+  try {
+    ensureDaily();
+    checkBadges();
+    render();
+    renderDesktopHint();
+  } catch (e) { if (window.__bootErr) window.__bootErr((e && e.message) || String(e)); throw e; }
+  window.__booted = true;
+  const splash = $("#boot");
+  if (splash) splash.hidden = true;
   initSync();
   initCoach();
 }
