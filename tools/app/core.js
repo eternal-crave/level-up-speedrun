@@ -67,8 +67,12 @@ const FB_VER = "10.12.2";
 // On the hosted site (Firebase config, not inside claude.ai) the app is locked behind sign-in so every run is saved to an account
 const GATED = !!window.FIREBASE_CONFIG && !(window.claude && typeof window.claude.use === "function");
 const Sync = { db: null, pRef: null, rRef: null, state: GATED ? "checking" : "local", backend: null, who: "", fb: null, dirtyP: false, dirtyR: false, busy: false, t: 0 };
-function saveP() { P.updatedAt = Date.now(); LS.set(KEY_P, P); Sync.dirtyP = true; scheduleSync(); }
-function saveR() { R.updatedAt = Date.now(); LS.set(KEY_R, R); Sync.dirtyR = true; scheduleSync(); }
+let GUEST = false; // guest run on the hosted site: kept in memory only, never written to this device or an account
+function saveP() { P.updatedAt = Date.now(); if (GUEST) return; LS.set(KEY_P, P); Sync.dirtyP = true; scheduleSync(); }
+function saveR() { R.updatedAt = Date.now(); if (GUEST) return; LS.set(KEY_R, R); Sync.dirtyR = true; scheduleSync(); }
+function startGuest() { GUEST = true; P = freshP(); R = freshR(); render(); }
+// Signing in ends a guest run: the account (or this device's cache) loads instead, so a guest run never overwrites real progress
+function endGuest() { if (!GUEST) return; GUEST = false; P = hydrate(freshP(), LS.get(KEY_P)); R = hydrate(freshR(), LS.get(KEY_R)); }
 function scheduleSync(ms = 2500) { if (!Sync.db) return; clearTimeout(Sync.t); Sync.t = setTimeout(flushSync, ms); }
 async function writeDoc(ref, body, flag) {
   try { await ref.set(JSON.parse(JSON.stringify(body))); return true; }
@@ -159,6 +163,7 @@ async function initFirebase(cfg) {
   fauth.onAuthStateChanged(auth, async (u) => {
     if (u) {
       Sync.who = u.email || u.displayName || "your Google account";
+      endGuest();
       Sync.state = "connecting"; renderGate();
       await attachRemote("firebase:" + u.uid, store, ref(u.uid, "progress"), ref(u.uid, "srs"));
     } else {

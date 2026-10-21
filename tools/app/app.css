@@ -439,3 +439,5 @@ label.lbl { font-weight: 700; font-size: var(--step--1); }
 .gate-wait { animation: gate-pulse 1.4s ease-in-out infinite; }
 @keyframes gate-pulse { 50% { opacity: 0.45; } }
 @media (prefers-reduced-motion: reduce) { .gate-wait { animation: none; } }
+.gate-or { text-align: center; font-family: var(--f-mono); text-transform: uppercase; letter-spacing: 0.1em; }
+.gate-warn { margin: 0; padding: 10px 12px; border-radius: var(--r-sm); background: var(--hot-soft); border-left: 4px solid var(--hot); color: var(--ink); }

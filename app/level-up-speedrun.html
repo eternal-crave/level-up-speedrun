@@ -450,6 +450,8 @@ label.lbl { font-weight: 700; font-size: var(--step--1); }
 .gate-wait { animation: gate-pulse 1.4s ease-in-out infinite; }
 @keyframes gate-pulse { 50% { opacity: 0.45; } }
 @media (prefers-reduced-motion: reduce) { .gate-wait { animation: none; } }
+.gate-or { text-align: center; font-family: var(--f-mono); text-transform: uppercase; letter-spacing: 0.1em; }
+.gate-warn { margin: 0; padding: 10px 12px; border-radius: var(--r-sm); background: var(--hot-soft); border-left: 4px solid var(--hot); color: var(--ink); }
 </style>
 <div id="app">
   <header class="hud" id="hud"></header>
@@ -536,8 +538,12 @@ const FB_VER = "10.12.2";
 // On the hosted site (Firebase config, not inside claude.ai) the app is locked behind sign-in so every run is saved to an account
 const GATED = !!window.FIREBASE_CONFIG && !(window.claude && typeof window.claude.use === "function");
 const Sync = { db: null, pRef: null, rRef: null, state: GATED ? "checking" : "local", backend: null, who: "", fb: null, dirtyP: false, dirtyR: false, busy: false, t: 0 };
-function saveP() { P.updatedAt = Date.now(); LS.set(KEY_P, P); Sync.dirtyP = true; scheduleSync(); }
-function saveR() { R.updatedAt = Date.now(); LS.set(KEY_R, R); Sync.dirtyR = true; scheduleSync(); }
+let GUEST = false; // guest run on the hosted site: kept in memory only, never written to this device or an account
+function saveP() { P.updatedAt = Date.now(); if (GUEST) return; LS.set(KEY_P, P); Sync.dirtyP = true; scheduleSync(); }
+function saveR() { R.updatedAt = Date.now(); if (GUEST) return; LS.set(KEY_R, R); Sync.dirtyR = true; scheduleSync(); }
+function startGuest() { GUEST = true; P = freshP(); R = freshR(); render(); }
+// Signing in ends a guest run: the account (or this device's cache) loads instead, so a guest run never overwrites real progress
+function endGuest() { if (!GUEST) return; GUEST = false; P = hydrate(freshP(), LS.get(KEY_P)); R = hydrate(freshR(), LS.get(KEY_R)); }
 function scheduleSync(ms = 2500) { if (!Sync.db) return; clearTimeout(Sync.t); Sync.t = setTimeout(flushSync, ms); }
 async function writeDoc(ref, body, flag) {
   try { await ref.set(JSON.parse(JSON.stringify(body))); return true; }
@@ -628,6 +634,7 @@ async function initFirebase(cfg) {
   fauth.onAuthStateChanged(auth, async (u) => {
     if (u) {
       Sync.who = u.email || u.displayName || "your Google account";
+      endGuest();
       Sync.state = "connecting"; renderGate();
       await attachRemote("firebase:" + u.uid, store, ref(u.uid, "progress"), ref(u.uid, "srs"));
     } else {
@@ -972,7 +979,7 @@ function renderSyncDot() {
   if (!d) return;
   const on = Sync.state === "synced";
   d.className = "sync-dot" + (on ? " on" : "");
-  d.title = on ? "Progress synced to your account" : Sync.state === "retry" ? "Sync paused, retrying" : Sync.state === "signedout" ? "Not signed in: progress is saved on this device only" : "Progress saved on this device";
+  d.title = GUEST ? "Guest run: nothing is saved" : on ? "Progress synced to your account" : Sync.state === "retry" ? "Sync paused, retrying" : Sync.state === "signedout" ? "Not signed in: progress is saved on this device only" : "Progress saved on this device";
 }
 const fmtClock = (ms) => { const s = Math.max(0, Math.round(ms / 1000)); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`; };
 function startFocus(min) {
@@ -1581,11 +1588,13 @@ function viewMe() {
 
 /* ---------- account ---------- */
 function signInCard() {
+  if (GUEST) return `<section class="card"><p class="gate-warn small">⚠️ <b>Guest run: nothing is saved.</b> Refreshing or closing this page wipes your XP, streak and cards. Signing in starts from your account's save, not from this run.</p>${Sync.fb ? `<div class="row"><button class="btn sm primary" data-act="signin">Sign in with Google</button></div>` : ""}</section>`;
   if (Sync.backend !== "firebase" || Sync.db || Sync.state !== "signedout") return "";
   return `<section class="card"><div class="row between"><p class="small"><b>Sign in to sync.</b> Keep your streak and cards on phone and PC.</p><button class="btn sm primary" data-act="signin">Sign in with Google</button></div></section>`;
 }
 function syncNote() {
   if (Sync.backend === "firebase" && Sync.db) return `<p class="small muted">🟢 Signed in as <b>${esc(Sync.who)}</b>. Progress syncs to your account on every device.</p><div class="row"><button class="btn sm ghost" data-act="signout">Sign out</button></div>`;
+  if (GUEST) return `<p class="gate-warn small">⚠️ <b>Guest run: nothing is saved.</b> Sign in to keep your progress. Your account's save loads instead of this run.</p><div class="row"><button class="btn sm primary" data-act="signin">Sign in with Google</button></div>`;
   if (Sync.backend === "firebase") return `<p class="small">⚪ Progress is saved in this browser only. Sign in to keep it in your account and continue on any device.</p><div class="row"><button class="btn sm primary" data-act="signin">Sign in with Google</button></div>`;
   return `<p class="small muted">${Sync.state === "synced" ? "🟢 Progress syncs to your Claude account, so phone and desktop share it." : "⚪ Progress is saved in this browser. Open the published page while signed in to sync across devices."}</p>`;
 }
@@ -1593,15 +1602,18 @@ function syncNote() {
 function renderGate() {
   const g = $("#gate");
   if (!g) return;
-  const show = GATED && !Sync.db;
+  const show = GATED && !Sync.db && !GUEST;
   g.hidden = !show;
   $("#app").inert = show;
   if (!show) { g.innerHTML = ""; return; }
   const st = Sync.state;
+  const guest = `<div class="gate-or small muted">or</div>
+    <button class="btn block" data-act="guest" aria-describedby="guest-warn">Play as guest</button>
+    <p class="gate-warn small" id="guest-warn">⚠️ <b>Guest progress is not saved.</b> Refreshing or closing the page wipes your XP, streak and cards.</p>`;
   const action = st === "fberror"
-    ? `<p class="small">Couldn't reach the sign-in service. Check your connection and try again.</p><button class="btn primary block" data-act="reload">Try again</button>`
+    ? `<p class="small">Couldn't reach the sign-in service. Check your connection and try again.</p><button class="btn primary block" data-act="reload">Try again</button>${guest}`
     : st === "signedout"
-      ? `<button class="btn primary block gate-go" data-act="signin">Sign in with Google</button><p class="small muted">Your XP, streak and flashcards are saved to your account, so your phone and PC always show the same run. Only your study progress is stored.</p>`
+      ? `<button class="btn primary block gate-go" data-act="signin">Sign in with Google</button><p class="small muted">Your XP, streak and flashcards are saved to your account, so your phone and PC always show the same run. Only your study progress is stored.</p>${guest}`
       : `<p class="small muted gate-wait">${st === "connecting" ? "Loading your save…" : "Checking your account…"}</p>`;
   g.innerHTML = `<section class="card hero gate-card" role="dialog" aria-modal="true" aria-labelledby="gate-title">
     <div class="eyebrow">Level Up Speedrun</div>
@@ -1742,6 +1754,7 @@ const ACT = {
     try { await Sync.fb.signIn(); } finally { if (t.isConnected) { t.disabled = false; t.textContent = "Sign in with Google"; } }
   },
   reload: () => location.reload(),
+  guest: () => { startGuest(); toast("Guest run started. Nothing will be saved."); },
   signout: async () => { if (!Sync.fb) return; await Sync.fb.signOut(); toast("Signed out. Your progress stays in your account."); },
   reset: () => {
     if ($("#reset-in").value.trim() !== "RESET") { toast("Type RESET (capitals) to confirm."); return; }
