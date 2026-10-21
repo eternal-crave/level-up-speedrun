@@ -64,7 +64,9 @@ let R = hydrate(freshR(), LS.get(KEY_R));
 /* ---------- account sync: claude.ai db capability, or Firebase on a static host; localStorage stays the instant cache ---------- */
 const KEY_OWNER = "lus.owner.v1"; // which account the cached progress belongs to
 const FB_VER = "10.12.2";
-const Sync = { db: null, pRef: null, rRef: null, state: "local", backend: null, who: "", fb: null, dirtyP: false, dirtyR: false, busy: false, t: 0 };
+// On the hosted site (Firebase config, not inside claude.ai) the app is locked behind sign-in so every run is saved to an account
+const GATED = !!window.FIREBASE_CONFIG && !(window.claude && typeof window.claude.use === "function");
+const Sync = { db: null, pRef: null, rRef: null, state: GATED ? "checking" : "local", backend: null, who: "", fb: null, dirtyP: false, dirtyR: false, busy: false, t: 0 };
 function saveP() { P.updatedAt = Date.now(); LS.set(KEY_P, P); Sync.dirtyP = true; scheduleSync(); }
 function saveR() { R.updatedAt = Date.now(); LS.set(KEY_R, R); Sync.dirtyR = true; scheduleSync(); }
 function scheduleSync(ms = 2500) { if (!Sync.db) return; clearTimeout(Sync.t); Sync.t = setTimeout(flushSync, ms); }
@@ -157,6 +159,7 @@ async function initFirebase(cfg) {
   fauth.onAuthStateChanged(auth, async (u) => {
     if (u) {
       Sync.who = u.email || u.displayName || "your Google account";
+      Sync.state = "connecting"; renderGate();
       await attachRemote("firebase:" + u.uid, store, ref(u.uid, "progress"), ref(u.uid, "srs"));
     } else {
       const wasIn = !!Sync.db;
@@ -171,7 +174,7 @@ async function initSync() {
   try {
     if (cl && typeof cl.use === "function") await initClaude(cl);
     else if (window.FIREBASE_CONFIG) await initFirebase(window.FIREBASE_CONFIG);
-  } catch { Sync.state = Sync.backend === "firebase" ? "signedout" : "local"; renderSyncDot(); }
+  } catch { Sync.state = GATED ? "fberror" : "local"; renderGate(); renderSyncDot(); }
 }
 document.addEventListener("visibilitychange", () => {
   if (!Sync.db) return;

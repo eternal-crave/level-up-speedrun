@@ -426,3 +426,16 @@ label.lbl { font-weight: 700; font-size: var(--step--1); }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .feed { scroll-behavior: auto; }
 }
+
+/* Sign-in gate (hosted site only): covers the app until an account is attached */
+#gate { position: fixed; inset: 0; z-index: 45; display: grid; place-items: center; overflow-y: auto;
+  padding: calc(24px + env(safe-area-inset-top, 0px)) 16px calc(24px + env(safe-area-inset-bottom, 0px));
+  background-color: var(--paper);
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px; }
+#gate[hidden] { display: none; }
+.gate-card { width: min(26rem, 100%); }
+.gate-go { font-size: var(--step-1); padding-block: 14px; }
+.gate-wait { animation: gate-pulse 1.4s ease-in-out infinite; }
+@keyframes gate-pulse { 50% { opacity: 0.45; } }
+@media (prefers-reduced-motion: reduce) { .gate-wait { animation: none; } }

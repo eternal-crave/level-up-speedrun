@@ -439,6 +439,19 @@ label.lbl { font-weight: 700; font-size: var(--step--1); }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .feed { scroll-behavior: auto; }
 }
+
+/* Sign-in gate (hosted site only): covers the app until an account is attached */
+#gate { position: fixed; inset: 0; z-index: 45; display: grid; place-items: center; overflow-y: auto;
+  padding: calc(24px + env(safe-area-inset-top, 0px)) 16px calc(24px + env(safe-area-inset-bottom, 0px));
+  background-color: var(--paper);
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px; }
+#gate[hidden] { display: none; }
+.gate-card { width: min(26rem, 100%); }
+.gate-go { font-size: var(--step-1); padding-block: 14px; }
+.gate-wait { animation: gate-pulse 1.4s ease-in-out infinite; }
+@keyframes gate-pulse { 50% { opacity: 0.45; } }
+@media (prefers-reduced-motion: reduce) { .gate-wait { animation: none; } }
 </style>
 <div id="app">
   <header class="hud" id="hud"></header>
@@ -451,6 +464,7 @@ label.lbl { font-weight: 700; font-size: var(--step--1); }
     <a class="tab" data-tab="me" href="#me"><span class="ico">🏅</span>Me</a>
   </nav>
 </div>
+<div id="gate" hidden></div>
 <div id="toasts" aria-live="polite"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
 <script>window.FIREBASE_CONFIG = {"apiKey":"AIzaSyApH7Axiyu9rcAf7O1yJl06kWiEUsZ3KJk","authDomain":"level-up-speedrun.firebaseapp.com","projectId":"level-up-speedrun","messagingSenderId":"346099429156","appId":"1:346099429156:web:da5a890ef646020eeecdb1"};</script>
@@ -522,7 +536,9 @@ let R = hydrate(freshR(), LS.get(KEY_R));
 /* ---------- account sync: claude.ai db capability, or Firebase on a static host; localStorage stays the instant cache ---------- */
 const KEY_OWNER = "lus.owner.v1"; // which account the cached progress belongs to
 const FB_VER = "10.12.2";
-const Sync = { db: null, pRef: null, rRef: null, state: "local", backend: null, who: "", fb: null, dirtyP: false, dirtyR: false, busy: false, t: 0 };
+// On the hosted site (Firebase config, not inside claude.ai) the app is locked behind sign-in so every run is saved to an account
+const GATED = !!window.FIREBASE_CONFIG && !(window.claude && typeof window.claude.use === "function");
+const Sync = { db: null, pRef: null, rRef: null, state: GATED ? "checking" : "local", backend: null, who: "", fb: null, dirtyP: false, dirtyR: false, busy: false, t: 0 };
 function saveP() { P.updatedAt = Date.now(); LS.set(KEY_P, P); Sync.dirtyP = true; scheduleSync(); }
 function saveR() { R.updatedAt = Date.now(); LS.set(KEY_R, R); Sync.dirtyR = true; scheduleSync(); }
 function scheduleSync(ms = 2500) { if (!Sync.db) return; clearTimeout(Sync.t); Sync.t = setTimeout(flushSync, ms); }
@@ -615,6 +631,7 @@ async function initFirebase(cfg) {
   fauth.onAuthStateChanged(auth, async (u) => {
     if (u) {
       Sync.who = u.email || u.displayName || "your Google account";
+      Sync.state = "connecting"; renderGate();
       await attachRemote("firebase:" + u.uid, store, ref(u.uid, "progress"), ref(u.uid, "srs"));
     } else {
       const wasIn = !!Sync.db;
@@ -629,7 +646,7 @@ async function initSync() {
   try {
     if (cl && typeof cl.use === "function") await initClaude(cl);
     else if (window.FIREBASE_CONFIG) await initFirebase(window.FIREBASE_CONFIG);
-  } catch { Sync.state = Sync.backend === "firebase" ? "signedout" : "local"; renderSyncDot(); }
+  } catch { Sync.state = GATED ? "fberror" : "local"; renderGate(); renderSyncDot(); }
 }
 document.addEventListener("visibilitychange", () => {
   if (!Sync.db) return;
@@ -1576,8 +1593,30 @@ function syncNote() {
   return `<p class="small muted">${Sync.state === "synced" ? "🟢 Progress syncs to your Claude account, so phone and desktop share it." : "⚪ Progress is saved in this browser. Open the published page while signed in to sync across devices."}</p>`;
 }
 
+function renderGate() {
+  const g = $("#gate");
+  if (!g) return;
+  const show = GATED && !Sync.db;
+  g.hidden = !show;
+  $("#app").inert = show;
+  if (!show) { g.innerHTML = ""; return; }
+  const st = Sync.state;
+  const action = st === "fberror"
+    ? `<p class="small">Couldn't reach the sign-in service. Check your connection and try again.</p><button class="btn primary block" data-act="reload">Try again</button>`
+    : st === "signedout"
+      ? `<button class="btn primary block gate-go" data-act="signin">Sign in with Google</button><p class="small muted">Your XP, streak and flashcards are saved to your account, so your phone and PC always show the same run. Only your study progress is stored.</p>`
+      : `<p class="small muted gate-wait">${st === "connecting" ? "Loading your save…" : "Checking your account…"}</p>`;
+  g.innerHTML = `<section class="card hero gate-card" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+    <div class="eyebrow">Level Up Speedrun</div>
+    <h1 class="h1" id="gate-title">Press start</h1>
+    <p>F2P mobile game design, learned like a game. Sign in to begin. Your progress follows you to every device.</p>
+    ${action}
+  </section>`;
+}
+
 /* ---------- router ---------- */
 function render() {
+  renderGate();
   const h = (location.hash || "#today").slice(1);
   current = BY[h] ? h : ["today", "feed", "map", "cards", "me"].includes(h) ? h : "today";
   const tabKey = BY[current] ? "map" : current;
@@ -1700,7 +1739,12 @@ const ACT = {
       render();
     } catch { toast("That doesn't look like a Level Up Speedrun backup."); }
   },
-  signin: () => { if (Sync.fb) Sync.fb.signIn(); },
+  signin: async (t) => {
+    if (!Sync.fb || t.disabled) return;
+    t.disabled = true; t.textContent = "Opening Google…";
+    try { await Sync.fb.signIn(); } finally { if (t.isConnected) { t.disabled = false; t.textContent = "Sign in with Google"; } }
+  },
+  reload: () => location.reload(),
   signout: async () => { if (!Sync.fb) return; await Sync.fb.signOut(); toast("Signed out. Your progress stays in your account."); },
   reset: () => {
     if ($("#reset-in").value.trim() !== "RESET") { toast("Type RESET (capitals) to confirm."); return; }

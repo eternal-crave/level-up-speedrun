@@ -647,8 +647,30 @@ function syncNote() {
   return `<p class="small muted">${Sync.state === "synced" ? "🟢 Progress syncs to your Claude account, so phone and desktop share it." : "⚪ Progress is saved in this browser. Open the published page while signed in to sync across devices."}</p>`;
 }
 
+function renderGate() {
+  const g = $("#gate");
+  if (!g) return;
+  const show = GATED && !Sync.db;
+  g.hidden = !show;
+  $("#app").inert = show;
+  if (!show) { g.innerHTML = ""; return; }
+  const st = Sync.state;
+  const action = st === "fberror"
+    ? `<p class="small">Couldn't reach the sign-in service. Check your connection and try again.</p><button class="btn primary block" data-act="reload">Try again</button>`
+    : st === "signedout"
+      ? `<button class="btn primary block gate-go" data-act="signin">Sign in with Google</button><p class="small muted">Your XP, streak and flashcards are saved to your account, so your phone and PC always show the same run. Only your study progress is stored.</p>`
+      : `<p class="small muted gate-wait">${st === "connecting" ? "Loading your save…" : "Checking your account…"}</p>`;
+  g.innerHTML = `<section class="card hero gate-card" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+    <div class="eyebrow">Level Up Speedrun</div>
+    <h1 class="h1" id="gate-title">Press start</h1>
+    <p>F2P mobile game design, learned like a game. Sign in to begin. Your progress follows you to every device.</p>
+    ${action}
+  </section>`;
+}
+
 /* ---------- router ---------- */
 function render() {
+  renderGate();
   const h = (location.hash || "#today").slice(1);
   current = BY[h] ? h : ["today", "feed", "map", "cards", "me"].includes(h) ? h : "today";
   const tabKey = BY[current] ? "map" : current;
@@ -771,7 +793,12 @@ const ACT = {
       render();
     } catch { toast("That doesn't look like a Level Up Speedrun backup."); }
   },
-  signin: () => { if (Sync.fb) Sync.fb.signIn(); },
+  signin: async (t) => {
+    if (!Sync.fb || t.disabled) return;
+    t.disabled = true; t.textContent = "Opening Google…";
+    try { await Sync.fb.signIn(); } finally { if (t.isConnected) { t.disabled = false; t.textContent = "Sign in with Google"; } }
+  },
+  reload: () => location.reload(),
   signout: async () => { if (!Sync.fb) return; await Sync.fb.signOut(); toast("Signed out. Your progress stays in your account."); },
   reset: () => {
     if ($("#reset-in").value.trim() !== "RESET") { toast("Type RESET (capitals) to confirm."); return; }
