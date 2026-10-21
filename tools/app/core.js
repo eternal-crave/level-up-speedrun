@@ -50,11 +50,13 @@ function freshP() {
   };
 }
 const freshR = () => ({ v: 1, updatedAt: 0, c: {}, newLog: {} });
+const isObj = (x) => !!x && typeof x === "object" && !Array.isArray(x);
 function hydrate(base, data) {
-  if (!data || typeof data !== "object") return base;
+  if (!isObj(data)) return base;
   for (const k of Object.keys(data)) {
     const b = base[k], d = data[k];
-    base[k] = b && d && typeof b === "object" && typeof d === "object" && !Array.isArray(b) && !Array.isArray(d) ? { ...b, ...d } : d;
+    // object sections merge; a damaged one (null, wrong type) keeps its default instead of crashing the app on start
+    base[k] = isObj(b) ? (isObj(d) ? { ...b, ...d } : b) : d;
   }
   return base;
 }
@@ -305,8 +307,12 @@ function levelStats(id) {
   return { m, parts, p, seen, bitesTotal: bites.length, qd, qTotal: qs.length, qNeed, best, won: !!(P.quiz[id] && P.quiz[id].won) };
 }
 function frontier() { const r = routeIds(); return r.find((id) => levelStats(id).p < 0.999) || r[r.length - 1]; }
+// The built schedule fixes how many levels each week holds; the levels themselves follow the chosen route,
+// so Book order gets a week plan that matches its map (cut into the same week sizes as the F2P plan)
 function weekPlan() {
-  const plan = (C.schedule && C.schedule[P.settings.pace]) || [];
+  const sizes = ((C.schedule && C.schedule[P.settings.pace]) || []).map((w) => w.length);
+  const ids = routeIds(), plan = [];
+  for (let i = 0, at = 0; i < sizes.length && at < ids.length; i++) { plan.push(ids.slice(at, i === sizes.length - 1 ? ids.length : at + sizes[i])); at += sizes[i]; }
   if (!plan.length) return null;
   const start = P.startDay || dkey();
   const w = Math.max(0, Math.floor((todayNum() - knum(start)) / 7));
@@ -376,14 +382,29 @@ function planState() {
   if (!P.onboarded || !routeIds().length) return null;
   if (!P.daily.plan) { P.daily.plan = buildPlan(); saveP(); }
   const used = {};
+  let prevDone = true;
   const steps = P.daily.plan.map((s) => {
     const before = used[s.counter] || 0;
     used[s.counter] = before + s.target;
     const prog = Math.max(0, Math.min(s.target, (P.daily.c[s.counter] || 0) - before));
-    return { ...s, prog, done: prog >= s.target || (s.alt && (P.daily.c[s.alt] || 0) > 0) };
+    const done = prog >= s.target || (s.alt && (P.daily.c[s.alt] || 0) > 0) || stepGoalMet(s, prevDone);
+    prevDone = prevDone && done;
+    return { ...s, prog, done };
   });
   const cur = steps.findIndex((s) => !s.done);
   return { steps, cur, allDone: cur < 0 };
+}
+// The step's real goal is already reached, e.g. the warm-up swiped the level's last unseen bites,
+// or there are no cards left to review today (only once the earlier steps are done, so day one doesn't skip ahead)
+function stepGoalMet(s, prevDone) {
+  const m = s.mod && BY[s.mod];
+  if (s.kind === "bites" && m) { const x = levelStats(s.mod); return x.bitesTotal > 0 && x.seen >= x.bitesTotal; }
+  if (s.kind === "read" && m) return !!P.read[s.mod];
+  if (s.kind === "boss" && m) return !!(P.quiz[s.mod] && P.quiz[s.mod].won);
+  if (s.kind === "recall" && m) return m.retrieval.every((_, i) => P.recall[`${s.mod}-${i}`]);
+  if (s.kind === "quests" && m) return questsOf(s.mod).every((q) => P.quests[q.id]);
+  if (s.kind === "cards") return prevDone && dueCount() === 0;
+  return false;
 }
 function checkPlan() {
   const st = planState();

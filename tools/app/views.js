@@ -35,30 +35,47 @@ function renderSyncDot() {
   d.title = GUEST ? "Guest run: nothing is saved" : on ? "Progress synced to your account" : Sync.state === "retry" ? "Sync paused, retrying" : Sync.state === "signedout" ? "Not signed in: progress is saved on this device only" : "Progress saved on this device";
 }
 const fmtClock = (ms) => { const s = Math.max(0, Math.round(ms / 1000)); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`; };
-function startFocus(min) {
+// The sprint is stored on the device: "phone face down" often makes the browser freeze or reload the tab,
+// and the sprint (plus the timed reading step) must survive that
+const KEY_FOCUS = "lus.focus";
+function startFocus(min, end) {
   if (focus) clearInterval(focus.iv);
-  focus = { end: Date.now() + min * 60000, min, iv: 0 };
-  focus.iv = setInterval(() => {
-    const left = focus.end - Date.now();
-    const chip = $("#focus-chip");
-    if (chip) chip.textContent = "⏱ " + fmtClock(left);
-    if (left <= 0) {
-      clearInterval(focus.iv);
-      const m = focus.min;
-      focus = null;
-      P.n.focus++;
-      bump("focus");
-      gain(5 + m, `Focus sprint done (${m} min)`);
-      confetti();
-      blip(784, 0.12);
-      renderHud();
-      if (current === "today") render();
-    }
-  }, 1000);
+  focus = { end: end || Date.now() + min * 60000, min, iv: 0 };
+  LS.raw(KEY_FOCUS, JSON.stringify({ end: focus.end, min }));
+  focus.iv = setInterval(tickFocus, 1000);
   renderHud();
-  toast(`⏱ ${min}-minute sprint started. Phone face down, one tab, go.`);
+  if (!end) toast(`⏱ ${min}-minute sprint started. Phone face down, one tab, go.`);
 }
-function stopFocus() { if (focus) clearInterval(focus.iv); focus = null; renderHud(); }
+function tickFocus() {
+  if (!focus) return;
+  const left = focus.end - Date.now();
+  const chip = $("#focus-chip");
+  if (chip) chip.textContent = "⏱ " + fmtClock(left);
+  if (left <= 0) finishFocus();
+}
+function finishFocus() {
+  clearInterval(focus.iv);
+  const m = focus.min;
+  focus = null;
+  LS.raw(KEY_FOCUS, "");
+  P.n.focus++;
+  bump("focus");
+  gain(5 + m, `Focus sprint done (${m} min)`);
+  confetti();
+  blip(784, 0.12);
+  renderHud();
+  if (current === "today") render();
+}
+function stopFocus() { if (focus) clearInterval(focus.iv); focus = null; LS.raw(KEY_FOCUS, ""); renderHud(); }
+function restoreFocus() {
+  let f = null;
+  try { f = JSON.parse(LS.raw(KEY_FOCUS) || "null"); } catch { f = null; }
+  if (!f || !f.end || !f.min) return;
+  if (f.end > Date.now()) startFocus(f.min, f.end);
+  else if (Date.now() - f.end < 6 * 3600e3) { focus = { end: f.end, min: f.min, iv: 0 }; finishFocus(); } // ended while the tab was gone
+  else LS.raw(KEY_FOCUS, "");
+}
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") tickFocus(); });
 
 /* ---------- shared bits ---------- */
 const stars = (n) => "★".repeat(n || 0) + "☆".repeat(Math.max(0, 5 - (n || 0)));
@@ -116,12 +133,14 @@ function runDoneHtml() {
       <div class="row"><a class="btn sm" href="#feed">📱 Swipe more bites</a><a class="btn sm" href="#cards">🃏 Extra cards</a><a class="btn sm" href="#map">🗺️ Open the map</a></div>
     </details></div>`;
 }
+let moreOpen = false; // keep the More card open across redraws (e.g. after starting a focus sprint)
+document.addEventListener("toggle", (e) => { if (e.target.classList && e.target.classList.contains("more")) moreOpen = e.target.open; }, true);
 function moreHtml() {
   const s = streakNow(), week = weekPlan();
   const last7 = [...Array(7)].map((_, i) => { const d = new Date(); d.setDate(d.getDate() - (6 - i)); return d; });
   const tod = seeded("truth" + dkey()), pool = allTruths();
   const truth = pool.length ? pool[Math.floor(tod() * pool.length)] : null;
-  return `<details class="card more"><summary><span class="eyebrow">More</span><span class="small muted">Streak · this week · focus timer · truth of the day</span></summary>
+  return `<details class="card more" ${moreOpen ? "open" : ""}><summary><span class="eyebrow">More</span><span class="small muted">Streak · this week · focus timer · truth of the day</span></summary>
     <div class="stack">
       <div class="row between"><b>🔥 Streak</b>${xrayBtn("streak")}</div>
       <div class="small muted">${s} day${s === 1 ? "" : "s"} in a row · best ${P.streak.best} · 🧊 freezes ${P.streak.freezes}/2</div>
@@ -351,7 +370,8 @@ function viewLevel(id) {
   const s = levelStats(id), m = s.m;
   if (!P.started[id]) { P.started[id] = 1; saveP(); }
   const rec = nextAction(id).kind;
-  const tab = levelTab[id] || rec;
+  if (!levelTab[id]) levelTab[id] = rec;
+  const tab = levelTab[id];
   return `<section class="lvl-head">
       <div class="row between"><a class="btn sm ghost" href="#map">← Map</a><span class="pill">${m.kind === "dlc" ? "🧩 DLC · not from the book" : "📖 Book pp. " + esc(m.bookPages)}</span></div>
       <div class="row" style="align-items:flex-start;flex-wrap:nowrap"><div class="lvl-emoji">${m.emoji}</div><div style="min-width:0"><div class="eyebrow">${esc(m.label)} · ⏱ ~${m.minutes} min</div><h1 class="h2">${esc(m.title)}</h1></div></div>
@@ -548,7 +568,7 @@ function endFight(dead) {
 }
 function refreshLevelTab() {
   const body = $("#ltab-body");
-  if (body && BY[current]) body.innerHTML = levelTabHtml(current, levelTab[current] || "read");
+  if (body && BY[current]) body.innerHTML = levelTabHtml(current, levelTab[current] || nextAction(current).kind);
 }
 
 /* ---------- CARDS (SRS session) ---------- */
@@ -740,7 +760,7 @@ const ACT = {
     document.body.appendChild(el);
     render();
   },
-  focus: (t) => startFocus(+t.dataset.min),
+  focus: (t) => { startFocus(+t.dataset.min); if (current === "today") render(); },
   "focus-stop": () => { stopFocus(); render(); },
   "feed-mode": (t) => { feed.mode = t.dataset.mode; render(); },
   "feed-level": (t) => { feed.mode = t.dataset.id; location.hash = "#feed"; },
@@ -946,6 +966,7 @@ function boot() {
     checkBadges();
     render();
     renderDesktopHint();
+    restoreFocus();
   } catch (e) { if (window.__bootErr) window.__bootErr((e && e.message) || String(e)); throw e; }
   window.__booted = true;
   const splash = $("#boot");

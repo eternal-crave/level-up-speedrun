@@ -634,11 +634,13 @@ function freshP() {
   };
 }
 const freshR = () => ({ v: 1, updatedAt: 0, c: {}, newLog: {} });
+const isObj = (x) => !!x && typeof x === "object" && !Array.isArray(x);
 function hydrate(base, data) {
-  if (!data || typeof data !== "object") return base;
+  if (!isObj(data)) return base;
   for (const k of Object.keys(data)) {
     const b = base[k], d = data[k];
-    base[k] = b && d && typeof b === "object" && typeof d === "object" && !Array.isArray(b) && !Array.isArray(d) ? { ...b, ...d } : d;
+    // object sections merge; a damaged one (null, wrong type) keeps its default instead of crashing the app on start
+    base[k] = isObj(b) ? (isObj(d) ? { ...b, ...d } : b) : d;
   }
   return base;
 }
@@ -889,8 +891,12 @@ function levelStats(id) {
   return { m, parts, p, seen, bitesTotal: bites.length, qd, qTotal: qs.length, qNeed, best, won: !!(P.quiz[id] && P.quiz[id].won) };
 }
 function frontier() { const r = routeIds(); return r.find((id) => levelStats(id).p < 0.999) || r[r.length - 1]; }
+// The built schedule fixes how many levels each week holds; the levels themselves follow the chosen route,
+// so Book order gets a week plan that matches its map (cut into the same week sizes as the F2P plan)
 function weekPlan() {
-  const plan = (C.schedule && C.schedule[P.settings.pace]) || [];
+  const sizes = ((C.schedule && C.schedule[P.settings.pace]) || []).map((w) => w.length);
+  const ids = routeIds(), plan = [];
+  for (let i = 0, at = 0; i < sizes.length && at < ids.length; i++) { plan.push(ids.slice(at, i === sizes.length - 1 ? ids.length : at + sizes[i])); at += sizes[i]; }
   if (!plan.length) return null;
   const start = P.startDay || dkey();
   const w = Math.max(0, Math.floor((todayNum() - knum(start)) / 7));
@@ -960,14 +966,29 @@ function planState() {
   if (!P.onboarded || !routeIds().length) return null;
   if (!P.daily.plan) { P.daily.plan = buildPlan(); saveP(); }
   const used = {};
+  let prevDone = true;
   const steps = P.daily.plan.map((s) => {
     const before = used[s.counter] || 0;
     used[s.counter] = before + s.target;
     const prog = Math.max(0, Math.min(s.target, (P.daily.c[s.counter] || 0) - before));
-    return { ...s, prog, done: prog >= s.target || (s.alt && (P.daily.c[s.alt] || 0) > 0) };
+    const done = prog >= s.target || (s.alt && (P.daily.c[s.alt] || 0) > 0) || stepGoalMet(s, prevDone);
+    prevDone = prevDone && done;
+    return { ...s, prog, done };
   });
   const cur = steps.findIndex((s) => !s.done);
   return { steps, cur, allDone: cur < 0 };
+}
+// The step's real goal is already reached, e.g. the warm-up swiped the level's last unseen bites,
+// or there are no cards left to review today (only once the earlier steps are done, so day one doesn't skip ahead)
+function stepGoalMet(s, prevDone) {
+  const m = s.mod && BY[s.mod];
+  if (s.kind === "bites" && m) { const x = levelStats(s.mod); return x.bitesTotal > 0 && x.seen >= x.bitesTotal; }
+  if (s.kind === "read" && m) return !!P.read[s.mod];
+  if (s.kind === "boss" && m) return !!(P.quiz[s.mod] && P.quiz[s.mod].won);
+  if (s.kind === "recall" && m) return m.retrieval.every((_, i) => P.recall[`${s.mod}-${i}`]);
+  if (s.kind === "quests" && m) return questsOf(s.mod).every((q) => P.quests[q.id]);
+  if (s.kind === "cards") return prevDone && dueCount() === 0;
+  return false;
 }
 function checkPlan() {
   const st = planState();
@@ -1148,30 +1169,47 @@ function renderSyncDot() {
   d.title = GUEST ? "Guest run: nothing is saved" : on ? "Progress synced to your account" : Sync.state === "retry" ? "Sync paused, retrying" : Sync.state === "signedout" ? "Not signed in: progress is saved on this device only" : "Progress saved on this device";
 }
 const fmtClock = (ms) => { const s = Math.max(0, Math.round(ms / 1000)); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`; };
-function startFocus(min) {
+// The sprint is stored on the device: "phone face down" often makes the browser freeze or reload the tab,
+// and the sprint (plus the timed reading step) must survive that
+const KEY_FOCUS = "lus.focus";
+function startFocus(min, end) {
   if (focus) clearInterval(focus.iv);
-  focus = { end: Date.now() + min * 60000, min, iv: 0 };
-  focus.iv = setInterval(() => {
-    const left = focus.end - Date.now();
-    const chip = $("#focus-chip");
-    if (chip) chip.textContent = "⏱ " + fmtClock(left);
-    if (left <= 0) {
-      clearInterval(focus.iv);
-      const m = focus.min;
-      focus = null;
-      P.n.focus++;
-      bump("focus");
-      gain(5 + m, `Focus sprint done (${m} min)`);
-      confetti();
-      blip(784, 0.12);
-      renderHud();
-      if (current === "today") render();
-    }
-  }, 1000);
+  focus = { end: end || Date.now() + min * 60000, min, iv: 0 };
+  LS.raw(KEY_FOCUS, JSON.stringify({ end: focus.end, min }));
+  focus.iv = setInterval(tickFocus, 1000);
   renderHud();
-  toast(`⏱ ${min}-minute sprint started. Phone face down, one tab, go.`);
+  if (!end) toast(`⏱ ${min}-minute sprint started. Phone face down, one tab, go.`);
 }
-function stopFocus() { if (focus) clearInterval(focus.iv); focus = null; renderHud(); }
+function tickFocus() {
+  if (!focus) return;
+  const left = focus.end - Date.now();
+  const chip = $("#focus-chip");
+  if (chip) chip.textContent = "⏱ " + fmtClock(left);
+  if (left <= 0) finishFocus();
+}
+function finishFocus() {
+  clearInterval(focus.iv);
+  const m = focus.min;
+  focus = null;
+  LS.raw(KEY_FOCUS, "");
+  P.n.focus++;
+  bump("focus");
+  gain(5 + m, `Focus sprint done (${m} min)`);
+  confetti();
+  blip(784, 0.12);
+  renderHud();
+  if (current === "today") render();
+}
+function stopFocus() { if (focus) clearInterval(focus.iv); focus = null; LS.raw(KEY_FOCUS, ""); renderHud(); }
+function restoreFocus() {
+  let f = null;
+  try { f = JSON.parse(LS.raw(KEY_FOCUS) || "null"); } catch { f = null; }
+  if (!f || !f.end || !f.min) return;
+  if (f.end > Date.now()) startFocus(f.min, f.end);
+  else if (Date.now() - f.end < 6 * 3600e3) { focus = { end: f.end, min: f.min, iv: 0 }; finishFocus(); } // ended while the tab was gone
+  else LS.raw(KEY_FOCUS, "");
+}
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") tickFocus(); });
 
 /* ---------- shared bits ---------- */
 const stars = (n) => "★".repeat(n || 0) + "☆".repeat(Math.max(0, 5 - (n || 0)));
@@ -1229,12 +1267,14 @@ function runDoneHtml() {
       <div class="row"><a class="btn sm" href="#feed">📱 Swipe more bites</a><a class="btn sm" href="#cards">🃏 Extra cards</a><a class="btn sm" href="#map">🗺️ Open the map</a></div>
     </details></div>`;
 }
+let moreOpen = false; // keep the More card open across redraws (e.g. after starting a focus sprint)
+document.addEventListener("toggle", (e) => { if (e.target.classList && e.target.classList.contains("more")) moreOpen = e.target.open; }, true);
 function moreHtml() {
   const s = streakNow(), week = weekPlan();
   const last7 = [...Array(7)].map((_, i) => { const d = new Date(); d.setDate(d.getDate() - (6 - i)); return d; });
   const tod = seeded("truth" + dkey()), pool = allTruths();
   const truth = pool.length ? pool[Math.floor(tod() * pool.length)] : null;
-  return `<details class="card more"><summary><span class="eyebrow">More</span><span class="small muted">Streak · this week · focus timer · truth of the day</span></summary>
+  return `<details class="card more" ${moreOpen ? "open" : ""}><summary><span class="eyebrow">More</span><span class="small muted">Streak · this week · focus timer · truth of the day</span></summary>
     <div class="stack">
       <div class="row between"><b>🔥 Streak</b>${xrayBtn("streak")}</div>
       <div class="small muted">${s} day${s === 1 ? "" : "s"} in a row · best ${P.streak.best} · 🧊 freezes ${P.streak.freezes}/2</div>
@@ -1464,7 +1504,8 @@ function viewLevel(id) {
   const s = levelStats(id), m = s.m;
   if (!P.started[id]) { P.started[id] = 1; saveP(); }
   const rec = nextAction(id).kind;
-  const tab = levelTab[id] || rec;
+  if (!levelTab[id]) levelTab[id] = rec;
+  const tab = levelTab[id];
   return `<section class="lvl-head">
       <div class="row between"><a class="btn sm ghost" href="#map">← Map</a><span class="pill">${m.kind === "dlc" ? "🧩 DLC · not from the book" : "📖 Book pp. " + esc(m.bookPages)}</span></div>
       <div class="row" style="align-items:flex-start;flex-wrap:nowrap"><div class="lvl-emoji">${m.emoji}</div><div style="min-width:0"><div class="eyebrow">${esc(m.label)} · ⏱ ~${m.minutes} min</div><h1 class="h2">${esc(m.title)}</h1></div></div>
@@ -1661,7 +1702,7 @@ function endFight(dead) {
 }
 function refreshLevelTab() {
   const body = $("#ltab-body");
-  if (body && BY[current]) body.innerHTML = levelTabHtml(current, levelTab[current] || "read");
+  if (body && BY[current]) body.innerHTML = levelTabHtml(current, levelTab[current] || nextAction(current).kind);
 }
 
 /* ---------- CARDS (SRS session) ---------- */
@@ -1853,7 +1894,7 @@ const ACT = {
     document.body.appendChild(el);
     render();
   },
-  focus: (t) => startFocus(+t.dataset.min),
+  focus: (t) => { startFocus(+t.dataset.min); if (current === "today") render(); },
   "focus-stop": () => { stopFocus(); render(); },
   "feed-mode": (t) => { feed.mode = t.dataset.mode; render(); },
   "feed-level": (t) => { feed.mode = t.dataset.id; location.hash = "#feed"; },
@@ -2059,6 +2100,7 @@ function boot() {
     checkBadges();
     render();
     renderDesktopHint();
+    restoreFocus();
   } catch (e) { if (window.__bootErr) window.__bootErr((e && e.message) || String(e)); throw e; }
   window.__booted = true;
   const splash = $("#boot");
