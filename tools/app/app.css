@@ -530,3 +530,5 @@ a, button, select, summary, .tab, [data-act] { touch-action: manipulation; -webk
 #boot.err .boot-logo { background: var(--hot); animation: none; }
 #boot.err .boot-msg { color: var(--ink); }
 
+.card.danger { border-color: color-mix(in srgb, var(--hot) 55%, var(--line)); }
+.card.danger .eyebrow { color: var(--hot); }

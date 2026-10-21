@@ -648,10 +648,15 @@ function viewMe() {
       ${syncNote()}
     </section>
     <section class="card"><div class="eyebrow">Backup</div>
-      <div class="row"><button class="btn sm" data-act="export">📋 Copy progress</button><button class="btn sm ghost" data-act="reveal" data-target="import-box">📥 Import…</button><button class="btn sm ghost" data-act="reveal" data-target="reset-box">🗑 Reset…</button></div>
+      <div class="row"><button class="btn sm" data-act="export">📋 Copy progress</button><button class="btn sm ghost" data-act="reveal" data-target="import-box">📥 Import…</button></div>
       <div id="import-box" hidden class="stack"><label class="lbl" for="import-ta">Paste a progress backup</label><textarea id="import-ta"></textarea><button class="btn sm hot" data-act="import">Replace my progress with this backup</button></div>
-      <div id="reset-box" hidden class="stack"><p class="small"><b>This wipes all XP, streaks, cards and quests.</b> Type RESET to confirm.</p><input type="text" id="reset-in" autocomplete="off"><button class="btn sm hot" data-act="reset">Wipe everything</button></div>
       <textarea id="export-ta" hidden readonly></textarea>
+    </section>
+    <section class="card danger"><div class="eyebrow">Start over</div>
+      <p class="small">Deletes all your progress: XP, level, streak, badges, flashcard history, quests and saved answers.${Sync.db ? " It's deleted from your account too, on every device." : ""} The intro starts again.</p>
+      <p class="small muted">Want a safety copy first? Tap <b>📋 Copy progress</b> above and keep it somewhere.</p>
+      <div><button class="btn sm hot" data-act="reveal" data-target="reset-box">🗑 Delete my progress…</button></div>
+      <div id="reset-box" hidden class="stack"><label class="lbl" for="reset-in">Type RESET to confirm</label><input type="text" id="reset-in" autocomplete="off" autocapitalize="characters" spellcheck="false"><button class="btn hot block" data-act="reset">Delete everything and start over</button></div>
     </section>
     <p class="small muted" style="text-align:center">Notes are original study material based on <em>Level Up! The Guide to Great Video Game Design</em> by Scott Rogers (Wiley, 2010). Get the book; it's full of drawings this app can't show you.</p>`;
 }
@@ -839,9 +844,13 @@ const ACT = {
   guest: () => { startGuest(); toast("Guest run started. Nothing will be saved."); },
   signout: async () => { if (!Sync.fb) return; await Sync.fb.signOut(); toast("Signed out. Your progress stays in your account."); },
   reset: () => {
-    if ($("#reset-in").value.trim() !== "RESET") { toast("Type RESET (capitals) to confirm."); return; }
+    if ($("#reset-in").value.trim().toUpperCase() !== "RESET") { toast("Type RESET to confirm."); return; }
+    try { for (const k of Object.keys(localStorage)) if (k.startsWith("lus.draft.")) localStorage.removeItem(k); } catch { /* storage blocked */ }
+    sess = null; fight = null; if (focus) stopFocus();
+    for (const k of Object.keys(levelTab)) delete levelTab[k];
     P = freshP(); R = freshR(); saveP(); saveR();
-    toast("Fresh save file. New game!");
+    clearTimeout(Sync.t); flushSync(); // push the empty save to the account now, not in 2.5 s
+    toast("Progress deleted. New game!");
     location.hash = "#today";
     render();
   },
