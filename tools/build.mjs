@@ -120,7 +120,14 @@ wr("docs/index.html", `<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="Level Up! remixed for F2P mobile game design: bite-sized lessons, flashcards, quests and boss fights.">
-<meta name="theme-color" content="#14161f">
+<meta name="theme-color" content="#2f5bea">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Level Up">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 <body>
 ${sitePage}
@@ -128,6 +135,18 @@ ${sitePage}
 </html>
 `);
 wr("docs/.nojekyll", "");
+// installable web app: icons from tools/make-icons.mjs, opened full screen from the home screen
+for (const f of fs.readdirSync(path.join(ROOT, "tools/site"))) fs.copyFileSync(path.join(ROOT, "tools/site", f), path.join(ROOT, "docs", f));
+wr("docs/manifest.webmanifest", JSON.stringify({
+  name: "Level Up Speedrun", short_name: "Level Up", description: "F2P mobile game design, learned like a game.",
+  start_url: "./", scope: "./", display: "standalone", orientation: "portrait",
+  background_color: "#0d1625", theme_color: "#2f5bea",
+  icons: [
+    { src: "icon-192.png", sizes: "192x192", type: "image/png", purpose: "any maskable" },
+    { src: "icon-512.png", sizes: "512x512", type: "image/png", purpose: "any maskable" },
+    { src: "icon.svg", sizes: "any", type: "image/svg+xml" },
+  ],
+}, null, 2) + "\n");
 if (!fbCfg) console.log("docs/index.html built WITHOUT cloud sync: add your Firebase web config to site.config.json and rebuild");
 
 // ---- anki (tab separated; import with "Fields separated by: Tab", allow HTML)
