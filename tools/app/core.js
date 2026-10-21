@@ -337,16 +337,66 @@ function ensureDaily() {
 function bump(counter, n = 1) {
   ensureDaily();
   P.daily.c[counter] = (P.daily.c[counter] || 0) + n;
-  for (const id of P.daily.picks) {
-    const q = DQ[id];
-    if (!P.daily.claimed[id] && (P.daily.c[q.id] || 0) >= q.target) {
-      P.daily.claimed[id] = true;
-      later(() => { gain(q.xp, "Daily quest done"); confetti(); if (dailyAllDone()) toast("🎁 All 3 dailies done. Your chest is ready on Today."); });
-    }
-  }
+  checkPlan();
   saveP();
 }
-const dailyAllDone = () => { ensureDaily(); return P.daily.picks.every((id) => P.daily.claimed[id]); };
+
+/* ---------- today's run: three guided steps ---------- */
+// Each day freezes a short path (warm-up, main quest, lock-in) so there is always exactly one obvious next thing
+// and a clear finish line. Steps are sized in minutes, and reading is timeboxed instead of "finish the level".
+const STEP_NAMES = ["Warm-up", "Main quest", "Lock it in"];
+function nextAction(id) { // the next thing to do inside a level: bites first (easy start), then read, boss, quests
+  const s = levelStats(id);
+  if (s.seen < s.bitesTotal) return { kind: "bites", left: s.bitesTotal - s.seen };
+  if (!s.parts.read) return { kind: "read" };
+  if (!s.won) return { kind: "boss" };
+  return { kind: "quests" };
+}
+function mainStep(id) {
+  const m = BY[id], a = nextAction(id), name = `${m.emoji} ${m.label}`;
+  if (a.kind === "bites") { const n = Math.min(10, a.left); return { kind: "bites", counter: "bites", target: n, min: Math.ceil(n / 3) + 1, title: `Swipe ${n} bites from ${name}`, why: "Bite-size intro to the level. One card at a time." }; }
+  if (a.kind === "read") return { kind: "read", counter: "focus", alt: "reads", target: 1, min: 15, title: `Read ${name} for 15 minutes`, why: "The button starts a 15-minute timer. You don't have to finish the level today." };
+  if (a.kind === "boss") return { kind: "boss", counter: "quizRight", target: 5, min: 6, title: `Fight ${(C.bosses[id] && C.bosses[id].name) || "the boss"}`, why: "5 correct answers clears the step. Losing still teaches you." };
+  return { kind: "quests", counter: "quests", target: 1, min: 15, title: `Finish one quest from ${name}`, why: "Make something real. That's how designers learn." };
+}
+function buildPlan() {
+  const fr = frontier(), due = srsQueue().due.length;
+  const warm = due > 0
+    ? { id: "warm", kind: "cards", counter: "cards", target: Math.min(due, 10), min: 4, title: `Review ${Math.min(due, 10)} flashcards`, why: "These are the ones you're about to forget. Quick win first." }
+    : { id: "warm", kind: "feed", counter: "bites", target: 5, min: 2, title: "Swipe 5 bites", why: "Two minutes to get rolling. Momentum beats motivation." };
+  const main = { id: "main", mod: fr, ...mainStep(fr) };
+  const lock = warm.kind === "cards"
+    ? { id: "lock", kind: "recall", mod: fr, counter: "recall", target: 3, min: 5, title: `Recall 3 answers from ${BY[fr].emoji} ${BY[fr].label}`, why: "Pulling ideas out of your head is what makes them stick." }
+    : { id: "lock", kind: "cards", counter: "cards", target: 5, min: 3, title: "Review 5 flashcards", why: "Locks today's ideas into long-term memory." };
+  return [warm, main, lock];
+}
+// Steps sharing a counter stack their targets, so one action never completes two steps at once
+function planState() {
+  ensureDaily();
+  if (!P.onboarded || !routeIds().length) return null;
+  if (!P.daily.plan) { P.daily.plan = buildPlan(); saveP(); }
+  const used = {};
+  const steps = P.daily.plan.map((s) => {
+    const before = used[s.counter] || 0;
+    used[s.counter] = before + s.target;
+    const prog = Math.max(0, Math.min(s.target, (P.daily.c[s.counter] || 0) - before));
+    return { ...s, prog, done: prog >= s.target || (s.alt && (P.daily.c[s.alt] || 0) > 0) };
+  });
+  const cur = steps.findIndex((s) => !s.done);
+  return { steps, cur, allDone: cur < 0 };
+}
+function checkPlan() {
+  const st = planState();
+  if (!st) return;
+  P.daily.stepsClaimed = P.daily.stepsClaimed || {};
+  st.steps.forEach((s, i) => {
+    if (!s.done || P.daily.stepsClaimed[s.id]) return;
+    P.daily.stepsClaimed[s.id] = true;
+    const next = st.steps.find((x) => !x.done);
+    later(() => { gain(20, `Step ${i + 1} done`); confetti(); stepNudge(next, st.allDone); });
+  });
+}
+const dailyAllDone = () => { const st = planState(); return !!st && st.allDone; };
 function allTruths() {
   const pool = [];
   const mods = MODS.filter((m) => P.started[m.id]);

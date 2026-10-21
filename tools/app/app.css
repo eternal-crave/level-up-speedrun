@@ -473,3 +473,33 @@ a, button, select, summary, .tab, [data-act] { touch-action: manipulation; -webk
 #dsk { position: fixed; inset: 0 0 auto 0; z-index: 55; padding: 12px; }
 .dsk-card { display: grid; gap: 10px; max-width: 980px; margin: 0 auto; padding: 18px 20px; border-radius: var(--r); background: var(--gold-soft); color: var(--gold-ink); border: 3px solid var(--gold); box-shadow: 0 8px 24px var(--shadow); font-size: 1.6rem; line-height: 1.35; }
 .dsk-card .btn { justify-self: start; font-size: 1.3rem; min-height: 56px; }
+
+/* ---------- Today's run (guided path) ---------- */
+.run { gap: 14px; }
+.path { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; position: relative; }
+.path::before { content: ""; position: absolute; left: 15px; top: 16px; bottom: 16px; width: 2px; background: var(--line); }
+.step { display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: 12px; align-items: center; position: relative; }
+.step .dot { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; font: 700 0.9rem/1 var(--f-mono); background: var(--card); border: 2px solid var(--line); color: var(--ink-3); z-index: 1; }
+.step.done .dot { background: var(--go); border-color: var(--go); color: #fff; }
+.step.done > span:last-child { color: var(--ink-2); text-decoration: line-through; text-decoration-thickness: 1px; }
+.step.later > span:last-child { color: var(--ink-3); }
+.step.now { align-items: start; }
+.step.now .dot { background: var(--accent); border-color: var(--ink); color: var(--accent-ink); box-shadow: 0 3px 0 var(--ink); }
+.step-body { display: grid; gap: 8px; padding: 14px; border: 2px solid var(--ink); border-radius: var(--r); background: var(--card-2); }
+.step-prog { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: center; }
+.step-go { font-size: var(--step-1); min-height: 52px; animation: nudge-pulse 2.4s ease-in-out 1s 2; }
+@keyframes nudge-pulse { 50% { transform: translateY(-2px); box-shadow: 0 6px 0 var(--ink); } }
+.run-done { display: grid; justify-items: center; text-align: center; gap: 8px; padding: 8px 0 4px; }
+.bonus summary, .more summary { cursor: pointer; }
+.bonus .row { justify-content: center; margin-top: 10px; }
+.more summary { display: grid; gap: 2px; list-style: none; }
+.more summary::-webkit-details-marker { display: none; }
+.more summary::after { content: "Show ▾"; font: 600 0.72rem/1 var(--f-mono); color: var(--accent); }
+.more[open] summary::after { content: "Hide ▴"; }
+.more[open] { gap: 14px; }
+.tabs button.rec { border-color: var(--accent); color: var(--accent); }
+.tabs button.rec[aria-selected="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.tab .badge.soft { background: var(--accent); color: var(--accent-ink); }
+.tip { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 10px 12px; border-radius: var(--r-sm); background: var(--accent-soft); border: 1px dashed var(--accent); font-size: var(--step--1); }
+#nudge { position: fixed; left: 50%; transform: translateX(-50%); top: calc(84px + env(safe-area-inset-top, 0px)); z-index: 52; width: min(30rem, calc(100% - 24px)); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 12px 14px; border-radius: var(--r); background: var(--card); border: 2px solid var(--ink); box-shadow: 0 6px 0 var(--ink); animation: tin 0.25s ease-out; }
+#nudge[hidden] { display: none; }

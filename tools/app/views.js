@@ -20,6 +20,9 @@ function renderHud() {
       <span class="sync-dot" id="sync-dot"></span>
     </div>`;
   renderSyncDot();
+  const st = planState(), left = st ? st.steps.filter((x) => !x.done).length : 0;
+  const tb = $('[data-tab="today"] .badge');
+  if (tb) { tb.textContent = left; tb.hidden = !left; }
   const due = dueCount();
   const cb = $('[data-tab="cards"] .badge');
   if (cb) { cb.textContent = due > 99 ? "99+" : due; cb.hidden = !due; }
@@ -64,82 +67,97 @@ const meter = (p, cls = "") => `<div class="meter ${cls}"><i style="width:${Math
 function modChip(id) { const m = BY[id]; return m ? `<span class="pill">${m.emoji} ${esc(m.label)}</span>` : ""; }
 
 /* ---------- TODAY ---------- */
+// One screen, one job: show today's run (3 short steps), open only the current step, end with a clear "done for today".
+// Everything else lives in the collapsed "More" card so the first view never turns into a wall to scroll.
 function viewToday() {
   ensureDaily();
-  const fr = frontier(), fm = BY[fr];
-  const st = fr ? levelStats(fr) : null;
-  const due = dueCount();
-  const s = streakNow();
-  const week = weekPlan();
-  const last7 = [...Array(7)].map((_, i) => { const d = new Date(); d.setDate(d.getDate() - (6 - i)); return d; });
-  const tod = seeded("truth" + dkey());
-  const truthPool = allTruths();
-  const truth = truthPool.length ? truthPool[Math.floor(tod() * truthPool.length)] : null;
-
   let html = signInCard();
   if (!P.onboarded) {
-    html += `<section class="card hero pop">
+    return html + `<section class="card hero pop">
       <div class="eyebrow">New game</div>
       <h1 class="h1">Level Up Speedrun</h1>
-      <p>The whole of Scott Rogers' <em>Level Up!</em>, remixed for F2P mobile, plus two DLC levels on F2P economy, monetization and LiveOps. Learn it like a game: tiny bites, boss fights, streaks.</p>
-      <div class="stack small">
-        <div>1️⃣ <b>Start tiny.</b> One bite counts. Momentum beats motivation.</div>
-        <div>2️⃣ <b>Follow the glowing node</b> on the Map. It's the shortest path to F2P skills.</div>
-        <div>3️⃣ <b>Review your cards daily.</b> 5 minutes of flashcards beats 2 hours of rereading.</div>
-      </div>
+      <p>Learn F2P game design like a game. Every day you get a short run of <b>3 steps</b>. Do them, open the chest, done.</p>
       <div class="eyebrow">Pick your pace</div>
       <div class="grid2">
         <button class="btn primary tall" data-act="pace" data-pace="speedrun">⚡ Speedrun · 4 weeks<br><small>~60–90 min/day</small></button>
         <button class="btn tall" data-act="pace" data-pace="chill">🌿 Chill · 8 weeks<br><small>~30–45 min/day</small></button>
       </div>
+      <p class="small muted">You can change it later in Me.</p>
     </section>`;
   }
-
-  html += `<section class="card">
-    <div class="row between"><div class="eyebrow">2-minute start</div>${due ? `<span class="pill hot">${due} cards due</span>` : ""}</div>
-    <h2 class="h2">${fm ? `Next: ${fm.emoji} ${esc(fm.label)}` : "Pick a level"}</h2>
-    ${fm ? `<p class="muted">${esc(fm.tagline)}</p>${meter(st.p)}<div class="small muted mono">${Math.round(st.p * 100)}% · read ${st.parts.read ? "✓" : "–"} · bites ${st.seen}/${st.bitesTotal} · boss ${st.won ? "👑" : Math.round(st.best * 100) + "%"} · quests ${st.qd}/${st.qNeed}</div>` : ""}
-    <div class="grid2">
-      <a class="btn primary" href="#feed">📱 Swipe 5 bites</a>
-      ${fm ? `<a class="btn" href="#${fr}">${fm.emoji} Open ${esc(fm.label)}</a>` : ""}
-      ${due ? `<a class="btn gold" href="#cards">🃏 Review ${due} cards</a>` : ""}
+  const st = planState();
+  if (!st) return html;
+  const done = st.steps.filter((s) => s.done).length;
+  html += `<section class="card hero run">
+    <div class="row between"><div class="eyebrow">Today's run · ${done} of 3 done</div><span class="chip-stat hot" title="Day streak">🔥 ${streakNow()}</span></div>
+    ${st.allDone ? runDoneHtml() : ""}
+    <ol class="path">${st.steps.map((s, i) => stepHtml(s, i, i === st.cur)).join("")}</ol>
+  </section>`;
+  return html + moreHtml();
+}
+function stepHtml(s, i, now) {
+  if (s.done) return `<li class="step done"><span class="dot">✓</span><span>${esc(s.title)}</span></li>`;
+  if (!now) return `<li class="step later"><span class="dot">${i + 1}</span><span>${esc(s.title)}</span></li>`;
+  const sprint = s.kind === "read" && focus;
+  return `<li class="step now"><span class="dot">${i + 1}</span><div class="step-body">
+      <div class="eyebrow">Step ${i + 1} · ${STEP_NAMES[i]} · ~${s.min} min</div>
+      <h2 class="h2">${esc(s.title)}</h2>
+      <p class="muted">${esc(s.why)}</p>
+      ${s.target > 1 ? `<div class="step-prog">${meter(s.prog / s.target, "gold")}<span class="mono small">${s.prog}/${s.target}</span></div>` : ""}
+      ${sprint ? `<p class="small"><b>⏱ Sprint running: ${fmtClock(focus.end - Date.now())} left.</b> Keep reading until it rings.</p>` : ""}
+      <button class="btn primary block step-go" data-act="step" data-id="${s.id}">${sprint ? "Back to reading" : s.prog > 0 ? "Continue" : "Start"} →</button>
+    </div></li>`;
+}
+function runDoneHtml() {
+  if (!P.daily.chest) return `<div class="chest"><div class="emo">🎁</div><b>Run complete! Your chest is ready.</b><button class="btn gold" data-act="chest">Open it</button></div>`;
+  return `<div class="run-done"><div style="font-size:2.4rem">✅</div><h2 class="h2">Done for today</h2>
+    <p class="muted">Your streak is safe. Rest is part of the game. Come back tomorrow for a new run.</p>
+    <details class="bonus"><summary>Still got energy? Bonus round</summary>
+      <div class="row"><a class="btn sm" href="#feed">📱 Swipe more bites</a><a class="btn sm" href="#cards">🃏 Extra cards</a><a class="btn sm" href="#map">🗺️ Open the map</a></div>
+    </details></div>`;
+}
+function moreHtml() {
+  const s = streakNow(), week = weekPlan();
+  const last7 = [...Array(7)].map((_, i) => { const d = new Date(); d.setDate(d.getDate() - (6 - i)); return d; });
+  const tod = seeded("truth" + dkey()), pool = allTruths();
+  const truth = pool.length ? pool[Math.floor(tod() * pool.length)] : null;
+  return `<details class="card more"><summary><span class="eyebrow">More</span><span class="small muted">Streak · this week · focus timer · truth of the day</span></summary>
+    <div class="stack">
+      <div class="row between"><b>🔥 Streak</b>${xrayBtn("streak")}</div>
+      <div class="small muted">${s} day${s === 1 ? "" : "s"} in a row · best ${P.streak.best} · 🧊 freezes ${P.streak.freezes}/2</div>
+      <div class="streak-days">${last7.map((d) => { const k = dkey(d); return `<div class="sday ${P.days[k] ? "on" : ""} ${k === dkey() ? "today" : ""}"><i>${P.days[k] ? "🔥" : ""}</i>${"SMTWTFS"[d.getDay()]}</div>`; }).join("")}</div>
     </div>
-  </section>`;
+    ${week ? `<hr class="sep"><div class="stack"><b>🗺️ Week ${week.week + 1} of ${week.total} (${esc(P.settings.pace)})</b>
+      ${week.ids.map((id) => { const x = levelStats(id); return `<a href="#${id}" class="quest-line" style="color:inherit;text-decoration:none"><span style="font-size:1.3rem">${x.m.emoji}</span><span><b>${esc(x.m.label)}</b> <span class="small muted">${esc(x.m.title)}</span>${meter(x.p)}</span><span class="mono small">${Math.round(x.p * 100)}%</span></a>`; }).join("")}</div>` : ""}
+    <hr class="sep"><div class="stack"><b>⏱ Focus timer</b>
+      ${focus ? `<p class="small"><b>Sprint running: ${fmtClock(focus.end - Date.now())} left.</b></p><button class="btn sm ghost" data-act="focus-stop">Stop sprint</button>` : `<p class="small muted">Phone face down, one thing until it rings. Bonus XP at the end.</p><div class="focus-btns">${[5, 10, 15, 25].map((m) => `<button class="btn sm" data-act="focus" data-min="${m}">${m} min</button>`).join("")}</div>`}</div>
+    ${truth ? `<hr class="sep"><div class="stack"><div class="row between"><b>🎲 Truth of the day</b>${modChip(truth.m.id)}</div>
+      <button class="btn ghost block" data-act="reveal" data-target="truth-today">Tap to reveal</button><p id="truth-today" class="h3" hidden>${rich(truth.t)}</p></div>` : ""}
+  </details>`;
+}
 
-  html += `<section class="card">
-    <div class="row between"><div class="eyebrow">Streak</div>${xrayBtn("streak")}</div>
-    <div class="row"><div class="big-flame">🔥 ${s}</div><div class="small muted">day${s === 1 ? "" : "s"} in a row · best ${P.streak.best} · 🧊 freezes ${P.streak.freezes}/2<br>${s && P.streak.last !== dkey() ? "<b>Do one thing today to keep it alive.</b>" : s ? "Today counts. Nice." : "Earn any XP today to start a streak."}</div></div>
-    <div class="streak-days">${last7.map((d) => { const k = dkey(d); return `<div class="sday ${P.days[k] ? "on" : ""} ${k === dkey() ? "today" : ""}"><i>${P.days[k] ? "🔥" : ""}</i>${"SMTWTFS"[d.getDay()]}</div>`; }).join("")}</div>
-  </section>`;
-
-  const allDone = dailyAllDone();
-  html += `<section class="card">
-    <div class="row between"><div class="eyebrow">Daily quests</div>${xrayBtn("daily")}</div>
-    ${P.daily.picks.map((id) => { const q = DQ[id], c = Math.min(q.target, P.daily.c[q.id] || 0), done = P.daily.claimed[id]; return `<a class="quest-line" href="${q.go}" style="color:inherit;text-decoration:none"><span class="qcheck ${done ? "done" : ""}">${done ? "✓" : ""}</span><span><b>${esc(q.label)}</b>${meter(c / q.target, "gold")}</span><span class="mono small">${c}/${q.target}</span></a>`; }).join("")}
-    ${allDone && !P.daily.chest ? `<div class="chest"><div class="emo">🎁</div><b>Daily chest unlocked</b><button class="btn gold" data-act="chest">Open it</button>${xrayBtn("chest")}</div>` : allDone ? `<p class="small muted">Chest opened. Come back tomorrow for new dailies.</p>` : `<p class="small muted">Finish all 3 to unlock today's chest. 🎁</p>`}
-  </section>`;
-
-  if (week) {
-    html += `<section class="card">
-      <div class="row between"><div class="eyebrow">Route · week ${week.week + 1} of ${week.total} (${P.settings.pace})</div>${week.overtime ? `<span class="pill gold">Bonus time</span>` : ""}</div>
-      ${week.ids.map((id) => { const x = levelStats(id); return `<a href="#${id}" class="quest-line" style="color:inherit;text-decoration:none"><span style="font-size:1.4rem">${x.m.emoji}</span><span><b>${esc(x.m.label)}</b> <span class="small muted">${esc(x.m.title)}</span>${meter(x.p)}</span><span class="mono small">${Math.round(x.p * 100)}%</span></a>`; }).join("")}
-      <p class="small muted">Behind? Do one bite. Ahead? Do a Play Lab. Either way you win the day.</p>
-    </section>`;
-  }
-
-  html += `<section class="card">
-    <div class="eyebrow">Focus sprint</div>
-    ${focus ? `<p><b>Sprint running: ${fmtClock(focus.end - Date.now())} left.</b> Stay on one thing until the timer ends.</p><button class="btn ghost" data-act="focus-stop">Stop sprint</button>` : `<p class="small muted">Pick a timer, put your phone face down, do one thing until it rings. Bonus XP when it ends.</p><div class="focus-btns">${[5, 10, 15, 25].map((m) => `<button class="btn sm" data-act="focus" data-min="${m}">${m} min</button>`).join("")}</div>`}
-  </section>`;
-
-  if (truth) {
-    html += `<section class="card">
-      <div class="row between"><div class="eyebrow">Loot drop · truth of the day</div>${modChip(truth.m.id)}</div>
-      <button class="btn ghost block" data-act="reveal" data-target="truth-today">Tap to reveal 🎲</button>
-      <p id="truth-today" class="h3" hidden>${rich(truth.t)}</p>
-    </section>`;
-  }
-  return html;
+/* ---------- guidance: step popup, one-time tab hints ---------- */
+let nudgeT = 0;
+function stepNudge(next, allDone) {
+  if (current === "today") { render(); return; }
+  let el = $("#nudge");
+  if (!el) { el = document.createElement("div"); el.id = "nudge"; el.setAttribute("role", "status"); document.body.appendChild(el); }
+  el.innerHTML = allDone
+    ? `<span>🎁 <b>Run complete!</b> Your chest is waiting.</span><a class="btn sm gold" href="#today">Open</a>`
+    : `<span>✓ Step done. Next: <b>${esc(next.title)}</b></span><a class="btn sm primary" href="#today">Go</a>`;
+  el.hidden = false;
+  clearTimeout(nudgeT);
+  nudgeT = setTimeout(() => (el.hidden = true), 9000);
+}
+const TIPS = {
+  map: "This is your route, top to bottom. The glowing node is your next level.",
+  cards: "Flip a card, then rate honestly how well you knew it. The app spaces reviews from that.",
+  me: "Your stats, badges and settings live here. Nothing you need to do daily.",
+  level: "Each level has tabs. The one marked ▶ is your next step, and it opens first.",
+};
+function tipHtml(key) {
+  if (!TIPS[key] || (P.tips && P.tips[key])) return "";
+  return `<div class="tip" data-tip="${key}"><span>💡 ${esc(TIPS[key])}</span><button class="btn sm ghost" data-act="tip-ok" data-k="${key}">Got it</button></div>`;
 }
 
 /* ---------- FEED ---------- */
@@ -331,7 +349,8 @@ function notesHtml(id) {
 function viewLevel(id) {
   const s = levelStats(id), m = s.m;
   if (!P.started[id]) { P.started[id] = 1; saveP(); }
-  const tab = levelTab[id] || "read";
+  const rec = nextAction(id).kind;
+  const tab = levelTab[id] || rec;
   return `<section class="lvl-head">
       <div class="row between"><a class="btn sm ghost" href="#map">← Map</a><span class="pill">${m.kind === "dlc" ? "🧩 DLC · not from the book" : "📖 Book pp. " + esc(m.bookPages)}</span></div>
       <div class="row" style="align-items:flex-start;flex-wrap:nowrap"><div class="lvl-emoji">${m.emoji}</div><div style="min-width:0"><div class="eyebrow">${esc(m.label)} · ⏱ ~${m.minutes} min</div><h1 class="h2">${esc(m.title)}</h1></div></div>
@@ -339,7 +358,7 @@ function viewLevel(id) {
       <div class="small"><span class="stars" aria-label="F2P relevance ${m.f2pRelevance} of 5">${stars(m.f2pRelevance)}</span> <span class="muted">F2P relevance: ${esc(m.f2pWhy)}</span></div>
       ${meter(s.p)}
       <div class="small muted mono">${Math.round(s.p * 100)}% · read ${s.parts.read ? "✓" : "–"} · bites ${s.seen}/${s.bitesTotal} · boss ${s.won ? "👑 " : ""}${Math.round(s.best * 100)}% · quests ${s.qd}/${s.qTotal}</div>
-      <div class="tabs" role="tablist">${LTABS.map(([k, label]) => `<button role="tab" aria-selected="${tab === k}" data-act="ltab" data-id="${id}" data-tab="${k}">${label}</button>`).join("")}</div>
+      <div class="tabs" role="tablist">${LTABS.map(([k, label]) => `<button role="tab" aria-selected="${tab === k}" class="${k === rec ? "rec" : ""}" data-act="ltab" data-id="${id}" data-tab="${k}">${k === rec ? "▶ " : ""}${label}</button>`).join("")}</div>
     </section>
     <section id="ltab-body">${levelTabHtml(id, tab)}</section>`;
 }
@@ -686,8 +705,10 @@ function render() {
   if (current === "feed") { mainEl.innerHTML = viewFeed(); mountFeed(); }
   else {
     const html = current === "today" ? viewToday() : current === "map" ? viewMap() : current === "cards" ? viewCards() : current === "me" ? viewMe() : viewLevel(current);
-    mainEl.innerHTML = `<div class="view" id="view">${html}</div>`;
+    mainEl.innerHTML = `<div class="view" id="view">${tipHtml(BY[current] ? "level" : current)}${html}</div>`;
   }
+  if (current === "feed" && !(P.tips && P.tips.feed)) { P.tips = { ...(P.tips || {}), feed: 1 }; saveP(); later(() => toast("Swipe up for the next bite. Tap 👍 when it clicks."), 400); }
+  if (current === "today") { const n = $("#nudge"); if (n) n.hidden = true; }
   renderHud();
 }
 let lastHash = location.hash;
@@ -804,6 +825,15 @@ const ACT = {
     try { await Sync.fb.signIn(); } finally { if (t.isConnected) { t.disabled = false; t.textContent = "Sign in with Google"; } }
   },
   reload: () => location.reload(),
+  step: (t) => {
+    const st = planState(), s = st && st.steps.find((x) => x.id === t.dataset.id);
+    if (!s) return;
+    if (s.kind === "feed") { feed.mode = "mix"; location.hash = "#feed"; }
+    else if (s.kind === "bites") { feed.mode = s.mod; location.hash = "#feed"; }
+    else if (s.kind === "cards") location.hash = "#cards";
+    else { levelTab[s.mod] = s.kind; if (s.kind === "read" && !focus) startFocus(15); location.hash = "#" + s.mod; }
+  },
+  "tip-ok": (t) => { P.tips = { ...(P.tips || {}), [t.dataset.k]: 1 }; saveP(); t.closest(".tip")?.remove(); },
   "dsk-hide": () => { LS.raw("lus.dskHint", dkey()); renderDesktopHint(); },
   guest: () => { startGuest(); toast("Guest run started. Nothing will be saved."); },
   signout: async () => { if (!Sync.fb) return; await Sync.fb.signOut(); toast("Signed out. Your progress stays in your account."); },
