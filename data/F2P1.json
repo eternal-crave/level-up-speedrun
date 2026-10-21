@@ -1,0 +1,1838 @@
+{
+  "id": "F2P1",
+  "order": 20,
+  "kind": "dlc",
+  "label": "DLC 1",
+  "title": "F2P Core: Loops, Progression & Economy",
+  "bookPages": "—",
+  "emoji": "💎",
+  "tagline": "The secret operating system inside every free game: loops, metrics and money, explained.",
+  "f2pRelevance": 5,
+  "f2pWhy": "Loops, KPIs, FTUE, progression and economy are the daily language and toolkit of every F2P mobile designer, and the 2010 book never covers them.",
+  "minutes": 150,
+  "tldr": [
+    "F2P = free to start; most players never pay, a small share of payers funds the game, and non-payers are still the crowd, the opponents and the marketing.",
+    "A game grows profitably only when LTV > CPI; design raises LTV (retention × monetization) and lowers CPI (a hookier, more shareable game).",
+    "Loops are the skeleton: a core loop (play → reward → upgrade) inside a meta loop (collection, base, rank, seasons), played in well-designed sessions.",
+    "FTUE, progression and economy shape your retention curve: fun in 1, loop in 5, hook by 15; saw-tooth difficulty; every faucet flows into a sink that matters.",
+    "Retention mechanics (daily rewards, streaks, timers, collections, clans, notifications) build habits when used with respect, and burn players out when abused.",
+    "Your weekly superpower is the teardown: play real games with a template and write hypotheses about why they work."
+  ],
+  "sections": [
+    {
+      "title": "How F2P works as a business",
+      "bites": [
+        {
+          "id": "F2P1-b01",
+          "hook": "Free game, paid fun: the F2P deal",
+          "body": "Free-to-play games cost nothing to download. Money arrives later, from optional purchases (IAP) and/or ads, and only if players fall in love first. That makes the design itself the business model: you can't bolt monetization onto a finished game any more than you can bolt a skeleton onto a jellyfish.",
+          "example": "Royal Match is free forever; revenue comes from the minority of players who buy coins, boosters, lives and offers.",
+          "f2p": "Pick your monetization model in pre-production. It shapes session length, difficulty, currencies and even art.",
+          "memory": "Free restaurant, dessert menu.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b02",
+          "hook": "Three ways a free game earns money",
+          "body": "1) **IAP**: consumables (gems, boosters, refills), durables (a hero, remove-ads, a second builder), subscriptions and passes. 2) **Ads**: rewarded video (opt-in trade), interstitials (between levels), banners, offerwalls. 3) **Hybrid**: IAP plus ads, the default for most casual games today. Stores and ad networks each take a cut.",
+          "example": "Survivor.io-style games mix gear IAP and passes with rewarded ads for revives and doubled rewards.",
+          "f2p": "Rewarded ads feel fair because the player chooses them. Interstitials earn more per placement but can hurt retention if overused.",
+          "memory": "IAP, ads, or both: wallet, eyeballs, or both.",
+          "tag": "list"
+        },
+        {
+          "id": "F2P1-b03",
+          "hook": "The leaky funnel from install to payer",
+          "body": "Every F2P game is a funnel that leaks at each stage: **Acquire** (ads, store, virality) → **Activate** (FTUE, first win) → **Retain** (come back tomorrow, next week) → **Engage** (sessions, social, meta) → **Monetize** (IAP, ads) → **Refer** (feeds acquisition). It mirrors the startup AARRR pirate metrics. You can't monetize players who already left.",
+          "example": "A beautiful endgame raid does nothing for a game whose tutorial loses half its players.",
+          "f2p": "Before designing any feature, ask which funnel stage it serves.",
+          "memory": "Fix retention before monetization.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b04",
+          "hook": "LTV > CPI: the one inequality that rules F2P",
+          "body": "A game can grow profitably only when a player's **lifetime value (LTV)** beats the **cost per install (CPI)** you paid to get them, with margin left for overhead. Design raises LTV (more retention, better monetization) and lowers CPI (a clearer hook, better store page, more word of mouth). That's why retention numbers appear in pitch meetings.",
+          "example": "Hypothetical: LTV $1.09 vs CPI $1.50 means every paid install loses about $0.40.",
+          "f2p": "Every design decision either raises LTV or lowers CPI. If it does neither, question it.",
+          "memory": "Worth more than you cost, or you're toast.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P1-b05",
+          "hook": "Most players never pay, and that's normal",
+          "body": "F2P spending follows a power law. Across many casual and midcore games only a low single-digit percent of players ever pay (rough rule of thumb), and a small fraction of payers often generates a large share of IAP revenue. Prefer neutral spender-tier names over \"whales/dolphins/minnows\". High spenders are people, not wallets: some are vulnerable, so design guardrails.",
+          "example": "A typical casual game: most players never buy; some buy a starter pack; a small group buys every pass and event offer.",
+          "f2p": "Serve every tier: great free play, a cheap \"yes\" (starter pack/pass), and deep optional sinks.",
+          "memory": "A long tail, not a bell curve.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b06",
+          "hook": "Why free players are not freeloaders",
+          "body": "Non-payers are 1) **the content**: opponents, neighbours and clanmates (matchmaking needs liquidity); 2) **marketing**: word of mouth lowers CPI; 3) **ad revenue**: rewarded and interstitial views; 4) **future payers**: many first purchases happen days or weeks in, once trust exists.",
+          "example": "In Clash Royale or Brawl Stars, payers need a big pool of free opponents to get fast, fair matches.",
+          "f2p": "Design a great free game, not a demo. A starved free player base kills the experience for payers too.",
+          "memory": "No crowd, no concert.",
+          "tag": "list"
+        },
+        {
+          "id": "F2P1-b07",
+          "hook": "What people actually pay for",
+          "body": "Players pay for **time** (skip waits), **progress** (advance faster), **power** (stronger units), **expression** (skins, decor), **access** (new heroes, premium pass track), **status** (rank, exclusives) and **avoiding loss** (continues, extra moves). Pay-to-win sells decisive PvP power (risky); pay-to-progress sells speed on a real free path; pay-for-cosmetics sells looks (fairest, needs scale).",
+          "example": "Candy Crush-style extra moves after a fail sell loss avoidance; a skin in a competitive game sells expression.",
+          "f2p": "Sell speed and expression before power. Power that decides PvP drives away the free players who are everyone's opponents.",
+          "memory": "T-P-P-E-A-S-L: Time, Progress, Power, Expression, Access, Status, Loss.",
+          "tag": "list"
+        },
+        {
+          "id": "F2P1-b08",
+          "hook": "Hyper-casual to hardcore: the money ladder",
+          "body": "**Hyper-casual**: one mechanic, 1–5 min sessions, ad-funded, lives on cheap installs. **Hybrid-casual**: simple controls plus an upgrade meta, ads + IAP. **Casual**: puzzle/merge, IAP-heavy plus ads, long tails. **Midcore**: strategy/PvP/collection, IAP via passes and offers. **Hardcore**: console-like depth, gacha, passes, cosmetics. Cheaper and broader leans on ads; deeper leans on IAP.",
+          "example": "Helix Jump-style (hyper-casual), Archero (hybrid-casual), Royal Match (casual), Clash Royale (midcore), Genshin Impact (hardcore).",
+          "f2p": "Know your rung before you design: it decides session length, meta depth and monetization.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "F2P1-b09",
+          "hook": "Soft launch: the quiet test before the big bet",
+          "body": "Modern F2P games launch quietly in a few test countries to measure retention and monetization before spending heavily on user acquisition. Many projects are cancelled there if KPIs miss targets. Launch is the start of years of LiveOps, not the finish line. Privacy changes such as Apple's App Tracking Transparency (2021) made targeting harder, rewarding strong organic hooks.",
+          "example": "A studio soft-launches, sees weak D7, rebuilds the meta, retests, and only then goes global.",
+          "f2p": "Your game's ad creatives are part of the design: the FTUE must keep their promise.",
+          "memory": "Soft launch = dress rehearsal with a real audience.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "The KPI dictionary every designer must speak",
+      "bites": [
+        {
+          "id": "F2P1-b10",
+          "hook": "DAU, MAU and stickiness: is it a habit?",
+          "body": "**DAU/WAU/MAU** count unique players per day, week, month. **Stickiness = DAU ÷ MAU**: the share of this month's players who show up on a given day. Rough rule of thumb: about 10–20% is common, 20%+ is strong, deeply social or competitive games can go higher. Levers: daily rewards, daily quests, timers, social obligation, events.",
+          "example": "MAU 1,000,000 and DAU 150,000 → stickiness 15%.",
+          "f2p": "If stickiness is low, players like the game but haven't made it a daily ritual: look at daily goals and appointments.",
+          "memory": "Sticky like gum, not like glue.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b11",
+          "hook": "D1, D7, D30: the retention trio",
+          "body": "Retention = % of an install-day **cohort** who return on day 1, 7, 30. Old shorthand: **40/20/10** as a healthy casual sanity check (rough; varies hugely by genre and traffic). **Classic** retention counts players active on exactly day N; **rolling** counts day N or later (always higher). Weak D1 usually means FTUE/core fun; weak D7/D30 with OK D1 points at mid/meta loops.",
+          "example": "D1 25% → fix the first session. D1 45% but D30 3% → the meta isn't holding people.",
+          "f2p": "Always read retention by cohort (country, platform, traffic source). Blended averages hide everything.",
+          "memory": "40/20/10: the healthy-game sanity check.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b12",
+          "hook": "Conversion, ARPU, ARPDAU, ARPPU decoded",
+          "body": "**Conversion** = % of players who ever pay (often low single digits lifetime; daily payer share is far smaller). **ARPU** = revenue ÷ users. **ARPDAU** = daily revenue ÷ DAU, the favourite daily health number. **ARPPU** = revenue ÷ paying users. Handy identity: **ARPDAU = (daily payer % × daily ARPPU) + (ad impressions per DAU × eCPM ÷ 1000)**.",
+          "example": "10,000 DAU and $1,500 revenue today → ARPDAU $0.15.",
+          "f2p": "Track first purchase and repeat purchase separately: the second purchase is a big trust signal.",
+          "memory": "ARP-P-U: the extra P is for Payers.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b13",
+          "hook": "LTV on a napkin",
+          "body": "**LTV ≈ ARPDAU × average lifetime active days.** Lifetime days ≈ 1 (install day) + the sum of daily retention over your horizon, i.e. the area under the retention curve. Teams also track cohort LTV at D7/D30/D90/D180/D365 and predict long-term LTV from early data.",
+          "example": "Hypothetical: retention gives ~9.1 active days over 180 days; ARPDAU $0.12 → LTV ≈ $1.09.",
+          "f2p": "More days (retention) or more per day (ARPDAU): both are design levers.",
+          "memory": "LTV = how many days × how much per day.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P1-b14",
+          "hook": "CPI, ROAS, payback and K-factor",
+          "body": "**CPI** = cost per paid install (eCPI blends in organic installs). **ROAS** = cohort revenue ÷ UA spend (\"D7 ROAS 15%\" = 15% earned back in 7 days). **Payback period** = days until ROAS hits 100%. **K-factor** = new players each player brings; any organic lift lowers effective CPI. Rough: CPI is lowest in hyper-casual, highest in midcore/strategy in rich markets; iOS usually above Android.",
+          "example": "A cohort costs $10,000 and has earned $2,500 by day 30 → D30 ROAS 25%.",
+          "f2p": "A hookier, more shareable game literally costs less to grow.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b15",
+          "hook": "Churn points: where exactly do they leave?",
+          "body": "**Churn** = players who stop playing; **churn rate** = % lost per period. **Churn points** are the exact places they leave: a tutorial step, level 12, the first PvP loss. Level funnels (% of players reaching each level) and tutorial funnels expose them. A step with an outsized drop is your highest-value fix.",
+          "example": "A typical match-3 sees an unusual drop at one level, retunes it, and the funnel smooths out.",
+          "f2p": "Learn to read a retention curve and a level funnel: they tell you where to aim design effort.",
+          "memory": "Follow the leak, fix the leak.",
+          "tag": "f2p"
+        },
+        {
+          "id": "F2P1-b16",
+          "hook": "Goodhart's law: when metrics lie to you",
+          "body": "When a measure becomes a target, it stops being a good measure. Cranking interstitials can spike ARPDAU this week and crater retention next month. Avoid vanity metrics (total downloads). Use A/B tests: random groups, one meaningful change, enough players and enough days. Numbers tell you **what** happened; playtests tell you **why**.",
+          "example": "An aggressive offer popup after every loss lifts revenue for a week, then D30 sinks.",
+          "f2p": "Pitch features as: \"This should move ___ because ___; we'll know by ___.\"",
+          "memory": "Two eyes: dashboard and playtest.",
+          "tag": "warning"
+        },
+        {
+          "id": "F2P1-b17",
+          "hook": "R × E × M = LTV",
+          "body": "Lifetime value is a multiplication: **Retention × Engagement × Monetization**. Because it multiplies, zero retention makes the fanciest shop worth zero. It also means small gains in each factor compound: a bit more retention plus a bit more engagement plus slightly better offers can transform the business.",
+          "example": "A gorgeous store in a game nobody returns to earns nothing.",
+          "f2p": "Before polishing the shop, check whether players are still around to see it.",
+          "memory": "A dessert menu in an empty restaurant.",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "Core loop, meta loop, and session design",
+      "bites": [
+        {
+          "id": "F2P1-b18",
+          "hook": "The core loop: what your thumbs repeat",
+          "body": "A **core loop** runs Action → Reward → Invest → New power/new challenge → Action. A good loop changes as it repeats: the investment makes the next round feel different. Say it in one sentence. Older F2P talk called it a \"compulsion loop\"; many designers avoid that term now. The related **Hook model** (trigger → action → variable reward → investment) explains habits, for good or ill.",
+          "example": "Clash Royale in one sentence: battle to earn cards, upgrade cards to battle better.",
+          "f2p": "Draw the loop before designing features. A feature that doesn't plug into a loop arrow is looking for a reason to exist.",
+          "memory": "Play, get, grow, go again.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b19",
+          "hook": "Three loop layers plus LiveOps on top",
+          "body": "**Core loop**: seconds to minutes (match, battle, run). **Mid loop**: a session to a day (daily quests, chest unlocks, event milestones). **Meta loop**: days to months (collection, base level, rank, story, seasons). **LiveOps layer**: recurring limited events and passes. Each layer feeds the next. Core quality drives D1, mid loop D7, meta + social + LiveOps D30+.",
+          "example": "Survivor.io: a run (core), daily missions (mid), chapters and gear evolution (meta), events (LiveOps).",
+          "f2p": "If D7 is weak, look at the mid loop; if D30 is weak, look at the meta.",
+          "memory": "Wheel, day, journey, season.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b20",
+          "hook": "Clash Royale's loop: short battles, long collection",
+          "body": "Battle (short 1v1, spend elixir, place cards) → trophies and rewards (cards, gold) → upgrade cards with copies + gold → tune your 8-card deck → battle again. Meta: trophy road and arenas unlock cards, clans request/donate cards, seasons and ranked play. Historically timed chests capped progress per session; the reward system has been reworked across updates.",
+          "example": "Short skill-feeling matches fit mobile sessions; collection gives months of goals.",
+          "f2p": "Note how the session cap (historically chest timers) doubled as an appointment mechanic.",
+          "memory": "",
+          "tag": "example"
+        },
+        {
+          "id": "F2P1-b21",
+          "hook": "Same core, different why: Candy Crush vs Royal Match",
+          "body": "Both are match-3. **Candy Crush Saga**: play a level with limited moves → win stars and map progress, or fail and lose a life (retry, buy extra moves, use a booster, or wait). **Royal Match/Homescapes**: wins earn stars spent on renovation/decoration tasks that unlock new areas and story beats. Same core loop, different meta reason to care.",
+          "example": "The saga map is a giant progress bar; the decorated castle is a place you're building.",
+          "f2p": "A meta loop can differentiate a game in a crowded genre without changing the core.",
+          "memory": "Same engine, different destination.",
+          "tag": "example"
+        },
+        {
+          "id": "F2P1-b22",
+          "hook": "Hay Day's loop: timers make appointments",
+          "body": "Plant → wait (timer) → harvest → produce goods in machines (bakery, feed mill, dairy; feed animals for animal goods) → fulfill truck/boat orders or sell in your roadside shop → coins + XP → level up → unlock crops and machines. Meta: expanding and decorating the farm, neighborhoods, derby events, trading with players.",
+          "example": "\"Come back when the bread's done\" is a reason to return built into the core loop.",
+          "f2p": "Production chains turn timers into a planning puzzle, not just waiting.",
+          "memory": "",
+          "tag": "example"
+        },
+        {
+          "id": "F2P1-b23",
+          "hook": "Survivor.io: two loops in one",
+          "body": "**In-run loop**: move with one thumb, weapons auto-attack, kill waves, collect XP gems, level up, choose one of several offered skills to build a combo, beat the boss. **Out-of-run loop**: spend rewards on permanent gear and stat upgrades, push the next chapter. Runs cost energy; rewarded ads fit revives and doubled rewards.",
+          "example": "Each run feels fresh (roguelite choices); each day feels like progress (permanent power).",
+          "f2p": "Hybrid-casual recipe: simple front door, roguelite variety, a progression meta behind it.",
+          "memory": "Fresh run, lasting gains.",
+          "tag": "example"
+        },
+        {
+          "id": "F2P1-b24",
+          "hook": "Loop health check: the no-reward test",
+          "body": "Run six checks: 1) strip the rewards: is the core action still satisfying? 2) every reward has a home (a sink worth spending on); 3) loops interlock: core feeds meta, meta changes core; 4) one-sentence clarity; 5) variety on repeat; 6) a reason to stay plus a reason to return.",
+          "example": "Monopoly GO! keeps rolling dice interesting with constant events, boards and social minigames.",
+          "f2p": "If the only fun is the payout, the loop is fragile and players will leave when rewards slow down.",
+          "memory": "Would you play it for free candy? Would you play it with no candy?",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P1-b25",
+          "hook": "The session arc: collect, play, set up, hook",
+          "body": "1) **Arrive & collect** (claim timers and daily reward, 10–30 s). 2) **Core play**. 3) **Invest & set up** (spend, start timers, choose the next goal). 4) **Exit hook** (chest ready in 3h, energy full at 6 pm). Support quick **check-in** sessions and **deep** sessions. Mobile means interruptions: autosave, instant resume, one-thumb portrait play.",
+          "example": "Hay Day: collect harvests, fill orders, replant everything, leave with crops growing.",
+          "f2p": "Avoid a stack of popups at launch: time to fun should be seconds.",
+          "memory": "Arrive, play, prep, promise.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b26",
+          "hook": "Open loops pull players back",
+          "body": "The **Zeigarnik effect**: people remember unfinished tasks better than finished ones. A pending timer, a half-full collection or a nearly complete pass pulls players back. **Session caps** (energy, lives, timers) pace content and create appointments; uncapped games (endless runners, block puzzles) need highly replayable mechanics. Also give closure: \"all done for today\" is a gift.",
+          "example": "A chest ticking down when you close the app is a promise of a future reward.",
+          "f2p": "Natural stopping points are also the polite place for an interstitial or offer.",
+          "memory": "Leave a cliffhanger, not a chore list.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b27",
+          "hook": "Hamster wheel vs hamster's reason",
+          "body": "The core loop is the hamster wheel; the meta loop is the reason the hamster cares. Without the meta it's just running. Without the wheel there's nothing to do. Bonus image: the hamster checks its phone because its sunflower seeds finish baking in 3 hours (the session hook).",
+          "example": "Royal Match: matching tiles is the wheel; the castle you're decorating is the reason.",
+          "f2p": "",
+          "memory": "Wheel + reason + reminder.",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "FTUE / onboarding",
+      "bites": [
+        {
+          "id": "F2P1-b28",
+          "hook": "FTUE: where most players are won or lost",
+          "body": "The **First-Time User Experience** covers the first minutes, session, day and week. Its jobs: deliver fun fast, teach the core loop by doing, give a first win, and plant a reason to come back. Because every player passes through it and it's where the most players leave, it's among the highest-leverage things in your game.",
+          "example": "Royal Match gives a quick win, then has you spend stars on a first decoration task within minutes.",
+          "f2p": "Write your FTUE as a minute-by-minute storyboard with a KPI check for each beat.",
+          "memory": "First impressions are the only ones that scale.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b29",
+          "hook": "Fun in 1, loop in 5, hook by 15",
+          "body": "Fun within the **first minute**. One full core loop (action → reward → upgrade → action) within about **five minutes**. An **exit hook** (a timer, a chest, a feature unlocking tomorrow) by the end of the first session (~15 minutes). After that: the D0→D1 bridge and a feature drip across the first week.",
+          "example": "A gacha RPG opens with a spectacular battle, a first pull, a first upgrade, then a daily reward preview.",
+          "f2p": "Use this as a stopwatch test when you play any new game.",
+          "memory": "1-5-15.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P1-b30",
+          "hook": "The first 60 seconds: play first, admin later",
+          "body": "No account wall, no long logo sequence, no wall of text. Guest play first. Show the fantasy (the powerful hero, the finished mansion), then rewind to \"you start here\". Keep the ad's promise: many players arrive from an ad. Make the first action juicy with feedback and sound.",
+          "example": "Hyper-casual games often teach with a single animated hand and zero text.",
+          "f2p": "An FTUE that doesn't match the ad creative loses players and store rating at once.",
+          "memory": "No tax forms at the theme-park gate.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P1-b31",
+          "hook": "Day 0 to day 7: bridge and drip",
+          "body": "Tell players what they get tomorrow (daily reward preview, finished timer, new mode). Ask for notification permission after showing value, with a friendly pre-prompt. **Drip-feed** features (clans, PvP, events, crafting) across days so each gets a spotlight. Show a strong starter pack only after real fun and progress; never block the tutorial with a purchase.",
+          "example": "\"Clans unlock at level 6\" gives a goal and avoids overwhelming day-0 players.",
+          "f2p": "Your unlock table for days 0–7 is your onboarding design.",
+          "memory": "One new toy per day.",
+          "tag": "f2p"
+        },
+        {
+          "id": "F2P1-b32",
+          "hook": "Teach by doing, not by telling",
+          "body": "One new thing at a time: introduce safely → practice → twist → test. Show, don't tell (highlight + tutorial hand). **Progressive disclosure**: hide UI until its feature unlocks. Teach in context when a mechanic first matters. Keep forced steps few; switch to soft hints fast. Let level design teach. Make early failure rare and fair. Keep story skippable.",
+          "example": "The first locked tile appears exactly when the game teaches how to clear it.",
+          "f2p": "Generous first rewards (like a guaranteed strong early pull) work; avoid a \"generosity cliff\" afterwards.",
+          "memory": "Do it, don't read it.",
+          "tag": "list"
+        },
+        {
+          "id": "F2P1-b33",
+          "hook": "Leave the training level for last (L09)",
+          "body": "The book's level-design advice: build the tutorial last, because only then do you know your mechanics well enough to teach them. In F2P, stub the FTUE early for playtests but expect to rebuild it several times: after the vertical slice, before soft launch, and again on soft-launch data. It's usually the most-iterated feature.",
+          "example": "A team rebuilds its FTUE after soft launch shows a big drop at the first upgrade screen.",
+          "f2p": "Your FTUE is never finished; it is the highest-traffic feature you own.",
+          "memory": "Build it last, rebuild it often.",
+          "tag": "truth"
+        },
+        {
+          "id": "F2P1-b34",
+          "hook": "FTUE hall of shame",
+          "body": "Walls of text; stacked popups; long unskippable intros; asking for notifications, ratings, tracking or login before value; teaching the meta before the core is fun; 20+ minutes of forced taps; an offer in the first minute; a difficulty/reward cliff right after the tutorial; an FTUE that doesn't match the ad. Measure with a **tutorial funnel** and watch strangers play.",
+          "example": "The training wheels fall off and the road turns into a wall at the same moment.",
+          "f2p": "Log every tutorial step as an analytics event; big drops are your fix list.",
+          "memory": "Popup lasagna is not a meal.",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "Progression systems",
+      "bites": [
+        {
+          "id": "F2P1-b35",
+          "hook": "Stack progression tracks on different timescales",
+          "body": "Common tracks: account level, unit upgrades (duplicates/shards + soft currency), gear, talents, saga map, chapters, ladders (trophies/rank), collections, base/town level, season pass tiers, prestige. Most games run 3–6 at once on different timescales, so a player almost always has something close to completion.",
+          "example": "Clash of Clans' Town Hall gates buildings; the pass runs weekly; collections run forever.",
+          "f2p": "If all tracks share one timescale, players hit dead zones where nothing is close to done.",
+          "memory": "Many clocks, always one about to ring.",
+          "tag": "list"
+        },
+        {
+          "id": "F2P1-b36",
+          "hook": "Vertical vs horizontal progression",
+          "body": "**Vertical** = more power (bigger stats): easy to understand and sell, but causes **power creep** and pay-to-win worries. **Horizontal** = more options (new heroes, cards, strategies) without stat inflation: fairer and more expressive, harder to sell as progress. Power creep (ever-stronger new content) makes old purchases obsolete and erodes trust.",
+          "example": "Marvel Snap: card upgrades are cosmetic and raise Collection Level, which unlocks new cards. Progress = options.",
+          "f2p": "In PvP, lean horizontal to protect free players and keep matches fair.",
+          "memory": "Up = stronger. Sideways = smarter.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b37",
+          "hook": "Unlock pacing: highlight reel, then rhythm",
+          "body": "Early game: something new nearly every session. Mid game: a meaningful unlock every few sessions or days. Late game: novelty comes from events, seasons and social play. Show what's coming (\"unlocks at level 8\", silhouettes) to use the **goal-gradient effect**: motivation rises as a goal gets closer.",
+          "example": "Hypothetical schedule: level 2–3 upgrades, 4–5 dailies, 6–8 clans, 9–12 PvP/events.",
+          "f2p": "Put social features before the first slowdown, so friends keep players through it.",
+          "memory": "Show the next carrot.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b38",
+          "hook": "XP curves: exponential looks gentle, then explodes",
+          "body": "XP per level grows. Polynomial: base × L^1.5. Exponential: base × 1.15^(L−1). With base 100, level 10 needs 3,162 vs 352, but by level 50 it's ~35,000 vs ~94,000: exponential overtakes somewhere between 30 and 50. Players feel **time-to-level**, not XP, so model XP earned as well as XP needed.",
+          "example": "Design target style: \"level 5 in session one, level 10 by day 3\".",
+          "f2p": "Use exponential only if you intend a late slowdown; otherwise you've built an accidental wall.",
+          "memory": "Compound interest, but for grinding.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P1-b39",
+          "hook": "Gates, paywalls and walls",
+          "body": "Gates pace progress: **hard** (requirements), **soft** (difficulty), **time** (timers, caps), **currency** (cost), **social** (needs a clan), **skill**. A **paywall** only money opens: avoid it on core progression; players accept \"pay to go faster\" far more than \"pay or stop\". A **wall** is where free progress slows sharply: telegraph it and offer alternative goals.",
+          "example": "A midcore game slows upgrades at a certain level but opens PvP and events so there's always something to do.",
+          "f2p": "Make sure the free path keeps moving, even slowly.",
+          "memory": "Gate = speed bump. Paywall = locked door.",
+          "tag": "warning"
+        },
+        {
+          "id": "F2P1-b40",
+          "hook": "Flow: challenge should match skill",
+          "body": "Players are happiest in the **flow channel** (Mihaly Csikszentmihalyi): challenge roughly matching skill. Too hard → anxiety; too easy → boredom. Because skill and power grow, challenge must grow too, but not in a straight line (see saw-tooth).",
+          "example": "A puzzle game that never gets harder bores; one that spikes every level exhausts.",
+          "f2p": "Track attempts per level to see whether players are in flow, anxious or bored.",
+          "memory": "Between panic and nap.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b41",
+          "hook": "Saw-tooth difficulty: ramp, spike, breather",
+          "body": "Within each group of levels, difficulty ramps up to a **spike** (hard level or boss), then **drops** to a breather, then climbs again, with the overall trend rising. Spikes test mastery; drops give relief and a feeling of power; the rhythm adds variety. Many puzzle games put a notably hard level every handful of levels, and many label them so failure feels expected.",
+          "example": "A match-3 tags a level \"Hard\": you fail twice, win on the third try, and the next two levels feel breezy.",
+          "f2p": "Spikes are where boosters sell. That's fair only if the level is beatable for free with retries.",
+          "memory": "Gym session: warm up, heavy set, rest, heavier set.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P1-b42",
+          "hook": "Power curve vs content curve, per spender tier",
+          "body": "Plot player power against content difficulty over time. Power lagging content = walls and churn; power far ahead = boredom and inflation. Model separate curves for free, light-paying and heavy-paying players; the free curve must still cross the content curve often enough to feel progress. Long term, fight the **content treadmill** with replayable systems, LiveOps and catch-up mechanics.",
+          "example": "Survivor.io shows both curves openly: chapters (content) vs gear and talents (power).",
+          "f2p": "Build a time-to-milestone table per spender tier before building content.",
+          "memory": "Two lines that should keep crossing.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "Economy design",
+      "bites": [
+        {
+          "id": "F2P1-b43",
+          "hook": "Currency zoo: soft, hard and friends",
+          "body": "**Soft** (coins: plentiful, everyday spending), **hard/premium** (gems: mostly bought, small free trickle), **resources** (wood, elixir: create planning choices), **shards/duplicates** (unit-specific progress), **event currencies** (temporary, often expire), **energy/lives** (session pacing), **tickets/keys** (access).",
+          "example": "Clash of Clans uses several resource currencies plus gems; Hay Day uses coins plus diamonds.",
+          "f2p": "Every currency should have a clear job. If you can't name its job, merge or cut it.",
+          "memory": "Each coin needs a job description.",
+          "tag": "list"
+        },
+        {
+          "id": "F2P1-b44",
+          "hook": "Why separate soft and hard currency?",
+          "body": "Hard currency abstracts real money into one price list for wildly different items, lets free players taste premium items through small earnable amounts, and simplifies pricing across countries. The risk: it can obscure what things really cost (\"is 280 gems a lot?\"), which consumer regulators increasingly scrutinize. Be clear about real prices.",
+          "example": "A skin, a speed-up and an energy refill can all be priced in gems from one store.",
+          "f2p": "Keep a stable internal value for 1 gem (in time and soft currency) so prices feel fair and learnable.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b45",
+          "hook": "Faucets and drains",
+          "body": "Currencies flow in through **faucets/sources** (levels, daily rewards, quests, events, rewarded ads, IAP) and out through **drains/sinks**: progression (rising upgrade costs), consumables (boosters, refills), convenience (speed-ups, builders), chance (chests, gacha), cosmetics/decor, social (gifts, donations). Rule: every faucet needs a drain players actually want.",
+          "example": "A currency with nothing worth buying is just noise in the HUD.",
+          "f2p": "Draw the faucet/drain diagram on day one, and update it with every new reward.",
+          "memory": "Every reward needs a home.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P1-b46",
+          "hook": "Inflation vs starvation",
+          "body": "Sources outpacing sinks → **inflation**: balances pile up, prices feel meaningless, no reason to earn or buy. Sinks outpacing sources → **deflation/starvation**: everything feels unaffordable, frustration and churn. Every LiveOps event adds faucets, so add event sinks and expiring event currencies. Watch median balances by level and design for hoarders.",
+          "example": "Late-game players sitting on huge stockpiles signal inflation; players stuck for a week at one upgrade signal starvation.",
+          "f2p": "Monitor balances, earn/spend ratios, sink usage and % of players stuck.",
+          "memory": "Flooded bathroom vs empty cold tub.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b47",
+          "hook": "Spreadsheet lesson: costs and income are designed together",
+          "body": "Hypothetical barn upgrades cost 500 → 1,000 → 2,000 → 4,000 → 8,000. With flat income of 700 coins/day, level 5 takes ~22 days (the last step alone ~11). If income grows 25% per level, the same costs take ~11 days. Doubling costs against flat income always builds a wall. Model archetypes (casual free, engaged free, light and heavy payers) and output time-to-milestone.",
+          "example": "Tools: spreadsheets for most work, Monte Carlo for randomness, Machinations for visual economy simulation.",
+          "f2p": "Build the spreadsheet for your main progression track before setting any price.",
+          "memory": "Double the cost, grow the income, or meet the wall.",
+          "tag": "example"
+        },
+        {
+          "id": "F2P1-b48",
+          "hook": "Price anchors and pack ladders",
+          "body": "Store price tiers ($0.99 … $99.99) and pack ladders where bigger packs give more gems per dollar. **Anchoring**: a big price on screen makes mid prices feel modest. **Decoy effect**: a weaker option makes the target look better. \"Most popular\"/\"Best value\" tags guide choice and must be true. Avoid pack sizes that never match item prices, fake \"800% value!\" claims and fake countdowns.",
+          "example": "Hypothetical ladder: $0.99 = 80 gems (~81/$) up to $99.99 = 14,000 gems (~140/$).",
+          "f2p": "Personalized offers can match players' interests; keep them transparent and never aimed at compulsive patterns.",
+          "memory": "The $99 pack sells the $10 pack.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b49",
+          "hook": "The first purchase is the hardest",
+          "body": "Converting a non-payer is the biggest psychological hurdle; repeat purchases come much easier. That's why games use a **starter pack** (one-time, very high value, low price, offered early) and **first-purchase bonuses** (e.g. double currency on the first buy of each pack). Show it after real fun and progress, not in minute one.",
+          "example": "A $1.99 starter pack with a hero, gems and a booster bundle appears after the player's first big win.",
+          "f2p": "Track first-purchase conversion and time-to-first-purchase as separate KPIs.",
+          "memory": "Break the seal gently.",
+          "tag": "f2p"
+        },
+        {
+          "id": "F2P1-b50",
+          "hook": "Time is a currency",
+          "body": "In timer games, every wait is a price and premium currency buys time back. Work out the **value of time** (soft currency earned per minute) to keep skip prices consistent. Many games make tiny skips cheap or free and charge less per minute for longer skips. Hypothetical: gems = minutes^0.75 → 1 hour ≈ 22 gems, 24 hours ≈ 234 gems. Builders/queues multiply time, so they're hugely valuable.",
+          "example": "Clash of Clans lets gems finish upgrades instantly, and extra builders let more upgrades run at once.",
+          "f2p": "Timers give patient players a free path and impatient players a paid one.",
+          "memory": "Patience is free; impatience has a price tag.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b51",
+          "hook": "Energy systems: pacing with a parking meter",
+          "body": "Parameters: cap, regen rate, cost per attempt (or only on failure, like lives), overflow rules, refill price. Pros: paces content, creates appointments, prevents burnout, monetization moments. Cons: stops players at peak fun. Modern softening: lives lost only on failure, unlimited-lives windows, energy gating rewards not play, ad or friend refills.",
+          "example": "Genshin Impact lets you explore freely; a regenerating resource limits claiming certain challenge rewards.",
+          "f2p": "Hypothetical: 5 lives, 1 per 30 min → full refill every 2.5 hours.",
+          "memory": "A parking meter on fun: price it gently.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b52",
+          "hook": "Gacha, pity and odds",
+          "body": "**Gacha/loot boxes** sell a random reward from a published pool. **Pity** guarantees a top result after a set number of misses, capping worst-case cost. Duplicates convert into upgrade materials so bad pulls still help. Major stores require odds disclosure for paid random items; some countries regulate or restrict paid loot boxes. Simulate the whole distribution, including unlucky players.",
+          "example": "Gacha RPGs pair limited banners with pity counters and shard conversion for duplicates.",
+          "f2p": "Your unluckiest 10% of players are real people: check what their experience costs.",
+          "memory": "Pity = a safety net under the slot machine.",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "Retention mechanics",
+      "bites": [
+        {
+          "id": "F2P1-b53",
+          "hook": "Daily rewards: consecutive vs cumulative",
+          "body": "Login calendars come in 7-day cycles (big day-7 prize) or monthly calendars. **Consecutive** calendars reset when you miss a day; **cumulative** ones just pause. Cumulative is kinder and still effective. Claiming should take two satisfying seconds, not a popup obstacle course.",
+          "example": "A 7-day calendar ending in a rare hero gives new players a reason to return all first week.",
+          "f2p": "Preview tomorrow's reward at the end of today's session: an easy D1 bridge.",
+          "memory": "Pause, don't punish.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b54",
+          "hook": "Streaks need a safety valve",
+          "body": "Streaks count consecutive days or wins. **Duolingo** made the daily streak famous and offers streak freezes so one missed day doesn't erase months. Many puzzle games use **win streaks** that grant starting boosters and reset on a fail. Without a freeze, grace day or repair, a streak turns from motivation into anxiety.",
+          "example": "A 200-day streak lost to a hospital visit is how you lose a loyal player forever.",
+          "f2p": "Ship the freeze in the same update as the streak.",
+          "memory": "Streak + freeze, like a car + brakes.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P1-b55",
+          "hook": "Appointments: reasons to return at a time",
+          "body": "**Timers** (crops ready, chest unlocked, energy full), **daily and weekly resets** (new quests, shop items, weekly chests, leaderboard payouts) and **scheduled events** (tournaments, clan war days, Pokémon GO's recurring Community Days) give players a specific reason to come back at a specific time.",
+          "example": "Hay Day's growing crops create natural \"check back in a few hours\" moments.",
+          "f2p": "Line up appointments with real-life rhythms (commute, lunch, evening), not 3 a.m.",
+          "memory": "Calendar, not alarm clock.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b56",
+          "hook": "Collections and people keep players for months",
+          "body": "**Collections** (albums, card sets, hero rosters) tap the urge to complete; duplicates plus trading add social play. **Social obligation**: clan wars, donations and co-op tasks mean teammates depend on you. **Reciprocity**: a gift makes you want to give back. People stay for people: social ties are among the strongest long-term retention drivers.",
+          "example": "Monopoly GO! sticker albums with friend trading; Clash Royale card donations in clans.",
+          "f2p": "Unlock social features before the first progression slowdown.",
+          "memory": "Stay for the game, stay longer for the friends.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b57",
+          "hook": "Push notifications done right",
+          "body": "Types: timer done, resource full, social, event, win-back. Rules: value first, personal and relevant, capped per day, quiet hours, easy per-category opt-outs, no guilt trips. iOS requires opt-in and Android (13+) asks at runtime, so ask after value with a pre-prompt.",
+          "example": "\"Your eggs are ready\" is information. \"Your animals are sad and hungry\" is manipulation.",
+          "f2p": "Notifications are the only retention tool that works while the game is closed: don't burn the permission.",
+          "memory": "Ping with a present, not a guilt trip.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P1-b58",
+          "hook": "Which mechanics drive D1, D7, D30, D90",
+          "body": "**D1**: core fun, FTUE, first win, an exit hook. **D7**: clear goals, unlock pacing, early meta, daily rewards/quests, first social tie. **D30**: meta depth, collections, clans, ladders, events. **D90+**: community, LiveOps cadence, endgame, identity and status.",
+          "example": "OK D1 but a collapse before D7 usually means the mid loop or first walls, not the tutorial.",
+          "f2p": "Diagnose the horizon first, then pick the mechanic.",
+          "memory": "1-7-30-90: fun, goals, depth, belonging.",
+          "tag": "f2p"
+        },
+        {
+          "id": "F2P1-b59",
+          "hook": "Burnout: when dailies become a job",
+          "body": "Too many dailies, timers and events turn play into chores. Players don't drift; they quit after months, often deleting the game to escape the obligation. Healthy design: a daily time budget (rough: core dailies in ~10–15 min), a clear \"done for today\" state, weekly goals for flexibility, auto-complete/sweep for mastered content, catch-up mechanics, breathing room between events.",
+          "example": "Many RPGs let players instantly re-clear stages they've already mastered.",
+          "f2p": "Design a \"day in the life\" of a committed player and total the minutes.",
+          "memory": "Seasoning, not the whole salt shaker.",
+          "tag": "warning"
+        },
+        {
+          "id": "F2P1-b60",
+          "hook": "Dark patterns borrow from the future",
+          "body": "Examples: streak wipes sold back, fake countdowns, confirmshaming, currency obfuscation, stacked loss offers, friction for sale, notification spam, friend spam, hidden odds, accidental purchases, targeting vulnerable spenders. Alternatives: freezes, honest timers, neutral buttons, clear prices, cooldowns, fun free paths, capped pings, opt-in sharing, published odds, confirmations, spending limits.",
+          "example": "The US FTC's 2022 settlement with Epic Games targeted purchase-flow dark patterns; EU authorities have published in-game currency transparency principles.",
+          "f2p": "Dark patterns lift today's metrics and spend tomorrow's trust, ratings and legal safety.",
+          "memory": "Short-term sugar, long-term toothache.",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "Player motivation models useful for F2P",
+      "bites": [
+        {
+          "id": "F2P1-b61",
+          "hook": "Bartle's four player types",
+          "body": "Richard Bartle (1996, from MUD players) mapped two axes, acting on vs interacting with, and players vs world: **Achievers** act on the world (levels, status), **Explorers** interact with the world (secrets, systems), **Socializers** interact with players (community), **Killers** act on players (domination, PvP). Handy shorthand; not a validated survey model, and real players are mixes.",
+          "example": "Leaderboards for Achievers, new event rules for Explorers, clans for Socializers, raids and PvP for Killers.",
+          "f2p": "Use Bartle as a quick checklist, not as audience research.",
+          "memory": "Four suits in a deck of cards.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b62",
+          "hook": "Quantic Foundry: 12 motivations, 6 pairs",
+          "body": "Survey-based model (Nick Yee and colleagues): **Action** (Destruction, Excitement), **Social** (Competition, Community), **Mastery** (Challenge, Strategy), **Achievement** (Completion, Power), **Immersion** (Fantasy, Story), **Creativity** (Design, Discovery). They group into three clusters: Action–Social, Mastery–Achievement, Immersion–Creativity. Their findings suggest motivations shift with age (competition tends to drop).",
+          "example": "Monopoly GO! albums serve Completion; Clash Royale ladders serve Competition; Homescapes decor serves Design.",
+          "f2p": "Take the free Gamer Motivation Profile yourself, then profile every game you tear down.",
+          "memory": "12 flavours on the ice-cream menu.",
+          "tag": "list"
+        },
+        {
+          "id": "F2P1-b63",
+          "hook": "Self-Determination Theory: the A-C-R vitamins",
+          "body": "Deci & Ryan: people thrive when three needs are met. **Autonomy** (meaningful choice: deck building, base layout, choosing goals), **Competence** (growing mastery: saw-tooth difficulty, visible progress, skill wins), **Relatedness** (connection: clans, co-op, gifting). Applied to games via **PENS** (Rigby & Ryan). Pressure offers starve autonomy; pay-to-win losses starve competence; toxic chat starves relatedness.",
+          "example": "A clan member donating cards after a well-played match hits all three needs at once.",
+          "f2p": "Check every feature against A-C-R: which need does it feed, and which might it starve?",
+          "memory": "A-C-R: the three vitamins of play.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b64",
+          "hook": "The overjustification trap",
+          "body": "**Intrinsic** motivation = playing because it's enjoyable; **extrinsic** = playing for a reward. The **overjustification effect**: heavy external rewards for an already-fun activity can reduce intrinsic interest (\"I only play for the chest now\"). Design rewards that inform (\"you got better!\") rather than control (\"do this or else\").",
+          "example": "A puzzle lover who starts grinding dailies purely for points may stop enjoying the puzzles themselves.",
+          "f2p": "If removing rewards would make players quit instantly, the core fun needs work.",
+          "memory": "Don't pay people to eat ice cream.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b65",
+          "hook": "MDA and Lazzaro's 4 keys",
+          "body": "**MDA** (Hunicke, LeBlanc, Zubek): Mechanics → Dynamics → Aesthetics; its 8 kinds of fun are Sensation, Fantasy, Narrative, Challenge, Fellowship, Discovery, Expression, Submission (relaxing pastime, huge in casual mobile). **Lazzaro's 4 Keys**: Hard Fun (mastery), Easy Fun (curiosity), Serious Fun (playing to change how you feel), People Fun (social).",
+          "example": "A cozy block puzzle at bedtime is Submission/Serious Fun, not Challenge.",
+          "f2p": "Many casual mobile players play to relax: don't drown them in competition.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "F2P1-b66",
+          "hook": "Octalysis: white hat vs black hat drives",
+          "body": "Yu-kai Chou's 8 core drives: Epic Meaning, Accomplishment, Creativity & Feedback, Ownership, Social Influence, Scarcity & Impatience, Unpredictability & Curiosity, Loss & Avoidance. **White hat** drives (meaning, accomplishment, creativity) feel empowering. **Black hat** drives (scarcity, unpredictability, loss) create urgency but feel bad when overused.",
+          "example": "Timers, gacha and streak loss are black hat; building and mastery are white hat.",
+          "f2p": "F2P leans black hat; balance with white hat or players feel manipulated.",
+          "memory": "White hat builds love, black hat builds pressure.",
+          "tag": "warning"
+        },
+        {
+          "id": "F2P1-b67",
+          "hook": "Design for 2–3 motivations, not everyone",
+          "body": "Pick a target audience and its top 2–3 motivations. Make the core loop serve #1, the meta serve #2 and #3, and cut or delay features that serve motivations your audience doesn't care about. This is the research-backed upgrade to L02's question \"what do gamers want?\".",
+          "example": "A cozy decorating puzzle: Design + Completion + relaxation. A PvP brawler: Competition + Excitement + Community.",
+          "f2p": "Everything for everyone = nothing for anyone.",
+          "memory": "Aim, don't spray.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "How to deconstruct a F2P game",
+      "bites": [
+        {
+          "id": "F2P1-b68",
+          "hook": "Teardowns: reverse-engineer a game every week",
+          "body": "A **teardown** is a structured play-and-analyse session where you map a game's loops, progression, economy, monetization and retention, and write down why the designers made each choice. One serious teardown a week teaches more than a stack of articles, and sharp teardowns double as portfolio pieces.",
+          "example": "Good subjects: Royal Match, Clash Royale, Hay Day, Survivor.io, Monopoly GO!, Marvel Snap.",
+          "f2p": "Date every teardown: live games change weekly.",
+          "memory": "Be a mechanic, not a driver.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P1-b69",
+          "hook": "The 14-step teardown",
+          "body": "1 store promise · 2 timestamped FTUE log · 3 core loop diagram · 4 mid & meta loops · 5 session design · 6 progression inventory · 7 difficulty chart · 8 economy map (sources/sinks, exchange rates) · 9 monetization (packs, starter pack, pass, offer triggers, ads, odds) · 10 retention & LiveOps (notification log) · 11 social · 12 UX/feel · 13 motivation profile · 14 synthesis.",
+          "example": "Day 1 covers steps 1–3 with a screen recording; days 2–6 fill the rest; day 7 synthesizes.",
+          "f2p": "Use the template in the notes and fill every section.",
+          "memory": "Store, start, loop, meta, money, motive, verdict.",
+          "tag": "list"
+        },
+        {
+          "id": "F2P1-b70",
+          "hook": "Hypotheses: they do X to move Y because Z",
+          "body": "Observations are cheap; hypotheses are where learning happens. Write each insight as \"They do X → to move KPI Y → because Z.\" Then compare games (\"Game A teaches boosters faster than Game B\") instead of just describing them.",
+          "example": "\"They unlock clans at level 6 → to lift D7 → because social ties arrive just before the first slowdown.\"",
+          "f2p": "Five good hypotheses beat fifty screenshots.",
+          "memory": "X → Y because Z.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P1-b71",
+          "hook": "The weekly ritual",
+          "body": "**Day 1** (45–60 min): store page, fresh install, recorded FTUE, FTUE log, first loop sketch. **Days 2–6** (10–20 min/day): play normally, log notifications, offers, events and walls. **Day 7** (60–90 min): finish the template, clean diagrams, synthesis. Optional: post a summary publicly. Play free first; one small purchase only if budget allows.",
+          "example": "A week of Hay Day reveals timers, trading and the first slowdown that a one-hour session never shows.",
+          "f2p": "Read around the game: patch notes, community forums, GDC talks, Deconstructor of Fun, Mobile Dev Memo, Naavik.",
+          "memory": "One game, one week, one write-up.",
+          "tag": "f2p"
+        },
+        {
+          "id": "F2P1-b72",
+          "hook": "Teardown biases to dodge",
+          "body": "You're probably not the target audience. Survivorship bias: study a flop sometimes. You see one A/B variant and one region. Third-party download/revenue numbers (Sensor Tower, AppMagic) are estimates. A teardown is a snapshot of a live game.",
+          "example": "A designer finds dailies tedious that the target player finds cozy and relaxing.",
+          "f2p": "Label estimates as estimates and date your observations.",
+          "memory": "Your phone is not the market.",
+          "tag": "warning"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "Fun first, money second: you can only monetize players who stay, and they only stay for fun.",
+    "LTV > CPI or bust: a player must be worth more than they cost to acquire.",
+    "Retention is a multiplier: R × E × M, and zero retention makes everything zero.",
+    "Non-payers are content, crowd and marketing: design a great free game, not a demo.",
+    "Every feature serves a funnel stage and should move a KPI you can name.",
+    "A core loop must change as it repeats; investment should make the next round feel different.",
+    "Every reward needs a home: each faucet needs a sink players actually want.",
+    "Time is a currency: timers are prices, skips are purchases, builders are multipliers.",
+    "Costs and income are designed together; doubling costs against flat income always builds a wall.",
+    "Difficulty is a saw-tooth, not a ramp: tension, spike, relief, repeat, trending upward.",
+    "Fun in 1, loop in 5, hook by 15: the FTUE is where most players are won or lost.",
+    "Build the FTUE last and rebuild it often (L09): it's the highest-traffic feature you own.",
+    "Every retention mechanic needs a safety valve: streak → freeze, notification → cap, dailies → time budget.",
+    "Design for specific motivations; everything for everyone is nothing for anyone.",
+    "Numbers say what, playtests say why: use both eyes.",
+    "Dark patterns borrow from the future: they lift today's metrics and spend tomorrow's trust.",
+    "Study a game a week: teardowns are the fastest way to grow as a F2P designer."
+  ],
+  "mnemonics": [
+    {
+      "name": "R × E × M",
+      "device": "R × E × M = LTV",
+      "unpacks": "Retention × Engagement × Monetization. A multiplication: zero retention makes the best shop worthless."
+    },
+    {
+      "name": "1-5-15",
+      "device": "Fun in 1, loop in 5, hook by 15",
+      "unpacks": "Fun in the first minute, one full core loop within ~5 minutes, an exit hook by the end of the first session (~15 min)."
+    },
+    {
+      "name": "Hamster wheel",
+      "device": "Core loop = the wheel; meta loop = the reason the hamster cares; the timer = why it checks its phone",
+      "unpacks": "Core loop (repeated action), meta loop (long-term meaning), session hook (reason to return)."
+    },
+    {
+      "name": "The bathtub",
+      "device": "Faucets fill, drains empty: keep the water warm and rising slowly",
+      "unpacks": "Sources vs sinks. Too many faucets = inflation (flood); too many drains = starvation (cold empty tub)."
+    },
+    {
+      "name": "Gym-session saw-tooth",
+      "device": "Warm up, heavy set, rest, heavier set",
+      "unpacks": "Saw-tooth difficulty: ramp, spike (hard level/boss), breather, repeat with an upward trend."
+    },
+    {
+      "name": "A-C-R vitamins",
+      "device": "A-C-R: the three vitamins of play",
+      "unpacks": "Self-Determination Theory: Autonomy (choice), Competence (mastery), Relatedness (connection)."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "F2P1-f01",
+      "q": "What does F2P mean, and where does its money come from?",
+      "a": "Free-to-play: free to download and play; revenue comes from optional in-app purchases and/or ads.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f02",
+      "q": "What is a consumable IAP?",
+      "a": "A purchase that gets used up: gems, boosters, extra moves, energy refills.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f03",
+      "q": "What is a durable (non-consumable) IAP?",
+      "a": "A purchase you keep forever: a hero, a skin, \"remove ads\", a permanent extra builder.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f04",
+      "q": "What is a rewarded video ad?",
+      "a": "An opt-in ad the player chooses to watch in exchange for a reward (revive, double coins, free chest).",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f05",
+      "q": "What is an interstitial ad?",
+      "a": "A full-screen ad shown between levels or sessions that the player didn't opt into.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f06",
+      "q": "What does AARRR (\"pirate metrics\") stand for?",
+      "a": "Acquisition, Activation, Retention, Referral, Revenue.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f07",
+      "q": "What is a soft launch?",
+      "a": "A quiet release in a few test countries to measure retention and monetization before global launch.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f08",
+      "q": "How is stickiness calculated?",
+      "a": "DAU ÷ MAU.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f09",
+      "q": "What is a cohort?",
+      "a": "A group of players analysed together, usually everyone who installed on the same day.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f10",
+      "q": "What does D7 retention measure?",
+      "a": "The % of an install cohort who play on day 7 after installing.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f11",
+      "q": "Classic vs rolling retention?",
+      "a": "Classic: active exactly on day N. Rolling: active on day N or any later day (always higher).",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f12",
+      "q": "What is ARPDAU?",
+      "a": "Average revenue per daily active user = daily revenue ÷ DAU.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f13",
+      "q": "What is ARPPU?",
+      "a": "Average revenue per paying user = revenue ÷ number of payers.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f14",
+      "q": "What is (payer) conversion?",
+      "a": "The % of players who make at least one purchase.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f15",
+      "q": "What is eCPM?",
+      "a": "Effective ad revenue per 1,000 ad impressions.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f16",
+      "q": "What is ROAS?",
+      "a": "Return on ad spend: a cohort's revenue ÷ the UA money spent to acquire it.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f17",
+      "q": "What is the payback period?",
+      "a": "The number of days until a cohort's revenue covers its acquisition cost (ROAS = 100%).",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f18",
+      "q": "What is the K-factor?",
+      "a": "How many new players each player brings in; above 1 means self-sustaining viral growth.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f19",
+      "q": "What is a churn point?",
+      "a": "A specific place where many players quit, such as a tutorial step or a particular level.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f20",
+      "q": "What is Goodhart's law?",
+      "a": "When a measure becomes a target, it stops being a good measure.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f21",
+      "q": "What are the four steps of a core loop diagram?",
+      "a": "Action → Reward → Invest → New power / new challenge → back to Action.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f22",
+      "q": "Name the three loop layers and their timescales.",
+      "a": "Core (seconds–minutes), mid/daily (a session to a day), meta (days–months); LiveOps sits on top.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f23",
+      "q": "What are the four steps of Nir Eyal's Hook model?",
+      "a": "Trigger → action → variable reward → investment.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f24",
+      "q": "What are the four parts of the session arc?",
+      "a": "Arrive & collect → core play → invest & set up → exit hook.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f25",
+      "q": "What is the Zeigarnik effect?",
+      "a": "People remember unfinished tasks better than finished ones, so open loops pull players back.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f26",
+      "q": "What does FTUE stand for?",
+      "a": "First-Time User Experience.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f27",
+      "q": "What is progressive disclosure?",
+      "a": "Hiding UI and features until they unlock, so early screens stay simple.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f28",
+      "q": "Vertical vs horizontal progression?",
+      "a": "Vertical = more power (stats). Horizontal = more options (new heroes, cards, strategies).",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f29",
+      "q": "What is power creep?",
+      "a": "New content that is stronger than old content, making earlier items obsolete.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f30",
+      "q": "What is the goal-gradient effect?",
+      "a": "Motivation increases as a goal gets closer.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f31",
+      "q": "What is the flow channel?",
+      "a": "The zone where challenge matches skill: too hard causes anxiety, too easy causes boredom (Csikszentmihalyi).",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f32",
+      "q": "What is saw-tooth difficulty?",
+      "a": "Difficulty ramps to a spike, drops to a breather, then climbs again, with an overall upward trend.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f33",
+      "q": "What are faucets and drains?",
+      "a": "Faucets (sources) add currency to the economy; drains (sinks) remove it.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f34",
+      "q": "Name the six sink families.",
+      "a": "Progression, consumable, convenience/time, chance, cosmetic/luxury, social.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f35",
+      "q": "What is a starter pack?",
+      "a": "A one-time, very high-value, low-price offer shown early to turn non-payers into payers.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f36",
+      "q": "What is a pity system?",
+      "a": "A guarantee of a top-rarity reward after a set number of pulls without one.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f37",
+      "q": "Name five energy-system parameters.",
+      "a": "Cap, regen rate, cost per attempt, overflow rules, refill price.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f38",
+      "q": "Name Bartle's four player types.",
+      "a": "Achievers, Explorers, Socializers, Killers.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f39",
+      "q": "Name Quantic Foundry's six motivation groups.",
+      "a": "Action, Social, Mastery, Achievement, Immersion, Creativity.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f40",
+      "q": "What does MDA stand for?",
+      "a": "Mechanics, Dynamics, Aesthetics (Hunicke, LeBlanc & Zubek).",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f41",
+      "q": "What is confirmshaming?",
+      "a": "Wording a decline button to shame the player, e.g. \"No thanks, I like losing\".",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f42",
+      "q": "What does DDA mean?",
+      "a": "Dynamic difficulty adjustment: quietly tuning difficulty to the player, e.g. easing a level after repeated fails.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f43",
+      "q": "How do you calculate playtime per day?",
+      "a": "Session length × sessions per day.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P1-f44",
+      "q": "Why are non-paying players valuable?",
+      "a": "They are opponents/clanmates (liquidity), spread the game, watch ads, and may pay later.",
+      "type": "why"
+    },
+    {
+      "id": "F2P1-f45",
+      "q": "Why fix retention before monetization?",
+      "a": "LTV multiplies retention × engagement × monetization: players who left can't pay.",
+      "type": "why"
+    },
+    {
+      "id": "F2P1-f46",
+      "q": "Why should KPIs be read by cohort?",
+      "a": "Blended averages mix countries, platforms and traffic sources and hide real changes.",
+      "type": "why"
+    },
+    {
+      "id": "F2P1-f47",
+      "q": "Why do many designers avoid the term \"compulsion loop\"?",
+      "a": "It implies manipulating players; \"core loop\" is the neutral term.",
+      "type": "why"
+    },
+    {
+      "id": "F2P1-f48",
+      "q": "Why must a core loop change as it repeats?",
+      "a": "If the investment doesn't make the next round feel different, the loop becomes a grind.",
+      "type": "why"
+    },
+    {
+      "id": "F2P1-f49",
+      "q": "Why build the FTUE last and then rebuild it often?",
+      "a": "You only know what to teach at the end, and every player passes through it, so it's the highest-leverage feature.",
+      "type": "why"
+    },
+    {
+      "id": "F2P1-f50",
+      "q": "Why ask for notification permission after showing value?",
+      "a": "Players accept when they understand the benefit, and an early \"no\" is hard to undo.",
+      "type": "why"
+    },
+    {
+      "id": "F2P1-f51",
+      "q": "Why does saw-tooth difficulty work?",
+      "a": "Spikes test mastery, breathers give relief and a feeling of power, and the rhythm adds variety.",
+      "type": "why"
+    },
+    {
+      "id": "F2P1-f52",
+      "q": "Why can exponential XP curves create accidental walls?",
+      "a": "They look gentle early, then explode late, overtaking polynomial curves.",
+      "type": "why"
+    },
+    {
+      "id": "F2P1-f53",
+      "q": "Why use separate soft and hard currencies?",
+      "a": "Hard currency abstracts real money into one price list, gives free players a taste of premium, and simplifies pricing.",
+      "type": "why"
+    },
+    {
+      "id": "F2P1-f54",
+      "q": "Why do games care so much about the first purchase?",
+      "a": "It's the biggest psychological hurdle; repeat purchases come much more easily afterwards.",
+      "type": "why"
+    },
+    {
+      "id": "F2P1-f55",
+      "q": "Why do energy systems exist?",
+      "a": "To pace content consumption, create return appointments, prevent burnout, and create monetization moments.",
+      "type": "why"
+    },
+    {
+      "id": "F2P1-f56",
+      "q": "Why do streaks need a freeze or grace day?",
+      "a": "Without one, a single missed day punishes real life, creates anxiety and can drive loyal players away.",
+      "type": "why"
+    },
+    {
+      "id": "F2P1-f57",
+      "q": "Why are social features strong for long-term retention?",
+      "a": "Obligation and reciprocity: teammates depend on you, and people stay for people.",
+      "type": "why"
+    },
+    {
+      "id": "F2P1-f58",
+      "q": "Why can heavy extrinsic rewards backfire?",
+      "a": "The overjustification effect: they can crowd out intrinsic enjoyment of the activity.",
+      "type": "why"
+    },
+    {
+      "id": "F2P1-f59",
+      "q": "Why are dark patterns bad business, not just bad ethics?",
+      "a": "They lift short-term metrics but cost trust, ratings, high-value players and invite regulation.",
+      "type": "why"
+    },
+    {
+      "id": "F2P1-f60",
+      "q": "Why do bigger currency packs give more gems per dollar?",
+      "a": "To reward larger purchases and make them look like better value (anchoring).",
+      "type": "why"
+    },
+    {
+      "id": "F2P1-f61",
+      "q": "Your D1 retention is 22%. Where do you look first?",
+      "a": "The FTUE and core fun of the first session (tutorial funnel, time to fun, first win, exit hook).",
+      "type": "apply"
+    },
+    {
+      "id": "F2P1-f62",
+      "q": "D1 is healthy, but many players quit at level 12. What do you check?",
+      "a": "The level funnel/churn point: likely a difficulty spike or confusing mechanic at level 12; retune it.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P1-f63",
+      "q": "After adding an interstitial after every level, ARPDAU rose but D30 fell. Which principle?",
+      "a": "Goodhart's law: optimizing one metric hurt retention, the bigger multiplier.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P1-f64",
+      "q": "Late-game players hold millions of unused coins. Problem and fix?",
+      "a": "Inflation: add desirable sinks (cosmetics, new upgrades, event sinks) or reduce faucets.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P1-f65",
+      "q": "Players are stuck 10 days at one upgrade. Problem and fixes?",
+      "a": "Starvation/wall: grow income with progress, flatten the cost curve, or add alternative goals.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P1-f66",
+      "q": "A PvP game sells max-level cards; free players quit and matchmaking slows. Which principle?",
+      "a": "Pay-to-win kills liquidity: non-payers are the content payers need.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P1-f67",
+      "q": "Your game asks for login, notifications and a rating in the first 30 seconds. Fix?",
+      "a": "Play first, admin later: show value first, then ask with a friendly pre-prompt.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P1-f68",
+      "q": "You want new players back tomorrow. Which FTUE element do you add?",
+      "a": "An exit hook / D0→D1 bridge: a running timer, a daily reward preview, a feature unlocking tomorrow.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P1-f69",
+      "q": "You're designing a cozy decorating puzzle. Which Quantic Foundry motivations should lead?",
+      "a": "Design and Completion (with Story/relaxation as support).",
+      "type": "apply"
+    },
+    {
+      "id": "F2P1-f70",
+      "q": "Long-time players say dailies feel like a job and quit. Which problem and which fixes?",
+      "a": "Burnout: set a daily time budget, add \"done for today\", sweep/auto-complete, weekly goals, catch-up.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P1-f71",
+      "q": "Upgrade costs double each level but income is flat. What will players feel?",
+      "a": "A growing wall: each step takes twice as long as the last.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P1-f72",
+      "q": "You want PvP progression without pay-to-win. Which approach?",
+      "a": "Horizontal progression: new options/cards, cosmetic upgrades, or modes with normalized levels.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P1-f73",
+      "q": "Rewrite the push \"Your animals are sad and hungry!\" ethically.",
+      "a": "Make it informational, e.g. \"Your eggs are ready to collect.\"",
+      "type": "apply"
+    },
+    {
+      "id": "F2P1-f74",
+      "q": "LTV is $0.90 and CPI is $1.50. Name three levers.",
+      "a": "Raise retention (more days), raise ARPDAU, lower CPI (better hook, store page, virality).",
+      "type": "apply"
+    },
+    {
+      "id": "F2P1-f75",
+      "q": "Every feature unlocks on day 0 and new players feel overwhelmed. Fix?",
+      "a": "Feature drip: unlock systems progressively across the first week.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P1-f76",
+      "q": "A hard level seems near-impossible without boosters. What's the ethical test?",
+      "a": "Can a skilled free player beat it with a few retries? If not, it's a dark pattern.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P1-f77",
+      "q": "In a teardown you notice clans unlock at level 6. How do you record it?",
+      "a": "As a hypothesis: \"They do X → to move KPI Y → because Z\" (e.g. to lift D7 via social ties).",
+      "type": "apply"
+    },
+    {
+      "id": "F2P1-f78",
+      "q": "LTV ≈ ARPDAU × ____",
+      "a": "average lifetime active days",
+      "type": "cloze"
+    },
+    {
+      "id": "F2P1-f79",
+      "q": "Stickiness = ____ ÷ MAU",
+      "a": "DAU",
+      "type": "cloze"
+    },
+    {
+      "id": "F2P1-f80",
+      "q": "FTUE rule of thumb: fun in 1, loop in 5, hook by ____",
+      "a": "15 (minutes)",
+      "type": "cloze"
+    },
+    {
+      "id": "F2P1-f81",
+      "q": "The old healthy-casual retention shorthand (D1/D7/D30) is ____",
+      "a": "40/20/10",
+      "type": "cloze"
+    },
+    {
+      "id": "F2P1-f82",
+      "q": "Every faucet needs a matching ____ players actually want",
+      "a": "drain (sink)",
+      "type": "cloze"
+    },
+    {
+      "id": "F2P1-f83",
+      "q": "Ad ARPDAU ≈ ad impressions per DAU × ____ ÷ 1000",
+      "a": "eCPM",
+      "type": "cloze"
+    },
+    {
+      "id": "F2P1-f84",
+      "q": "SDT's three needs: autonomy, competence and ____",
+      "a": "relatedness",
+      "type": "cloze"
+    },
+    {
+      "id": "F2P1-f85",
+      "q": "A ____ system guarantees a top reward after a set number of misses",
+      "a": "pity",
+      "type": "cloze"
+    },
+    {
+      "id": "F2P1-f86",
+      "q": "A game grows profitably only when ____ > CPI",
+      "a": "LTV",
+      "type": "cloze"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "F2P1-q01",
+      "q": "Which inequality decides whether paid user acquisition is profitable?",
+      "options": [
+        "LTV > CPI",
+        "DAU > MAU",
+        "ARPPU > ARPDAU",
+        "D7 > D1"
+      ],
+      "answer": 0,
+      "why": "Growth pays only when a player's lifetime value beats the cost to acquire them. DAU can never exceed MAU, and the others compare unrelated metrics."
+    },
+    {
+      "id": "F2P1-q02",
+      "q": "Your game's D1 retention is 24%. What should you focus on first?",
+      "options": [
+        "Endgame raid content",
+        "The FTUE and first session",
+        "Repricing the biggest gem pack",
+        "Clan war rewards"
+      ],
+      "answer": 1,
+      "why": "Weak D1 points at the first session: time to fun, first win, exit hook. Endgame and clan content only matter to players who stay."
+    },
+    {
+      "id": "F2P1-q03",
+      "q": "DAU is 200,000 and MAU is 1,000,000. What is stickiness?",
+      "options": [
+        "2%",
+        "5%",
+        "20%",
+        "50%"
+      ],
+      "answer": 2,
+      "why": "Stickiness = DAU ÷ MAU = 200,000 ÷ 1,000,000 = 20%, which is strong by rough rules of thumb."
+    },
+    {
+      "id": "F2P1-q04",
+      "q": "Which statement about retention definitions is true?",
+      "options": [
+        "Rolling retention is always lower than classic",
+        "Both definitions always give the same number",
+        "Rolling retention only counts payers",
+        "Classic retention counts players active exactly on day N"
+      ],
+      "answer": 3,
+      "why": "Classic = active on exactly day N; rolling = day N or later, so rolling is always higher. Never compare across definitions."
+    },
+    {
+      "id": "F2P1-q05",
+      "q": "How is ARPDAU calculated?",
+      "options": [
+        "Revenue ÷ paying users",
+        "Revenue ÷ monthly users",
+        "Daily revenue ÷ daily active users",
+        "UA spend ÷ installs"
+      ],
+      "answer": 2,
+      "why": "ARPDAU = daily revenue ÷ DAU. Revenue ÷ payers is ARPPU; UA spend ÷ installs is CPI."
+    },
+    {
+      "id": "F2P1-q06",
+      "q": "Which is NOT a reason non-paying players matter?",
+      "options": [
+        "They remove the need for currency sinks",
+        "They provide matchmaking liquidity",
+        "They spread the game by word of mouth",
+        "They generate ad revenue"
+      ],
+      "answer": 0,
+      "why": "Non-payers are opponents, marketing, ad viewers and future payers. Sinks are an economy need for everyone, unrelated to non-payers."
+    },
+    {
+      "id": "F2P1-q07",
+      "q": "D1 is fine, but your level funnel shows a big drop at level 12. Best first move?",
+      "options": [
+        "Add more daily login rewards",
+        "Investigate level 12 as a churn point and retune it",
+        "Raise gem prices",
+        "Send more push notifications"
+      ],
+      "answer": 1,
+      "why": "A sharp drop at one level is a churn point, often a difficulty spike or confusing mechanic. Rewards and pings don't fix a broken level."
+    },
+    {
+      "id": "F2P1-q08",
+      "q": "What is the correct order of a core loop?",
+      "options": [
+        "Action → Reward → Invest → New challenge",
+        "Reward → Action → Purchase → Ad",
+        "Invest → Ad → Action → Reward",
+        "Tutorial → Store → Reward → Action"
+      ],
+      "answer": 0,
+      "why": "Players act, get rewarded, invest the reward, and face a changed challenge. Ads and stores may sit around the loop, not inside its logic."
+    },
+    {
+      "id": "F2P1-q09",
+      "q": "What timescale is the mid (session/daily) loop?",
+      "options": [
+        "Seconds",
+        "Months",
+        "One session to one day",
+        "A full season"
+      ],
+      "answer": 2,
+      "why": "Core = seconds–minutes, mid = a session to a day, meta = days–months; seasons belong to the LiveOps layer."
+    },
+    {
+      "id": "F2P1-q10",
+      "q": "In Survivor.io, what does the in-run loop mainly provide?",
+      "options": [
+        "Permanent gear progression",
+        "Clan social obligation",
+        "A daily login calendar",
+        "Fresh roguelite skill choices every run"
+      ],
+      "answer": 3,
+      "why": "In-run level-ups offer skill choices that make each run different; permanent gear is the out-of-run loop."
+    },
+    {
+      "id": "F2P1-q11",
+      "q": "Why do many designers avoid the term \"compulsion loop\"?",
+      "options": [
+        "It is too technical for producers",
+        "It implies manipulating players",
+        "It only applies to console games",
+        "It refers only to ads"
+      ],
+      "answer": 1,
+      "why": "\"Compulsion\" suggests exploiting players; \"core loop\" describes the same structure neutrally."
+    },
+    {
+      "id": "F2P1-q12",
+      "q": "In \"fun in 1, loop in 5, hook by 15\", what should exist by about minute 15?",
+      "options": [
+        "A purchase",
+        "A login",
+        "An exit hook that gives a reason to return",
+        "A clan invitation"
+      ],
+      "answer": 2,
+      "why": "By the end of the first session the player should leave with something pending: a timer, a chest, a feature unlocking."
+    },
+    {
+      "id": "F2P1-q13",
+      "q": "How does L09's \"leave the training level for last\" translate to F2P?",
+      "options": [
+        "Never build a tutorial",
+        "Build it once at the very end and never touch it",
+        "Copy a competitor's tutorial",
+        "Stub it early, then rebuild it several times, including after soft launch"
+      ],
+      "answer": 3,
+      "why": "You learn what to teach as the game matures, and FTUE data from soft launch drives repeated rebuilds of the highest-traffic feature."
+    },
+    {
+      "id": "F2P1-q14",
+      "q": "When is the best moment to ask for notification permission?",
+      "options": [
+        "After the player has seen value, with a friendly pre-prompt",
+        "On the very first screen",
+        "Before the tutorial starts",
+        "Only after the player's first purchase"
+      ],
+      "answer": 0,
+      "why": "Asking after value (and explaining the benefit) wins more opt-ins; an early \"no\" is hard to undo."
+    },
+    {
+      "id": "F2P1-q15",
+      "q": "Marvel Snap's cosmetic card upgrades that raise Collection Level (unlocking new cards) are an example of…",
+      "options": [
+        "Vertical progression",
+        "Pay-to-win",
+        "Horizontal progression",
+        "An energy system"
+      ],
+      "answer": 2,
+      "why": "Progress brings new options (cards), not stronger copies: textbook horizontal progression."
+    },
+    {
+      "id": "F2P1-q16",
+      "q": "Compared with a polynomial XP curve, an exponential one typically…",
+      "options": [
+        "Is steeper early and flatter late",
+        "Is identical at every level",
+        "Never grows",
+        "Looks gentle early and explodes late"
+      ],
+      "answer": 3,
+      "why": "Exponential growth starts slow then overtakes polynomial curves, which can create unintended late walls."
+    },
+    {
+      "id": "F2P1-q17",
+      "q": "Which describes saw-tooth difficulty?",
+      "options": [
+        "Ramp up to a spike, drop to a breather, repeat with an upward trend",
+        "A straight line that rises every level",
+        "Random difficulty every level",
+        "Flat difficulty with occasional rewards"
+      ],
+      "answer": 0,
+      "why": "The teeth give mastery tests and relief in rhythm while the overall trend still climbs."
+    },
+    {
+      "id": "F2P1-q18",
+      "q": "Upgrade costs double each level while income stays flat. What happens?",
+      "options": [
+        "Progress speeds up",
+        "Each step takes about twice as long, building a wall",
+        "Inflation",
+        "Nothing changes"
+      ],
+      "answer": 1,
+      "why": "Doubling costs against flat income doubles time-to-afford every step. Design costs and income together."
+    },
+    {
+      "id": "F2P1-q19",
+      "q": "Late-game players are sitting on huge coin stockpiles. Diagnosis and fix?",
+      "options": [
+        "Starvation; add more faucets",
+        "Healthy economy; do nothing",
+        "Inflation; add desirable sinks",
+        "Low CPI; raise ad spend"
+      ],
+      "answer": 2,
+      "why": "Balances piling up mean sources outpace sinks. Add sinks players want (cosmetics, new upgrades, event sinks)."
+    },
+    {
+      "id": "F2P1-q20",
+      "q": "Why do games offer a one-time starter pack early?",
+      "options": [
+        "To replace the main store",
+        "To punish non-payers",
+        "To raise CPI",
+        "Because the first purchase is the hardest hurdle"
+      ],
+      "answer": 3,
+      "why": "Once a player has paid once, repeat purchases are far easier; a high-value starter pack lowers that first barrier."
+    },
+    {
+      "id": "F2P1-q21",
+      "q": "How is time-skip pricing commonly shaped?",
+      "options": [
+        "Very short skips cheap or free, lower per-minute price for long skips",
+        "Exactly linear per minute",
+        "Long skips cost more per minute than short ones",
+        "Random prices"
+      ],
+      "answer": 0,
+      "why": "Many games use a concave curve so small skips feel trivial and long skips aren't absurdly expensive."
+    },
+    {
+      "id": "F2P1-q22",
+      "q": "Which is a modern way to soften an energy system?",
+      "options": [
+        "Doubling the energy cost of each level",
+        "Lives are lost only when you fail",
+        "Removing all refills",
+        "Charging energy to open menus"
+      ],
+      "answer": 1,
+      "why": "Losing lives only on failure (or unlimited-lives windows, energy gating rewards not play) keeps pacing without punishing winners."
+    },
+    {
+      "id": "F2P1-q23",
+      "q": "What is the main purpose of a gacha pity system?",
+      "options": [
+        "To hide the odds",
+        "To increase duplicate rates",
+        "To cap the worst-case cost of chasing a top reward",
+        "To remove the need for odds disclosure"
+      ],
+      "answer": 2,
+      "why": "Pity guarantees a top result after N misses, limiting how unlucky a player can be. Stores still require odds disclosure."
+    },
+    {
+      "id": "F2P1-q24",
+      "q": "How does a cumulative login calendar differ from a consecutive one?",
+      "options": [
+        "It resets after a missed day",
+        "It only works for payers",
+        "It gives no rewards",
+        "Missing a day just pauses progress instead of resetting"
+      ],
+      "answer": 3,
+      "why": "Cumulative calendars count every login, which is kinder and still builds habits."
+    },
+    {
+      "id": "F2P1-q25",
+      "q": "Which is the healthier alternative to wiping a streak after one missed day?",
+      "options": [
+        "Free streak freezes or grace days",
+        "Selling the streak back at a premium",
+        "Hiding the streak counter",
+        "Sending guilt-trip notifications"
+      ],
+      "answer": 0,
+      "why": "A freeze keeps the streak motivating instead of anxiety-inducing. Selling it back is a classic dark pattern."
+    },
+    {
+      "id": "F2P1-q26",
+      "q": "In Bartle's model, Explorers are players who…",
+      "options": [
+        "Act on other players",
+        "Interact with the world",
+        "Interact with other players",
+        "Act on the world"
+      ],
+      "answer": 1,
+      "why": "Explorers interact with the world (discover systems and secrets). Killers act on players, Socializers interact with players, Achievers act on the world."
+    },
+    {
+      "id": "F2P1-q27",
+      "q": "In Quantic Foundry's model, Completion belongs to which group?",
+      "options": [
+        "Immersion",
+        "Social",
+        "Achievement",
+        "Action"
+      ],
+      "answer": 2,
+      "why": "Achievement = Completion + Power. Immersion = Fantasy + Story; Social = Competition + Community; Action = Destruction + Excitement."
+    },
+    {
+      "id": "F2P1-q28",
+      "q": "Losing PvP matches to players who simply paid more mainly starves which SDT need?",
+      "options": [
+        "Relatedness",
+        "Autonomy",
+        "Narrative",
+        "Competence"
+      ],
+      "answer": 3,
+      "why": "Competence is the feeling of effectiveness and mastery; pay-to-win losses tell players their skill doesn't matter."
+    },
+    {
+      "id": "F2P1-q29",
+      "q": "What does the overjustification effect warn about?",
+      "options": [
+        "Heavy external rewards can reduce intrinsic enjoyment",
+        "Too few rewards always cause churn",
+        "Players ignore all rewards",
+        "Rewards only work for payers"
+      ],
+      "answer": 0,
+      "why": "Over-rewarding an already-fun activity shifts motivation to the reward (\"I only play for the chest\")."
+    },
+    {
+      "id": "F2P1-q30",
+      "q": "Which is the best way to record an insight in a teardown?",
+      "options": [
+        "\"The game has clans.\"",
+        "\"They do X → to move KPI Y → because Z.\"",
+        "A screenshot with no notes",
+        "The game's estimated revenue"
+      ],
+      "answer": 1,
+      "why": "Hypotheses connect what you see to why designers did it. Observations and estimates alone teach little."
+    }
+  ],
+  "sideQuests": [
+    {
+      "id": "F2P1-s01",
+      "title": "Loop Trio",
+      "task": "Draw the core loop of 3 games you've played (one casual, one midcore, one hybrid-casual) as 4-box diagrams (Action → Reward → Invest → New challenge), each with a one-sentence summary.",
+      "minutes": 15,
+      "xp": 50
+    },
+    {
+      "id": "F2P1-s02",
+      "title": "Napkin LTV",
+      "task": "A game has ARPDAU $0.20, its average player is active 7 days in their lifetime, and CPI is $1.20. Is it profitable? Then list 3 design changes that would widen the margin. (LTV ≈ $1.40: thin but positive.)",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "F2P1-s03",
+      "title": "Notification Audit",
+      "task": "Check your phone's recent game notifications. Classify each as timer, social, event, win-back or guilt-trip. Which would you keep, rewrite or kill?",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "F2P1-s04",
+      "title": "Tier List",
+      "task": "Sort 6 games on your phone into hyper-casual / hybrid-casual / casual / midcore / hardcore and note each one's main revenue model (ads, IAP, hybrid).",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "F2P1-s05",
+      "title": "Sixty-Second Storyboard",
+      "task": "Storyboard the first 60 seconds of an imaginary F2P game in 6 panels: no login wall, show the fantasy, a juicy first action, a first win.",
+      "minutes": 15,
+      "xp": 50
+    },
+    {
+      "id": "F2P1-s06",
+      "title": "Faucets & Drains",
+      "task": "For one game you play, list every way you earn its soft currency and every way you spend it. Is anything piling up in your wallet? What does that suggest about its economy?",
+      "minutes": 10,
+      "xp": 40
+    },
+    {
+      "id": "F2P1-s07",
+      "title": "Know Thyself",
+      "task": "Take Quantic Foundry's free Gamer Motivation Profile online. Write your top 3 motivations, one F2P game that fits them, and one that doesn't (and why).",
+      "minutes": 15,
+      "xp": 40
+    },
+    {
+      "id": "F2P1-s08",
+      "title": "Saw-Tooth Hunt",
+      "task": "Play 15 levels of a puzzle game, rating each level's difficulty 1–5 (attempts + feeling). Sketch the curve. Do you see ramps, spikes and breathers?",
+      "minutes": 15,
+      "xp": 60
+    }
+  ],
+  "mainQuests": [
+    {
+      "id": "F2P1-m01",
+      "title": "The Full Teardown (7 days)",
+      "task": "Pick a F2P game you've never played (e.g. Royal Match, Hay Day, Survivor.io, Marvel Snap). Follow the 14-step teardown and the template across 7 days: recorded FTUE on day 1, short daily sessions with a notification/offer log, synthesis on day 7.",
+      "deliverable": "A 2–6 page teardown: FTUE log, core + meta loop diagrams, economy sources/sinks table, monetization summary, notifications log, motivation profile, and at least 5 hypotheses (\"They do X → to move KPI Y → because Z\").",
+      "doneWhen": "Every template section is filled; at least 2 diagrams; 3 strengths, 3 weaknesses, 1 \"steal this\", 1 \"I'd change this\"; a short summary posted publicly (thread, blog or portfolio).",
+      "minutes": 300,
+      "xp": 300
+    },
+    {
+      "id": "F2P1-m02",
+      "title": "The Tiny Economy Spreadsheet",
+      "task": "Design a mini economy for a hypothetical game: 1 soft currency, 1 hard currency, 3 sources, 4 sinks, a 10-level upgrade track. Model 30 days for a casual free player (2 sessions/day), an engaged free player (5 sessions/day) and a light payer (engaged + one $4.99 pack on day 3).",
+      "deliverable": "A spreadsheet with income per day, cost per level, cumulative balance and days-to-milestone per archetype, a balance-over-time chart, and a paragraph on where walls appear and how you smoothed them.",
+      "doneWhen": "Every source maps to at least one sink; no archetype is stuck more than ~3 days on any step in the first two weeks (or the wall is intentional and explained); the payer is ahead but the free path reaches level 10 within 30 days.",
+      "minutes": 120,
+      "xp": 200
+    }
+  ],
+  "playLabs": [
+    {
+      "id": "F2P1-p01",
+      "game": "Royal Match",
+      "minutes": 10,
+      "lookFor": "Fresh install with a stopwatch: first win, first star spent on a task, first booster taught, first offer, first notification request.",
+      "question": "At what timestamps did the core loop and the meta loop each \"click\", and what was taught before it was needed?"
+    },
+    {
+      "id": "F2P1-p02",
+      "game": "Clash Royale",
+      "minutes": 10,
+      "lookFor": "What you earn after a win, what you can spend it on, and what (if anything) limits progress in one sitting.",
+      "question": "Draw the core loop and name the session cap or exit hook. What would bring you back in 3 hours?"
+    },
+    {
+      "id": "F2P1-p03",
+      "game": "Hay Day",
+      "minutes": 10,
+      "lookFor": "Every currency and timer; what you produce, what orders ask for, what diamonds are offered for.",
+      "question": "List 3 faucets and 3 drains for coins. Where is time being used as a currency?"
+    },
+    {
+      "id": "F2P1-p04",
+      "game": "Survivor.io",
+      "minutes": 10,
+      "lookFor": "In-run skill choices, out-of-run upgrades, energy costs, and every rewarded-ad offer.",
+      "question": "Which loop keeps a run exciting, which keeps you coming back tomorrow, and where do ads appear as a fair trade?"
+    }
+  ],
+  "retrieval": [
+    {
+      "q": "What inequality decides whether paid user acquisition is profitable?",
+      "a": "LTV > CPI: a player's lifetime value must exceed the cost per install, with margin for overhead."
+    },
+    {
+      "q": "Give three reasons non-paying players are valuable.",
+      "a": "They're opponents/neighbours/clanmates (liquidity and content), they spread the game (lower CPI), they watch ads, and they're future payers."
+    },
+    {
+      "q": "What's the difference between classic and rolling retention?",
+      "a": "Classic counts players active on exactly day N; rolling counts day N or any later day, so it's always higher. Don't compare across definitions."
+    },
+    {
+      "q": "Write ARPDAU as the sum of its IAP and ad parts.",
+      "a": "ARPDAU = (daily payer % × daily ARPPU) + (ad impressions per DAU × eCPM ÷ 1000)."
+    },
+    {
+      "q": "How do you estimate LTV on a napkin?",
+      "a": "LTV ≈ ARPDAU × average lifetime active days, where lifetime days ≈ 1 + the sum of daily retention over the horizon (area under the retention curve)."
+    },
+    {
+      "q": "What are the four steps of a core-loop diagram?",
+      "a": "Action → Reward → Invest → New power / new challenge → back to Action."
+    },
+    {
+      "q": "Describe the four-part session arc.",
+      "a": "Arrive & collect → core play → invest & set up → exit hook."
+    },
+    {
+      "q": "What does \"fun in 1, loop in 5, hook by 15\" mean?",
+      "a": "Fun in the first minute, one full core loop within about five minutes, and an exit hook by the end of the first session (~15 minutes)."
+    },
+    {
+      "q": "Why does the book's \"leave the training level for last\" matter even more in F2P?",
+      "a": "You only know what to teach once the game is mature, and the FTUE is where most players leave, so it gets rebuilt repeatedly (before and after soft launch) and is among the highest-leverage features."
+    },
+    {
+      "q": "What is vertical vs horizontal progression? Give an example of horizontal.",
+      "a": "Vertical = more power; horizontal = more options. Marvel Snap's card upgrades are cosmetic and raise Collection Level, which unlocks new cards."
+    },
+    {
+      "q": "Describe the saw-tooth difficulty curve and why it works.",
+      "a": "Difficulty ramps to a spike (hard level/boss), drops to a breather, then climbs again with an upward trend. Spikes test mastery, drops give relief and a feeling of power, the rhythm adds variety."
+    },
+    {
+      "q": "What happens when faucets outpace drains? And the reverse?",
+      "a": "Inflation: balances pile up, prices feel meaningless, no reason to earn or buy. The reverse is starvation: everything feels unaffordable, causing frustration and churn."
+    },
+    {
+      "q": "Name three energy-system parameters and two modern ways to soften energy.",
+      "a": "Cap, regen rate, cost per attempt, overflow rules, refill price. Softening: lives lost only on failure, unlimited-lives windows, energy gating rewards not play, ad/friend refills, generous caps."
+    },
+    {
+      "q": "Name SDT's three needs and one F2P feature for each.",
+      "a": "Autonomy (deck building, base layout), Competence (saw-tooth difficulty, visible progress), Relatedness (clans, co-op, gifting)."
+    },
+    {
+      "q": "List five dark patterns and their healthier alternatives.",
+      "a": "Streak wipes → freezes; fake countdowns → honest timers; confirmshaming → neutral buttons; currency obfuscation → clear prices; notification spam → capped, valuable pings; hidden odds → published odds + pity; accidental purchases → confirmations."
+    }
+  ],
+  "feynman": "Explain to a producer (or your grandma) in 60 seconds: how does a free game make money, and why does that make the core loop, progression and economy the most important things a F2P designer designs? Use the words retention, LTV, CPI, core loop and sink.",
+  "links": [
+    "L02",
+    "L04",
+    "L05",
+    "L06",
+    "L07",
+    "L08",
+    "L09",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L14",
+    "L15",
+    "L16",
+    "L17",
+    "BX",
+    "F2P2",
+    "F2P"
+  ]
+}

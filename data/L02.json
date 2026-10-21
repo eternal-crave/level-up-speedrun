@@ -1,0 +1,1169 @@
+{
+  "id": "L02",
+  "order": 3,
+  "kind": "book",
+  "label": "Level 2",
+  "title": "Ideas",
+  "bookPages": "23–36",
+  "emoji": "💡",
+  "tagline": "Every hit game sounded stupid once. Here's how to find yours, then kill the un-fun.",
+  "f2pRelevance": 4,
+  "f2pWhy": "F2P success starts with the right idea for the right audience, validated cheaply and stripped of un-fun before and after launch.",
+  "minutes": 45,
+  "tldr": [
+    "Great ideas often sound dumb out loud (dot-eating blob, mushroom-stomping plumber). Never bin an idea for sounding silly.",
+    "Feed your brain unusual inputs: read outside your bubble, walk or shower, go to talks, play bad games, follow your passions. Most innovation is smart iteration on earlier games.",
+    "Gamers want good games: choose your audience (casual vs hardcore, and age) early and deliver wish fulfillment.",
+    "Fun is subjective and never guaranteed. Use the Theory of Un-Fun: start with a fun core and keep removing whatever isn't fun. Don't be too dear.",
+    "Brainstorm with a kit and rules (no bad ideas, mixed disciplines, push to absurd), then cull mercilessly and test on someone with no stake.",
+    "F2P add-on: validate before building. The modern back-of-box is a store page plus a 15-second ad; the modern wife-o-meter is a creative test and a stranger playtest."
+  ],
+  "sections": [
+    {
+      "title": "Intro: elves don't make games",
+      "bites": [
+        {
+          "id": "L02-b01",
+          "hook": "So what does a game designer actually DO?",
+          "body": "Outsiders assume designers write the code or draw the characters. Neither: programmers code, artists draw. The designer's raw material is ideas and decisions, which is why the job looks invisible from outside.",
+          "example": "The book's party cartoon ends with the guest concluding the designer does apparently nothing.",
+          "f2p": "In F2P you also sell the why behind every idea: which player need it serves and which KPI it should move. Without that, you look like you do nothing too.",
+          "memory": "Designer = the person who decides. Code and art are the elves' job.",
+          "tag": "fun"
+        },
+        {
+          "id": "L02-b02",
+          "hook": "The elves only build GOOD ideas",
+          "body": "Rogers jokes that you leave a design idea out overnight and elves build the game by morning. The catch: it has to be a good idea. So the chapter's real question is where good ideas come from.",
+          "example": "Footnote gag: the same elves also make shoes, Christmas toys and cookies.",
+          "f2p": "",
+          "memory": "Garbage idea in, garbage game out, no matter how many elves.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Ideas: where to get them and where to stick them",
+      "bites": [
+        {
+          "id": "L02-b03",
+          "hook": "Every hit game sounded stupid in the pitch meeting",
+          "body": "Filmmaker Michel Gondry's idea: good ideas sit right next to stupid ones. Describe famous games plainly and they sound absurd, yet they made fortunes. Lesson: never dismiss an idea just because it sounds dumb.",
+          "example": "A yellow blob eats dots while ghosts chase it (Pac-Man). A plumber stomps mushrooms to find his girlfriend (Mario). A prince rolls junk into balls to rebuild stars (Katamari Damacy).",
+          "f2p": "Butler fixes a mansion by matching tiles (Homescapes). Roll dice and raid friends' landmarks (Monopoly GO!). Silly out loud, huge on the charts.",
+          "memory": "If it sounds dumb, that's not a bug, it's step one.",
+          "tag": "concept"
+        },
+        {
+          "id": "L02-b04",
+          "hook": "Inspiration #1: read what you'd never read",
+          "body": "Developers tend to love the same stuff (games, comics, movies), so games feel the same: hit-movie themes and hit-game mechanics get recycled, and near-identical games ship at once. Widen your inputs: a magazine, a library afternoon, an online rabbit hole. Break the fanboy cycle.",
+          "example": "Will Wright said he drew inspiration from Japanese gardening, architecture and biology.",
+          "f2p": "Mobile teams all stare at the same top-grossing chart, so clones flood the store. Inputs from outside games are your edge.",
+          "memory": "Same diet, same body. Same inputs, same games.",
+          "tag": "list"
+        },
+        {
+          "id": "L02-b05",
+          "hook": "Why two volcano movies came out the same year",
+          "body": "When everyone draws inspiration from the same sources, you get eerie synchronicity: competing studios release near-identical products at the same time. It's a symptom of shared inputs.",
+          "example": "Rogers' footnote: Dante's Peak and Volcano, two volcano disaster films, both from 1997.",
+          "f2p": "Watch for this in mobile trends: when one mechanic goes viral in ads, dozens of copies land within months.",
+          "memory": "Shared inputs, twin volcanoes.",
+          "tag": "example"
+        },
+        {
+          "id": "L02-b06",
+          "hook": "Inspiration #2: walk, drive or shower",
+          "body": "A familiar routine keeps your conscious brain busy, freeing the subconscious to wander and make connections it normally wouldn't. Those odd links become ideas. If inspiration strikes while driving, use hands-free recording or pull over before writing.",
+          "example": "Classic shower thought: the idea arrives when you stop trying.",
+          "f2p": "Keep a voice-note or notes app ready for these moments; log ideas to your backlog the same day.",
+          "memory": "Autopilot body, free-range brain.",
+          "tag": "list"
+        },
+        {
+          "id": "L02-b07",
+          "hook": "Inspiration #3: go to talks, stretch your idea's legs",
+          "body": "Lectures and discussions (Rogers loves GDC) fill notebooks with ideas. Share your ideas with other designers to see where they bend and where they break. Expect to be told they're stupid, and remember Gondry.",
+          "example": "Rogers leaves GDC with notebooks full of ideas from design talks.",
+          "f2p": "GDC Vault talks, postmortems, mobile deconstruction blogs and designer Discords give the same exposure for free.",
+          "memory": "An idea that's never been poked has never been tested.",
+          "tag": "list"
+        },
+        {
+          "id": "L02-b08",
+          "hook": "Inspiration #4: play a BAD game on purpose",
+          "body": "Good games teach, but bad games teach more: spot what was done poorly, then work out how you'd fix it. Many people 'invented' the airplane before the Wright Brothers flew; ideas often need several iterations by several people.",
+          "example": "Rogers notes good is subjective: highly rated, best-selling, competent, or just cool.",
+          "f2p": "Low-rated mobile games and their 1-star reviews are a free list of un-fun to avoid and problems to solve.",
+          "memory": "Bad games are the free textbook nobody reads.",
+          "tag": "list"
+        },
+        {
+          "id": "L02-b09",
+          "hook": "Inspiration #5: your weird hobby is a game design",
+          "body": "Follow your passion. You never know when something you love will fit a game, and that love shows through in the result. It also makes design work feel less like work.",
+          "example": "Satoshi Tajiri's insect collecting became Pokémon. David Jaffe's love of Ray Harryhausen films became God of War. Miyamoto turns his hobbies into games.",
+          "f2p": "Teams who genuinely love a genre notice tiny feel details (cascade timing, booster satisfaction) that dashboards miss.",
+          "memory": "Bugs in a jar became a billion-dollar franchise.",
+          "tag": "example"
+        },
+        {
+          "id": "L02-b10",
+          "hook": "Designer's idea vs marketable idea",
+          "body": "Marketing may call your concept a 'designer's idea': fun for you, unsellable to the public. Rogers is torn. Sales let you make more games, but many innovative games were surely called too weird once and would never exist if everyone had listened.",
+          "example": "PaRappa the Rapper, The Sims and Braid all sound like ideas marketing could have killed.",
+          "f2p": "In F2P the question becomes: will it get cheap installs and monetize? Don't fold, test the weird idea cheaply with ad creatives and prototypes.",
+          "memory": "Suits aren't the enemy; untested opinions are.",
+          "tag": "concept"
+        },
+        {
+          "id": "L02-b11",
+          "hook": "Think it's innovative? You weren't paying attention",
+          "body": "Rogers argues most gameplay design works by each game building on its predecessors, and that this is a key to great design. Truly original ideas are rare; smart iteration is the norm.",
+          "example": "PaRappa came from Simon, The Sims from SimCity, Braid from Blinx: The Time Sweeper.",
+          "f2p": "Remix is the F2P default: proven core + new theme, proven core + new meta, or a PC mechanic reshaped for touch.",
+          "memory": "Nobody invents a new LEGO brick. Masterpieces are new snaps.",
+          "tag": "concept"
+        },
+        {
+          "id": "L02-b12",
+          "hook": "Will Wright spent a career on ONE idea",
+          "body": "Wright's games look like the evolution of a single idea, the world-building simulation, polished over decades and scaled to galactic size. Rogers calls that luxury something every designer would envy.",
+          "example": "SimCity, SimAnt, SimEarth, SimCity 2000, The Sims, Spore.",
+          "f2p": "Live F2P games are the modern version: one core idea iterated for years through updates and LiveOps.",
+          "memory": "One seed, one forest.",
+          "tag": "example"
+        },
+        {
+          "id": "L02-b13",
+          "hook": "Platformers evolved one mechanic at a time",
+          "body": "Inspired by Raph Koster's shoot-'em-up chart, Rogers traces platformers: each game added something. Space Panic: ladders and hole-digging. Donkey Kong: jumping and an enemy-killing power-up. Popeye: moving collectables, interactive environments. Pitfall!: vine swings, gator hopping.",
+          "example": "Mario Bros. added a second player and beating enemies with skill rather than only a power-up.",
+          "f2p": "Draw the same tree for your genre: what did each hit add?",
+          "memory": "Climb, jump, collect, swing.",
+          "tag": "list"
+        },
+        {
+          "id": "L02-b14",
+          "hook": "From world maps to true 3-D",
+          "body": "The timeline continues: Pac-Land added a world map, themed levels and dynamic hazards. Ghosts 'n Goblins added multiple weapons, armor as health, bosses. Super Mario Bros. set the bar with tight controls and creative levels. Dark Castle let you hide and fall into a dungeon instead of dying.",
+          "example": "Mega Man: themed stages and bosses whose powers you take. Crash Bandicoot: 2.5-D. Mario 64: true 3-D.",
+          "f2p": "",
+          "memory": "Each bubble on the chart = one stolen-and-improved idea.",
+          "tag": "list"
+        },
+        {
+          "id": "L02-b15",
+          "hook": "The Evolution of Platformer chart, decoded",
+          "body": "The book's bubble chart is a family tree: Space Panic branches to Donkey Kong and Popeye; branches lead to modern 2D single-screen (Prince of Persia), scrolling 2D (Sonic), 2.5D (Klonoa), 3D platformers (Spyro) and 3D action platformers (Ratchet and Clank, Maximo).",
+          "example": "Mega Man and Mario 64 both feed into the modern 3D action platformer branch.",
+          "f2p": "Match-3 tree (simplified): Bejeweled, then Candy Crush Saga (saga map, lives, boosters), Toon Blast (tap-to-blast), Homescapes (renovation meta), Royal Match (speed and polish).",
+          "memory": "Genres are families, not lightning strikes.",
+          "tag": "example"
+        },
+        {
+          "id": "L02-b16",
+          "hook": "Copy vs steal: what the famous line means",
+          "body": "Rogers closes with the 'good artists steal' line attributed to Picasso. The meaning: don't photocopy a game, absorb what works and make it yours so the result moves the genre forward.",
+          "example": "Every platformer on the timeline took something and added something.",
+          "f2p": "A reskin is copying. Taking a proven loop and adding one genuinely new layer is stealing well.",
+          "memory": "Copy = photocopier. Steal = digestion.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "What do gamers want?",
+      "bites": [
+        {
+          "id": "L02-b17",
+          "hook": "Players can't order a dish they've never tasted",
+          "body": "Most gamers don't know what they want until it's shown to them. That's why designers need passion and a clear vision. Players can sense passion. Hold on to your vision, but accept it may not end up exactly as imagined.",
+          "example": "Rogers: players smell passion like a dog smells fear.",
+          "f2p": "Analytics show what players do with what exists; they don't invent what nobody has seen yet. Data plus vision beats either alone.",
+          "memory": "Cook with conviction; they'll know in one bite.",
+          "tag": "concept"
+        },
+        {
+          "id": "L02-b18",
+          "hook": "GAMERS WANT GOOD GAMES (yes, in caps)",
+          "body": "The simple answer to what gamers want. There's no guarantee yours will be good: nobody sets out to make a bad game, yet bad games still ship, for many reasons covered later in the book.",
+          "example": "Rogers prints it in caps and bold because it's a VERY IMPORTANT THING.",
+          "f2p": "In F2P, good is measured: retention (D1, D7, D30), session frequency, reviews. Good means fun now and a reason to return tomorrow.",
+          "memory": "Good games. That's the whole wishlist.",
+          "tag": "truth"
+        },
+        {
+          "id": "L02-b19",
+          "hook": "Let players be what they aren't",
+          "body": "Tim Schafer says good game characters are wish fulfillment. Rogers extends it to games overall: let players feel what they aren't in real life: powerful, smart, sneaky, successful, rich, bad or heroic.",
+          "example": "Schafer is the designer of Psychonauts and Brütal Legend.",
+          "f2p": "Power: Survivor.io, Archero. Rich: Monopoly GO!, Coin Master. Smart: Royal Match, Two Dots. Builder-boss: Clash of Clans, Township.",
+          "memory": "Seven wishes: Powerful, Smart, Sneaky, Successful, Rich, Bad, Heroic.",
+          "tag": "concept"
+        },
+        {
+          "id": "L02-b20",
+          "hook": "Casual or hardcore? Decide on day one",
+          "body": "Casual gaming created a new market of players who don't want to grind for hours. Decide early whether your game is for casual or hardcore players: locking in the audience lets you rule out design decisions right away.",
+          "example": "Rogers: set the audience in stone near the start of idea development.",
+          "f2p": "Today it's a spectrum: hyper-casual, hybrid-casual, casual, mid-core, core. Your spot sets session length, monetization, UA cost and art style.",
+          "memory": "Pick your diner before writing the menu.",
+          "tag": "rule"
+        },
+        {
+          "id": "L02-b21",
+          "hook": "Kids always want the big kids' game",
+          "body": "Kids want games made for kids a bit older than them: 8-year-olds want the 10-year-olds' game, 10 want 13, 13 want 18. Games aimed squarely at their age get dismissed as 'for my little brother', the ultimate kid insult.",
+          "example": "Rogers made dozens of kids' games and saw this pattern repeatedly.",
+          "f2p": "Aim the look and tone slightly older than the target age. Aspirational beats babyish.",
+          "memory": "Nobody wants the little brother's game.",
+          "tag": "rule"
+        },
+        {
+          "id": "L02-b22",
+          "hook": "Don't talk down to kids",
+          "body": "Developers new to kids' games oversimplify because 'it's for kids'. Wrong: kids are smart, often better gamers than adults, and often learn faster. Real limits: small hands can't do complex controls; kids around 6–7 and younger can't read complex words or long text; watch the swearing.",
+          "example": "Rogers: kids pick up concepts faster than many adults.",
+          "f2p": "Kids' apps face extra privacy and ad rules (e.g., COPPA in the US). Use simple touch input, icon-first UI, and avoid aggressive monetization aimed at kids.",
+          "memory": "Small hands, big brains.",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "Why I hate fun",
+      "bites": [
+        {
+          "id": "L02-b23",
+          "hook": "Eight flavors of fun, and why that's not enough",
+          "body": "Marc LeBlanc lists 8 kinds of fun: Sensation, Fellowship, Fantasy, Discovery, Narrative, Expression, Challenge, Submission. Rogers finds it interesting but not useful in the field: ideas that sound fun on paper may not be fun built, or may be fun only to you.",
+          "example": "Taken from LeBlanc's GDC lecture and 8kindsoffun website.",
+          "f2p": "Sensation: match-3 juice. Fellowship: clans. Fantasy: Genshin. Discovery: Merge Mansion. Narrative: Homescapes. Expression: decorating. Challenge: ranked. Submission: Block Blast!",
+          "memory": "Six Friendly Foxes Dance Near Every Crazy Squirrel.",
+          "tag": "list"
+        },
+        {
+          "id": "L02-b24",
+          "hook": "Fun dies on the hundredth playthrough",
+          "body": "Fun is subjective, like humor, and decays with repetition. Developers replay the same level hundreds of times and lose all objectivity. Eventually you honestly can't tell if it's fun anymore.",
+          "example": "The book's cartoon: a producer asks 'Is it fun yet?' and the designer says he has no idea.",
+          "f2p": "Run regular external playtests with fresh players. The team is the worst judge of its own FTUE.",
+          "memory": "Your own joke stops being funny on telling #100.",
+          "tag": "concept"
+        },
+        {
+          "id": "L02-b25",
+          "hook": "No guarantee your idea is fun. None.",
+          "body": "Rogers' one truth about fun: there's no guarantee your game idea will be fun. Copying proven gameplay skews the odds, but more often produces a clone.",
+          "example": "The market is flooded with mediocre first-person shooters and survival horror games built on proven formulas.",
+          "f2p": "Proven mobile mechanics lower risk but drop you into the most crowded, expensive UA market. Clone the structure if you must, add one ingredient that's yours.",
+          "memory": "Fun isn't promised; it's proven.",
+          "tag": "truth"
+        },
+        {
+          "id": "L02-b26",
+          "hook": "The Theory of Un-Fun: carve, don't add",
+          "body": "Start with a fun idea. As you develop, whenever you find something un-fun, remove it. When all the un-fun is gone, what's left should be the fun. Caveat: the starting idea must be fun, or you'll end up with nothing.",
+          "example": "Teams ship bad mechanics, ugly art and broken cameras because they got used to them.",
+          "f2p": "Analytics find un-fun for you: FTUE step drop-offs, level churn spikes, rage-quits, review keywords. Fix, remove, A/B test.",
+          "memory": "Chip away everything that isn't the statue. Start with a potato and you just get a small potato.",
+          "tag": "rule"
+        },
+        {
+          "id": "L02-b27",
+          "hook": "Run an un-fun audit, again and again",
+          "body": "Apply the Theory of Un-Fun several times during development. Stop, look at the game, and write a list of what's making it un-fun. Common culprits: a crappy camera, lousy controls, bad animations, too hard, too easy.",
+          "example": "Rogers' list: camera, controls, animations, difficulty too high or too low.",
+          "f2p": "Monetization un-fun counts too: offers that interrupt play, energy walls at bad moments, ad spam. Teams get used to it; players don't.",
+          "memory": "Un-fun audit = a regular health check, not a one-time surgery.",
+          "tag": "list"
+        },
+        {
+          "id": "L02-b28",
+          "hook": "Don't be too dear",
+          "body": "A producer told Rogers: don't be too dear. Don't be afraid to kill bad ideas. Kill the un-fun. There are plenty more ideas where those came from.",
+          "example": "The advice came from a producer Rogers worked with.",
+          "f2p": "Cutting a feature you love but players skip frees dev time for what moves retention.",
+          "memory": "Your idea is a pet rock, not a pet.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Brainstorming",
+      "bites": [
+        {
+          "id": "L02-b29",
+          "hook": "Brainstorm kit: a Brain plus 4 Ps",
+          "body": "To brainstorm you need five things: a working brain, something to write with, something to write on, a place to work, and collaborators who also have working brains.",
+          "example": "Rogers lists exactly these five, in that order.",
+          "f2p": "Remote version: a shared whiteboard tool, a video call, and a timer.",
+          "memory": "Brain, Pen, Paper, Place, People.",
+          "tag": "list"
+        },
+        {
+          "id": "L02-b30",
+          "hook": "Rule one: there are no bad ideas (yet)",
+          "body": "Set ground rules first. No stupid or bad ideas: say yes to everything. Invite other disciplines (programmers, artists, testers, writers); diverse groups bring surprising ideas. But invitees should understand how games are made, or you'll waste time on unrealistic ideas.",
+          "example": "Rogers says people always surprise him with what they bring.",
+          "f2p": "Add UA/marketing and data people: they know which ad hooks are cheap and where players churn.",
+          "memory": "Yes-and now, red pen later.",
+          "tag": "rule"
+        },
+        {
+          "id": "L02-b31",
+          "hook": "Squeeze the idea past ridiculous",
+          "body": "Write down everything you want the game to be. Free-associate each idea as far as it goes. When it gets ridiculous, squeeze once more, then let it go. Ideas don't need to relate or be original yet: you're cataloging. Judge originality and fun later.",
+          "example": "Rogers' kart racing brainstorm: speed ideas (skim water, slipstream, rocket boost) and damage ideas (sticky bombs, heat-seekers, power-up stealing).",
+          "f2p": "F2P buckets: core verbs, meta layers, social, LiveOps events, fair monetization touchpoints, 3-second ad hooks.",
+          "memory": "Milk it dry, then milk it once more.",
+          "tag": "concept"
+        },
+        {
+          "id": "L02-b32",
+          "hook": "Record every idea, even the losers",
+          "body": "Whiteboard, Post-its or index cards: the tool doesn't matter. What matters is that ideas get recorded. Even rejects can be reused in another game.",
+          "example": "Rogers prefers a very big whiteboard.",
+          "f2p": "Keep an idea backlog: today's cut mechanic is next season's LiveOps event or mini-game.",
+          "memory": "Unwritten ideas evaporate.",
+          "tag": "rule"
+        },
+        {
+          "id": "L02-b33",
+          "hook": "Design the box before the game",
+          "body": "Exercise: make the box and manual. What's the cover image? What bullets go on the back? How would you explain the game in a black-and-white 16-page manual? The constraints strip the idea to its bare essentials.",
+          "example": "Back-of-box template: catchy slogan, 3 exciting images, 3 gameplay features, legal block, dev and publisher logos, rating, platform, barcode.",
+          "f2p": "Modern box = store page: title and subtitle, icon, first 3 screenshots with captions, age rating, plus a 15–30 s ad whose hook lands in 3 seconds.",
+          "memory": "If it doesn't fit on the box, it doesn't fit in the player's head.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "Breaking writer's block",
+      "bites": [
+        {
+          "id": "L02-b34",
+          "hook": "Stuck? Narrow, move, clear the distraction",
+          "body": "Three tricks: narrow your focus (outline, break tasks down tiny, deadlines in hours not days); take a walk or exercise (the brain runs on blood flow); deal with whatever's nagging you (expense report, vacuuming) so it stops occupying your head.",
+          "example": "Rogers: don't let your blood pool in your backside.",
+          "f2p": "Scope one loop at a time: the next 30 seconds (core), 30 minutes (session), 30 days (meta).",
+          "memory": "Focus, Move, Clear...",
+          "tag": "list"
+        },
+        {
+          "id": "L02-b35",
+          "hook": "Skipping to the fun part is a trap",
+          "body": "Trick four: jump ahead to the exciting work (a boss fight instead of UI). But only as a last resort: games run on schedules, deadlines and budgets. Choosing fun over drudge work can hurt the game, the team and the company. Don't procrastinate.",
+          "example": "Rogers flags this trick as very dangerous.",
+          "f2p": "The boring parts (FTUE, store UI, loading flow, low-end phone performance) often decide retention. Don't polish events while the FTUE leaks.",
+          "memory": "Dessert first works once. Every day, you crash.",
+          "tag": "warning"
+        },
+        {
+          "id": "L02-b36",
+          "hook": "Change rooms, get some vitamin Duh",
+          "body": "Trick five: change your environment. Offices are full of distractions: e-mail, games to play, design docs begging to be read. Move to a conference room or sit outside in the sun.",
+          "example": "Rogers' joke name for sunshine thinking: vitamin Duh.",
+          "f2p": "",
+          "memory": "...Skip (last resort), Swap.",
+          "tag": "list"
+        },
+        {
+          "id": "L02-b37",
+          "hook": "Cull mercilessly, then ask the wife-o-meter",
+          "body": "Narrow your list: keepers jump out, losers are obvious. Be merciless; better too many good ideas than a game full of bad ones. Then show ideas to someone with no creative stake: they give the clearest, most honest feedback.",
+          "example": "Miyamoto's wife-o-meter: if his wife hates an idea, it's gone. Rogers used his office's executive assistants.",
+          "f2p": "Modern wife-o-meters: stranger playtests, ad creative tests, and a market reality check.",
+          "memory": "Ask grandma, not your co-founder.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "F2P bonus: the mobile ideation toolkit",
+      "bites": [
+        {
+          "id": "L02-b38",
+          "hook": "Why would anyone open this app?",
+          "body": "Wish fulfillment is a motivation model. Modern ones: Quantic Foundry's six clusters (Action, Social, Mastery, Achievement, Immersion, Creativity) and Self-Determination Theory (competence, autonomy, relatedness). Build your game around one or two motivations.",
+          "example": "Match-3 hits mastery and completion; Clash Royale hits competition and strategy.",
+          "f2p": "Write the target motivation on page one of your concept doc and test every feature against it.",
+          "memory": "Feel skilled, feel free, feel connected.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L02-b39",
+          "hook": "The remix matrix for F2P ideas",
+          "body": "Rogers' iteration idea as a method: proven core + fresh theme; proven core + new meta; a PC mechanic reshaped for touch; a genre mash-up. Look for gaps, but check that similar games prove the demand exists.",
+          "example": "Homescapes: match-3 core + renovation story. Monopoly GO!: board game + social raiding. Survivor.io: survivor-like action reshaped for one thumb.",
+          "f2p": "A gap with no competitors may mean no demand. Prove the motivation first.",
+          "memory": "Old engine, new paint job, one new gear.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L02-b40",
+          "hook": "Built for the bus stop",
+          "body": "Mobile players want instant start, bite-sized goals finishable in minutes, auto-save and interruption tolerance, one-hand play that works with sound off, a clear next goal, a just-one-more hook, and fair treatment of their time and wallet.",
+          "example": "A typical match-3 level: one clear goal, a couple of minutes, progress saved.",
+          "f2p": "Test your idea: can someone get a satisfying win between two subway stops?",
+          "memory": "Phone out, win, phone away.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L02-b41",
+          "hook": "Spend the least money that can kill the idea",
+          "body": "Validate in stages: one-sentence hook test, market scan of 5–10 competitors, fake-door ad creative test, paper or greybox prototype, 5-stranger playtest, soft launch checking D1/D7, FTUE funnel and early monetization. Each stage is a wife-o-meter with numbers.",
+          "example": "An idea nobody clicks in a cheap creative test dies before any code is written.",
+          "f2p": "Most F2P ideas should die young and cheap.",
+          "memory": "Startups and game ideas: fail fast, fail cheap.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "Universal Truths",
+      "bites": [
+        {
+          "id": "L02-b42",
+          "hook": "Ideas are cheap. Execution is everything.",
+          "body": "Rogers' truths: ideas are cheap, it's how you use them that matters; throw out even good ideas if they don't fit or you have too many; and if you're stuck, take a break, but don't procrastinate.",
+          "example": "Two match-3 games with the same idea can earn wildly different amounts based on feel, pacing and economy.",
+          "f2p": "LiveOps calendars don't wait: timebox thinking, ship, measure.",
+          "memory": "An idea is a seed; most seeds never become trees.",
+          "tag": "truth"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "All gamers want are good games.",
+    "Nobody can guarantee your game will turn out fun.",
+    "Start with a fun idea; as you develop, remove the un-fun. What's left should be the fun.",
+    "Don't be too precious with ideas: throw out even good ones if they don't fit or you have more than you need.",
+    "Ideas are cheap; what matters is how you use them.",
+    "If you're stuck, take a break, but don't procrastinate."
+  ],
+  "mnemonics": [
+    {
+      "name": "Five inspiration sources",
+      "device": "Really Weird Llamas Play Piano",
+      "unpacks": "Read odd stuff, Walk/drive/shower, Lecture, Play bad games, Passion"
+    },
+    {
+      "name": "LeBlanc's 8 kinds of fun",
+      "device": "Six Friendly Foxes Dance Near Every Crazy Squirrel",
+      "unpacks": "Sensation, Fellowship, Fantasy, Discovery, Narrative, Expression, Challenge, Submission"
+    },
+    {
+      "name": "Brainstorm kit",
+      "device": "A Brain plus 4 Ps",
+      "unpacks": "Brain, Pen (something to write with), Paper (something to write on), Place, People (collaborators)"
+    },
+    {
+      "name": "Writer's block tricks",
+      "device": "Focus, Move, Clear, Skip, Swap",
+      "unpacks": "Narrow your focus, Move (walk/exercise), Clear the distraction, Skip to the good stuff (last resort!), Swap your environment"
+    },
+    {
+      "name": "Wish fulfillment feelings",
+      "device": "Pow! Smart Sneaky Success: Rich, Bad, Heroic",
+      "unpacks": "Powerful, Smart, Sneaky, Successful, Rich, Bad, Heroic"
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L02-f01",
+      "q": "Which filmmaker does Rogers quote on good ideas bordering on stupid ones?",
+      "a": "Michel Gondry",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f02",
+      "q": "Which game is 'a prince rolls junk into balls to rebuild the stars'?",
+      "a": "Katamari Damacy",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f03",
+      "q": "Why should you never dismiss a game idea for sounding stupid?",
+      "a": "Many hugely successful games sound absurd when described plainly, so silliness says nothing about potential.",
+      "type": "why"
+    },
+    {
+      "id": "L02-f04",
+      "q": "What are Rogers' five ways to get inspired?",
+      "a": "Read something unusual; walk/drive/shower; attend a lecture; play a (bad) game; follow your passion.",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f05",
+      "q": "Why do games start to feel derivative, according to Rogers?",
+      "a": "Developers love and draw from the same sources (games, comics, movies), so themes and mechanics get recycled.",
+      "type": "why"
+    },
+    {
+      "id": "L02-f06",
+      "q": "Will Wright named which three unusual sources of inspiration?",
+      "a": "Japanese gardening, architecture and biology",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f07",
+      "q": "Why does a walk or shower help generate ideas?",
+      "a": "A familiar routine occupies the conscious brain, freeing the subconscious to wander and make new connections.",
+      "type": "why"
+    },
+    {
+      "id": "L02-f08",
+      "q": "Why play a BAD game for inspiration?",
+      "a": "You see what was done poorly and practice figuring out how to fix it, which teaches more than admiring a good game.",
+      "type": "why"
+    },
+    {
+      "id": "L02-f09",
+      "q": "Pokémon grew out of Satoshi Tajiri's love of ____.",
+      "a": "collecting insects",
+      "type": "cloze"
+    },
+    {
+      "id": "L02-f10",
+      "q": "David Jaffe turned his love of whose movies into God of War?",
+      "a": "Ray Harryhausen's",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f11",
+      "q": "What is a 'designer's idea' in marketing speak?",
+      "a": "A concept the designer would love to play but marketing thinks the general public won't buy.",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f12",
+      "q": "Which game was the predecessor of The Sims?",
+      "a": "SimCity",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f13",
+      "q": "Which game was the predecessor of PaRappa the Rapper?",
+      "a": "Simon",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f14",
+      "q": "Which game does Rogers name as Braid's predecessor?",
+      "a": "Blinx: The Time Sweeper",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f15",
+      "q": "Whose shoot-'em-up evolution chart inspired Rogers' platformer chart?",
+      "a": "Raph Koster's (A Theory of Fun for Game Design, 2004)",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f16",
+      "q": "What did Donkey Kong add to the platformer?",
+      "a": "Jumping, plus a power-up that could defeat enemies",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f17",
+      "q": "What did Mega Man add to the platformer?",
+      "a": "Themed stages ending in themed bosses whose powers you gain after defeating them",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f18",
+      "q": "What was unusual about falling in Dark Castle?",
+      "a": "Falling didn't kill you immediately; you ended up in the dungeon. The hero could also hide.",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f19",
+      "q": "Crash Bandicoot used 3-D models and environments to create which named camera view?",
+      "a": "2.5-D",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f20",
+      "q": "In the platformer timeline, Ghosts 'n Goblins added ____.",
+      "a": "multiple weapons incl. projectiles, health as armor that breaks off, and boss monsters",
+      "type": "cloze"
+    },
+    {
+      "id": "L02-f21",
+      "q": "What do gamers want, in Rogers' all-caps answer?",
+      "a": "GOOD GAMES",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f22",
+      "q": "Why do designers need passion and vision, according to Rogers?",
+      "a": "Most gamers don't know what they want until it's shown to them, and players can sense passion.",
+      "type": "why"
+    },
+    {
+      "id": "L02-f23",
+      "q": "Name Rogers' seven wish-fulfillment feelings.",
+      "a": "Powerful, smart, sneaky, successful, rich, bad, heroic",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f24",
+      "q": "Who said all good game characters are wish fulfillment?",
+      "a": "Tim Schafer",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f25",
+      "q": "Why decide casual vs hardcore early?",
+      "a": "Setting the audience early lets you rule out design decisions right away.",
+      "type": "why"
+    },
+    {
+      "id": "L02-f26",
+      "q": "A 10-year-old usually wants a game made for what age?",
+      "a": "About 13 (kids want games for slightly older kids)",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f27",
+      "q": "What are the three kid limitations Rogers lists?",
+      "a": "Small hands can't do complex controls; ages 6–7 and younger may not read complex words or long text; watch the swearing.",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f28",
+      "q": "List Marc LeBlanc's 8 kinds of fun.",
+      "a": "Sensation, Fellowship, Fantasy, Discovery, Narrative, Expression, Challenge, Submission",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f29",
+      "q": "Why does Rogers find the 8 kinds of fun of limited use in the field?",
+      "a": "Ideas that sound fun on paper may not be fun when built, or may be fun only to you; fun is subjective.",
+      "type": "why"
+    },
+    {
+      "id": "L02-f30",
+      "q": "Why do developers lose objectivity about fun?",
+      "a": "They replay the same content hundreds of times, and fun fades with repetition.",
+      "type": "why"
+    },
+    {
+      "id": "L02-f31",
+      "q": "State the Theory of Un-Fun.",
+      "a": "Start with a fun idea; remove everything un-fun as you develop; what remains should be the fun.",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f32",
+      "q": "What's the caveat of the Theory of Un-Fun?",
+      "a": "The starting idea must be fun, or after removing the un-fun you're left with nothing.",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f33",
+      "q": "Name Rogers' typical un-fun culprits.",
+      "a": "Crappy camera, lousy controls, bad animations, too hard, too easy",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f34",
+      "q": "A producer's advice to Rogers: 'Don't be too ____.'",
+      "a": "dear",
+      "type": "cloze"
+    },
+    {
+      "id": "L02-f35",
+      "q": "What five things do you need to brainstorm?",
+      "a": "A working brain, something to write with, something to write on, a place to work, collaborators",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f36",
+      "q": "Why should brainstorm invitees understand how games are made?",
+      "a": "Otherwise you waste time on unrealistic ideas.",
+      "type": "why"
+    },
+    {
+      "id": "L02-f37",
+      "q": "What are the slots on Rogers' back-of-box template?",
+      "a": "Catchy slogan, 3 exciting images, 3 gameplay features, legal info, dev and publisher logos, rating, platform, barcode",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f38",
+      "q": "Why imagine a black-and-white 16-page manual for your idea?",
+      "a": "The constraint forces you to strip the idea to its bare essentials.",
+      "type": "why"
+    },
+    {
+      "id": "L02-f39",
+      "q": "Which writer's block trick comes with a warning, and what is it?",
+      "a": "Jump ahead to the good stuff: last resort only, since skipping drudge work can wreck schedules, budgets and the team.",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f40",
+      "q": "What is Miyamoto's 'wife-o-meter'?",
+      "a": "He shows ideas to his wife; any she hates get thrown away.",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f41",
+      "q": "Your team says the FTUE is fine, but you've all played it 300 times. Which principle applies?",
+      "a": "Loss of objectivity: get fresh outside players (wife-o-meter) and apply the Theory of Un-Fun.",
+      "type": "apply"
+    },
+    {
+      "id": "L02-f42",
+      "q": "Your F2P concept's FTUE drop-off spikes at a long tutorial popup. Which principle?",
+      "a": "Theory of Un-Fun: find the un-fun and remove or fix it.",
+      "type": "apply"
+    },
+    {
+      "id": "L02-f43",
+      "q": "Marketing calls your quirky mobile concept unmarketable. What's the Rogers-plus-F2P move?",
+      "a": "Don't fold or ignore them: test it cheaply (ad creative test, prototype) and let data decide.",
+      "type": "apply"
+    },
+    {
+      "id": "L02-f44",
+      "q": "You're designing a game for 8-year-olds. How should the art and tone feel?",
+      "a": "Slightly older (aimed at around 10-year-olds), never babyish; keep controls simple and text minimal.",
+      "type": "apply"
+    },
+    {
+      "id": "L02-f45",
+      "q": "You keep making clones of the top chart. Which inspiration habit fixes this?",
+      "a": "Read something you normally wouldn't: get inputs from outside games.",
+      "type": "apply"
+    },
+    {
+      "id": "L02-f46",
+      "q": "You're stuck on the shop UI and want to design the boss event instead. What should you do?",
+      "a": "Use the other tricks first (narrow focus, walk, clear distractions, change room); jump ahead only as a last resort and don't miss deadlines.",
+      "type": "apply"
+    },
+    {
+      "id": "L02-f47",
+      "q": "What's the F2P equivalent of the back-of-box exercise?",
+      "a": "A store page (title, icon, first 3 screenshots, captions) plus a short video ad with a 3-second hook.",
+      "type": "apply"
+    },
+    {
+      "id": "L02-f48",
+      "q": "Kids reject games aimed at their own age as 'a game for my little ____'.",
+      "a": "brother",
+      "type": "cloze"
+    },
+    {
+      "id": "L02-f49",
+      "q": "Rogers' back-of-box exercise also asks how you would explain the game in a black-and-white ____-page manual.",
+      "a": "16",
+      "type": "cloze"
+    },
+    {
+      "id": "L02-f50",
+      "q": "Rogers' joke name for getting ideas while sitting outside in the sun: vitamin ____.",
+      "a": "Duh",
+      "type": "cloze"
+    },
+    {
+      "id": "L02-f51",
+      "q": "Your idea board has 40 features and they all seem good. Which truth applies?",
+      "a": "Don't be too dear: cut even good ideas that don't fit or that exceed what you need.",
+      "type": "apply"
+    },
+    {
+      "id": "L02-f52",
+      "q": "A teammate says your survivor-like is just a copy of an existing hit. How do you answer in Rogers' terms?",
+      "a": "Most design builds on predecessors; the question is what new idea you add (steal and transform, don't photocopy).",
+      "type": "apply"
+    },
+    {
+      "id": "L02-f53",
+      "q": "Your casual puzzle has a 10-minute minimum session. Which audience lesson is broken?",
+      "a": "Casual players don't want long grinds; pick the audience early and design for bite-sized sessions.",
+      "type": "apply"
+    },
+    {
+      "id": "L02-f54",
+      "q": "Who is the hero of Dark Castle, and what two firsts does the game bring to the platformer timeline?",
+      "a": "Duncan. He can hide from enemies, and falling no longer means instant death: you land in the dungeon.",
+      "type": "basic"
+    },
+    {
+      "id": "L02-f55",
+      "q": "Which companies are credited in the platformer timeline for Space Panic, Pitfall!, Pac-Land, Ghosts n Goblins and Dark Castle?",
+      "a": "Space Panic: Universal. Pitfall!: Activision. Pac-Land: Namco. Ghosts n Goblins: Capcom. Dark Castle: Silicon Beach Software. (Donkey Kong, Popeye, Mario Bros., Super Mario Bros. and Mario 64 are Nintendo.) Ideas jump across companies.",
+      "type": "basic"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "L02-q01",
+      "q": "What is Rogers' main lesson from the Pac-Man, Mario and Katamari descriptions?",
+      "options": [
+        "Simple ideas always succeed",
+        "Pitch ideas only with visuals",
+        "Japanese games are the most innovative",
+        "Never dismiss an idea just because it sounds stupid"
+      ],
+      "answer": 3,
+      "why": "All three sound absurd when described plainly yet made fortunes. Simplicity isn't a guarantee, and the point isn't about Japan or pitch format."
+    },
+    {
+      "id": "L02-q02",
+      "q": "According to Rogers, why do many games feel derivative?",
+      "options": [
+        "Engines limit what's possible",
+        "Publishers forbid new ideas",
+        "Developers draw inspiration from the same sources",
+        "Players reject anything new"
+      ],
+      "answer": 2,
+      "why": "Developers love the same games, comics and movies, so themes and mechanics get recycled. The fix is reading outside your bubble."
+    },
+    {
+      "id": "L02-q03",
+      "q": "Which pairing of 'innovative game' and predecessor does Rogers give?",
+      "options": [
+        "The Sims ← SimCity",
+        "Braid ← Prince of Persia",
+        "PaRappa ← Dance Dance Revolution",
+        "Spore ← The Sims"
+      ],
+      "answer": 0,
+      "why": "Rogers pairs The Sims with SimCity, PaRappa with Simon and Braid with Blinx: The Time Sweeper. Spore is in Wright's lineage but not one of the three pairs."
+    },
+    {
+      "id": "L02-q04",
+      "q": "What did Mega Man add to the platformer, per the book?",
+      "options": [
+        "The world map",
+        "Vine swinging",
+        "Themed stages with bosses whose powers you gain",
+        "A second player"
+      ],
+      "answer": 2,
+      "why": "World map is Pac-Land, vine swinging is Pitfall!, a second player is Mario Bros."
+    },
+    {
+      "id": "L02-q05",
+      "q": "Why does Rogers insist on passion and vision?",
+      "options": [
+        "Players don't know what they want until they see it",
+        "Marketing can't be trusted",
+        "Passion shortens development time",
+        "Players only buy sequels"
+      ],
+      "answer": 0,
+      "why": "Since players can't describe what they've never seen, a passionate vision has to lead. He doesn't claim passion saves time or that marketing is untrustworthy."
+    },
+    {
+      "id": "L02-q06",
+      "q": "Which is NOT on Rogers' wish-fulfillment list?",
+      "options": [
+        "Sneaky",
+        "Rich",
+        "Bad",
+        "Lucky"
+      ],
+      "answer": 3,
+      "why": "The list is powerful, smart, sneaky, successful, rich, bad, heroic. 'Lucky' isn't on it, although luck-driven F2P games often sell the 'rich' feeling."
+    },
+    {
+      "id": "L02-q07",
+      "q": "You're making a game for 10-year-olds. What does Rogers' kid observation suggest?",
+      "options": [
+        "Make it look like it's for 6-year-olds so it feels easy",
+        "Use lots of text so they learn to read",
+        "Aim the feel at slightly older kids, around 13",
+        "Avoid challenge entirely"
+      ],
+      "answer": 2,
+      "why": "Kids want games for kids a bit older than them, and they're smarter than developers assume. Babyish design gets called 'for my little brother'."
+    },
+    {
+      "id": "L02-q08",
+      "q": "Which is NOT one of Marc LeBlanc's 8 kinds of fun?",
+      "options": [
+        "Submission",
+        "Fellowship",
+        "Competition",
+        "Expression"
+      ],
+      "answer": 2,
+      "why": "The 8 are Sensation, Fellowship, Fantasy, Discovery, Narrative, Expression, Challenge, Submission. Competition is part of Quantic Foundry's model, a common mix-up."
+    },
+    {
+      "id": "L02-q09",
+      "q": "What is the Theory of Un-Fun's critical caveat?",
+      "options": [
+        "It only works with a big QA team",
+        "Apply it once at the end",
+        "It only applies to art and cameras",
+        "You must start with a fun idea, or nothing is left"
+      ],
+      "answer": 3,
+      "why": "Removing un-fun from an idea that was never fun leaves nothing. It applies to everything and should be repeated throughout development."
+    },
+    {
+      "id": "L02-q10",
+      "q": "Your match-3's level 47 shows a big churn spike and angry reviews. Which principle fits best?",
+      "options": [
+        "Theory of Un-Fun: find and remove the un-fun",
+        "Follow your passion",
+        "Kids want older games",
+        "Box-and-manual exercise"
+      ],
+      "answer": 0,
+      "why": "A churn spike is un-fun made visible. Diagnose it (too hard? unclear goal?) and fix or remove it, then re-measure."
+    },
+    {
+      "id": "L02-q11",
+      "q": "What does Rogers say about copying proven gameplay to guarantee fun?",
+      "options": [
+        "It's the safest path to a hit",
+        "It's illegal",
+        "It usually produces a clone",
+        "It only works for kids' games"
+      ],
+      "answer": 2,
+      "why": "It may skew the odds, but more often you get a clone, as the glut of mediocre shooters and survival horror games shows."
+    },
+    {
+      "id": "L02-q12",
+      "q": "Which brainstorming rule does Rogers attach a caveat to?",
+      "options": [
+        "Invite people from other disciplines, but they should understand game making",
+        "Use a whiteboard, never Post-its",
+        "Only designers should attend",
+        "Judge originality immediately"
+      ],
+      "answer": 0,
+      "why": "Diversity is good, but invitees who don't understand game making waste time on unrealistic ideas. Tools don't matter, and judging comes later."
+    },
+    {
+      "id": "L02-q13",
+      "q": "What's the purpose of the box-and-manual exercise?",
+      "options": [
+        "To finalize the marketing budget",
+        "To force the idea down to its bare essentials",
+        "To pick a publisher",
+        "To design the UI"
+      ],
+      "answer": 1,
+      "why": "The tight format (cover, back-of-box bullets, 16-page B&W manual) forces you to communicate only what's essential."
+    },
+    {
+      "id": "L02-q14",
+      "q": "In F2P, what best replaces the back-of-box exercise?",
+      "options": [
+        "A 200-page GDD",
+        "A trailer at a trade show",
+        "A press release",
+        "A store page with first screenshots plus a short ad with a 3-second hook"
+      ],
+      "answer": 3,
+      "why": "Mobile players decide from the icon, first screenshots and short ads. A long GDD doesn't test communication to players."
+    },
+    {
+      "id": "L02-q15",
+      "q": "Why is 'jump ahead to the good stuff' dangerous?",
+      "options": [
+        "It causes creative burnout",
+        "It can blow schedules and budgets and hurt the team",
+        "Bosses are hard to design",
+        "Producers forbid it"
+      ],
+      "answer": 1,
+      "why": "Games run on deadlines and budgets; choosing fun work over drudge work can harm the game, team and company. Use it only as a last resort."
+    },
+    {
+      "id": "L02-q16",
+      "q": "Why does the wife-o-meter work?",
+      "options": [
+        "Someone with no creative stake gives honest feedback",
+        "Spouses are trained critics",
+        "It's faster than a playtest",
+        "Miyamoto required it contractually"
+      ],
+      "answer": 0,
+      "why": "People without a vested creative interest give the clearest, most honest insight. Rogers used executive assistants the same way."
+    },
+    {
+      "id": "L02-q17",
+      "q": "You have a quirky F2P idea and limited money. What's the best first validation step?",
+      "options": [
+        "Build the full game, then soft launch",
+        "Run a cheap creative or fake-door test and a quick prototype",
+        "Hire a big marketing agency",
+        "Wait for a publisher to approve it"
+      ],
+      "answer": 1,
+      "why": "Spend the least money that can kill the idea: cheap creative tests and prototypes come before full builds and soft launch."
+    }
+  ],
+  "sideQuests": [
+    {
+      "id": "L02-s01",
+      "title": "Stupid Pitch Generator",
+      "task": "Describe 3 hit F2P games in one deliberately dumb-sounding sentence each. Notice how silly winners sound.",
+      "minutes": 10,
+      "xp": 25
+    },
+    {
+      "id": "L02-s02",
+      "title": "Off-Bubble Input",
+      "task": "Read one article on a topic you know nothing about. Write 3 game mechanics it suggests.",
+      "minutes": 15,
+      "xp": 30
+    },
+    {
+      "id": "L02-s03",
+      "title": "Bad Game Autopsy",
+      "task": "Play a low-rated mobile game for 10 minutes. List 5 un-fun things and a fix for each.",
+      "minutes": 15,
+      "xp": 40
+    },
+    {
+      "id": "L02-s04",
+      "title": "Fun-Type Tagging",
+      "task": "Tag 4 games on your phone with their top 2 of LeBlanc's 8 kinds of fun.",
+      "minutes": 10,
+      "xp": 25
+    },
+    {
+      "id": "L02-s05",
+      "title": "Genre Family Tree",
+      "task": "Draw a 5+ bubble evolution chart for an F2P genre (merge, survivor-like, idle). Label what each game added.",
+      "minutes": 15,
+      "xp": 45
+    },
+    {
+      "id": "L02-s06",
+      "title": "Brainstorm Sprint",
+      "task": "In 10 minutes, write 25 ideas for a cozy fishing mobile game in 2 buckets, like Rogers' kart page. Push the last 5 to absurd.",
+      "minutes": 10,
+      "xp": 35
+    },
+    {
+      "id": "L02-s07",
+      "title": "Store-Page Box",
+      "task": "Fill an F2P store-page template for one idea: title + subtitle, icon description, 3 screenshot captions, 3-second ad hook.",
+      "minutes": 15,
+      "xp": 40
+    }
+  ],
+  "mainQuests": [
+    {
+      "id": "L02-m01",
+      "title": "The Idea Funnel",
+      "task": "Brainstorm 30 F2P ideas in 30 minutes using at least 3 of Rogers' inspiration sources. Cull to 5 with a score table (core fantasy, audience, session fit, market proof, twist, ad-ability). Write a one-page concept for the winner: hook, target player + motivation, 30-second core loop, 1-week meta, store-page back-of-box, 3-step validation plan. Show it to an outsider.",
+      "deliverable": "30-idea list, score table, one-page concept, outsider feedback notes",
+      "doneWhen": "Every concept field is filled, the outsider's reaction is written down, and you made at least one change because of it. Bonus: post it publicly as Idea #1.",
+      "minutes": 150,
+      "xp": 200
+    }
+  ],
+  "playLabs": [
+    {
+      "id": "L02-p01",
+      "game": "Royal Match",
+      "minutes": 10,
+      "lookFor": "Seconds from tapping the icon to your first match, and anything that slows you down",
+      "question": "What un-fun did the designers strip out of the start of a session?"
+    },
+    {
+      "id": "L02-p02",
+      "game": "Homescapes",
+      "minutes": 10,
+      "lookFor": "How match-3 levels feed stars into the renovation story",
+      "question": "Which two older ideas are combined, and what does the mix give that neither has alone?"
+    },
+    {
+      "id": "L02-p03",
+      "game": "Survivor.io",
+      "minutes": 10,
+      "lookFor": "Moments where you feel powerful",
+      "question": "Which wish-fulfillment feeling does it sell, and at what moment is it strongest?"
+    },
+    {
+      "id": "L02-p04",
+      "game": "Any top-10 game you've never played",
+      "minutes": 10,
+      "lookFor": "Every moment you feel confused, bored or annoyed",
+      "question": "Which un-fun item would you fix first, and why?"
+    }
+  ],
+  "retrieval": [
+    {
+      "q": "Why should you never dismiss a stupid-sounding idea? Give an example.",
+      "a": "Many hits sound absurd when described plainly, e.g. a yellow creature eating dots while ghosts chase it (Pac-Man)."
+    },
+    {
+      "q": "List Rogers' five ways to get inspired.",
+      "a": "Read something unusual; walk/drive/shower; attend lectures and share ideas; play bad games and fix them in your head; follow your passion."
+    },
+    {
+      "q": "What's the argument for and against marketing's 'designer's idea' label?",
+      "a": "For: games that sell let you make more games. Against: innovative hits like PaRappa, The Sims and Braid would never exist if everyone listened."
+    },
+    {
+      "q": "How does Rogers explain where innovation comes from?",
+      "a": "Most design builds on predecessors (Sims from SimCity, PaRappa from Simon, Braid from Blinx), as shown in his platformer evolution chart."
+    },
+    {
+      "q": "What do gamers want, and what's wish fulfillment?",
+      "a": "Good games. Wish fulfillment: games let players feel what they aren't: powerful, smart, sneaky, successful, rich, bad, heroic."
+    },
+    {
+      "q": "What two audience questions should you answer early?",
+      "a": "Casual or hardcore? And what age? Kids want games for slightly older kids, so never talk down to them."
+    },
+    {
+      "q": "Why is 'Is it fun?' a bad question during production?",
+      "a": "Fun is subjective, fades with repetition, and developers lose objectivity after hundreds of replays."
+    },
+    {
+      "q": "Explain the Theory of Un-Fun and its caveat.",
+      "a": "Start fun, remove un-fun repeatedly, the fun remains. The starting idea must already be fun."
+    },
+    {
+      "q": "How do you run a good brainstorm?",
+      "a": "Brain, pen, paper, place, people; no bad ideas; mixed disciplines who understand game making; push ideas past ridiculous; record everything; judge later."
+    },
+    {
+      "q": "What's the box-and-manual exercise and its F2P equivalent?",
+      "a": "Imagine the cover, back-of-box bullets and a 16-page manual to reduce the idea to essentials. F2P: store page plus a short ad with a 3-second hook."
+    },
+    {
+      "q": "What are the five writer's block tricks?",
+      "a": "Narrow focus, walk/exercise, deal with distractions, jump ahead (last resort), change environment."
+    },
+    {
+      "q": "What happens after the brainstorm?",
+      "a": "Cull mercilessly into keepers and losers, then test ideas on someone with no creative stake (Miyamoto's wife-o-meter)."
+    },
+    {
+      "q": "How would you validate an F2P idea before full production?",
+      "a": "Hook test, market scan, fake-door creative test, greybox prototype, stranger playtest, then soft launch with retention metrics."
+    }
+  ],
+  "feynman": "Explain the Theory of Un-Fun to a producer in 60 seconds: why you can't just add fun, why the team stops seeing problems, and how you'd find and remove un-fun in a live F2P game using player data.",
+  "links": [
+    "L01",
+    "L03",
+    "L04",
+    "L13",
+    "L17",
+    "F2P"
+  ]
+}

@@ -1,0 +1,802 @@
+{
+  "id": "L07",
+  "order": 8,
+  "kind": "book",
+  "label": "Level 7",
+  "title": "The Three Cs, Part 3 — Controls",
+  "bookPages": "155–169",
+  "emoji": "🎮",
+  "tagline": "Press = act. Humans have stubby fingers. Design for thumbs, not tentacles.",
+  "f2pRelevance": 5,
+  "f2pWhy": "On mobile the controller is glass and a thumb. Touch controls make or break the first 30 seconds, D1 retention and every session after.",
+  "minutes": 60,
+  "tldr": [
+    "Design for real human hands. Ergonomics first: thumbs and index fingers do the work, ring and pinkie just hold on.",
+    "Map controls with meaning: by hand placement, by theme, by real-world motion and by genre convention. Familiar beats clever.",
+    "The action starts the instant the input happens. Save pretty animation for the end of the move. Long wind-ups only with a big payoff.",
+    "No input should ever do nothing: give a negative response, celebrate unlocks one at a time, or fill empty buttons with a related action.",
+    "Pick character-relative or camera-relative controls and never switch mid-game.",
+    "Rumble, gyro and motion are seasoning: consistent language, broad and simple motions, and watch lag and latency. On mobile: thumb zones, 44 pt/48 dp targets, forgiving input and haptics."
+  ],
+  "sections": [
+    {
+      "title": "Humans Are Playing These Games",
+      "bites": [
+        {
+          "id": "L07-b01",
+          "hook": "'You're holding the controller wrong' is never the answer",
+          "body": "Rogers couldn't beat a QTE in a game three years into production. The creative director asked how he held it (an ordinary two-handed hold), said he was holding it wrong, showed a contorted grip, and said the whole team had been taught it. Rogers argued real players wouldn't change grip mid-game and was told he was 100% wrong. Three months later playtesting proved the QTE too hard, and it was fixed.",
+          "example": "The dev team mastered a special grip. Real players never would.",
+          "f2p": "The mobile twin: 'works on my phone'. Devs on big flagships vs players on small phones, one-handed, on a bus. Test with strangers.",
+          "memory": "If the fix is 'hold it differently', the controls are broken.",
+          "tag": "example"
+        },
+        {
+          "id": "L07-b02",
+          "hook": "Humans play games, not six-fingered squid aliens",
+          "body": "Rogers' big lesson: always remember that humans play these games, with short, stubby fingers and so-so motor coordination. Ergonomics is the study of fitting equipment to the worker. Hardware makers carefully study how controllers are held, so don't design schemes that twist players' hands into pretzels.",
+          "example": "A scheme that needs the index finger on two buttons at once is a pretzel.",
+          "f2p": "Design for one thumb in portrait, or two thumbs in landscape. Nothing that needs a third hand or a table.",
+          "memory": "Design for thumbs, not tentacles.",
+          "tag": "rule"
+        },
+        {
+          "id": "L07-b03",
+          "hook": "The Flex-O-Fingering chart: which fingers deserve work",
+          "body": "Rogers' hand chart. Thumb: primary control and response, flexible, good for steering and fast reactions (recommended). Index: primary trigger and hold, strong and fast (recommended). Middle: secondary hold or trigger, weaker (use infrequently). Ring: primary support, just stabilizes (not recommended). Pinkie: secondary support, weak, needs hand support (not recommended).",
+          "example": "Gamepad conventions follow the chart: thumbs on sticks and face buttons, index fingers on triggers.",
+          "f2p": "On phones the chart shrinks to thumbs. The other fingers hold the device.",
+          "memory": "Thumbs steer, index shoots, middle holds, ring and pinkie hang on.",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "Mapping Strategies",
+      "bites": [
+        {
+          "id": "L07-b04",
+          "hook": "Set rules by hand placement and muscle memory follows",
+          "body": "Establish control rules based on where hands rest. On PC shooters, the keyboard moves and the mouse aims and shoots. It helps you decide what goes where, and players start linking a muscle movement to an action without realizing it.",
+          "example": "WASD to move, mouse to aim: the PC FPS standard.",
+          "f2p": "Landscape mobile action: left thumb moves, right thumb acts (Brawl Stars, Mobile Legends, PUBG Mobile). Don't fight the convention.",
+          "memory": "Each hand gets a job. Never swap jobs.",
+          "tag": "rule"
+        },
+        {
+          "id": "L07-b05",
+          "hook": "A whole keyboard doesn't mean using every key",
+          "body": "Keep keyboard controls clustered around common groupings, like the QWERTY area and the WASD cluster (typed 'ASWD' in the book). Players adapt far faster than when commands are scattered across the board.",
+          "example": "Abilities on Q, E, R, F near WASD instead of on P and the number pad.",
+          "f2p": "Touch version: don't scatter buttons. Cluster combat buttons in an arc around the right thumb, and put rare actions in top corners.",
+          "memory": "Keep your keys in the neighborhood.",
+          "tag": "rule"
+        },
+        {
+          "id": "L07-b06",
+          "hook": "Assign controls by theme: magic here, muscles there",
+          "body": "Another approach is thematic grouping. When unsure how to do a move, players try the thematically related input first. Just don't mix themes across inputs, which leads to confusion and sadness. It all boils down to understanding your audience's control needs.",
+          "example": "Tak and the Guardians of Gross (2008): Wii Remote motion = all magic powers, analog stick/nunchuk = physical actions like fighting and interacting.",
+          "f2p": "One gesture, one meaning: in card games, drag = play and tap = inspect. Tapping the world = act, edge buttons = menus.",
+          "memory": "The 4 Ms: Muscle, Meaning, Mirror, Majority.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Know Your Audience",
+      "bites": [
+        {
+          "id": "L07-b07",
+          "hook": "Kids can't do combos, so keep it simple",
+          "body": "For younger players, keep button presses simple and avoid complex combinations that small fingers can't do. In kids' keyboard games, don't spread commands far apart, because kids hunt and peck, which kills quick actions.",
+          "example": "A kids' platformer with one jump button and one action button.",
+          "f2p": "Hyper-casual applies this to everyone: one gesture total (tap in Flappy Bird, drag in Helix Jump).",
+          "memory": "Little fingers, little combos.",
+          "tag": "rule"
+        },
+        {
+          "id": "L07-b08",
+          "hook": "Let hardcore players customize, and help disabled gamers too",
+          "body": "MMO and FPS players build hotkeys and macros to chain attacks or spells. Give them the option to customize controls. Bonus: customizable controls are friendly to disabled gamers.",
+          "example": "An MMO mage chaining Combustion, Icy Veins and Fireball with one hotkey sequence to boost damage per second.",
+          "f2p": "Call of Duty: Mobile and PUBG Mobile let players move, resize and fade HUD buttons and pick gyro or simplified fire modes.",
+          "memory": "Customization = accessibility for free.",
+          "tag": "rule"
+        },
+        {
+          "id": "L07-b09",
+          "hook": "Not everyone can do the dragon punch",
+          "body": "Fighting-game fans are proud of mastering ultra-complex inputs, but many players can't pull them off. If you want the game accessible to other types of players, don't go overboard with complex controls.",
+          "example": "Street Fighter II's dragon punch motion as a skill barrier.",
+          "f2p": "Mobile fighters and MOBAs often offer simplified inputs or auto-target options alongside manual control.",
+          "memory": "Complexity is a wall. Decide who you're keeping out.",
+          "tag": "warning"
+        },
+        {
+          "id": "L07-b10",
+          "hook": "The pencil trick: when players need tools, you failed",
+          "body": "Track and Field (Konami, 1983) needed frantic mashing to run, which was almost impossible without rolling a pencil across the buttons. The 'pencil trick' destroyed controllers. Controller makers may have loved it, but forcing players into such workarounds is unfair.",
+          "example": "Kids worldwide sacrificing pencils and controllers to win the 100m dash.",
+          "f2p": "Mobile pencil trick = auto-clicker apps. If your clicker demands inhuman tapping, add automation (auto-tap upgrades, idle income).",
+          "memory": "A pencil should write, not win races.",
+          "tag": "fun"
+        },
+        {
+          "id": "L07-b11",
+          "hook": "Experiment freely, but always offer a classic mode",
+          "body": "Unconventional control schemes are fine to try, but let players revert to a traditional one. Even better: offer several control options, or let players remap controls in the options screen.",
+          "example": "A shooter offering default, legacy and custom layouts.",
+          "f2p": "Offer joystick vs tap-to-move (Among Us lets players choose), or fixed vs floating joystick.",
+          "memory": "New idea plus an exit door.",
+          "tag": "rule"
+        },
+        {
+          "id": "L07-b12",
+          "hook": "Pull back to climb. Don't reverse flight controls",
+          "body": "Pulling back on the stick should make a plane go up, and pushing forward should make it dive. Rogers jokes that fans of reversed flight controls should fly rings in Superman 64 for a week. With L06's 'push up to look up' for characters, the real rule is: match the mental model of the thing being controlled.",
+          "example": "Real aircraft: pull back on the yoke to climb.",
+          "f2p": "Tilt or gyro steering on phones needs invert options and sensitivity sliders.",
+          "memory": "People look like people, planes fly like planes.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Dance, Monkey, Dance",
+      "bites": [
+        {
+          "id": "L07-b13",
+          "hook": "Good controls are a dance, bad ones a button mash",
+          "body": "Think about how the game is played in the real world (fingers on the controller), not just in the game world. Avoid repetition and keep the scheme uncomplicated, and you get the 'dance of the buttons'. Too complex or too repetitive, and players resort to button mashing.",
+          "example": "A fighting game where varied, flowing inputs feel like choreography.",
+          "f2p": "Brawl Stars mixes move, aim/attack, super and gadget: few inputs, lots of expression. A dance, not a mash.",
+          "memory": "Choreography, not flailing.",
+          "tag": "concept"
+        },
+        {
+          "id": "L07-b14",
+          "hook": "Button mashing means your controls or feedback failed",
+          "body": "Button mashing is a derogatory term for hitting buttons wildly or rapidly because you don't know how to control the game, hoping for any positive result. It usually happens in action and fighting games when the scheme is too complex or the feedback isn't satisfying.",
+          "example": "A new player hammering every button in a brawler.",
+          "f2p": "Touch mashing = frantic tapping everywhere. Fix with clear tappable affordances and instant, distinct feedback for every tap.",
+          "memory": "Mashing is a cry for help.",
+          "tag": "warning"
+        },
+        {
+          "id": "L07-b15",
+          "hook": "Gamers' thumb is real: stiffness, burning, numbness",
+          "body": "Mashing causes fatigue and 'gamers' thumb' (occupational overuse syndrome): stiffness, burning or cold sensations, numbness or weakness. APTA advice Rogers cites: straight wrists, a chair with back support, and a stretch every 20 minutes for head, neck and shoulders.",
+          "example": "A marathon session leaving the thumb stiff and tingly.",
+          "f2p": "Tight one-thumb grips and long tap sessions strain hands too. Build natural stopping points and automation into tap-heavy loops.",
+          "memory": "Every 20 minutes your hands file a complaint.",
+          "tag": "warning"
+        },
+        {
+          "id": "L07-b16",
+          "hook": "Five hand exercises from the physical therapists",
+          "body": "Tap each finger with the same-hand thumb 5 times. Alternate palm and back of hand on your thigh fast, 20 times. Spread fingers wide for 10 seconds, 8 times. Clasp hands, turn palms out, extend arms forward for 10 seconds, 8 times. Fold hands, palms out, extend arms overhead for 10 seconds, 8 times.",
+          "example": "Rogers' drawing helpfully labels the thigh, twice.",
+          "f2p": "Take a break yourself during long playtest and design sessions. Truth #6 includes you.",
+          "memory": "Tap, slap, spread, push, reach.",
+          "tag": "list"
+        },
+        {
+          "id": "L07-b17",
+          "hook": "Make mashing look awesome and players will learn",
+          "body": "The first thing new players do is press every button, because they want to see what happens and nobody reads the manual. So make the character do something cool on any press, even if the player doesn't understand how. After seeing the cool moves a few times, players slow down to work out how they did them.",
+          "example": "God of War: Kratos pulls off awesome moves even when you mash, on purpose.",
+          "f2p": "The hyper-casual and auto-attack promise: in Survivor.io or Archero, just moving makes you shred enemies. The first 10 seconds feel amazing.",
+          "memory": "Reward curiosity first, teach mastery second.",
+          "tag": "concept"
+        },
+        {
+          "id": "L07-b18",
+          "hook": "Never let a button do nothing when pressed",
+          "body": "Every press needs a response. Way 1: a negative response, like a sound effect or animation that shows the control isn't available. Rogers loved how the hero of Dark Castle shrugged when out of ammo or missing a key.",
+          "example": "A shrug, a buzz, a head shake: the game heard you, the answer is no.",
+          "f2p": "Locked buttons show a lock icon, wiggle with a soft sound, and explain: 'Unlocks at level 5'. Silent taps feel like a frozen game.",
+          "memory": "Shrug, Spotlight, Stand-in.",
+          "tag": "rule"
+        },
+        {
+          "id": "L07-b19",
+          "hook": "Celebrate each unlock, but one move at a time",
+          "body": "Way 2: show during training that a button is not active yet, then turn its unlock into an event. Two cautions: (a) introduce just one new move per step, and (b) don't force-feed moves too fast. Overloaded players tune out.",
+          "example": "Brütal Legend stops the game and shows a full-screen graphic for each new move.",
+          "f2p": "Good FTUEs unlock one feature per level band, each with its own celebration, instead of dumping every menu on day one.",
+          "memory": "Spotlight one star at a time.",
+          "tag": "rule"
+        },
+        {
+          "id": "L07-b20",
+          "hook": "Empty button? Give it a related stand-in job",
+          "body": "Way 3: assign a redundant but related function. If triangle will eventually fire a projectile the player doesn't have yet, map melee to it for now. The player mentally links the button with combat until the true move unlocks.",
+          "example": "Triangle does melee until you find the kill-o-zap blaster.",
+          "f2p": "An empty ability slot can fire the basic attack until the real skill unlocks, so the button is already linked to 'fight'.",
+          "memory": "Understudy on stage until the star arrives.",
+          "tag": "concept"
+        },
+        {
+          "id": "L07-b21",
+          "hook": "F2P 'nope' feedback without the dark pattern",
+          "body": "When a player taps something they can't afford or haven't unlocked, explain what's missing and where to get it. It's fine to mention the shop, but ambushing every negative response with a hard-currency offer erodes trust and feels predatory.",
+          "example": "Tapping a locked hero shows 'Reach Arena 4 or collect 20 shards', with a link to the relevant mode.",
+          "f2p": "Trust drives long-term spending. Regret-free purchases beat ambush offers.",
+          "memory": "Answer the question before selling the answer.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "Real-World Mapping, Button Size and Instant Response",
+      "bites": [
+        {
+          "id": "L07-b22",
+          "hook": "Push to fill the canteen, pull to drink",
+          "body": "Even traditional controllers can mirror real actions. In Pitfall: The Lost Expedition (2004), water is health: at a cistern you push the stick forward to fill the canteen, and pulling back makes Harry drink to heal. Intention plus animation feels satisfying, and logical mapping immerses players.",
+          "example": "Stick forward = into the water. Stick back = to your mouth.",
+          "f2p": "Touch gestures that mime reality: swipe to slice (Fruit Ninja), pull back and release (Angry Birds), flick to throw (Pokémon GO), drag a sickle across crops (Hay Day).",
+          "memory": "If the gesture mimes the action, nobody needs a tutorial.",
+          "tag": "example"
+        },
+        {
+          "id": "L07-b23",
+          "hook": "Maximo's buttons match the moves",
+          "body": "Maximo: Ghosts to Glory linked moves to the physical PS2 pad. Triangle (top button) = overhead swing, high to low. Square (horizontal plane) = horizontal swing. X (lowest button) = jump, which starts from the ground. Circle = shield throw, because the icon is round like the shield.",
+          "example": "A cross-shaped diagram: each face button's position or shape mirrors its move.",
+          "f2p": "Put 'up' actions high and 'down' actions low, and make icons mirror actions (a shield for block, a boot for dash).",
+          "memory": "Top = overhead, side = sideways, bottom = jump off the ground, circle = round shield.",
+          "tag": "example"
+        },
+        {
+          "id": "L07-b24",
+          "hook": "Copy your genre's controls. Familiarity relieves confusion",
+          "body": "FPS, RTS and platformer genres have widely accepted control schemes, like space bar, X or A to jump in platformers. The more your scheme resembles other successful games in the same genre, the more easily players will embrace it.",
+          "example": "Jump on A (Xbox) or X (PlayStation): the platformer norm.",
+          "f2p": "Mobile conventions: left joystick moves, swipe or tap-tap swaps in match-3, drag-to-merge, drag a card onto the field. Players arrive pre-trained.",
+          "memory": "Don't make players unlearn their favorite game.",
+          "tag": "rule"
+        },
+        {
+          "id": "L07-b25",
+          "hook": "Big triggers for panic moves, small buttons for patient ones",
+          "body": "Consider physical button size. On the Xbox 360 pad, shoulder buttons are smaller than triggers. Put quick moves (shoot, brake, accelerate, melee) on the triggers, because a finger can slip off a small button mid-panic. Put slow moves (precision aim, map, inventory swap) on the small buttons.",
+          "example": "A racer with brake and gas on the big triggers, the map on a bumper.",
+          "f2p": "Fitts's law: big and close = fast. Main actions get big buttons in the natural thumb zone, rare actions small ones in top corners, gem-spends away from quick-tap areas.",
+          "memory": "Big and close for panic, small and far for patience.",
+          "tag": "rule"
+        },
+        {
+          "id": "L07-b26",
+          "hook": "Press = act. Pretty animation goes at the end",
+          "body": "When the button is pressed, the action should happen. Making players wait for a gorgeous animation before the move happens gets them killed by misjudged timing or stray attacks. Save the nice animation for the finish of the move. When the player presses jump, the game should just ask 'how high?'",
+          "example": "A jump that leaves the ground on frame one and gets its flourish at the peak.",
+          "f2p": "Touch already adds latency, so react on touch-down (button depresses, piece lifts, haptic tick) and buffer inputs during animations.",
+          "memory": "Animation is the bow after the show, not a speech before it.",
+          "tag": "truth"
+        },
+        {
+          "id": "L07-b27",
+          "hook": "Long wind-ups are okay if the payoff is huge",
+          "body": "Long animations and controls have their place when risk and reward balance. The wind-up is the risk, and high damage or an instant kill is the reward.",
+          "example": "Mark of Kri's slowest wind-ups are its most powerful attacks. Land one and the enemy stays down.",
+          "f2p": "Hold-to-charge attacks are natural on touch: holding is the risk, the big hit the reward. Telegraph the charge clearly.",
+          "memory": "Slow swing, big ding.",
+          "tag": "concept"
+        },
+        {
+          "id": "L07-b46",
+          "hook": "Motion controls invite real-world moves, but master the pad first",
+          "body": "The Wii Remote and Project Natal gave designers a chance to recreate real-world controls for moves. Before going there, Rogers shows how much reality you can still squeeze from a traditional controller, using stick direction, button position and button shape.",
+          "example": "Pitfall's stick push and pull, and Maximo's face-button layout, both mirror the action without any motion sensing.",
+          "f2p": "A touchscreen is a motion input of its own. Start with gestures that mime the action (slice, throw, pull back) before reaching for tilt or gyro.",
+          "memory": "Max out the pad before you wave the wand.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Character or Camera Relative?",
+      "bites": [
+        {
+          "id": "L07-b28",
+          "hook": "Pick one control reference frame and stick with it",
+          "body": "A common snare is controls that alternate between character-relative and camera-relative. It frustrates players, so pick one scheme for the whole game and stick with it.",
+          "example": "A game that switches to camera-relative only in certain rooms, and players walk off cliffs.",
+          "f2p": "Never rotate the board or flip your team's side between matches. That's the UI version of switching frames.",
+          "memory": "Switching frames mid-game = handing your player a mirror while they drive.",
+          "tag": "rule"
+        },
+        {
+          "id": "L07-b29",
+          "hook": "Terror Zombie Death Mansion 3: left becomes right, brains eaten",
+          "body": "With camera-relative controls (as Rogers describes them), pushing left in the hallway walks the hero left. In the next room the camera faces the opposite way, so pushing left now walks him right, straight into a zombie. Rogers prefers character-relative: left always moves the character left, and the game compensates even if the camera turns 180 degrees.",
+          "example": "Footnote: someone 'crossed the line' with that camera (see Level 6).",
+          "f2p": "Top-down mobile games dodge this: the camera never rotates, so joystick up = screen up, always.",
+          "memory": "A zombie's favorite feature: surprise control flips.",
+          "tag": "example"
+        },
+        {
+          "id": "L07-b30",
+          "hook": "2026 update: 'camera-relative' means something different now",
+          "body": "Modern usage calls camera-relative movement (push up = move away from the camera) the 3D standard, while 'character-relative' usually means tank controls. Rogers' zombie problem is really about hard camera cuts. The modern fix: latch the previous direction across a cut until the stick is released, and don't cross the line. The principle stands: one consistent frame, no surprise flips.",
+          "example": "Fixed-camera horror games flipping directions at every cut was the classic case.",
+          "f2p": "In 3D mobile games, make sure gameplay starts after a cutscene with the hero facing a sensible direction.",
+          "memory": "Latch the stick across the cut.",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "Shake, Rattle and Roll",
+      "bites": [
+        {
+          "id": "L07-b31",
+          "hook": "Rumble has a language. Don't shout all the time",
+          "body": "Actuators give vibration feedback. Like control schemes, keep their language consistent. Don't fire them constantly: limit them to taking damage or earning a reward. Take time to experiment, because they can be a lot of fun.",
+          "example": "Vibrate on hit and on loot, never just because the music got loud.",
+          "f2p": "Haptics are the modern rumble. Build a haptic style guide (light tick = select, medium = hit or match, heavy = big combo) and always add a toggle.",
+          "memory": "Haptics are punctuation, not a buzzing sentence.",
+          "tag": "rule"
+        },
+        {
+          "id": "L07-b32",
+          "hook": "Silent Hill made the controller's heart pound",
+          "body": "Rogers' favorite actuator use: Silent Hill (Konami, 1999) vibrated two actuators at different frequencies to simulate a heartbeat. When the character was scared or hurt, the controller's 'heart' thumped, telling the player they were in trouble. Creepy and effective.",
+          "example": "Thump-thump in your hands as health drops.",
+          "f2p": "Custom haptic patterns on modern phones can do the same: a heartbeat at low HP, or a rising rumble before a gacha reveal.",
+          "memory": "The controller got anxiety, and so did you.",
+          "tag": "example"
+        },
+        {
+          "id": "L07-b33",
+          "hook": "Gyro controls are hidden, so remind players they exist",
+          "body": "A gyroscope lets players rotate the controller to manipulate on-screen things: nudging arrows mid-flight (Heavenly Sword), steering falling characters (Ratchet & Clank: Tools of Destruction), flipping a whole level (Super Mario Galaxy). The key rule: clearly show which direction to turn, and remind players the option exists because it's hidden inside the device.",
+          "example": "An on-screen arrow showing 'tilt left' the first few times.",
+          "f2p": "Gyro aim in mobile shooters, Temple Run's tilt to lean, Pokémon GO AR: tell players, show direction, and never make it the only way to play.",
+          "memory": "Out of sight, out of mind. So put it in sight.",
+          "tag": "rule"
+        },
+        {
+          "id": "L07-b34",
+          "hook": "Swing it like a sword, and make it feel like one",
+          "body": "Players respond best when moves match real actions: swing like a sword, racket, bowling ball or conductor's baton and they get it instantly. The trick is tuning animation and physics so the in-game sword feels like a sword. The right timing, speed and friction remove the 'floaty' or 'gamey' feeling players dislike.",
+          "example": "A tennis swing where the racket's weight and follow-through feel right.",
+          "f2p": "Fruit Ninja's swipe feels like slicing because trail, split, splash and sound arrive instantly.",
+          "memory": "Mime the move, then sell the weight.",
+          "tag": "concept"
+        },
+        {
+          "id": "L07-b35",
+          "hook": "WarioWare proved motion controls can be gloriously silly",
+          "body": "Gyro controls let you get away with silliness. WarioWare: Smooth Moves (2006) had only about 20 'moves' (half of them button presses), but asked players to hold the controller in bizarre ways, like a mohawk on your head or a spatula flipping a pancake. Making players look silly was the fun.",
+          "example": "A whole living room laughing at someone wearing a Wii Remote as a mohawk.",
+          "f2p": "Phones are played in public. Motions that make players look silly are a barrier on mobile, so keep the silliness on screen.",
+          "memory": "Silly at a party, awkward on a train.",
+          "tag": "fun"
+        },
+        {
+          "id": "L07-b36",
+          "hook": "Lag: the gap between doing and seeing",
+          "body": "Always account for lag, the time between an action and seeing it on screen. Most games are about timing, so lag is infuriating, especially in rhythm games (Rock Band) and fighting games (Street Fighter). Guitar Hero lets players adjust the lag to match their own skill level.",
+          "example": "A rhythm game where every note registers late until you calibrate.",
+          "f2p": "Mobile rhythm games often offer audio/visual offset calibration. Measure touch-to-screen latency on low-end phones.",
+          "memory": "Late is the new wrong.",
+          "tag": "warning"
+        },
+        {
+          "id": "L07-b37",
+          "hook": "Latency: online delays that look like broken controls",
+          "body": "Latency is the delay in receiving and decoding game data in online games. It can cause lag, control lock-up, sound distortion, freezes and crashes. Rogers calls it more a programming issue than a design one: tightly written code avoids sending unnecessary data.",
+          "example": "An online match where your character rubber-bands after each input.",
+          "f2p": "In real-time mobile PvP, netcode (prediction, lag compensation) and ping indicators matter. Players blame 'bad controls' for bad networking.",
+          "memory": "Lag is local, latency is long-distance.",
+          "tag": "concept"
+        },
+        {
+          "id": "L07-b38",
+          "hook": "Motion tips: broad moves, simple shapes, real breaks",
+          "body": "Many players don't play to exercise, so build in breaks and vary motions to avoid fatigue and repetitive stress injuries. Keep movements broad, because subtle motions don't register with motion cameras. Keep drawn shapes simple (circles, triangles, lines). Even figure eights and squares get misread.",
+          "example": "A spell drawn as a simple circle instead of an intricate rune.",
+          "f2p": "Gesture recognizers misread complex glyphs too. Prefer 4-direction swipes and taps with forgiving thresholds.",
+          "memory": "Big Lazy Lions Bite Simple Donuts, Rarely.",
+          "tag": "list"
+        },
+        {
+          "id": "L07-b39",
+          "hook": "Don't make a waggle-fest",
+          "body": "Some motion games were mocked as 'waggle-fests' because every action used motion for its own sake. Mix traditional stick, button presses and controller motions, and use each where it fits best.",
+          "example": "Shaking the remote to open every single door.",
+          "f2p": "Don't turn every action into a gesture. Mix taps, swipes and holds, each with one clear meaning.",
+          "memory": "Motion is a spice, not the main course.",
+          "tag": "warning"
+        },
+        {
+          "id": "L07-b47",
+          "hook": "Actuators and gyroscopes are what make motion controllers possible",
+          "body": "Most modern controllers contain actuators (vibration feedback) and gyroscopes (rotation sensing). They are the parts behind motion controllers like the Wii's and the PS3's. Use the actuator with a consistent language and the gyro with clear direction cues.",
+          "example": "Silent Hill's dual-frequency heartbeat (actuator) and Super Mario Galaxy's level flip (gyro).",
+          "f2p": "Phones carry both: a haptic engine for rumble and a gyro for tilt. Same rules apply: consistent haptic language, and tell players the tilt option exists.",
+          "memory": "Actuator = it talks to you. Gyro = you talk to it.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Touch Controls Field Guide (F2P Bonus)",
+      "bites": [
+        {
+          "id": "L07-b40",
+          "hook": "The touch gesture menu: tap, hold, swipe, drag, pinch, tilt",
+          "body": "Tap = press a button (select, fire, jump). Double tap = special action (conflicts with tap). Hold = charge or inspect (hidden, so hint it). Swipe or flick = directional actions. Drag = move, aim, place, merge (the finger hides the object). Virtual joystick = continuous movement. Pinch = zoom maps. Tilt/gyro = aim or lean (tiring, hidden).",
+          "example": "Flappy Bird tap, Subway Surfers swipe, merge-game drag, Clash of Clans pinch.",
+          "f2p": "Pick the fewest gestures your game needs and give each exactly one meaning.",
+          "memory": "Each gesture gets one job, like a good keyboard key.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L07-b41",
+          "hook": "Fixed, floating or tap-to-move: pick your joystick",
+          "body": "A fixed joystick is predictable, but thumbs drift off it without tactile feedback. A floating joystick appears wherever the thumb lands, which is forgiving and great for one-thumb play. Tap-to-move is low effort, good for casual and strategy, worse for twitch action. Twin-stick puts movement on the left and aim/attack on the right.",
+          "example": "Archero and Survivor.io use a joystick that appears where you touch.",
+          "f2p": "Brawl Stars' attack control: tap = auto-aim at the nearest target, drag = manual aim. One control serves beginners and experts.",
+          "memory": "Float for thumbs, fix for pros, tap for chill.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L07-b42",
+          "hook": "Thumb zones: actions at the bottom, info at the top",
+          "body": "Lots of people use phones one-handed (an often-cited 2013 study by Steven Hoober saw roughly half), and screens keep growing, so the top is a stretch. Portrait: primary actions in the bottom natural zone, the board in the middle, currencies, timers and settings at the top. Landscape: bottom-left moves, bottom-right acts, top corners hold rare actions.",
+          "example": "A match-3 with boosters along the bottom and the score at the top.",
+          "f2p": "Hyper-casual and casual = one thumb in portrait. Midcore = two thumbs in landscape. Decide with the camera choice in L06.",
+          "memory": "Thumb lives downstairs. Info lives upstairs.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L07-b43",
+          "hook": "Fat fingers need 44-point targets",
+          "body": "Apple's guidelines recommend touch targets of at least 44×44 points, and Android's Material guidelines at least 48×48 dp with about 8 dp spacing. The hit area can be bigger than the art. Fingers hide what they touch, so offset dragged pieces above the finger and show landing previews. Respect safe areas and OS edge gestures.",
+          "example": "A tiny close button (✖) with a generous invisible hit area.",
+          "f2p": "Keep 'spend gems' buttons far from 'collect' buttons and add a confirm, for good UX and ethics.",
+          "memory": "Smaller than a fingertip = a mis-tap waiting to happen.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L07-b44",
+          "hook": "Forgiving input reads intent, not pixels",
+          "body": "Touch is imprecise, so forgive it. Snap drags to nearby valid slots. Buffer early inputs so they fire at the first valid frame. Use coyote time for late jumps, aim assist, auto-aim or auto-attack, and tuned swipe thresholds. Add undo or confirm for costly actions. Forgiveness is Rogers' 'press = act' made humane.",
+          "example": "Archero fires automatically when you stop moving, removing the precision tax.",
+          "f2p": "Simplified auto-fire modes in mobile shooters let casual players compete without pixel-perfect aim.",
+          "memory": "Read the mind, not the millimeter.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L07-b45",
+          "hook": "One gesture for hyper-casual, twin sticks for midcore",
+          "body": "Hyper-casual: one gesture, portrait, learnable in 3 seconds, instant retry. Casual: board taps, swipes and drags, a fixed camera, forgiving and one-handed. Hybrid-casual: move-only joystick with automatic combat. Midcore: twin joysticks plus 2 to 5 skill buttons or drag-deploy, usually landscape, with customization and aim assist.",
+          "example": "Flappy Bird → Royal Match → Survivor.io → Brawl Stars.",
+          "f2p": "Control complexity sets your audience size. Every extra input shrinks the funnel, so add one only when it adds real depth.",
+          "memory": "One finger, one board, one stick, two sticks.",
+          "tag": "f2p"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "Let ergonomics shape how you design control schemes.",
+    "Consider grouping control functions by theme.",
+    "Consider copying the control schemes of successful games in the same genre, because familiarity removes confusion.",
+    "The action should happen the moment the button is pressed.",
+    "Give negative responses as well as positive ones.",
+    "Give players breaks to avoid gamers' thumb and other health problems, and take a break yourself too.",
+    "Camera-relative or character-relative controls? Choose one and keep it for the whole game.",
+    "Avoid controls that contradict what the game shows.",
+    "Use the controller's special features to make controls more intuitive.",
+    "Watch out for lag and latency.",
+    "Players' movements with motion controllers should be broad and mimic real life."
+  ],
+  "mnemonics": [
+    {
+      "name": "Flex-O-Fingering",
+      "device": "Thumbs Steer, Index Shoots, Middle Holds, Ring and Pinkie hang on",
+      "unpacks": "Thumb = primary control/response (recommended); Index = primary trigger/hold (recommended); Middle = secondary hold/trigger (use infrequently); Ring and Pinkie = support only (not recommended)."
+    },
+    {
+      "name": "The 4 Ms of control mapping",
+      "device": "Muscle, Meaning, Mirror, Majority",
+      "unpacks": "Muscle = assign by hand placement; Meaning = assign thematically; Mirror = input mimics the real action (Pitfall canteen, Maximo buttons); Majority = follow genre conventions."
+    },
+    {
+      "name": "Never a dead button",
+      "device": "Shrug, Spotlight, Stand-in",
+      "unpacks": "Shrug = negative response (Dark Castle); Spotlight = mark inactive, then celebrate the unlock one move at a time (Brütal Legend); Stand-in = a related placeholder action (melee until the blaster)."
+    },
+    {
+      "name": "Motion-control tips",
+      "device": "Big Lazy Lions Bite Simple Donuts, Rarely",
+      "unpacks": "Breaks and varied motions, Lag, Latency, Broad movements, Simple shapes, Don't overdo it (no waggle-fests), Real-world mimicry with real feel."
+    },
+    {
+      "name": "Mobile touch rules",
+      "device": "THUMBS",
+      "unpacks": "Targets big (≥44 pt / 48 dp), Hand zone (actions bottom, info top), Unblocked view (the finger never hides the action), Make it forgiving (snap, buffer, auto-aim), Buzz back instantly (visual + audio + haptic), Simple gestures (one meaning each)."
+    }
+  ],
+  "flashcards": [
+    { "id": "L07-f01", "q": "What lesson did Rogers take from the 'holding the controller wrong' story?", "a": "Always remember that humans play these games, so design controls ergonomically.", "type": "basic" },
+    { "id": "L07-f02", "q": "How did the 'holding it wrong' QTE story end?", "a": "Three months later, playtesting showed the QTE was too hard and the controls were adjusted.", "type": "basic" },
+    { "id": "L07-f03", "q": "Define ergonomics.", "a": "The study of fitting equipment to the worker (or player).", "type": "basic" },
+    { "id": "L07-f04", "q": "On the Flex-O-Fingering chart, what is the thumb's role?", "a": "Primary control and primary response: flexible, good for steering and fast response (recommended).", "type": "basic" },
+    { "id": "L07-f05", "q": "On the Flex-O-Fingering chart, what is the index finger's role?", "a": "Primary trigger, primary hold, secondary response: strong and fast (recommended).", "type": "basic" },
+    { "id": "L07-f06", "q": "How should the middle finger be used, per the chart?", "a": "Secondary hold or trigger. Usable for hold moves but weaker, so use it infrequently.", "type": "basic" },
+    { "id": "L07-f07", "q": "Why are the ring and pinkie fingers 'not recommended' for controls?", "a": "They're weak with poor reach. They're better for stabilizing and supporting the grip.", "type": "why" },
+    { "id": "L07-f08", "q": "Why set control rules based on hand placement?", "a": "It clarifies what goes where, and players build muscle memory linking movements to actions.", "type": "why" },
+    { "id": "L07-f09", "q": "What keyboard groupings does Rogers recommend clustering controls around?", "a": "Common groupings like the QWERTY area and the WASD cluster. Don't use every key.", "type": "basic" },
+    { "id": "L07-f10", "q": "How did Tak and the Guardians of Gross assign controls thematically?", "a": "Wii Remote motion = all magic powers. Analog stick/nunchuk = real-world abilities (interacting, fighting).", "type": "basic" },
+    { "id": "L07-f11", "q": "What's the danger with thematic control assignment?", "a": "Crossing signals by mixing themes across inputs, which causes confusion.", "type": "basic" },
+    { "id": "L07-f12", "q": "What are Rogers' control tips for younger players?", "a": "Simple presses, no complex combos, and keyboard commands kept close together (kids hunt and peck).", "type": "basic" },
+    { "id": "L07-f13", "q": "Besides power users, who benefits from customizable controls?", "a": "Disabled gamers. Customization is accessibility-friendly.", "type": "basic" },
+    { "id": "L07-f14", "q": "What was the 'pencil trick'?", "a": "Rolling a pencil across buttons to mash fast enough in Track and Field (1983). It destroyed controllers.", "type": "basic" },
+    { "id": "L07-f15", "q": "Why does Rogers call the pencil trick unfair?", "a": "Players shouldn't have to resort to physical workarounds, which wreck hardware, to play your game.", "type": "why" },
+    { "id": "L07-f16", "q": "If you try an unconventional control scheme, what must you also offer?", "a": "An option to revert to a traditional scheme (ideally several options or full remapping).", "type": "basic" },
+    { "id": "L07-f17", "q": "Which way should pulling back on a flight stick move a plane?", "a": "Up. Pull back = climb, push forward = dive. Don't reverse flight controls.", "type": "basic" },
+    { "id": "L07-f18", "q": "What is the 'dance of the buttons'?", "a": "An uncomplicated, non-repetitive scheme where fingers flow naturally between inputs.", "type": "basic" },
+    { "id": "L07-f19", "q": "What is button mashing?", "a": "Wildly or rapidly hitting random buttons because you don't know how to control the game, hoping for any result.", "type": "basic" },
+    { "id": "L07-f20", "q": "What two causes of button mashing does Rogers name?", "a": "A control scheme that's too complex, or unsatisfying feedback.", "type": "basic" },
+    { "id": "L07-f21", "q": "What is 'gamers' thumb' and its symptoms?", "a": "Occupational overuse syndrome: stiffness, burning or cold sensations, numbness or weakness.", "type": "basic" },
+    { "id": "L07-f22", "q": "How often does the APTA advice say to stretch?", "a": "Every 20 minutes (head, neck and shoulders).", "type": "basic" },
+    { "id": "L07-f23", "q": "Why do new players press every button?", "a": "They want to see what happens, and nobody reads the manual.", "type": "why" },
+    { "id": "L07-f24", "q": "How does God of War use button mashing to teach?", "a": "Kratos does cool moves even when you mash. Players then slow down to learn how they did them.", "type": "basic" },
+    { "id": "L07-f25", "q": "What are the three ways to make sure a button never does nothing?", "a": "Negative response; mark inactive in training and celebrate the unlock; assign a redundant related function.", "type": "basic" },
+    { "id": "L07-f26", "q": "What did the hero of Dark Castle do as a negative response?", "a": "Shrugged when out of ammo or missing a key.", "type": "basic" },
+    { "id": "L07-f27", "q": "What two cautions go with celebrating new move unlocks?", "a": "Teach only one new move at a time, and don't introduce them too quickly. Overloaded players tune out.", "type": "basic" },
+    { "id": "L07-f28", "q": "Why assign melee to the button a future projectile will use?", "a": "The player links that button with combat before the true move unlocks, and the button is never dead.", "type": "why" },
+    { "id": "L07-f29", "q": "How does Pitfall: The Lost Expedition map the canteen?", "a": "Push the stick forward at a cistern to fill, pull back to drink and restore health.", "type": "basic" },
+    { "id": "L07-f30", "q": "In Maximo, why is jump on the X button?", "a": "X is the lowest button on the pad, and the jump starts from the ground.", "type": "why" },
+    { "id": "L07-f31", "q": "In Maximo, why is shield throw on circle?", "a": "The circle icon matches the round shield.", "type": "why" },
+    { "id": "L07-f32", "q": "Why copy the control scheme of successful games in your genre?", "a": "Familiarity relieves confusion, so players embrace the game faster.", "type": "why" },
+    { "id": "L07-f33", "q": "Which functions belong on big triggers vs small shoulder buttons?", "a": "Triggers: quick moves (shoot, brake, accelerate, melee). Small buttons: slow moves (precision aim, map, inventory).", "type": "basic" },
+    { "id": "L07-f34", "q": "Why put quick moves on the bigger triggers?", "a": "In the heat of action, fingers can slip off small buttons.", "type": "why" },
+    { "id": "L07-f35", "q": "When the player presses jump, the game should ask only ____.", "a": "'How high?'", "type": "cloze" },
+    { "id": "L07-f36", "q": "Where should beautiful animation go in a move?", "a": "At the finish of the move, never delaying the response to the button press.", "type": "basic" },
+    { "id": "L07-f37", "q": "When are long wind-up animations acceptable?", "a": "When risk and reward balance: the wind-up is the risk, the payoff (huge damage, instant kill) is the reward, like in Mark of Kri.", "type": "basic" },
+    { "id": "L07-f38", "q": "Character-relative or camera-relative: what is Rogers' core rule?", "a": "Pick one for the whole game and stick with it. Never alternate.", "type": "basic" },
+    { "id": "L07-f39", "q": "What happens to the hero in 'Terror Zombie Death Mansion 3'?", "a": "The camera flips 180° between rooms, left now moves him right, and he walks into a zombie who eats his brains.", "type": "basic" },
+    { "id": "L07-f40", "q": "What is an actuator for?", "a": "Vibration (rumble) feedback.", "type": "basic" },
+    { "id": "L07-f41", "q": "When should rumble fire, per Rogers?", "a": "Mainly when the player takes damage or earns a reward, with a consistent language and not all the time.", "type": "basic" },
+    { "id": "L07-f42", "q": "How did Silent Hill use actuators?", "a": "Two actuators at different frequencies simulated a heartbeat when the character was scared or hurt.", "type": "basic" },
+    { "id": "L07-f43", "q": "What is the key rule for gyroscope controls?", "a": "Clearly communicate which way to turn the controller, and remind players the option exists (it's hidden).", "type": "basic" },
+    { "id": "L07-f44", "q": "Name three games Rogers cites for gyro uses.", "a": "Heavenly Sword (nudge arrows), Ratchet & Clank: Tools of Destruction (steer falling characters), Super Mario Galaxy (flip a level).", "type": "basic" },
+    { "id": "L07-f45", "q": "What makes motion-controlled actions feel less 'floaty' or 'gamey'?", "a": "Tuning animation and physics: the right timing, speed and sense of friction.", "type": "basic" },
+    { "id": "L07-f46", "q": "Lag vs latency?", "a": "Lag: delay between an action and seeing it on screen. Latency: online delay in receiving and decoding game data.", "type": "basic" },
+    { "id": "L07-f47", "q": "Which game let players adjust for lag?", "a": "Guitar Hero lets players adjust the lag to match their own skill level.", "type": "basic" },
+    { "id": "L07-f48", "q": "Why keep motion-control movements broad?", "a": "Precise, subtle motions often don't register with motion-sensing cameras.", "type": "why" },
+    { "id": "L07-f49", "q": "Motion glyphs should be simple shapes like circles, triangles and ____. Even figure eights and squares get misread.", "a": "lines", "type": "cloze" },
+    { "id": "L07-f50", "q": "Motion games that use motion for every action got mocked as ____.", "a": "waggle-fests", "type": "cloze" },
+    { "id": "L07-f51", "q": "Apple's minimum touch target is ____ points; Material's is 48×48 dp.", "a": "44×44", "type": "cloze" },
+    { "id": "L07-f52", "q": "Ergonomics is the study of fitting ____ to the worker.", "a": "equipment", "type": "cloze" },
+    { "id": "L07-f53", "q": "Scenario: playtesters tap a locked shop tab and nothing happens. They think the game froze. Which truth?", "a": "Use negative responses as well as positive ones. Never let an input do nothing.", "type": "apply" },
+    { "id": "L07-f54", "q": "Scenario: your hero's sword swing plays a 0.6 s flourish before the hit lands and players feel 'laggy controls'. Fix?", "a": "Press = act: the hit starts on the press, and the flourish moves to the end of the move. Or make it a deliberate high-reward wind-up.", "type": "apply" },
+    { "id": "L07-f55", "q": "Scenario: your new idle game requires 10 taps per second to progress, and reviews mention auto-clickers. Which book lesson?", "a": "The pencil trick: don't force players into workarounds. Add automation or hold-to-repeat.", "type": "apply" },
+    { "id": "L07-f56", "q": "Scenario: in your mobile brawler, the attack button sits top-right and settings sit bottom-right. What principle is broken?", "a": "Ergonomics and quick vs slow placement (Fitts's law): frequent quick actions go big and in the thumb zone, rare ones small and far.", "type": "apply" },
+    { "id": "L07-f57", "q": "Scenario: your match-3 swaps with a pinch gesture instead of swipe or tap. Players struggle. Which truth?", "a": "Emulate same-genre control schemes. Familiarity relieves confusion.", "type": "apply" },
+    { "id": "L07-f58", "q": "Scenario: your game vibrates on every UI tap, match, ad and popup. Players disable haptics. What went wrong?", "a": "No consistent haptic language. Reserve vibration for meaningful moments (damage, rewards, big combos).", "type": "apply" },
+    { "id": "L07-f59", "q": "Scenario: your FTUE unlocks 6 buttons in the first 2 minutes. Which caution applies?", "a": "Teach one new move at a time and don't jam features in too quickly (Brütal Legend lesson).", "type": "apply" },
+    { "id": "L07-f60", "q": "Scenario: a tilt-to-dodge mechanic is never discovered by 70% of players. Fix?", "a": "Gyro controls are hidden: clearly show which way to tilt and remind players. Also offer a touch alternative.", "type": "apply" },
+    { "id": "L07-f61", "q": "Scenario: you want new players' first 10 seconds in your action game to feel amazing before they understand anything. Which book idea?", "a": "Make any input (even mashing) produce something cool, like God of War. Auto-attack achieves this on mobile.", "type": "apply" },
+    { "id": "L07-f62", "q": "Why do fixed top-down cameras avoid the character vs camera-relative problem on mobile?", "a": "The camera never rotates, so joystick up always equals screen up and world up.", "type": "why" },
+    { "id": "L07-f63", "q": "Why offset a dragged piece above the finger on touchscreens?", "a": "The finger hides what it touches. Offsetting keeps the piece and its landing spot visible.", "type": "why" },
+    { "id": "L07-f64", "q": "What do MMO and FPS players do with hotkeys and macros, and what should designers offer?", "a": "They chain attacks or spell effects (like Combustion, Icy Veins and Fireball) to boost damage per second. Offer customizable controls.", "type": "basic" },
+    { "id": "L07-f65", "q": "Which Street Fighter II move shows that not everyone can master ultra-complex inputs, and what is Rogers' advice?", "a": "The dragon punch. To stay accessible to other player types, don't go nuts with ubercomplex controls.", "type": "basic" },
+    { "id": "L07-f66", "q": "In Maximo, which buttons map to the overhead swing and the horizontal swing, and why?", "a": "Triangle (the top button) = overhead swing, echoing the high-to-low motion. Square (on the horizontal plane of the buttons) = horizontal swing.", "type": "why" },
+    { "id": "L07-f67", "q": "What does Brütal Legend do when the hero learns a new move?", "a": "It stops the game and shows a full-screen graphic, so the unlock is a big event.", "type": "basic" },
+    { "id": "L07-f68", "q": "Which keys or buttons usually make a character jump in a platformer?", "a": "Space bar, X or A. It is a genre convention players already know.", "type": "basic" },
+    { "id": "L07-f69", "q": "Name the APTA exercises Rogers lists for gamers' thumb (not the posture tips).", "a": "Tap each finger with the same-hand thumb 5 times; alternate palm and back of hand on the thigh 20 times; spread fingers 10 seconds x 8; clasp hands and extend arms forward 10 seconds x 8; fold hands and extend arms overhead 10 seconds x 8.", "type": "basic" },
+    { "id": "L07-f70", "q": "How does Rogers define camera-relative vs character-relative controls, and which does he prefer?", "a": "Camera-relative: controls change with which way the character faces the camera. Character-relative: controls always follow the character, so left is always left even if the camera turns 180 degrees. He prefers character-relative.", "type": "basic" },
+    { "id": "L07-f71", "q": "What did the Wii Remote and Project Natal open up, and what did Rogers cover first?", "a": "A chance to recreate real-world moves as controls. First he showed how to get the most reality out of traditional controllers (e.g., Pitfall's canteen).", "type": "basic" },
+    { "id": "L07-f72", "q": "What does WarioWare: Smooth Moves show about gyro controls?", "a": "You can get away with silliness. Only about 20 moves (half were button presses), but bizarre holds like a mohawk or a spatula flip make players look silly, and that is the fun.", "type": "basic" },
+    { "id": "L07-f73", "q": "Why build breaks and varied motions into motion-controlled games?", "a": "Many players don't play to exercise, so breaks and changing motions prevent wearing out and repetitive stress injuries (unless weight loss is the goal).", "type": "why" },
+    { "id": "L07-f74", "q": "What problems can latency cause, and whose job is it mostly?", "a": "Lag, control lock-up, sound distortion, freezes or crashes. It is more a programming issue: tightly written code avoids unnecessary data transmission.", "type": "basic" },
+    { "id": "L07-f75", "q": "What are actuators and gyroscopes in a controller, and what do they enable?", "a": "Parts that make most motion controllers (Wii, PS3) possible. Actuator = vibration feedback. Gyroscope = rotating the controller to manipulate on-screen elements.", "type": "basic" },
+    { "id": "L07-f76", "q": "Why didn't 'everyone on the team holds it that way' prove the creative director right?", "a": "The team had been told to hold it that way. Rogers tried the grip and did worse, and later testing proved the QTE too hard.", "type": "why" }
+  ],
+  "quiz": [
+    {
+      "id": "L07-q01",
+      "q": "Rogers' creative director insisted players hold the controller a special way to beat a QTE. What was the eventual outcome?",
+      "options": ["Players adopted the grip", "Testing showed the QTE was too hard and controls were adjusted", "The QTE was shipped unchanged and praised", "The enemy was removed entirely"],
+      "answer": 1,
+      "why": "Three months later testing proved Rogers right. Humans won't change their grip mid-game."
+    },
+    {
+      "id": "L07-q02",
+      "q": "On the Flex-O-Fingering chart, which finger is 'use infrequently'?",
+      "options": ["Thumb", "Index", "Middle", "Pinkie"],
+      "answer": 2,
+      "why": "Middle = secondary hold/trigger, use infrequently. Thumb and index are recommended. Ring and pinkie are not recommended (support only)."
+    },
+    {
+      "id": "L07-q03",
+      "q": "Tak and the Guardians of Gross mapped all magic to the Wii Remote and physical actions to the nunchuk. That's an example of…",
+      "options": ["Thematic control assignment", "Genre convention", "Camera-relative controls", "Button mashing"],
+      "answer": 0,
+      "why": "Grouping controls by theme lets players guess which input to try. The danger is mixing themes."
+    },
+    {
+      "id": "L07-q04",
+      "q": "Your F2P game is aimed at young kids. Which control approach fits Rogers' advice?",
+      "options": ["Complex combos for depth", "Simple single presses with no combinations", "Keyboard commands spread across the board", "Hidden gyro gestures"],
+      "answer": 1,
+      "why": "Small fingers can't do complex combos, and kids hunt and peck, so keep inputs simple and close together."
+    },
+    {
+      "id": "L07-q05",
+      "q": "What does the Track and Field 'pencil trick' teach designers?",
+      "options": ["Pencils are good accessories", "Don't require inputs so demanding that players need physical workarounds", "Button mashing is always good", "Players love breaking controllers"],
+      "answer": 1,
+      "why": "Forcing players to roll a pencil across buttons (and destroy controllers) is unfair design."
+    },
+    {
+      "id": "L07-q06",
+      "q": "Button mashing most often happens because…",
+      "options": ["The controls are too complex or feedback is unsatisfying", "The game has too few enemies", "The frame rate is too high", "The tutorial is too long"],
+      "answer": 0,
+      "why": "Rogers names complexity and poor feedback as the two causes. Players mash when unsure how to control the game."
+    },
+    {
+      "id": "L07-q07",
+      "q": "How does God of War use button mashing positively?",
+      "options": ["It punishes mashers with damage", "Mashing produces cool moves, then players slow down to learn them", "It disables buttons after mashing", "It shows a warning popup"],
+      "answer": 1,
+      "why": "Reward curiosity first: cool results from mashing make players want to learn how they did it."
+    },
+    {
+      "id": "L07-q08",
+      "q": "A player presses a button for an ability they haven't unlocked. Which response follows Rogers' advice?",
+      "options": ["Do nothing", "Crash to the menu", "Play a 'negative response' sound or animation", "Randomly fire another ability with no pattern"],
+      "answer": 2,
+      "why": "Never let a button do nothing. A shrug or 'nope' sound tells players the control isn't available yet."
+    },
+    {
+      "id": "L07-q09",
+      "q": "Brütal Legend's full-screen new-move announcements come with which caution?",
+      "options": ["Show all moves at once", "Teach one move at a time and not too fast", "Only announce moves in cutscenes", "Hide moves so players discover them"],
+      "answer": 1,
+      "why": "Players tune out when overloaded. One new move at a time, paced out."
+    },
+    {
+      "id": "L07-q10",
+      "q": "Maximo maps its overhead sword swing to triangle because…",
+      "options": ["Triangle is the biggest button", "Triangle is the top button, echoing a high-to-low swing", "Triangle is genre convention for attack", "Triangle was the only free button"],
+      "answer": 1,
+      "why": "Button position mirrors the move: top = overhead, bottom (X) = jump from the ground, circle = round shield."
+    },
+    {
+      "id": "L07-q11",
+      "q": "On the Xbox 360 controller, where should shooting and braking go?",
+      "options": ["Small shoulder buttons", "Back/Start buttons", "The larger triggers", "Clicking the right stick"],
+      "answer": 2,
+      "why": "Quick moves go on big triggers so fingers don't slip off in a panic. Small buttons get slow moves like map or inventory."
+    },
+    {
+      "id": "L07-q12",
+      "q": "Players complain your platformer's jump 'feels laggy' because a crouch animation plays before liftoff. Which truth applies?",
+      "options": ["Use negative responses", "As the button is pressed, the action should happen", "Assign controls thematically", "Beware latency"],
+      "answer": 1,
+      "why": "Save pretty animation for the end of the move. When jump is pressed, the only question is 'how high?'"
+    },
+    {
+      "id": "L07-q13",
+      "q": "When is a long attack wind-up acceptable?",
+      "options": ["Never", "When the payoff (huge damage or an instant kill) balances the risk", "Only in cutscenes", "When the animation is very pretty"],
+      "answer": 1,
+      "why": "Mark of Kri: the wind-up is the risk, the devastating hit is the reward. Pretty alone is never enough."
+    },
+    {
+      "id": "L07-q14",
+      "q": "In 'Terror Zombie Death Mansion 3', why does the hero walk into the zombie?",
+      "options": ["The zombie was invisible", "The camera flipped 180° and camera-relative controls reversed left and right", "The player pressed the wrong button", "Lag delayed the input"],
+      "answer": 1,
+      "why": "A camera that crossed the line plus camera-relative mapping turned left into right. Pick one scheme and stick with it."
+    },
+    {
+      "id": "L07-q15",
+      "q": "According to Rogers, when should actuators (rumble) mainly fire?",
+      "options": ["Constantly, for immersion", "When the player takes damage or earns a reward", "Only during menus", "Whenever music plays"],
+      "answer": 1,
+      "why": "Keep the vibration language consistent and limited to meaningful moments like damage and rewards."
+    },
+    {
+      "id": "L07-q16",
+      "q": "What's the most important thing to remember about gyroscope controls?",
+      "options": ["Make every action use gyro", "Clearly show the direction to turn and remind players it exists", "Keep motions tiny and precise", "Never pair gyro with buttons"],
+      "answer": 1,
+      "why": "The gyro is hidden inside the device, so players forget. Communicate the direction and remind them."
+    },
+    {
+      "id": "L07-q17",
+      "q": "Which is NOT one of Rogers' motion-control tips?",
+      "options": ["Keep movements broad", "Use simple shapes like circles and lines", "Require precise, subtle wrist flicks for accuracy", "Mix motion with sticks and buttons"],
+      "answer": 2,
+      "why": "Subtle, precise motions often don't register. Broad, simple, mixed inputs are the advice."
+    },
+    {
+      "id": "L07-q18",
+      "q": "Your real-time mobile PvP game has players rubber-banding after inputs on bad connections. This is mainly…",
+      "options": ["A thematic mapping issue", "Latency, mostly a programming/netcode issue", "Button mashing", "An ergonomics issue"],
+      "answer": 1,
+      "why": "Latency = delays in sending and decoding game data. Rogers calls it more programming than design."
+    },
+    {
+      "id": "L07-q19",
+      "q": "Your hyper-casual game's D1 retention is low, and recordings show players hunting for which gesture to use. Best fix?",
+      "options": ["Add more gestures for depth", "Reduce to one clear gesture with instant, cool feedback", "Add a 5-page tutorial", "Hide the controls to create mystery"],
+      "answer": 1,
+      "why": "Simple controls plus mash-to-cool feedback is Rogers' 'kids' and God of War advice applied to hyper-casual."
+    },
+    {
+      "id": "L07-q20",
+      "q": "What's the recommended minimum touch target in Apple's guidelines?",
+      "options": ["24×24 points", "32×32 points", "44×44 points", "64×64 points"],
+      "answer": 2,
+      "why": "Apple recommends at least 44×44 pt, and Material recommends 48×48 dp. Smaller targets cause mis-taps."
+    },
+    {
+      "id": "L07-q21",
+      "q": "In one-handed portrait play, where should the most-used actions go?",
+      "options": ["Top corners", "The bottom area within natural thumb reach", "Dead center under the play area", "Randomized each session"],
+      "answer": 1,
+      "why": "The thumb's natural zone is at the bottom. Top areas are for information and rare actions."
+    },
+    {
+      "id": "L07-q22",
+      "q": "In Brawl Stars, tapping the attack control auto-aims while dragging aims manually. Which design goal does this serve?",
+      "options": ["Making controls harder for experts", "Serving beginners and experts with one control (depth without complexity)", "Reducing server latency", "Hiding the attack button"],
+      "answer": 1,
+      "why": "Accessibility for new players plus mastery for experts, matching Rogers' audience advice."
+    }
+  ],
+  "sideQuests": [
+    { "id": "L07-s01", "title": "Thumb heatmap", "task": "Screenshot the main gameplay screen of 3 F2P games and draw natural, stretch and hard thumb zones on each. Are the most-used buttons in the natural zone? Where are the gem-spend buttons?", "minutes": 10, "xp": 30 },
+    { "id": "L07-s02", "title": "Dead-button hunt", "task": "In any F2P game, tap every locked or disabled thing. Rate each response: silent (fail), wiggle (ok), explanation (good), explanation plus a path to unlock (great).", "minutes": 10, "xp": 30 },
+    { "id": "L07-s03", "title": "Gesture mime", "task": "List 5 touch gestures from real games that mirror real actions, then invent 2 new ones for a hypothetical cooking or fishing game.", "minutes": 5, "xp": 20 },
+    { "id": "L07-s04", "title": "Ruler test", "task": "Find the smallest tappable button in your favorite F2P game and estimate its size against the 44 pt / 48 dp guideline. Is the hit area bigger than the art?", "minutes": 10, "xp": 30 },
+    { "id": "L07-s05", "title": "Press = act audit", "task": "Screen-record two action games at 60 fps and count frames between your touch and the first visible reaction. Which feels better, and does the frame count explain it?", "minutes": 10, "xp": 30 },
+    { "id": "L07-s06", "title": "Haptic style guide", "task": "Write a 5-line haptic language for a match-3 (select, match, combo, booster, win). Which events get NO haptic and why?", "minutes": 10, "xp": 30 },
+    { "id": "L07-s07", "title": "One-thumb translation", "task": "Redesign a console action game you love for one-thumb portrait play. What do you cut, automate or merge?", "minutes": 15, "xp": 40 }
+  ],
+  "mainQuests": [
+    {
+      "id": "L07-m01",
+      "title": "Touch Control Spec + Paper Prototype",
+      "task": "For a real or invented F2P game, produce: (1) a phone-frame control map with every input placed, sized and labeled, plus thumb zones; (2) a gesture table (gesture → one meaning → visual/audio/haptic feedback → forgiveness rule); (3) a no-dead-inputs list for every locked control; (4) an FTUE unlock schedule teaching one input at a time; (5) a quick prototype test with 3 people who haven't seen it, noting mis-taps and hesitations.",
+      "deliverable": "Control map sketch, gesture table, no-dead-inputs list, unlock schedule, and test notes with 3 planned changes.",
+      "doneWhen": "All inputs are ≥44 pt/48 dp in the sketch, each gesture has exactly one meaning, every locked control has a response, and 3 changes are written from the test. Bonus: share the before/after publicly.",
+      "minutes": 90,
+      "xp": 220
+    }
+  ],
+  "playLabs": [
+    { "id": "L07-p01", "game": "Brawl Stars", "minutes": 10, "lookFor": "Tap-to-auto-aim vs drag-to-aim on the attack control, joystick behavior, button sizes and positions, hit feedback.", "question": "How does one control serve beginners and experts, and which Universal Truths does it embody?" },
+    { "id": "L07-p02", "game": "Archero or Survivor.io", "minutes": 10, "lookFor": "Floating joystick, auto-attack, and how the first 10 seconds feel when played one-handed in portrait.", "question": "What did the designers automate to make one thumb enough, and where does skill still live?" },
+    { "id": "L07-p03", "game": "Royal Match or Candy Crush Saga", "minutes": 10, "lookFor": "Swap gestures, illegal-move feedback, input during cascades, haptics.", "question": "What happens on an illegal swap, and is any input ever ignored silently?" },
+    { "id": "L07-p04", "game": "Call of Duty: Mobile or PUBG Mobile", "minutes": 10, "lookFor": "HUD layout editor, button resizing, gyro options, simplified vs advanced fire modes.", "question": "Which of Rogers' audience tips (customization, revert, accessibility) does the settings screen fulfill?" }
+  ],
+  "retrieval": [
+    { "q": "What happened in the 'holding the controller wrong' story and what's the lesson?", "a": "A QTE was too hard. The creative director blamed Rogers' grip, but testing later proved the QTE too hard and it was fixed. Lesson: humans with ordinary hands play games, so design ergonomically." },
+    { "q": "Give each finger's role on the Flex-O-Fingering chart.", "a": "Thumb: primary control/response (yes). Index: primary trigger/hold (yes). Middle: secondary hold/trigger (rarely). Ring: primary support (no). Pinkie: secondary support (no)." },
+    { "q": "Name four ways to decide where controls go.", "a": "Hand placement (keyboard move, mouse aim), theme (Tak: magic vs physical), real-world mirroring (Pitfall canteen, Maximo buttons), genre convention (A/X/space to jump)." },
+    { "q": "What are Rogers' audience-specific tips?", "a": "Kids: simple presses and close keys. MMO/FPS: customization and macros (also helps disabled gamers). Fighters: complexity limits accessibility. No pencil-trick demands. Allow reverting and remapping. Don't reverse flight controls." },
+    { "q": "What is button mashing and how can it become useful?", "a": "Random rapid presses from confusion (complex controls or poor feedback). Make any press produce something cool (God of War) so players later slow down and learn." },
+    { "q": "How do you make sure a button never does nothing?", "a": "A negative response (Dark Castle shrug); mark inactive and celebrate unlocks one at a time (Brütal Legend); a redundant related function (melee until the blaster)." },
+    { "q": "What's the button-size rule?", "a": "Big triggers for quick moves (shoot, brake, accelerate, melee), small shoulder buttons for slow moves (precise aim, map, inventory)." },
+    { "q": "State the instant-response rule and its exception.", "a": "The action happens as the button is pressed, with animation at the end ('how high?'). Exception: long wind-ups with a balancing big reward (Mark of Kri)." },
+    { "q": "Explain the camera vs character-relative problem.", "a": "Mixing frames confuses players. A camera flip makes camera-relative left become right (zombie example). Pick one and stick with it. Modern fix: latch direction across cuts, don't cross the line." },
+    { "q": "What are Rogers' rules for actuators and gyros?", "a": "Actuators: consistent language, mainly damage and rewards (Silent Hill heartbeat). Gyros: show the direction and remind players they exist. Moves should mimic reality and feel physically right." },
+    { "q": "List the motion-control tips.", "a": "Breaks and varied motions; account for lag (Guitar Hero calibration); latency (programming); broad movements; simple shapes; don't overdo it (waggle-fests)." },
+    { "q": "Translate Rogers' control rules to touchscreens.", "a": "Thumb zones, ≥44 pt/48 dp targets, the finger never hides the action, forgiving input (snap, buffer, auto-aim), instant multi-sensory feedback, one meaning per gesture, haptic language, one-thumb portrait for casual." }
+  ],
+  "feynman": "Explain to a producer in 60 seconds why your touch controls must respond on the very first frame, never ignore a tap, and keep every gesture's meaning the same. Use Rogers' 'humans are playing' story, the 'press = act' rule, and one example of bad controls showing up as D1 churn.",
+  "links": ["L05", "L06", "L08", "L09", "L10", "L14", "L15", "F2P1"]
+}

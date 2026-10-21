@@ -1,0 +1,6 @@
+# build-only copy for claude.ai publishing
+tools/dist/
+# local editor/agent settings
+.claude/
+# scratch test pages
+app/_*.html

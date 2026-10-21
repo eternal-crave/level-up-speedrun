@@ -1,0 +1,398 @@
+{
+  "id": "L00",
+  "order": 1,
+  "kind": "book",
+  "label": "Press Start",
+  "title": "Press Start — Foreword, Author, Intro & Acknowledgments",
+  "bookPages": "xiii–xxi",
+  "emoji": "🕹️",
+  "tagline": "Insert coin: the designer mindset in 20 minutes, from pixel pusher to designer who has more fun.",
+  "f2pRelevance": 3,
+  "f2pWhy": "No mechanics yet, but it sets habits every F2P designer needs: fundamentals first, visual communication, team-first thinking, and treating every screen (shop and popups included) as gameplay.",
+  "minutes": 20,
+  "tldr": [
+    "Level Up! is a practical handbook of fundamentals, not a theory book. Go back to it when you're stuck.",
+    "Very Important Thing #1: game designers have more fun.",
+    "Very Important Thing #2: no one on your team wants to read your design, so make it visual (Rogers draws his docs as cartoons).",
+    "Every chapter is about gameplay. Even cutscenes and pause screens affect the player (in F2P: shop, popups, out-of-lives screen).",
+    "Games are made by big teams and the industry is small, so be nice and hardworking.",
+    "Making games is very hard and also the best job in the world. To make games, love games."
+  ],
+  "sections": [
+    {
+      "title": "Foreword (Danny Bilson)",
+      "bites": [
+        {
+          "id": "L00-b01",
+          "hook": "This book is a Scout Handbook for game designers",
+          "body": "THQ executive Danny Bilson pitches Level Up! as an evergreen handbook of fundamentals, like a Scout Handbook or Farmer's Almanac. It has simple illustrations, and you pull it off the shelf (or open it on an e-reader) whenever you need to get back to basics.",
+          "example": "New designers start here. Veterans stuck on a hard design problem come back here to reset.",
+          "f2p": "When a live game's metrics dip, go back to basics first: is the core loop fun, is the FTUE clear, is the goal obvious?",
+          "memory": "Fundamentals are your checkpoint. When the Design Boss wipes you, you respawn at the basics.",
+          "tag": "concept"
+        },
+        {
+          "id": "L00-b02",
+          "hook": "Every big win comes back to fundamentals",
+          "body": "Sports teams, military units, any group trying to succeed: they all start with the basics. Bilson says going back to fundamentals is what sparks inspiration that takes you beyond where you got stuck.",
+          "example": "After championship wins, coaches and players keep saying it all came down to fundamentals.",
+          "f2p": "Before adding a new meta feature to fix retention, check that the basic tap-match-reward loop still feels great.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L00-b03",
+          "hook": "Do ONE thing, and do it well",
+          "body": "A fundamental Bilson especially values in game design is doing one thing well. He says the book itself does this: it has one job (fundamentals) and does it properly.",
+          "example": "Block Blast! is mostly one action: place blocks and clear lines. That single loop carries the whole game.",
+          "f2p": "Nail one satisfying core action before stacking meta systems, events and monetization on top.",
+          "memory": "One thing, well. Not ten things, meh.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "About the Author",
+      "bites": [
+        {
+          "id": "L00-b04",
+          "hook": "Your mentor: from God of War to publisher creative manager",
+          "body": "Scott Rogers had a 16-year career at the time of writing and helped design Pac-Man World, the Maximo series, God of War, the Drawn to Life series and Darksiders. He was then a creative manager at THQ, a publishing role. His examples lean toward action games.",
+          "example": "Expect lots of combat, platforming and boss examples in later Levels. That's his home turf.",
+          "f2p": "Mobile careers often go sideways the same way: art, QA, analytics or playable ads into design, or developer into publisher.",
+          "memory": "Action figure in a box: Pixel Pusher → Designer → Creative Manager.",
+          "tag": "example"
+        }
+      ]
+    },
+    {
+      "title": "If You Are Anything Like Me… (the hook)",
+      "bites": [
+        {
+          "id": "L00-b05",
+          "hook": "He opens with a zombie helicopter scene… as a joke",
+          "body": "Rogers spoofs the cheap first-page tricks books use: an over-the-top action excerpt (Jack fights zombies while Evelyn admits she can't fly the helicopter) and a fake rave from 'a very famous game designer' (the footnote names only Miyamoto). Then he promises honest, practical content.",
+          "example": "The spoof shows the hook technique while poking fun at it.",
+          "f2p": "Your store page and first 30 seconds are your 'first page'. Hook hard, but keep it honest. Regulators have ruled against misleading mobile ads.",
+          "memory": "Zombie on page one, chili at the end.",
+          "tag": "fun"
+        },
+        {
+          "id": "L00-b06",
+          "hook": "An A-to-Z menu: from arcade games to zombies",
+          "body": "The book promises the who, what, where and especially how of game design. It teases topics from A to Z: arcade games, boss fights, chili, deadly traps, ergonomics, fun, hydras, haunted mansions, jumps, leitmotifs, NPCs, one-sheets, pitches, quests, smart bombs, the Triangle of Weirdness, un-fun, whack-a-mole, the Y-axis and zombies.",
+          "example": "Named terms like the Triangle of Weirdness and one-sheets come back in later Levels.",
+          "f2p": "",
+          "memory": "A is for Arcade, Z is for Zombies, and everything in between is gameplay.",
+          "tag": "list"
+        },
+        {
+            "id": "L00-b19",
+            "hook": "Two cheap first-page tricks: excitement and borrowed authority",
+            "body": "Rogers parodies the two classic ways a first page persuades: a gripping action excerpt (excitement) and a rave quote from a famous person (borrowed authority). The fake blurb even claims page one taught more than 25 years in the industry, and the footnote only admits Miyamoto as a \"very famous game designer\". He drops both tricks and offers honesty instead.",
+            "example": "A zombie-and-helicopter excerpt; a made-up testimonial from a very famous game designer.",
+            "f2p": "Store pages, ads and influencer quotes use the same two levers. Spectacle and social proof are fine if the game delivers the same promise by minute five.",
+            "memory": "Hook = Thrill or Thumbs-up. Rogers refuses both and just tells you the truth.",
+            "tag": "concept"
+          }
+      ]
+    },
+    {
+      "title": "Ground rules of the book",
+      "bites": [
+        {
+          "id": "L00-b07",
+          "hook": "There's more than one right way to design",
+          "body": "There are many ways to approach game design, and they're all valid as long as they communicate the designer's ideas. The tricks in Level Up! are Rogers' own methods, not the only way.",
+          "example": "Some studios are data-led (A/B test everything). Others are creative-led (protect the vision).",
+          "f2p": "Adopt whatever process your team actually understands and can ship with.",
+          "memory": "Valid = it communicates.",
+          "tag": "rule"
+        },
+        {
+          "id": "L00-b08",
+          "hook": "'I designed a game' is a lie of convenience",
+          "body": "Games are made by many talented people. Claiming you did it all is incorrect and egotistical. There's no 'I' in team (Rogers jokes there is a 'me'). His footnote advice: the industry is small, so don't make enemies. Be nice and hardworking and you'll go far.",
+          "example": "Level 1 introduces the whole team: programmers, artists, designers, producers, testers, audio, writers, publishers.",
+          "f2p": "Live F2P games need designers, analysts, artists, LiveOps and UA staff working together for years. Reputation follows you.",
+          "memory": "No I in TEAM, but there's a ME.",
+          "tag": "rule"
+        },
+        {
+          "id": "L00-b09",
+          "hook": "His examples lean action. The lessons don't.",
+          "body": "Most of Rogers' games were single-player action titles, so his examples lean that way. He finds most gameplay concepts transfer to other genres, and translating them to your own genre shouldn't be hard.",
+          "example": "A boss-fight lesson about telegraphing attacks also applies to a match-3 blocker that warns before it spreads.",
+          "f2p": "Mobile differs in session length, touch input, interruptions and business model. Keep the principle and adapt the form.",
+          "memory": "",
+          "tag": "warning"
+        },
+        {
+          "id": "L00-b10",
+          "hook": "There's no gameplay chapter, because EVERY chapter is gameplay",
+          "body": "Don't look for one chapter on gameplay. Every chapter is about it. Always think about how things affect the player, even passive elements like cutscenes and pause screens.",
+          "example": "Pause screens and cutscenes are his examples of 'passive' parts that still need gameplay thinking.",
+          "f2p": "In F2P that includes the shop, offer popups, loading screens, daily login calendars, push notifications and the out-of-lives screen.",
+          "memory": "If it's on screen, it's gameplay. Yes, even the loading bar.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "The bad news (and the good news)",
+      "bites": [
+        {
+          "id": "L00-b11",
+          "hook": "Making games is VERY hard. It's also the best job ever.",
+          "body": "After 16+ years and games selling millions, Rogers admits game making is very hard work. An old boss used to grumble that games are a hard business, and Rogers laughed then but not now. It's also thrilling, frustrating, rewarding, nerve-wracking, hectic, boring, vomit-inducing and fun.",
+          "example": "His own career: millions sold, and he still calls it hard.",
+          "f2p": "In F2P, launch is the starting line. Most projects die in soft launch, and hits run for years (Clash of Clans launched in 2012 and is still live).",
+          "memory": "A roller coaster you build while riding it.",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "No, You Can't Have My Job",
+      "bites": [
+        {
+          "id": "L00-b12",
+          "hook": "Every Level ends with Universal Truths and Clever Ideas",
+          "body": "Over his career Rogers collected Clever Ideas and learned Universal Truths. He put them at the end of every Level so you can review the key lessons quickly. Very Important Things are printed in bold capitals.",
+          "example": "Level 1's list includes: a game is an activity with rules and a victory condition.",
+          "f2p": "In this course they appear in each module's truths section and in the app's truths deck.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L00-b13",
+          "hook": "Very Important Thing #1: designers have more fun",
+          "body": "Rogers started as a 16-bit pixel artist (nicknamed a 'pixel pusher' or 'sprite monkey'). He admired pixel masters like Paul Robertson and the Metal Slug and Capcom fighting-game teams, but pixel art felt like drawing with bathroom tiles. Hearing designers laughing next door, he decided to become one and worked his way up.",
+          "example": "The book shows three of his own pixel sprites: a little masked hero in action poses.",
+          "f2p": "",
+          "memory": "Pixel pusher hears laughter over the cubicle wall, climbs the ladder.",
+          "tag": "truth"
+        },
+        {
+          "id": "L00-b14",
+          "hook": "Very Important Thing #2: NOBODY reads your design doc",
+          "body": "As a new designer, Rogers found no teammate would read his design docs. His fix was to draw them as cartoons, and it worked. Teammates understood the ideas, and he's designed that way ever since, including on top-selling titles. That's why the book is full of cartoons.",
+          "example": "A cartoon designer proudly holds up a 'Game Design Document' with sunburst rays behind him.",
+          "f2p": "Use one-page specs with the goal and KPI on top, annotated Figma/Miro mockups, flow diagrams, short videos, and economy numbers in a linked sheet.",
+          "memory": "Draw it or it didn't happen.",
+          "tag": "truth"
+        }
+      ]
+    },
+    {
+      "title": "Who Is This Book For?",
+      "bites": [
+        {
+          "id": "L00-b15",
+          "hook": "Four readers: Veteran, Rookie, Apprentice, Bard",
+          "body": "The book is for (1) working pros who need practical nuts-and-bolts fixes rather than conference theory, (2) future designers (artists, programmers, testers who want to switch), (3) students who can learn from Rogers' mistakes, and (4) anyone who loves video games.",
+          "example": "A programmer sure they could design a better enemy encounter. A tester who wants to move up.",
+          "f2p": "Common F2P doors in: QA, puzzle level designer, community/support into LiveOps, analyst into economy design, playable-ad dev into prototyping.",
+          "memory": "RPG party: Veteran (pro), Rookie (future designer), Apprentice (student), Bard (fan).",
+          "tag": "list"
+        },
+        {
+          "id": "L00-b16",
+          "hook": "No mentor? This book is your mentor.",
+          "body": "When Rogers started there were no design books or classes. He learned from other designers and was lucky to have a mentor and an opportunity. His formula if you lack both: follow the advice, be prepared, and take the opportunity when it finally comes.",
+          "example": "He made many mistakes and wrote the book so you can avoid them before they become yours.",
+          "f2p": "Today information is everywhere (GDC Vault, F2P teardown blogs and podcasts). What's scarce is practice and shipped work.",
+          "memory": "Mentor + Prepared + Pounce.",
+          "tag": "rule"
+        },
+        {
+          "id": "L00-b17",
+          "hook": "If you don't love games, step aside",
+          "body": "To make games you must love them. Rogers knows industry people who admit they don't like playing games, which makes no sense to him. They should make room for someone who loves games.",
+          "example": "The closing cartoon: an intense player hunched over a controller in front of an old TV.",
+          "f2p": "Your players often aren't like you. Loving games includes respecting and studying top-grossing games outside your taste.",
+          "memory": "",
+          "tag": "truth"
+        }
+      ]
+    },
+    {
+      "title": "Acknowledgments: Everything I Learned about Writing a Book",
+      "bites": [
+        {
+          "id": "L00-b18",
+          "hook": "Books don't write themselves (neither do games)",
+          "body": "Rogers' stated lesson is that writers can't write without support and inspiration from many people. He thanks family, mentors (William Anderson, David Siller), his first test audience, a reader who requested the Platform Primer, the GDC 2008 committee, Disney Imagineers, toy customizers and his Wiley editors.",
+          "example": "Cory Doctorow's glowing review of his GDC talk kicked off the whole book.",
+          "f2p": "Build in public: share teardowns and prototypes, find a first test audience for your docs, and listen to player requests.",
+          "memory": "GDC talk + one review = book deal. Visibility creates opportunities.",
+          "tag": "concept"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "Game designers have more fun.",
+    "No one on your team wants to read your design, so communicate visually and briefly.",
+    "Every chapter (and every screen) is about gameplay, even cutscenes and pause screens.",
+    "Fundamentals first: do one thing, and do it well (Danny Bilson).",
+    "There are many valid ways to design, as long as they communicate the designer's ideas.",
+    "Games are made by teams. Be nice and hardworking, because the industry is small.",
+    "Making games is very hard work and also the best job in the world.",
+    "To make games, you must love games.",
+    "Books (and games) don't write themselves. You need support, mentors and a test audience."
+  ],
+  "mnemonics": [
+    {
+      "name": "The two Very Important Things",
+      "device": "FUN & READ: designers have more FUN, nobody will READ your doc",
+      "unpacks": "VIT #1: game designers have more fun. VIT #2: no one on your team wants to read your design, so draw it."
+    },
+    {
+      "name": "The reader party",
+      "device": "Veteran, Rookie, Apprentice, Bard",
+      "unpacks": "Working pros, future designers, students, and anyone who loves games: the four audiences of the book."
+    },
+    {
+      "name": "The mentor formula",
+      "device": "Mentor + Prepared + Pounce",
+      "unpacks": "Use the book as your mentor, be prepared, and seize the opportunity when it arrives."
+    }
+  ],
+  "flashcards": [
+    { "id": "L00-f01", "q": "Who wrote the foreword to Level Up!, and what was his role?", "a": "Danny Bilson, Executive VP of Core Games at THQ.", "type": "basic" },
+    { "id": "L00-f02", "q": "Which two evergreen books does Bilson compare Level Up! to?", "a": "A Scout Handbook and a Farmer's Almanac.", "type": "basic" },
+    { "id": "L00-f03", "q": "Which game-design fundamental does Bilson single out?", "a": "Doing one thing, well.", "type": "basic" },
+    { "id": "L00-f04", "q": "Fill in: Very Important Thing #1 is 'Game designers have more ____.'", "a": "fun", "type": "cloze" },
+    { "id": "L00-f05", "q": "What is Very Important Thing #2?", "a": "No one on your team wants to read your design.", "type": "basic" },
+    { "id": "L00-f06", "q": "How did Rogers get teammates to read his design docs?", "a": "He drew them as cartoons.", "type": "basic" },
+    { "id": "L00-f07", "q": "Why does Rogers say there's no single chapter about gameplay?", "a": "Because every chapter is about gameplay. Even passive elements affect the player.", "type": "why" },
+    { "id": "L00-f08", "q": "Which two 'passive' elements does Rogers say still need gameplay thinking?", "a": "Cutscenes and pause screens.", "type": "basic" },
+    { "id": "L00-f09", "q": "What was Rogers' first job in the games industry?", "a": "A 16-bit pixel artist ('pixel pusher' / 'sprite monkey').", "type": "basic" },
+    { "id": "L00-f10", "q": "Name three games Rogers helped design.", "a": "Any three of: Pac-Man World, Maximo, God of War, Drawn to Life, Darksiders.", "type": "basic" },
+    { "id": "L00-f11", "q": "What genre do most of Rogers' examples come from?", "a": "Single-player action games.", "type": "basic" },
+    { "id": "L00-f12", "q": "Why does Rogers call 'I designed a game' an oversimplification?", "a": "Games are made by many talented people. Claiming solo credit is wrong and egotistical.", "type": "why" },
+    { "id": "L00-f13", "q": "What career advice does Rogers give in a footnote about the industry's size?", "a": "It's small, so don't make enemies. Be nice and hardworking and you'll go far.", "type": "basic" },
+    { "id": "L00-f14", "q": "When is any approach to game design valid, according to Rogers?", "a": "When it communicates the designer's ideas.", "type": "basic" },
+    { "id": "L00-f15", "q": "What are the four audiences of the book?", "a": "Working pros, future designers, students, and anyone who loves games.", "type": "basic" },
+    { "id": "L00-f16", "q": "Why does Rogers prefer practical advice over theory for working pros?", "a": "Mid-production you need nuts-and-bolts fixes. Theory suits conferences, not crunch-time problems.", "type": "why" },
+    { "id": "L00-f17", "q": "What's Rogers' formula for an aspiring designer with no mentor?", "a": "Use the book as your mentor, be prepared, and seize the opportunity when it comes.", "type": "basic" },
+    { "id": "L00-f18", "q": "Fill in: Rogers' acknowledgments lesson is that books don't ____ themselves.", "a": "write", "type": "cloze" },
+    { "id": "L00-f19", "q": "What kicked off the writing of Level Up!?", "a": "Cory Doctorow's glowing review of Rogers' GDC talk (then the publisher called).", "type": "basic" },
+    { "id": "L00-f20", "q": "Your teammates skip your 12-page event spec. Which Press Start lesson applies, and what do you do?", "a": "VIT #2 (nobody reads your design). Make a one-page visual spec: goal and KPI on top, mockups and a flow, numbers in a linked sheet.", "type": "apply" },
+    { "id": "L00-f21", "q": "A teammate says the 'out of lives' popup is 'just UI, not design.' Which principle counters this?", "a": "Every chapter (and screen) is about gameplay. That popup shapes whether players quit, wait, watch an ad or pay.", "type": "apply" },
+    { "id": "L00-f22", "q": "Your new mobile game has 6 meta systems but a weak core action. Which foreword idea applies?", "a": "Do one thing well: fix the core loop before adding meta.", "type": "apply" },
+    { "id": "L00-f23", "q": "Why does Rogers say people who don't like playing games shouldn't make them?", "a": "Making great games requires loving games. Those people should make room for someone who does.", "type": "why" },
+    { "id": "L00-f24", "q": "You want to break into F2P design. Which Acknowledgments lesson can you apply right now?", "a": "Share work publicly. His GDC talk plus a review led to the book, so post teardowns and prototypes to create opportunities.", "type": "apply" },
+    { "id": "L00-f25", "q": "Which two cheap first-page persuasion tricks does Rogers parody, and what does each stand for?", "a": "A thrilling action excerpt (excitement hook) and a glowing quote from a famous person (borrowed authority). He drops both and promises honest, practical content.", "type": "basic" },
+    { "id": "L00-f26", "q": "What does the footnote say about the fake \"very famous game designer\" quote?", "a": "No such person exists, unless you count Shigeru Miyamoto, the creator of Mario. Rogers jokes he should have written it in Japanese.", "type": "basic" },
+    { "id": "L00-f27", "q": "What were 16-bit pixel artists nicknamed, and why did Rogers leave that job?", "a": "\"Pixel pushers\" and \"sprite monkeys\" (neither a compliment). He felt drawing with pixels was like drawing with bathroom tiles, and he heard the designers having more fun.", "type": "basic" },
+    { "id": "L00-f28", "q": "Which pixel artists and teams does Rogers name as great 16-bit examples?", "a": "Paul Robertson, plus the teams behind Metal Slug and the classic Capcom fighting games.", "type": "basic" },
+    { "id": "L00-f29", "q": "Who are the two mentors Rogers names, and who requested the Platform Primer?", "a": "Mentors William Anderson and David Siller. Jeremiah Slackza asked for the Platform Primer.", "type": "basic" },
+    { "id": "L00-f30", "q": "Where do the Universal Truths and Clever Ideas appear in the book, and why?", "a": "At the end of each Level, collected for the reader's convenience from lessons Rogers learned over his career.", "type": "basic" },
+    { "id": "L00-f31", "q": "Your studio keeps burying A/B-test findings in a 30-slide deck nobody opens. Which Press Start idea fixes it, and how?", "a": "Very Important Thing #2: no one wants to read your design. Make the findings visual and short (a one-page mockup with the goal and KPI at the top, numbers in a linked sheet).", "type": "apply" }
+  ],
+  "quiz": [
+    {
+      "id": "L00-q01",
+      "q": "According to Rogers, what is the main job of a design document?",
+      "options": ["To archive every decision for legal reasons", "To communicate ideas so the team understands them", "To impress the publisher with page count", "To replace prototyping"],
+      "answer": 1,
+      "why": "VIT #2 (nobody reads your design) means a doc that isn't read has failed. His cartoons exist to communicate. Archiving, page count and replacing prototypes all miss the point."
+    },
+    {
+      "id": "L00-q02",
+      "q": "Why does Rogers say there's no single gameplay chapter?",
+      "options": ["Gameplay is covered in an appendix", "Gameplay is the programmer's job", "Every chapter is about gameplay, even cutscenes and pause screens", "Gameplay can't be taught"],
+      "answer": 2,
+      "why": "He tells you to think about how everything affects the player all the time. The other options contradict the book's whole premise."
+    },
+    {
+      "id": "L00-q03",
+      "q": "Your F2P team debates whether the shop popup needs a designer's attention. Which Press Start idea best settles it?",
+      "options": ["Do one thing well", "Every element is gameplay, because it affects the player", "There is no I in team", "Designers have more fun"],
+      "answer": 1,
+      "why": "Rogers extends gameplay thinking even to passive screens, so a shop popup clearly counts. The other ideas are true but don't answer this question."
+    },
+    {
+      "id": "L00-q04",
+      "q": "What did Rogers do before becoming a game designer?",
+      "options": ["QA tester", "Programmer", "16-bit pixel artist", "Producer"],
+      "answer": 2,
+      "why": "He was a 'pixel pusher' who heard the designers laughing and switched. He mentions testers and programmers as other paths into design, not as his own history."
+    },
+    {
+      "id": "L00-q05",
+      "q": "Danny Bilson's favorite fundamental, as stated in the foreword, is:",
+      "options": ["Doing one thing, well", "Always add more features", "Theory before practice", "Follow the market"],
+      "answer": 0,
+      "why": "Bilson praises 'doing one thing, well' and says the book does exactly that. Feature creep is the opposite of the advice."
+    },
+    {
+      "id": "L00-q06",
+      "q": "What does Rogers say about his own design methods?",
+      "options": ["They're the only correct way", "They only work for action games", "They're purely theoretical", "They're one valid way among many, as long as ideas get communicated"],
+      "answer": 3,
+      "why": "He says there are many valid approaches and his are just his. He also says the concepts transfer beyond action games, and he explicitly rejects pure theory."
+    },
+    {
+      "id": "L00-q07",
+      "q": "An aspiring designer has no mentor and no studio contacts. What's Rogers' advice?",
+      "options": ["Wait until a design school opens nearby", "Give up and become a producer", "Use the book as a mentor, be prepared, and seize the opportunity when it comes", "Only apply for lead designer roles"],
+      "answer": 2,
+      "why": "He says 'I will be your mentor': follow the advice, prepare, and take the opportunity. The other options are passive or unrealistic."
+    },
+    {
+      "id": "L00-q08",
+      "q": "What does the Acknowledgments section reveal about how the book started?",
+      "options": ["A publisher cold-called Rogers out of nowhere", "He self-published after rejections", "It began as a university thesis", "A glowing review of his GDC talk kicked it off"],
+      "answer": 3,
+      "why": "He credits Cory Doctorow's review of his GDC talk, followed by an editor's call. The lesson: public sharing creates opportunities."
+    }
+  ],
+  "sideQuests": [
+    { "id": "L00-s01", "title": "Napkin spec", "task": "Pick a feature from a F2P game you play (e.g. a daily login calendar) and explain it in one drawing with at most 5 labels. No paragraphs.", "minutes": 10, "xp": 30 },
+    { "id": "L00-s02", "title": "Everything-is-gameplay hunt", "task": "Screenshot 5 non-gameplay screens in a F2P game (shop, settings, loading, popup, out-of-lives) and write one line each on how it changes what the player feels or does.", "minutes": 10, "xp": 30 },
+    { "id": "L00-s03", "title": "Box test", "task": "Write your favorite game's objective in one sentence, as if printed on a board-game box.", "minutes": 5, "xp": 20 },
+    { "id": "L00-s04", "title": "First-page autopsy", "task": "Install a new F2P game and log what happens in the first 30 seconds: spectacle hook, calm tutorial, or straight to play? Did it make you want 'page two'?", "minutes": 10, "xp": 30 },
+    { "id": "L00-s05", "title": "Party up", "task": "List 3 people who could be your first test audience and 1 possible mentor or community. Message one of them.", "minutes": 10, "xp": 40 }
+  ],
+  "mainQuests": [
+    {
+      "id": "L00-m01",
+      "title": "The Cartoon Spec",
+      "task": "Turn one real F2P feature (event, shop offer, clan feature) into a one-page visual spec: one-line goal, player fantasy, 4-6 panel flow, 3 key numbers, target KPI, 2 open questions.",
+      "deliverable": "One PNG/PDF page.",
+      "doneWhen": "Someone who never played the game can explain the feature back to you after 60 seconds of looking. Bonus: post it publicly as Day 1.",
+      "minutes": 60,
+      "xp": 150
+    },
+    {
+      "id": "L00-m02",
+      "title": "Launch your swipe file",
+      "task": "Create a design-journal template (Game, Genre, Core loop in one sentence, Best thing, Worst thing, What I'd steal, Monetization notes) and fill it for 3 F2P games from different genres.",
+      "deliverable": "Template plus 3 filled entries.",
+      "doneWhen": "Each entry has a one-sentence core loop and at least one 'what I'd steal'.",
+      "minutes": 60,
+      "xp": 120
+    }
+  ],
+  "playLabs": [
+    { "id": "L00-p01", "game": "Block Blast!", "minutes": 10, "lookFor": "The single core action and the feedback (sound, animation, combo text) that makes it satisfying.", "question": "If you removed everything except the core action, would it still be fun? Why?" },
+    { "id": "L00-p02", "game": "Royal Match", "minutes": 10, "lookFor": "What the fail screen offers when you run out of moves (extra moves, coins, ad, retry).", "question": "How does this 'non-gameplay' screen try to keep you playing, and is it fair?" },
+    { "id": "L00-p03", "game": "Any newly released F2P game", "minutes": 10, "lookFor": "The store page and the first minute of play.", "question": "Does the opening hook honestly match the game you actually play by minute 5?" }
+  ],
+  "retrieval": [
+    { "q": "What two books does Bilson compare Level Up! to, and why?", "a": "A Scout Handbook and a Farmer's Almanac: evergreen, practical references with simple illustrations that you return to for basics." },
+    { "q": "What are Rogers' two Very Important Things?", "a": "Game designers have more fun, and no one on your team wants to read your design." },
+    { "q": "How did Rogers solve the unread-design-doc problem, and what's the principle?", "a": "He drew his docs as cartoons. The principle is that design docs exist to communicate, so make them visual and easy to take in." },
+    { "q": "Why is there no single gameplay chapter?", "a": "Every chapter is about gameplay. Think about player impact all the time, even for cutscenes and pause screens." },
+    { "q": "What genre bias do the examples have, and what should you do about it?", "a": "Single-player action. Most concepts transfer, so translate them to your genre (here, F2P mobile)." },
+    { "q": "Who is the book for?", "a": "Working pros, future designers (artists, programmers, testers switching over), students, and anyone who loves games." },
+    { "q": "What does Rogers advise people without a mentor or opportunity?", "a": "Let the book be your mentor, be prepared, and seize the opportunity when it arrives." },
+    { "q": "What did Rogers learn from writing the book, and what started it?", "a": "Books don't write themselves and writers need lots of support. A glowing review of his GDC talk (by Cory Doctorow) kicked it off." },
+    { "q": "What's the career lesson in the footnote about the industry's size?", "a": "It's small. Don't make enemies. Be nice and hardworking." }
+  ],
+  "feynman": "In 60 seconds, explain to a non-gamer friend why 'nobody on your team wants to read your design' is actually good news, and what a designer should do about it.",
+  "links": ["L01", "L02", "L04", "L09", "L16", "L17", "F2P"]
+}

@@ -1,0 +1,1206 @@
+{
+  "id": "L14",
+  "order": 15,
+  "kind": "book",
+  "label": "Level 14",
+  "title": "Multiplayer — the More the Merrier",
+  "bookPages": "381–391",
+  "emoji": "👥",
+  "tagline": "Other players are your best content and your worst problem. Design for both.",
+  "f2pRelevance": 5,
+  "f2pWhy": "Clans, PvP ladders, co-op events and social features (gifting, help requests, team chests) are the main retention and LiveOps engine of modern F2P mobile games.",
+  "minutes": 45,
+  "tldr": [
+    "Multiplayer = two choices: how players connect (same device, network, server) and how they relate (competitive, cooperative, or conjugate: same space, different goals).",
+    "There is a menu of 15 game modes (deathmatch to virtual life). Combine them and offer variety.",
+    "The right number of players is whatever your gameplay needs: 2 for a duel, thousands for a world.",
+    "MMORPGs invented the social toolkit F2P inherited: guilds, raids, crafting, economy, collection, housing, trading, PvP rules.",
+    "Fence off the dark side: griefing, spawn camping, rich-get-richer systems.",
+    "Players will always do the last thing you expect. Allow emergent fun, block exploits that ruin it for others."
+  ],
+  "sections": [
+    {
+      "title": "Intro — connections and play styles",
+      "bites": [
+        {
+          "id": "L14-b01",
+          "hook": "The co-op game that turned friends into shoving rivals",
+          "body": "Rogers' first real multiplayer memory is Gauntlet (Atari, 1985): four players at one arcade cabinet. It was cooperative by design, but he and his friends jostled to grab the health and be first to fire the screen-clearing potion. Lesson: when a resource is scarce, a co-op game easily dissolves into a competitive one.",
+          "example": "Gauntlet's shared health pickups turned teammates into rivals.",
+          "f2p": "Put a first-come-first-served reward inside a team event and your friendly clan becomes a piranha tank. Decide on purpose whether rewards are shared or contested.",
+          "memory": "Co-op is just competition that hasn't found the health potion yet.",
+          "tag": "concept"
+        },
+        {
+          "id": "L14-b02",
+          "hook": "From arcade elbows to plasma rifles over a LAN",
+          "body": "The jostling carried on through 4-player beat-'em-up cabinets like Teenage Mutant Ninja Turtles (1989) and Captain America and the Avengers (1991). Then Doom (1993) made it virtual: friends linked PCs on a local area network and blasted each other in death matches.",
+          "example": "Doom LAN death matches: the rivalry moved from the cabinet into the game world.",
+          "f2p": "Today the 'same couch' is a party invite, friend code or clanmate. The urge to beat your friends hasn't changed, just the cable.",
+          "memory": "Elbows → Ethernet → emotes.",
+          "tag": "example"
+        },
+        {
+          "id": "L14-b03",
+          "hook": "Connection type 1: head-to-head on one machine",
+          "body": "Head-to-head means two or more players compete in real time on the same game system: one console, one screen. Most sports games, action games and some FPS games support it.",
+          "example": "Classic split-screen and same-screen sports or fighting games.",
+          "f2p": "On phones, same-device 'pass and play' exists but is niche. The modern equivalent is quick friend battles over the network.",
+          "memory": "Head-to-head = shoulder-to-shoulder.",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b04",
+          "hook": "Connection type 2: network / peer-to-peer (LAN vs WAN)",
+          "body": "Players play with and against each other in real time on connected machines. A LAN covers a room, office or campus; a WAN (the Internet) goes beyond. The only difference is proximity. It can also be wireless, like Nintendo DS local play. LAN parties, where everyone brings their PC to one house, were still popular in 2010.",
+          "example": "LAN parties for FPS games; wireless DS multiplayer.",
+          "f2p": "Mobile rarely uses peer-to-peer: flaky connections and cheating make it risky. Most F2P games route everything through servers.",
+          "memory": "LAN = Local, Around the Neighborhood. WAN = World.",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b05",
+          "hook": "Connection type 3: the big server in the sky",
+          "body": "Client server: one computer big and fast enough to handle many users at once. MMOs and MMORPGs use servers (and many of them) to handle enormous traffic and demand; the book frames it as a setup with many LANs sharing the user load.",
+          "example": "World of Warcraft runs thousands of players per server.",
+          "f2p": "Nearly every F2P game is client-server with an authoritative server: the server decides what's true, so a hacked phone can't grant itself gems or wins.",
+          "memory": "The server is the referee who never blinks.",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b06",
+          "hook": "Compete or cooperate: the first two play styles",
+          "body": "After deciding how players connect, decide what they play. Competitive: same objective, working against each other, often to the 'death', to finish first or score highest. Cooperative: same objective, working together (in theory) to reach it.",
+          "example": "Competitive: a deathmatch. Cooperative: Gauntlet, which still became competitive in practice.",
+          "f2p": "Competitive = PvP ladders (Clash Royale, Marvel Snap). Cooperative = raids and team events (Pokémon GO raids, team-chest events in puzzle games).",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L14-b07",
+          "hook": "Conjugate play: same world, different agendas",
+          "body": "Conjugate gameplay has players sharing the same play space but not the same goals. It rose with MMOs and MMORPGs, where dozens or hundreds of players dash around one world, each with their own motivations. Game modes can be combined to build conjugate scenarios.",
+          "example": "MMORPG zones where one player farms, another quests, another hunts players.",
+          "f2p": "4X games like Rise of Kingdoms or Whiteout Survival: thousands share one map, some build, some fight, some just run alliance politics.",
+          "memory": "Conjugate = 'coexist': roommates, not teammates.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "The game-mode menu",
+      "bites": [
+        {
+          "id": "L14-b08",
+          "hook": "Deathmatch and team deathmatch: the classics",
+          "body": "Death match / free-for-all: every player for themselves, battling for high scores or the best weapon. Players usually start on equal footing and gain or lose gear that gives an edge as the match goes. Team death match: teams fight for dominance, and you can add competition inside a team for top score.",
+          "example": "FPS deathmatches; team modes with an MVP scoreboard.",
+          "f2p": "Battle royale (PUBG Mobile, ~100 players) is deathmatch plus looting from an equal start. Brawl Stars Showdown is a pocket free-for-all.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b09",
+          "hook": "Fighting games hate lag",
+          "body": "Fighting mode: a duel with one winner walking out. Starting with Karate Champ (1984), fighting became its own genre. It is often played head-to-head on one machine because network lag ruins the split-second timing. Street Fighter and Mortal Kombat on Xbox Live Arcade showed online fighting was becoming less of a problem.",
+          "example": "Karate Champ (origin), Street Fighter and Mortal Kombat online via Xbox Live Arcade.",
+          "f2p": "Mobile networks are laggy, so mobile duels favor lag-tolerant designs: elixir-paced card battles (Clash Royale) or fighting AI-controlled copies of other players' teams (Marvel Contest of Champions).",
+          "memory": "Lag is the fighting game's kryptonite.",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b10",
+          "hook": "Survival: watch each other's backs",
+          "body": "Survival mode: defeat every enemy, or get from point A to point B alive. It is the mode most like a single-player game with co-op added.",
+          "example": "Left 4 Dead: players cover each other in fights and heal each other when in danger.",
+          "f2p": "Co-op PvE modes in hero shooters and rotating co-op events in Brawl Stars give PvP-tired players a friendly way to play together.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b11",
+          "hook": "Territory control: the tug-of-war that lasts hours",
+          "body": "Area/territory control: travel to a location and protect it from AI or human enemies. The thrill is the tug-of-war of attack, retreat and retake as you move the line toward the final area. With two well-matched teams a map can last hours. King of the hill is a variant: one team is given a spot and must defend it for a set time.",
+          "example": "Area-control and king-of-the-hill maps in shooters.",
+          "f2p": "MOBAs like Mobile Legends: Bang Bang are lane tug-of-wars: push towers, lose them, push again. Brawl Stars Hot Zone is pocket king of the hill.",
+          "memory": "Move the line, hold the hill.",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b12",
+          "hook": "Capture the flag: one player becomes everyone's target",
+          "body": "One player becomes the target, either by holding an object (a flag, Halo's oddball skull) or by being made 'it' by the game. The carrier is sometimes handicapped while holding it. It works competitively, or cooperatively with teammates protecting the carrier.",
+          "example": "Halo's oddball: hold the skull, become the bullseye.",
+          "f2p": "Brawl Stars Gem Grab: whoever carries the gems is hunted, and drops them when defeated.",
+          "memory": "Holding the flag = wearing a 'shoot me' sign.",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b13",
+          "hook": "Racing: make the leader the most vulnerable",
+          "body": "Race/driving modes compete for position or time. They get nasty when players can sabotage each other, like Mario Kart's power-ups. For combat races, use a regressive system: the player in front is the most exposed to attacks from the pack behind. Burnout Paradise's Easy Drive let drivers join events and socialize while driving.",
+          "example": "Mario Kart power-ups; Burnout Paradise Easy Drive social driving.",
+          "f2p": "Mario Kart Tour and Stumble Guys-style races keep the pack tense. Regressive catch-up keeps casual players in the race until the finish.",
+          "memory": "Regressive = the crown is a target.",
+          "tag": "rule"
+        },
+        {
+          "id": "L14-b14",
+          "hook": "Team objective: all hands on deck or lose",
+          "body": "Team objective mode gives players a goal that can usually only be reached by working together. Everyone must contribute to win.",
+          "example": "The Army of Two series and Fat Princess both need the whole team pulling together.",
+          "f2p": "Pokémon GO raids, clan boss fights and team-chest events where the whole team's progress unlocks the reward.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b15",
+          "hook": "Man vs God: fun only if you're God?",
+          "body": "One player is God and controls almost everything; the other is Man, with limited resources. God makes life hard, Man tries to survive against overwhelming odds. Rogers jokes it only sounds fun if you're God, which is a real warning: asymmetric modes must make both sides fun.",
+          "example": "Book illustration: a giant hand menacing a tiny gunman on a rock.",
+          "f2p": "Asymmetric and hidden-role games like Among Us (impostor vs crew) live or die on whether the weaker side still has a fighting chance.",
+          "memory": "Balance the fun, not just the power.",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b16",
+          "hook": "Gambling modes: never let the rich get richer",
+          "body": "Games of chance played competitively or conjugately for the highest score, or just to beat the odds. The key rule: steer clear of progressive setups, where early winners snowball while everyone behind sinks further. Snowballing leaders kill the fun for everyone behind them.",
+          "example": "Party games of chance where luck decides the winner.",
+          "f2p": "Monopoly GO! dice, Coin Master spins, Marvel Snap's stake-doubling 'Snap'. In F2P, money can be the snowball: if spending guarantees winning, non-spenders churn. Also mind loot-box rules and odds disclosure.",
+          "memory": "Snowballs are fun until you're the one underneath.",
+          "tag": "warning"
+        },
+        {
+          "id": "L14-b17",
+          "hook": "Reflex and knowledge: faster finger, bigger brain",
+          "body": "Reflex: who's fastest? Quiz and puzzle games often settle victory by speed. Knowledge: proving you're smarter than the person beside you on the sofa, a genre that has stayed popular in games like You Don't Know Jack, Buzz! and Scene It?",
+          "example": "Buzz! quiz buzzers; You Don't Know Jack trivia.",
+          "f2p": "Trivia Crack made knowledge battles async and turn-based; HQ Trivia briefly made live quiz shows a phone craze.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b18",
+          "hook": "Creation mode: let players build your content for free",
+          "body": "In creation modes players visit or interact with each other's creations (LittleBigPlanet, The Sims, Spore). It extends the game's life because players create the content. LittleBigPlanet's Game of the Year Edition included 18 new levels by top community creators. Sims players made story movies that became as popular as the game.",
+          "example": "LittleBigPlanet community levels; The Sims story movies.",
+          "f2p": "Roblox turned this into a whole platform. Brawl Stars' Map Maker lets players design maps. UGC = endless content at low cost.",
+          "memory": "Give them Lego, get a theme park.",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b19",
+          "hook": "Virtual life: games as places to hang out",
+          "body": "Virtual worlds let players customize their space and interact with other online residents: PlayStation Home, Second Life (2003), Animal Crossing (2001). Text-only chat rooms grew into the shared virtual reality imagined in Neal Stephenson's novel Snow Crash.",
+          "example": "Second Life and PlayStation Home as social spaces.",
+          "f2p": "Roblox hangout experiences; Animal Crossing: Pocket Camp ran as a mobile live service from 2017 to 2024.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b20",
+          "hook": "15 modes, one theme park",
+          "body": "The full menu: deathmatch, team deathmatch, fighting, survival, area control, king of the hill, capture the flag, race, team objective, Man vs God, gambling, reflex, knowledge, creation, virtual life. Combine them for conjugate play and offer variety so different players find their fun.",
+          "example": "",
+          "f2p": "Mode rotation is LiveOps: Brawl Stars keeps the same brawlers fresh by rotating which modes and maps are live.",
+          "memory": "Memory palace: bumper cars, paintball, boxing ring, zombie maze, tug-of-war rope, bouncy castle, flag escort, go-karts, team tower, God's booth, casino, buzzer booth, quiz stage, Lego tent, café.",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "How many is the right number?",
+      "bites": [
+        {
+          "id": "L14-b21",
+          "hook": "Too many breaks a duel, too few kills a world",
+          "body": "Street Fighter with more than two players gets messy: fighters bunch up, are hard to see, collision detection struggles, and a skill contest becomes mob warfare. But World of Warcraft would feel empty with only a few hundred players roaming.",
+          "example": "Street Fighter needs exactly 2; WoW needs thousands.",
+          "f2p": "Also ask what a 6-inch screen can show and what a thumb can track. Ten characters in a mobile melee is soup.",
+          "memory": "Goldilocks Lobby.",
+          "tag": "concept"
+        },
+        {
+          "id": "L14-b22",
+          "hook": "From 2 to 5,000: Rogers' player-count cheat sheet",
+          "body": "Street Fighter 2; Power Stone 4; Uno 4; LittleBigPlanet 4; Burnout Paradise 8; Call of Duty: Modern Warfare 2 16; MAG 64, 128 or 256 by mode; World of Warcraft roughly 4,000–5,000 per server. The range is huge, so the answer is: whatever is right for your game.",
+          "example": "",
+          "f2p": "Mobile: 1v1 Clash Royale and Marvel Snap, 3v3 Brawl Stars, 5v5 Mobile Legends, ~100 PUBG Mobile, clans of up to 50 in Clash of Clans.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b23",
+          "hook": "The hidden limit: can your queue fill the match?",
+          "body": "Every extra player per match means more people needed online at the same skill and time. That is matchmaking liquidity. A 100-player mode in a small game means long waits, and long waits mean churn.",
+          "example": "",
+          "f2p": "Many PvP games fill gaps, especially for brand-new players, with bots so first matches feel winnable. Choose player counts your audience can fill at 3 a.m. in a small country.",
+          "memory": "No queue, no game.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "MMORPGs, or Hell Is Other People",
+      "bites": [
+        {
+          "id": "L14-b24",
+          "hook": "Know the MMO tropes or feel thin",
+          "body": "MMORPGs evolved their own tropes, some of which barely count as playing at all. Knowing them and including them fills out your game and keeps it competitive. There are 16 in the book: buffing, customization, chatting, crafting, economy, grinding, instanced dungeons, item collection, open world, griefing, guilds, housing, PvP, raids, spawn camping, trading/auctions.",
+          "example": "",
+          "f2p": "F2P mobile inherited almost all of them: clans, raids, collection, base decorating, currencies.",
+          "memory": "Heaven Kit (guilds, raids, trading) + Hell Fence (griefing, camping rules).",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b25",
+          "hook": "Buffing: spells that turn players into roles",
+          "body": "Buffing is spell casting that affects the whole party, not just the caster. It lets players take on roles. A cleric with a healing buff on a hotkey can restore teammates as they take damage so they keep fighting.",
+          "example": "The cleric healer keeping the raid alive.",
+          "f2p": "Team composition in gacha RPGs (healer, tank, damage in Raid: Shadow Legends or AFK Journey) and support characters in Brawl Stars.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b26",
+          "hook": "Customization: become someone else",
+          "body": "A huge MMO appeal is becoming another character and getting lost in that fantasy. Customization ranges from preset templates to full control (sex, eye color, nose length). Keep it going in-game: let players buy or win clothing, weapons, armor, gear and mounts that fit their character's personality and class.",
+          "example": "Book cartoon: a hero proudly holding an absurd homemade weapon.",
+          "f2p": "Skins and cosmetics are F2P's fairest, most loved monetization: they sell identity, not power.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b27",
+          "hook": "Chat: your game is also a hangout",
+          "body": "Text or voice chat is expected. Players treat an MMO as a hangout at least as much as a game.",
+          "example": "",
+          "f2p": "Clan chat is core in Clash of Clans and Clash Royale. In-battle communication is often limited to emotes to reduce toxicity.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b28",
+          "hook": "Crafting: make it theirs, and never punish twice",
+          "body": "Players combine harvested, found or bought items using recipes and components. Crafted items feel like their creations, the same logic as character creation: what you make yourself, you bond with. Powerful crafts take time; workshops can shorten it; skill minigames can trigger a successful craft. Some games use trial-and-error where failure destroys components, but never let it destroy a hard-to-get, expensive item. That punishes the player twice.",
+          "example": "Recipe + components = new gear.",
+          "f2p": "Merge games (Merge Mansion, Travel Town) are crafting at heart. RPG upgrades that can fail and destroy rare items feel predatory: protect expensive inputs or add pity.",
+          "memory": "Lose the effort OR the item, never both.",
+          "tag": "rule"
+        },
+        {
+          "id": "L14-b29",
+          "hook": "MMO economies: earn, spend, store, balance",
+          "body": "Players win treasure to customize characters, buy weapons and gear, craft, and buy housing, mounts, even castles. Balance the effort to earn money against what it buys. Let players carry treasure and store it in personal safes or public banks.",
+          "example": "Buying a mount or a castle with earned gold.",
+          "f2p": "Soft and hard currencies with balanced sources and sinks. Hay Day's roadside shop lets players sell goods to each other for in-game coins.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b30",
+          "hook": "Real money for gold? F2P turned that into the business",
+          "body": "Many MMO economies spilled into the real world, with players buying in-game money for real cash. Many developers disliked this and preferred to control the economy themselves.",
+          "example": "Gold-selling in 2000s MMOs.",
+          "f2p": "F2P did exactly that: the publisher sells the premium currency itself and bans black-market trading in its terms of service. That is why player trading in F2P is usually tightly limited.",
+          "memory": "If someone will sell gold, make sure it's you (ethically).",
+          "tag": "f2p"
+        },
+        {
+          "id": "L14-b31",
+          "hook": "The grind: the #1 reason players quit an MMO",
+          "body": "As characters level up, progress slows and quests demand items that take ages to get. Stacking steps between player and goal feels like artificially slowed progress. You can't remove grinding from long-term play, but reduce it or make it entertaining.",
+          "example": "Mafia Wars (Zynga, 2009): one job needs photos, which need another job, which needs a camera that comes from friends' gifts or a random, unguaranteed drop.",
+          "f2p": "Zynga's gifting gates are the ancestors of Candy Crush's ask-friends-for-help gates. Add pity timers and alternative paths so a gate never becomes a wall.",
+          "memory": "Every extra gate is a door some players walk out of.",
+          "tag": "warning"
+        },
+        {
+          "id": "L14-b50",
+          "hook": "Anatomy of a grind: the Mafia Wars ladder",
+          "body": "Mafia Wars (Zynga, 2009) shows how gates stack. The job 'Extort a Corrupt Judge' needs blackmail-photo items. You earn those photos by running 'Take Compromising Photo', which needs a disposable camera. A camera arrives either as a gift from other players or as a drop during 'Rob an Electronics Store', and even then the drop is not guaranteed. Several steps and a dice roll sit between the player and the goal.",
+          "example": "Judge job <- photos <- camera <- friend gift or lucky drop.",
+          "f2p": "Map your own longest progression chain. If a random link sits in the middle, add a pity counter or an earnable shortcut. Friend-gifting links drive virality, but give players with no friends a fallback path.",
+          "memory": "Count the gates, then count the dice.",
+          "tag": "example"
+        },
+        {
+          "id": "L14-b32",
+          "hook": "Instanced dungeons: everyone gets their own copy",
+          "body": "Instanced dungeons exist outside the shared world. Enemies, loot, even the map can be randomly generated for a fresh experience. Several groups can run alternate versions at once, so no one waits for the dungeon to restock.",
+          "example": "MMO dungeon instances for each party.",
+          "f2p": "Every mobile PvE level is effectively an instance; event bosses often give each player or team its own copy.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b33",
+          "hook": "Item collection: rarity, drops and seasonal loot",
+          "body": "Collecting is a huge MMO motivator. Make items that boost combat and also tedious tasks like crafting, mining and harvesting. Use a rarity scheme: common, uncommon, rare, unique. Add drops from specific creatures, seasonal items available only at certain times, and world-event items.",
+          "example": "Rare drops from a named monster; holiday-only items.",
+          "f2p": "Clash Royale's Common/Rare/Epic/Legendary/Champion tiers, limited seasonal skins, and sticker albums in Monopoly GO! and Coin Master.",
+          "memory": "Common, Uncommon, Rare, Unique: 'Can U Really Use it?'",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b34",
+          "hook": "The open world is an illusion you maintain",
+          "body": "MMOs promise go anywhere, do anything, but you really build the world the way you want it played. Gate areas with level or gear requirements, or let players wander into high-level zones and take a beating until they retreat and level up.",
+          "example": "Gear-gated zones; wandering into a high-level area and getting flattened.",
+          "f2p": "Town Hall or HQ level gates buildings and troops in Clash of Clans; features unlock by player level so the FTUE isn't overwhelming.",
+          "memory": "Freedom is a set built by the designer.",
+          "tag": "concept"
+        },
+        {
+          "id": "L14-b35",
+          "hook": "Griefing: build systems and rules against bullies",
+          "body": "Griefing is harassing another player by killing them over and over. Fight it with systems and a rule structure, make policies clear to players, and use a warning / zero-tolerance system to keep the peace.",
+          "example": "Book cartoon: a griefer suddenly facing an enforcer squad.",
+          "f2p": "Shields after being raided (Clash of Clans, Coin Master, Monopoly GO!), per-target attack cooldowns, mute, report flows, and a warning-suspension-ban ladder.",
+          "memory": "",
+          "tag": "warning"
+        },
+        {
+          "id": "L14-b36",
+          "hook": "Guilds: social animals form packs, so give them tools",
+          "body": "Players form guilds to explore, socialize and run raids. Create in-game meeting places for them. It is a lot of work, but guild tools pay off: communication tools, stat tracking, raid calendars and guild asset customization.",
+          "example": "MMO guild halls and raid calendars.",
+          "f2p": "Clans in Clash of Clans: chat, donation stats per member, war schedules, clan badges. The clan screen is the modern meeting place.",
+          "memory": "Guild tools = Chat, Stats, Calendar, Badge.",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b37",
+          "hook": "Player housing: a home they keep coming back to",
+          "body": "Give players a personal space to show off achievements and souvenirs, or to park their character safely between sessions. A home base makes them feel connected and 'at home', so it becomes a place they want to return to again and again.",
+          "example": "MMO player houses with trophy displays.",
+          "f2p": "Your Clash of Clans village (with buyable sceneries), your Hay Day farm, your Homescapes mansion: home is a retention hook.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b38",
+          "hook": "PvP: let players opt in to getting killed",
+          "body": "Players love testing their strength by killing other players, but not everyone wants to risk random death. Many MMOs run dedicated PvP servers or restrict PvP to certain locations.",
+          "example": "PvP servers vs normal servers; PvP-only zones.",
+          "f2p": "Some games have zero PvP (Hay Day); 4X games offer peace shields; most PvP games separate ranked from casual queues.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L14-b39",
+          "hook": "Raids: legendary bosses, flexible teams, fair loot",
+          "body": "Raids are teams tackling very hard scenarios like storming a castle. Leaders must be strategist, manager and social director. Design raids beatable by varied party setups, creative thinking or plain luck. Build legends around raid targets so players rally. Make loot sharing easy and based on each player's performance.",
+          "example": "MMO castle sieges and legendary raid bosses.",
+          "f2p": "Raid: Shadow Legends' Clan Boss pools damage and scales rewards to personal damage; Pokémon GO raids gather crowds at gyms.",
+          "memory": "Raid leader = general + HR + party planner.",
+          "tag": "list"
+        },
+        {
+          "id": "L14-b40",
+          "hook": "Spawn camping: ambushing players the moment they appear",
+          "body": "Spawn campers wait at a spawn point to kill enemies or players as soon as they appear. Most MMO makers frown on it, so build safeguards that discourage or disable it.",
+          "example": "",
+          "f2p": "Spawn protection in mobile shooters; cooldowns so the same base or player can't be farmed repeatedly; revenge buttons in async attack games.",
+          "memory": "",
+          "tag": "warning"
+        },
+        {
+          "id": "L14-b41",
+          "hook": "Trading and auctions: clear the loot pile safely",
+          "body": "Players end up with duplicate loot or items their class can't use. Trading and auctions clear inventory. Make trading simple and scam-proof, create places in the world that promote it, and consider auction houses, where regular auctions run and players bid with in-game treasure.",
+          "example": "MMO auction houses.",
+          "f2p": "Usually restricted in F2P to stop fraud and real-money trading: Pokémon GO trades cost stardust and require friendship; sticker albums open special trading windows.",
+          "memory": "",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "The last thing you expect",
+      "bites": [
+        {
+          "id": "L14-b42",
+          "hook": "Players will always do what you never planned",
+          "body": "The chapter's key rule: players will always do the last thing you expect, and there are times you should simply allow it. Multiplayer gives players room to find the fun and personalize how they play. The limit: block exploits that spoil the experience for other people.",
+          "example": "",
+          "f2p": "Embrace fan-made challenges and meta-strategies; kill win-trading, multi-account farming and economy exploits fast.",
+          "memory": "Players are raccoons: leave some trash cans open, lock the ones with the gold.",
+          "tag": "truth"
+        },
+        {
+          "id": "L14-b43",
+          "hook": "Design thoroughly, catch problems before production",
+          "body": "Think your multiplayer systems through in detail so you can anticipate problems before production begins. Fixing a broken social system after launch is far more expensive.",
+          "example": "",
+          "f2p": "Run an exploit pre-mortem before every event: how would a bored teenager with three accounts abuse it? Add server-side checks, rate limits and a remote-config kill switch.",
+          "memory": "",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "F2P deep dive — multiplayer as the LiveOps engine",
+      "bites": [
+        {
+          "id": "L14-b44",
+          "hook": "Async vs sync: the mobile-native multiplayer choice",
+          "body": "Async: play against someone who isn't online now (AI runs their defense). Plays anytime, survives bad connections, works with a small player base. Sync: everyone live together. More adrenaline and drama, but needs enough players to match, suffers lag and leavers, and can't be paused.",
+          "example": "Async: Clash of Clans attacks, Trivia Crack turns. Sync: Clash Royale, Brawl Stars, PUBG Mobile.",
+          "f2p": "Casual and midcore audiences lean async; real-time skill games go sync. Many games mix both, e.g. async clan wars around a sync ladder.",
+          "memory": "Async = voicemail. Sync = phone call.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L14-b45",
+          "hook": "Help requests: tiny favors, giant belonging",
+          "body": "Help requests are small cooperative actions: donate troops, send a card, tap to speed a clanmate's timer, send a life. They cost almost nothing, create reciprocity and give a reason to open the app.",
+          "example": "Clash of Clans troop donations, Clash Royale card requests, 4X alliance help taps, Royal Match team life requests.",
+          "f2p": "Pair with visible stats (who donated what) so generosity earns status, as the book's guild stat tracking suggests.",
+          "memory": "You can quit a game; it's harder to quit your friends.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L14-b46",
+          "hook": "Guild wars and co-op events on a calendar",
+          "body": "Recurring social events are the heartbeat of LiveOps: guild vs guild wars, co-op bosses and team-progress chests. Apply Rogers' raid rules: beatable by many team setups, loot by performance, hype the legend, plus a participation floor so casual members still feel useful.",
+          "example": "Clash of Clans Clan Wars and monthly Clan War Leagues, Clan Games, Rise of Kingdoms KvK, Monopoly GO! partner events.",
+          "f2p": "Content is the other players: one event rule set produces thousands of unique matches without new levels.",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "L14-b47",
+          "hook": "PvP ladders: trophies up front, fairness underneath",
+          "body": "Visible trophies or ranks show progress; hidden skill ratings (MMR) make matches fair; seasons with soft resets give everyone a fresh climb. Climbing can also unlock content, like arenas on a trophy road.",
+          "example": "Clash Royale arenas and trophy road; ranked seasons in Brawl Stars.",
+          "f2p": "Match on skill and power, separate ranked from casual, and sell speed and cosmetics, not guaranteed wins (the book's rich-get-richer warning).",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "L14-b48",
+          "hook": "Toxicity control: build the Hell Fence before launch",
+          "body": "Limit channels (emote-only or quick chat), filter names and text, offer mute and report with clear outcomes, use a warning-suspension-ban ladder, shield attacked players, and protect minors with age gates and restricted chat.",
+          "example": "Clash Royale battles use emotes, which you can mute, instead of free chat.",
+          "f2p": "This is the book's griefing advice scaled to millions: clear policies plus systems, not just moderators.",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "L14-b49",
+          "hook": "Is it hell? Just count the clans",
+          "body": "Track how many daily players are in a clan, retention of clan vs non-clan players, event participation, matchmaking wait times and report rates. These numbers tell you whether other people are your game's heaven or its hell.",
+          "example": "",
+          "f2p": "If clan members retain far better, push clan joining earlier in the FTUE.",
+          "memory": "Friends are the best retention feature you never build levels for.",
+          "tag": "fun"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "Offer a spread of game modes and goals.",
+    "The right player count is whatever suits your gameplay.",
+    "Let players customize their characters, their objects and their world.",
+    "When players get tools to create, new play patterns will emerge.",
+    "Decide how much players are allowed to negatively interact with each other (like PvP).",
+    "Players will always do the last thing you expect, and sometimes that's OK."
+  ],
+  "mnemonics": [
+    {
+      "name": "Three play styles",
+      "device": "Compete, Cooperate, Coexist (the 3 Cs of multiplayer)",
+      "unpacks": "Competitive (same goal, against each other), Cooperative (same goal, together), Conjugate (same space, different goals)."
+    },
+    {
+      "name": "Multiplayer theme park",
+      "device": "Bumper cars, paintball, boxing ring, zombie maze, tug-of-war, bouncy castle, flag escort, go-karts, team tower, God's booth, casino, buzzer booth, quiz stage, Lego tent, café",
+      "unpacks": "Deathmatch, team deathmatch, fighting, survival, area control, king of the hill, capture the flag, race, team objective, Man vs God, gambling, reflex, knowledge, creation, virtual life."
+    },
+    {
+      "name": "Heaven Kit + Hell Fence",
+      "device": "Give them heaven, fence off hell",
+      "unpacks": "Heaven Kit: guilds, raids, housing, trading, customization. Hell Fence: griefing rules, spawn-camping safeguards, PvP opt-in, no rich-get-richer."
+    },
+    {
+      "name": "Guild tools",
+      "device": "Chat, Stats, Calendar, Badge",
+      "unpacks": "Communication tools, stat tracking, raid calendars, guild asset customization (plus an in-game meeting place)."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L14-f01",
+      "q": "What did playing Gauntlet with friends teach Rogers about co-op games?",
+      "a": "A cooperative game can easily dissolve into a competitive one when there are scarce resources to grab.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f02",
+      "q": "What is head-to-head multiplayer?",
+      "a": "Two or more players competing in real time on the same game system.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f03",
+      "q": "What is the difference between LAN and WAN play?",
+      "a": "Proximity: LAN covers a room, office or campus; WAN (the Internet) extends beyond.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f04",
+      "q": "What is a client server in multiplayer?",
+      "a": "A computer big and fast enough to handle many users at once, used by MMOs and MMORPGs.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f05",
+      "q": "The three play styles are competitive, cooperative and ____.",
+      "a": "conjugate",
+      "type": "cloze"
+    },
+    {
+      "id": "L14-f06",
+      "q": "What is conjugate gameplay?",
+      "a": "Players share the same play space but not the same goals.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f07",
+      "q": "In a death match, how do players usually start?",
+      "a": "On common ground, then gain or lose equipment that gives an edge.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f08",
+      "q": "Why are fighting games often played head-to-head rather than online?",
+      "a": "Network lag interrupts the split-second timing fighting needs.",
+      "type": "why"
+    },
+    {
+      "id": "L14-f09",
+      "q": "What makes area/territory control exciting?",
+      "a": "The tug-of-war of attacking, retreating and retaking as you move the line toward the final area.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f10",
+      "q": "How does king of the hill differ from area control?",
+      "a": "One team is given a location and must defend it for a set period of time.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f11",
+      "q": "In capture the flag, how does a player become the target?",
+      "a": "By holding an object (flag, oddball skull) or being designated 'it' by the game.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f12",
+      "q": "For combat races, use a ____ system where the leader is most vulnerable.",
+      "a": "regressive",
+      "type": "cloze"
+    },
+    {
+      "id": "L14-f13",
+      "q": "What did Burnout Paradise's Easy Drive mode add?",
+      "a": "Multiple drivers could join events and socialize while driving.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f14",
+      "q": "What is Man vs God mode?",
+      "a": "One player is God controlling almost everything; the other is Man with limited resources trying to survive.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f15",
+      "q": "What should gambling modes avoid?",
+      "a": "Progressive systems, where early winners snowball and everyone behind falls further back.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f16",
+      "q": "Why are creation modes great for a game's lifespan?",
+      "a": "Players create content for you, extending the game's life and spawning new play patterns.",
+      "type": "why"
+    },
+    {
+      "id": "L14-f17",
+      "q": "How many community-made levels did LittleBigPlanet: Game of the Year Edition showcase?",
+      "a": "18.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f18",
+      "q": "Name three virtual-life examples from the book.",
+      "a": "PlayStation Home, Second Life, Animal Crossing.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f19",
+      "q": "Why does Street Fighter break with more than two players?",
+      "a": "Players bunch up, are hard to see, collision detection struggles, and it becomes mob warfare instead of a skill contest.",
+      "type": "why"
+    },
+    {
+      "id": "L14-f20",
+      "q": "Roughly how many players per server does the book give for World of Warcraft?",
+      "a": "About 4,000–5,000.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f21",
+      "q": "The right number of players is ____.",
+      "a": "whatever is right for your game",
+      "type": "cloze"
+    },
+    {
+      "id": "L14-f22",
+      "q": "What is buffing?",
+      "a": "Spell casting that affects the entire party, letting players take on roles (e.g., a healing cleric).",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f23",
+      "q": "What crafting failure should you never allow?",
+      "a": "Destroying a hard-to-get, expensive item; it punishes the player twice.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f24",
+      "q": "Why let players craft items themselves?",
+      "a": "The items become recognizably 'their creations', which builds attachment.",
+      "type": "why"
+    },
+    {
+      "id": "L14-f25",
+      "q": "What should an MMO economy balance?",
+      "a": "The effort spent earning money vs the items it can buy.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f26",
+      "q": "What does the book say is the main reason players quit an MMO?",
+      "a": "The grind.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f27",
+      "q": "What does the Mafia Wars example show?",
+      "a": "Stacking item gates and random drops between player and goal makes progress feel artificially slowed and frustrating.",
+      "type": "why"
+    },
+    {
+      "id": "L14-f28",
+      "q": "Why are dungeons instanced?",
+      "a": "Each group gets its own (often randomized) copy, so several groups can play at once and nobody waits for a restock.",
+      "type": "why"
+    },
+    {
+      "id": "L14-f29",
+      "q": "Rarity scheme: common, uncommon, ____, unique.",
+      "a": "rare",
+      "type": "cloze"
+    },
+    {
+      "id": "L14-f30",
+      "q": "Name two ways to gate an 'open' world.",
+      "a": "Level or gear requirements; or let players wander in and get beaten until they retreat and level up.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f31",
+      "q": "What is griefing and how should you fight it?",
+      "a": "Harassing a player by repeatedly killing them; use systems, clear rules and a warning/zero-tolerance policy.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f32",
+      "q": "Name the four guild tools Rogers suggests.",
+      "a": "Communication tools, stat tracking, raid calendars, guild asset customization.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f33",
+      "q": "Why give players housing?",
+      "a": "A home base to show off achievements makes them feel at home and want to return again and again.",
+      "type": "why"
+    },
+    {
+      "id": "L14-f34",
+      "q": "Two ways MMOs protect players who don't want PvP?",
+      "a": "Dedicated PvP servers, or PvP only in certain locations.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f35",
+      "q": "How should raid loot be shared?",
+      "a": "Easily, based on each player's performance.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f36",
+      "q": "What is spawn camping?",
+      "a": "Waiting at a spawn point to kill players or enemies as they appear.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f37",
+      "q": "Players will always do the ____ thing you expect.",
+      "a": "last",
+      "type": "cloze"
+    },
+    {
+      "id": "L14-f38",
+      "q": "Your async attack game sees new players quitting after being raided 5 times in an hour. Which book problem and fix?",
+      "a": "Griefing / spawn camping: add safeguards like a shield after being attacked or per-target cooldowns.",
+      "type": "apply"
+    },
+    {
+      "id": "L14-f39",
+      "q": "In your PvP game, players who buy power packs win every match and free players quit. Which book rule did you break?",
+      "a": "Avoid progressive rich-get-richer systems; keep competition fair (match by power, sell cosmetics/speed).",
+      "type": "apply"
+    },
+    {
+      "id": "L14-f40",
+      "q": "Your gear upgrade can fail and destroy the legendary item used. Players rage. Which principle?",
+      "a": "Don't punish twice: never destroy hard-to-get, expensive inputs on failure.",
+      "type": "apply"
+    },
+    {
+      "id": "L14-f41",
+      "q": "Your clan boss event only rewards the top damage dealer, and casual members stop joining. What does the book's raid advice suggest?",
+      "a": "Make raids beatable by varied teams and share loot by each player's performance (plus a participation floor).",
+      "type": "apply"
+    },
+    {
+      "id": "L14-f42",
+      "q": "Your new 50-player mode has 4-minute queues in small regions. Which principle?",
+      "a": "The right number is what your game (and its matchmaking pool) can support; reduce player count or add bots.",
+      "type": "apply"
+    },
+    {
+      "id": "L14-f43",
+      "q": "Async or sync: which suits a casual audience playing in 2-minute bursts on bad connections?",
+      "a": "Async: play anytime, no queue, tolerant of connection drops.",
+      "type": "apply"
+    },
+    {
+      "id": "L14-f44",
+      "q": "Why do help requests (troop donations, life requests) boost retention?",
+      "a": "Tiny effort creates reciprocity, belonging and a reason to open the app; quitting means leaving friends.",
+      "type": "why"
+    },
+    {
+      "id": "L14-f45",
+      "q": "Which mode is the closest to single-player with co-op?",
+      "a": "Survival.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f46",
+      "q": "You want a mode where a newbie and a veteran clanmate can play together without the veteran stomping. Which play style should you pick?",
+      "a": "Cooperative (same objective, working together), ideally a team objective mode.",
+      "type": "apply"
+    },
+    {
+      "id": "L14-f47",
+      "q": "Your clan feature launched with chat only; leaders complain they cannot see who contributes or when wars happen. Which book advice applies?",
+      "a": "Build guild tools: stat tracking and calendars (plus communication and customization).",
+      "type": "apply"
+    },
+    {
+      "id": "L14-f48",
+      "q": "In the Mafia Wars grind example, what chain of requirements sits behind the 'Extort a Corrupt Judge' job?",
+      "a": "Blackmail photos (earned in 'Take Compromising Photo') -> a disposable camera -> either gifted by other players or dropped in 'Rob an Electronics Store', with no guaranteed drop.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f49",
+      "q": "How does the book describe the way MMOs cope with enormous traffic under the client-server connection type?",
+      "a": "A big, fast server (many of them) working with many LANs to meet the user demand.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f50",
+      "q": "Which character-creation logic does Rogers reuse to justify letting players craft their own items?",
+      "a": "Just like creating characters, what the player makes themselves becomes recognizable as 'their creation', so they bond with it.",
+      "type": "why"
+    },
+    {
+      "id": "L14-f51",
+      "q": "What do auction houses add to MMO trading, and what should trading in general be?",
+      "a": "Regular auctions where players bid on items with in-game treasure. Trading should be simple and scam-proof, with places in the world that promote it.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f52",
+      "q": "In capture the flag, what happens to the target player, and how does the cooperative version work?",
+      "a": "The player who is 'it' is sometimes handicapped while carrying the object; in the cooperative version teammates protect that player.",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f53",
+      "q": "Give Rogers' player counts for Street Fighter, Power Stone, Uno, LittleBigPlanet, Burnout Paradise, Call of Duty: Modern Warfare 2 and MAG.",
+      "a": "Street Fighter 2; Power Stone 4; Uno 4; LittleBigPlanet 4; Burnout Paradise 8; Modern Warfare 2 16; MAG 64, 128 or 256 depending on mode. (WoW: roughly 4,000-5,000 per server.)",
+      "type": "basic"
+    },
+    {
+      "id": "L14-f54",
+      "q": "What is a 'drop', and which other special-item sources does the book list for item collection?",
+      "a": "A drop is an item gained only by defeating specific creatures. Others: seasonal items available only at certain times of year, and items earned by attending world events.",
+      "type": "basic"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "L14-q01",
+      "q": "Players share one huge map in a 4X game: some build farms, some attack, some run alliance politics. Which play style is this?",
+      "options": [
+        "Competitive",
+        "Cooperative",
+        "Conjugate",
+        "Head-to-head"
+      ],
+      "answer": 2,
+      "why": "Conjugate = same space, different goals. Competitive and cooperative both assume the same objective; head-to-head is a connection type, not a play style."
+    },
+    {
+      "id": "L14-q02",
+      "q": "What is the only difference between LAN and WAN play, according to the book?",
+      "options": [
+        "Proximity",
+        "Speed",
+        "Number of players",
+        "Whether a server is used"
+      ],
+      "answer": 0,
+      "why": "WAN simply extends beyond a room, office or campus. Speed and player count can vary either way."
+    },
+    {
+      "id": "L14-q03",
+      "q": "You're designing a 6-player kart race with weapons. The leader keeps winning by miles. What does Rogers recommend?",
+      "options": [
+        "A progressive system that rewards the leader with stronger items",
+        "Remove all weapons",
+        "Reduce the race to 2 players",
+        "A regressive system where the leader is most vulnerable to attacks from behind"
+      ],
+      "answer": 3,
+      "why": "For combat races, the leader should be the most exposed. Progressive systems snowball; removing weapons or players dodges the design problem."
+    },
+    {
+      "id": "L14-q04",
+      "q": "Which game mode does the book say most resembles a single-player game with co-op?",
+      "options": [
+        "Survival",
+        "Team death match",
+        "Capture the flag",
+        "Knowledge"
+      ],
+      "answer": 0,
+      "why": "Survival (defeat all enemies or get from A to B, like Left 4 Dead) is the co-op extension of single-player play."
+    },
+    {
+      "id": "L14-q05",
+      "q": "Why are fighting games often played head-to-head on one machine?",
+      "options": [
+        "Fighting games need four players",
+        "Online servers can't host 2 players",
+        "Lag would disrupt split-second timing",
+        "Publishers forbid online fighting"
+      ],
+      "answer": 2,
+      "why": "Slow data transmission causes lag, which breaks the timing fighting relies on; XBLA releases showed this was improving."
+    },
+    {
+      "id": "L14-q06",
+      "q": "In a gambling mode, which system should you avoid?",
+      "options": [
+        "Random outcomes",
+        "Conjugate play",
+        "Progressive systems where the rich get richer",
+        "Leaderboards"
+      ],
+      "answer": 2,
+      "why": "Snowballing wealth makes the poor poorer and kills fun. Randomness is the point of gambling modes."
+    },
+    {
+      "id": "L14-q07",
+      "q": "Rogers' answer to 'how many players should multiplayer support?' is:",
+      "options": [
+        "Whatever is right for your game",
+        "Always 4",
+        "As many as the servers can hold",
+        "16 for action games"
+      ],
+      "answer": 0,
+      "why": "His list spans 2 to ~5,000 per server; the right number depends on the gameplay."
+    },
+    {
+      "id": "L14-q08",
+      "q": "Your RPG's upgrade can fail and destroy the rare gem used. Which book rule applies?",
+      "options": [
+        "Grinding is unavoidable",
+        "Crafting should be instant",
+        "Use a rarity scheme",
+        "Never destroy a hard-to-get, expensive item: don't punish the player twice"
+      ],
+      "answer": 3,
+      "why": "Trial-and-error crafting can cost components, but losing a rare item on top of the failed attempt is double punishment."
+    },
+    {
+      "id": "L14-q09",
+      "q": "What does the book call the #1 thing that makes players quit an MMO?",
+      "options": [
+        "Griefing",
+        "The grind",
+        "Too few players",
+        "Bad chat systems"
+      ],
+      "answer": 1,
+      "why": "Griefing is a problem too, but the book singles out grinding as the top quit reason."
+    },
+    {
+      "id": "L14-q10",
+      "q": "Why are dungeons instanced?",
+      "options": [
+        "To save server memory",
+        "To force PvP",
+        "So several groups can play their own copies at once without waiting for a restock",
+        "To stop players from collecting items"
+      ],
+      "answer": 2,
+      "why": "Instances exist outside the world, can be randomized, and let groups play simultaneously."
+    },
+    {
+      "id": "L14-q11",
+      "q": "Which is NOT one of the guild tools the book suggests?",
+      "options": [
+        "Raid calendars",
+        "Stat tracking",
+        "Guild asset customization",
+        "Automatic loot selling"
+      ],
+      "answer": 3,
+      "why": "The book lists communication, stat tracking, raid calendars and asset customization."
+    },
+    {
+      "id": "L14-q12",
+      "q": "A casual async attack game lets one player raid the same newbie repeatedly. Best fix inspired by the book?",
+      "options": [
+        "Shields after being attacked and per-target cooldowns (anti-griefing safeguards)",
+        "Add more PvP rewards",
+        "Make the newbie pay to rebuild",
+        "Remove clans"
+      ],
+      "answer": 0,
+      "why": "Griefing and spawn camping need systemic safeguards; monetizing the victim is predatory."
+    },
+    {
+      "id": "L14-q13",
+      "q": "Your F2P clan event rewards only the top 3 contributors; 80% of members stop participating. Which raid principle did you miss?",
+      "options": [
+        "Cultivate legends of raid targets",
+        "Raids should need one exact party setup",
+        "Remove chat",
+        "Share loot based on each player's performance so everyone earns something"
+      ],
+      "answer": 3,
+      "why": "Performance-based loot sharing (with a participation floor) keeps everyone contributing; a single required setup is the opposite of the book's advice."
+    },
+    {
+      "id": "L14-q14",
+      "q": "A small-market F2P game launches a 60-player real-time mode and queues hit 5 minutes. What's the best diagnosis?",
+      "options": [
+        "Players hate real-time play",
+        "The player count isn't right for the game's matchmaking pool",
+        "The mode needs more gambling",
+        "The server is peer-to-peer"
+      ],
+      "answer": 1,
+      "why": "The right number depends on gameplay AND whether your audience can fill matches. Cut the count, merge regions or add bots."
+    },
+    {
+      "id": "L14-q15",
+      "q": "Players discover an unintended but harmless way to play your mode and love it. What does the chapter's final rule suggest?",
+      "options": [
+        "Patch it out immediately",
+        "Ban the players",
+        "Let them, as long as it doesn't ruin the fun for others",
+        "Charge for it"
+      ],
+      "answer": 2,
+      "why": "Players will always do the last thing you expect, and there are times to allow it. Only exploits that hurt others must be stopped."
+    }
+  ],
+  "sideQuests": [
+    {
+      "id": "L14-s01",
+      "title": "Mode Bingo",
+      "task": "Open Brawl Stars or another multi-mode PvP game and map every live mode to one of Rogers' 15 modes. Which book mode is missing on mobile, and why?",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L14-s02",
+      "title": "Goldilocks Lobby",
+      "task": "Pick 3 F2P games and note their players per match. For each, write what would break with double the players and with half.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L14-s03",
+      "title": "Hell Fence audit",
+      "task": "List every anti-griefing and anti-toxicity feature in one F2P game (shields, mute, report, emote-only, cooldowns). Match each to the book problem it solves.",
+      "minutes": 15,
+      "xp": 40
+    },
+    {
+      "id": "L14-s04",
+      "title": "Never punish twice",
+      "task": "Design a mobile RPG upgrade system where failure exists but never destroys rare inputs. Write its 3 rules.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L14-s05",
+      "title": "Regressive race",
+      "task": "Sketch a 4-player mobile racing event where the leader is most vulnerable. Name the catch-up item and the leader's counterplay.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L14-s06",
+      "title": "Trope transplant",
+      "task": "Pick one MMORPG trope (housing, raids, auction house...) and pitch in 5 bullets how to add it to a match-3 game without breaking its casual feel.",
+      "minutes": 15,
+      "xp": 40
+    },
+    {
+      "id": "L14-s07",
+      "title": "Exploit pre-mortem",
+      "task": "Take a simple team-chest event. List 5 ways a bored teen with 3 accounts could abuse it and one fix for each.",
+      "minutes": 10,
+      "xp": 35
+    }
+  ],
+  "mainQuests": [
+    {
+      "id": "L14-m01",
+      "title": "Clan System One-Pager for a casual puzzle game",
+      "task": "Design a clan system: team size (and why), help requests with limits, one weekly co-op event (shared goal, loot by performance, participation floor), one light competitive layer, guild tools (communication, stats, calendar, customization), a toxicity plan, an anti-exploit list, and a 4-week social LiveOps calendar.",
+      "deliverable": "A one-page doc or slide plus a 4-week event calendar.",
+      "doneWhen": "All items are covered; every feature cites the book principle it applies; 3 post-launch metrics are listed; it's posted publicly (#buildinpublic) for feedback.",
+      "minutes": 90,
+      "xp": 200
+    }
+  ],
+  "playLabs": [
+    {
+      "id": "L14-p01",
+      "game": "Clash of Clans",
+      "minutes": 10,
+      "lookFor": "Donation requests, member stats, war and event schedule, clan badge, the clan as a meeting place.",
+      "question": "Which of Rogers' four guild tools does it implement, and which is missing or weak?"
+    },
+    {
+      "id": "L14-p02",
+      "game": "Clash Royale or Marvel Snap",
+      "minutes": 10,
+      "lookFor": "How communication is limited, how fair matchmaking feels, match length.",
+      "question": "How does the game prevent toxicity while still letting you taunt your opponent?"
+    },
+    {
+      "id": "L14-p03",
+      "game": "Royal Match, Candy Crush Saga or Monopoly GO!",
+      "minutes": 10,
+      "lookFor": "Teams, life requests, partner or team events, friend map, sticker trading.",
+      "question": "Which social feature gives you a reason to open the app tomorrow even if you don't feel like playing?"
+    },
+    {
+      "id": "L14-p04",
+      "game": "Brawl Stars",
+      "minutes": 10,
+      "lookFor": "The live mode and map rotation.",
+      "question": "Map each live mode to the book's list. How does rotation create variety without new characters?"
+    }
+  ],
+  "retrieval": [
+    {
+      "q": "Name the three connection types and the difference between LAN and WAN.",
+      "a": "Head-to-head (same machine), network/peer-to-peer (LAN or WAN, or wireless), client server (a big server for many users). LAN vs WAN differ only in proximity."
+    },
+    {
+      "q": "What are the three play styles?",
+      "a": "Competitive (same goal, against each other), cooperative (same goal, together), conjugate (same space, different goals)."
+    },
+    {
+      "q": "What did Gauntlet teach about co-op?",
+      "a": "Scarce resources make co-op dissolve into competition."
+    },
+    {
+      "q": "List at least 10 of the 15 game modes.",
+      "a": "Deathmatch, team deathmatch, fighting, survival, area control, king of the hill, capture the flag, race, team objective, Man vs God, gambling, reflex, knowledge, creation, virtual life."
+    },
+    {
+      "q": "Who should be most vulnerable in a combat race?",
+      "a": "The leader: a regressive system."
+    },
+    {
+      "q": "What does the book warn against in gambling modes?",
+      "a": "Progressive rich-get-richer systems."
+    },
+    {
+      "q": "Why are creation modes valuable? Give an example.",
+      "a": "Players make content, extending the game's life; LittleBigPlanet GOTY shipped 18 community levels; Sims players' story movies became as popular as the game."
+    },
+    {
+      "q": "Why would Street Fighter break with more players, and WoW with fewer?",
+      "a": "SF: bunching, visibility, collision detection, mob warfare. WoW: the world feels empty (it runs ~4,000–5,000 per server)."
+    },
+    {
+      "q": "Name 10 MMORPG tropes.",
+      "a": "Buffing, customization, chatting, crafting, economy, grinding, instanced dungeons, item collection, open world, griefing, guilds, housing, PvP, raids, spawn camping, trading/auctions."
+    },
+    {
+      "q": "What's the crafting failure rule?",
+      "a": "Failure can cost components, but never destroy a hard-to-get, expensive item; don't punish twice."
+    },
+    {
+      "q": "What's the top reason players quit MMOs and the fix?",
+      "a": "The grind; reduce it or make it entertaining."
+    },
+    {
+      "q": "What four guild tools does the book suggest?",
+      "a": "Communication, stat tracking, raid calendars, guild asset customization."
+    },
+    {
+      "q": "How can PvP be offered without forcing it on everyone?",
+      "a": "Dedicated PvP servers or PvP restricted to certain locations."
+    },
+    {
+      "q": "What makes a well-designed raid?",
+      "a": "Beatable by various party setups, creative thinking or luck; legendary targets; easy performance-based loot sharing."
+    },
+    {
+      "q": "What is the chapter's very important thing?",
+      "a": "Players will always do the last thing you expect; at times you should allow it, unless it spoils the fun for others."
+    }
+  ],
+  "feynman": "Explain to a 12-year-old in 60 seconds why a game with a clan keeps you playing longer than the same game without one, and what has to be built so other players don't ruin it.",
+  "links": [
+    "L05",
+    "L09",
+    "L10",
+    "L13",
+    "L15",
+    "L17",
+    "F2P1",
+    "F2P"
+  ]
+}

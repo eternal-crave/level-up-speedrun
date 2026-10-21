@@ -1,0 +1,1825 @@
+{
+  "id": "L09",
+  "order": 10,
+  "kind": "book",
+  "label": "Level 9",
+  "title": "Everything I Learned about Level Design, I Learned from Level 9",
+  "bookPages": "197–241",
+  "emoji": "🏰",
+  "tagline": "Disneyland, hot dogs and skeletons: how to build levels players can't stop walking (er, jumping) through",
+  "f2pRelevance": 4,
+  "f2pWhy": "Pacing, beat charts, re-use, visible next unlocks and the FTUE are daily work for F2P level designers, even though the 3D mapping details translate only loosely to puzzle boards and saga maps.",
+  "minutes": 75,
+  "tldr": [
+    "Design top-down like Disneyland: world → level → experience → moment-to-moment gameplay, and map the world first.",
+    "Plan the whole game on a beat chart before building anything; it exposes clumps, gaps and repetition for a few hours of effort.",
+    "Build a few systems and re-use them hard: under three uses = cut it, and never the same system twice in a row.",
+    "Steer players with the space itself (weenies, light, the squint test, bread crumbs, visual language). Walking is not gameplay, and if it feels long or boring, it is.",
+    "Graybox first (with a playground before that), alternate big and small moments, and obey the golden rule: if it looks reachable, it must be reachable.",
+    "The training level is the most important and usually built last. Build it first, or make the whole game teach."
+  ],
+  "sections": [
+    {
+      "title": "What even IS a level?",
+      "bites": [
+        {
+          "id": "L09-b01",
+          "hook": "One word, four meanings: 'level' is game dev's Swiss Army knife",
+          "body": "Level can mean (1) a place where play happens, (2) a chunk of space built around one gameplay experience, (3) a progress counter in repetitive games, or (4) a player's rank from score or XP. The term probably comes from D&D, where players descended dungeon levels, like floors, to reach the dragon.",
+          "example": "The Death Star level (place), the mine-cart level (experience), Tetris level 20 (counter), a WoW character at level 70 (rank).",
+          "f2p": "A match-3 player is on level 4,000 (counter); each level is a handmade board (experience) inside a themed episode (world). Write a team glossary so nobody mixes them up.",
+          "memory": "Place, Slice, Counter, Rank.",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b02",
+          "hook": "Rounds, waves, stages, acts, maps, worlds: aliases for 'level'",
+          "body": "Rounds repeat the same activity. Waves are combat, enemy after enemy. Stages split clearly separate activities and often mean boss phases. Acts and chapters signal story focus (they just sound classier). Maps are named locations, common in FPSs. Worlds are places defined by a visual or genre theme.",
+          "example": "Rounds: golf, boxing, Peggle, Diner Dash. Waves: Plants vs. Zombies, Defend My Castle, sequences in Gears of War 2 and Uncharted 2. Maps: 'Power Plant', 'Insane Asylum'.",
+          "f2p": "Survivor-likes and tower defense speak waves, party games like Stumble Guys speak rounds, and saga puzzle games speak episodes.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L09-b03",
+          "hook": "World 1-1 should really be called Level 1-1",
+          "body": "A world is a location defined mainly by its visual or genre theme, and it can hold several locations sharing that theme. Early games called themed levels worlds (Fire World, Ice World). When home games needed more length, devs reused one texture set and its mechanics across several levels, so worlds gained sub-levels.",
+          "example": "Super Mario Bros. World 1 (Mushroom Kingdom): 1-1 grassland, 1-2 underground cavern, 1-3 mountain-like platforms, 1-4 castle interior.",
+          "f2p": "A themed episode or area on a saga map is a world: one palette and decor, many levels.",
+          "memory": "World = theme. Level = a slice of it.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "The Top 10 Cliché Video Game Themes",
+      "bites": [
+        {
+          "id": "L09-b04",
+          "hook": "Clichés got famous for good reasons: cheap, colorful, readable",
+          "body": "The top 10 cliché themes: outer space, fire/ice, dungeon/cavern/tomb, factory, jungle, spooky/haunted/graveyard, pirate, gritty urban, space station, sewer. Each spread because it offered cheap hazards, built-in enemies, easy art or strong color. Cliché doesn't mean unusable.",
+          "example": "Fire and ice still turn up today, disguised as lava temples and snowbound train wrecks.",
+          "f2p": "F2P clichés: castle/kingdom, candy, farm, mansion makeover, zombie apocalypse, frozen survival. They win because they read instantly in ads and store icons.",
+          "memory": "Space, Fire-Ice, Dungeon, Factory, Jungle, Spooky, Pirate, Urban, Station, Sewer.",
+          "tag": "list"
+        },
+        {
+          "id": "L09-b05",
+          "hook": "Outer space: the theme born from a black TV screen",
+          "body": "A black screen already looked like space, and vector stars glowed on CRTs. Ships need no animation and can be simple geometric shapes, and play can be pure physics, which suited early programmers working before games had dedicated designers and artists. The shooter grew up here, bringing sci-fi tropes: aliens, ships, computers, future weapons.",
+          "example": "Early arcade shooters set their battles among vector-drawn stars.",
+          "f2p": "",
+          "memory": "Black screen = free space.",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b06",
+          "hook": "Fire and ice: easy hazards, built-in monsters, instant color",
+          "body": "Three reasons: flames and slippery floors were easy to code and create timing puzzles that break the player's rhythm; they come with themed enemies (lava men, fire dragons, abominable and frosty snowmen); and red/blue made screenshots on 8-bit box backs stand out. If the colors, feel and mechanics are there, it's still a fire/ice level.",
+          "example": "A snowbound train wreck or a lava-filled temple is a fire/ice level wearing a disguise.",
+          "f2p": "Whiteout Survival turns the ice level into a whole 4X game. Distinct palettes per area matter even more on a phone and in 2-second ads.",
+          "memory": "Hazard, horde, hue.",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b07",
+          "hook": "Dungeons, factories, jungles: hazard toolkits every theme borrows",
+          "body": "Dungeons (D&D and Tolkien DNA): traps, puzzles, unexplained enemy waves, treasure, dramatic lighting, cheap tiled textures. Factories: easily combined, tunable hazards (moving platforms, conveyors, gears) that spread into tombs, circuses and space stations. Jungles: dungeon flexibility plus color, quicksand, spike pits, crocodiles, snakes, scorpions, vines, branches and Frogger-style log rivers.",
+          "example": "Rogers jokes that Attack of the Clones (2002) borrowed a platformer factory: conveyor belts and smashing presses.",
+          "f2p": "Puzzle blockers work like factory mechanics: small pieces that combine into endless, tunable challenges.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b08",
+          "hook": "Spooky levels: scares need pacing, and the best one is expected",
+          "body": "Spooky/haunted/graveyard themes deliver mood and story through slow exploration and sudden scares. Pace it: quiet, then a distraction, then the scare. Music and sound design are critical. Don't tip your hand. The best scare is one the player expects but can't locate. It's the most adaptable theme: adventures, platformers, RPGs, FPSs, even puzzle games.",
+          "example": "Rogers built haunted houses in his garage for years; that's where his quiet, distract, scare formula comes from.",
+          "f2p": "Halloween LiveOps events are the spooky theme on a calendar, and they fit almost any genre.",
+          "memory": "Shhh... look over there... BOO!",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b09",
+          "hook": "Pirates, cities, space stations, sewers: the rest of the list",
+          "body": "Pirate: spooky's sibling, with action, melee, treasure, ships and skeletons, bolted onto any genre to sell. Gritty urban: relatable, easy to art, lets you improve or wreck your own world. Space station: the sci-fi dungeon (shaped by Aliens), force fields, VFX. Sewer: modern dungeon with rats, albino gators and deadly water.",
+          "example": "Pac-Man World had both pirate and spooky levels because designers love Disneyland's New Orleans Square (Pirates of the Caribbean + Haunted Mansion).",
+          "f2p": "",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L09-b10",
+          "hook": "Mexican pizza: smash two clichés together for something new",
+          "body": "Taco Bell's Mexican pizza sounded gross but tasted surprisingly good. The lesson: combine two things that don't seem to belong together and you get something original. It rescues any cliché theme.",
+          "example": "Maximo: Ghosts to Glory had a graveyard split open by volcanic fire (a fire graveyard) and a pirate level frozen in ice.",
+          "f2p": "Match-3 + home makeover (Gardenscapes), merge + mystery mansion (Merge Mansion), Pokémon + real-world walking (Pokémon GO). Lots of F2P hits are Mexican pizzas.",
+          "memory": "🍕 + 🌮 = 💡",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "The Name Game",
+      "bites": [
+        {
+          "id": "L09-b11",
+          "hook": "Every level has two names: a barcode and a birthday cake",
+          "body": "File names are for the team: about 8 characters max, no wit, just location + order ('factory 01'), systematic abbreviations (fac01s01 = factory 1, section 01), never one abbreviation with two meanings ('sec' can't mean section AND secret), and organized folders with shared, tracked files.",
+          "example": "In Relic Raider, Roof01 and Road01 were too similar, so Rogers renamed the Shanghai level Shang01.",
+          "f2p": "Level IDs in remote config follow the same rules, plus version tags for A/B variants so analytics knows which level 143 players quit on.",
+          "memory": "Barcode for the team, cake name for the player.",
+          "tag": "rule"
+        },
+        {
+          "id": "L09-b12",
+          "hook": "Four ways to name a level for players",
+          "body": "Functional (numbers): retro, shows progress, but players don't know the max and it lacks personality. Location ('Sewer'): sets expectations instantly, but based on the player's own knowledge. Descriptive ('A Nasty Surprise'): like book chapters, great for foreshadowing, but don't spoil. Punny: late-'90s fad, only for funny games. Names are first impressions.",
+          "example": "Dead Space hid a secret message in the first word of each level name; Crash Bandicoot kicked off the punny-title trend.",
+          "f2p": "Puzzle F2P uses numbers, and the unknown max becomes a bragging badge. Puns die in localization, so keep key names translatable.",
+          "memory": "F-L-D-P: Functional, Location, Descriptive, Punny.",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "Everything I Learned about Level Design, I Learned from Disneyland",
+      "bites": [
+        {
+          "id": "L09-b13",
+          "hook": "The world is the best narrator: tell story through space",
+          "body": "Rogers believes a game's story should be told inside its levels. Using space to tell stories is centuries old (architecture). Theme parks are laid out to move guests from one adventure to the next as efficiently as possible, which is exactly what a good level does.",
+          "example": "Ken Levine's BioShock: the undersea city of Rapture tells its story through its spaces. Rogers calls it the gold standard.",
+          "f2p": "Renovation metas (Homescapes, Gardenscapes) tell their story through the room you're restoring, not through walls of text.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b14",
+          "hook": "Disneyland: a train track with five lands in the middle",
+          "body": "Walt loved miniature trains, so Disneyland was built around a railroad. Five lands filled the middle, one per passion: history (Frontierland), progress (Tomorrowland), nature (Adventureland), his films (Fantasyland), his childhood hometown (Main Street). Attractions let guests ride through the films, with care given to every scene.",
+          "example": "Every land is themed down to the trash cans: wood-look in Frontierland, futuristic silver in Tomorrowland.",
+          "f2p": "A saga map's themed episodes are the lands; the path connecting them is the railroad.",
+          "memory": "History, Progress, Nature, Movies, Hometown.",
+          "tag": "example"
+        },
+        {
+          "id": "L09-b15",
+          "hook": "Design top-down: world, level, experience, moment-to-moment",
+          "body": "Disneyland: the world holds lands, lands hold attractions, attractions are made of scenes. Games: the world holds levels (each with part of the story), levels hold experiences that move the player through, and moment-to-moment gameplay links those experiences and keeps players engaged. Working top-down defines the world's limits and contents.",
+          "example": "Rogers maps the whole game world before designing any single room.",
+          "f2p": "F2P version: game → area/episode → level → each move or turn. Design the meta map before the boards.",
+          "memory": "World, Land, Ride, Scene.",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b16",
+          "hook": "Your world map can be a humble flowchart",
+          "body": "Old PC games shipped maps on parchment, cloth or faux leather, but a world map can be a simple flowchart. It must show where the player goes and what they'll find there, and it can define spatial relationships, which tells you how the player travels and in what order. It helps both the team and the player.",
+          "example": "Rogers says a Visio flowchart is enough.",
+          "f2p": "Sketch your meta as a flowchart (saga map, unlock order, feature gates) before production starts.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L09-b17",
+          "hook": "Show the climb: Donkey Kong's 'how high can you get?'",
+          "body": "Telling players up front how many stages they must conquer whets the appetite and sets a goal. Ghosts 'n Goblins added a 'you are here' icon and a camera pan over the whole world, teasing what's coming. Mortal Kombat's locked portraits show progression with no travel at all and make players want to unlock everyone.",
+          "example": "Rogers still remembers wondering what was in the ice level at the far end of the Ghosts 'n Goblins map.",
+          "f2p": "Saga maps, Clash Royale's trophy road, silhouetted gacha rosters and Marvel Snap's collection all use visible-but-locked progress.",
+          "memory": "Show the mountain before the climb.",
+          "tag": "example"
+        },
+        {
+          "id": "L09-b18",
+          "hook": "Anticipation is half the scare",
+          "body": "Foreshadowing excites players about what's ahead, and building anticipation matters as much as delivering. A scare lands harder when the victim knows it's coming. Use lighting, sound and geometry to look foreboding, and skulls and skeletons to say beware. Gore and grime don't scare much; smell and touch would, but games can't use them.",
+          "example": "Rogers: you can never have too many skeletons. But corpses hung like ornaments just look festive.",
+          "f2p": "Royal Match and Candy Crush Saga flag spike levels with a Hard Level banner. The warning makes the win sweeter and the fail feel fair.",
+          "memory": "💀 Never too many skeletons.",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b19",
+          "hook": "Posters plant adventures players don't understand yet",
+          "body": "Disneyland guests pass attraction posters on the way in. They don't grasp what they mean yet, but the posters foreshadow adventures to come. Plant hints early that pay off later.",
+          "example": "BioShock: ads for superpower-granting plasmids greet you in Rapture, and only make sense once you learn what plasmids do.",
+          "f2p": "Coming-soon event banners, locked feature icons on the home screen and next-season teasers are F2P posters.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b20",
+          "hook": "Don't skip scene two, or everyone goes for popcorn",
+          "body": "Like a map, the level itself should carry the player from story point to story point. Disney's imagineers designed the park like a film: a logical flow of scenes. Skipping a scene breaks the story as badly as sending the whole audience to the lobby mid-movie.",
+          "example": "The imagineers made this comparison in Disneyland: The First Quarter Century (1979).",
+          "f2p": "Gate story beats behind progress so players always see setup before payoff.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L09-b21",
+          "hook": "Four level goals: escape, explore, educate, moral",
+          "body": "Escape/survive: you're somewhere you shouldn't be; story through action and location; movement and combat. Explore: discover the story at your own pace through freedom of movement and conversation. Educate: learn via observation and imitation. Moral: choice and consequence that actually change gameplay.",
+          "example": "Escape: a ghost manor. Explore: Wind Waker's island village, Fallout 3's Megaton. Educate: Assassin's Creed 2. Moral: BioShock's early anti-plasmid horror level.",
+          "f2p": "Survivor.io = escape, Pokémon GO = explore, Duolingo = educate, interactive-story apps = moral.",
+          "memory": "E-E-E-M: Escape, Explore, Educate, Moral.",
+          "tag": "list"
+        },
+        {
+          "id": "L09-b22",
+          "hook": "Educate and moral are the rare goals, so they're openings",
+          "body": "Educational games carry a 'kids or non-gamers' stigma, so the educate goal rarely reaches entertainment games. Moral choices usually change endings but rarely the levels themselves. Rogers wants choices to affect gameplay inside the level.",
+          "example": "Mr. Toad's Wild Ride's moral: drive recklessly, crash, and go to hell. Bold for the happiest place on Earth. Force Unleashed and Fable 2 put morality in endings.",
+          "f2p": "Duolingo proves educate can be mass-market. Moral choice in core F2P loops is mostly open territory.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b23",
+          "hook": "Ask: what is the player's objective in THIS level?",
+          "body": "Beyond the story goal, define what the level is for. Some levels exist only to teach one move: jumping, combat, driving, or how to play at all. The answer focuses all of the level's moment-to-moment design.",
+          "example": "A level whose real job is teaching vehicle controls before the big chase.",
+          "f2p": "Every match-3 level has a player goal (collect X) AND a design job: teach a blocker, test mastery, give relief, or create pressure.",
+          "memory": "",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "The Beat Chart",
+      "bites": [
+        {
+          "id": "L09-b24",
+          "hook": "Beat chart: your whole game on one sheet",
+          "body": "Borrowed from Hollywood writers and directors. One column per level; rows for level name, file name, player objective, story beat, play style, enemies, mechanics, NPCs, bonus materials, time of day and color mapping. It reveals gaps and clumping so you can spread things out and make the game feel organic.",
+          "example": "Rogers' fictional Relic Raider: hero Jake Hunter crosses Shanghai rooftops, two jungles, a skull temple and a mountain escape.",
+          "f2p": "Puzzle teams use a level spreadsheet: goal type, moves, new blocker, difficulty target, reward, theme, monetization touchpoint.",
+          "memory": "No Fancy Ogre Should Play Every Match Not Being Totally Cool.",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b25",
+          "hook": "What Relic Raider's beat chart exposed, part 1: names and order",
+          "body": "Naming was inconsistent (generic 'Jungle 01' beside 'Temple of the Hidden Skulls'). Roof01 and Road01 were easy to confuse (rename Shang01). Jung03 shared few jungle assets (call it temp01). Two jungle levels ran back to back (merge them?). Driving arrived late, after four on-foot levels. The jungle objectives were vague.",
+          "example": "Rogers' fix for the late driving: bring it in earlier or cut a walking level.",
+          "f2p": "The same eye spots three similar puzzle levels in a row, or a cool mechanic that only arrives after most players have churned.",
+          "memory": "",
+          "tag": "example"
+        },
+        {
+          "id": "L09-b26",
+          "hook": "Part 2: toys dry up, enemies clump, everything's green",
+          "body": "Weapons ramped up fast then stopped: you need more toys. Enemies clumped at the start, and the 'fighting' level had only a jaguar. Costly temple traps weren't reused. Art galleries were a repetitive reward. Three night levels ran in a row (and 'day' in a dark temple interior is pointless). Too much green in the color map.",
+          "example": "A few hours with the chart improved production, gameplay and art before a single asset existed.",
+          "f2p": "LiveOps version: three leaderboard events in a row, or three blue-themed events back to back. Vary the calendar.",
+          "memory": "",
+          "tag": "example"
+        },
+        {
+          "id": "L09-b27",
+          "hook": "Saw-tooth difficulty: climb, spike, breathe, repeat",
+          "body": "A common puzzle-game pattern (not from the book): difficulty rises over a few levels, peaks at a hard level, then drops to an easy relief level before climbing again. It's Rogers' big and small moments plotted along one row of a beat chart.",
+          "example": "Hypothetical run: three easy, two medium, one hard, one easy reward level, then repeat a notch higher.",
+          "f2p": "Never stack two super-hard levels. Always schedule relief after a spike, or you build a churn wall.",
+          "memory": "▁▂▃▅█▁: teeth, not a cliff.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L09-b28",
+          "hook": "New blocker? Introduce it alone, then combine",
+          "body": "Treat each new blocker like the beat chart's new-weapon row. Give it an intro level where it's the obvious star, mix it with familiar pieces over the next few levels, then combine it with others, then test mastery on a hard level. Never introduce two new things on the same level.",
+          "example": "Big match-3 games typically show a short pop-up and an easy showcase level the first time a new obstacle appears.",
+          "f2p": "Spread new elements evenly: long gaps feel stale, and clumps overwhelm.",
+          "memory": "One new toy per level.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L09-b29",
+          "hook": "Hard levels: where 'just a few more moves' gets bought",
+          "body": "Players most often run out of moves just short of winning on hard levels, which is when continue offers and pre-level boosters convert. That makes hard levels central to both revenue and churn. Ethical tuning: spikes must be beatable without paying, and relief must follow.",
+          "example": "Typical match-3 flow: out of moves, offer to continue for coins, then the player buys, retries or quits.",
+          "f2p": "Track win rate and attempts per level, flag churn spikes, and retune with server-side config.",
+          "memory": "",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "Re-using Re-use",
+      "bites": [
+        {
+          "id": "L09-b30",
+          "hook": "Rule of three: used fewer than three times? Cut it",
+          "body": "Platforming, shooting, driving and stealth add variety, but each is built separately. One of your biggest decisions is how and when to reuse systems. If a system appears fewer than three times in the game, it isn't worth building. Reuse isn't copy-paste: repurpose art on top of shared systems.",
+          "example": "Relic Raider's four separate systems (platforming, shooting, driving, stealth) share nothing in production.",
+          "f2p": "If a feature touches players fewer than three times in their first month, question its build cost.",
+          "memory": "Three or flee.",
+          "tag": "rule"
+        },
+        {
+          "id": "L09-b31",
+          "hook": "One vehicle system, three cars, zero hovercrafts",
+          "body": "One vehicle system can run a jeep, a hatchback and a sedan, and the system costs far more than the cars. But stretching has limits: a hovercraft or motorcycle behaves too differently. Design and programming always trade off, so learn your systems' limits and build a small set you can reuse.",
+          "example": "Treasure (Gunstar Heroes, Dynamite Headdy, Ikaruga) milks a tiny palette of mechanics brilliantly.",
+          "f2p": "Build one LiveOps event framework and reskin it all year. A co-op raid 'reusing' a collect-X event is the hovercraft.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b32",
+          "hook": "Never the same system twice in a row",
+          "body": "On the beat chart, don't put the same gameplay system in back-to-back levels. Only a game that is truly about driving may chain two driving levels; otherwise change systems between levels. Reuse art cleverly too: recoloring and retexturing makes items look new from level to level.",
+          "example": "Relic Raider's two jungle levels in a row are exactly this mistake.",
+          "f2p": "Alternate LiveOps event types (competitive, collection, co-op). Subway Surfers swaps city themes on one runner core.",
+          "memory": "",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "The Gary Gygax Memorial Mapping Section",
+      "bites": [
+        {
+          "id": "L09-b33",
+          "hook": "Map with anything: Lego, clay, 3D tools or a #2 pencil",
+          "body": "Metal Gear's original designers built levels from Lego. Many teams prototype in 3D tools like Maya or 3D Studio Max. One designer sculpted clay. Rogers prefers blank paper, a sharp #2 pencil and an eraser, like making D&D dungeons.",
+          "example": "The section honors Gary Gygax, who co-created D&D with Dave Arneson. Making D&D dungeons launched many designers' careers.",
+          "f2p": "Puzzle designers sketch boards on grid paper or straight in the level editor. The medium doesn't matter; starting does.",
+          "memory": "",
+          "tag": "fun"
+        },
+        {
+          "id": "L09-b34",
+          "hook": "Alleys: directed paths that let you control everything",
+          "body": "An alley leads the player toward a goal; it can be narrow (Portal) or wide enough to feel free (Modern Warfare 2). Advantages: easy camera triggers, dramatic camera moves, optional removal of camera controls, scripted events, choreographed combat and traps, bottlenecks against backtracking, and illusional narrative.",
+          "example": "Rogers' graph-paper Maximo graveyard: one long corridor with crypt monster generators, a switch that opens an armor crypt, and water features.",
+          "f2p": "Saga maps, runners (Subway Surfers) and room-by-room chapters (Archero-style) are alleys: easy to tutorialize, pace and measure.",
+          "memory": "Alley = bowling lane with bumpers.",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b35",
+          "hook": "Islands: freedom of order, at the designer's expense",
+          "body": "Islands are harder: the camera must handle every width and height, scripted events may be missed, players can skip fights, and façades fail because everything is seen from every side. In return, players choose their own order. Super Mario 64 was an early island; the sandbox genre grew out of islands.",
+          "example": "GTA IV, Burnout Paradise and Halo's multiplayer maps are giant island playgrounds.",
+          "f2p": "Pokémon GO, Genshin Impact and 4X world maps are islands. So is your crowded home screen.",
+          "memory": "Island = playground without fences.",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b36",
+          "hook": "Why go island: scale, secrets, smorgasbord, vehicles",
+          "body": "Islands give an extraordinary sense of space and scale, promote exploration with secrets and side missions in the in-between spaces, lay out options like a smorgasbord, and suit vehicles. They're great for multiplayer: sneak around the back, charge the front, or snipe from a hill.",
+          "example": "Rogers reserves a special place in hell for spawn campers.",
+          "f2p": "PvP maps in Brawl Stars or Mobile Legends need multiple routes (bushes, lanes, objectives) so every play style works.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L09-b37",
+          "hook": "Alleys and islands can live in one game",
+          "body": "Islands can contain alley-like sections, and games can alternate between the two. Choose based on the gameplay each part needs.",
+          "example": "Red Faction: Guerrilla and Team Fortress 2 have alley-ish interiors with island freedom; Uncharted 2 alternates; Darksiders and Maximo use alley dungeons and island hubs or arenas.",
+          "f2p": "Common F2P hybrid: a linear alley FTUE that opens into an island hub once the basics are learned.",
+          "memory": "",
+          "tag": "example"
+        },
+        {
+          "id": "L09-b38",
+          "hook": "Give every zone its own look, down to the trash cans",
+          "body": "Split sandbox worlds into distinct areas to help navigation, like Disneyland's lands. Frontierland has water troughs, wagons, cactus, crates and barrels (its dirt street was paved after dusty-clothes complaints). Even the trash cans are themed: wood in Frontierland, silver in Tomorrowland. You always know where you are.",
+          "example": "Crackdown's Pacific City zones match the gang that runs them: Shai-Gen in Chinatown, the tech-savvy Volk in gleaming skyscrapers.",
+          "f2p": "Each saga episode, Clash Royale arena or Coin Master village gets its own palette and decor so progress feels like travel.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b39",
+          "hook": "Weenies: landmarks that pull players like a hot dog",
+          "body": "Imagineers called big landmarks like Sleeping Beauty's Castle, the Matterhorn and Space Mountain weenies, after the hot dog that trainers waved to lure dog actors. Weenies grab attention and draw people in. They can be small: a statue, bridge, building, distinctive tree or rock. String them along your path.",
+          "example": "Walt Disney coined the term himself.",
+          "f2p": "The weenie is the next visible unlock: the locked next area, the top battle-pass reward, the next arena on the trophy road.",
+          "memory": "🌭 Wave the hot dog and the player follows.",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b40",
+          "hook": "Players will ALWAYS break your game, so guide them",
+          "body": "In one of Rogers' maps, players followed a path behind a house looking for treasure, came back onto the road, and walked back the way they came. A landmark at the exit fixed it. The truth: players always find a way to break your game, so make them play your way, with plenty of help.",
+          "example": "The book shows three tiny top-view sketches: the layout, the wrong-way loop, and the fix with a landmark.",
+          "f2p": "F2P players find economy exploits within hours (clock tricks, ad-farming loops). Plan for it and keep server-side tuning ready.",
+          "memory": "",
+          "tag": "truth"
+        },
+        {
+          "id": "L09-b41",
+          "hook": "Total freedom scares people, so give a nudge",
+          "body": "Whatever players say, a world where you can do anything at any time can be intimidating and confusing. Even in a sandbox, prompt players toward the next thing, even if they choose to ignore it.",
+          "example": "That's why your annoying cousin keeps phoning you in GTA IV.",
+          "f2p": "Home-screen hubs need next-best-action prompts: pulsing buttons, quest arrows, badges. Just don't light up nine red dots at once.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L09-b42",
+          "hook": "Base builders: an island the defender turns into alleys",
+          "body": "A Clash of Clans-style village is an island for the attacker, who can approach from any side. Defenders use walls and building placement to carve funnels (alleys) inside it, steering troops into traps. The big central building acts like a weenie, pulling attackers' focus.",
+          "example": "",
+          "f2p": "Teach base layout as level design the player does: funnels, chokepoints, bait.",
+          "memory": "",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "The Dave Arneson Memorial Mapping Section",
+      "bites": [
+        {
+          "id": "L09-b43",
+          "hook": "Scale first: one player = one square",
+          "body": "On a top-down graph-paper map, the player is usually one square, and everything else is drawn relative to that, like player metrics. Use icons plus a legend: player start, enemy starts, doors/teleporters/gates, puzzle mechanics, chests and power-ups, traps with their area of effect, and significant landmarks.",
+          "example": "Rogers' alley map legend: Z zombie, SZ swamp zombie, C coins, A armor up, P weapon, heart = health, T treasure chest, HG holy ground.",
+          "f2p": "In puzzle level editors the 'square' is a tile. Layer and label everything so teammates read the board correctly.",
+          "memory": "Some Evil Dragons Prefer Looting Tiny Lairs.",
+          "tag": "rule"
+        },
+        {
+          "id": "L09-b44",
+          "hook": "Big rooms first, hallways second, details last",
+          "body": "Rogers' process: rough out where the big events happen (treasure chamber, battle arena, puzzle room, a mechanic to teach, a spectacular view), connect them (hallways, mazes, chasms, passages), move to graph paper to show the artist the scale, then draw in details like tombstones, crypts, mechanics and enemies.",
+          "example": "His 'very rough' Mighty Jungle outline doodles monkeys, a lion, crocodiles, a plinth trap, a hippo ride and a giant ape, with elevation notes.",
+          "f2p": "For a meta map, place the big beats first (new area, boss level, feature unlock), then fill in the levels between.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L09-b45",
+          "hook": "Passages five squares wide, and be generous",
+          "body": "Make 3D passages five squares wide: the player plus two player-widths on each side. That leaves room to navigate, fight, and let the camera move. Your first levels will almost certainly be too small and cramped, so don't be stingy with space.",
+          "example": "",
+          "f2p": "Mobile version: thumb-sized tap targets and boards that aren't cramped on small phones. First drafts are always too tight.",
+          "memory": "Player + 2 + 2 = 5.",
+          "tag": "rule"
+        },
+        {
+          "id": "L09-b46",
+          "hook": "Light leads, dark repels, diagonals point",
+          "body": "Use geometry and lighting to move players along the path. People are drawn to light and overlook dark places, and diagonal lines pull the eye in a direction. Never get the player lost on purpose or waste their time with needless wandering; get them to the main objective quickly.",
+          "example": "The book's cartoon: a winding road, the brightest shape on screen, leads toward a castle on the horizon.",
+          "f2p": "Highlight the next tap with light and contrast, and dim what doesn't matter right now.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b47",
+          "hook": "The squint test: the brightest thing should be the path",
+          "body": "Naughty Dog's trick (Crash Bandicoot, Uncharted): squint until your eyes are almost closed. The brightest thing on screen should be the main path. Use color and lighting so players read the way forward even if they never consciously notice.",
+          "example": "",
+          "f2p": "Squint at your home screen: if the shop banner outshines the Play button, you've told players to shop, not play.",
+          "memory": "😑 Squint: the path should shine.",
+          "tag": "rule"
+        },
+        {
+          "id": "L09-b48",
+          "hook": "Walking is never gameplay: run the talk-through test",
+          "body": "Describe your level aloud. If you hear yourself say 'and then the player walks over to here', cut that section. Only lazy designers count walking as gameplay; active designers give active characters active things to do: jumping, fighting, collecting, climbing, swimming, swinging, flying, escaping, sneaking, exploring.",
+          "example": "",
+          "f2p": "Mobile 'walking' is dead time: long loads, unskippable animations, five pop-ups between levels. Cut it ruthlessly.",
+          "memory": "Ten verbs beat one walk.",
+          "tag": "truth"
+        },
+        {
+          "id": "L09-b49",
+          "hook": "Multiple paths must earn their build cost",
+          "body": "Multiple paths are tricky in any level type and suit some genres better; wide-open FPS, RPG and driving worlds need them to keep travel fresh. Ask which path players will pick, how to entice them, and how to get alternate paths used (hidden power-ups, cash, an achievement for all secrets). Each path must add something significant.",
+          "example": "Rogers' joke choice: the harem of 1000 delights or the lava pits of Overfiend? Some producers balk at building areas players may never see.",
+          "f2p": "Branching upgrade trees and event choices: if one path is strictly better, the other is wasted content.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b50",
+          "hook": "Show the door first, then let them find the key",
+          "body": "Rogers likes backtracking: it gets more value from a level and suits puzzles. Just don't make players shuttle back and forth too much. If they must visit a place more than twice, change it: new combat or collectibles, or a disaster like an earthquake that turns flat ground into jumpable hills.",
+          "example": "The book's sketch: a locked EXIT door, a running figure, and a key further along the floor.",
+          "f2p": "Show a locked chest or gate early that needs stars or keys from later levels. 3-star ratings (Angry Birds, Cut the Rope) give reasons to replay.",
+          "memory": "Door, then key.",
+          "tag": "rule"
+        },
+        {
+          "id": "L09-b51",
+          "hook": "If it ever feels long or boring, it is",
+          "body": "Unlock faster travel as the world opens up: a car or horse for slow stretches, a train, a zeppelin, or a teleporter if the fiction allows. Vehicles eat space you must build in, and trips mustn't drag, especially frequent ones. Rogers' rule for traveling through levels: if it feels long or boring, it is.",
+          "example": "",
+          "f2p": "Sweep/auto-clear for mastered stages, skip tickets and fast travel are F2P horses and zeppelins. Funnel data is your 'feels long' alarm.",
+          "memory": "Trust the yawn.",
+          "tag": "truth"
+        },
+        {
+          "id": "L09-b52",
+          "hook": "Fingers: tiny dead ends that make a corridor feel explorable",
+          "body": "A linear path feels straight no matter how many enemies or bends you add. Add fingers (short dead ends off the main path) and players feel like explorers, not strollers. Fingers extend a level's life without complex geometry or full alternate paths players might never take. Never put critical-path items down a finger.",
+          "example": "The book's before/after top views: a corridor with enemies, then the same corridor with side branches ending in sparkly treasure.",
+          "f2p": "Optional chests on the saga map, side quests, tappable decor that pays out a coin or a fun animation.",
+          "memory": "🖐️ Arm = critical path, fingers = side trips.",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b53",
+          "hook": "Every finger needs a reward, even a trash can",
+          "body": "Down a finger you can put combat, treasure, bonus materials, or just something visual or fun. But every finger must end in some reward. Whether that trash can holds trash or treasure is up to you.",
+          "example": "",
+          "f2p": "Every optional tap must pay off. A tappable thing that does nothing teaches players to stop exploring.",
+          "memory": "Five fingers, five prizes.",
+          "tag": "truth"
+        }
+      ]
+    },
+    {
+      "title": "Wrapping Up Mapping",
+      "bites": [
+        {
+          "id": "L09-b54",
+          "hook": "Elevation tricks: tracing paper, side views, isometric",
+          "body": "Colors for heights get crowded, so layer elevations on tracing paper or a light board, split by player height and clearly labeled. Number or tape pages together; cut, fold or extend the paper to fit. Side views (set character height first) show vertical play best. Isometric maps show elevation well and suit 2.5D cameras. Combine views as needed.",
+          "example": "Book maps: a Pac-Man World mansion (top + side), a 'Factory 3' side view, an isometric 'Forest 2'. Hidden spots get cutaways or lift-up flaps, advent-calendar style.",
+          "f2p": "Match-3 boards are layered too: a box on a jelly on a tile. Label layers clearly in your level editor.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L09-b55",
+          "hook": "Also map: spawns, aggro, bread crumbs, secrets, terrain",
+          "body": "Put on your maps: enemy spawn points with their detection/aggro radius; bread-crumb collectibles that lead players through; secret entrances and breakable walls; obstacles and barriers (walls, trees, tombstones); and special terrain, clearly marked (cursed earth, swamp water, slippery ice, hot lava).",
+          "example": "Coins and Pac-Man dots are the classic bread crumbs.",
+          "f2p": "XP gems in survivor-likes and coin trails in Subway Surfers are bread crumbs; tower range circles are aggro radii made visible.",
+          "memory": "",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "Illusional Narrative",
+      "bites": [
+        {
+          "id": "L09-b56",
+          "hook": "Illusional narrative: show before and after, let brains animate",
+          "body": "On Disneyland's Peter Pan's Flight you pass Peter and Hook dueling, round a corner disguised as a sail, and Peter has already won. Like the gutter between comic panels or a film cut, players fill in the story between two scenes. You can 'show' a train crash or an alien invasion without animating anything.",
+          "example": "After the corner: the Darling children are free and Hook is fending off the crocodile.",
+          "f2p": "Renovation games: wrecked room, tap a task, swap, beautiful room. The work is never animated; players fill it in.",
+          "memory": "⛵ The magic happens behind the sail.",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b57",
+          "hook": "Illusional narrative saves money, if you gate the order",
+          "body": "Real-time animated events are slow to make and must be redone whenever the level changes, so the savings are big. Make sure players see the elements in story order, and use gating (bottlenecks, camera views, checkpoints, toggling elements, plain doors) so they can't flip back a page.",
+          "example": "Alleys make this easy because you control what's seen and when.",
+          "f2p": "Tie story stills to progress milestones so players always see setup before payoff.",
+          "memory": "",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Gray Matters",
+      "bites": [
+        {
+          "id": "L09-b58",
+          "hook": "Graybox before anything pretty",
+          "body": "Before enemies, mechanics or detail, build the level as gray boxes in an art tool. It shows scale, size and relationships against camera and character metrics, and settles scale, camera and pacing. Run around it, let others play it to find confusing spots, and iterate while big changes are cheap: rip out sections, stitch the rest, add twists.",
+          "example": "A straight hallway given twists and turns turns boring old enemies and treasure into surprises.",
+          "f2p": "Prototype with placeholder art. Many big puzzle studios also run automated bots over new levels to estimate difficulty.",
+          "memory": "Cardboard set before painted set.",
+          "tag": "rule"
+        },
+        {
+          "id": "L09-b59",
+          "hook": "Pace it out: the walk takes half the real time",
+          "body": "Early on, walk your character from start to finish in the gray box, ignoring hazards, combat and pickups. The final level takes roughly twice as long, so a 30-minute level should pace out in about 15 minutes. Publishers and reviewers care about length; Rogers suggests at least 8 to 10 hours for a single-player action game.",
+          "example": "",
+          "f2p": "F2P cares about session length and content runway, not hours-to-beat. Measure intended vs actual time per level.",
+          "memory": "Walk × 2 = play.",
+          "tag": "rule"
+        },
+        {
+          "id": "L09-b60",
+          "hook": "Change the player's emotion every 15 to 20 minutes",
+          "body": "Most games offer a narrow emotional range (Rogers counts five: aggression, fear, surprise, joy, disappointment), but geometry alone can move players from mystery to fear to panic to wonder. Shift emotions regularly.",
+          "example": "Later Rogers jokes that the training level adds a sixth emotion: enthusiasm. And some games, he says, only disappoint.",
+          "f2p": "Mobile sessions are short, so shift every level or two: tension, relief, curiosity.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b61",
+          "hook": "Big moments need small moments in between",
+          "body": "Divide gameplay into big and small moments. Too many big ones in a row wear players out; quiet moments only get boring when there are too many in a row.",
+          "example": "Shadow of the Colossus alternates giant-monster battles with quiet rides across its world. The book's cartoon: a wheezing hero between the Chamber of Doom and the Cave of Death.",
+          "f2p": "Follow a boss or super-hard level with a victory-lap level. Never stack two spikes.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b62",
+          "hook": "Weather must soak everything, or it soaks nothing",
+          "body": "Time of day and weather emphasize events: how do players cross a level in a blizzard? How does a fairy village look at night? Weather must affect the player character, mechanics, enemies and everything else; if one element ignores it, the effect breaks. Vary atmospherics and times of day across levels.",
+          "example": "",
+          "f2p": "Seasonal LiveOps reskins: change everything prominent (board, pieces, UI, characters), not just the background.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L09-b63",
+          "hook": "Big spaces feel safe; tight spaces feel dangerous",
+          "body": "Alternate interior and exterior spaces, wherever it feels natural, so the level isn't one long room. Large spaces feel safer, tight ones mysterious and dangerous. Leave camera room in tight spaces or use a fixed or rail camera. Big spaces suit big enemy groups; narrow ones suit one-on-one fights.",
+          "example": "",
+          "f2p": "Survivor-likes: open fields for horde fights, bounded arenas for focused boss duels.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b64",
+          "hook": "Up feels like progress; down needs a look first",
+          "body": "Varying elevation feels natural, adds variety and sets up 'Kodak moments' (statues, vistas, horizons). Climbing feels like progress. Heading down, players jump to skip levels, so if long falls kill, let them look down to judge the drop. To prevent drops, corral players with switchbacks, ladders or climbable surfaces.",
+          "example": "Nothing is more annoying than dying on a drop that looked safe.",
+          "f2p": "Many saga maps scroll upward as you progress: going up literally reads as getting ahead.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L09-b65",
+          "hook": "Golden rule: if it looks reachable, it must be reachable",
+          "body": "Rogers' golden rule of level design. Build a visual language for no-go zones (low walls, shrubbery, rock walls) that players quickly learn means 'not this way'. Never be lazy and use invisible walls; smacking into a wall of nothing breaks immersion faster than anything.",
+          "example": "",
+          "f2p": "If it looks tappable, it must be tappable. If something is locked, say why ('Unlocks at level 15') instead of silently ignoring the tap.",
+          "memory": "👀 = 👣",
+          "tag": "truth"
+        },
+        {
+          "id": "L09-b66",
+          "hook": "Mess with heads: right-to-left walks and sphincter twitchers",
+          "body": "Western players read left to right, so moving right to left, especially in 2D, feels subtly wrong; Rogers saves it for entering the final boss's lair. Sphincter twitchers are thin platforms over huge drops, lava or whirlpools, ideally under a bird's-eye camera. Even if the player can't die, it feels deadly.",
+          "example": "Rogers puts a sphincter twitcher in every level he designs.",
+          "f2p": "'So close!' moments (one move left, one piece to go) are mobile sphincter twitchers. Never fake near-misses the RNG didn't produce.",
+          "memory": "",
+          "tag": "fun"
+        },
+        {
+          "id": "L09-b67",
+          "hook": "Keep floors flat, and skip the Death Star toilets",
+          "body": "Unless it's a ramp, stairs or slope, keep standable geometry flat; characters stutter on uneven ground, so smooth small transitions. Don't be bound by realism. One team built architecturally accurate buildings (nooks, stairwells, bathrooms) that were nearly unusable for gameplay and camera. Cut anything that doesn't serve your story.",
+          "example": "Star Wars never showed the Death Star's toilets. They're probably there, but nobody needed to see them.",
+          "f2p": "Don't model every real-world chore in a sim (watering each plant forever). Keep only what's fun.",
+          "memory": "",
+          "tag": "warning"
+        },
+        {
+          "id": "L09-b68",
+          "hook": "Playground first: a test level that never ships",
+          "body": "Before gray-boxing real levels, build a playground: a non-shipping test space for mechanics and hazards, tuned until they feel right. Test ground angles (walk, run, IK), boxes at many heights (jump, hoist, teeter, double and wall jumps), and hazards' distance, timing and lethality. Its sibling, the combat arena, tests combat, cover and enemy combos.",
+          "example": "",
+          "f2p": "Every F2P team needs a debug sandbox with a cheat panel: spawn any blocker, wave or currency amount instantly.",
+          "memory": "",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Leave the Training Level for Last",
+      "bites": [
+        {
+          "id": "L09-b69",
+          "hook": "The training level: most important, usually built last",
+          "body": "It teaches the basics, makes the first impression and stokes enthusiasm, yet it's often left to the end. Teams argue they won't know the key lessons until everything is in, that late art looks best, or that players will learn along the way. In reality schedules crunch and it gets no love.",
+          "example": "",
+          "f2p": "In F2P the FTUE drives D1 retention; a weak one wastes the money you spent acquiring each player.",
+          "memory": "",
+          "tag": "warning"
+        },
+        {
+          "id": "L09-b70",
+          "hook": "Build the tutorial first, or make the whole game one",
+          "body": "Build the training level first: rough art can be polished later, and you learn the basics alongside the player before designer blinders kick in. Fresh eyes always help. Even better: no separate training level. In the best games you're always learning new moves, gear and gameplay, so the entire game is the training level.",
+          "example": "",
+          "f2p": "Progressive feature unlocks, periodic new blockers with intro levels, contextual tutorials, and FTUE A/B tests that never stop.",
+          "memory": "The tutorial is the first date: plan it first.",
+          "tag": "truth"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "Even a cliché theme can be made compelling.",
+    "Use the Mexican pizza technique (combine two unlikely themes) to make level themes unique.",
+    "Level names can carry mood and information to the player.",
+    "Design from the top down: world, then level, then experience, then moment-to-moment gameplay.",
+    "You can never have too many skeletons (foreshadow danger visibly).",
+    "Use level maps and posters to inform players and build anticipation.",
+    "Decide each level's goal: escape/survive, explore, educate or moral.",
+    "Use the beat chart to expose weaknesses in the game's overall design.",
+    "Design around a tight set of gameplay systems and mechanics, and maximize play by re-using them.",
+    "Assume players will find every exploit and broken path in your level; plan for it.",
+    "Guide players toward the intended way to play, and give them plenty of help finding it.",
+    "Know whether a level is an alley or an island, and design to that style's strengths.",
+    "Map and gray-box levels to plan camera placement and head off architectural and gameplay problems.",
+    "Walking is never, ever gameplay.",
+    "If it feels too long or too boring, it is.",
+    "Every finger (dead-end branch) needs a reward at its end, even if it's only a trash can.",
+    "If it looks like the player can go there, they should be able to.",
+    "Build test playgrounds and combat arenas to tune metrics and systems before real levels.",
+    "Build the training level last (or at least revisit it at the end), once you know what the game teaches.",
+    "The entire game should train the player."
+  ],
+  "mnemonics": [
+    {
+      "name": "Four meanings of level",
+      "device": "Place, Slice, Counter, Rank",
+      "unpacks": "A place where play happens; a slice of space built around one gameplay experience; a progress counter; a player or character rank."
+    },
+    {
+      "name": "The Disneyland hierarchy",
+      "device": "World, Land, Ride, Scene → World, Level, Experience, Moment",
+      "unpacks": "Disneyland: world → land → attraction → scene. Games: world → level → experience → moment-to-moment gameplay. Design top-down."
+    },
+    {
+      "name": "Four level goals",
+      "device": "E-E-E-M (three E's and a Moral)",
+      "unpacks": "Escape/survive (action + location), Explore (mobility + conversation), Educate (observation + imitation), Moral (choice + consequence)."
+    },
+    {
+      "name": "Beat chart rows",
+      "device": "No Fancy Ogre Should Play Every Match Not Being Totally Cool",
+      "unpacks": "Level Name, File name, Objective, Story beat, Play style, Enemies, Mechanics, NPCs, Bonus materials, Time of day, Color mapping."
+    },
+    {
+      "name": "Map legend essentials",
+      "device": "Some Evil Dragons Prefer Looting Tiny Lairs",
+      "unpacks": "Start point, Enemy starts, Doors/teleporters/gates, Puzzle mechanics, Loot (chests and power-ups), Traps with area of effect, Landmarks."
+    },
+    {
+      "name": "Rule of three",
+      "device": "Three or flee",
+      "unpacks": "If a gameplay system is used fewer than three times in the game, it isn't worth building."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L09-f01",
+      "q": "What are Rogers' four meanings of 'level'?",
+      "a": "A place where play happens; a slice of space for one gameplay experience; a progress counter; a player/character rank.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f02",
+      "q": "Where does the game term 'level' most likely come from?",
+      "a": "Dungeons & Dragons: players descended dungeon levels (like floors) to reach the dragon.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f03",
+      "q": "How does Rogers define a 'world'?",
+      "a": "A location defined mainly by its visual or genre theme, which may contain several locations sharing that theme.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f04",
+      "q": "What does 'wave' mean as a level term?",
+      "a": "Combat repetition: enemy after enemy while you keep doing the same thing (e.g. Plants vs. Zombies).",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f05",
+      "q": "What does 'stage' usually emphasize, and where is it common?",
+      "a": "Clear separations between activities (like rocket stages); common for boss phases.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f06",
+      "q": "Super Mario Bros.' World 1-1 should really be called ____.",
+      "a": "Level 1-1",
+      "type": "cloze"
+    },
+    {
+      "id": "L09-f07",
+      "q": "Why did 'worlds' end up containing several 'levels'?",
+      "a": "Home games needed longer play, so devs reused one texture set and mechanics across several levels inside one themed world.",
+      "type": "why"
+    },
+    {
+      "id": "L09-f08",
+      "q": "Name the top 10 cliché level themes.",
+      "a": "Outer space, fire/ice, dungeon/cavern/tomb, factory, jungle, spooky/haunted/graveyard, pirate, gritty urban, space station, sewer.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f09",
+      "q": "Why did fire/ice levels become so popular?",
+      "a": "Easy-to-code hazards (flames, slippery floors) that break rhythm, ready-made themed enemies, and red/blue color that made screenshots stand out.",
+      "type": "why"
+    },
+    {
+      "id": "L09-f10",
+      "q": "Why did outer space suit the earliest games?",
+      "a": "A black screen already looked like space, ships needed no animation and could be simple shapes, and gameplay could be pure physics, before games had artists or designers.",
+      "type": "why"
+    },
+    {
+      "id": "L09-f11",
+      "q": "What is Rogers' recipe for a good scare?",
+      "a": "Pace it: quiet, then a distraction, then the scare. The best scare is expected but its source is unknown.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f12",
+      "q": "Which cliché theme does Rogers call the most adaptable?",
+      "a": "Spooky/haunted (it's been used in adventures, platformers, RPGs, FPSs and puzzle games).",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f13",
+      "q": "The gritty urban theme lets players ____ a world like the one outside their door.",
+      "a": "improve or destroy",
+      "type": "cloze"
+    },
+    {
+      "id": "L09-f14",
+      "q": "What is the Mexican pizza technique?",
+      "a": "Combine two things that don't seem to belong together to create something surprisingly good and original.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f15",
+      "q": "Your LiveOps team only has pirate and winter assets left but needs a fresh event theme. Which technique?",
+      "a": "Mexican pizza: combine them, e.g. a frozen pirate-ship event (like Maximo's ice-covered pirate level).",
+      "type": "apply"
+    },
+    {
+      "id": "L09-f16",
+      "q": "What are Rogers' five file-naming tips?",
+      "a": "About 8 characters max; no wit, just location + order; systematic abbreviations (fac01s01); never one abbreviation for two meanings; organized folders with shared/tracked files.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f17",
+      "q": "What are the four schools of player-facing level names?",
+      "a": "Functional (numbers), location, descriptive, punny.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f18",
+      "q": "Why are functional (numbered) level names weak, per Rogers?",
+      "a": "Players don't know the highest number, so they can't judge overall progress, and numbers lack personality.",
+      "type": "why"
+    },
+    {
+      "id": "L09-f19",
+      "q": "Why should descriptive level names be used with care?",
+      "a": "They can tip your hand and spoil surprises in the plot or level.",
+      "type": "why"
+    },
+    {
+      "id": "L09-f20",
+      "q": "You plan a punny event name for a game launching in 15 languages. What's the risk?",
+      "a": "Puns rarely survive localization; keep important names translatable.",
+      "type": "apply"
+    },
+    {
+      "id": "L09-f21",
+      "q": "Disneyland's hierarchy: world → land → attraction → ____.",
+      "a": "scene",
+      "type": "cloze"
+    },
+    {
+      "id": "L09-f22",
+      "q": "Video game hierarchy: world → level → experience → ____.",
+      "a": "moment-to-moment gameplay",
+      "type": "cloze"
+    },
+    {
+      "id": "L09-f23",
+      "q": "What are Disneyland's five original lands, and which of Walt's passions inspired each?",
+      "a": "Frontierland (history), Tomorrowland (progress), Adventureland (nature), Fantasyland (his animated films), Main Street (childhood hometown).",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f24",
+      "q": "Your producer wants a lavish illustrated world map before production starts. What does the team actually need?",
+      "a": "A simple flowchart showing where the player goes, what they find there, and the order/spatial relationships.",
+      "type": "apply"
+    },
+    {
+      "id": "L09-f25",
+      "q": "What did Donkey Kong's 'how high can you get?' screen teach?",
+      "a": "Showing how many stages remain sets a goal and whets the player's appetite.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f26",
+      "q": "What mapping advance did Ghosts 'n Goblins make?",
+      "a": "A 'you are here' icon followed by a camera pan over the whole world, teasing what's to come.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f27",
+      "q": "Why does Mortal Kombat's mostly-locked character grid work as a map?",
+      "a": "It shows progression without physical travel, foreshadows future opponents, and drives the urge to unlock them all.",
+      "type": "why"
+    },
+    {
+      "id": "L09-f28",
+      "q": "Why is a scare bigger when the player knows it's coming?",
+      "a": "The waiting builds anticipation, which matters as much as the delivery.",
+      "type": "why"
+    },
+    {
+      "id": "L09-f29",
+      "q": "You want players to anticipate a feature that unlocks at level 50. Which Disneyland/BioShock trick can you use from level 1?",
+      "a": "Posters: show teasers or locked icons early that only pay off once the feature unlocks.",
+      "type": "apply"
+    },
+    {
+      "id": "L09-f30",
+      "q": "What are the four player goals drawn from Disneyland's stories?",
+      "a": "Escape/survive, explore, educate, moral.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f31",
+      "q": "Which storytelling tools go with explore and with educate?",
+      "a": "Explore: freedom of mobility and conversation. Educate: observation and imitation.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f32",
+      "q": "How should a level deliver a moral goal?",
+      "a": "Through choice and consequence, with the choices affecting gameplay.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f33",
+      "q": "A level exists only to teach driving. Which designer question did that answer?",
+      "a": "'What is the player's objective in this level?'",
+      "type": "apply"
+    },
+    {
+      "id": "L09-f34",
+      "q": "What are the 11 minimum rows of a beat chart?",
+      "a": "Level name, file name, player's objective, story beat, play style, enemies, mechanics, NPCs, bonus materials, time of day, color mapping.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f35",
+      "q": "What does a beat chart reveal?",
+      "a": "Gaps and clumping (and repetition) across the whole game, so you can spread elements out.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f36",
+      "q": "Why build a beat chart before building assets?",
+      "a": "A few hours of spotting patterns improves production, gameplay and art before anything costly is built.",
+      "type": "why"
+    },
+    {
+      "id": "L09-f37",
+      "q": "Your beat chart shows three night levels in a row. Fix?",
+      "a": "Vary time of day and weather (morning, evening, rain, snow).",
+      "type": "apply"
+    },
+    {
+      "id": "L09-f38",
+      "q": "Your match-3 sheet shows the coolest blocker first appears at level 200. Which Relic Raider lesson applies?",
+      "a": "Late introduction (like the late driving levels): bring it in earlier.",
+      "type": "apply"
+    },
+    {
+      "id": "L09-f39",
+      "q": "What is the rule of three for gameplay systems?",
+      "a": "If a system is used fewer than three times in the game, it isn't worth having.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f40",
+      "q": "Why can't the car system also run a motorcycle or hovercraft?",
+      "a": "They behave too differently. Reuse has limits even within ground vehicles.",
+      "type": "why"
+    },
+    {
+      "id": "L09-f41",
+      "q": "Your team proposes a co-op boss raid that 'just reuses' the collect-items event framework. Which lesson applies?",
+      "a": "The vehicle-system limit (the hovercraft): a feature that behaves differently needs a different system.",
+      "type": "apply"
+    },
+    {
+      "id": "L09-f42",
+      "q": "Unless it's a driving game, never follow a driving level with ____.",
+      "a": "more driving",
+      "type": "cloze"
+    },
+    {
+      "id": "L09-f43",
+      "q": "Which developer does Rogers praise for milking a small palette of mechanics?",
+      "a": "Treasure (Gunstar Heroes, Dynamite Headdy, Ikaruga).",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f44",
+      "q": "What's the difference between an alley and an island level?",
+      "a": "Alley: a directed path to a goal. Island: an open space players experience in any order.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f45",
+      "q": "Name the seven advantages of alley levels.",
+      "a": "Easy camera triggers, dramatic camera moves, optional removal of camera controls, scripted events, choreographed combat/traps, bottlenecks against backtracking, illusional narrative.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f46",
+      "q": "Why are island levels harder to design?",
+      "a": "The camera must handle all widths and heights, scripted events can be missed, fights can be skipped, and façades fail because everything is seen from every side.",
+      "type": "why"
+    },
+    {
+      "id": "L09-f47",
+      "q": "What are the four advantages of island levels?",
+      "a": "Sense of space and scale; exploration with secrets in in-between spaces; a smorgasbord of options; vehicles feel better. Also great for multiplayer.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f48",
+      "q": "What is a weenie?",
+      "a": "A landmark that grabs attention and draws players toward it (castle, mountain, statue, bridge, tree, rock).",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f49",
+      "q": "Where does the term 'weenie' come from?",
+      "a": "Walt Disney named it after the hot dog that animal trainers waved to lure dog actors across a set.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f50",
+      "q": "Playtesters exit a side area behind a house and walk back the way they came. Rogers' fix?",
+      "a": "Place a landmark (weenie) at the exit so they can re-orient.",
+      "type": "apply"
+    },
+    {
+      "id": "L09-f51",
+      "q": "Why should even sandbox games prompt players toward the next thing?",
+      "a": "A world where you can do anything at any time is intimidating and confusing, whatever players claim.",
+      "type": "why"
+    },
+    {
+      "id": "L09-f52",
+      "q": "Why does Crackdown give each city zone its own theme?",
+      "a": "To aid navigation and orientation (like Disneyland's lands) and to match each zone to the gang that runs it.",
+      "type": "why"
+    },
+    {
+      "id": "L09-f53",
+      "q": "On a top-down graph-paper map, what is the usual scale?",
+      "a": "The player equals one square; everything else is drawn relative to that.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f54",
+      "q": "What belongs in a level-map legend?",
+      "a": "Player start, enemy starts, doors/teleporters/gates, puzzle mechanics, chests/power-ups, traps with area of effect, significant landmarks.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f55",
+      "q": "Why should top-down map passages be five squares wide?",
+      "a": "Player plus two widths each side leaves room to navigate, fight and move the camera; first designs are usually too cramped.",
+      "type": "why"
+    },
+    {
+      "id": "L09-f56",
+      "q": "What is the squint test?",
+      "a": "Squint until your eyes are nearly closed; the brightest thing on screen should be the main path (Naughty Dog's trick).",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f57",
+      "q": "Your home screen's shop banner is brighter than the Play button. Which test does it fail?",
+      "a": "The squint test: the main action should be the brightest thing.",
+      "type": "apply"
+    },
+    {
+      "id": "L09-f58",
+      "q": "While describing a level you say 'then the player walks over to the bridge'. What does Rogers say to do?",
+      "a": "Cut that section. Walking is never gameplay.",
+      "type": "apply"
+    },
+    {
+      "id": "L09-f59",
+      "q": "List the ten alternatives to walking.",
+      "a": "Jumping, fighting, collecting, climbing, swimming, swinging, flying, escaping, sneaking, exploring.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f60",
+      "q": "Rogers' backtracking motto: show the player the ____ first, then let them find the key.",
+      "a": "door",
+      "type": "cloze"
+    },
+    {
+      "id": "L09-f61",
+      "q": "Players must return to the same courtyard for the third time. What should you change?",
+      "a": "The location itself: add new combat or collectibles, or alter the terrain (e.g. an earthquake creates jumpable hills).",
+      "type": "apply"
+    },
+    {
+      "id": "L09-f62",
+      "q": "If it ever feels long or boring, then ____.",
+      "a": "it is",
+      "type": "cloze"
+    },
+    {
+      "id": "L09-f63",
+      "q": "What is a finger in level design?",
+      "a": "A short dead-end branch off the main path that makes a linear level feel explorable.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f64",
+      "q": "What must every finger have?",
+      "a": "A reward at its end, even if it's just a trash can.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f65",
+      "q": "Why add fingers instead of full alternate paths?",
+      "a": "They make a level feel deeper and explored without building complex geometry or paths players may never take.",
+      "type": "why"
+    },
+    {
+      "id": "L09-f66",
+      "q": "A tappable chest on your saga map does nothing when tapped. Which rule does it break?",
+      "a": "Every finger needs a reward: optional exploration must always pay off.",
+      "type": "apply"
+    },
+    {
+      "id": "L09-f67",
+      "q": "How do you show elevations on a top-down map without clutter?",
+      "a": "Layer them on tracing paper or a light board, split by player height, clearly labeled in order.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f68",
+      "q": "Besides the legend, what else should go on level maps?",
+      "a": "Spawn points with aggro radius, bread-crumb collectibles, secret entrances/breakable walls, obstacles and barriers, special terrain (cursed earth, swamp, ice, lava).",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f69",
+      "q": "What is illusional narrative?",
+      "a": "Showing two or more scenes (before/after) so players fill in the event between them, like a comic-book gutter or a film cut.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f70",
+      "q": "Why use illusional narrative?",
+      "a": "Big production savings: real-time animated events are slow to make and must be redone when the level changes.",
+      "type": "why"
+    },
+    {
+      "id": "L09-f71",
+      "q": "How do you keep illusional narrative in story order?",
+      "a": "Gating: bottlenecks, camera views, checkpoints, toggling elements on/off, or doors.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f72",
+      "q": "What is a gray box level?",
+      "a": "An untextured blockout built in an art tool that shows scale, size and relationships against camera and character metrics.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f73",
+      "q": "A gray-box pace-out of a 30-minute level should take about ____.",
+      "a": "15 minutes",
+      "type": "cloze"
+    },
+    {
+      "id": "L09-f74",
+      "q": "Rogers suggests changing the player's emotion every ____ minutes.",
+      "a": "15 to 20",
+      "type": "cloze"
+    },
+    {
+      "id": "L09-f75",
+      "q": "Which five emotions does Rogers say most games deliver?",
+      "a": "Aggression, fear, surprise, joy, disappointment.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f76",
+      "q": "Your event runs three boss fights back to back and players report fatigue. Which principle?",
+      "a": "Big vs small moments: don't stack big moments; add quiet breathers.",
+      "type": "apply"
+    },
+    {
+      "id": "L09-f77",
+      "q": "Why must weather affect every element of a level?",
+      "a": "If even one element ignores it, the whole effect breaks.",
+      "type": "why"
+    },
+    {
+      "id": "L09-f78",
+      "q": "How do big and tight spaces feel, and what combat suits each?",
+      "a": "Big spaces feel safe and suit large enemy groups; tight spaces feel mysterious/dangerous and suit one-on-one fights.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f79",
+      "q": "What is Rogers' golden rule of level design?",
+      "a": "If it looks like the player can go there, they should be able to.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f80",
+      "q": "Players tap a grayed-out icon and nothing happens, with no explanation. Which rule is violated?",
+      "a": "The golden rule / no invisible walls: if it looks interactive it should respond, so explain why it's locked.",
+      "type": "apply"
+    },
+    {
+      "id": "L09-f81",
+      "q": "Why does right-to-left movement make Western players uneasy?",
+      "a": "They're used to reading and viewing information left to right.",
+      "type": "why"
+    },
+    {
+      "id": "L09-f82",
+      "q": "What is a sphincter twitcher?",
+      "a": "A thin platform over great danger (heights, lava, whirlpools), ideally under a bird's-eye camera; it feels deadly even if it's safe.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f83",
+      "q": "What's the lesson of the architecturally accurate buildings story?",
+      "a": "Don't be bound by realism: omit anything that doesn't serve gameplay or story (like the Death Star's unseen toilets).",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f84",
+      "q": "What is a playground, and what do you test there?",
+      "a": "A non-shipping gray box for mechanics and hazards: ground angles (walk/run/IK), boxes at many heights (jump, hoist, teeter, double/wall jumps), hazard distance/timing/lethality.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f85",
+      "q": "What is a combat arena?",
+      "a": "A test space for combat systems, cover systems and enemies, with quick spawning of enemy combinations.",
+      "type": "basic"
+    },
+    {
+      "id": "L09-f86",
+      "q": "Why do training levels usually end up neglected?",
+      "a": "They get left to the end (key lessons not known yet, best art comes late, players will learn along the way), then schedules crunch.",
+      "type": "why"
+    },
+    {
+      "id": "L09-f87",
+      "q": "Your team will build the FTUE in the final two weeks 'when art is final'. What would Rogers advise?",
+      "a": "Build it first (rough art is fine) before designer blinders set in, or better, make the whole game teach progressively.",
+      "type": "apply"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "L09-q01",
+      "q": "Which is NOT one of Rogers' four meanings of 'level'?",
+      "options": [
+        "A unit counting the player's progress",
+        "A player's rank from score or XP",
+        "A location where gameplay happens",
+        "A difficulty setting chosen in the options menu"
+      ],
+      "answer": 3,
+      "why": "His four are place, slice of space for one experience, progress counter, and rank. Difficulty modes aren't on the list."
+    },
+    {
+      "id": "L09-q02",
+      "q": "According to Rogers, a 'world' is defined primarily by...",
+      "options": [
+        "Its visual or genre theme",
+        "Its number of enemies",
+        "Its boss fight",
+        "Its number of save points"
+      ],
+      "answer": 0,
+      "why": "A world is a themed location that can contain several locations (levels) sharing that theme."
+    },
+    {
+      "id": "L09-q03",
+      "q": "Fire/ice levels became popular for all of these reasons EXCEPT:",
+      "options": [
+        "Easy-to-program hazards that break the player's rhythm",
+        "Ready-made themed enemies",
+        "Red/blue colors that stood out in screenshots",
+        "They needed no level geometry at all"
+      ],
+      "answer": 3,
+      "why": "The three reasons were easy hazards, themed inhabitants and color. Geometry was still needed."
+    },
+    {
+      "id": "L09-q04",
+      "q": "The 'Mexican pizza technique' means...",
+      "options": [
+        "Raising difficulty with extra-spicy challenges",
+        "Combining two unlikely themes into something original",
+        "Copying a competitor's best level",
+        "Layering three difficulty tiers in one level"
+      ],
+      "answer": 1,
+      "why": "Taco Bell mixed pizza with Mexican fixings. Maximo mixed graveyard + fire and pirates + ice."
+    },
+    {
+      "id": "L09-q05",
+      "q": "One file uses 'sec' for 'section' while another uses 'sec' for 'secret room'. Which naming rule is broken?",
+      "options": [
+        "Keep names around 8 characters",
+        "Never let an abbreviation have two meanings",
+        "Name by location and order",
+        "Store files in organized folders"
+      ],
+      "answer": 1,
+      "why": "Overlapping abbreviations cause confusion. The other rules aren't violated by this example."
+    },
+    {
+      "id": "L09-q06",
+      "q": "Rogers' main criticism of functional (numbered) level names is that...",
+      "options": [
+        "They are hard to localize",
+        "They are too long for file systems",
+        "Players can't gauge overall progress and the names lack personality",
+        "They spoil plot surprises"
+      ],
+      "answer": 2,
+      "why": "Spoilers are the risk of descriptive names. Numbers are short and easy to localize."
+    },
+    {
+      "id": "L09-q07",
+      "q": "Which game hierarchy matches Disneyland's world → land → attraction → scene?",
+      "options": [
+        "World → level → experience → moment-to-moment gameplay",
+        "World → chapter → cutscene → dialogue",
+        "Level → world → mission → move",
+        "Game → mode → match → round"
+      ],
+      "answer": 0,
+      "why": "Rogers maps land to level, attraction to experience, and scene to moment-to-moment gameplay."
+    },
+    {
+      "id": "L09-q08",
+      "q": "Mortal Kombat's mostly-locked character-select grid illustrates...",
+      "options": [
+        "A loot box mechanic",
+        "A difficulty selector",
+        "A map that shows progression without physical travel",
+        "Illusional narrative"
+      ],
+      "answer": 2,
+      "why": "Locked portraits foreshadow future opponents and drive collecting, acting as a map even though you never travel."
+    },
+    {
+      "id": "L09-q09",
+      "q": "Royal Match flags spike levels with a 'Hard Level' banner before you play. Which Rogers lesson does this mirror?",
+      "options": [
+        "Walking is never gameplay",
+        "A scare is bigger when you know it's coming (foreshadowing)",
+        "The rule of three",
+        "Illusional narrative"
+      ],
+      "answer": 1,
+      "why": "Foreshadowing builds anticipation; knowing the challenge is coming makes the win more thrilling and the fail feel fair."
+    },
+    {
+      "id": "L09-q10",
+      "q": "Which storytelling tools does Rogers pair with the EXPLORE goal?",
+      "options": [
+        "Action and location",
+        "Observation and imitation",
+        "Freedom of mobility and conversation",
+        "Choice and consequence"
+      ],
+      "answer": 2,
+      "why": "Action/location = escape/survive, observation/imitation = educate, choice/consequence = moral."
+    },
+    {
+      "id": "L09-q11",
+      "q": "What is the main purpose of a beat chart?",
+      "options": [
+        "Scheduling voice recording sessions",
+        "Balancing weapon damage numbers",
+        "Tracking bug counts per level",
+        "Spotting gaps, clumping and repetition across the whole game"
+      ],
+      "answer": 3,
+      "why": "Its rows (enemies, mechanics, time of day, color...) expose patterns across levels before assets are built."
+    },
+    {
+      "id": "L09-q12",
+      "q": "In the Relic Raider beat chart, why rename Roof01 to Shang01?",
+      "options": [
+        "Roof01 was too long",
+        "It broke the 8-character rule",
+        "Players found the rooftop level boring",
+        "Roof01 was easily confused with Road01"
+      ],
+      "answer": 3,
+      "why": "The more distinct file names are, the better. Roof01 and Road01 look almost identical."
+    },
+    {
+      "id": "L09-q13",
+      "q": "Your match-3 sheet shows super-hard levels at 41, 42 and 43, and retention drops there. Best fix per this chapter?",
+      "options": [
+        "Add more blockers to level 44",
+        "Break up the clump: spread the spikes and insert relief levels (saw-tooth)",
+        "Remove every hard level from the game",
+        "Make level 43 longer"
+      ],
+      "answer": 1,
+      "why": "The beat chart exposes clumping. Big moments need small moments between them. Removing all challenge kills tension."
+    },
+    {
+      "id": "L09-q14",
+      "q": "The rule of three says...",
+      "options": [
+        "Every level needs three stars",
+        "Introduce three new mechanics per level",
+        "A gameplay system used fewer than three times isn't worth building",
+        "Never put more than three enemies in a room"
+      ],
+      "answer": 2,
+      "why": "Systems are expensive. Rogers wants a small set reused many times."
+    },
+    {
+      "id": "L09-q15",
+      "q": "Why can't the car system from Rogers' example also handle a motorcycle?",
+      "options": [
+        "Motorcycles are too fast to render",
+        "It behaves too differently; reuse has limits",
+        "Licensing restrictions",
+        "Motorcycles aren't ground vehicles"
+      ],
+      "answer": 1,
+      "why": "Both are ground vehicles, but different handling needs a different system. Stretch reuse only so far."
+    },
+    {
+      "id": "L09-q16",
+      "q": "Which is an advantage of ALLEY levels over islands?",
+      "options": [
+        "Players choose the order of play",
+        "Vehicle gameplay feels better",
+        "Scripted events work because you know where the player is looking",
+        "A vast sense of scale"
+      ],
+      "answer": 2,
+      "why": "The other three are island advantages."
+    },
+    {
+      "id": "L09-q17",
+      "q": "In Disney's terms, a 'weenie' is...",
+      "options": [
+        "A landmark that attracts guests or players toward it",
+        "A weak early enemy",
+        "A hidden bonus room",
+        "A level that failed playtesting"
+      ],
+      "answer": 0,
+      "why": "Castles, mountains, statues or distinctive trees, named after the hot dog trainers used to lure dog actors."
+    },
+    {
+      "id": "L09-q18",
+      "q": "Players exit a detour behind a house and walk back the way they came. Rogers' fix?",
+      "options": [
+        "Add an invisible wall",
+        "Remove the detour",
+        "Add a cutscene",
+        "Add a landmark at the exit so they can re-orient"
+      ],
+      "answer": 3,
+      "why": "A landmark re-orients players. Invisible walls are explicitly a lazy no-no."
+    },
+    {
+      "id": "L09-q19",
+      "q": "How wide should passages be on a top-down map of a 3D level?",
+      "options": [
+        "One square",
+        "Three squares",
+        "Five squares",
+        "Ten squares"
+      ],
+      "answer": 2,
+      "why": "Player plus two widths on each side leaves room to navigate, fight and move the camera."
+    },
+    {
+      "id": "L09-q20",
+      "q": "The squint test checks that...",
+      "options": [
+        "Text is readable at small sizes",
+        "The main path is the brightest thing on screen",
+        "Enemies are visible in the dark",
+        "Colors are colorblind-safe"
+      ],
+      "answer": 1,
+      "why": "Naughty Dog's trick: players subconsciously follow the brightest route."
+    },
+    {
+      "id": "L09-q21",
+      "q": "Between levels, players must tap through four pop-ups to return to the map. Which truth applies most?",
+      "options": [
+        "Walking is never gameplay (dead time isn't play)",
+        "Every finger needs a reward",
+        "The rule of three",
+        "The Mexican pizza technique"
+      ],
+      "answer": 0,
+      "why": "Non-interactive travel and busywork are mobile 'walking': cut them."
+    },
+    {
+      "id": "L09-q22",
+      "q": "What should you NOT place at the end of a finger?",
+      "options": [
+        "Treasure",
+        "A combat encounter",
+        "Something essential to the critical path",
+        "A trash can"
+      ],
+      "answer": 2,
+      "why": "Fingers are optional detours. Critical items belong on the main path. Even a trash can counts as a reward."
+    },
+    {
+      "id": "L09-q23",
+      "q": "If a player must visit a location more than twice, Rogers says to...",
+      "options": [
+        "Add a teleporter only",
+        "Never allow revisits",
+        "Add a loading screen",
+        "Change the location: new combat, collectibles or altered terrain"
+      ],
+      "answer": 3,
+      "why": "He likes backtracking, but repeated visits need something new, like an earthquake reshaping the ground."
+    },
+    {
+      "id": "L09-q24",
+      "q": "Illusional narrative is best compared to...",
+      "options": [
+        "A boss's second stage",
+        "A tutorial pop-up",
+        "A random loot drop",
+        "The gutter between comic-book panels"
+      ],
+      "answer": 3,
+      "why": "Players fill in the story between two images or scenes, as in Peter Pan's Flight."
+    },
+    {
+      "id": "L09-q25",
+      "q": "A gray-box pace-out (just walking, no combat) takes 12 minutes. Estimated final play time?",
+      "options": [
+        "6 minutes",
+        "12 minutes",
+        "24 minutes",
+        "48 minutes"
+      ],
+      "answer": 2,
+      "why": "The pace-out is roughly half of the final time, so double it."
+    },
+    {
+      "id": "L09-q26",
+      "q": "What is Rogers' golden rule of level design?",
+      "options": [
+        "If it looks like the player can go there, they should be able to",
+        "Never let the player die",
+        "Always ring the level with invisible walls",
+        "Keep every level under ten minutes"
+      ],
+      "answer": 0,
+      "why": "Use a visual language (low walls, shrubs, rocks) for no-go zones. Invisible walls break immersion."
+    },
+    {
+      "id": "L09-q27",
+      "q": "A winter event changes only the background; pieces, UI and characters stay summery, and players call it cheap. Which principle?",
+      "options": [
+        "Weather must affect every element or the effect breaks",
+        "The rule of three",
+        "Alleys vs islands",
+        "Pacing out"
+      ],
+      "answer": 0,
+      "why": "If one element ignores the weather, the illusion fails."
+    },
+    {
+      "id": "L09-q28",
+      "q": "In Rogers' terms, a playground is...",
+      "options": [
+        "A multiplayer lobby",
+        "The training level",
+        "A non-shipping test level for mechanics and hazards",
+        "A secret bonus level"
+      ],
+      "answer": 2,
+      "why": "Tune metrics and hazards there before using them in real levels. Its sibling is the combat arena."
+    },
+    {
+      "id": "L09-q29",
+      "q": "Your team plans to build the FTUE in the last two weeks 'when the art is final'. Rogers would say...",
+      "options": [
+        "Good plan: the best art makes the best first impression",
+        "Build it first (rough art is fine), or make the whole game teach progressively",
+        "Skip tutorials entirely",
+        "Let marketing write it"
+      ],
+      "answer": 1,
+      "why": "The 'best art at the end' argument is exactly why training levels get neglected. Build early, with fresh eyes."
+    },
+    {
+      "id": "L09-q30",
+      "q": "Which pairing of space and feeling is correct?",
+      "options": [
+        "Tight spaces feel mysterious and dangerous",
+        "Large spaces feel dangerous",
+        "Tight spaces suit big enemy groups",
+        "Large spaces suit one-on-one duels"
+      ],
+      "answer": 0,
+      "why": "Large spaces feel safe and fit big groups; narrow spaces feel dangerous and fit duels."
+    }
+  ],
+  "sideQuests": [
+    {
+      "id": "L09-s01",
+      "title": "Mexican Pizza Generator",
+      "task": "Write the 10 cliché themes on slips of paper. Draw two at random three times and pitch each combo in one sentence as a mobile game area or LiveOps event (e.g. sewer + pirate = a smuggler's flooded-tunnel event).",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L09-s02",
+      "title": "Squint Test Your Phone",
+      "task": "Screenshot the home screen of 3 F2P games. Squint (or blur the image). Is the brightest thing the main action? Score each out of 10 and note what steals attention.",
+      "minutes": 5,
+      "xp": 20
+    },
+    {
+      "id": "L09-s03",
+      "title": "Weenie Hunt",
+      "task": "In any F2P game, list every weenie: something visible but not yet reachable that makes you want to keep playing (locked area, top pass reward, next arena). How many are visible from the home screen?",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L09-s04",
+      "title": "Walking Audit",
+      "task": "Play one session and time every second of non-interactive dead time (loads, pop-ups, unskippable animations). Total it and pick the first thing you'd cut.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L09-s05",
+      "title": "Name Game Drill",
+      "task": "Take one level concept (a lava factory). Write a file name, then functional, location, descriptive and punny player-facing names. Would the pun survive translation?",
+      "minutes": 10,
+      "xp": 25
+    },
+    {
+      "id": "L09-s06",
+      "title": "Finger Doodle",
+      "task": "On graph paper draw a linear corridor (player = 1 square, passages 5 squares wide). Add 3 fingers, each with a different reward, plus a weenie and a legend.",
+      "minutes": 15,
+      "xp": 40
+    }
+  ],
+  "mainQuests": [
+    {
+      "id": "L09-m01",
+      "title": "The 30-Level Saw-Tooth Beat Chart",
+      "task": "Design the first 30 levels of an original match-3 or block-puzzle game as a beat-chart spreadsheet. Columns = levels 1–30. Rows = level ID, goal type, moves, new element introduced, blockers present, target difficulty (easy/medium/hard/super hard), reward, area/theme, palette, monetization touchpoint, story beat. Rules: one new blocker at a time with an intro level; saw-tooth difficulty with relief after each spike; every element used at least 3 times; no back-to-back hard levels; at least 2 themed areas with a weenie teasing area 2. Then audit it like Relic Raider and fix what you find.",
+      "deliverable": "A spreadsheet beat chart plus a list of at least 5 self-found problems and fixes.",
+      "doneWhen": "30 columns and 10+ rows are filled, a visible row or sparkline shows the saw-tooth, 5+ issues are listed with fixes, and you've posted a screenshot publicly with one sentence on your biggest fix.",
+      "minutes": 90,
+      "xp": 200
+    },
+    {
+      "id": "L09-m02",
+      "title": "Paper Map → Graybox Arena",
+      "task": "Design one survivor-like arena or runner segment on graph paper: scale (player = 1 square), full legend (start, enemy spawn zones with aggro circles, bread-crumb pickups, obstacles, special terrain), a weenie, 2+ rewarded fingers, one sphincter-twitcher moment, and an explicit alley-vs-island decision. Then graybox it (any free engine, or even a spreadsheet grid) and pace it out.",
+      "deliverable": "A labeled paper map, a graybox screenshot, and a timed pace-out with a predicted final length.",
+      "doneWhen": "The legend is complete, you've written 3 sentences justifying alley vs island, and you have a pace-out time plus a ×2 length estimate.",
+      "minutes": 120,
+      "xp": 250
+    }
+  ],
+  "playLabs": [
+    {
+      "id": "L09-p01",
+      "game": "Royal Match or Candy Crush Saga",
+      "minutes": 10,
+      "lookFor": "A level flagged as hard, and the 2–3 levels before and after it.",
+      "question": "Can you see a saw-tooth (build-up, spike, relief)? What did the game offer when you ran out of moves, and did the hard-level warning change how you felt?"
+    },
+    {
+      "id": "L09-p02",
+      "game": "Homescapes or Gardenscapes",
+      "minutes": 10,
+      "lookFor": "Renovation tasks and the area or room teased next.",
+      "question": "Where is the illusional narrative (before/after with no 'work' shown)? What is the weenie pulling you to the next task or area?"
+    },
+    {
+      "id": "L09-p03",
+      "game": "Clash of Clans",
+      "minutes": 10,
+      "lookFor": "A scouted enemy base or an attack replay.",
+      "question": "Is the base an alley or an island for the attacker? How do walls create funnels (alleys) inside it, and what pulls attackers' focus like a weenie?"
+    },
+    {
+      "id": "L09-p04",
+      "game": "Survivor.io or Archero",
+      "minutes": 10,
+      "lookFor": "Stage layout, pickups and the timing of elite or boss waves.",
+      "question": "Is the layout an island (open arena) or an alley (rooms/corridors)? What are the bread crumbs? How do big and small moments alternate?"
+    }
+  ],
+  "retrieval": [
+    {
+      "q": "Name the four meanings of 'level', with an example of each.",
+      "a": "Place (Death Star level), slice of space for one experience (mine-cart level), progress counter (Tetris level 20), rank (WoW level 70)."
+    },
+    {
+      "q": "What's the difference between a world and a level?",
+      "a": "A world is a themed location that can contain several locations; levels are the separate sections of play inside it (World 1 contains levels 1-1 to 1-4)."
+    },
+    {
+      "q": "Why did fire/ice themes spread, and how does the Mexican pizza technique refresh clichés?",
+      "a": "Easy rhythm-breaking hazards, themed enemies, and red/blue color. Combine two unlikely themes, e.g. Maximo's fire graveyard and ice pirate level."
+    },
+    {
+      "q": "What are the file-naming tips and the four schools of player-facing names?",
+      "a": "About 8 characters, location + order, systematic abbreviations, no double meanings, organized/shared files. Functional, location, descriptive, punny."
+    },
+    {
+      "q": "Write Disneyland's hierarchy and the game equivalent.",
+      "a": "World → land → attraction → scene; world → level → experience → moment-to-moment gameplay."
+    },
+    {
+      "q": "What did Donkey Kong, Ghosts 'n Goblins and Mortal Kombat each teach about maps?",
+      "a": "Show how far there is to go (a goal); 'you are here' plus a pan teases the world; locked portraits show progression without travel and drive collecting."
+    },
+    {
+      "q": "Name the four player goals and the key storytelling tool for each.",
+      "a": "Escape/survive (action + location), explore (mobility + conversation), educate (observation + imitation), moral (choice + consequence affecting gameplay)."
+    },
+    {
+      "q": "What rows go on a beat chart, and what did Relic Raider's chart reveal?",
+      "a": "Level name, file name, objective, story beat, play style, enemies, mechanics, NPCs, bonus, time of day, color. Inconsistent/confusable names, back-to-back jungles, late driving, vague objectives, weapon drought, clumped/mismatched enemies, unreused traps, repetitive rewards, three nights in a row, too much green."
+    },
+    {
+      "q": "State the rule of three and the limit shown by the vehicle example.",
+      "a": "Under three uses = not worth building. One car system covers jeep/hatchback/sedan but not a hovercraft or motorcycle."
+    },
+    {
+      "q": "Compare alleys and islands: one advantage each, and a hybrid example.",
+      "a": "Alley: scripted events/camera control. Island: freedom of order, sense of scale. Hybrid: Maximo or Darksiders (alley dungeons, island hubs/arenas)."
+    },
+    {
+      "q": "What is a weenie and what went wrong in the house-loop playtest?",
+      "a": "An attracting landmark. Players looped behind a house and walked back the way they came; a landmark at the exit fixed it."
+    },
+    {
+      "q": "Explain the squint test and the talk-through test.",
+      "a": "The brightest thing on screen should be the main path. Narrate the level; any 'then the player walks to...' section gets cut."
+    },
+    {
+      "q": "What's a finger and what are its rules?",
+      "a": "A short dead end off the main path. Always end it with a reward (even a trash can); never put critical-path items there."
+    },
+    {
+      "q": "How do you estimate level length from a pace-out, and how often should emotions change?",
+      "a": "Final time is about double the walk (30-minute level ≈ 15-minute pace-out). Change the emotion every 15–20 minutes."
+    },
+    {
+      "q": "Why does the training level get neglected, and what's the alternative?",
+      "a": "It's left to the end for 'better lessons and art', then crunch hits. Build it first with fresh eyes, or make the whole game a training level."
+    }
+  ],
+  "feynman": "Explain to a 12-year-old in 60 seconds: why is a Disneyland castle like the next locked area on a Candy Crush map, and why should a game designer care about hot dogs? (Hint: weenies, anticipation, guiding players without telling them.)",
+  "links": [
+    "L02",
+    "L03",
+    "L04",
+    "L05",
+    "L06",
+    "L08",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L14",
+    "L16",
+    "F2P1"
+  ]
+}

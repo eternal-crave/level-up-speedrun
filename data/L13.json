@@ -1,0 +1,1724 @@
+{
+  "id": "L13",
+  "order": 14,
+  "kind": "book",
+  "label": "Level 13",
+  "title": "Now You're Playing with Power — Power-ups & Rewards",
+  "bookPages": "355–379",
+  "emoji": "⚡",
+  "tagline": "Boosters, loot, coins, praise and robot chickens: the psychology of 'just one more'.",
+  "f2pRelevance": 5,
+  "f2pWhy": "Boosters, currencies, shops, chests, passes, achievements, collections and difficulty tuning are the backbone of every F2P economy and retention loop, and where the ethics line lives.",
+  "minutes": 70,
+  "tldr": [
+    "Power-ups come in four families: defensive, offensive, movement and game changers. Design their look, pickup, stacking, trade-off and expiry.",
+    "Love thy player: DDB, optional difficulty drops, rubberbanding, sensible length and autosave. Never measure design in player deaths.",
+    "If it feels too long, hard or boring, it is. Beware designer blinders.",
+    "Greed and reward are the two strongest motivators. Never underestimate the player's greed, but use it for good.",
+    "Rewards: show early, give soon and often with surprise, celebrate with huge fanfare, make them matter. The best rewards are hard won.",
+    "Economy 101: escalating values, rarity tiers, enough money for real choices, rotate stock, beware farmable treasure, plan prices for the whole game."
+  ],
+  "sections": [
+    {
+      "title": "Power-ups",
+      "bites": [
+        {
+          "id": "L13-b01",
+          "hook": "Power-ups are concentrated action",
+          "body": "Touch one and you're instantly faster, stronger, tougher or back from the dead. The great part: effects are **immediate**. The catch: they're usually **temporary**. Power-ups appear in every genre, dropped by enemies, hidden in chests and breakables, or just lying in the road.",
+          "example": "A Super Mario star turns a careful platformer into a joyful rampage for a few seconds.",
+          "f2p": "In F2P, power-ups split into earned special pieces, gifted boosters and sold boosters, so each needs an economy role.",
+          "memory": "Instant power, borrowed time.",
+          "tag": "concept"
+        },
+        {
+          "id": "L13-b02",
+          "hook": "Seven questions every power-up must answer",
+          "body": "What does it do? How does it look and stand out (glow, strobe, rotate, bounce)? Can power-ups stack, and can unused ones be retrieved? How does it change movement, speed, attacks, health? How are effects shown and heard? What's the trade-off? If temporary, what warns that it's expiring?",
+          "example": "Expiry cues: a HUD element, a visual flash, a sound or music cue, or it simply lasts until you lose a life.",
+          "f2p": "Use it as a booster spec sheet and add two lines: acquisition (earned/gifted/bought) and price/sink role.",
+          "memory": "Do, Look, Stack, Affect, Tell, Cost, Clock.",
+          "tag": "list"
+        },
+        {
+          "id": "L13-b03",
+          "hook": "Four ways to pick up a power-up",
+          "body": "1) Walk over it. 2) Reach out and actively grab it. 3) It flies toward you within a radius (decide how close and how fast). 4) It triggers just by being near. Pickup distance shapes what the power-up should do once collected.",
+          "example": "The book's diagram shows a stick figure with orbs at distances ① to ④.",
+          "f2p": "Survivor-likes make pickup radius an upgradeable stat, and a magnet pickup vacuums every XP gem on screen.",
+          "memory": "Touch, grab, pull, aura.",
+          "tag": "list"
+        },
+        {
+          "id": "L13-b04",
+          "hook": "D-O-M-G: the four power-up families",
+          "body": "**Defensive** (survive), **offensive** (kill better), **movement** (move better or newly), and **game changers** (change the rules of play).",
+          "example": "Health-up (D), spread gun (O), bee suit (M), Pac-Man power pellet (G).",
+          "f2p": "Subway Surfers covers all four: hoverboard (D), jetpack/sneakers (M), coin magnet and 2x multiplier (G).",
+          "memory": "Don't Overthink My Gummies.",
+          "tag": "list"
+        },
+        {
+          "id": "L13-b05",
+          "hook": "Defensive power-ups keep you alive",
+          "body": "Health-up (partial or full; different amounts should look different), ability recharge, extra life, invulnerability, invincibility, protective shields/auras, indirect attacks (fire-and-forget traps behind you), and smart bombs that clear the screen for a breather.",
+          "example": "Kart racers drop oil slicks and bombs behind them; shooters give screen-clearing smart bombs.",
+          "f2p": "Extra moves, unlimited-lives timers, Duolingo's streak freeze and Clash of Clans' post-raid shield are defensive power-ups.",
+          "memory": "Heal, refill, respawn, shrug, smash, shield, trap, nuke.",
+          "tag": "list"
+        },
+        {
+          "id": "L13-b06",
+          "hook": "Invulnerable vs invincible: not the same thing",
+          "body": "Both stop enemy damage. **Invincibility** also destroys most enemies you touch (often not bosses). Invulnerable players usually still suffer physics and geometry hazards like cliff falls, or collision detection breaks.",
+          "example": "Metroid's screw attack and Mario Kart's super star are invincibility.",
+          "f2p": "",
+          "memory": "Invulnerable = can't be hurt. Invincible = can't be hurt AND hurts you back.",
+          "tag": "concept"
+        },
+        {
+          "id": "L13-b07",
+          "hook": "Protective power-ups can grow with you",
+          "body": "Force fields, shields and auras block projectiles, fire or poison floors. They may have their own health meter, and unlike invulnerability and invincibility they can usually be upgraded, modified and extended by the player.",
+          "example": "A shield bubble with a visible durability bar that cracks as it absorbs hits.",
+          "f2p": "Upgradable shields and protective gear are natural progression and sink items in RPG and shooter F2P.",
+          "memory": "A shield is a power-up with a career path.",
+          "tag": "concept"
+        },
+        {
+          "id": "L13-b08",
+          "hook": "Offensive power-ups make killing faster or prettier",
+          "body": "Ammo boost, buffs, multi-weapon (better without changing it), weapon upgrade/swap, damage modifiers (flame, poison, ice, electricity), direction (shoot behind/above/below, homing) and companions (helpers that attack or shield).",
+          "example": "Contra's spread gun fires five shots in a fan; Ghosts 'n Goblins swaps lance, dagger and torch; Galaga's captured ship costs a life but doubles your shot.",
+          "f2p": "Archero-style abilities map exactly: Multishot, rear/side/diagonal arrows, elemental effects, orbiting spirits or drones.",
+          "memory": "Ammo, Buff, Spread, Swap, Element, Aim, Buddy.",
+          "tag": "list"
+        },
+        {
+          "id": "L13-b09",
+          "hook": "Movement power-ups break your level metrics",
+          "body": "Speed changes (nitro; trade-off: less control), access (fly, helicopter, glide, swim) and size changes (grow or shrink for new abilities). Account for them when designing player metrics, or they'll break your gaps and jumps.",
+          "example": "Mario's bee suit flies; the super mushroom adds size, an extra hit and brick-breaking; the mini mushroom shrinks Mario for huge leaps.",
+          "f2p": "Runner jetpacks and super sneakers need lanes and obstacle spacing designed around them.",
+          "memory": "Faster, higher, tinier.",
+          "tag": "rule"
+        },
+        {
+          "id": "L13-b10",
+          "hook": "Game changers flip the rules",
+          "body": "Score/treasure multipliers, change-state (the hunted become the hunter), magnets that pull treasure safely to you, invisibility/disguise, and comedy power-ups that exist only to amuse.",
+          "example": "Crazy Taxi's fare multiplier, Rock Band's star power, Pac-Man's power pellet, MDK's cow dropped on enemies.",
+          "f2p": "'2x coins for 30 minutes' and double-XP weekends are score modifiers; Subway Surfers' coin magnet is magnetic.",
+          "memory": "Multiply, flip, pull, vanish, moo.",
+          "tag": "list"
+        },
+        {
+          "id": "L13-b11",
+          "hook": "Runaway power-ups must be catchable",
+          "body": "Some power-ups move: Super Mario Bros.' mushrooms slide away when they spawn, and MDK's 'cowardly power-up' runs and hides. Never make them faster than the player or immune to a magnetic power-up.",
+          "example": "A mushroom sliding off a ledge you can still chase down.",
+          "f2p": "Moving reward targets (fleeing chests, escaping coins) must be reliably catchable on touch controls.",
+          "memory": "Shy is fine. Uncatchable is cruel.",
+          "tag": "rule"
+        },
+        {
+          "id": "L13-b12",
+          "hook": "Conditional power-ups: fine if the rules are clear",
+          "body": "Some power-ups only work when conditions are met. In Maximo, one armor power-up needed the full armor set; another needed a special ability. Clear conditions make this a great tool.",
+          "example": "Collect all four armor pieces → the golden armor power kicks in.",
+          "f2p": "Set bonuses (Genshin Impact's 2- and 4-piece artifact sets) are conditional power-ups built into a collection loop.",
+          "memory": "Complete the set, unlock the power.",
+          "tag": "concept"
+        },
+        {
+          "id": "L13-b13",
+          "hook": "Anti-power-ups: the booby-trapped bonbon",
+          "body": "They look like normal power-ups but sap health, slow you, drain XP, or turn you into a zombie with reversed controls. Fun once or twice. Use them sparingly and carefully.",
+          "example": "A shiny potion that flips your controls for ten seconds.",
+          "f2p": "Rare in F2P for good reason: when players may have paid for consumables, a harmful fake gift feels like theft.",
+          "memory": "Pretty wrapper, nasty filling.",
+          "tag": "warning"
+        },
+        {
+          "id": "L13-b14",
+          "hook": "From power-ups to boosters: F2P's biggest consumable",
+          "body": "Match-3 has three streams. **Special pieces** are earned by skill (striped/wrapped candies, color bombs; rockets, TNT, light balls). **In-level boosters** break a stuck board (a hammer). **Pre-level boosters** start the board with special pieces. They're gifted, earned and sold.",
+          "example": "Candy Crush's Lollipop Hammer smashes any single candy; pre-level boosters drop special candies before move one.",
+          "f2p": "Healthy design gives boosters free regularly so they read as help, not ransom.",
+          "memory": "Earned, gifted, sold: three taps from one tree.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "\"Love Thy Player\"",
+      "bites": [
+        {
+          "id": "L13-b15",
+          "hook": "Pureiya aishi nasai: love the player",
+          "body": "A Japanese director told Rogers this should be every designer's motto. Rogers' version: the designer is a gentle hand on the player's backside, always pushing them upward. Enablers so far: checkpoints, hoists and teeters, aim assist, ramping difficulty. New: DDB, difficulty adjustment, rubberbanding, game length, autosave.",
+          "example": "Book figure: a giant hand launching a thankful stick figure.",
+          "f2p": "'Keep the player playing' is literally the F2P business model: retention.",
+          "memory": "Gentle hand, not a boot.",
+          "tag": "truth"
+        },
+        {
+          "id": "L13-b16",
+          "hook": "DDB: give them what they need, when they need it",
+          "body": "Dynamic difficulty balancing adjusts challenge AND rewards to performance. Keep dying to an enemy? It gets slightly less health or attacks less. Open a chest while low on health? You get a health-up; healthy players get treasure instead.",
+          "example": "Same chest, different contents depending on your health bar.",
+          "f2p": "Loss-streak relief and need-based drops are good DDB. Using it to make things harder for likely spenders crosses the line.",
+          "memory": "A vending machine that reads your mood.",
+          "tag": "concept"
+        },
+        {
+          "id": "L13-b17",
+          "hook": "Offer an easier mode, don't force it",
+          "body": "Difficulty level adjustment offers a lower setting when trouble is detected (e.g., many deaths). Players can decline, or it can switch automatically. Rogers doesn't recommend automatic: many players find it insulting.",
+          "example": "'Want to try this on Easy?' with a No button, not a silent downgrade.",
+          "f2p": "Offer help (free booster, hint, skip) rather than silently downgrading, and never make players feel stupid.",
+          "memory": "Ask, don't assume.",
+          "tag": "rule"
+        },
+        {
+          "id": "L13-b18",
+          "hook": "Rubberbanding: nobody likes racing an empty track",
+          "body": "If the player falls too far behind in a race or chase, opponents slow down enough to let them catch up. Mostly in racing games, but useful anytime the player follows or chases.",
+          "example": "Book figure: two go-karts tied together by a rubber band.",
+          "f2p": "Mobile PvP rubberbands via matchmaking and bots: many shooters and party games (PUBG Mobile among them) fill low-rank lobbies with bots.",
+          "memory": "Snap back into the race.",
+          "tag": "concept"
+        },
+        {
+          "id": "L13-b19",
+          "hook": "Length is a difficulty dial",
+          "body": "Ten minutes in a battle arena with decent health is survivable. Thirty minutes brings fatigue and attrition, and the player probably dies. Rogers' rule: IF A LEVEL OR FIGHT FEELS OVERLONG, TOO TOUGH, OR DULL TO YOU, IT PROBABLY IS.",
+          "example": "You'll play each level 1,000+ times (build, populate, test, place collectibles, playtest), so you'll know when it drags.",
+          "f2p": "Casual sessions are a few minutes. Overlong levels and events cause fatigue and churn.",
+          "memory": "Death to boring!",
+          "tag": "rule"
+        },
+        {
+          "id": "L13-b20",
+          "hook": "Designer blinders: you're too good at your own game",
+          "body": "After endless playtesting, designers need much harder content to feel challenged than customers, who play a level a few times. Common and dangerous. Meanwhile: consolidate, kill boring parts, and cut elements that don't help. The book's fix comes in Level 17.",
+          "example": "A level that feels 'medium' to the designer feels brutal to a first-timer.",
+          "f2p": "Live teams drift toward too-hard content. Check per-level win rates and drop-off, and test with fresh players.",
+          "memory": "Your skill is the bug.",
+          "tag": "warning"
+        },
+        {
+          "id": "L13-b21",
+          "hook": "Autosave: let players play, not manage files",
+          "body": "The game saves itself periodically, protecting players from crashes and from forgetting to save before a deadly moment. Many games autosave whenever a new area loads.",
+          "example": "Fallout 3 autosaves when you enter a new area.",
+          "f2p": "Cloud save, account linking and instant resume are non-negotiable on mobile.",
+          "memory": "Save early, save often, save automatically.",
+          "tag": "rule"
+        },
+        {
+          "id": "L13-b22",
+          "hook": "Never design with 'they must die three times'",
+          "body": "A creative director ordered an encounter where players must die three times before progressing. Rogers didn't do it. Player death is never a design yardstick; 'rewarding' players with damage or death is negative reinforcement.",
+          "example": "A slightly-too-easy fight should get a bit more interesting, not become a mandatory death trap.",
+          "f2p": "The F2P version: levels designed to fail so players buy boosters. Same bad idea, with a price tag.",
+          "memory": "Deaths are not a KPI.",
+          "tag": "warning"
+        },
+        {
+          "id": "L13-b23",
+          "hook": "The mimic chest that made players flinch",
+          "body": "Maximo had a treasure-chest mimic that snapped like a dog. Players began dreading every chest: fun for the designer, not the player. That defeats the point, because the ultimate goal is to keep players playing. Fix: give clues like a color change.",
+          "example": "Zelda: Spirit Tracks hints at hidden enemies with wobbling pots.",
+          "f2p": "If chests and gacha pulls are usually junk, players stop enjoying opening them. Clear odds and guaranteed value keep the ritual magic.",
+          "memory": "Don't booby-trap the birthday present.",
+          "tag": "example"
+        },
+        {
+          "id": "L13-b24",
+          "hook": "Happy finishers sell your next game",
+          "body": "Players who can finish the whole game are happy. They tell others how much they liked it and buy your next game. It's a win-win.",
+          "example": "Word of mouth from players who reached the ending.",
+          "f2p": "With no ending in F2P, 'finishing' becomes 'staying': retention, ratings and lifetime value.",
+          "memory": "Fair games make fans; fans make sales.",
+          "tag": "truth"
+        }
+      ]
+    },
+    {
+      "title": "Greed & the rules of reward",
+      "bites": [
+        {
+          "id": "L13-b25",
+          "hook": "Greed and reward: the two most powerful tools",
+          "body": "Designers keep players playing with mystery, delight, pride and power, but greed and reward are the strongest. Greed makes players grind for a unique hat, leap onto a trap-covered platform for one coin, and fight monsters to see what comes next or earn an achievement.",
+          "example": "Book figure: a terrified player braving fire, an axe, a goblin and cannons for one coin: totally worth it.",
+          "f2p": "Every F2P loop is fueled by wanting the next thing: the next level, hero, skin or chest.",
+          "memory": "NEVER UNDERESTIMATE THE GREED OF THE PLAYER.",
+          "tag": "truth"
+        },
+        {
+          "id": "L13-b26",
+          "hook": "Use greed for good, not evil",
+          "body": "Evil: luring players to their deaths to prove you're clever. Good: promise treasure to motivate fights; give a customizable trophy space; exploit the 'me too' factor; hide treasure by learnable guidelines; string collectibles as a trail.",
+          "example": "Maximo always buried treasure next to trees (or pillars and gravestones where there were no trees), and sharp players learned it.",
+          "f2p": "Learnable secret rules reward attentive players and make them feel smart.",
+          "memory": "Greed is a compass, not a bear trap.",
+          "tag": "list"
+        },
+        {
+          "id": "L13-b27",
+          "hook": "Fill the shelves and they'll catch 'em all",
+          "body": "Give players a personal, customizable space to show off trophies and rewards. Once the shelves start filling up, the urge to complete the set kicks in.",
+          "example": "Empty spots on a trophy wall nag you to fill them.",
+          "f2p": "Collection metas: Monopoly GO! sticker albums, Coin Master card sets, Pokémon GO's Pokédex and medals, Marvel Snap's collection track.",
+          "memory": "An empty slot is a to-do list.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L13-b28",
+          "hook": "MUST. OWN. ROBOT. CHICKEN.",
+          "body": "The 'me too' factor (keeping up with the Joneses) is powerful, especially in multiplayer. Rogers was leveling in World of Warcraft when another player rode by on a mechanical chicken mount, and his whole agenda changed to getting one.",
+          "example": "Book figure: an onlooker begging for a steam-powered chicken.",
+          "f2p": "Visible cosmetics (skins, emotes, frames) sell because other players see them: the heart of fair vanity monetization.",
+          "memory": "If nobody sees the chicken, nobody wants the chicken.",
+          "tag": "example"
+        },
+        {
+          "id": "L13-b29",
+          "hook": "Breadcrumb trails steer players",
+          "body": "String collectibles through the level to show players where to go next.",
+          "example": "Dots in Pac-Man World, rings in any Sonic game. Book figure: a player munching dots, clueless about what they are but unable to stop.",
+          "f2p": "Coin trails in runners and glowing progress paths on level maps do the same job.",
+          "memory": "Follow the snacks.",
+          "tag": "rule"
+        },
+        {
+          "id": "L13-b30",
+          "hook": "Half-Life's four-step item introduction",
+          "body": "First the player hears about a new item from a character, then sees someone holding it, then sees it used, and finally gets and uses it. By then they know what it is and does, and they want it.",
+          "example": "Valve's Half-Life (1998) builds desire before handing over a new weapon.",
+          "f2p": "Gacha banners do this: trailers, showcases and trial runs (Genshin Impact offers trial characters) before you pull.",
+          "memory": "Hear it, see it, watch it, wield it.",
+          "tag": "concept"
+        },
+        {
+          "id": "L13-b31",
+          "hook": "No victory without a reward",
+          "body": "A reward is what the player works toward. A game needs a victory condition, and a victory always needs a reward. Rules: show rewards early; reward soon, often, with variety and surprise; celebrate wins; make rewards matter.",
+          "example": "An early list of everything you can unlock becomes the player's to-do list for the whole game.",
+          "f2p": "Visible pass tracks, 7-day login calendars and level-map chests show rewards early.",
+          "memory": "Show, shower, celebrate, matter.",
+          "tag": "rule"
+        },
+        {
+          "id": "L13-b32",
+          "hook": "There's no such thing as too much fanfare",
+          "body": "Wins must show evidence of success: fireworks, swooping camera pans, the hero leaping for joy, cheering crowds, slot-machine sounds, particles, particles, particles. The player should feel like they just won a war, the big game and the lottery at once.",
+          "example": "Be dramatic, exciting, goofy, even very goofy.",
+          "f2p": "Match-3 win screens with coin explosions and counters are exactly this. Scale the fanfare to the achievement.",
+          "memory": "When in doubt, add particles.",
+          "tag": "rule"
+        },
+        {
+          "id": "L13-b33",
+          "hook": "The best reward is one they didn't know they needed",
+          "body": "Make the reward matter: give something that gives an edge on the next level and solves a problem that plagued the player on the last one.",
+          "example": "After struggling with armored foes, the boss drops an armor-piercing weapon.",
+          "f2p": "Reward the booster for the hard level or the hero the team lacks, not random filler.",
+          "memory": "Today's prize, yesterday's problem, tomorrow's edge.",
+          "tag": "rule"
+        },
+        {
+          "id": "L13-b34",
+          "hook": "Ten flavors of reward",
+          "body": "Scoring, achievements, treasure, loot, power-ups, souvenirs, bonus materials, praise, surprise, plus progression.",
+          "example": "A single boss kill can give score, an achievement, gold, a sword, a trophy and a cheer.",
+          "f2p": "Strong F2P games layer several types per milestone: currency + item + badge + praise.",
+          "memory": "Some Acrobats Tame Lions, Prancing Silly Bears, Pandas Surf Proudly.",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "Scoring & achievements",
+      "bites": [
+        {
+          "id": "L13-b35",
+          "hook": "Three initials in wet cement",
+          "body": "Early on, the only reward was a high score: a number and three initials. It was public proof of mastery, like writing your name in wet cement, until the machine was switched off and the table reset. Many players love competition, even against themselves, and bragging rights.",
+          "example": "A footnote jokes that a 24-hour convenience store was the best place for a high score: it never closed.",
+          "f2p": "Weekly tournaments and friend leaderboards recreate the wet-cement feeling.",
+          "memory": "AAA was here.",
+          "tag": "concept"
+        },
+        {
+          "id": "L13-b36",
+          "hook": "Scoring nearly died, then came back",
+          "body": "In the late 1990s, scores looked like a quarter-munching relic next to 100% completion and story cutscenes. In the early 2000s, browser games and online leaderboards revived them.",
+          "example": "Bejeweled (2001), Feeding Frenzy (2004), then leaderboards on Xbox Live and PlayStation Network.",
+          "f2p": "Block Blast!'s high-score chase and PvP trophy roads prove scoring is very alive on mobile.",
+          "memory": "Almost as dead as the dodo. Almost.",
+          "tag": "concept"
+        },
+        {
+          "id": "L13-b37",
+          "hook": "Achievements: high scores with personality",
+          "body": "Achievements let players show off and brag: do a task X times, beat bosses, collect one item or all of them, finish the game. Give them clever names and fun icons. Lists published before release act as to-do lists and point players at ideas they'd never try.",
+          "example": "The book credits Halo 2 on Xbox 360 as the debut; in fact Xbox 360 achievements launched with the console in 2005.",
+          "f2p": "F2P turned achievements into daily/weekly missions that teach and steer play.",
+          "memory": "Achievements = a to-do list that brags for you.",
+          "tag": "concept"
+        },
+        {
+          "id": "L13-b38",
+          "hook": "The silliest achievements teach the most",
+          "body": "Rogers' favorites show the range: gimmes, self-mockery, play-style experiments, social chains, absurd stunts and secrets.",
+          "example": "Press start (Simpsons Game), die on Easy (50 Cent), hide bodies in hay (AC II), doff your hat (TF2), Six Degrees of Schafer (Brütal Legend), idle 5 minutes (Saw), find the cake (Wolverine).",
+          "f2p": "Funny, specific missions ('win with only blue cards') spark experimentation and social sharing.",
+          "memory": "Weird goals make memorable play.",
+          "tag": "fun"
+        },
+        {
+          "id": "L13-b65",
+          "hook": "Achievement titles are half the joke",
+          "body": "Achievements can be awarded for anything the developer likes, so give them cheeky names and fun icons. The book's favorites pair a funny title with an odd, specific act, which also nudges players toward things they would never try.",
+          "example": "\"Easiest achievement ever\" (press start), \"Not bulletproof\" (die on Easy), \"Street cleaner\" (hide bodies in hay), \"You've wasted your life\" (idle 5 minutes), \"Wheeeeeee!\" (slide 330 feet through blood), \"Skidmark\" (50 wedgies), \"Jawa juicer\", \"The cake\".",
+          "f2p": "Name missions and badges with a wink and keep a few secret ones for easter-egg hunters.",
+          "memory": "A good name sells the stunt.",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "Treasure, economy & shops",
+      "bites": [
+        {
+          "id": "L13-b39",
+          "hook": "Treasure means nothing without an economy",
+          "body": "Coins jingling from chests feel great, but what will players spend them on? Create treasure in escalating values (1, 5, 10, 50, 100) without spreading them too far apart. Avoid the virtual penny: treasure nobody bothers to pick up.",
+          "example": "A coin worth 1 when items cost 10,000 is a penny on the sidewalk.",
+          "f2p": "Reward sizes must feel meaningful against prices, or rewards feel insulting.",
+          "memory": "No pennies in paradise.",
+          "tag": "rule"
+        },
+        {
+          "id": "L13-b40",
+          "hook": "Rich players want delicious agony",
+          "body": "Being flush with cash is fun because it means choices, so stock plenty of things to buy. Offer choices between two really good things: the agony is delicious and gives a reason to return. Vary and rotate stock so it never goes stale.",
+          "example": "Fire sword or ice armor? Buy one now, come back for the other.",
+          "f2p": "Daily shop rotations (Brawl Stars, Clash Royale) keep the selection fresh.",
+          "memory": "Two great choices > one obvious one.",
+          "tag": "rule"
+        },
+        {
+          "id": "L13-b41",
+          "hook": "Price by rarity and by when you want it earned",
+          "body": "Classify items as common, uncommon, rare or unique; price each; decide what's available from the start. Always have quick buys and items tantalizingly out of reach. Prices will change during production, so build a preliminary economy first.",
+          "example": "So close: 40 coins short of the shiny bow.",
+          "f2p": "F2P rarity: Common, Rare, Epic, Legendary (Clash Royale adds Champion).",
+          "memory": "Cheap now, dream later.",
+          "tag": "rule"
+        },
+        {
+          "id": "L13-b42",
+          "hook": "$300 of items needs $300 of treasure",
+          "body": "After drafting prices, place treasure in the world. If players should afford $300 of items, put at least $300 in the level. Show buyables early (an ability tree, as in Dante's Inferno) so players plan their spending. Sometimes they'll need cheap necessities like ammo or health. Give options.",
+          "example": "A level seeded with exactly enough gold for the sword plus potions.",
+          "f2p": "This is sources must match sinks: plan earn rates per level and per day against costs.",
+          "memory": "Supply the demand you design.",
+          "tag": "rule"
+        },
+        {
+          "id": "L13-b43",
+          "hook": "Regenerating treasure: farming vs replay",
+          "body": "If treasure respawns, players can mine levels and wreck your economy. If it doesn't, replaying is unmotivating. You might want replay to earn enough; a shortage of funds encourages replay or off-path exploration.",
+          "example": "Infinite respawning gold in level 1 makes every shop item trivial.",
+          "f2p": "Daily caps, energy costs and diminishing returns stop farming from breaking F2P economies.",
+          "memory": "Respawn = renewable = exploitable.",
+          "tag": "warning"
+        },
+        {
+          "id": "L13-b44",
+          "hook": "Copper, silver, gold: make value readable",
+          "body": "Show value with color (copper, silver, gold) or shape (coins, bags, gems). Don't get too wild or players will mistake treasure for power-ups. Treasure needn't be money: bolts, studs, souls or bottle caps work, as long as it sparkles and goes cha-ching.",
+          "example": "Ratchet & Clank bolts, Lego studs, God of War souls, Fallout bottle caps.",
+          "f2p": "Soft and hard currencies need distinct colors and shapes so they never blur together.",
+          "memory": "If it sparkles and cha-chings, it's money.",
+          "tag": "rule"
+        },
+        {
+          "id": "L13-b45",
+          "hook": "Never make players haul cash to the shop",
+          "body": "If treasure has encumbrance (a carry limit), players need storage like bags of holding or banks. Whatever you choose, purchases should come straight from the player's account; no shuttling cash from storage to store.",
+          "example": "Many RPGs and MMOs force bank storage; the good ones let shops charge the bank directly.",
+          "f2p": "Inventory limits are sometimes sold as relief in F2P. The fair version keeps base limits comfortable.",
+          "memory": "Tap to pay, not trek to pay.",
+          "tag": "rule"
+        },
+        {
+          "id": "L13-b46",
+          "hook": "Theme your shop to your game",
+          "body": "RPGs have shopkeepers; Borderlands and BioShock use vending machines. A racing game could have a garage for upgrades, a sports game a sporting goods store. The store is one more place to add character and theme.",
+          "example": "Book figure: an inn, a GUNS vending machine, and a shady trench-coat merchant.",
+          "f2p": "Themed shop fronts (a bakery stall in a cooking game) make monetization feel like part of the world.",
+          "memory": "The shop is a level too.",
+          "tag": "rule"
+        },
+        {
+          "id": "L13-b47",
+          "hook": "The shady merchant's ten aisles",
+          "body": "Offense, defense, repairs, replenishable resources, skills, access (keys, maps, statues), vanity (hats, costumes), whimsy (pink hair, mustaches), information, and saves. Rogers jokes that only a cruel designer would charge to keep playing.",
+          "example": "Rogers role-plays the merchant, then grumbles the shop is overpriced since most items lie around the levels.",
+          "f2p": "F2P's top sellers include consumables (energy, lives, boosters), vanity skins, access passes and continues: the 'cruel' saves aisle.",
+          "memory": "O-D-R-R-S-A-V-W-I-S: every shop's map.",
+          "tag": "list"
+        },
+        {
+          "id": "L13-b66",
+          "hook": "Treasure doesn't have to be money",
+          "body": "Treasure can be bolts, studs, souls, even junk like bottle caps. What matters is that it sparkles and makes a satisfying cha-ching when collected.",
+          "example": "Ratchet & Clank bolts, Lego studs, God of War souls, Fallout bottle caps.",
+          "f2p": "Soft currencies are themed (elixir, hay, gems) but must still look and sound delightful on collection.",
+          "memory": "Sparkle plus cha-ching.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Loot, souvenirs & bonus materials",
+      "bites": [
+        {
+          "id": "L13-b48",
+          "hook": "THE BEST REWARDS ARE HARD WON",
+          "body": "Loot is what you could buy, but free (if fighting through the temple of eternal pain counts as free). Found loot should always beat bought loot: save the best weapons, armor and guns for puzzles, hazards and bosses.",
+          "example": "The legendary sword is in the dragon's hoard, not on the shop shelf.",
+          "f2p": "If top power is only purchasable, it's pay-to-win. Keep the best power earnable and monetize cosmetics.",
+          "memory": "Sweat > shop.",
+          "tag": "truth"
+        },
+        {
+          "id": "L13-b49",
+          "hook": "Souvenirs: trophies with a story",
+          "body": "Souvenirs remind players of their adventures. Display them somewhere special (a trophy room, a well-lit shelf, interactive exhibits, a museum) with a close-up viewer and a label saying where each was found.",
+          "example": "Lara Croft's trophy room (Tomb Raider: Anniversary), Lego Indiana Jones exhibits, Uncharted 2's virtual museum.",
+          "f2p": "Profile badges, frames and event titles say 'I was there'.",
+          "memory": "Every trophy needs a plaque.",
+          "tag": "concept"
+        },
+        {
+          "id": "L13-b50",
+          "hook": "Dragon-skin boots beat a dragon-skin rug",
+          "body": "Useful souvenirs mean more. Give them special properties so players show them off and want the next encounter.",
+          "example": "Take the Lich King's sword (WoW); Mega Man takes each Robot Master's power; dragon boots grant fire resistance, lava walking or a flaming kick.",
+          "f2p": "Event-exclusive heroes or gear are useful souvenirs: bragging rights plus function.",
+          "memory": "Wear your victories.",
+          "tag": "rule"
+        },
+        {
+          "id": "L13-b51",
+          "hook": "Design bonus content early, build it late",
+          "body": "Bonus features are usually thrown together at the last minute. Design them early but build them near the end, when you can judge what feels like a bonus. List: costumes, alternate models, alternate modes, DLC, new levels, music, commentary, making-of videos, model and art viewers, promo, trailers, minigames, multiplayer extras, alternate endings, cheats.",
+          "example": "Big-head mode: trivial to code, endless laughs.",
+          "f2p": "Bonus content became LiveOps: plan the content pipeline before launch.",
+          "memory": "Plan the dessert before you cook dinner.",
+          "tag": "list"
+        },
+        {
+          "id": "L13-b52",
+          "hook": "Don't make art viewers a lazy slideshow",
+          "body": "Add music or artist commentary; show environments, props, maps and design documents; let players control the pace; add a magnifier; hide a reward in the art; or let players collect art pieces like a puzzle for a prize.",
+          "example": "A concept-art gallery where zooming into a painting reveals a secret code.",
+          "f2p": "Puzzle-piece collection events and albums turn art into a reward loop.",
+          "memory": "A gallery should be a game.",
+          "tag": "rule"
+        },
+        {
+          "id": "L13-b53",
+          "hook": "Minigames, endings and cheats as bonuses",
+          "body": "Minigames re-contextualize your most fun gameplay (God of War's Challenge of the Gods) and can feed the main economy or promote another game. Alternate endings need players to know they exist, plus evenly matched choices. Unlock cheats only after one playthrough.",
+          "example": "Mass Effect Galaxy (iPhone) unlocked a Mass Effect 2 reward; TF2 gave non-cheaters a halo called the cheater's lament.",
+          "f2p": "Cross-game rewards work in F2P. Cheats don't: they break economies and fairness.",
+          "memory": "Reuse fun, reveal endings, delay cheats.",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "Praise, surprise & progression",
+      "bites": [
+        {
+          "id": "L13-b54",
+          "hook": "Games are great at insults, bad at praise",
+          "body": "We kill players, mock failure, steal and mess with their heads, but rarely praise them. Nothing gets people to cooperate like praise. Zak & Wiki stacked 8 praise layers for one puzzle: sting, victory pose, particles, sidekick congrats; then a gold screen tint, a longer tune, a show-off animation and the item's name.",
+          "example": "Fable's NPCs compliment or recoil depending on your alignment: ego-stroking done right.",
+          "f2p": "Candy Crush's 'Sweet!', 'Tasty!', 'Divine!' voice and Duolingo's celebrations are praise systems. Count your layers.",
+          "memory": "Sting, Pose, Sparkle, Sidekick + Gold, Song, Show-off, Name.",
+          "tag": "concept"
+        },
+        {
+          "id": "L13-b55",
+          "hook": "Praise for nothing is worth nothing",
+          "body": "Too much of a good thing exists: praise loses meaning if it's handed out for doing nothing or for trivial acts.",
+          "example": "A 'You're amazing!' banner for tapping 'OK' cheapens the real celebrations.",
+          "f2p": "Scale juice to achievement: a small sting for a match, full fireworks for a level clear.",
+          "memory": "Confetti inflation is real.",
+          "tag": "warning"
+        },
+        {
+          "id": "L13-b56",
+          "hook": "Keep cranking: the skeleton surprise",
+          "body": "At Disneyland's Pirate's Lair, turning a wheel raises a treasure chest. Keep cranking and a skeleton appears, clinging to the chest. It serves no purpose but a laugh. Games should have little moments like that.",
+          "example": "Stan Lee's cameo (Marvel: Ultimate Alliance 2), Ape Escape monkeys in Metal Gear Solid 3, Braid's homage to Mario's World 1-1.",
+          "f2p": "Easter eggs and surprise gifts are cheap, shareable and build goodwill.",
+          "memory": "Reward the player who keeps cranking.",
+          "tag": "fun"
+        },
+        {
+          "id": "L13-b57",
+          "hook": "Is progression itself a reward?",
+          "body": "Some say finishing is the point, not a reward. But lots of things compete for players' free time. Keep them engaged with a great story, intriguing levels, cool bosses and awesome upgrades. Multiple players? That's Level 14.",
+          "example": "Unlocking the next world map is its own carrot.",
+          "f2p": "With no ending, the meta (map progress, renovated rooms, base levels, rank) makes progress the reward.",
+          "memory": "Forward is a feeling.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "F2P Reward & Economy Toolkit (beyond the book)",
+      "bites": [
+        {
+          "id": "L13-b58",
+          "hook": "Four reward schedules, four feelings",
+          "body": "Fixed ratio: every N actions (a chest every 10 levels). Variable ratio: unpredictable counts (gacha, random drops), the most compulsive. Fixed interval: by time (daily login). Variable interval: surprise timing (flash events). Fixed builds trust; variable builds excitement.",
+          "example": "Mix them: a daily login gift (fixed interval) plus a rare drop chance per level (variable ratio).",
+          "f2p": "Leaning mainly on variable-ratio rewards for money is where delight turns into a slot machine.",
+          "memory": "Ratio = actions, interval = time; fixed = trust, variable = thrill.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L13-b59",
+          "hook": "Daily rewards and streaks build habits",
+          "body": "Login calendars show the big Day 7 prize upfront (show rewards early). Streaks add pride and loss aversion. Streak protection is a defensive power-up for habits.",
+          "example": "Duolingo's streaks and streak freezes are the reference design.",
+          "f2p": "Offer forgiveness (freezes, grace days) so breaking a streak doesn't feel like punishment.",
+          "memory": "Habit, not handcuffs.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L13-b60",
+          "hook": "Gacha needs odds, pity and duplicate value",
+          "body": "Gacha is variable-ratio loot. Publish drop rates (app stores require odds for paid random items; Belgium treats paid loot boxes as gambling). Pity caps the worst case, and duplicates should convert into upgrades so no pull is worthless.",
+          "example": "Genshin Impact's character banner guarantees a 5-star within 90 pulls.",
+          "f2p": "Pity is DDB for luck; transparent odds keep chests from becoming mimics.",
+          "memory": "Odds out loud, floor guaranteed, dupes useful.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L13-b61",
+          "hook": "Battle pass: a reward track with a deadline",
+          "body": "A visible season track with free and premium tiers, unlocked by playing. It turns 'show rewards early' and 'reward often' into a progress bar with an end date.",
+          "example": "Brawl Pass, Pass Royale, Marvel Snap's season pass.",
+          "f2p": "Keep completion reachable with normal play; heavy grinds or paid tier-skips create stress, not delight.",
+          "memory": "A to-do list with a countdown.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L13-b62",
+          "hook": "Soft currency vs hard currency",
+          "body": "Soft currency (coins, gold, elixir) flows from play and funds everyday purchases. Hard currency (gems, diamonds) is mostly bought, trickles in free, and buys speed-ups, premium items, pulls, passes and continues. Each needs a distinct look.",
+          "example": "Clash of Clans: gold and elixir (soft) vs gems (hard). Hay Day: coins vs diamonds.",
+          "f2p": "Rogers' copper/silver/gold readability rule applies to every currency icon.",
+          "memory": "Soft = sweat money. Hard = wallet money.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L13-b63",
+          "hook": "Sources and sinks: the economy's plumbing",
+          "body": "Sources put currency in (rewards, chests, quests, ads, purchases); sinks take it out (upgrades, consumables, cosmetics). Too many sources = inflation and worthless rewards. Too many sinks = paywall frustration. Model earn rates against cost curves in a spreadsheet.",
+          "example": "Rogers' '$300 of treasure for $300 of items' is the first sources-and-sinks rule.",
+          "f2p": "Farmable sources need caps, energy costs or diminishing returns.",
+          "memory": "Faucets and drains: balance the bathtub.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L13-b64",
+          "hook": "Delight or manipulation? The ethics line",
+          "body": "Delight: rewards shown upfront, help gifted freely, honest odds, earnable top power, optional skips, praise for real feats. Manipulation: hidden odds, engineered near-misses, harder levels for likely spenders, pay-to-win, painful timers, fake urgency, pressure on minors.",
+          "example": "Test: does this mechanic only work because players don't understand it?",
+          "f2p": "Rogers' compass: love thy player, never underestimate their greed, and use it for good.",
+          "memory": "If it needs confusion to work, it's on the wrong side.",
+          "tag": "warning"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "Create power-ups that are compatible with and complement the player's actions and attacks.",
+    "Love thy player! Equip them for success with tools like DDB and rubberbanding.",
+    "If a part of your game feels too hard or dull, it is; cut it.",
+    "Never underestimate how greedy players are, and use that to spark interesting scenarios and challenges.",
+    "Plan the economy across the whole game, and set item prices to match when you want players to afford them.",
+    "Give players enough money that they have real choices when shopping.",
+    "Offer a variety of cool things to buy, and make players choose between at least two really good options so they come back for more.",
+    "Decide whether scoring suits your game, then reward players for high scores and achievements.",
+    "Don't forget bonus materials and DLC; they take time, so don't leave them to the end of production.",
+    "Some rewards are just for fun."
+  ],
+  "mnemonics": [
+    {
+      "name": "Power-up families",
+      "device": "D-O-M-G: Don't Overthink My Gummies",
+      "unpacks": "Defensive, Offensive, Movement, Game changers"
+    },
+    {
+      "name": "Pickup methods",
+      "device": "Touch, grab, pull, aura",
+      "unpacks": "Walk over it, actively pick it up, auto-attract within a radius, proximity activation"
+    },
+    {
+      "name": "Half-Life item intro",
+      "device": "Hear it, see it, watch it, wield it",
+      "unpacks": "Hear about the item, see a character holding it, see it used, then obtain and use it yourself"
+    },
+    {
+      "name": "Reward rules",
+      "device": "Show, shower, celebrate, matter",
+      "unpacks": "Show rewards early; reward soon/often/with surprise; maximum fanfare on wins; make rewards matter"
+    },
+    {
+      "name": "Zak & Wiki praise layers",
+      "device": "Sting, Pose, Sparkle, Sidekick + Gold, Song, Show-off, Name",
+      "unpacks": "Success sting, victory animation, particles, sidekick congrats; yellow screen tint, longer tune, show-off animation, item name"
+    },
+    {
+      "name": "Reward schedules",
+      "device": "Ratio = actions, interval = time; fixed = trust, variable = thrill",
+      "unpacks": "Fixed ratio, variable ratio, fixed interval, variable interval"
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L13-f01",
+      "q": "What are the two defining traits of a power-up's effect?",
+      "a": "Immediate and (usually) temporary.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f02",
+      "q": "Name the four categories of power-ups.",
+      "a": "Defensive, offensive, movement, game changers.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f03",
+      "q": "What four pickup methods does Rogers' distance diagram show?",
+      "a": "Walk over, actively pick up, auto-attract within a radius, proximity activation.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f04",
+      "q": "Name four expiry cues for a temporary power-up.",
+      "a": "HUD element, visual cue, sound cue, music cue (or it lasts until you lose a life).",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f05",
+      "q": "If health-ups refill different amounts, what's the rule?",
+      "a": "Make them look different.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f06",
+      "q": "Invulnerability vs. invincibility?",
+      "a": "Both block enemy damage; invincibility also destroys enemies on contact (often not bosses).",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f07",
+      "q": "Why should invulnerable players still be affected by physics/geometry hazards like falls?",
+      "a": "Otherwise collision detection problems arise.",
+      "type": "why"
+    },
+    {
+      "id": "L13-f08",
+      "q": "How do protective power-ups differ from invulnerability/invincibility?",
+      "a": "They can usually be upgraded, modified and extended, and may have their own health meter.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f09",
+      "q": "What is an 'indirect attack' power-up?",
+      "a": "A fire-and-forget trap dropped behind you (smokescreen, oil slick, bomb), common in kart and car-combat games.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f10",
+      "q": "What does a smart bomb do?",
+      "a": "Clears the screen when things get too tough or the player needs a breather.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f11",
+      "q": "What's a multi-weapon power-up?",
+      "a": "One that improves your current weapon without fundamentally changing it (e.g., Contra's 5-shot spread).",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f12",
+      "q": "What was Galaga's companion twist?",
+      "a": "A captured ship became your companion: you lost a life but gained double shot.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f13",
+      "q": "Why must movement power-ups be considered when setting player metrics?",
+      "a": "They change speed, reach and size, which can break gaps, jumps and level layouts.",
+      "type": "why"
+    },
+    {
+      "id": "L13-f14",
+      "q": "What's the usual trade-off of a speed power-up?",
+      "a": "Less control, because faster reactions are needed.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f15",
+      "q": "What three things does Super Mario Bros.' super mushroom give?",
+      "a": "Bigger size, one extra hit, and the ability to break bricks.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f16",
+      "q": "What does a 'change state' power-up do? Give the classic example.",
+      "a": "Flips the play dynamic: Pac-Man's power pellet turns the hunted into the hunter.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f17",
+      "q": "Why are magnetic power-ups useful?",
+      "a": "They pull treasure to you, removing risk and post-fight cleanup.",
+      "type": "why"
+    },
+    {
+      "id": "L13-f18",
+      "q": "Two rules for mobile (moving) power-ups?",
+      "a": "Never faster than the player; never immune to a magnetic power-up.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f19",
+      "q": "When are conditional power-ups OK?",
+      "a": "When the conditions are clear to the player (e.g., Maximo's full-armor-set power).",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f20",
+      "q": "Why use anti-power-ups sparingly?",
+      "a": "They're only fun once or twice.",
+      "type": "why"
+    },
+    {
+      "id": "L13-f21",
+      "q": "Rogers' version of 'love thy player'?",
+      "a": "The designer is a gentle hand on the player's rear, pushing them upward.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f22",
+      "q": "What does DDB adjust?",
+      "a": "Challenge and rewards, based on player performance.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f23",
+      "q": "In Rogers' DDB example, what comes out of a chest when you're low on health?",
+      "a": "A health-up (otherwise treasure).",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f24",
+      "q": "Why does Rogers dislike automatic difficulty reduction?",
+      "a": "Many players find it insulting; better to offer the choice.",
+      "type": "why"
+    },
+    {
+      "id": "L13-f25",
+      "q": "What is rubberbanding?",
+      "a": "Opponents slow down when the player falls far behind so they can catch up.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f26",
+      "q": "IF YOUR GUT SAYS A LEVEL IS OVERLONG, TOO TOUGH, OR DULL, THEN ____.",
+      "a": "IT PROBABLY IS",
+      "type": "cloze"
+    },
+    {
+      "id": "L13-f27",
+      "q": "What are designer blinders?",
+      "a": "After endless play, designers need much harder content to feel challenged than real players do.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f28",
+      "q": "Which game does Rogers cite for autosaving when loading new areas?",
+      "a": "Fallout 3.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f29",
+      "q": "Why is 'the player must die three times' bad design?",
+      "a": "Player death should never be a design yardstick; punishing with death is negative reinforcement.",
+      "type": "why"
+    },
+    {
+      "id": "L13-f30",
+      "q": "What went wrong with Maximo's mimic chest?",
+      "a": "Players began dreading every chest; it was fun for the designer, not the player.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f31",
+      "q": "How would Rogers fix a mimic enemy?",
+      "a": "Give clues (a color change, wobbling pots like Zelda: Spirit Tracks).",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f32",
+      "q": "What are the two most powerful tools to keep players playing?",
+      "a": "Greed and reward.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f33",
+      "q": "NEVER UNDERESTIMATE THE ____ OF THE PLAYER.",
+      "a": "GREED",
+      "type": "cloze"
+    },
+    {
+      "id": "L13-f34",
+      "q": "What's the 'me too' factor?",
+      "a": "Keeping up with the Joneses: wanting what other players have (Rogers' WoW robot chicken).",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f35",
+      "q": "What treasure-placement guideline did Maximo use?",
+      "a": "Buried treasure next to trees (or pillars/gravestones if there were no trees).",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f36",
+      "q": "What are Half-Life's four steps for introducing an item?",
+      "a": "Hear about it, see it held, see it used, then get and use it.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f37",
+      "q": "Why does Half-Life's item introduction work?",
+      "a": "By the time players get the item, they know what it is and does, and they want it.",
+      "type": "why"
+    },
+    {
+      "id": "L13-f38",
+      "q": "You can't have a game without a victory condition, and never a victory without a ____.",
+      "a": "reward",
+      "type": "cloze"
+    },
+    {
+      "id": "L13-f39",
+      "q": "Rogers' four reward rules?",
+      "a": "Show early; reward soon, often, with variety and surprise; celebrate wins with fanfare; make rewards matter.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f40",
+      "q": "What's 'the best reward'?",
+      "a": "The one the player didn't know they needed until they got it.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f41",
+      "q": "List the 10 reward types.",
+      "a": "Scoring, achievements, treasure, loot, power-ups, souvenirs, bonus materials, praise, surprise, progression.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f42",
+      "q": "What revived scoring in the early 2000s?",
+      "a": "Browser games (Bejeweled, Feeding Frenzy) and online leaderboards (Xbox Live, PSN).",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f43",
+      "q": "Achievements are high scores with ____.",
+      "a": "personality",
+      "type": "cloze"
+    },
+    {
+      "id": "L13-f44",
+      "q": "Why publish achievement lists before release?",
+      "a": "They act as a to-do list and point players toward ideas they'd never try.",
+      "type": "why"
+    },
+    {
+      "id": "L13-f45",
+      "q": "Example escalating treasure denominations?",
+      "a": "1, 5, 10, 50, 100, without spreading them too far apart.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f46",
+      "q": "What's a 'virtual penny'?",
+      "a": "Treasure so low-value no one bothers picking it up.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f47",
+      "q": "Rogers' four rarity tiers?",
+      "a": "Common, uncommon, rare, unique.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f48",
+      "q": "Why offer a choice between two really good items?",
+      "a": "Delicious agony now, plus a reason to come back next time.",
+      "type": "why"
+    },
+    {
+      "id": "L13-f49",
+      "q": "If players should afford $300 of items, how much treasure goes in the level?",
+      "a": "At least $300.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f50",
+      "q": "What's the risk of regenerating treasure?",
+      "a": "Players can mine/farm levels and break the economy.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f51",
+      "q": "Why show all buyable items early (e.g., an ability tree)?",
+      "a": "Players can plan how to spend their money.",
+      "type": "why"
+    },
+    {
+      "id": "L13-f52",
+      "q": "Why not make treasure designs too diverse?",
+      "a": "Players may mistake treasure for power-ups.",
+      "type": "why"
+    },
+    {
+      "id": "L13-f53",
+      "q": "Encumbrance rule for shopping?",
+      "a": "Never make players shuttle cash from storage to the store; charge their account.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f54",
+      "q": "Name the ten shopkeeper categories.",
+      "a": "Offense, defense, repairs, replenishable resources, skills, access, vanity, whimsy, information, saves.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f55",
+      "q": "THE BEST REWARDS ARE ____.",
+      "a": "HARD WON",
+      "type": "cloze"
+    },
+    {
+      "id": "L13-f56",
+      "q": "Loot vs. bought items: which should be better?",
+      "a": "Found loot; save the best weapons, armor and guns for loot.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f57",
+      "q": "Two presentation rules for souvenirs?",
+      "a": "A tight camera/viewer to admire them and a label saying where they were found.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f58",
+      "q": "Why give souvenirs special properties (dragon boots vs rug)?",
+      "a": "Useful souvenirs carry more meaning, show off your feat, and make players chase the next encounter.",
+      "type": "why"
+    },
+    {
+      "id": "L13-f59",
+      "q": "When should bonus materials be designed and built?",
+      "a": "Designed early, built late, so you can judge what feels like a bonus.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f60",
+      "q": "When should cheats be enabled per Rogers?",
+      "a": "Only after the player has played through the game once.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f61",
+      "q": "What's the warning about praise?",
+      "a": "Praise loses meaning if given for nothing or trivial acts.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f62",
+      "q": "What's the point of the Pirate's Lair skeleton?",
+      "a": "A pure surprise-and-fun reward with no purpose but a laugh; games should include such moments.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f63",
+      "q": "Your match-3 sells boosters, but players say levels feel impossible without them. Which principle is at risk?",
+      "a": "Love thy player / no 'die three times' design: boosters should feel like help, not ransom.",
+      "type": "apply"
+    },
+    {
+      "id": "L13-f64",
+      "q": "Rewards in your RPG are random filler unrelated to the next challenge. What's the Rogers fix?",
+      "a": "Make rewards matter: solve the last problem and give an edge on the next.",
+      "type": "apply"
+    },
+    {
+      "id": "L13-f65",
+      "q": "Players farm one easy level for infinite coins and prices feel trivial. Which section applies?",
+      "a": "Regenerating treasure lets players mine levels: add caps or diminishing returns.",
+      "type": "apply"
+    },
+    {
+      "id": "L13-f66",
+      "q": "Your F2P shop sells the strongest weapons only for gems. Which Rogers rule conflicts?",
+      "a": "The best rewards are hard won: found/earned loot should beat bought items (avoid pay-to-win).",
+      "type": "apply"
+    },
+    {
+      "id": "L13-f67",
+      "q": "Your team finds the new event 'medium' but players quit at stage 3. What's likely happening?",
+      "a": "Designer blinders: test with fresh players and cut what's too hard or boring.",
+      "type": "apply"
+    },
+    {
+      "id": "L13-f68",
+      "q": "Players never notice your new hero. How could Half-Life's method help?",
+      "a": "Have characters mention it, show it held and used (showcase/trial) before players get it.",
+      "type": "apply"
+    },
+    {
+      "id": "L13-f69",
+      "q": "Your level-clear screen is a plain 'Complete' label. What would Rogers add?",
+      "a": "Massive fanfare: sounds, particles, character celebration, camera moves, praise layers.",
+      "type": "apply"
+    },
+    {
+      "id": "L13-f70",
+      "q": "Your coin trail leads players into a hidden spike pit for laughs. What principle does this violate?",
+      "a": "Use greed for good, not to lure players to their deaths.",
+      "type": "apply"
+    },
+    {
+      "id": "L13-f71",
+      "q": "Your gacha shows no odds and has no guarantee. Which F2P best practices are missing?",
+      "a": "Published odds (store requirement), a pity system, and duplicate value.",
+      "type": "apply"
+    },
+    {
+      "id": "L13-f72",
+      "q": "A boost silently expires and players feel robbed. Which design question was skipped?",
+      "a": "Expiry cues: what tells the player a temporary power-up is about to run out.",
+      "type": "apply"
+    },
+    {
+      "id": "L13-f73",
+      "q": "Why do power-ups need a clear visual identity (glow, strobe, rotate, bounce)?",
+      "a": "So they stand out in the world and players instantly recognize them, and aren't confused with treasure.",
+      "type": "why"
+    },
+    {
+      "id": "L13-f74",
+      "q": "Why does rubberbanding make racing games better?",
+      "a": "Racing alone on an empty track is no fun; keeping opponents close keeps the race tense.",
+      "type": "why"
+    },
+    {
+      "id": "L13-f75",
+      "q": "Why use greed 'for good' instead of luring players into traps?",
+      "a": "Trapping players just proves the designer is clever; using greed to motivate fights, collections and exploration keeps them playing.",
+      "type": "why"
+    },
+    {
+      "id": "L13-f76",
+      "q": "Why should trailers and similar bonus extras always be skippable?",
+      "a": "Forcing players to watch wastes their time and breeds resentment; optional extras feel like gifts.",
+      "type": "why"
+    },
+    {
+      "id": "L13-f77",
+      "q": "Your runner's jetpack lets players skip half the obstacles and break level pacing. What did the designers forget?",
+      "a": "To account for movement power-ups when designing player metrics and layouts.",
+      "type": "apply"
+    },
+    {
+      "id": "L13-f78",
+      "q": "Players ignore your 1-coin pickups because upgrades cost 50,000. Which rule applies?",
+      "a": "Avoid virtual pennies: keep denominations meaningful relative to prices.",
+      "type": "apply"
+    },
+    {
+      "id": "L13-f79",
+      "q": "Your shop shows the same 6 items forever and visits drop. What's Rogers' fix?",
+      "a": "Stock variety and rotate the selection (offer two great choices, some out of reach).",
+      "type": "apply"
+    },
+    {
+      "id": "L13-f80",
+      "q": "Players complain their streak broke because of a bad Wi-Fi day and they quit. What F2P fix echoes Rogers' 'love thy player'?",
+      "a": "Add streak protection or grace days (a defensive power-up for habits).",
+      "type": "apply"
+    },
+    {
+      "id": "L13-f81",
+      "q": "The designer should be the gentle ____ on the player's rear, pushing them ever upwards.",
+      "a": "hand",
+      "type": "cloze"
+    },
+    {
+      "id": "L13-f82",
+      "q": "Give the player a personal space to show off trophies; once the shelves fill, they'll want to ____.",
+      "a": "catch them all (collect the full set)",
+      "type": "cloze"
+    },
+    {
+      "id": "L13-f83",
+      "q": "Which Rogers-favorite achievement rewards doing nothing for 5 minutes, and in which game?",
+      "a": "\"You've wasted your life\" in Saw: an ironic, joke achievement for being idle.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f84",
+      "q": "What does the Team Fortress 2 \"Be polite\" achievement ask for?",
+      "a": "Tipping your hat so the freeze-cam shot the enemy sees after you kill them shows it (taunting politely).",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f85",
+      "q": "How does Brutal Legend's \"Six degrees of Schaefer\" work?",
+      "a": "You must play with or against anyone who has it, so the chain links back to creator Tim Schafer: a viral, social achievement.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f86",
+      "q": "How many praise layers does Zak & Wiki fire for a solved puzzle, and what are the first four for any correct action?",
+      "a": "Eight in total. Any correct action: success sting, funny hero reaction, hero particle effect, Wiki's text congrats with his own sting and particles. Puzzle adds a yellow star burst, a longer tune, a \"look at me\" item pose, and the item name.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f87",
+      "q": "How were God of War's Challenge of the Gods minigames cheap to build?",
+      "a": "Everything was already in the game code; they only gave players different victory conditions (re-contextualize your most fun gameplay).",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f88",
+      "q": "What does Rogers advise for alternate endings?",
+      "a": "Make sure players know other endings exist; match good and evil evenly; give ways to course-correct between outcomes; let the player choose the outcome, not the game.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f89",
+      "q": "Name four ways to upgrade a lazy art-viewer slideshow.",
+      "a": "Artist commentary or music, show environments/props/maps/design docs, player-controlled pacing, a magnifier, a hidden reward, or collect-the-pieces puzzle art with a payout.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f90",
+      "q": "Why should cheats stay locked until the player has finished the game once?",
+      "a": "Otherwise players cheat themselves out of the intended experience; some games reinforce this (no good ending, GTA brands you a cheater, TF2 hands non-cheaters the cheater's lament halo).",
+      "type": "why"
+    },
+    {
+      "id": "L13-f91",
+      "q": "What fanfare elements does Rogers suggest for a win?",
+      "a": "Fireworks, dramatic camera pans, the hero jumping for joy, cheering crowds, slot-machine sounds, and lots of particles and visual effects.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f92",
+      "q": "Why are model viewers especially good in RTS games?",
+      "a": "Characters are normally seen from a distant camera, so pan/rotate/zoom viewers let players admire the models up close.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f93",
+      "q": "In Rogers' arena example, what changes between a 10-minute fight and a 30-minute fight?",
+      "a": "Ten minutes is survivable with enough health and modest skill; at thirty, fatigue and attrition set in and the player probably loses: length is a difficulty dial.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f94",
+      "q": "Name four non-money treasures Rogers cites and the one requirement.",
+      "a": "Bolts (Ratchet & Clank), studs (Lego games), souls (God of War), bottle caps (Fallout). It must sparkle and make a satisfying cha-ching when collected.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f95",
+      "q": "Name three \"little moments\" Rogers cites besides the Pirate's Lair skeleton.",
+      "a": "Stan Lee's cameo in Marvel: Ultimate Alliance 2, Ape Escape monkeys in Metal Gear Solid 3's jungle, Braid's homage to Mario's World 1-1.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f96",
+      "q": "How does Fable stroke the player's ego?",
+      "a": "NPCs recoil in horror or compliment the hero depending on alignment, rewarding the time spent being good or evil.",
+      "type": "basic"
+    },
+    {
+      "id": "L13-f97",
+      "q": "Name three shop settings Rogers suggests instead of a generic store.",
+      "a": "Vending machines (Borderlands, BioShock), a garage for a racing game, a sporting goods shop for a sports game: the store adds character and theme.",
+      "type": "basic"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "L13-q01",
+      "q": "Which is NOT one of Rogers' four power-up categories?",
+      "options": [
+        "Economic",
+        "Defensive",
+        "Movement",
+        "Game changers"
+      ],
+      "answer": 0,
+      "why": "The four are defensive, offensive, movement and game changers. 'Economic' isn't one, though treasure modifiers fall under game changers."
+    },
+    {
+      "id": "L13-q02",
+      "q": "What distinguishes invincibility from invulnerability?",
+      "options": [
+        "Invincibility lasts longer",
+        "Invincibility also destroys most enemies on contact",
+        "Invulnerability works on bosses",
+        "There's no difference"
+      ],
+      "answer": 1,
+      "why": "Both stop enemy damage; invincibility adds contact kills (often not on bosses). Duration isn't the distinguishing factor."
+    },
+    {
+      "id": "L13-q03",
+      "q": "Pac-Man's power pellet is which kind of power-up?",
+      "options": [
+        "Defensive: invulnerability",
+        "Offensive: buff",
+        "Game changer: change state",
+        "Movement: speed change"
+      ],
+      "answer": 2,
+      "why": "It flips the dynamic so the hunted become the hunter: a change-state game changer."
+    },
+    {
+      "id": "L13-q04",
+      "q": "Subway Surfers' Coin Magnet maps to which Rogers power-up?",
+      "options": [
+        "Indirect attack",
+        "Score modifier",
+        "Companion",
+        "Magnetic (game changer)"
+      ],
+      "answer": 3,
+      "why": "Magnetic power-ups pull treasure toward you. The 2x multiplier would be the score modifier."
+    },
+    {
+      "id": "L13-q05",
+      "q": "Rogers' rule for power-ups that run away from the player?",
+      "options": [
+        "Never faster than the player, never immune to magnets",
+        "They should teleport randomly",
+        "Only bosses can drop them",
+        "They must expire in 3 seconds"
+      ],
+      "answer": 0,
+      "why": "Mobile power-ups are fine (Mario's mushrooms, MDK's cowardly power-up) as long as players get a fair chance to catch them."
+    },
+    {
+      "id": "L13-q06",
+      "q": "In Rogers' DDB example, a low-health player opens a chest. What happens?",
+      "options": [
+        "It's always a mimic",
+        "A health-up pops out instead of treasure",
+        "The chest stays locked",
+        "The player gets double treasure"
+      ],
+      "answer": 1,
+      "why": "DDB gives players what they need when they need it; healthy players get treasure instead."
+    },
+    {
+      "id": "L13-q07",
+      "q": "Why does Rogers advise against automatic difficulty reduction?",
+      "options": [
+        "It's hard to code",
+        "It breaks achievements",
+        "Many players find it insulting",
+        "It ruins the economy"
+      ],
+      "answer": 2,
+      "why": "Offer the choice and let players decline; automatic downgrades feel patronizing."
+    },
+    {
+      "id": "L13-q08",
+      "q": "Your live team thinks a new event is 'medium', but analytics show most players quitting at stage 3. What's the most likely cause?",
+      "options": [
+        "Too much fanfare",
+        "Not enough currency",
+        "Rubberbanding",
+        "Designer blinders"
+      ],
+      "answer": 3,
+      "why": "Designers who play constantly need much harder content to feel challenged. Test with fresh players and cut the boring/hard parts."
+    },
+    {
+      "id": "L13-q09",
+      "q": "A creative director says 'players must die three times here.' Rogers' stance?",
+      "options": [
+        "Player death should never be a design yardstick",
+        "Fine if checkpoints are close",
+        "Fine on Hard mode only",
+        "Fine if death drops treasure"
+      ],
+      "answer": 0,
+      "why": "Rogers refused. 'Rewarding' players with death is negative reinforcement."
+    },
+    {
+      "id": "L13-q10",
+      "q": "What's the order of Half-Life's item introduction?",
+      "options": [
+        "Use → see → hear → own",
+        "Hear about it → see it held → see it used → get and use it",
+        "See it in a shop → buy → use",
+        "Find it → read the tutorial → use it"
+      ],
+      "answer": 1,
+      "why": "Building knowledge and desire before handing it over: hear, see, watch, wield."
+    },
+    {
+      "id": "L13-q11",
+      "q": "Which is one of Rogers' reward rules?",
+      "options": [
+        "Hide all rewards until the end",
+        "Keep fanfare minimal to stay classy",
+        "Reward as soon as possible, often, with variety and surprise",
+        "Only reward boss kills"
+      ],
+      "answer": 2,
+      "why": "He says show rewards early, reward soon and often with surprise, and there's no such thing as too much fanfare."
+    },
+    {
+      "id": "L13-q12",
+      "q": "Which is NOT in Rogers' list of 10 reward types?",
+      "options": [
+        "Souvenirs",
+        "Praise",
+        "Progression",
+        "Subscriptions"
+      ],
+      "answer": 3,
+      "why": "The ten: scoring, achievements, treasure, loot, power-ups, souvenirs, bonus materials, praise, surprise, progression."
+    },
+    {
+      "id": "L13-q13",
+      "q": "What does Rogers warn about treasure denominations?",
+      "options": [
+        "Don't spread values too far apart; avoid 'virtual pennies'",
+        "Use only one coin value",
+        "Values should be random",
+        "Always use real-world currency names"
+      ],
+      "answer": 0,
+      "why": "Escalate (1, 5, 10, 50, 100) but keep values close enough that small treasure is still worth grabbing."
+    },
+    {
+      "id": "L13-q14",
+      "q": "Your designer wants players to afford 300 coins of upgrades in a level. Following Rogers, how much treasure should the level contain?",
+      "options": [
+        "100, so players replay",
+        "At least 300",
+        "Exactly 150 plus a paywall",
+        "It doesn't matter"
+      ],
+      "answer": 1,
+      "why": "Supply must match intended demand. A shortage can encourage replay, but that's a deliberate choice, not the baseline."
+    },
+    {
+      "id": "L13-q15",
+      "q": "Regenerating treasure's main risk?",
+      "options": [
+        "Players get bored",
+        "Treasure looks like power-ups",
+        "Players can mine levels and break the economy",
+        "It needs encumbrance"
+      ],
+      "answer": 2,
+      "why": "Farmable sources inflate the economy. Without regeneration, though, replays lack motivation: a trade-off to decide."
+    },
+    {
+      "id": "L13-q16",
+      "q": "According to Rogers, how should found loot compare to store items?",
+      "options": [
+        "Store items should be better",
+        "They should be identical",
+        "Loot should be cosmetic only",
+        "Found loot should be better: the best rewards are hard won"
+      ],
+      "answer": 3,
+      "why": "Save the best gear for puzzles, hazards and bosses. In F2P terms: keep top power earnable (avoid pay-to-win)."
+    },
+    {
+      "id": "L13-q17",
+      "q": "In Rogers' shopkeeper list, F2P 'continues' (+5 moves) belong to which category?",
+      "options": [
+        "Saves",
+        "Access",
+        "Information",
+        "Whimsy"
+      ],
+      "answer": 0,
+      "why": "Charging to keep playing is the 'saves' aisle, which Rogers joked only a cruel designer would sell. F2P made it a top seller, so use it ethically."
+    },
+    {
+      "id": "L13-q18",
+      "q": "Why should souvenirs often be useful items rather than shelf decorations?",
+      "options": [
+        "Shelves are expensive to build",
+        "Usefulness gives them meaning, shows off your feat, and drives players to the next encounter",
+        "Players can't see shelves",
+        "It saves memory"
+      ],
+      "answer": 1,
+      "why": "Dragon-skin boots with fire resistance beat a dragon-skin rug: function plus bragging rights."
+    },
+    {
+      "id": "L13-q19",
+      "q": "When does Rogers say bonus materials should be built?",
+      "options": [
+        "First, before the main game",
+        "Never; they're filler",
+        "Designed early, built near the end",
+        "Only after launch"
+      ],
+      "answer": 2,
+      "why": "Designing early avoids last-minute junk; building late lets you judge what counts as a bonus compared with the rest of the game."
+    },
+    {
+      "id": "L13-q20",
+      "q": "Zak & Wiki is Rogers' gold standard for what?",
+      "options": [
+        "Economy design",
+        "Rubberbanding",
+        "Achievement names",
+        "Praising the player"
+      ],
+      "answer": 3,
+      "why": "Eight layers of animation, VFX, music and text for one solved puzzle, though praise for trivial acts loses meaning."
+    },
+    {
+      "id": "L13-q21",
+      "q": "A daily login reward is which reward schedule?",
+      "options": [
+        "Fixed interval",
+        "Variable ratio",
+        "Fixed ratio",
+        "Variable interval"
+      ],
+      "answer": 0,
+      "why": "It's tied to a fixed amount of time. Gacha pulls are variable ratio; 'a chest every 10 levels' is fixed ratio."
+    },
+    {
+      "id": "L13-q22",
+      "q": "Which F2P practice is on the manipulation side of the ethics line?",
+      "options": [
+        "Showing the full battle pass track on day 1",
+        "Gifting free boosters after a loss streak",
+        "Tuning levels so most players fail by one move right before a paid continue",
+        "Publishing gacha odds with a pity cap"
+      ],
+      "answer": 2,
+      "why": "The others are transparent or helpful. Engineered near-misses are a rock on the head with a price tag."
+    }
+  ],
+  "sideQuests": [
+    {
+      "id": "L13-s01",
+      "title": "Booster spec sheet",
+      "task": "Write Rogers' 7-question power-up spec, plus acquisition and price/sink role, for a new match-3 booster.",
+      "minutes": 10,
+      "xp": 40
+    },
+    {
+      "id": "L13-s02",
+      "title": "D-O-M-G sort",
+      "task": "List 12 power-ups or boosters from mobile games you play and sort them into Defensive, Offensive, Movement and Game changer.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L13-s03",
+      "title": "Fanfare audit",
+      "task": "Beat one level in a mobile game and count the praise layers (sound, animation, VFX, text, voice). Compare to Zak & Wiki's 8.",
+      "minutes": 5,
+      "xp": 20
+    },
+    {
+      "id": "L13-s04",
+      "title": "Shop aisles",
+      "task": "Map every item in one F2P shop to Rogers' ten shopkeeper categories. Which aisles are missing, and why?",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L13-s05",
+      "title": "Achievement writer",
+      "task": "Write 8 clever, funny achievements for a merge or farming game, each nudging players toward a mechanic they might not try.",
+      "minutes": 10,
+      "xp": 40
+    },
+    {
+      "id": "L13-s06",
+      "title": "Robot chicken hunt",
+      "task": "Find the most 'me too' cosmetic in a multiplayer mobile game and write 3 reasons people want it.",
+      "minutes": 5,
+      "xp": 20
+    },
+    {
+      "id": "L13-s07",
+      "title": "Ethics flip",
+      "task": "Take three reward features from a game you play and write a 'delight' version and a 'manipulation' version of each.",
+      "minutes": 15,
+      "xp": 50
+    }
+  ],
+  "mainQuests": [
+    {
+      "id": "L13-m01",
+      "title": "Mini F2P economy + reward plan",
+      "task": "For a hypothetical match-3 or merge game, define soft and hard currency (names, icons, denominations); build a sources & sinks spreadsheet with day 1/7/30 balances; design a 7-day login calendar, a fixed-ratio level-chest schedule, one variable reward with odds and a pity rule, and a 30-tier free+premium season pass; spec 3 pre-level and 3 in-level boosters with free supply rates; finish with an ethics review against the delight vs manipulation table.",
+      "deliverable": "A spreadsheet plus a one-page summary.",
+      "doneWhen": "Day-30 balances show neither runaway inflation nor starvation, every booster has a free source, every random reward has published odds and a pity cap, each element cites the Rogers rule it follows, and you've posted the summary publicly asking a F2P designer for one critique.",
+      "minutes": 120,
+      "xp": 280
+    },
+    {
+      "id": "L13-m02",
+      "title": "Reward-loop teardown",
+      "task": "Pick one F2P game and document every reward a player gets in their first 3 days: what, when, which of Rogers' 10 reward types, which schedule (fixed/variable ratio/interval), and how much fanfare. Flag anything that crosses the ethics line.",
+      "deliverable": "A timeline table plus a 5-sentence verdict.",
+      "doneWhen": "At least 20 rewards are logged with type, schedule and fanfare rating, and the verdict names the game's strongest and weakest reward practice.",
+      "minutes": 75,
+      "xp": 180
+    }
+  ],
+  "playLabs": [
+    {
+      "id": "L13-p01",
+      "game": "Royal Match or Candy Crush Saga",
+      "minutes": 10,
+      "lookFor": "Every way boosters arrive (earned, gifted, bought) and how pre-level boosters are offered.",
+      "question": "Do boosters read as help or ransom? Where's the free supply?"
+    },
+    {
+      "id": "L13-p02",
+      "game": "Brawl Stars or Clash Royale",
+      "minutes": 10,
+      "lookFor": "Pass track visibility, daily shop rotation, rarity tiers, cosmetics other players can see.",
+      "question": "Which Rogers reward rules (show early, reward often, two great choices, 'me too') can you spot?"
+    },
+    {
+      "id": "L13-p03",
+      "game": "Monopoly GO! or Coin Master",
+      "minutes": 10,
+      "lookFor": "The collection album, set rewards, duplicate handling and trading.",
+      "question": "How does it turn Rogers' trophy shelf into a retention loop, and where's the variable-ratio reward?"
+    },
+    {
+      "id": "L13-p04",
+      "game": "Genshin Impact or Honkai: Star Rail",
+      "minutes": 10,
+      "lookFor": "The banner page, trial characters, odds disclosure and pity info (no spending needed).",
+      "question": "Map the banner to Half-Life's hear → see → watch → wield funnel. Is the pity system clear?"
+    }
+  ],
+  "retrieval": [
+    {
+      "q": "Name the four power-up categories with two examples each.",
+      "a": "Defensive (health-up, shield), offensive (spread gun, element damage), movement (speed boost, size change), game changers (score multiplier, power pellet)."
+    },
+    {
+      "q": "List five power-up design questions.",
+      "a": "What it does; how it looks/stands out; stacking and retrieval; effect on movement/attacks/health; how effects are communicated; trade-off; expiry cues."
+    },
+    {
+      "q": "Four power-up pickup methods?",
+      "a": "Walk over, actively grab, auto-attract within a radius, proximity activation."
+    },
+    {
+      "q": "Rules for mobile, conditional and anti-power-ups?",
+      "a": "Mobile: catchable, magnet-able. Conditional: clear conditions. Anti: fun once or twice, use sparingly."
+    },
+    {
+      "q": "Explain DDB with Rogers' chest example.",
+      "a": "Adjust challenge and rewards to performance: a low-health player gets a health-up from a chest, a healthy one gets treasure; struggling players face slightly weaker enemies."
+    },
+    {
+      "q": "What are designer blinders and the interim fix?",
+      "a": "Designers become too skilled to judge difficulty; consolidate, kill boring parts, cut elements (full fix in Level 17)."
+    },
+    {
+      "q": "Lessons from 'die three times' and the mimic chest?",
+      "a": "Never use death as a yardstick; don't build tricks that are fun for designers but make players dread rewards. Give clues and keep players playing."
+    },
+    {
+      "q": "Rogers' four reward rules?",
+      "a": "Show early; reward soon, often, with surprise; celebrate wins with fanfare; make rewards matter."
+    },
+    {
+      "q": "The 10 reward types?",
+      "a": "Scoring, achievements, treasure, loot, power-ups, souvenirs, bonus materials, praise, surprise, progression."
+    },
+    {
+      "q": "Five economy rules?",
+      "a": "Escalating denominations without pennies; plenty to buy with two great choices; rotate stock; rarity tiers and price planning with quick buys and out-of-reach items; enough treasure to afford items; decide regeneration; readable value; no storage-to-shop shuttling."
+    },
+    {
+      "q": "The ten shopkeeper categories?",
+      "a": "Offense, defense, repairs, replenishable resources, skills, access, vanity, whimsy, information, saves."
+    },
+    {
+      "q": "Loot vs bought items rule?",
+      "a": "Found loot should be better: the best rewards are hard won."
+    },
+    {
+      "q": "How should souvenirs be presented and made useful?",
+      "a": "A special display with a close-up viewer and a where-found label; give some special properties (Lich King's sword, Mega Man's powers, dragon boots)."
+    },
+    {
+      "q": "Zak & Wiki's praise layers and the warning?",
+      "a": "Sting, pose, particles, sidekick congrats; gold screen, longer tune, show-off animation, item name. Praise for trivial acts loses meaning."
+    },
+    {
+      "q": "Fixed vs variable ratio rewards in F2P?",
+      "a": "Fixed ratio: every N actions, predictable, builds trust. Variable ratio: unpredictable (gacha), exciting and compulsive, needs ethical care (odds, pity)."
+    }
+  ],
+  "feynman": "Explain to a producer in 60 seconds why 'the best rewards are hard won' and 'never underestimate the greed of the player' should shape a F2P economy, and where using greed crosses from delight into manipulation.",
+  "links": [
+    "L04",
+    "L08",
+    "L11",
+    "L12",
+    "L14",
+    "L17",
+    "F2P"
+  ]
+}

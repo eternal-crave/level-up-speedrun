@@ -1,0 +1,1937 @@
+{
+  "id": "L11",
+  "order": 12,
+  "kind": "book",
+  "label": "Level 11",
+  "title": "They All Want You Dead — Enemies & Bosses",
+  "bookPages": "281–329",
+  "emoji": "👹",
+  "tagline": "Ten enemy archetypes, one boss dance, and why the player always swings last.",
+  "f2pRelevance": 4,
+  "f2pWhy": "Enemy rosters power survivor-likes, tower defense, RPGs and PvP card games, blockers are the enemies of puzzle games, and boss levels/events are LiveOps and monetization hot spots.",
+  "minutes": 75,
+  "tldr": [
+    "Form follows function: define size, behavior, speed, movement, attacks, aggression and health before drawing the monster.",
+    "Mix complementary behaviors (patroller, chaser, shooter, guard, flyer, bomber, burrower, teleporter, blocker, doppelganger) so players must do threat analysis.",
+    "Fighting enemies must be fun and enemies should be fought, not avoided: give reasons to fight, telegraph every attack, and use non-damaging grief tools.",
+    "Make the player hate the enemy through gameplay-impacting villainy, keep villains recurring, and don't baby the player.",
+    "Build bosses from patterns: primary attack, invulnerable attack, vulnerable state, opportunities, escalating like a dance; mind the camera and the arena.",
+    "Let the player land the killing blow, respawn fairly, and remember drama beats scale."
+  ],
+  "sections": [
+    {
+      "title": "Form Follows Function",
+      "bites": [
+        {
+          "id": "L11-b01",
+          "hook": "Stop drawing that winged skeleton. What does it DO?",
+          "body": "Rogers' golden rule of enemy design is **form follows function**. Decide how an enemy behaves and attacks before anyone designs its look, because the programmer's code, the animator's rig and the artist's textures all depend on that decision. Redoing enemies over and over kills team morale and burns money.",
+          "example": "Rogers' cartoon: a designer happily sketching a winged skeleton with a lightning sword without knowing how it attacks. Pencil down.",
+          "f2p": "Write the enemy's row in the balance sheet (HP, speed, targeting, trait) before concept art. In Clash Royale every card's look announces its job.",
+          "memory": "Claws come last.",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b02",
+          "hook": "The seven dials every enemy has",
+          "body": "Define seven **enemy attributes**: size, behavior, speed, movement, attacks, aggression and health. Aggression is technically part of behavior, but combat is often its own system, so it gets its own line. Together with the level's theme, these tell you who your enemies are, how they look and how well they work together.",
+          "example": "A slow, huge, low-aggression guard with high health plays nothing like a tiny, quick, berserk chaser, even with identical art.",
+          "f2p": "Tower-defense and survivor-like enemies are literally these dials in a spreadsheet.",
+          "memory": "Seven dials: Size, Behavior, Speed, Movement, Attacks, Aggression, Health.",
+          "tag": "list"
+        },
+        {
+          "id": "L11-b03",
+          "hook": "Man vs zombie is still man vs man",
+          "body": "Rogers links enemies to Level 3's story conflicts: man vs nature, man vs self, and man vs man. In games the third becomes man vs zombie, ninja pirate or horrible alien. This chapter is about that living opposition; non-living pressure like time or other humans comes later as non-enemy enemies.",
+          "example": "A hurricane is man vs nature; a sword-swinging orc is man vs man (orc edition).",
+          "f2p": "",
+          "memory": "",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Size",
+      "bites": [
+        {
+          "id": "L11-b04",
+          "hook": "Five sizes of trouble: short to gigantic",
+          "body": "**Short** enemies reach the hero's waist, **average** ones match the hero, **large** ones are several heads taller, **huge** ones are at least twice the hero's size, and **gigantic** ones can only be fully seen from far away. Artists measure in heads: an average 6-foot person is about 7 heads tall, a heroic figure about 8.5.",
+          "example": "The book's line-up: a tiny critter, a human-size grunt, a horned brute and a towering club-wielding ogre.",
+          "f2p": "Survivor-likes use size as an instant HP readout: fodder small, elites bigger, bosses biggest.",
+          "memory": "Some Angry Llamas Hate Giraffes: Short, Average, Large, Huge, Gigantic.",
+          "tag": "list"
+        },
+        {
+          "id": "L11-b05",
+          "hook": "Fight your way UP the enemy",
+          "body": "Size decides how an enemy is fought. Short enemies need crouching or low attacks like sweeps and spins. Average ones take low and medium attacks; huge ones need low, medium and high, and a vulnerable head may need a jump attack. Bigger enemies also get more health and shrug off knockback that would send a small one flying.",
+          "example": "Hit a short enemy with knockback and it flies; a large one may not budge; a gigantic one barely notices.",
+          "f2p": "Tank enemies in tower defense soak tower fire precisely because they're big and slow.",
+          "memory": "Hit a gnome, he flies. Hit a giant, he yawns.",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b06",
+          "hook": "Kick a giant: hero. Kick a gnome: bully.",
+          "body": "Size changes emotions. Beating a huge enemy makes players feel heroic; beating tiny ones can make them feel like a bully. Mixing sizes also provides variety, which is what keeps players from getting bored.",
+          "example": "Rogers' cartoon shows a giant complaining that the tiny hero kicking his shin is a bully.",
+          "f2p": "In casual games, keep the player the underdog in the fiction, like small birds against fortified pigs in Angry Birds.",
+          "memory": "",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "Behavior Archetypes",
+      "bites": [
+        {
+          "id": "L11-b07",
+          "hook": "Three questions build a robust enemy",
+          "body": "Ask: how does my enemy move, what does it do in combat, and what does it do when hurt? Answer these and you have a solid foundation. The goal is to avoid repeating behaviors across your roster and, better, to design behaviors that complement each other.",
+          "example": "A hurt enemy that flees to heal plays very differently from one that becomes enraged.",
+          "f2p": "",
+          "memory": "Move, Fight, Hurt.",
+          "tag": "list"
+        },
+        {
+          "id": "L11-b08",
+          "hook": "Patrollers pace, chasers chase",
+          "body": "A **patroller** moves back and forth or up and down mechanically; even on a complex path it's always predictable. A **chaser** pursues the player when approached or when a condition is met. Patrollers often switch into chasers when they spot the player or get attacked.",
+          "example": "Gumdrop enemy walking a line, then sprinting after the hero once it notices him.",
+          "f2p": "Survivor-like hordes are pure chasers; Clash Royale's Hog Rider is a building chaser.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L11-b09",
+          "hook": "Shooters keep distance, guards keep posts",
+          "body": "A **shooter** fires projectiles and tries to keep distance instead of engaging up close; shooting patrollers and chasers fire once they spot you. A **guard** prioritizes protecting an item or place, like a doorway, over chasing you, and can switch to chasing or shooting if you steal the item or slip past.",
+          "example": "Book drawings: a bandana-wearing blob with a pistol, and a blob standing beside a treasure chest.",
+          "f2p": "In match-3, a lock or cage on a tile is a guard; ranged mobs in Archero-style games are shooters.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L11-b10",
+          "hook": "Flyers and bombers own the sky",
+          "body": "A **flyer** is an aerial patroller, but flight adds a dimension, so it's its own class: it swoops in or shoots from safety, and players usually stop to aim or jump-attack it. A **bomber** is a flyer attacking from above, common in 2D because 3D cameras struggle to show threats overhead.",
+          "example": "A propeller-beanie blob hovering, then dropping a bomb on the panicking hero.",
+          "f2p": "Clash Royale's Minions are flyers; its Balloon flies over and drops bombs on buildings, a textbook bomber.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L11-b11",
+          "hook": "Burrowers hide; teleporters blink",
+          "body": "A **burrower** has an invulnerable state, usually underground, that lets it reposition for an attack; you must wait for it to surface. A **teleporter** relocates instantly, leaving no window to hit it mid-move, so the player must strike fast and needs a disruption tool like a stun.",
+          "example": "A blob erupting from the dirt next to the hero; another sparkling out and back in elsewhere.",
+          "f2p": "Clash Royale's Miner tunnels underground and pops up anywhere, a burrower in card form.",
+          "memory": "Burrower: wait for it. Teleporter: stun it.",
+          "tag": "concept"
+        },
+        {
+          "id": "L11-b12",
+          "hook": "Blockers and doppelgangers force creative play",
+          "body": "A **blocker** defends with a shield: hit it from another angle or height, disarm it with a specific move, break the shield, or wait out its invulnerability. A **doppelganger** looks like the player and mimics their moves and AI, forcing players to use their own abilities in unusual ways to beat themselves.",
+          "example": "A bullet bouncing off a blob's shield; a blob copying the hero's hands-on-hips pose.",
+          "f2p": "Plants vs. Zombies' conehead and buckethead zombies are blockers; match-3 multi-layer crates are blockers with health.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L11-b13",
+          "hook": "Ten archetypes in one silly sentence",
+          "body": "The ten behavior types: patroller, chaser, shooter, guard, flyer, bomber, burrower, teleporter, blocker, doppelganger. Rogers draws most of them as the same gumdrop blob with different props, which is itself a lesson: one base model can carry many behaviors.",
+          "example": "Bandana and pistol = shooter. Propeller beanie = flyer. Shield = blocker.",
+          "f2p": "",
+          "memory": "Pirates Can Shoot Guards; Flying Bombers Burrow Through Blocky Doors.",
+          "tag": "list"
+        },
+        {
+          "id": "L11-b14",
+          "hook": "Threat analysis: who do I kill first?",
+          "body": "Enemies should live harmoniously, creating combat puzzles. Mixed behaviors make players perform **threat analysis**: which enemy is the bigger danger, kill it first, and defend against the rest meanwhile. That decision is the gameplay.",
+          "example": "Four book combos: blocker + shooter behind it; big chaser + small flyers; teleporter + chaser; guard + bomber.",
+          "f2p": "Tower-defense waves that pair tanks with fast runners force the same priority call.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b15",
+          "hook": "Puzzle games have enemies too: blockers",
+          "body": "In match-3, the opposition is the board. Blockers map onto Rogers' archetypes: a spreading blocker undoes progress like a gremlin or chaser, a multi-layer crate is a blocker with health, a lock guards a tile, and a countdown bomb is a timer enemy.",
+          "example": "Candy Crush's chocolate spreads if you don't clear some each move; countdown bombs must be cleared before they hit zero.",
+          "f2p": "Design blockers with the same behavior table you'd use for monsters, then combine them into board puzzles.",
+          "memory": "",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "Speed & the Three Ss",
+      "bites": [
+        {
+          "id": "L11-b16",
+          "hook": "Five speeds from turret to blur",
+          "body": "Use five speeds: **non-mobile, slow, medium, fast, quick**. Speed and movement make enemies more dangerous, harder to target and scarier. The line between hazard and enemy is mobility plus AI, but a non-mobile enemy can still move parts and act alive, because movement equals character.",
+          "example": "A giant immobile tentacle creature still reads as an enemy; a wall-mounted laser-sighted machine gun has AI but no legs.",
+          "f2p": "Tower-defense towers are non-mobile from the enemy's view; turrets in survivor-likes work the same way.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L11-b17",
+          "hook": "Small and speedy, big and beefy, never both",
+          "body": "The **Three Ss**, speed, size and strength, are inversely proportional. Small enemies are fast but weak, big ones strong but slow. Medium enemies can be strong or fast, but giving them both feels cheap. Overpowered or too-perfect enemies feel like fighting a computer instead of a creature.",
+          "example": "A medium soldier who hits like a tank and runs like a sprinter: unfair, and players feel it.",
+          "f2p": "In Clash Royale, a card that's cheap, fast and tanky at once is the balance patch waiting to happen.",
+          "memory": "Small and speedy, big and beefy, never both or it's cheesy.",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b18",
+          "hook": "Slow enemies win by numbers and inevitability",
+          "body": "One slow zombie isn't scary; a dozen are. Slow enemies often hit hard, or pair slow movement with a fast attack, and may brace against or swat aside attacks. Slow movement makes a villain feel powerful: its unstoppable advance makes players panic and blunder.",
+          "example": "Resident Evil's Tyrant, Nemesis and Dr. Salvador stalk slowly and terrify.",
+          "f2p": "Survivor-likes are built on slow-but-many hordes.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L11-b19",
+          "hook": "Medium chasers should be a step slower than you",
+          "body": "Medium enemies match the player's speed: a bit predictable but useful. Rogers makes them run slightly slower than the player when chasing, so players can retreat at full run, turn and face them in time to attack or defend. Tweak values until it feels right and fair.",
+          "example": "A chasing soldier who never quite catches a retreating hero, letting the player reset the fight.",
+          "f2p": "Top-down mobile version: the player's move or dodge speed should beat common enemies' chase speed so kiting is possible.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b20",
+          "hook": "Fast enemies dart; quick enemies burst",
+          "body": "**Fast** enemies dart in, strike and retreat, or circle and leap in for combos; great for horror and action, but don't let them attack nonstop, and give them erratic movement. Smaller means quicker. **Quick** enemies move in blinding bursts; balance them by limiting their attacks and playing a warning animation first.",
+          "example": "A warning crouch before a quick lunge lets players dodge, block or strike first.",
+          "f2p": "On touchscreens, quick enemies need big, bright telegraphs because thumb input is less precise.",
+          "memory": "",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Movement Style",
+      "bites": [
+        {
+          "id": "L11-b21",
+          "hook": "How it moves is who it is",
+          "body": "Ask: does it charge, zigzag, beeline then retreat, hop cover to cover, crawl on walls to ambush, or flee and never fight? Movement style determines attacks and personality. Aim between too random, which feels arbitrary, and too predictable, which feels game-y.",
+          "example": "A wall-crawler that drops from the ceiling has a totally different personality from a cover-hopper.",
+          "f2p": "",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L11-b22",
+          "hook": "Players LIKE learning patterns",
+          "body": "For Crash Bandicoot 2, Naughty Dog tried more behavioral AI with fewer simple patterns, and focus groups rated it worse: players enjoyed figuring out patterns. The exception is sports games, where predictable patterns become holes to exploit and ruin the experience.",
+          "example": "Crash Bandicoot 2 focus groups vs sports games.",
+          "f2p": "Gacha RPG bosses (Genshin Impact, Honkai: Star Rail) are learnable sequences players study in guides; PvP gets its unpredictability from humans.",
+          "memory": "Patterns are puzzles, not flaws.",
+          "tag": "example"
+        },
+        {
+          "id": "L11-b23",
+          "hook": "Steal movement from wolves, crabs and bugs",
+          "body": "Nature offers movement styles: humans move in straight lines, predators like wolves and tigers circle in looping arcs, crabs scuttle sideways, birds swoop on updrafts, insects zigzag as they course-correct. Groups can use flocking for realistic motion.",
+          "example": "The book diagram: a straight arrow, a zigzag and a looping arc.",
+          "f2p": "Survivor-likes use simple flocking so hundreds of enemies don't stack into one blob.",
+          "memory": "Crab sideways, wolf in circles, bug in zigzags.",
+          "tag": "list"
+        },
+        {
+          "id": "L11-b24",
+          "hook": "Kung-fu henchmen politely take turns",
+          "body": "In Bruce Lee movies, dozens of fighters surround the hero but attack one or two at a time. In games this creates the illusion of a huge group without overtaxing the game's performance or the player's ability to cope.",
+          "example": "Bruce Lee fight scenes: everyone waits their turn.",
+          "f2p": "Survivor-likes break this with weak swarms, then reapply it for elites and bosses; it also saves frame rate on low-end phones.",
+          "memory": "Henchmen queue like a deli counter.",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "Pathing AI & Waypoints",
+      "bites": [
+        {
+          "id": "L11-b25",
+          "hook": "Five questions to ask your AI programmer",
+          "body": "How **mobile** is it (speeds, sliding stops, leaping, doors)? How **aggressive** (berserker, cold killer, coward with self-preservation)? How much of a **team player** (alarms, pinning, flushing, grappling, partners like guard dogs or drones)? How **defensive** (cover, stealth, shields)? How **versatile** (picks up weapons or health, drives vehicles, mans turrets, replaces fallen allies, flies)?",
+          "example": "An enemy that raises the alarm and pins you down while a partner flanks feels like a real squad.",
+          "f2p": "Auto-battler roles (tank, healer, assassin) answer the same team-player and defensive questions.",
+          "memory": "My Angry Troops Defend Valiantly: Mobile, Aggressive, Team, Defensive, Versatile.",
+          "tag": "list"
+        },
+        {
+          "id": "L11-b26",
+          "hook": "Waypoints: invisible roads for monsters",
+          "body": "Most AI moves on a **waypoint navigation system**: the designer lays out a grid or path network, marks go and no-go areas, and the programmer chooses movements and animations. Enemies either follow preplanned paths or wander inside an invisible box or sphere. This allows choreographed events but takes time to place and doesn't cover every need.",
+          "example": "An enemy timed to crash through a wall exactly as the player arrives.",
+          "f2p": "Tower defense is pure waypoint design: the lane path is the level.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L11-b27",
+          "hook": "Corner-cutting enemies? Pull your waypoints in",
+          "body": "Waypoint-guided enemies usually take the shortest path to the player, so they clip corners and objects. Fix it by pulling waypoints in a bit at corners and near objects to compensate.",
+          "example": "A goblin sliding through a crate's corner because its path hugs the edge.",
+          "f2p": "",
+          "memory": "",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Bring on the Bad Guys",
+      "bites": [
+        {
+          "id": "L11-b28",
+          "hook": "Same skeleton, ten times the drama",
+          "body": "A skeleton just standing in a graveyard is dull. Make the tombstone shake, zoom the camera, shake the screen, rumble the controller, whip-pan to a hand punching out of the earth, and burst the skeleton out with glowing eyes. **Enemy introductions** tell players they've met something new, exciting and dangerous.",
+          "example": "Rogers' graveyard rewrite: boring standing skeleton vs one exploding from its grave.",
+          "f2p": "A first-encounter card with art and name gives mobile players the same 'new threat' beat in two seconds.",
+          "memory": "Entrances are trailers.",
+          "tag": "example"
+        },
+        {
+          "id": "L11-b29",
+          "hook": "Four ways to give a monster an entrance",
+          "body": "Freeze or zoom the camera so players get a good look. Show the enemy's name on screen. Foreshadow it before the real meeting to build suspense. Stage a dramatic entrance: smash through windows, kick down doors, explode into the world with effects.",
+          "example": "Resident Evil 2's licker dashing past a window before you meet it; Devil May Cry's spectacular enemy entrances.",
+          "f2p": "Level-preview screens that show which enemy types are coming (like Plants vs. Zombies') are foreshadowing.",
+          "memory": "Look, Name, Tease, Boom.",
+          "tag": "list"
+        },
+        {
+          "id": "L11-b30",
+          "hook": "Don't let players farm enemies mid-spawn",
+          "body": "Spawning matters as much as removal. Prevent players from killing enemies before they arrive: make them invulnerable while spawning, spawn them off-screen, or create a hazard or mechanic that delivers them safely.",
+          "example": "Maximo: Ghosts to Glory's coffins burst from the ground; touching one knocks you back, and smashing it frees an unharmed enemy straight into its attack.",
+          "f2p": "Survivor-likes spawn enemies just past the screen edge so nothing pops in on top of the player.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b31",
+          "hook": "Fighting enemies is supposed to be FUN",
+          "body": "In an action game you'll fight a lot of enemies, so make every fight awesome: explosive effects, funny or dramatic hit reactions, cool or gory kills, and plenty of feedback and rewards. Decide how enemies die (puff of smoke, soap-bubble pop, dramatic death, explosion), how bodies leave, and how treasure is delivered.",
+          "example": "Fade leaving weapon pickups, dissolve into goo, or leave bodies as a gory reminder; the choice affects your age rating.",
+          "f2p": "Coin sprays, XP gems and quick pops are core-loop juice; fast fades keep small screens readable and frame rates high.",
+          "memory": "Deaths are confetti.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Fought, Not Avoided",
+      "bites": [
+        {
+          "id": "L11-b32",
+          "hook": "Why the kamikaze enemy always disappoints",
+          "body": "Sees you, charges like a maniac, explodes. Sounds thrilling, but 3rd-person cameras show the hero's back and 1st-person cameras show only the front, so players never see it coming. Mini-map callouts or grenade-detector HUDs help, yet it still isn't good design: its only counter is running away.",
+          "example": "Call of Duty: Modern Warfare 2 used a grenade-detector HUD element; the exploder still tends to catch you.",
+          "f2p": "Top-down mobile cameras make kamikazes visible (Clash of Clans' Wall Breakers), but the rule stands.",
+          "memory": "Some days you can't get rid of a bomb.",
+          "tag": "warning"
+        },
+        {
+          "id": "L11-b33",
+          "hook": "Enemies should be fought, not avoided",
+          "body": "Dodging a whirling attack is fine. The bad kind of avoidance is when players skip an enemy because it's too hard, too cheap or too much hassle. Your job is to make players WANT to fight by showing the advantages of risking life and limb.",
+          "example": "An enemy that drops nothing and takes ages to kill: everyone just runs past it.",
+          "f2p": "If analytics show players skipping a mode or quitting at an enemy, fix fairness or rewards first.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b34",
+          "hook": "Six reasons to pick a fight",
+          "body": "They have the **loot** (gold, XP, health). They **block the path**, like a battle arena. They have the **key** to the next area. You can **take their power**, like their bigger gun. They're **taunting** you. And fighting makes you **feel like a badass**, which needs a solid combat system.",
+          "example": "Upgrade your +1 mace to +2 by beating the orc carrying it; Street Fighter taunts risk your guard to mock the opponent.",
+          "f2p": "Loot is F2P's main reason to fight: bosses dropping hero shards or upgrade materials get farmed willingly.",
+          "memory": "Lazy Pigs Keep Pinching Tasty Bacon: Loot, Path, Key, Power, Taunts, Badass.",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "Enemy Attacks & Telegraphing",
+      "bites": [
+        {
+          "id": "L11-b35",
+          "hook": "Let enemies be badass too",
+          "body": "Give enemies sweet attacks. **Melee**: claws, tentacles, martial arts, grabs, throws, ground pounds. **Weapon**: one- or two-handed, skilled or barbaric, disarmable, usable by the player, throwable or boomeranging. **Projectile**: accuracy, leading shots, reloads, explosives, melee fallback. **Persistent**: acid, poison, fire, lingering or instant, curable, counterable with gear.",
+          "example": "A spear-thrower who switches to melee when you close in covers projectile plus fallback.",
+          "f2p": "Damage-over-time debuffs and cleanse skills in RPGs like Raid: Shadow Legends are persistent damage and gear counters.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L11-b36",
+          "hook": "No tell, no hell",
+          "body": "**Telegraphing** is essential: every attack needs a tell animation that warns an observant player. Tells include cocking a fist, growling or yelling before a swing or charge, a twitching tail or flaring fins, a laser sight locking on, or a weapon or spell charging up.",
+          "example": "Book drawing: a caster raising glowing orbs, a skeleton winding up, a robot's gun charging.",
+          "f2p": "Mobile tells should be huge: red ground markers, aim lines, wind-up poses and audio stings.",
+          "memory": "No tell, no hell.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Grief Without Damage & Enemy Health",
+      "bites": [
+        {
+          "id": "L11-b37",
+          "hook": "Not every attack needs to hurt",
+          "body": "Enemies can grief players without permanent harm. **Block/parry** staggers, breaks combo chains, resets combo meters and rebounds weapons; never leave players wondering why it happened. **Knockback** creates distance, interrupts spells or mechanics, and is deadly on narrow platforms.",
+          "example": "Crossed swords for a parry; a punch launching the hero backward off a ledge.",
+          "f2p": "Knockback and interrupts are staples of mobile action and MOBA-style kits.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L11-b38",
+          "hook": "Stun short, freeze breakable",
+          "body": "**Stun** leaves the player briefly defenseless, standing or knocked down; keep it short or it frustrates. **Freeze, paralyze or capture** works like a stun but can be escaped by button mashing or stick wiggling, often entombing the hero, maybe with damage. Reward the escape with a victorious breaking-free animation.",
+          "example": "A dizzy hero with circling stars; a hero frozen in an ice block by a freeze ray.",
+          "f2p": "Long stun-locks are a classic PvP complaint in mobile RPG metas: keep control loss brief.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b39",
+          "hook": "Healing and buffing enemies need counterplay",
+          "body": "**Repair/heal**: use sparingly, it feels unfair; show a healing animation and health bar, and let players interrupt it. **Buff**: the enemy charges power, like a spell or a spinning-up gun; it can be invulnerable while buffing, or vulnerable, risking the advantage it wanted.",
+          "example": "A shaman who heals unless you hit him mid-chant.",
+          "f2p": "Clash Royale's Sparky charges before a big shot, and some stuns reset the charge: a buff with counterplay.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b40",
+          "hook": "Thieves steal, leeches drain",
+          "body": "A **thief** steals money or gear, turning the goal into 'catch that thief!'. Give a fair chance to recover it and never steal anything bought or earned through progression. A **leech** drains charged resources like super meter, mana, shield or fuel, usually unrecoverable, so players learn to kill leeches first.",
+          "example": "An enemy runs off with your chainmail; another drains your shield energy.",
+          "f2p": "Async raids (Coin Master, Monopoly GO) steal replaceable soft currency, never purchased items; turn-meter reduction in RPGs is a tempo leech.",
+          "memory": "Steal the replaceable, never the paid.",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b41",
+          "hook": "Surprise moves and logical weaknesses",
+          "body": "**Unexpected behaviors** add variety and the illusion the enemy is learning, forcing players to adapt. **Vulnerabilities and resistances** must be clear and logical: the evil snow angel fears fire, the burning corpse laughs at your torch. Taunts can explain them, the smugger the better, but even great lines bore by the third hearing.",
+          "example": "Book drawing: a hero waving a torch at a flaming enemy who couldn't care less.",
+          "f2p": "Element systems in gacha RPGs must telegraph weaknesses with clear icons and colors.",
+          "memory": "Big Kids Steal Fries, Ham, Burgers; Then Lick Unusual Vinegar = the 10 grief tools.",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b42",
+          "hook": "Count the hits before you set the HP",
+          "body": "Every enemy needs a way to die. Set enemy health like player health, balanced against the player's attacks. Start with how many hits it should take, considering every attack the hero has. Display it following the same rules as player health.",
+          "example": "A goblin takes three normal hits, but one swing of a holy sword kills it.",
+          "f2p": "Hits-to-kill becomes time-to-kill: upgrades shrinking it is the progression fantasy, but beware power creep.",
+          "memory": "",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "I Love Designing Enemies",
+      "bites": [
+        {
+          "id": "L11-b43",
+          "hook": "In games, even a toaster can want you dead",
+          "body": "Rogers finds adversaries the most interesting characters, including cannon fodder like stormtroopers, orcs and Bond henchmen. Games outdo every medium: angry pickles, irate toasters, goombas. His Alphabetical Bestiary runs A to Z: arachnids, battlemechs, criminals, dinosaurs, creepy kids, ghosts, liches, ninjas, orcs, pirates, robots, mimics, werewolves, xenomorphs, zombies and more.",
+          "example": "Werewolves get a production joke: rendering all that fur tanks the frame rate. Zombies would be scarier if they weren't in every game.",
+          "f2p": "",
+          "memory": "",
+          "tag": "fun"
+        },
+        {
+          "id": "L11-b44",
+          "hook": "Invent foes from your theme or your story",
+          "body": "Start with your theme: brainstorm enemies from the environment. Or start with your story: who's the main enemy? Keep reminding the player of the arch-nemesis even when other villains appear.",
+          "example": "Ice world: killer snowmen, yetis, grumpy skaters, penguins with machine guns. A classic Star Wars game: stormtroopers on every planet.",
+          "f2p": "A winter LiveOps event roster: yeti tank, penguin swarm, snow-spirit flyers. Theme plus behavior table equals event content.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b45",
+          "hook": "Red Ninja, Blue Ninja",
+          "body": "Be economical: reuse models, animations and textures. But when similar enemies behave differently, make them look different at a glance. Rogers' red ninja hops and throws shuriken; his blue ninja dashes with sai. Also tie enemies together with a shared cue: shape, color, traits, weapons or uniforms.",
+          "example": "Mortal Kombat's Sub-Zero and Scorpion started as reskins of each other.",
+          "f2p": "Plants vs. Zombies' conehead and buckethead zombies: same body, different armor, readable at a glance and cheap to make.",
+          "memory": "New trick means new paint.",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b46",
+          "hook": "Does your monster belong in this world?",
+          "body": "Enemies must fit the world's tone: no cybernetic death-mecha in whimsical Super Mario, no goomba in a realistic Medal of Honor-style shooter.",
+          "example": "Super Mario vs Medal of Honor.",
+          "f2p": "A cozy farming game's 'enemies' are crows and weeds, not gore monsters.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b47",
+          "hook": "Look evil, or flip expectations on purpose",
+          "body": "Make enemies look like enemies: glowing red eyes, horns, fangs, claws, spikes, skulls, ragged capes, face-hiding masks. Stereotypes read instantly, so use them. Or go against type: a cute bunny that turns killer, a hulking troll that cries when hit. More personality is better, within the Triangle of Weirdness.",
+          "example": "Players shoot first at anything with glowing red eyes and spikes.",
+          "f2p": "At phone size, red tints and angry silhouettes separate 'hit this' from 'collect this'; cute-turns-monstrous is a classic ad hook.",
+          "memory": "",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "I Hate You to Pieces",
+      "bites": [
+        {
+          "id": "L11-b48",
+          "hook": "Give your villain a Joker moment",
+          "body": "Introduce the main villain memorably so players know: that's who I'll fight. Give them a **Joker moment**, in-game or in a cutscene, where they do something truly evil like executing a henchman. Build anticipation with characters talking about them and collectible audio logs, files or letters that also hint how to beat them.",
+          "example": "Darth Vader's first entrance in Star Wars.",
+          "f2p": "A 3-second villain cameo at the start of each event chapter re-motivates players who forgot why they're grinding.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L11-b49",
+          "hook": "One fist-shake per level kept players furious",
+          "body": "In the Demolition Man game, the villain Simon didn't fight the hero until the very end. So at the start of every level he ran onscreen, shook his fist at the player and ran off. Players got fired up, blasted through the level, then got recharged by the next fist-shake.",
+          "example": "Demolition Man's Simon: a tiny cameo, a huge motivation boost.",
+          "f2p": "Recurring event villains who appear briefly each season give LiveOps arcs a face.",
+          "memory": "",
+          "tag": "example"
+        },
+        {
+          "id": "L11-b50",
+          "hook": "Make the player hate their enemy",
+          "body": "Villains must do bad things and take what the player needs or loves, and it must hurt gameplay, not just story. The murdered parent was the blacksmith who forged your sword; the kidnapped girlfriend healed you; the burned village stored your collectibles. Don't kill the boss every fight: a recurring villain builds history and more hate.",
+          "example": "JRPGs that kill off the girlfriend who was also your best healer.",
+          "f2p": "Angry Birds' pigs stole the eggs: the whole motivation in one line.",
+          "memory": "Steal the healer, not just the heart.",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b51",
+          "hook": "Taunts and idles make dumb AI look smart",
+          "body": "Taunt physically and verbally but don't overuse lines. Build taunts into attacks to create openings. Idles add intelligence: berate a player who retreats, shrug after losing a stealthy player, smoke or doze on guard duty. But not every enemy should do this, or uniqueness vanishes.",
+          "example": "Maximo's skeleton does a gunslinger-style sword flourish after every hit, giving the player an opening to strike back.",
+          "f2p": "Mobile sessions repeat constantly, so rotate or cap taunt lines.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b52",
+          "hook": "Sometimes let the bad guys win",
+          "body": "Don't baby players. Let enemies land a hit or cheap shot now and then, give them temporary invulnerable attacks, force players to run or block, outnumber them, let them sweat. Without real danger, enemies aren't threatening and victories feel hollow.",
+          "example": "A swarm that outnumbers the hero several times over makes survival feel earned.",
+          "f2p": "Tension sells boosters, but danger must stay readable and beatable without paying.",
+          "memory": "",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Non-Enemy Enemies",
+      "bites": [
+        {
+          "id": "L11-b53",
+          "hook": "Gremlins and tormentors never fight fair",
+          "body": "A **gremlin** looks like an enemy but undoes your progress instead of fighting you. A **tormentor** challenges and taunts you all game but never directly attacks.",
+          "example": "SimCity's Godzilla-like monster stomping your city; Space Fury's alien overlord; Portal's GLaDOS, who is implied to be still alive.",
+          "f2p": "Spreading match-3 blockers and base raids are gremlins; use carefully, since losing progress drives churn.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L11-b54",
+          "hook": "The clock and other humans are enemies too",
+          "body": "**Time** pressure makes problems feel harder than they are; it's common in racing and puzzle games, may be extendable, punishes with a lost life or reset, and works as an escape-the-base endgame. **Human competitors** are the best and worst part of multiplayer: give players tools for one-upmanship and revenge and watch.",
+          "example": "Portal designer Kim Swift on time pressure; a footnote nodding to Sartre's line that hell is other people.",
+          "f2p": "Move limits, timed events and PvP ladders are F2P's most common enemies; extra-moves offers are the 'extend the clock' monetization moment.",
+          "memory": "Grumpy Toddlers Torture Humans: Gremlin, Tormentor, Time, Human.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "World's Greatest Boss Battle",
+      "bites": [
+        {
+          "id": "L11-b55",
+          "hook": "A boss is more than a fat health bar",
+          "body": "A **boss** is a large and/or challenging enemy that blocks progression and acts as the climax of an environment, level or world. It's a complex machine of separate parts, and you must finish the player's move and attack set before designing it.",
+          "example": "",
+          "f2p": "The chapter-end puzzle level or RPG stage boss is the biggest difficulty spike in its chapter: watch fail and churn rates there.",
+          "memory": "Boss = Blocker + Climax.",
+          "tag": "concept"
+        },
+        {
+          "id": "L11-b56",
+          "hook": "Test old skills, or teach a new one",
+          "body": "Three boss approaches: **learned moves** (built on existing moves, so beating it proves mastery), **new abilities** (built around a newly gained weapon or move, with the learning curve part of the difficulty), or a **combination**, staged with emphasis on one style, not both at full strength.",
+          "example": "Mario bosses use learned moves; many Legend of Zelda bosses test the dungeon's new item.",
+          "f2p": "A boss level right after a new booster unlocks is the exam for that tool in your FTUE.",
+          "memory": "",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "Who's the Boss?",
+      "bites": [
+        {
+          "id": "L11-b57",
+          "hook": "If the boss can do it, it should HAVE it",
+          "body": "Form follows function for bosses: shoots means a gun, spell, rocket launcher or sneezing nose; defends means a shield, force field or armored cowling. Then ask what the boss represents. The classic Bond formula has three types: the **physical** adversary (henchman), the **mental** adversary (mastermind), and the **global threat** (doomsday device).",
+          "example": "Jaws, Tee Hee and Oddjob are physical; masterminds fight via robot suits or puzzles; Goldfinger's bomb timer and Drax's spore bombs are global threats.",
+          "f2p": "A 3-week event can end with henchman, mastermind, then a server-wide 'global threat' guild boss.",
+          "memory": "Muscle, Mind, Megaton.",
+          "tag": "list"
+        },
+        {
+          "id": "L11-b58",
+          "hook": "Give your villain a motive, not just a door",
+          "body": "Ask: what makes it a worthy adversary? What does it represent (maybe the hero's inner demons)? What does the hero gain, ideally knowledge, not loot? What does the villain want? The Seven Deadly Sins (lust, gluttony, greed, sloth, wrath, envy, pride) are great motives. Most bosses are guardians; give them a reason.",
+          "example": "Return of the Jedi: Luke must reject the dark side; Temple of Doom: Indy learns fortune and glory aren't everything; the Joker wants chaos.",
+          "f2p": "Seven sins make fast event-villain briefs: a greedy pirate hoarding the event currency.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L11-b59",
+          "hook": "Licensed game? Give fans the iconic fight",
+          "body": "In licensed games, boss fights are the fan's highlight. If you're not a fan, research what players would want to do.",
+          "example": "A Star Wars fan wants a lightsaber duel with Darth Vader, not to shoot down his TIE fighter.",
+          "f2p": "Licensed mobile games (Marvel, Star Wars, Dragon Ball titles) live or die on letting fans play the signature moment.",
+          "memory": "",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Size Matters",
+      "bites": [
+        {
+          "id": "L11-b60",
+          "hook": "Bigger boss, bigger camera headaches",
+          "body": "Always keep the camera on the boss and never let boss or player leave view. Too high kills drama and scale; too low causes foreshortening, hides attacks and clips through geometry. Use elevation: let players climb to the boss or bring it down for a face smack, and avoid **crotch whacking**.",
+          "example": "Book diagram: a 'too high' camera at the giant's head and a 'too low' camera at the hero's feet.",
+          "f2p": "Portrait screens are narrow: frame boss at top, player below, and pin the boss HP bar.",
+          "memory": "",
+          "tag": "warning"
+        },
+        {
+          "id": "L11-b61",
+          "hook": "Throw cars, then give them a way back",
+          "body": "Big bosses deserve big attacks: rocks, cars, buildings, city blocks. But however spectacular, players need chances to fight back. They learn when it's safe by memorizing **attack patterns**: attacks and behaviors strung into a predictable sequence, the heart of traditional boss fights.",
+          "example": "Bombastic bosses in Contra and God of War III.",
+          "f2p": "",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b62",
+          "hook": "The laser mech: a boss pattern in four panels",
+          "body": "The mech's laser sight sweeps three times, locks on, fires blasts right, left, then center. The cannon transforms, charges a second, and fires a ground-sweeping beam you jump or hide from. Its chest opens, venting steam, then snaps shut with an electric burst. The cycle repeats until the player breaks it.",
+          "example": "The book's four-panel figure shows sweep, charge, beam and open chest.",
+          "f2p": "Mobile action bosses use the same cycle with ground markers and a glowing core.",
+          "memory": "",
+          "tag": "example"
+        },
+        {
+          "id": "L11-b63",
+          "hook": "PIVO: the four parts of every boss",
+          "body": "**Primary attack** creates movement patterns to memorize. **Invulnerable attack** is a huge attack forcing defense. **Vulnerable state** exposes an obvious, glowing weak spot for maximum damage, can be extended by stuns, and ends with a push-back event. **Opportunities** are shorter windows to strike, like the cannon transforming.",
+          "example": "Laser blasts, mega-beam, open chest, transforming cannon.",
+          "f2p": "Gacha RPG 'break' states, like Honkai: Star Rail's Weakness Break, are vulnerable states.",
+          "memory": "PIVO: the boss PIVOts through Primary, Invulnerable, Vulnerable, Opportunity.",
+          "tag": "list"
+        },
+        {
+          "id": "L11-b64",
+          "hook": "Random boss patterns feel like a lottery",
+          "body": "Keep movement patterns easy to remember; you can shuffle the order for variety. Fully random patterns are possible, but many players can't read them and get frustrated when they don't luck into a favorable one.",
+          "example": "",
+          "f2p": "",
+          "memory": "",
+          "tag": "warning"
+        },
+        {
+          "id": "L11-b65",
+          "hook": "A boss fight is a dance",
+          "body": "Alternate offense and defense for both boss and player. Vary timing, speed and range so each attack goes further, but always escalate. Bosses start easy and get harder over several rounds of patterns, angrier each time, until the climax.",
+          "example": "Book drawing: hero and horned boss doing a tango, footprints on the floor.",
+          "f2p": "Mobile bosses usually have two or three HP-threshold phases with a visual change.",
+          "memory": "Lead, follow, escalate, dip.",
+          "tag": "concept"
+        },
+        {
+          "id": "L11-b66",
+          "hook": "Help them keep fighting, even mid-boss",
+          "body": "Give players chances to regain health or power during the fight. **Dynamic difficulty** can work out what the player needs, adjusting AI, reaction times or nearly anything. The right power-up at the right moment makes the fight dramatic.",
+          "example": "",
+          "f2p": "Survivor-likes drop health pickups during boss waves; be transparent and ethical with difficulty tuning.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b67",
+          "hook": "Make the final boss one of the EASIEST?",
+          "body": "Rogers confesses he designed final bosses to be among the easiest, so players finish on a high note feeling like the planet's biggest badass. They already did the hard part: playing the whole game.",
+          "example": "",
+          "f2p": "Make event finales and chapter ends triumphant so sessions end on a high, which helps retention.",
+          "memory": "",
+          "tag": "fun"
+        },
+        {
+          "id": "L11-b68",
+          "hook": "Show the damage, then let the player swing last",
+          "body": "Use animation, sound and effects to show damage: robots spark, fleshy foes spray ichor, dying bosses limp; chop off parts or swap to more damaged models. Then **let the player administer the coup de grace**: never steal the final blow with a cutscene. Let them savor it with text, music and effects.",
+          "example": "Book drawing: the hero lopping off the boss's head.",
+          "f2p": "End-of-level celebrations like Candy Crush's 'Sugar Crush' are the savor moment; never auto-play the final hit.",
+          "memory": "The player swings last. Always.",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b69",
+          "hook": "Escaping bosses need a false kill",
+          "body": "If the boss must escape for story or license reasons, do it with style: it proves a worthy adversary and promises a rematch. Use a **false kill**: knock it to its knees, hold the camera, let it curse the player's luck, then flee. Make the win unmistakable.",
+          "example": "",
+          "f2p": "Recurring LiveOps villains: beaten this season, 'returns stronger' next.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b70",
+          "hook": "Died to the boss? Respawn fair",
+          "body": "Respawn the player at a safe point; the boss shouldn't attack until they're ready. Consider keeping the boss's state so the fight resumes where it left off instead of restarting.",
+          "example": "",
+          "f2p": "Revive or continue offers keep the boss's HP: a fairness idea turned monetization moment. Always offer a fair free path, like an ad.",
+          "memory": "",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "Location, Location, Location",
+      "bites": [
+        {
+          "id": "L11-b71",
+          "hook": "Sometimes the level IS the boss",
+          "body": "Where a boss fight happens matters as much as the fight. Basic layouts are a circular arena or a screen-wide walkway, keeping the camera on a boss at the center or back. Add elevation for dynamism. Let the boss use and wreck the environment, but scripted collapses get stale on replays.",
+          "example": "Devil May Cry's fight alternating between castle walls and courtyard.",
+          "f2p": "In match-3, the board layout is the boss; survivor-likes often lock you in a ring when the boss spawns.",
+          "memory": "Real estate is half the boss.",
+          "tag": "concept"
+        },
+        {
+          "id": "L11-b72",
+          "hook": "Reactive arenas make every fight different",
+          "body": "Best of both worlds: fill the arena with dynamic elements that react to boss attacks, like breakable windows, smashable floorboards and crushable consoles. Whatever order the boss hits them, interesting things happen, so each fight differs.",
+          "example": "Book drawing: a horned giant smashing pillars as the hero scrambles.",
+          "f2p": "Reactive hazards keep repeatable daily and weekly bosses from going stale.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L11-b73",
+          "hook": "Scrolling battles and puzzle bosses",
+          "body": "A **scrolling battle** moves through several locations; pick locomotion first: on foot, on top of vehicles, or piloting them. It costs as much as a full level or more. A **puzzle boss** is invulnerable to direct attack: survive its attacks and use level objects to defeat it.",
+          "example": "Uncharted 2's train and Wet's car-hopping; Spider-Man 2's Rhino tricked into electrified machinery; You Have To Burn The Rope.",
+          "f2p": "Runner games use cheap boss chases; casual puzzle bosses are beaten by detonating boosters beside them.",
+          "memory": "",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "Why Not to Create the World's Greatest Boss Battle",
+      "bites": [
+        {
+          "id": "L11-b74",
+          "hook": "Bosses: the #1 reason players quit",
+          "body": "Critics say bosses are old school, halt progression, and cost too much with non-reusable art, hard-coded behaviors and unique animations. They're skill gateways: when people told Rogers they quit a game, it was usually because a boss was too hard.",
+          "example": "",
+          "f2p": "Skill gateways show up as cliffs in your level funnel: hard levels should be tense, not walls.",
+          "memory": "",
+          "tag": "warning"
+        },
+        {
+          "id": "L11-b75",
+          "hook": "A dagger an inch from your eye beats Godzilla",
+          "body": "Paul Guirao's design: players learn to arm-wrestle for cigarettes, the prison currency. At the climax, the villain pins the hero and pushes a dagger toward his eye; the player uses arm-wrestling to push it back and turn it on the villain. Lessons: drama over scale, intimacy creates urgency, reuse existing assets, tell story through play.",
+          "example": "Call of Duty: Modern Warfare 2's finale echoes it: pull the knife from your own chest and throw it at the villain.",
+          "f2p": "Tight, intimate confrontations read better on a 6-inch screen and reuse your core mechanic for free.",
+          "memory": "Drama over scale.",
+          "tag": "truth"
+        }
+      ]
+    },
+    {
+      "title": "F2P: Boss Events & Readability",
+      "bites": [
+        {
+          "id": "L11-b76",
+          "hook": "Guild bosses: one giant, a whole clan of hitters",
+          "body": "LiveOps boss events reuse Rogers' ideas at scale: a shared-HP boss that a clan hits over days, a limited-time raid boss players gather to beat, or repeatable weekly bosses with capped rewards. Huge size justifies absurd HP; loot gives reasons to fight; time adds pressure.",
+          "example": "Raid: Shadow Legends' Clan Boss, AFK Arena's Guild Hunting, Pokémon GO raids, Genshin Impact's weekly bosses.",
+          "f2p": "Plan replay: patterns stay learnable, dynamic arena elements fight staleness.",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "L11-b77",
+          "hook": "Boss levels are where players pay or quit",
+          "body": "Puzzle games flag 'Hard' or 'Super Hard' levels: Rogers' boss definition exactly, blocking progress and climaxing a chapter. These spikes sell boosters, extra moves and revives, and also cause churn. Monitor fail rates, keep a fair free path, and celebrate the win hardest.",
+          "example": "Candy Crush Saga and Royal Match label certain levels as Hard or Super Hard.",
+          "f2p": "Never make a boss beatable only by paying; engineered failure destroys trust.",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "L11-b78",
+          "hook": "The thumbnail test for enemy readability",
+          "body": "On small screens: pass the silhouette test, never share colors between enemies and pickups, use clear size tiers, give new behaviors new looks, put ground markers on every attack, make weak points glow, pin the boss HP bar, show a 'new enemy' card, and fade corpses fast.",
+          "example": "",
+          "f2p": "Readable enemies make losses feel fair, and fair losses keep players retrying.",
+          "memory": "If you can't tell them apart as black blobs, players can't either.",
+          "tag": "f2p"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "Form follows function: decide what an enemy does before what it looks like.",
+    "Build rosters whose members complement each other and also contrast with each other.",
+    "Balance an enemy's strength, speed and size with care; the three trade off.",
+    "Fighting should be enjoyable in itself, so make every combat moment feel good.",
+    "An enemy exists to be engaged, not dodged around or skipped.",
+    "An enemy attack does not always have to remove health.",
+    "Make sure the player comes to loathe the villain.",
+    "Let dynamic difficulty quietly lend the player a hand.",
+    "Mind the camera whenever a boss is enormous.",
+    "The setting of a boss fight matters as much as the opponent in it.",
+    "The final blow on a boss must come from the player, not a cutscene.",
+    "Opposition comes in more forms than giant stomping brutes.",
+    "Favor drama over sheer scale."
+  ],
+  "mnemonics": [
+    {
+      "name": "Ten behavior archetypes",
+      "device": "Pirates Can Shoot Guards; Flying Bombers Burrow Through Blocky Doors",
+      "unpacks": "Patroller, Chaser, Shooter, Guard, Flyer, Bomber, Burrower, Teleporter, Blocker, Doppelganger"
+    },
+    {
+      "name": "Five enemy sizes",
+      "device": "Some Angry Llamas Hate Giraffes",
+      "unpacks": "Short, Average, Large, Huge, Gigantic"
+    },
+    {
+      "name": "Six reasons to fight",
+      "device": "Lazy Pigs Keep Pinching Tasty Bacon",
+      "unpacks": "Loot, Path (they block it), Key, Power (take theirs), Taunts, Badass (it's fun)"
+    },
+    {
+      "name": "Ten grief tools",
+      "device": "Big Kids Steal Fries, Ham, Burgers; Then Lick Unusual Vinegar",
+      "unpacks": "Block/parry, Knockback, Stun, Freeze/paralyze/capture, Heal/repair, Buff, Thief, Leech, Unexpected behaviors, Vulnerabilities/resistances"
+    },
+    {
+      "name": "Boss pattern components",
+      "device": "PIVO — the boss PIVOts",
+      "unpacks": "Primary attack, Invulnerable attack, Vulnerable state, Opportunities"
+    },
+    {
+      "name": "Pathing AI questions",
+      "device": "My Angry Troops Defend Valiantly",
+      "unpacks": "How Mobile, Aggressive, Team player, Defensive, Versatile is the enemy?"
+    },
+    {
+      "name": "Non-enemy enemies",
+      "device": "Grumpy Toddlers Torture Humans",
+      "unpacks": "Gremlin, Tormentor, Time, Human competitor"
+    },
+    {
+      "name": "Bond boss types",
+      "device": "Muscle, Mind, Megaton",
+      "unpacks": "Physical adversary (henchman), Mental adversary (mastermind), Global threat (doomsday device)"
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L11-f01",
+      "q": "What is Rogers' golden rule of enemy design?",
+      "a": "Form follows function: define what the enemy does before how it looks.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f02",
+      "q": "Why must enemy function be decided before its look?",
+      "a": "Coding, rigging/animation and texturing all depend on it; redoing enemies kills morale and wastes time and money.",
+      "type": "why"
+    },
+    {
+      "id": "L11-f03",
+      "q": "Name the seven enemy attributes.",
+      "a": "Size, behavior, speed, movement, attacks, aggression, health.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f04",
+      "q": "Why does aggression get its own line even though it's part of behavior?",
+      "a": "Combat is often treated by designers as its own system.",
+      "type": "why"
+    },
+    {
+      "id": "L11-f05",
+      "q": "What are the five enemy size classes?",
+      "a": "Short, average, large, huge, gigantic.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f06",
+      "q": "A 'huge' enemy is at least ____ the player's size.",
+      "a": "twice",
+      "type": "cloze"
+    },
+    {
+      "id": "L11-f07",
+      "q": "What defines a 'gigantic' enemy?",
+      "a": "It's so large it can only be completely seen from a distance.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f08",
+      "q": "How many 'heads' tall is an average human vs a heroic character?",
+      "a": "About 7 heads vs about 8.5 heads.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f09",
+      "q": "What does 'fight your way up' the enemy mean?",
+      "a": "Bigger enemies require a wider range of attacks: average = low + medium; huge = low, medium and high.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f10",
+      "q": "Players say stomping your tiny cute critters makes them feel mean. Which size principle explains it?",
+      "a": "Size affects emotion: beating short enemies can feel like bullying; beating huge ones feels heroic.",
+      "type": "apply"
+    },
+    {
+      "id": "L11-f11",
+      "q": "What three questions define enemy behavior?",
+      "a": "How does it move? What does it do in combat? What does it do when hurt?",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f12",
+      "q": "What is a patroller?",
+      "a": "An enemy moving back and forth or up and down mechanically; always predictable.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f13",
+      "q": "What commonly turns a patroller into a chaser?",
+      "a": "Spotting the player or being attacked.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f14",
+      "q": "Why does a shooter keep its distance?",
+      "a": "Its projectile attack works best at range, so it avoids engaging up close.",
+      "type": "why"
+    },
+    {
+      "id": "L11-f15",
+      "q": "What is a guard's AI priority?",
+      "a": "Protecting an item or location (like a doorway) rather than pursuing the player.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f16",
+      "q": "Why are bombers common in 2D games?",
+      "a": "3D cameras make it hard to see enemies directly above the player.",
+      "type": "why"
+    },
+    {
+      "id": "L11-f17",
+      "q": "How does a teleporter differ from a burrower?",
+      "a": "Teleporting is instant (no window to attack during the move); a burrower has a visible invulnerable repositioning state you wait out.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f18",
+      "q": "Players can't ever hit your instant-teleporting enemy. What does Rogers recommend?",
+      "a": "Give the player a way to disrupt the teleport, such as a stun or other disruptive attack.",
+      "type": "apply"
+    },
+    {
+      "id": "L11-f19",
+      "q": "Name four ways to beat a blocker.",
+      "a": "Attack from another direction/elevation, disarm it with a specific move, break the shield, or wait out its invulnerability.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f20",
+      "q": "What does a doppelganger force the player to do?",
+      "a": "Use their own moves or weapons in unusual ways to defeat a copy of themselves.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f21",
+      "q": "What is threat analysis?",
+      "a": "The player deciding which enemy is the bigger threat, killing it first and defending against the rest.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f22",
+      "q": "Why pair a big chaser with small flyers?",
+      "a": "Attack the big one and the flyers sting you; chase the flyers and the big one thumps you: a forced priority puzzle.",
+      "type": "why"
+    },
+    {
+      "id": "L11-f23",
+      "q": "The five enemy speeds are non-mobile, slow, medium, ____ and quick.",
+      "a": "fast",
+      "type": "cloze"
+    },
+    {
+      "id": "L11-f24",
+      "q": "What separates a hazard from an enemy?",
+      "a": "Mobility and AI (with exceptions like non-mobile enemies that still have AI).",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f25",
+      "q": "The Three Ss — speed, size and strength — are ____ proportional.",
+      "a": "inversely",
+      "type": "cloze"
+    },
+    {
+      "id": "L11-f26",
+      "q": "Why does a medium enemy that's both strong and fast feel bad?",
+      "a": "It has an advantage the player can't match, so it feels cheap, like fighting a computer.",
+      "type": "why"
+    },
+    {
+      "id": "L11-f27",
+      "q": "A single slow zombie in your level isn't scary at all. How do you fix it?",
+      "a": "Use slow enemies in numbers (a dozen is scary), give them a big hit or a fast attack.",
+      "type": "apply"
+    },
+    {
+      "id": "L11-f28",
+      "q": "Which Resident Evil enemies show slow movement making a villain feel powerful?",
+      "a": "Tyrant, Nemesis and Dr. Salvador.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f29",
+      "q": "Why should medium-speed chasers run slightly slower than the player?",
+      "a": "So the player can retreat, reorient and face them in time to attack or defend.",
+      "type": "why"
+    },
+    {
+      "id": "L11-f30",
+      "q": "Your burst-dashing 'quick' enemy feels unfair. Two fixes?",
+      "a": "Limit its attacks and moves, and play a warning animation before each burst.",
+      "type": "apply"
+    },
+    {
+      "id": "L11-f31",
+      "q": "What did Crash Bandicoot 2 focus groups prefer?",
+      "a": "Simple learnable patterns over more behavioral, less patterned AI.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f32",
+      "q": "In which genre do players prefer unpredictability, and why?",
+      "a": "Sports games: predictable patterns become exploitable holes.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f33",
+      "q": "How do predatory mammals move, according to Rogers' nature guide?",
+      "a": "In looping arcs as they circle prey.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f34",
+      "q": "Bruce Lee rule: dozens of enemies surround the hero but attack in ____.",
+      "a": "ones and twos",
+      "type": "cloze"
+    },
+    {
+      "id": "L11-f35",
+      "q": "Name the five pathing/behavior AI questions.",
+      "a": "How mobile, aggressive, team-player, defensive and versatile is the enemy?",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f36",
+      "q": "Why give enemies a sense of self-preservation?",
+      "a": "Cautious or cowardly enemies feel like real people.",
+      "type": "why"
+    },
+    {
+      "id": "L11-f37",
+      "q": "How do you fix waypoint enemies clipping corners?",
+      "a": "Pull the waypoints in a bit at corners and near objects.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f38",
+      "q": "Name four enemy introduction techniques.",
+      "a": "Freeze/zoom camera, show the name, foreshadow, dramatic entrance.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f39",
+      "q": "Which game foreshadows the licker by having it run past a window?",
+      "a": "Resident Evil 2.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f40",
+      "q": "Players camp spawn points and kill enemies the instant they appear. Name fixes.",
+      "a": "Make enemies invulnerable while spawning, spawn them off-screen, or use a delivery mechanic (like Maximo's coffins).",
+      "type": "apply"
+    },
+    {
+      "id": "L11-f41",
+      "q": "Fighting enemies is supposed to be ____.",
+      "a": "fun",
+      "type": "cloze"
+    },
+    {
+      "id": "L11-f42",
+      "q": "What does an enemy's death/removal style affect besides feel?",
+      "a": "The game's age rating (ESRB).",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f43",
+      "q": "Why is the charging exploder enemy bad design?",
+      "a": "Cameras rarely show it coming, so there's no fair warning; its only answer is avoidance.",
+      "type": "why"
+    },
+    {
+      "id": "L11-f44",
+      "q": "Enemies should be ____, not avoided.",
+      "a": "fought",
+      "type": "cloze"
+    },
+    {
+      "id": "L11-f45",
+      "q": "Name the six reasons to make players want to fight.",
+      "a": "Loot, they block the path, they have the key, take their power, they taunt you, it makes you feel badass.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f46",
+      "q": "Name the four enemy attack families.",
+      "a": "Melee, weapon combat, projectile combat, persistent damage.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f47",
+      "q": "What is a 'tell'?",
+      "a": "An animation (or sound) warning that an attack is coming, e.g., cocking a fist or a laser sight locking on.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f48",
+      "q": "Name the ten non-damaging grief tools.",
+      "a": "Block/parry, knockback, stun, freeze/paralyze/capture, repair/heal, buff, thief, leech, unexpected behaviors, vulnerabilities/resistances.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f49",
+      "q": "Why is knockback especially effective on narrow platforms?",
+      "a": "It can knock the player off, even to their death.",
+      "type": "why"
+    },
+    {
+      "id": "L11-f50",
+      "q": "How does freeze differ from stun?",
+      "a": "The player can break out of a freeze by button mashing or stick wiggling.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f51",
+      "q": "Your async raid design lets attackers steal a defender's purchased item. Which rule is broken?",
+      "a": "Thief rule: never steal anything bought or earned through progression; only replaceable things.",
+      "type": "apply"
+    },
+    {
+      "id": "L11-f52",
+      "q": "What does a leech drain?",
+      "a": "Charged-up resources: super meter, mana, shield power, fuel.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f53",
+      "q": "How should vulnerabilities and resistances be designed?",
+      "a": "Clear and logical (snow creature weak to fire); never leave players wondering why something failed.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f54",
+      "q": "Where do you start when balancing enemy health?",
+      "a": "With how many hits it should take to die, considering all the hero's attacks.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f55",
+      "q": "What is the 'Red Ninja/Blue Ninja' principle?",
+      "a": "Reuse assets, but enemies with different behaviors must look different at a glance.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f56",
+      "q": "Which Mortal Kombat duo began as reskins of each other?",
+      "a": "Sub-Zero and Scorpion.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f57",
+      "q": "Name the two starting points for inventing your own enemies.",
+      "a": "Your theme (environment) or your story (main enemy/arch-nemesis).",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f58",
+      "q": "Why use stereotypical evil visuals like red eyes and spikes?",
+      "a": "Stereotypes are instantly readable, so players know to attack.",
+      "type": "why"
+    },
+    {
+      "id": "L11-f59",
+      "q": "What is a villain's 'Joker moment'?",
+      "a": "A scene where the villain does something truly evil, like executing a henchman, to prove how bad they are.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f60",
+      "q": "How did Demolition Man keep its villain Simon present?",
+      "a": "He ran onscreen at the start of every level, shook his fist at the player and ran off.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f61",
+      "q": "Why should villainy impact gameplay, not just story?",
+      "a": "Losing a blacksmith, healer or storage hurts the player directly, so they truly hate the enemy.",
+      "type": "why"
+    },
+    {
+      "id": "L11-f62",
+      "q": "Why not kill the boss at the end of every fight?",
+      "a": "A recurring villain builds history and more hatred, and leaves someone to fight later.",
+      "type": "why"
+    },
+    {
+      "id": "L11-f63",
+      "q": "What did Maximo's skeleton do after hitting the player, and why?",
+      "a": "A gunslinger-style sword flourish, giving the player an opening to strike back.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f64",
+      "q": "Name the four non-enemy enemies.",
+      "a": "Gremlin, tormentor, time, human competitor.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f65",
+      "q": "What is a gremlin enemy?",
+      "a": "Looks like an enemy but undoes the player's progress instead of fighting (e.g., SimCity's monster).",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f66",
+      "q": "A boss is a large and/or challenging enemy that blocks the player's ____ and is the climax of a level or world.",
+      "a": "progression",
+      "type": "cloze"
+    },
+    {
+      "id": "L11-f67",
+      "q": "Why must the player's moveset be finished before you design a boss?",
+      "a": "Bosses are built around the player's moves (learned moves) or a new ability; change the moveset and the boss breaks.",
+      "type": "why"
+    },
+    {
+      "id": "L11-f68",
+      "q": "Name the three boss design approaches.",
+      "a": "Learned moves, new abilities, combination (emphasize one).",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f69",
+      "q": "Your event's mastermind is beaten, but you want one last climax that isn't a person. Which Bond boss type fits?",
+      "a": "The global threat (e.g., a doomsday timer or device).",
+      "type": "apply"
+    },
+    {
+      "id": "L11-f70",
+      "q": "What does Rogers suggest as a source of villain motivations?",
+      "a": "The Seven Deadly Sins: lust, gluttony, greed, sloth, wrath, envy, pride.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f71",
+      "q": "Why should defeating the villain give the hero knowledge rather than treasure or power?",
+      "a": "In the Hero's Journey the hero returns changed, with knowledge; loot alone is a shallow payoff.",
+      "type": "why"
+    },
+    {
+      "id": "L11-f72",
+      "q": "What's wrong with a camera that's too low in a boss fight?",
+      "a": "Foreshortening hides distance and incoming attacks, and it can clip through geometry.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f73",
+      "q": "What is 'crotch whacking'?",
+      "a": "When the hero is only tall enough to hit a huge boss in the crotch; avoid it with elevation.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f74",
+      "q": "Name the four components of a boss fight.",
+      "a": "Primary attack, invulnerable attack, vulnerable state, opportunities.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f75",
+      "q": "Why end a boss's vulnerable state with an attack or event like an electric burst?",
+      "a": "It pushes the player away and clearly signals the attack window is over.",
+      "type": "why"
+    },
+    {
+      "id": "L11-f76",
+      "q": "Why avoid fully random boss movement patterns?",
+      "a": "Players can't read them and get frustrated if they don't luck into a favorable one.",
+      "type": "why"
+    },
+    {
+      "id": "L11-f77",
+      "q": "Let the player administer the ____.",
+      "a": "coup de grace (the final blow)",
+      "type": "cloze"
+    },
+    {
+      "id": "L11-f78",
+      "q": "What is a false kill?",
+      "a": "Knocking an escaping boss to its knees first, holding the camera, so the player clearly wins before it flees.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f79",
+      "q": "What should happen when a player dies in a boss fight?",
+      "a": "Safe respawn, boss waits until they're ready, and ideally the boss keeps its state instead of restarting.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f80",
+      "q": "Name the two basic boss arena layouts.",
+      "a": "A circular arena or a linear screen-wide walkway.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f81",
+      "q": "Your boss can't be damaged directly; players must lure it into electrified machines. What kind of boss is it?",
+      "a": "A puzzle boss.",
+      "type": "apply"
+    },
+    {
+      "id": "L11-f82",
+      "q": "Name the four lessons of Paul Guirao's knife-fight boss.",
+      "a": "Drama over scale; intimacy creates urgency; reuse existing assets; tell story through the fight, not cutscenes.",
+      "type": "basic"
+    },
+    {
+      "id": "L11-f83",
+      "q": "Your survivor-like's new enemy is small, fast AND deals huge damage. Which principle is violated?",
+      "a": "The Three Ss (speed, size, strength trade off); it will feel cheap.",
+      "type": "apply"
+    },
+    {
+      "id": "L11-f84",
+      "q": "Players skip your optional elite enemies entirely. Which rule and fix apply?",
+      "a": "Enemies should be fought, not avoided: add a reason (loot, key, power) or make them less cheap.",
+      "type": "apply"
+    },
+    {
+      "id": "L11-f85",
+      "q": "Your match-3 blocker variant looks identical to the old one but now spreads. What principle fixes the confusion?",
+      "a": "Red Ninja/Blue Ninja: new behavior needs a new look at a glance.",
+      "type": "apply"
+    },
+    {
+      "id": "L11-f86",
+      "q": "Playtesters keep getting hit by a boss's slam 'out of nowhere.' What's missing?",
+      "a": "Telegraphing: a clear tell (wind-up, ground marker, sound) before the attack.",
+      "type": "apply"
+    },
+    {
+      "id": "L11-f87",
+      "q": "Your event boss dies in an auto-playing cutscene after the last hit. What's the problem?",
+      "a": "It robs the player of the coup de grace; let them land the final blow and savor it.",
+      "type": "apply"
+    },
+    {
+      "id": "L11-f88",
+      "q": "Players who fail your boss level must replay all three phases. What could you change?",
+      "a": "Keep the boss's state on respawn/continue so the fight resumes where it left off.",
+      "type": "apply"
+    },
+    {
+      "id": "L11-f89",
+      "q": "Your raid boss feels stale by week three of reruns. Which chapter idea helps?",
+      "a": "Arenas with dynamic, reactive elements so each fight plays out differently.",
+      "type": "apply"
+    },
+    {
+      "id": "L11-f90",
+      "q": "Your RPG's healer enemy feels unfair. What two fixes does Rogers suggest?",
+      "a": "Use healing sparingly with a visible animation and health bar, and let players interrupt the heal.",
+      "type": "apply"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "L11-q01",
+      "q": "According to Rogers, what should you decide FIRST when designing an enemy?",
+      "options": [
+        "Its visual theme and color palette",
+        "Its name and backstory",
+        "Its function: size, behavior, speed, movement, attacks, aggression, health",
+        "Its loot table"
+      ],
+      "answer": 2,
+      "why": "Form follows function. Look, name and loot all come after you know what the enemy does, because code, rigs and textures depend on it."
+    },
+    {
+      "id": "L11-q02",
+      "q": "Which is NOT one of Rogers' seven enemy attributes?",
+      "options": [
+        "Loot value",
+        "Aggression",
+        "Health",
+        "Movement"
+      ],
+      "answer": 0,
+      "why": "The seven are size, behavior, speed, movement, attacks, aggression and health. Loot is a reason to fight, not a core attribute."
+    },
+    {
+      "id": "L11-q03",
+      "q": "A huge enemy has a vulnerable head. How should players be able to hit it?",
+      "options": [
+        "Only with low sweeps",
+        "Only with ranged weapons",
+        "It shouldn't be reachable at all",
+        "With a jump attack, as part of using low, medium and high attacks"
+      ],
+      "answer": 3,
+      "why": "Players 'fight their way up' bigger enemies: huge enemies take low, medium and high attacks, and a high weak point may need a jump attack."
+    },
+    {
+      "id": "L11-q04",
+      "q": "An enemy goes underground, becoming invulnerable, then pops up beside the player. What archetype is it?",
+      "options": [
+        "Teleporter",
+        "Burrower",
+        "Guard",
+        "Doppelganger"
+      ],
+      "answer": 1,
+      "why": "A burrower uses an invulnerable state to reposition; the player waits for it to emerge. A teleporter moves instantly with no visible repositioning state."
+    },
+    {
+      "id": "L11-q05",
+      "q": "What's the main purpose of combining different enemy behavior types in one encounter?",
+      "options": [
+        "To reduce production costs",
+        "To make every enemy equally dangerous",
+        "To create combat puzzles that force threat analysis",
+        "To hide weak AI"
+      ],
+      "answer": 2,
+      "why": "Complementary enemies make players decide which threat to kill first while defending against the others; that decision is the gameplay."
+    },
+    {
+      "id": "L11-q06",
+      "q": "Which combo does Rogers describe as working well?",
+      "options": [
+        "A blocker with a shooter positioned behind him",
+        "Two identical patrollers side by side",
+        "A doppelganger with another doppelganger",
+        "Three guards at one door"
+      ],
+      "answer": 0,
+      "why": "While the player chips at the blocker's shield, the shooter takes pot-shots. The other options repeat behaviors instead of complementing them."
+    },
+    {
+      "id": "L11-q07",
+      "q": "Your new mid-sized enemy is both very strong and very fast. What will players likely feel?",
+      "options": [
+        "Excited by the challenge",
+        "That it's too easy",
+        "Nothing, since size doesn't matter",
+        "That it's cheap, like fighting a computer"
+      ],
+      "answer": 3,
+      "why": "The Three Ss (speed, size, strength) trade off. Medium enemies can be strong OR fast; giving both creates an advantage the player can't match."
+    },
+    {
+      "id": "L11-q08",
+      "q": "Why does Rogers make medium-speed chasers run slightly slower than the player?",
+      "options": [
+        "To save CPU time",
+        "So the player can retreat, reorient and face them in time",
+        "Because animators prefer slower cycles",
+        "To make them easier to kill"
+      ],
+      "answer": 1,
+      "why": "A slightly slower chaser lets the player run, turn and fight or defend without being cut down from behind."
+    },
+    {
+      "id": "L11-q09",
+      "q": "What did Naughty Dog learn from Crash Bandicoot 2 focus groups?",
+      "options": [
+        "Players wanted more random, behavioral AI",
+        "Players wanted fewer enemies",
+        "Players preferred learning simple enemy patterns",
+        "Players disliked any patterns"
+      ],
+      "answer": 2,
+      "why": "Less-patterned AI tested worse; players enjoyed figuring out patterns. The exception is sports games, where patterns become exploits."
+    },
+    {
+      "id": "L11-q10",
+      "q": "In Bruce Lee movies, why do henchmen attack in ones and twos, and why copy it in games?",
+      "options": [
+        "It creates the illusion of a big group without overtaxing the game or the player",
+        "It's more realistic",
+        "It makes enemies look smarter",
+        "It reduces animation work only"
+      ],
+      "answer": 0,
+      "why": "The crowd looks threatening, but performance and player workload stay manageable."
+    },
+    {
+      "id": "L11-q11",
+      "q": "Players keep killing enemies the moment they spawn. Which is NOT one of Rogers' fixes?",
+      "options": [
+        "Make them invulnerable while spawning",
+        "Spawn them off-screen",
+        "Use a delivery mechanic like bursting coffins",
+        "Remove all enemies near spawn points"
+      ],
+      "answer": 3,
+      "why": "Rogers suggests spawn invulnerability, off-screen spawning, or a hazard/mechanic that delivers enemies safely. Removing enemies avoids the problem instead of solving it."
+    },
+    {
+      "id": "L11-q12",
+      "q": "Why does Rogers dislike the 'sees you, charges, explodes' enemy?",
+      "options": [
+        "It's too expensive to animate",
+        "Cameras rarely show it coming, so the only answer is avoidance",
+        "It's too easy to kill",
+        "It breaks the age rating"
+      ],
+      "answer": 1,
+      "why": "3rd- and 1st-person cameras hide the pursuer, and even HUD warnings don't make it a fair fight. Enemies should be fought, not avoided."
+    },
+    {
+      "id": "L11-q13",
+      "q": "Which is one of Rogers' reasons players WANT to fight enemies?",
+      "options": [
+        "They're optional",
+        "They're invisible",
+        "They hold the key to the next area",
+        "They give no rewards"
+      ],
+      "answer": 2,
+      "why": "The six reasons: loot, they block the path, they have the key, take their power, taunts, and it feels badass."
+    },
+    {
+      "id": "L11-q14",
+      "q": "Which attack 'tell' does Rogers list?",
+      "options": [
+        "A weapon's laser sight acquiring the target before firing",
+        "The music stops forever",
+        "The screen going black",
+        "The enemy disappearing"
+      ],
+      "answer": 0,
+      "why": "Tells include cocking a fist, growls, a twitching tail or fins, a laser sight locking on, and a weapon or spell charging up."
+    },
+    {
+      "id": "L11-q15",
+      "q": "Which grief tool can the player break out of by button mashing?",
+      "options": [
+        "Stun",
+        "Knockback",
+        "Leech",
+        "Freeze/paralyze/capture"
+      ],
+      "answer": 3,
+      "why": "Freeze works like a stun but is escapable through mashing or stick wiggling; reward escape with a victorious breaking-free animation."
+    },
+    {
+      "id": "L11-q16",
+      "q": "Your RPG adds a thief enemy that steals a player's paid premium weapon. What's wrong?",
+      "options": [
+        "Nothing, it adds tension",
+        "Thieves should never steal anything bought or earned through progression",
+        "Thieves should only steal health",
+        "Thieves should be invulnerable"
+      ],
+      "answer": 1,
+      "why": "Steal only replaceable things and give a fair chance to recover them. Taking paid or progression items destroys trust."
+    },
+    {
+      "id": "L11-q17",
+      "q": "How does Rogers recommend you START balancing an enemy's health?",
+      "options": [
+        "Copy the player's health value",
+        "Make bosses 10x normal enemies",
+        "Decide how many hits it should take, considering all the hero's attacks",
+        "Use random values and test"
+      ],
+      "answer": 2,
+      "why": "Balance health against the player's attacks: e.g., a goblin takes three normal hits but one holy-sword hit."
+    },
+    {
+      "id": "L11-q18",
+      "q": "Your event has a fire-wizard enemy and a sword-ninja enemy sharing one model with no visual difference. Which principle helps?",
+      "options": [
+        "Red Ninja/Blue Ninja",
+        "Form follows function",
+        "Bruce Lee rule",
+        "Coup de grace"
+      ],
+      "answer": 0,
+      "why": "Reuse assets, but enemies with different behaviors must look different at a glance."
+    },
+    {
+      "id": "L11-q19",
+      "q": "Which best describes the Demolition Man villain technique?",
+      "options": [
+        "A long cutscene at the start",
+        "The villain fights you every level",
+        "Players read letters about the villain",
+        "The villain briefly appears each level, shakes his fist and runs off"
+      ],
+      "answer": 3,
+      "why": "Simon's tiny recurring cameo re-energized players every level until the final showdown."
+    },
+    {
+      "id": "L11-q20",
+      "q": "What does 'make the player hate their enemy' most strongly require?",
+      "options": [
+        "Ugly character design",
+        "Villainy that takes something the player needs, hurting gameplay as well as story",
+        "Loud voice acting",
+        "Higher enemy damage"
+      ],
+      "answer": 1,
+      "why": "Kill the blacksmith who forged your sword, kidnap your healer, burn your storage: hatred works best when the loss is mechanical too."
+    },
+    {
+      "id": "L11-q21",
+      "q": "A villain who undoes your progress without fighting you (like SimCity's monster) is a…",
+      "options": [
+        "Tormentor",
+        "Human competitor",
+        "Gremlin",
+        "Doppelganger"
+      ],
+      "answer": 2,
+      "why": "A gremlin disrupts by undoing progress. A tormentor taunts throughout but never directly confronts."
+    },
+    {
+      "id": "L11-q22",
+      "q": "Which boss approach describes Legend of Zelda bosses built around the dungeon's new item?",
+      "options": [
+        "New abilities",
+        "Learned moves",
+        "Combination",
+        "Puzzle boss"
+      ],
+      "answer": 0,
+      "why": "New-ability bosses make the learning curve of a fresh weapon or move part of the difficulty; Mario bosses use learned moves."
+    },
+    {
+      "id": "L11-q23",
+      "q": "In the laser-mech example, the chest cowling opening and venting steam is the…",
+      "options": [
+        "Primary attack",
+        "Invulnerable attack",
+        "Opportunity",
+        "Vulnerable state"
+      ],
+      "answer": 3,
+      "why": "The vulnerable state exposes the Achilles heel for maximum damage, then ends with an electric burst pushing the player away."
+    },
+    {
+      "id": "L11-q24",
+      "q": "Why should a boss camera not be placed too high?",
+      "options": [
+        "It causes clipping",
+        "It de-emphasizes drama and the boss's scale",
+        "It hides incoming attacks through foreshortening",
+        "It makes the boss too big"
+      ],
+      "answer": 1,
+      "why": "Too high kills drama and scale. Clipping and foreshortening are problems of a camera that's too low."
+    },
+    {
+      "id": "L11-q25",
+      "q": "Your puzzle game's chapter-end 'Super Hard' level has a huge fail spike and churn. Which chapter insight applies most?",
+      "options": [
+        "Bosses should always be the hardest content",
+        "Remove all boss levels",
+        "Bosses can become skill gateways that make players quit",
+        "Make the boss level random"
+      ],
+      "answer": 2,
+      "why": "Rogers notes most people who quit did so at a too-hard boss. Tune the spike, keep a fair free path, and make it tense rather than a wall."
+    },
+    {
+      "id": "L11-q26",
+      "q": "A player dies to your three-phase boss. What does Rogers suggest?",
+      "options": [
+        "Respawn safely, have the boss wait, and consider keeping the boss's state",
+        "Restart the whole level",
+        "Make the boss attack immediately on respawn",
+        "Remove a phase permanently"
+      ],
+      "answer": 0,
+      "why": "Safe respawn, a boss that waits until the player is ready, and resuming from the boss's current state keep the fight fair."
+    },
+    {
+      "id": "L11-q27",
+      "q": "Your story requires the boss to escape after the fight. How do you keep it satisfying?",
+      "options": [
+        "Let it escape mid-fight",
+        "Skip the fight",
+        "Kill it in a cutscene",
+        "Use a false kill: knock it to its knees, hold the camera, then let it flee"
+      ],
+      "answer": 3,
+      "why": "The false kill makes the player's victory clear while setting up a rematch with a worthy adversary."
+    },
+    {
+      "id": "L11-q28",
+      "q": "Which is a lesson from Paul Guirao's arm-wrestling dagger boss?",
+      "options": [
+        "Bigger bosses are always better",
+        "Intimacy creates urgency",
+        "Cutscenes tell story best",
+        "New assets make bosses memorable"
+      ],
+      "answer": 1,
+      "why": "The tight camera on faces, hands and dagger heightened danger. Other lessons: drama over scale, reuse existing assets, tell story through play."
+    }
+  ],
+  "sideQuests": [
+    {
+      "id": "L11-s01",
+      "title": "Gumdrop Roster",
+      "task": "Draw one simple blob and give it ten props, one per behavior archetype (beanie = flyer, shield = blocker, etc.).",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L11-s02",
+      "title": "Combo Chef",
+      "task": "Invent three enemy combos not in the book. For each, write the threat-analysis question the player must answer.",
+      "minutes": 10,
+      "xp": 35
+    },
+    {
+      "id": "L11-s03",
+      "title": "Three-Ss Audit",
+      "task": "Rate six units from a game you play (Clash Royale, a tower defense, a survivor-like) 1-5 on speed, size and strength. Flag any that score high on all three.",
+      "minutes": 10,
+      "xp": 35
+    },
+    {
+      "id": "L11-s04",
+      "title": "Telegraph Translator",
+      "task": "For five attacks, write the tell as one visual, one audio and one ground marker that would read on a portrait phone screen.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L11-s05",
+      "title": "Puzzle Grief Toolbox",
+      "task": "Design a match-3 blocker for four grief tools: thief, leech, freeze and heal. Write each blocker's rule and its counterplay.",
+      "minutes": 10,
+      "xp": 40
+    },
+    {
+      "id": "L11-s06",
+      "title": "Villain in a Sentence",
+      "task": "Write a LiveOps event villain: one deadly sin as motive, one Joker moment, and what they take from the player in gameplay terms.",
+      "minutes": 5,
+      "xp": 20
+    },
+    {
+      "id": "L11-s07",
+      "title": "Red Ninja, Blue Ninja",
+      "task": "Take one enemy and make three variants with different behaviors. Describe the single visual change that signals each.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L11-s08",
+      "title": "Arena Doodle",
+      "task": "Sketch a portrait-mode boss arena with three destructible dynamic elements, and mark how the camera frames boss and player.",
+      "minutes": 15,
+      "xp": 45
+    }
+  ],
+  "mainQuests": [
+    {
+      "id": "L11-m01",
+      "title": "Design a Complete F2P Boss Event",
+      "task": "Pick a genre (survivor-like, match-3, tower defense or auto-battler). Write a boss design doc using the F2P enemy card plus boss fields: design approach, what the boss represents, deadly-sin motive, physical/mental/global type, a PIVO pattern table with telegraphs, three escalating phases, arena with two dynamic elements, intro, damage states, coup de grace celebration, false kill or recurrence plan, respawn/continue rules with a fair free path, readability checklist, and a LiveOps rerun plan.",
+      "deliverable": "A 1-2 page boss design document (plus optional one-image summary)",
+      "doneWhen": "Every field is filled, every damaging attack has a tell, the vulnerable state has clear start and end signals, and you can explain how a non-paying player beats it.",
+      "minutes": 90,
+      "xp": 250
+    },
+    {
+      "id": "L11-m02",
+      "title": "Enemy Roster Teardown",
+      "task": "Choose one F2P game with enemies or blockers. Catalogue 8-12 of them in a table: archetype, size tier, speed, grief tool, telegraph, reason to fight, combo partners. Then write five recommendations using this chapter's rules.",
+      "deliverable": "A teardown table plus five bullet recommendations",
+      "doneWhen": "Each row maps to at least one book archetype and you've identified at least one cheap or unreadable enemy with a concrete fix.",
+      "minutes": 60,
+      "xp": 150
+    }
+  ],
+  "playLabs": [
+    {
+      "id": "L11-p01",
+      "game": "Clash Royale",
+      "minutes": 10,
+      "lookFor": "Which cards map to Rogers' archetypes: chaser, shooter, flyer, bomber, burrower, blocker.",
+      "question": "Which card bends the Three-Ss trade-off the most, and how does its elixir cost balance it?"
+    },
+    {
+      "id": "L11-p02",
+      "game": "Survivor.io (or a similar survivor-like)",
+      "minutes": 10,
+      "lookFor": "Spawn locations, elite readability, the boss intro, arena lock-in, and death/loot juice.",
+      "question": "How does the boss signal its vulnerable windows, and is the final blow celebrated?"
+    },
+    {
+      "id": "L11-p03",
+      "game": "Candy Crush Saga or Royal Match",
+      "minutes": 10,
+      "lookFor": "Each blocker's behavior (spreads, has layers, locks, counts down) and what happens around a Hard level.",
+      "question": "Which book archetype does each blocker resemble, and where does the game present a monetization moment around the 'boss' level?"
+    },
+    {
+      "id": "L11-p04",
+      "game": "Plants vs. Zombies 2",
+      "minutes": 10,
+      "lookFor": "How new zombie types are introduced, and Red Ninja/Blue Ninja style variants.",
+      "question": "How does the game teach each zombie's weakness before you need it?"
+    }
+  ],
+  "retrieval": [
+    {
+      "q": "What is Rogers' golden rule of enemy design, and whose work does it protect?",
+      "a": "Form follows function; it protects programmers (code), animators (rigs) and artists (textures) from costly redos."
+    },
+    {
+      "q": "List the seven enemy attributes.",
+      "a": "Size, behavior, speed, movement, attacks, aggression, health."
+    },
+    {
+      "q": "Name the five size classes and how a huge enemy is fought.",
+      "a": "Short, average, large, huge, gigantic; huge enemies need low, medium and high attacks, maybe a jump attack for a high weak point."
+    },
+    {
+      "q": "Name all ten behavior archetypes and the burrower/teleporter difference.",
+      "a": "Patroller, chaser, shooter, guard, flyer, bomber, burrower, teleporter, blocker, doppelganger. Burrowers reposition in a visible invulnerable state; teleporters move instantly, so players need a disruption tool."
+    },
+    {
+      "q": "Give two of Rogers' four enemy combos and why they work.",
+      "a": "Blocker + shooter behind; big chaser + small flyers; teleporter + chaser; guard + bomber. Each punishes focusing on one enemy, forcing threat analysis."
+    },
+    {
+      "q": "What are the Three Ss, and why is a strong-and-fast medium enemy bad?",
+      "a": "Speed, size, strength trade off inversely; having both strength and speed gives an unmatched advantage that feels cheap."
+    },
+    {
+      "q": "What did Crash Bandicoot 2 focus groups reveal, and what's the exception?",
+      "a": "Players preferred learnable patterns over behavioral AI; sports games are the exception, where patterns become exploits."
+    },
+    {
+      "q": "What is the Bruce Lee rule?",
+      "a": "Enemies surround the hero but attack one or two at a time, giving the illusion of a crowd without overtaxing the game or the player."
+    },
+    {
+      "q": "Name the five pathing/behavior AI questions.",
+      "a": "How mobile, aggressive, team-player, defensive and versatile is the enemy?"
+    },
+    {
+      "q": "Name the enemy intro techniques and the safe-spawn methods.",
+      "a": "Intro: freeze/zoom camera, show the name, foreshadow, dramatic entrance. Spawn: invulnerable on spawn, off-screen spawn, a delivery hazard/mechanic."
+    },
+    {
+      "q": "Why is the exploder bad, and what are the six reasons to fight?",
+      "a": "No warning and only avoidance as counterplay; enemies should be fought, not avoided. Reasons: loot, path, key, power, taunts, feeling badass."
+    },
+    {
+      "q": "Name the ten non-damaging grief tools and the thief rule.",
+      "a": "Block/parry, knockback, stun, freeze, heal, buff, thief, leech, unexpected behaviors, vulnerabilities/resistances. Thieves never steal bought or progression items, and players get a fair chance to recover them."
+    },
+    {
+      "q": "How do you balance enemy health?",
+      "a": "Like player health: start from hits-to-kill, consider every hero attack, and display it like player health."
+    },
+    {
+      "q": "What is a Joker moment, and how did Demolition Man keep Simon present?",
+      "a": "A villain doing something truly evil to prove it; Simon ran out each level, shook his fist and ran off."
+    },
+    {
+      "q": "Name the four boss pattern components, three boss approaches and four Guirao lessons.",
+      "a": "Primary, invulnerable, vulnerable, opportunities; learned moves, new abilities, combination; drama over scale, intimacy creates urgency, reuse assets, tell story through play."
+    }
+  ],
+  "feynman": "Explain to a 12-year-old in 60 seconds why a great boss fight is a dance with four steps (an attack you dodge, a big attack you survive, a weak spot you hit, short openings you grab) and why the player must always land the final hit.",
+  "links": [
+    "L03",
+    "L09",
+    "L10",
+    "L12",
+    "L13",
+    "L14",
+    "F2P"
+  ]
+}

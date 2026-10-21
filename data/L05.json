@@ -1,0 +1,1785 @@
+{
+  "id": "L05",
+  "order": 6,
+  "kind": "book",
+  "label": "Level 5",
+  "title": "The Three Cs, Part 1 — Character",
+  "bookPages": "83–119",
+  "emoji": "🦸",
+  "tagline": "Your hero is the ruler, the HUD and the poster. Measure twice, jump once.",
+  "f2pRelevance": 4,
+  "f2pWhy": "In F2P mobile the character is the collectible, the skin you sell, the face of every ad, and the source of the runner or brawler feel through its metrics.",
+  "minutes": 75,
+  "tldr": [
+    "**Lock the Three Cs early** (Character, Camera, Control). Changing one mid-production ripples through everything.",
+    "**Form follows function:** pick 3 personality traits, then express them through shape language, a readable silhouette, color and texture.",
+    "Humorous, heroic or badass, each type has rules. **Customization creates ownership**, but the **signature item** stays fixed.",
+    "**The hero is the world's ruler:** metrics (height, speeds, jump ½ height, double jump 2×, hoist +1 body, melee, projectile). Collide from the torso.",
+    "**Walking is NOT gameplay.** Nail the five jump phases, the jump zone and safe landing zone, teeters, hoists, readable falls, shadows and fast recovery.",
+    "**The character is the best HUD.** Companions should be complementary opposites, big casts need an abilities matrix, and every NPC must answer 'what does the player need to succeed?'"
+  ],
+  "sections": [
+    {
+      "title": "The Three Cs & Form Follows Function",
+      "bites": [
+        {
+          "id": "L05-b01",
+          "hook": "Lock the Three Cs early or the whole game wobbles",
+          "body": "Character, Camera and Control must be settled in preproduction. They touch so many systems that changing one mid-production ripples everywhere: rework, broken gameplay, even cancelled projects. This level covers Character; Camera and Control come next.",
+          "example": "Rogers has watched teams cancel their games after abandoning their Three Cs plan.",
+          "f2p": "Soft launch tests your hero, camera and controls with real players and ad creatives. Changing them afterward means redoing marketing, onboarding and art.",
+          "memory": "Three legs of a stool: saw one off mid-meal and the soup hits the floor.",
+          "tag": "rule"
+        },
+        {
+          "id": "L05-b02",
+          "hook": "Form follows function: the motto for designing anything",
+          "body": "Rogers' very important rule: a character's actions and personality decide their appearance. Design what they do first, then how they look. 'Character' here means how the hero is presented and what the player does with them, not the story writing of Level 3.",
+          "example": "Batman's cape exists because a hero seen from behind needs something that shows movement. Function shaped the form.",
+          "f2p": "On mobile, 'function' includes reading clearly at 1.5 cm tall and being playable with one thumb.",
+          "memory": "Function first, fashion second.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Looks That Talk: Traits, Shapes, Silhouettes, Color",
+      "bites": [
+        {
+          "id": "L05-b03",
+          "hook": "Describe your hero in exactly three words",
+          "body": "Pick three personality traits and let them drive the design: Mario is courageous, bouncy, happy; Sonic is fast, cool, edgy; Kratos is brutal, vicious, selfish. Apply them to the look and to how the hero walks, fights, opens doors, celebrates and waits.",
+          "example": "Sonic's 'fast, cool, edgy' shows in his spikes, his poses and his impatient foot-tap when you stop playing.",
+          "f2p": "Mobile mascots need a crisp trio too. It guides ad tone, push notification copy and FTUE lines.",
+          "memory": "Three words, one hero, every animation.",
+          "tag": "concept"
+        },
+        {
+          "id": "L05-b04",
+          "hook": "Circles hug, squares punch, triangles crown heroes or villains",
+          "body": "Shape language: circles feel friendly; squares read as strong or dumb depending on size; a point-down triangle torso gives heroes a powerful frame, but the same triangle used as a head looks sinister. Rotate, mix and match shapes for compelling characters.",
+          "example": "The book's drawing: a round friendly blob, a triangle-chested soldier hero, and a robed villain with a triangle head.",
+          "f2p": "Angry Birds: round Red, arrowhead-shaped speedy Chuck, round black Bomb. Each shape hints at the bird's ability.",
+          "memory": "Triangle chest = best, triangle head = dread.",
+          "tag": "list"
+        },
+        {
+          "id": "L05-b05",
+          "hook": "A great silhouette does four jobs at once",
+          "body": "A strong silhouette shows personality at a glance, tells characters apart, marks friend from enemy, and makes the character pop against the background. Body language does much of the work.",
+          "example": "Team Fortress 2's classes are instantly readable as pure black shapes: Heavy, Pyro, Spy. In a fight you know who's coming for you, and who is in your sights.",
+          "f2p": "Brawlers and troops can be a few millimeters tall on a phone. The silhouette carries their identity.",
+          "memory": "Blackout test: paint the cast black. Can you still name them?",
+          "tag": "list"
+        },
+        {
+          "id": "L05-b06",
+          "hook": "Design characters who share the screen together, like duos",
+          "body": "When several characters appear at once (e.g. multiplayer), design them as a set so their silhouettes fit together even when apart. Classic duos contrast tall/short, square/pointy or fat/thin.",
+          "example": "Jak & Daxter (tall/short), SpongeBob & Patrick (square/pointy), Mario & Luigi (fat/thin).",
+          "f2p": "Plan silhouettes at roster level so no two heroes blob together in a teamfight.",
+          "memory": "Duos are puzzle pieces.",
+          "tag": "concept"
+        },
+        {
+          "id": "L05-b07",
+          "hook": "Color and texture whisper good or evil",
+          "body": "Color and texture also separate characters. Early comic heroes wore bright patriotic reds and blues, while villains wore darker opposites like greens and purples. Texture counts too. But in the end, personality decides who is good or evil.",
+          "example": "Star Wars: Luke, Leia and Han wear black and white, and so do Vader and the Stormtroopers, but the villains' costumes are hard-edged and metallic.",
+          "f2p": "Ally-blue vs enemy-red rings and outlines in mobile PvP do this job, especially once skins scramble palettes.",
+          "memory": "Same colors, sharper edges = villain.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Personality: Do We Really Need Another Badass?",
+      "bites": [
+        {
+          "id": "L05-b08",
+          "hook": "The humorous hero: funny through contrast, not farts",
+          "body": "Humorous characters say funny things (hard to write; hire a professional if needed), do funny things (skip fart and burp gags, which are juvenile and bad for your rating), and remember that funny isn't only jokes. Playing absurdity totally straight is comedy gold.",
+          "example": "1960s Batman was funny because Adam West treated bat-gadgets and bat-shark repellent as perfectly normal.",
+          "f2p": "A serious, helpless king stuck in traps (Royal Match's King Robert) is situational humor that fuels ads.",
+          "memory": "Deadpan beats flatulence.",
+          "tag": "list"
+        },
+        {
+          "id": "L05-b09",
+          "hook": "The heroic hero matters, specializes, and has a flaw",
+          "body": "Heroes do heroic things that matter (without being sappy), are always great at something (a weapon or skill), and aren't perfect: phobias, ambitions or relationship troubles make them relatable. Best of all, turn the flaw into gameplay.",
+          "example": "Lara finds treasure, Sonic runs, Simon Belmont whips. Indiana Jones fears snakes. Champions Online lets you choose weaknesses like fire vulnerability.",
+          "f2p": "'Glass cannon' heroes (huge damage, tiny HP) turn a flaw into strategy.",
+          "memory": "Cape + specialty + a crack in the armor.",
+          "tag": "list"
+        },
+        {
+          "id": "L05-b10",
+          "hook": "The badass: style, cruelty, and almost no shouting",
+          "body": "The badass (the anti-hero) feeds wish fulfillment. Rules: does everything with style, even opening doors; isn't nice and enjoys adding insult to injury; says cool things but rarely shouts. Danger: a stoic character can read as having no personality.",
+          "example": "Kratos (brutal, vicious, selfish) is Rogers' badass benchmark.",
+          "f2p": "Edgy anti-hero heroes and skins sell, but give them distinct voice lines and animations so cool doesn't become blank.",
+          "memory": "Quiet, cruel, cool, never bland.",
+          "tag": "list"
+        },
+        {
+          "id": "L05-b11",
+          "hook": "Optional rescues made Maximo players feel like heroes",
+          "body": "Preaching morality is bad form, but you can steer sneakily. In Maximo vs. Army of Zin, villagers menaced by enemies could be rescued, sometimes via detours, for small rewards, with no penalty for skipping. Playtesters cared, felt bad when too late, and loved being 'a hero'.",
+          "example": "The rewards were tiny (a few coins, an armor power-up). The flip side: in inFAMOUS, locals throw bricks at you if you turn evil.",
+          "f2p": "Reward pro-social play without forcing it: helping friends' orders, clan donations, optional rescue goals.",
+          "memory": "Give them a villager to save and a coin for saving them.",
+          "tag": "example"
+        },
+        {
+          "id": "L05-b12",
+          "hook": "Link is secretly gaming's worst houseguest",
+          "body": "Rogers jokes that Link chops up gardens, breaks into homes, pockets anything not nailed down and smashes the crockery, and the villagers still adore him. Nearly everyone in games kills and steals. Personality and framing decide whether we read it as heroic.",
+          "example": "Zelda's pot-smashing and rupee-grabbing plays as cheerful adventure, never as burglary.",
+          "f2p": "",
+          "memory": "Hero or home-wrecker? Framing decides.",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "Let's Get Personal: Names, Customization, Style",
+      "bites": [
+        {
+          "id": "L05-b13",
+          "hook": "Make the name match the face",
+          "body": "A character's look should fit their name. The book shows a square-jawed gunman and a buck-toothed goof with a mallet and asks which one is 'Dirk Steele'. The answer is obvious, and that's the point.",
+          "example": "Dirk Steele = chiseled action man, not the mallet-wielding goof.",
+          "f2p": "Hero names live on store pages, banners and ads. Short, evocative names that fit the art sell faster.",
+          "memory": "Dirk Steele has a jaw, not buck teeth.",
+          "tag": "rule"
+        },
+        {
+          "id": "L05-b14",
+          "hook": "Renaming soldiers made Rogers care whether they lived",
+          "body": "In X-Com: UFO Defense, recruits had bland names until Rogers learned he could rename them. Suddenly they had personalities: he armed them, healed them and brought them home. Customization creates caring, so unless the hero is licensed, let players name them.",
+          "example": "Even Link, one of gaming's most loved heroes, can be renamed in every Zelda game.",
+          "f2p": "Pokémon GO nicknames, clan names and base names build ownership and social glue.",
+          "memory": "Name him Bob, and Bob's death becomes a tragedy.",
+          "tag": "example"
+        },
+        {
+          "id": "L05-b15",
+          "hook": "Customization ranges from sliders to drawing your own hero",
+          "body": "Deep creators (Champions Online, Saints Row 2, Oblivion) can eat hours before play begins. GTA: San Andreas changes your physique with your diet. Spore creatures move according to their anatomy. Drawn to Life lets you draw the hero. Graffiti Kingdom adds your own sounds.",
+          "example": "LittleBigPlanet even customizes emotions: make Sackboy smile when you win the prize bubble, or scowl and slap your friend.",
+          "f2p": "Emotes and pins in Clash Royale and Brawl Stars sell emotional expression, the LittleBigPlanet idea as a product.",
+          "memory": "From slider to stick figure, it all builds ownership.",
+          "tag": "concept"
+        },
+        {
+          "id": "L05-b16",
+          "hook": "Six things players love to customize",
+          "body": "Name (hero, weapons, vehicles); looks (hair, skin and eye tone, ethnicity, stature, build); outfit, armor and gear (style, hue, texture); vehicles (paint, loadouts, decals, hubcaps, mirror danglies); home base (furnishings, lighting, decor); weapons (look, decoration, ammo loads, effects).",
+          "example": "Rogers' line: every player likes to 'play house', so customization extends to costumes, weapons and home bases.",
+          "f2p": "Homescapes style choices, Clash of Clans sceneries, Brawl Stars skins: cosmetics are fair, non-pay-to-win revenue.",
+          "memory": "Never Fight Clowns Carrying Crazy Weapons.",
+          "tag": "list"
+        },
+        {
+          "id": "L05-b17",
+          "hook": "Never let players customize the signature item",
+          "body": "Give the hero a signature weapon and look that stays fixed. It's part of who they are, which is how licensed characters stay unique. Fit these items to the gameplay; sometimes an item even inspires the hero's actions.",
+          "example": "A Ghostbuster without a proton pack? Dante without the trench coat? Cloud Strife without the giant sword? Unthinkable.",
+          "f2p": "In skin economies, skins can change everything except the signature, so heroes stay readable in battle.",
+          "memory": "Skin the cat, keep the whiskers.",
+          "tag": "rule"
+        },
+        {
+          "id": "L05-b18",
+          "hook": "Characters seen from behind need something that swings",
+          "body": "Most game heroes are viewed from behind, so give them an element that shows movement, often something swinging off their back. These need unique code, so check feasibility with your art and programming leads early.",
+          "example": "Lara Croft's ponytail and Batman's cape. In the book's drawing, Batman compliments Lara's 'tail'.",
+          "f2p": "Capes, tails and hair bouncing in lobbies and gacha reveals make tiny heroes feel premium.",
+          "memory": "Seen from behind? Give it a tail.",
+          "tag": "concept"
+        },
+        {
+          "id": "L05-b19",
+          "hook": "Realistic heroes risk the uncanny valley",
+          "body": "Near-human characters can look subtly wrong, especially in cutscenes. Realism tips: avoid exaggerated eyes, chins and mouths; invest in rigging, because stiff shoulders and 'ham' hands look awful; and remember human-looking characters, even robots, will be expected to act human.",
+          "example": "R2-D2 brilliantly plays against the 'looks human, acts human' expectation.",
+          "f2p": "Realism lives mostly in mobile shooters like PUBG Mobile and Call of Duty: Mobile. Most top grossers go stylized.",
+          "memory": "Ham hands = uncanny alarm.",
+          "tag": "warning"
+        },
+        {
+          "id": "L05-b20",
+          "hook": "Stylized heroes: bigger faces, bolder motion, smaller budgets",
+          "body": "Stylized tips: enlarge eyes, chins and mouths for expression, as in anime; exaggerate movement if you can't afford IK, mocap and dynamics (study Tex Avery cartoons); and go non-human freely, since animal heroes earn as much player investment.",
+          "example": "Ratchet, Sly Cooper and Aero the Acrobat. TF2 switched from realistic to a Leyendecker, Cornwell and Rockwell look by way of Pixar, which improved the whole franchise's tone.",
+          "f2p": "Stylized art reads at thumbnail size, animates cheaply and ages well across years of LiveOps.",
+          "memory": "When in doubt, Tex Avery it out.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Finally, We Talk About Gameplay: Metrics & Collision",
+      "bites": [
+        {
+          "id": "L05-b21",
+          "hook": "All gameplay flows from the main character",
+          "body": "Decide the hero's height, everyone else's height relative to them, their reach, and for quadrupeds or vehicles, length and width. These proportions become the metrics, the cornerstone of gameplay and level design.",
+          "example": "Like a fencer who knows exactly how far a step, an extended arm and a lunge carry the blade, players learn your metrics by eye.",
+          "f2p": "Runner feel is metrics: lane width, jump clearance, roll height, reaction windows.",
+          "memory": "The hero is the ruler.",
+          "tag": "concept"
+        },
+        {
+          "id": "L05-b22",
+          "hook": "Measure the whole world in hero units",
+          "body": "Players judge distances by eye, and anything that breaks their learned constants feels wrong. Start with height, travel speed and reach height, then express every distance in hero units. Rogers' team measured everything in '1 Maximo unit'.",
+          "example": "Every gap, wall and corridor in Maximo: Ghosts to Glory was expressed in Maximos.",
+          "f2p": "Top-down mobile maps use tiles. '1 tile' is your Maximo unit, ideally tunable in remote config.",
+          "memory": "Measure the world in Maximos.",
+          "tag": "rule"
+        },
+        {
+          "id": "L05-b23",
+          "hook": "The eight metrics every hero needs",
+          "body": "Height; width of passage (wider than the hero); walk speed (distance per second); run speed; jump distance (more than a walk, less than a run, or e.g. 5 hero widths); jump height; melee distance (arm plus weapon); projectile distance (from reach up to sight range).",
+          "example": "The book's metrics strip: Height, Width, Walking, Running, Horizontal Jump, Vertical Jump, Melee ('Pow!'), Projectile ('Bang!').",
+          "f2p": "Brawlers add hitbox radius, dash distance and cooldown, all in a live-editable stat sheet.",
+          "memory": "How We Walk, Run, Jump, Jump, Melee, Pew.",
+          "tag": "list"
+        },
+        {
+          "id": "L05-b24",
+          "hook": "Jump half your height; double jump twice it",
+          "body": "Rogers' rule of thumb: a jump reaches half the hero's height, a double jump up to twice it, and a hoist adds up to one body length. Players learn they can reach anything up to double their height, so make unreachable ledges visibly taller and they'll look for another way.",
+          "example": "The book's reach ruler marks half, whole and double above the hero, next to a cliff that clearly towers over 'double'.",
+          "f2p": "Runners teach jump clearance in seconds; Super Sneakers in Subway Surfers visibly breaks it for fun.",
+          "memory": "½ jump, +1 hoist, 2× double.",
+          "tag": "rule"
+        },
+        {
+          "id": "L05-b25",
+          "hook": "Collide from the torso, not the head or feet",
+          "body": "Collision decides how the hero touches the world, and more points cost performance, so games often use one primary point. Head: the hero seems to float above the ground. Feet: mid-air pickups force a jump. Torso: covers both halves and feels right when running through items.",
+          "example": "The book's diagram crosses out the head and feet dots and approves the torso dot.",
+          "f2p": "Generous, torso-centered pickup radii and coin magnets keep runners fair under fat fingers.",
+          "memory": "Head floats, feet hop, torso tops.",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "Why Walk When You Can Run?",
+      "bites": [
+        {
+          "id": "L05-b26",
+          "hook": "Walking is NOT gameplay",
+          "body": "If your level walkthrough contains 'and then the character walks through here', alarms should blare. Long travel is boring however pretty the art, and players don't enjoy collecting as much as you enjoyed placing. Make traversal use varied moves.",
+          "example": "The book contrasts a flat empty corridor with the same A-to-B path built from steps and ledges that need jumps.",
+          "f2p": "Short mobile sessions can't afford dead travel: auto-run, tap-to-move and instant travel are the norm.",
+          "memory": "Hear 'walks through here'? WEE-OO WEE-OO.",
+          "tag": "rule"
+        },
+        {
+          "id": "L05-b27",
+          "hook": "Westerners drift right; heading left feels wrong",
+          "body": "Players used to reading left to right head for interesting things on the right, so Rogers hides goodies off-screen to the left. Making players travel left feels uneasy, and a whole leftward level leaves them sensing something is 'not right' without knowing why.",
+          "example": "The book's figure: the player starts left, a tempting tree with a lurking enemy sits on the right edge, and a goodie hides off-screen left.",
+          "f2p": "Put teasers just off-screen on scrolling saga maps to pull a swipe.",
+          "memory": "Left feels wrong, right feels right.",
+          "tag": "concept"
+        },
+        {
+          "id": "L05-b28",
+          "hook": "Players always pick the fastest move over walking",
+          "body": "Rogers asks teams: do you really need a walk? Players will jump, roll or dash instead. If you keep a walk, make it fast enough to be useful. Walking shines at ledges, where it feels safe; a teeter stops all movement and attacks.",
+          "example": "On God of War, designers rolled Kratos everywhere, even though it looked silly, because rolling felt faster.",
+          "f2p": "Archero flips it: you only shoot while standing still, so every step becomes a decision.",
+          "memory": "Kratos rolls, dignity optional.",
+          "tag": "concept"
+        },
+        {
+          "id": "L05-b29",
+          "hook": "Vehicles must beat the walk and carry weight",
+          "body": "Driving, flying or jet-skiing must always be faster than the standard walk. Big characters like cars, hovertanks and motorbikes need weight (a car swings its back end out on curves) or they feel floaty. Weight brings skids, which must be built into the metrics.",
+          "example": "LittleBigPlanet's skids can slide you off ledges. Rogers is torn: skids frustrate, but without them movement feels stiff.",
+          "f2p": "Hill Climb Racing is an entire game built on vehicle weight and physics.",
+          "memory": "No weight, no road, just floaty toad.",
+          "tag": "rule"
+        },
+        {
+          "id": "L05-b30",
+          "hook": "Fast game? Make most of the verbs fast",
+          "body": "Decide your gameplay speed. Fast moves: run, jump, fly, drive, shoot, bounce, fight, spin, fall. Slow moves: walk, duck, crouch, sneak, swim, hide, hoist, climb. Alternate fast and slow for pacing, and make the run drastically different from the walk.",
+          "example": "Resident Evil's run isn't just faster travel. It's how you push past and escape slow zombies.",
+          "f2p": "Runners are nearly all fast verbs; merge and farm games are deliberately slow. Don't break the genre promise.",
+          "memory": "Fast game, fast verbs.",
+          "tag": "list"
+        },
+        {
+          "id": "L05-b31",
+          "hook": "Every dash needs a cooldown",
+          "body": "A dash is a faster run with a time limit, used for timing puzzles (closing doors, fire jets) or combat (dodging an attack or landing an extra-powerful blow). Give it a cooldown, usually a few seconds, so players can't exploit it.",
+          "example": "Dash past a closing door, then wait a few seconds before you can dash again.",
+          "f2p": "The Flash battle spell in Mobile Legends and dodge rolls in action RPGs all run on cooldowns.",
+          "memory": "Dash, then breathe.",
+          "tag": "rule"
+        },
+        {
+          "id": "L05-b32",
+          "hook": "Sprinkled-in stealth makes impatient players run and gun",
+          "body": "Rogers dislikes slow movement unless a whole game or level is built on stealth. In games with stealth merely mixed in, he gets bored creeping, runs around shooting, and dies a lot. Also, a stealth game's hero must look and act stealthy.",
+          "example": "He kept dying in a burly-barbarian game he thought was a brawler, until a coworker told him it was a stealth game. Mixed signals.",
+          "f2p": "Ads that promise action for a slow puzzle game create the same mismatch, and D1 churn.",
+          "memory": "A barbarian with giant axes should not be a sneaker.",
+          "tag": "warning"
+        },
+        {
+          "id": "L05-b33",
+          "hook": "Stealth is bursts plus waiting, not slow walking",
+          "body": "If you add a creep, make it much slower than the walk, available any time, and best with context: ducking behind cover, lining up a snipe, tiptoeing past a sleeping dragon. Real stealth (SWAT, ninjas) is short bursts plus waiting, and the tension comes from the waiting.",
+          "example": "Holding still in hiding while a clueless guard strolls by is the heart of stealth tension.",
+          "f2p": "Timing puzzles ('wait for the guard to turn') bring that waiting tension to mobile.",
+          "memory": "Sleeping dragon? Tiptoe. Empty hallway? Run.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "The Art of Doing Nothing: Idles",
+      "bites": [
+        {
+          "id": "L05-b34",
+          "hook": "Idles turn standing still into personality",
+          "body": "An idle plays after a few seconds without input. It shows personality and a little narrative and keeps the screen alive. Idles usually give no gameplay benefit, and that's fine. Keep them short, snappy and cleanly interruptible, since a bad transition is a problem at any length.",
+          "example": "Sonic's annoyed foot-tap when you stopped playing made funny idles a 1990s platformer staple.",
+          "f2p": "Lobby idles showcase heroes and skins; premium skins often ship with unique idles.",
+          "memory": "Snack-sized, never a buffet.",
+          "tag": "concept"
+        },
+        {
+          "id": "L05-b35",
+          "hook": "Fourteen idle ideas to steal",
+          "body": "Twirl or reload a weapon; stretch and jog; glance around at imagined noises; shiver or wipe sweat; knock dirt off shoes; adjust armor or pack; crack neck or knuckles; air guitar or a dance; check a map or phone; whistle and rock on heels; eat or drink; scratch somewhere embarrassing; check a watch; yawn or nap.",
+          "example": "A snowy level suits the shiver idle, a desert the sweat-wipe.",
+          "f2p": "Tap-the-hero reactions in lobbies are idles the player triggers on purpose, and a pointing idle can nudge the FTUE.",
+          "memory": "Gear, body, weather, fun, waiting.",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "Might as Well Jump",
+      "bites": [
+        {
+          "id": "L05-b36",
+          "hook": "The jump in five phases",
+          "body": "1) At rest. 2) Press: jump immediately, since jumps answer danger, with anticipation as short as possible. 3) Rise to max height fast; allow a double jump only before the apex, never after. 4) Fall quickly, like the jump in reverse. 5) Land with a solid stick.",
+          "example": "The book's slo-mo strip numbers each pose 1 to 5, with the double-jump pose branching off just before the peak.",
+          "f2p": "A swipe-up in a runner must jump instantly. Any delay feels like lag on glass.",
+          "memory": "Now. Up. (Again?) Down. Stick.",
+          "tag": "list"
+        },
+        {
+          "id": "L05-b37",
+          "hook": "Floaty falls and slidey landings betray the player",
+          "body": "A long fall feels floaty and wrecks the player's sense of metrics, unless a glide or float power-up makes slow descent the point. Landings may take slightly longer than takeoffs but must stick. Rogers dislikes skid endings because a good jump can still slide off the platform.",
+          "example": "A glide power-up is the exception where slow falling is desirable.",
+          "f2p": "Snappy arcs make runner jumps feel good in the first 30 seconds, when D1 is decided.",
+          "memory": "Drop fast, land with a thud.",
+          "tag": "warning"
+        },
+        {
+          "id": "L05-b38",
+          "hook": "Tweaked game physics beats real physics",
+          "body": "Copying real physics exactly usually feels worse than a tuned version. Game gravity isn't 9.8 m/s², and some games use different gravity per object. Programmers tweak run speed, jumps and bounciness. Real people jump to waist height; platform heroes double their own height.",
+          "example": "Space, odd gravity or super jumps like Jumping Flash must be worked out early so metrics match physics, and then not changed.",
+          "f2p": "Flappy Bird's famous feel is pure tuned game physics. Nothing about it is realistic.",
+          "memory": "Newton wrote the rules; designers remix them.",
+          "tag": "concept"
+        },
+        {
+          "id": "L05-b39",
+          "hook": "Five ways to jump",
+          "body": "Single (once, vertical or horizontal); double (a chained second jump); triple (a third, usually bouncing off something, mostly horizontal); contextual (automatic at a pre-tagged spot such as a ledge); wall jump (hit a wall, press, spring away; chain between facing walls to climb).",
+          "example": "Prince of Persia gives wall jumps from the start; Ratchet & Clank makes them an earned skill or gadget.",
+          "f2p": "Mobile favors one-tap contextual traversal because precision jumping on glass is hard.",
+          "memory": "Single, double, triple, auto, wall.",
+          "tag": "list"
+        },
+        {
+          "id": "L05-b40",
+          "hook": "Decide how much air control players get",
+          "body": "Mid-air, designers choose: realistic (no trajectory change after takeoff), course correction (steer in the air), or variable jumps, where holding the button longer goes higher and farther.",
+          "example": "Many platformers combine air steering with hold-to-jump-higher.",
+          "f2p": "Hold-duration jumps read well on touch screens, even without physical buttons.",
+          "memory": "Locked, steerable or charged.",
+          "tag": "concept"
+        },
+        {
+          "id": "L05-b41",
+          "hook": "Players jump from the jump zone, not the edge",
+          "body": "Edges make players nervous, so they take off from a 'jump zone' up to half a jump's distance before the edge, and aim for a safe spot about half a jump inside the far edge. So add one extra jump length to your gap distances.",
+          "example": "The book's figure: a hatched Jump Zone set back from a spike pit labeled 'death™', and a Safe Landing Zone well inside the far platform.",
+          "f2p": "Touch controls need even more slack. Widen early landing zones for the FTUE.",
+          "memory": "Jump from the porch, land in the living room.",
+          "tag": "rule"
+        },
+        {
+          "id": "L05-b42",
+          "hook": "Tiny platforms make nervous players jump to their deaths",
+          "body": "For small or floating platforms, the target is dead center, so leave room and skip post-landing slides. Nervous players re-jump and overshoot. Save really small platforms for expert jumping puzzles late in the game.",
+          "example": "The book's chain of shrinking platforms ends with a stick figure overshooting into spikes: 'oh hell!'",
+          "f2p": "A run of tiny targets early in a mobile game is a churn cliff. Keep precision for optional challenges.",
+          "memory": "Small platform early = 'oh hell!'",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "Hoists, Teeters & Falling",
+      "bites": [
+        {
+          "id": "L05-b43",
+          "hook": "Hoists reach higher, teeters warn, hangs wait",
+          "body": "A hoist lets players reach slightly above their jump, adding up to a body length, so include it in the metrics. A teeter warns of an edge. A hang is the in-between state: some games auto-hoist, others use hanging to wait out timing puzzles and hazards.",
+          "example": "The book's drawings: a hero hoisting onto a block, a bored 'Ho hum' hang, and a windmilling teeter.",
+          "f2p": "Mobile games tend to auto-hoist, since fewer states suit touch controls.",
+          "memory": "Hoist +1, teeter whoa, hang ho-hum.",
+          "tag": "concept"
+        },
+        {
+          "id": "L05-b44",
+          "hook": "Loop cliff-hanger animations and dodge the Coyote effect",
+          "body": "Hoists, hangs and teeters are great spots for personality, like a comic panic while dangling. They must loop, since players may leave the hero hanging forever. Watch for the Wile E. Coyote effect: characters visibly standing or hanging on thin air.",
+          "example": "Chuck Jones (1912–2002) created the Road Runner and Wile E. Coyote, who hangs in mid-air for a beat before plummeting.",
+          "f2p": "A funny hang animation makes a perfect two-second ad or social clip.",
+          "memory": "Don't pull a Wile E.",
+          "tag": "warning"
+        },
+        {
+          "id": "L05-b45",
+          "hook": "Eight beats of a well-designed fall",
+          "body": "1) Cautious approach. 2) A teeter warns but disrupts control. 3) Allow jumping out of a teeter; show the death zone, no blind leaps. 4) Hoist to abort or as a last-ditch save. 5) Animation shows fall control (flail vs calm). 6) Communicate any air jump. 7) Show impact penalties early. 8) Recover fast.",
+          "example": "The book's figure ends with a crash (X-eyes, stars) and a cheerful 'TADAH!' recovery.",
+          "f2p": "Instant retry and fair revive offers only work if deaths were readable and recovery is quick.",
+          "memory": "Peek, wobble, hop, grab, flail, flap, splat, TADAH!",
+          "tag": "list"
+        },
+        {
+          "id": "L05-b46",
+          "hook": "Never make players wait on a get-up animation",
+          "body": "Decide early whether impact is harmless (a cat landing), punishing (a long, vulnerable recovery) or deadly (a ragdoll bounce), and tell players. Either way, return control quickly. Nothing is worse than waiting for a 'get up' animation to finish.",
+          "example": "A hard landing with a long recovery leaves the hero exposed to nearby enemies, a deliberate penalty.",
+          "f2p": "Mobile's version is the instant restart. Every second of dead animation risks a swipe-away.",
+          "memory": "Splat fast, stand faster.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Me and My Shadow",
+      "bites": [
+        {
+          "id": "L05-b47",
+          "hook": "A shadow is a free gameplay tool",
+          "body": "Shadows give a 3D reference for judging jumps, ground the hero with weight and mass, help edge detection (no shadow on the ground means don't stand there), set lighting and mood, can drive stealth AI, and, per Egyptian myth, prove you have a soul.",
+          "example": "In some survival horror games, players literally jump at their own shadow.",
+          "f2p": "Blob shadows under units are standard in top-down mobile games: cheap, readable, grounding.",
+          "memory": "No shadow, no soul, no landing spot.",
+          "tag": "list"
+        },
+        {
+          "id": "L05-b48",
+          "hook": "The drop shadow: less real, more useful",
+          "body": "Shadows can match the full silhouette, follow as a rough form, or be a simple drop-shadow spot. The drop shadow shows exactly where you'll land, though small or moving platforms complicate it. Whatever the style, add the shadow early in production.",
+          "example": "The book contrasts a full silhouette shadow with a jumping figure's small oval drop shadow.",
+          "f2p": "Low-end phones struggle with dynamic shadows, so the drop shadow wins on performance too.",
+          "memory": "Ugly spot, perfect landing.",
+          "tag": "concept"
+        },
+        {
+          "id": "L05-b49",
+          "hook": "Three shadow bugs to hunt down",
+          "body": "Watch for a shadow in two places at once (it happens in real life, but in games it looks like a bug), shadows casting through surfaces onto platforms above, and odd behavior under different lights and surfaces. A shadow appearing underwater just looks weird.",
+          "example": "A hero on a high ledge shouldn't cast a shadow through it onto the floor below.",
+          "f2p": "Range rings and targeting circles under heroes are the drop shadow's UI descendants. Keep them clean too.",
+          "memory": "Double, ghost-through, underwater: the three shadow sins.",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "Water & Four-Legged Friends",
+      "bites": [
+        {
+          "id": "L05-b50",
+          "hook": "There's no deep end to the pool",
+          "body": "Players can't tell safe water from deadly water, so within one environment make water all safe or all deadly. 'Water = death' is a long tradition; keep its messaging consistent. If you must have transitional water, warn clearly.",
+          "example": "In one of Rogers' games, a shark fin circled players who swam too far out. Ignore it and a great white attacked.",
+          "f2p": "In Brawl Stars, water tiles block movement but projectiles fly over them: one consistent rule.",
+          "memory": "Send the fin before the shark.",
+          "tag": "rule"
+        },
+        {
+          "id": "L05-b51",
+          "hook": "Settle these swimming rules before building water",
+          "body": "Clearly marked entries and exits (ledges, ramps, ladders); surface only, or diving (maybe unlocked later); an air or pressure timer; whether you can drown and how air refills; attacking underwater and weapon sorting; gliding or bobbing at the bottom; switches and hatches underwater; swim speed; camera flipping.",
+          "example": "Little pool ladders tell players 'this is where I get out.'",
+          "f2p": "An air meter is a soft timer, a cousin of match-3 move limits.",
+          "memory": "In, under, air, arms, bottom, buttons, speed, camera.",
+          "tag": "list"
+        },
+        {
+          "id": "L05-b52",
+          "hook": "Four rules for four-legged heroes",
+          "body": "Quadrupeds need a wider turning radius in their metrics, usually move faster (tune acceleration and deceleration), have longer bodies that hang over edges (double the Coyote risk), and are often shorter than humans, which affects attacks and opening doors or chests. Build the metrics around them.",
+          "example": "Rogers: you can play a hound, an arachnid or a hybrid of both, as long as the metrics fit.",
+          "f2p": "Mounts, pets and vehicles in mobile games need their own turn and acceleration tuning on virtual joysticks.",
+          "memory": "Turn wide, go fast, hang long, stand short.",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "Using All of the Parts: The Character as HUD",
+      "bites": [
+        {
+          "id": "L05-b53",
+          "hook": "Your character is your best HUD",
+          "body": "Players watch the hero most of the game, so show status on them. Through movement: heads turn toward interactables, hands auto-reach for pickups and door handles, reactions to favorite or dangerous things (even refusing certain death), and a limp when wounded.",
+          "example": "In Resident Evil, wounded characters limp and move more slowly.",
+          "f2p": "Status on the character saves precious phone screen space, though PvP still needs clear health bars.",
+          "memory": "Wear your stats on your sleeve.",
+          "tag": "concept"
+        },
+        {
+          "id": "L05-b54",
+          "hook": "Tattered capes, glowing spines and keys on belts",
+          "body": "Appearance can show health (bruises, torn costumes, lost armor). Status can be built into the design. Effects like bleeding, oil leaks or sparks show state. Inventory can hang on the body so players always see what they carry.",
+          "example": "Arkham Asylum's costume tatters, Maximo sheds armor (a Ghosts 'n Goblins nod), Dead Space's glowing spine is the health bar, and Maximo's keys hang on his belt.",
+          "f2p": "Hero models and cards that show gear and level make a player's investment visible.",
+          "memory": "Isaac's spine: the HUD is the hero.",
+          "tag": "example"
+        },
+        {
+          "id": "L05-b55",
+          "hook": "Every major upgrade should change the model or animation",
+          "body": "An evolving character keeps a player who stares at the same hero all game interested. Don't just add +3 to a weapon: make it glow, spout flame, or sprout runes, sights and nozzles. Or change the animation, since a heavier gun needs a different stance. Let players dress up in new gear.",
+          "example": "World of Warcraft lets players customize their look whenever they earn new gear and abilities.",
+          "f2p": "Clash of Clans troops and buildings visibly change at higher levels; Clash Royale Evolutions give cards new looks.",
+          "memory": "+3 is invisible; flames are forever.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "We Are Not Alone: SPCs, Companions & Big Casts",
+      "bites": [
+        {
+          "id": "L05-b56",
+          "hook": "Second character: playable SPC or AI companion?",
+          "body": "Decide early. A second playable character (SPC) lets players swap control while AI runs the other. The idea came from Japanese RPG parties and spread to The Goonies, Speedball and Head over Heels, before NES-era hardware limits pushed games back to one hero.",
+          "example": "Mario & Luigi: Superstar Saga's brothers barely differ; Lego Batman's heroes have unique puzzle-solving abilities, the stronger use.",
+          "f2p": "Genshin Impact lets you swap between a party of four with one tap.",
+          "memory": "Swap or sidekick?",
+          "tag": "concept"
+        },
+        {
+          "id": "L05-b57",
+          "hook": "Keep 'player zapping' to one button press",
+          "body": "Resident Evil 0 called SPC switching 'player zapping'. Keep it to one press. With more than two SPCs, choose a fast selection method: nearest character, cycling through a preset list, a compass-style direct-select window, or automatic switching at set level locations.",
+          "example": "A compass-style window lets you jump straight to a character instead of cycling through everyone.",
+          "f2p": "Tapping character portraits is mobile's compass-style direct select.",
+          "memory": "Nearest, cycle, compass, spot.",
+          "tag": "list"
+        },
+        {
+          "id": "L05-b58",
+          "hook": "What modern AI companions actually do",
+          "body": "Old AI companions blocked your path and were useless in fights. Now they fight (Resident Evil 2, F.E.A.R. 2), guide and advise (Wind Waker, Darksiders), help solve puzzles (GoldenEye, Mark of Kri), and heal or rescue you (Ghostbusters, Gears of War 2). They can even be dogs or cubes.",
+          "example": "Shadow in Dead to Rights 2, Dogmeat in Fallout 3, and Portal's Weighted Companion Cube.",
+          "f2p": "Pets that buff, heal or fetch loot are companions as gameplay and monetization; Coin Master's pets each give a bonus.",
+          "memory": "Fight, guide, solve, heal.",
+          "tag": "list"
+        },
+        {
+          "id": "L05-b59",
+          "hook": "Companions cost AI plus hero-grade animation",
+          "body": "A companion demands sophisticated AI and animation work on par with the hero's. The payoff: the smarter and more varied they are, the more real they seem and the more players care. Build the relationship early so you need less AI to sell their personality later.",
+          "example": "Sully in Uncharted and Captain Price in Call of Duty 4: Modern Warfare (printed 'Pierce' in the book) show strong personalities and motivations.",
+          "f2p": "Every companion is a lifetime LiveOps cost: animation, VFX, balance and voice for years.",
+          "memory": "A sidekick costs a second hero's budget.",
+          "tag": "warning"
+        },
+        {
+          "id": "L05-b60",
+          "hook": "Opposites attract: companions should need each other",
+          "body": "Give companions abilities, strengths and limits that contrast with and complement the hero, and design puzzles and progression around using both. The goal is a pair where neither could survive alone.",
+          "example": "Resident Evil 2: Claire fights with two guns, while defenseless Sherry crawls into hiding spots for puzzle items. Ico's and Army of Two's heroes need their partners to finish.",
+          "f2p": "Tank, healer and damage synergies in squad games scale this lesson across a roster.",
+          "memory": "Claire shoots, Sherry squeezes.",
+          "tag": "rule"
+        },
+        {
+          "id": "L05-b61",
+          "hook": "Start big casts from stereotypes; players judge by the cover",
+          "body": "Big casts (Mortal Kombat: Armageddon has 63 fighters) appear across fighting, vehicle combat, RPG, RTS, FPS and survival horror genres. Start from archetypes like fighter, magic-user, thief and cleric, because without a story, players pick whoever looks coolest or most relatable. Then make each play differently.",
+          "example": "At character select, players often have nothing to go on but looks.",
+          "f2p": "Gacha banners live on 'judge by the cover': an archetype plus a fresh twist sells pulls.",
+          "memory": "The cover sells, the gameplay keeps.",
+          "tag": "concept"
+        },
+        {
+          "id": "L05-b62",
+          "hook": "TF2 balances nine classes on three stats",
+          "body": "TF2's offensive, defensive and support classes compare on health, speed and attack. No two share specs, and weaknesses offset strengths: the Heavy is slow but hits hardest, the Scout is weak but very fast, and the average Medic heals and grants temporary invulnerability.",
+          "example": "The Sniper (headshot) and Spy (backstab) have weak health but instant-kill specials.",
+          "f2p": "Brawl Stars class labels and Mobile Legends roles are TF2's grid scaled to big rosters.",
+          "memory": "Slow-strong, weak-quick, average-magic.",
+          "tag": "example"
+        },
+        {
+          "id": "L05-b63",
+          "hook": "Build an abilities matrix with many axes",
+          "body": "Compare characters on movement speed and type, attack speed and rate, attack strength, range and duration, armor, health, encumbrance and advantages (healing, puzzle solving). More axes give better balance, a rock-paper-scissors web. Keep the values easy to edit for global changes.",
+          "example": "TF2's Sniper, Heavy and Engineer all work best rooted in place, with one in each class.",
+          "f2p": "Live balance patches via server config are routine in hero games. Keep rarity separate from raw power.",
+          "memory": "If two rows match, one hero is a clone in a hat.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Who Are the People in Your Neighborhood? NPCs",
+      "bites": [
+        {
+          "id": "L05-b64",
+          "hook": "Every NPC must answer: what does the player need to succeed?",
+          "body": "NPCs exist to help or hinder the player, the center of their universe. Each needs a job: objectives, access to new places, travel, rewards (economic or pride), tools, protective gear, answers, brief backstory, instruction (never what players already know), compliments (or fear) and humor.",
+          "example": "The book's lineup: the general, the hooker, the innkeeper, the service robot, each with a role to play.",
+          "f2p": "Mascot objective-givers (Homescapes' Austin) and shopkeepers fronting deals are NPCs with clear jobs. Keep tutorials to one line.",
+          "memory": "Name tag: 'I exist so you can win.'",
+          "tag": "rule"
+        },
+        {
+          "id": "L05-b65",
+          "hook": "Give NPCs 'business' like film extras",
+          "body": "Waiting NPCs need background activity (eating, chatting, chopping wood, washing floors) so the world feels alive. Simple animations are a start; complex activities and time-of-day schedules are better. But never make players chase an NPC to talk to them.",
+          "example": "Harvest Moon and Animal Crossing NPCs sleep at night, so some players never meet them. Don't waste assets nobody sees.",
+          "f2p": "Time-gated characters and events need enough visibility, or the art budget is wasted.",
+          "memory": "Extras need business.",
+          "tag": "concept"
+        },
+        {
+          "id": "L05-b66",
+          "hook": "Put NPCs where players will see them, looking distinct",
+          "body": "Place NPCs in the player's line of sight and on the mini-map, in logical spots (innkeeper in the inn, police captain at the station), with a big arrow overhead if needed. Make them distinct in dress and body language so players remember who sells that phase plasma pistol.",
+          "example": "No budget for unique models? Bioshock's players couldn't tell NPCs apart until they spoke with strong international accents.",
+          "f2p": "Quest markers, '!' bubbles and pulsing pointers are mobile's big arrows. Mobile players won't hunt.",
+          "memory": "Innkeeper in the inn.",
+          "tag": "rule"
+        },
+        {
+          "id": "L05-b67",
+          "hook": "Swap switches and crates for NPCs",
+          "body": "NPCs can stand in for game functions like the store or save system, which makes the game feel less contrived. They can start puzzles, mechanics or countdowns, need escorting or protecting, or taunt the player into action. The trade-off: conversations slow the pace.",
+          "example": "In Darksiders, the smith Ulthane challenges War to a kill contest, and an on-screen counter flips the player into a competitive mindset.",
+          "f2p": "Rival-NPC event challenges ('beat my score') are a classic LiveOps framing.",
+          "memory": "Talk to open, not turn to open.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "F2P Bonus: Characters as Collectibles, IP & Ad Stars",
+      "bites": [
+        {
+          "id": "L05-b68",
+          "hook": "Your F2P hero has four jobs",
+          "body": "In F2P mobile, a character is a collectible (the roster), a cash register (skins, emotes, upgrades), a brand (cross-game IP, collabs) and a billboard (app icon, ad hook, store screenshots). Every principle in this chapter matters more under those four jobs.",
+          "example": "Supercell's Squad Busters brings together characters from several of its games; strong characters can outlive a single title.",
+          "f2p": "Test each hero at icon size, in-battle size and as a black silhouette before greenlighting it.",
+          "memory": "Collectible, cash register, brand, billboard.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L05-b69",
+          "hook": "Pass the 64-pixel test",
+          "body": "Shrink every hero to store-icon size and fill it black. Mobile-friendly proportions help: big head, big weapon or hands, small body, bold outlines, one accent color per hero. Add team-color rings so readability survives skins.",
+          "example": "Among Us crewmates share one silhouette, so color and hats carry identity, and players call each other by color.",
+          "f2p": "Readability failures show up as 'I couldn't tell who hit me' reviews.",
+          "memory": "If it fails at 64 px, it fails.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L05-b70",
+          "hook": "Rarity should signal flash, not just power",
+          "body": "Rarity tiers (Common up to Legendary) should show value through VFX, animation polish, frames and reveal ceremonies. Keep power gaps in check, or rock-paper-scissors becomes pay-to-win and roster balance collapses.",
+          "example": "Clash Royale cards range from Common to Legendary and Champion, yet counters still decide matches.",
+          "f2p": "Durable, ethical F2P sells self-expression and novelty more than raw power.",
+          "memory": "Shiny, not stronger.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L05-b71",
+          "hook": "Your mascot sets your ad tone",
+          "body": "The hero is the thumb-stopper in the first seconds of a video ad and the star of the app icon. A mascot's three traits decide the creative's tone. Keep ads honest: showing gameplay you don't have hurts trust and retention, and regulators in some countries have acted on it.",
+          "example": "Royal Match's helpless King Robert, Duolingo's pushy owl and Homescapes' dramatic butler each carry a distinct ad voice.",
+          "f2p": "Truthful creatives attract players who stay past D1.",
+          "memory": "The face sells the install; the loop keeps the player.",
+          "tag": "f2p"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "Form follows function: what a character does and who they are should dictate how they look.",
+    "Make each character distinct through shape, silhouette, color and texture.",
+    "Name your hero appropriately: the name must fit the look.",
+    "Customization increases player attachment and ownership.",
+    "Use the player character to determine the game's metrics; the hero is the world's yardstick.",
+    "Walking is NOT gameplay.",
+    "Let the hero's body and look show their current in-game status.",
+    "Companions and second playable characters demand real effort to do well; make them complement the player character.",
+    "Balance multiple player characters so each one is as effective and distinct as possible.",
+    "Give your NPCs gameplay functions."
+  ],
+  "mnemonics": [
+    {
+      "name": "Shape language rhyme",
+      "device": "Circle hugs, square punches (or shrugs); triangle chest = best, triangle head = dread.",
+      "unpacks": "Circles = friendly; squares = strong or dumb depending on size; point-down triangle torso = heroic frame; point-down triangle head = sinister."
+    },
+    {
+      "name": "The ½–1–2 jump ladder",
+      "device": "½ jump, +1 hoist, 2× double.",
+      "unpacks": "A jump reaches about half the hero's height, a hoist adds up to one body length, a double jump reaches up to twice the hero's height."
+    },
+    {
+      "name": "Jump in five words",
+      "device": "Now. Up. (Again?) Down. Stick.",
+      "unpacks": "Instant takeoff; fast rise; double jump only before the apex; short, non-floaty fall; landing that sticks with no slide."
+    },
+    {
+      "name": "The fall in eight beats",
+      "device": "Peek, wobble, hop, grab, flail, flap, splat, TADAH!",
+      "unpacks": "Cautious approach; teeter warning; jump out of teeter (see the death zone); hoist save; animation shows fall control; air jump; clear impact penalty; fast recovery."
+    },
+    {
+      "name": "Customization checklist",
+      "device": "Never Fight Clowns Carrying Crazy Weapons.",
+      "unpacks": "Name, Face (appearance), Clothing/armor/gear, Cars (vehicles), Crib (home base), Weapons."
+    },
+    {
+      "name": "Collision chant",
+      "device": "Head floats, feet hop, torso tops.",
+      "unpacks": "Head-based collision makes the hero look like it floats; feet-based collision forces jumps for mid-air pickups; the torso is the best primary collision point."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L05-f01",
+      "q": "What are Rogers' Three Cs?",
+      "a": "Character, Camera, Control.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f02",
+      "q": "What is the 'very important rule' of character design?",
+      "a": "Form follows function: a character's actions and personality determine their appearance.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f03",
+      "q": "Rogers' three personality traits for Mario?",
+      "a": "Courageous, bouncy, happy.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f04",
+      "q": "Rogers' three personality traits for Sonic?",
+      "a": "Fast, cool, edgy.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f05",
+      "q": "Rogers' three personality traits for Kratos?",
+      "a": "Brutal, vicious, selfish.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f06",
+      "q": "What do circles communicate in character design?",
+      "a": "Friendliness.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f07",
+      "q": "What do squares communicate in character design?",
+      "a": "Strength or dumbness, depending on how big the square is.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f08",
+      "q": "What does a point-down triangle mean as a body vs as a head?",
+      "a": "As a body: a heroic, powerful frame. As a head: sinister.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f09",
+      "q": "Four benefits of a strong silhouette?",
+      "a": "Shows personality at a glance, tells characters apart, marks friend vs enemy, stands out against the background.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f10",
+      "q": "Which game does Rogers use to show gameplay-ready silhouettes?",
+      "a": "Team Fortress 2 (Heavy vs Pyro vs Spy, etc.).",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f11",
+      "q": "Rogers' three types of video game character?",
+      "a": "Humorous, heroic and badass (anti-hero).",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f12",
+      "q": "Three rules for a heroic character?",
+      "a": "Does heroic things that matter; is good at something (a specialty); isn't perfect (relatable flaws, ideally used in gameplay).",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f13",
+      "q": "Three rules for a badass character?",
+      "a": "Does everything with style; isn't nice (enjoys it); says cool things but almost never shouts.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f14",
+      "q": "How did Maximo vs. Army of Zin make players feel heroic?",
+      "a": "Optional rescues of menaced villagers with small rewards and no penalty for skipping.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f15",
+      "q": "What did X-Com: UFO Defense teach Rogers?",
+      "a": "Renaming soldiers made him care about them. Customization creates attachment.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f16",
+      "q": "The six customization categories Rogers lists?",
+      "a": "Name, appearance, clothing/armor/gear, vehicles, home base, weapons.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f17",
+      "q": "What should never be customizable?",
+      "a": "The signature weapon/gear/look. It's part of the character's identity.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f18",
+      "q": "Why do Lara's ponytail and Batman's cape exist, design-wise?",
+      "a": "Heroes are mostly seen from behind and need something that shows movement.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f19",
+      "q": "What is the uncanny valley?",
+      "a": "A near-realistic character that looks subtly wrong to viewers, which is distracting (especially in cutscenes).",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f20",
+      "q": "Rogers' three tips for realistic characters?",
+      "a": "Avoid exaggerated facial features; invest in movement and rigging (stiff shoulders, ham hands); human-looking characters will be expected to act human.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f21",
+      "q": "What measurement unit did Rogers' team use on Maximo?",
+      "a": "'1 Maximo unit', based on the hero's height and width.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f22",
+      "q": "Rogers' jump height rule of thumb?",
+      "a": "A jump is about ½ the hero's height; a double jump up to 2× the hero's height.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f23",
+      "q": "How does jump distance compare with walk and run?",
+      "a": "Farther than a walk, not as far as a run (or set in hero widths, e.g. 5 units).",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f24",
+      "q": "How much height does a hoist add?",
+      "a": "Up to a full body length on top of the jump height.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f25",
+      "q": "Which single collision point does Rogers prefer?",
+      "a": "The torso (center of the body).",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f26",
+      "q": "The five phases of a jump?",
+      "a": "At rest; instant takeoff; quick rise (double jump before apex); short, non-floaty fall; landing that sticks.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f27",
+      "q": "Rogers' five types of jump?",
+      "a": "Single, double, triple, contextual, wall jump.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f28",
+      "q": "What is the 'jump zone'?",
+      "a": "The area players take off from: up to half a jump's distance back from the edge.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f29",
+      "q": "Where do players aim to land after a jump?",
+      "a": "A safe spot roughly half a jump's length in from the far edge (dead center on small platforms).",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f30",
+      "q": "What is a 'hang'?",
+      "a": "Being in the hoist position without having climbed up or dropped down.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f31",
+      "q": "What is the Wile E. Coyote effect?",
+      "a": "A character visibly standing or hanging on thin air at an edge.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f32",
+      "q": "Name four benefits of a character's shadow.",
+      "a": "3D reference for jumps, grounding (weight and mass), edge detection, lighting and mood, stealth AI use (and, jokingly, a soul).",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f33",
+      "q": "What is a drop shadow?",
+      "a": "A simple dark spot under the character that shows exactly where they are and where they'll land.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f34",
+      "q": "Rogers' rule for water in one environment?",
+      "a": "It's all safe or all deadly. 'No deep end to the pool.'",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f35",
+      "q": "What is a dash cooldown, and how long is it typically?",
+      "a": "A wait before the dash can be reused, usually a few seconds, to prevent exploits.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f36",
+      "q": "What is 'player zapping'?",
+      "a": "Resident Evil 0's name for switching between SPCs. Keep it to one button press.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f37",
+      "q": "Four ways to choose between several SPCs?",
+      "a": "Nearest character, cycle a preset list, compass-style direct-select window, auto-switch at a set level location.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f38",
+      "q": "What's the difference between an SPC and a companion?",
+      "a": "An SPC is a second playable character you can control (AI-run when you don't). A companion is always run by the game's AI.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f39",
+      "q": "Which pair shows 'opposites attract' companions?",
+      "a": "Resident Evil 2's Claire (fighter, two guns) and Sherry (defenseless, crawls into hiding spots for puzzle items).",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f40",
+      "q": "What question must every NPC answer?",
+      "a": "What does the player need to succeed?",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f41",
+      "q": "What is NPC 'business'?",
+      "a": "Background activity (eating, chatting, chopping wood) that makes the world look alive, like film extras.",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f42",
+      "q": "How did Bioshock help players tell NPCs apart?",
+      "a": "By giving them strong international accents (distinct 'voices').",
+      "type": "basic"
+    },
+    {
+      "id": "L05-f43",
+      "q": "Why must the Three Cs be locked early?",
+      "a": "So many systems depend on them that changes ripple into rework and broken gameplay, and can even cancel a game.",
+      "type": "why"
+    },
+    {
+      "id": "L05-f44",
+      "q": "Why is a stoic badass risky?",
+      "a": "Stoicism can easily read as having no personality.",
+      "type": "why"
+    },
+    {
+      "id": "L05-f45",
+      "q": "Why reward rather than force good deeds?",
+      "a": "Preaching is bad form. Optional, rewarded good deeds let players feel heroic by their own choice.",
+      "type": "why"
+    },
+    {
+      "id": "L05-f46",
+      "q": "Why let players name their characters?",
+      "a": "Naming and customization create ownership, and ownership creates caring (the X-Com lesson).",
+      "type": "why"
+    },
+    {
+      "id": "L05-f47",
+      "q": "Why are metrics so important to players?",
+      "a": "Players judge reachable distances by eye. Breaking learned constants feels wrong.",
+      "type": "why"
+    },
+    {
+      "id": "L05-f48",
+      "q": "Why is head-based collision a problem?",
+      "a": "Ground collision makes the character look unrooted, slightly floating.",
+      "type": "why"
+    },
+    {
+      "id": "L05-f49",
+      "q": "Why is feet-based collision bad for pickups?",
+      "a": "Pickups floating in mid-air would force the player to jump to collect them.",
+      "type": "why"
+    },
+    {
+      "id": "L05-f50",
+      "q": "Why is walking not gameplay?",
+      "a": "Long travel is boring regardless of art. Players prefer faster, varied moves and don't love collecting as much as designers love placing.",
+      "type": "why"
+    },
+    {
+      "id": "L05-f51",
+      "q": "Why must a jump start instantly?",
+      "a": "Many jumps are reactions to danger, so any delay feels unresponsive.",
+      "type": "why"
+    },
+    {
+      "id": "L05-f52",
+      "q": "Why shouldn't falls last long?",
+      "a": "They feel floaty, which is unpleasant and breaks the player's sense of metrics (unless gliding is a power).",
+      "type": "why"
+    },
+    {
+      "id": "L05-f53",
+      "q": "Why add an extra jump length to gap designs?",
+      "a": "Players take off from back from the edge and aim well inside the far edge, because edges make them nervous.",
+      "type": "why"
+    },
+    {
+      "id": "L05-f54",
+      "q": "Why save tiny platforms for late in the game?",
+      "a": "Nervous players re-jump and overshoot to their deaths. Tiny targets belong in expert challenges.",
+      "type": "why"
+    },
+    {
+      "id": "L05-f55",
+      "q": "Why must hang and teeter animations loop?",
+      "a": "Players may leave the hero hanging or teetering indefinitely.",
+      "type": "why"
+    },
+    {
+      "id": "L05-f56",
+      "q": "Why do quadrupeds need special metrics?",
+      "a": "Wider turning radius, faster acceleration, longer bodies hanging over edges, shorter height for attacks and doors.",
+      "type": "why"
+    },
+    {
+      "id": "L05-f57",
+      "q": "Why are companions so costly to make?",
+      "a": "They need sophisticated AI and animation quality on par with the main character's.",
+      "type": "why"
+    },
+    {
+      "id": "L05-f58",
+      "q": "Why start a big cast from stereotypes?",
+      "a": "Without story, players pick by looks. Archetypes read instantly, then gameplay makes each unique.",
+      "type": "why"
+    },
+    {
+      "id": "L05-f59",
+      "q": "Why keep character stats easy to edit?",
+      "a": "So global balance changes don't take endless manual tweaking.",
+      "type": "why"
+    },
+    {
+      "id": "L05-f60",
+      "q": "Your stealth game stars a giant axe-wielding barbarian, and players keep charging in and dying. What went wrong?",
+      "a": "Mixed signals: form must follow function. A stealth hero should look and act stealthy.",
+      "type": "apply"
+    },
+    {
+      "id": "L05-f61",
+      "q": "Runner players complain they miss coins at chest height. What collision fix fits?",
+      "a": "Use torso-centered, generous pickup collision instead of feet-based detection.",
+      "type": "apply"
+    },
+    {
+      "id": "L05-f62",
+      "q": "Playtesters keep trying to jump to a ledge you meant to be unreachable. Fix?",
+      "a": "Make it visibly higher than double the hero's height (or add a hoist if it should be reachable).",
+      "type": "apply"
+    },
+    {
+      "id": "L05-f63",
+      "q": "Your level doc says 'the player walks down the long corridor to the boss.' Which principle?",
+      "a": "Walking is NOT gameplay. Add varied traversal or cut the corridor.",
+      "type": "apply"
+    },
+    {
+      "id": "L05-f64",
+      "q": "Your dash is being spammed in PvP. What does Rogers recommend?",
+      "a": "Add a cooldown, usually a few seconds.",
+      "type": "apply"
+    },
+    {
+      "id": "L05-f65",
+      "q": "One pond in your level is safe, the next deadly. What's the problem?",
+      "a": "There's no deep end to the pool. Use one water rule per environment, or give strong warnings.",
+      "type": "apply"
+    },
+    {
+      "id": "L05-f66",
+      "q": "A +5 sword upgrade isn't exciting players. How do you fix it?",
+      "a": "Make it visible (glow, flame, runes, extra bits) or change the hero's stance and animation.",
+      "type": "apply"
+    },
+    {
+      "id": "L05-f67",
+      "q": "Two brawlers in your roster have nearly identical stat rows. Which tool flags this?",
+      "a": "The abilities matrix. No two characters should share specs; differentiate one or sell it as a skin.",
+      "type": "apply"
+    },
+    {
+      "id": "L05-f68",
+      "q": "Players call your AI companion useless and annoying. What principle should guide the redesign?",
+      "a": "Opposites attract: give her complementary abilities players need, and build the relationship early.",
+      "type": "apply"
+    },
+    {
+      "id": "L05-f69",
+      "q": "An NPC in your game only says 'nice weather today.' What's missing?",
+      "a": "A job. Every NPC must answer 'what does the player need to succeed?'",
+      "type": "apply"
+    },
+    {
+      "id": "L05-f70",
+      "q": "Your realistic hero looks creepy in cutscenes. What are your options?",
+      "a": "Uncanny valley: fix facial proportions and rigging, or switch to a stylized look (as TF2 did).",
+      "type": "apply"
+    },
+    {
+      "id": "L05-f71",
+      "q": "Players land jumps and then slide off platforms. Fix?",
+      "a": "Remove post-landing skids/slides. Landings should 'stick'.",
+      "type": "apply"
+    },
+    {
+      "id": "L05-f72",
+      "q": "Players die in pits they couldn't see while jumping. Rule?",
+      "a": "Let players see the death zone. No blind leaps of faith.",
+      "type": "apply"
+    },
+    {
+      "id": "L05-f73",
+      "q": "A new premium skin hides the hero's signature weapon and changes the silhouette. What's the risk?",
+      "a": "Lost identity and battlefield readability. Keep the signature item and silhouette recognizable.",
+      "type": "apply"
+    },
+    {
+      "id": "L05-f74",
+      "q": "Your FTUE mascot keeps explaining swipes after players have mastered them. Which rule is broken?",
+      "a": "Never tell the player something they already know.",
+      "type": "apply"
+    },
+    {
+      "id": "L05-f75",
+      "q": "Form follows ____.",
+      "a": "function",
+      "type": "cloze"
+    },
+    {
+      "id": "L05-f76",
+      "q": "Walking is NOT ____!",
+      "a": "gameplay",
+      "type": "cloze"
+    },
+    {
+      "id": "L05-f77",
+      "q": "A jump is about ____ the hero's height; a double jump up to ____ it.",
+      "a": "half; twice",
+      "type": "cloze"
+    },
+    {
+      "id": "L05-f78",
+      "q": "Let players double jump before the ____ of the first jump.",
+      "a": "apex",
+      "type": "cloze"
+    },
+    {
+      "id": "L05-f79",
+      "q": "Players take off from the '____', up to half a jump from the edge.",
+      "a": "jump zone",
+      "type": "cloze"
+    },
+    {
+      "id": "L05-f80",
+      "q": "There is no ____ to the pool.",
+      "a": "deep end",
+      "type": "cloze"
+    },
+    {
+      "id": "L05-f81",
+      "q": "Every player likes to play ____.",
+      "a": "house",
+      "type": "cloze"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "L05-q01",
+      "q": "Which three fundamentals does Rogers call the Three Cs?",
+      "options": [
+        "Combat, Camera, Controls",
+        "Character, Combat, Content",
+        "Camera, Collision, Control",
+        "Character, Camera, Control"
+      ],
+      "answer": 3,
+      "why": "Character, Camera, Control. Combat, content and collision matter, but they aren't the Three Cs that must be locked in preproduction."
+    },
+    {
+      "id": "L05-q02",
+      "q": "What does a point-down triangle communicate when used as a character's HEAD?",
+      "options": [
+        "Heroism",
+        "Friendliness",
+        "Strength",
+        "Sinister intent"
+      ],
+      "answer": 3,
+      "why": "As a torso, the point-down triangle reads heroic; as a head, it reads sinister. Circles = friendly, squares = strong or dumb."
+    },
+    {
+      "id": "L05-q03",
+      "q": "Which is NOT one of the silhouette benefits Rogers lists?",
+      "options": [
+        "Shows personality at a glance",
+        "Marks friend vs enemy",
+        "Reduces collision cost",
+        "Stands out from the background"
+      ],
+      "answer": 2,
+      "why": "Silhouettes are about readability (personality, distinction, friend/foe, background contrast), not code performance."
+    },
+    {
+      "id": "L05-q04",
+      "q": "How did Rogers sneak morality into Maximo vs. Army of Zin?",
+      "options": [
+        "Rescues were required to progress",
+        "Optional rescues with small rewards and no penalty for skipping",
+        "A morality meter that changed the ending",
+        "Harsh penalties for ignoring villagers"
+      ],
+      "answer": 1,
+      "why": "He didn't want to force good behavior. Optional, rewarded rescues made players choose to be heroes."
+    },
+    {
+      "id": "L05-q05",
+      "q": "What is Rogers' jump height rule of thumb?",
+      "options": [
+        "Jump = hero height; double = 3×",
+        "Jump = ½ hero height; double = up to 2×",
+        "Jump = waist height, like real life",
+        "Jump = 2× height; double = 4×"
+      ],
+      "answer": 1,
+      "why": "Half height for a jump, up to twice for a double jump. Real people only reach waist height; game physics exaggerates on purpose."
+    },
+    {
+      "id": "L05-q06",
+      "q": "Which single collision point does Rogers prefer?",
+      "options": [
+        "Torso",
+        "Head",
+        "Feet",
+        "Hands"
+      ],
+      "answer": 0,
+      "why": "The torso spans upper and lower body. The head makes characters look like they float; the feet force jumps for mid-air pickups."
+    },
+    {
+      "id": "L05-q07",
+      "q": "Your walkthrough describes a 40-second stroll through a beautiful valley collecting gems. What's Rogers' reaction?",
+      "options": [
+        "Fine, as long as the art is beautiful",
+        "Add more gems to keep it engaging",
+        "Slow the walk so players appreciate the art",
+        "Alarm bells: walking isn't gameplay; add varied traversal or cut it"
+      ],
+      "answer": 3,
+      "why": "Rogers says pretty art doesn't save long travel, and players don't love collecting as much as designers love placing."
+    },
+    {
+      "id": "L05-q08",
+      "q": "When should a double jump be allowed?",
+      "options": [
+        "Any time in the air",
+        "Only after landing",
+        "Before the apex of the first jump",
+        "Only after the apex"
+      ],
+      "answer": 2,
+      "why": "Triggering a double jump after the apex feels weird. Allow it on the way up."
+    },
+    {
+      "id": "L05-q09",
+      "q": "What is the 'jump zone'?",
+      "options": [
+        "The exact edge of the platform",
+        "An area up to half a jump back from the edge, where players take off",
+        "The landing target on the far platform",
+        "A tagged area that triggers automatic jumps"
+      ],
+      "answer": 1,
+      "why": "Edges make players nervous, so they jump early. The tagged auto-jump is a contextual jump, a different concept."
+    },
+    {
+      "id": "L05-q10",
+      "q": "Players keep overshooting tiny floating platforms in World 1 of your mobile platformer. Best fix?",
+      "options": [
+        "Enlarge early platforms and save tiny ones for late expert challenges",
+        "Add a post-landing slide for realism",
+        "Lengthen the fall for more air time",
+        "Require a long button hold to jump"
+      ],
+      "answer": 0,
+      "why": "Nervous players re-jump to their deaths. Tiny platforms belong late in the game; slides and floaty falls make things worse."
+    },
+    {
+      "id": "L05-q11",
+      "q": "Why does a dash need a cooldown?",
+      "options": [
+        "To smooth the dash animation",
+        "To prevent players from exploiting the dash",
+        "To make the dash last longer",
+        "To teach players to walk"
+      ],
+      "answer": 1,
+      "why": "A short cooldown (usually a few seconds) stops dash spam in puzzles and combat."
+    },
+    {
+      "id": "L05-q12",
+      "q": "What is Rogers' rule for water within a single environment?",
+      "options": [
+        "Players can tell deep water by color, so mix freely",
+        "Water should always kill, by tradition",
+        "Mix safe and deadly water to surprise players",
+        "Make it all safe or all deadly"
+      ],
+      "answer": 3,
+      "why": "Players can't tell safe from deadly water. There's no deep end to the pool, and transitional water needs strong warnings."
+    },
+    {
+      "id": "L05-q13",
+      "q": "Which shadow problem does Rogers specifically warn about?",
+      "options": [
+        "Drop shadows are too precise for platformers",
+        "Shadows ruin horror mood",
+        "A shadow in two places at once looks like a bug",
+        "Shadows should be added late in production"
+      ],
+      "answer": 2,
+      "why": "Double shadows look buggy. Drop shadows are useful, shadows can add horror mood, and shadows should go in early."
+    },
+    {
+      "id": "L05-q14",
+      "q": "How much height can a hoist add?",
+      "options": [
+        "Up to a full body length on top of the jump",
+        "Half a body length of jump distance",
+        "It doubles jump distance",
+        "Nothing; it's purely cosmetic"
+      ],
+      "answer": 0,
+      "why": "A hoist reaches slightly above the jump, up to a full body length, so it must be built into the metrics."
+    },
+    {
+      "id": "L05-q15",
+      "q": "You want to show a wounded hero's health without a HUD bar. Which is a book-style approach?",
+      "options": [
+        "A bigger health bar",
+        "Pausing the game at low health",
+        "A text warning",
+        "A limp, slower movement and a battered look"
+      ],
+      "answer": 3,
+      "why": "Use the character: limping (Resident Evil), tattered costumes (Arkham Asylum), lost armor (Maximo)."
+    },
+    {
+      "id": "L05-q16",
+      "q": "What is an SPC?",
+      "options": [
+        "A second playable character you can swap to, AI-run when you're not controlling it",
+        "An AI-only companion you never control",
+        "A non-player shopkeeper",
+        "A secondary camera mode"
+      ],
+      "answer": 0,
+      "why": "An SPC is playable. A companion is always run by the game's AI."
+    },
+    {
+      "id": "L05-q17",
+      "q": "Which game coined the term 'player zapping' for SPC switching?",
+      "options": [
+        "Lego Batman",
+        "Head over Heels",
+        "Resident Evil 0",
+        "Ico"
+      ],
+      "answer": 2,
+      "why": "Resident Evil 0 called it player zapping. Rogers says to keep it to one button press."
+    },
+    {
+      "id": "L05-q18",
+      "q": "What do Claire and Sherry in Resident Evil 2 illustrate?",
+      "options": [
+        "Large-cast balancing",
+        "Opposites attract: complementary companions who need each other",
+        "Player zapping",
+        "The uncanny valley"
+      ],
+      "answer": 1,
+      "why": "Claire fights while Sherry squeezes into hiding spots. Neither could survive alone."
+    },
+    {
+      "id": "L05-q19",
+      "q": "Why is TF2's Medic notable in the abilities matrix?",
+      "options": [
+        "Highest health in the game",
+        "Fastest movement speed",
+        "Average stats but a unique heal and temporary invulnerability",
+        "An instant-kill backstab"
+      ],
+      "answer": 2,
+      "why": "Even the most average class has something nobody else has. The backstab belongs to the Spy."
+    },
+    {
+      "id": "L05-q20",
+      "q": "Two heroes in your F2P brawler have near-identical stats but different art. Which principle applies?",
+      "options": [
+        "Abilities matrix: no two characters should share specs; differentiate or sell as a skin",
+        "Customization increases attachment",
+        "Walking is not gameplay",
+        "Name your hero appropriately"
+      ],
+      "answer": 0,
+      "why": "The matrix exists to catch duplicate rows. Identical stats make one hero redundant."
+    },
+    {
+      "id": "L05-q21",
+      "q": "What question must every NPC answer?",
+      "options": [
+        "Where is the save point?",
+        "What does the player need to succeed?",
+        "What is my backstory?",
+        "How do I sell items?"
+      ],
+      "answer": 1,
+      "why": "NPCs exist to help or hinder the player. Backstory and shops are possible jobs, not the core question."
+    },
+    {
+      "id": "L05-q22",
+      "q": "What did Bioshock's lead designer learn about NPCs?",
+      "options": [
+        "Hide NPCs to encourage exploration",
+        "Give NPCs day-night schedules",
+        "Repeat tutorials so nothing is missed",
+        "Distinct voices or accents can tell NPCs apart when unique models aren't affordable"
+      ],
+      "answer": 3,
+      "why": "Players couldn't tell NPCs apart until they spoke with strong international accents."
+    },
+    {
+      "id": "L05-q23",
+      "q": "What is Rogers' rule for a character's signature weapon or gear?",
+      "options": [
+        "Make it fully customizable to boost ownership",
+        "Change it every level for variety",
+        "Keep it fixed; it's part of the character's identity",
+        "Remove it for licensed characters"
+      ],
+      "answer": 2,
+      "why": "Proton pack, Dante's coat, Cloud's sword: signature items define the character and shouldn't be customizable."
+    },
+    {
+      "id": "L05-q24",
+      "q": "Which is an advantage of stylized characters according to the book?",
+      "options": [
+        "They look more realistic",
+        "Exaggerated movement without costly IK and mocap, plus more expressive faces",
+        "They need more complex rigging",
+        "They must be human"
+      ],
+      "answer": 1,
+      "why": "Stylized heroes can exaggerate faces and motion (Tex Avery) and can be non-human (Ratchet, Sly Cooper)."
+    },
+    {
+      "id": "L05-q25",
+      "q": "A new premium skin hides your hero's weapon and changes the silhouette, and PvP players complain. Which principles are at stake?",
+      "options": [
+        "Signature item and silhouette readability",
+        "Walking is not gameplay",
+        "Water consistency",
+        "Idle animation length"
+      ],
+      "answer": 0,
+      "why": "Skins can change a lot, but the signature item and a readable silhouette keep heroes identifiable mid-fight."
+    },
+    {
+      "id": "L05-q26",
+      "q": "Your FTUE mascot keeps explaining swipes after players have mastered them, and D1 retention drops. Which NPC rule is broken?",
+      "options": [
+        "Give NPCs business",
+        "Opposites attract",
+        "Never tell the player something they already know",
+        "Measure the world in hero units"
+      ],
+      "answer": 2,
+      "why": "Instruction is a valid NPC job, but repeating what players already know wastes time and annoys them."
+    },
+    {
+      "id": "L05-q27",
+      "q": "What should idle animations be like?",
+      "options": [
+        "Long and cinematic to show off",
+        "Rewarding (ammo or XP) to justify their cost",
+        "Reserved for badass heroes",
+        "Short, snappy and cleanly interruptible"
+      ],
+      "answer": 3,
+      "why": "Players can press a button any time, so long idles and bad transitions cause problems. Idles usually give no gameplay reward."
+    },
+    {
+      "id": "L05-q28",
+      "q": "Players learn they can reach anything up to how high?",
+      "options": [
+        "Double their own height",
+        "Their own height",
+        "Half their height",
+        "Triple their height"
+      ],
+      "answer": 0,
+      "why": "The book's reach ruler marks half, whole and double. Unreachable ledges must be visibly higher than double."
+    }
+  ],
+  "sideQuests": [
+    {
+      "id": "L05-s01",
+      "title": "Shape Doctor",
+      "task": "Pick 3 mobile heroes or mascots (e.g. a Brawl Stars brawler, an Angry Birds bird, Royal Match's King Robert). Sketch each as 2–3 basic shapes. Which shape language does each use, and does it match their personality?",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L05-s02",
+      "title": "Blackout Test",
+      "task": "Screenshot a hero-select screen from a mobile hero game and fill every character solid black. How many can you still identify? Pick the weakest silhouette and write 2 fixes.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L05-s03",
+      "title": "Three-Word Hero",
+      "task": "Write three personality traits for 5 mobile mascots (e.g. Duo, Tiffi, Austin, King Robert, a Clash Barbarian), then name one animation where each trait shows.",
+      "minutes": 5,
+      "xp": 20
+    },
+    {
+      "id": "L05-s04",
+      "title": "Idle Writer",
+      "task": "Design 5 idles (under 2 seconds each, interruptible) for a hypothetical runner hero who is impatient, cocky and snack-obsessed. Bonus: one idle that nudges the player to tap Play.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L05-s05",
+      "title": "Measure in Maximos",
+      "task": "For a hypothetical lane runner, define in hero units: hero height, lane width, low barrier (jumpable), high barrier (roll under), jump arc length, coin pickup radius. Apply Rogers' rules and note where touch needs more forgiveness.",
+      "minutes": 15,
+      "xp": 45
+    },
+    {
+      "id": "L05-s06",
+      "title": "NPC Job Interview",
+      "task": "Invent 4 NPCs for a cozy farming game. For each, list which of the book's NPC jobs they perform, where they stand, and how they look distinct. Fire any NPC without a job.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L05-s07",
+      "title": "Matrix Mini",
+      "task": "Build a 6-hero abilities matrix (HP, speed, attack, range, special) for a hypothetical mobile brawler. Check: no duplicate rows, every weakness offset by a strength, one rooted-in-place hero per class.",
+      "minutes": 15,
+      "xp": 45
+    }
+  ],
+  "mainQuests": [
+    {
+      "id": "L05-m01",
+      "title": "The Hero Bible",
+      "task": "Design an original F2P mobile hero (brawler, runner or hero collector) on a one-page Character Sheet: 3 traits + personality type + a gameplay flaw; shape-language sketch; black silhouette at full size and at 64 px; name and why it fits; a signature item plus 3 skin ideas that keep it; a metrics table in hero units; 3 idles; how status shows on the body; one complementary companion or NPC.",
+      "deliverable": "A one-page character sheet (image or PDF) with silhouette tests and a metrics table.",
+      "doneWhen": "Every section is filled; a friend recognizes the 64-px silhouette after one look at the full art; every metric has a number; you can say in one sentence what the hero is best at. Post it publicly and see if commenters guess your three traits.",
+      "minutes": 120,
+      "xp": 250
+    },
+    {
+      "id": "L05-m02",
+      "title": "Roster Teardown",
+      "task": "Pick a real mobile hero game (Brawl Stars, Mobile Legends, AFK Journey or Clash Royale). Build an abilities matrix for 9–12 characters using only stats you can verify in-game. Mark roles, strengths, weaknesses, counters and any rows that look too similar.",
+      "deliverable": "A spreadsheet matrix plus 3 written conclusions about how the roster stays balanced.",
+      "doneWhen": "At least 6 comparison axes from Rogers' list, every character has a noted counter, and 3 bullet conclusions are written.",
+      "minutes": 60,
+      "xp": 150
+    }
+  ],
+  "playLabs": [
+    {
+      "id": "L05-p01",
+      "game": "Subway Surfers",
+      "minutes": 10,
+      "lookFor": "Character metrics: lane width, which obstacles you jump vs roll under, how the jump rises and falls, how generous coin pickup is.",
+      "question": "Which of Rogers' jump rules does the game follow best, and how does the Super Sneakers power-up bend the metrics?"
+    },
+    {
+      "id": "L05-p02",
+      "game": "Brawl Stars",
+      "minutes": 10,
+      "lookFor": "Silhouettes and readability mid-fight, ally vs enemy cues, and your brawler's lobby idle.",
+      "question": "Which brawler has the strongest silhouette, and which signature item should no skin ever remove?"
+    },
+    {
+      "id": "L05-p03",
+      "game": "Archero",
+      "minutes": 10,
+      "lookFor": "The stop-to-shoot rule and how it changes the meaning of movement.",
+      "question": "How does this design turn walking into gameplay, and what does that say about 'walking is NOT gameplay'?"
+    },
+    {
+      "id": "L05-p04",
+      "game": "Royal Match (or Homescapes)",
+      "minutes": 10,
+      "lookFor": "How the mascot (King Robert or Austin) is used: idles, reactions, objective-giving, appearances in ads.",
+      "question": "Which NPC jobs from the book does the mascot perform, and what are its three personality traits?"
+    }
+  ],
+  "retrieval": [
+    {
+      "q": "What are the Three Cs, and why must they be locked early?",
+      "a": "Character, Camera, Control. So much depends on them that changing one mid-production ripples into rework, broken gameplay and even cancellation."
+    },
+    {
+      "q": "What do circles, squares and point-down triangles communicate?",
+      "a": "Circles = friendly; squares = strong or dumb (depending on size); point-down triangle body = heroic frame; point-down triangle head = sinister."
+    },
+    {
+      "q": "Name the four jobs of a strong silhouette.",
+      "a": "Show personality at a glance, distinguish characters, mark friend vs enemy, stand out from the background."
+    },
+    {
+      "q": "List the three personality types and two rules for each.",
+      "a": "Humorous: funny dialogue (hire a writer), funny actions (no fart jokes), deadpan contrast. Heroic: does things that matter, has a specialty, has flaws used in gameplay. Badass: style, not nice, rarely shouts (stoic ≠ blank)."
+    },
+    {
+      "q": "How did Rogers make Maximo feel heroic without forcing it?",
+      "a": "Optional villagers menaced by enemies; small rewards for rescuing them, no penalty for skipping. Playtesters loved being heroes."
+    },
+    {
+      "q": "Name the six customization categories and what should stay fixed.",
+      "a": "Name, appearance, clothing/armor/gear, vehicles, home base, weapons. The signature weapon/gear stays fixed as part of identity."
+    },
+    {
+      "q": "Give three tips each for realistic and stylized characters.",
+      "a": "Realistic: avoid exaggerated features; invest in rigging (stiff shoulders, ham hands); human looks raise human expectations. Stylized: enlarge features; exaggerate motion (cheaper than IK/mocap); can be non-human."
+    },
+    {
+      "q": "List the eight metrics with their rules of thumb.",
+      "a": "Height; passage width (wider than the hero); walk speed; run speed; jump distance (between walk and run, or e.g. 5 widths); jump height (½ height, double jump 2×); melee (arm + weapon); projectile (reach up to sight range). A hoist adds up to +1 body length."
+    },
+    {
+      "q": "Which collision point does Rogers prefer, and why not the others?",
+      "a": "Torso: spans upper and lower body and feels natural. Head: the character looks like it floats. Feet: mid-air pickups require jumping."
+    },
+    {
+      "q": "Why is 'and then the character walks through here' a red flag, and where is walking useful?",
+      "a": "Walking is not gameplay: long travel bores players. Walking is useful near edges, where players feel safe and in control."
+    },
+    {
+      "q": "Describe the five phases of a jump.",
+      "a": "At rest; instant takeoff with minimal anticipation; fast rise (double jump before the apex); short, non-floaty fall; landing that sticks with no slide."
+    },
+    {
+      "q": "Explain the jump zone and landing target, and what to add to gaps.",
+      "a": "Players take off up to half a jump back from the edge and aim about half a jump inside the far edge, so add one extra jump length. Small platforms: dead center, no slide."
+    },
+    {
+      "q": "Give the eight steps of a fall.",
+      "a": "Cautious approach; teeter (warning vs lost control); allow jumping out and show the death zone; hoist as save; animation shows fall control; air jump (communicated); clear impact penalty early; quick recovery."
+    },
+    {
+      "q": "Name five shadow benefits and three shadow bugs.",
+      "a": "Benefits: jump reference, grounding, edge detection, mood, stealth AI (and a soul). Bugs: a shadow in two places, casting through surfaces, odd behavior under lights or surfaces (e.g. underwater)."
+    },
+    {
+      "q": "What must every NPC answer, and what can NPCs provide?",
+      "a": "'What does the player need to succeed?' Objectives, access, travel, rewards, tools, gear, answers, brief backstory, instruction (never what players already know), compliments or fear, humor."
+    }
+  ],
+  "feynman": "Explain to a 12-year-old in 60 seconds why a game hero's size and jump height are the 'ruler' for the whole game world, and why a good hero must be recognizable even as a tiny black shadow on a phone screen. Bonus: work in 'walking is not gameplay'.",
+  "links": [
+    "L03",
+    "L04",
+    "L06",
+    "L07",
+    "L08",
+    "L09",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L14",
+    "F2P"
+  ]
+}

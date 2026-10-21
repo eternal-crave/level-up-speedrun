@@ -1,0 +1,2119 @@
+{
+  "id": "L10",
+  "order": 11,
+  "kind": "book",
+  "label": "Level 10",
+  "title": "The Elements of Combat",
+  "bookPages": "243–280",
+  "emoji": "🗡️",
+  "tagline": "Hit, move, guard, then make it look so cool players forget they're pressing buttons.",
+  "f2pRelevance": 4,
+  "f2pWhy": "Combat is the core loop of mobile RPGs, gacha, PvP brawlers, survivor-likes and shooters, and its feedback and fail-state rules shape retention and monetization across almost every F2P genre.",
+  "minutes": 85,
+  "tldr": [
+    "Combat = three verbs: hit, move, guard (Liddell Hart). Design all three.",
+    "Violence is popular because it's the fastest action-result-reward loop. Context (who does it, how often, how graphic) sets your rating.",
+    "Build attacks from personality and a signature weapon. Spread them across 4 ranges, 4 elevations and 2 directions, and track them in an attack matrix.",
+    "Feel = instant timing (60 fps, short wind-ups except risk/reward heavies) + juicy feedback. Players want to look cool: QTEs, finishers, lock-on.",
+    "Ranged combat is rhythm: the Three As (Action, Aiming, Ammo) + level design + health model. Keep weapons distinct and be generous.",
+    "Disable rather than kill, always leave a way out, make damage obvious, and use death to keep players playing."
+  ],
+  "sections": [
+    {
+      "title": "The Elements of Combat (intro): hit, move, guard, and violence",
+      "bites": [
+        {
+          "id": "L10-b01",
+          "hook": "Every fight is just three verbs: hit, move, guard",
+          "body": "Military theorist B.H. Liddell Hart split all combat actions into guarding, hitting and moving. Rogers says that trio covers video game combat too. Combat is a major share of what players do, so a good system needs serious thought and team effort, not just a cool attack button.",
+          "example": "A fighter where you can only attack feels flat. Add a dodge and a block and suddenly there are mind games.",
+          "f2p": "Survivor-likes shrink it to one input (move) and automate hitting. Brawl Stars keeps all three with attacks, dashes and shields.",
+          "memory": "HMG: Hit, Move, Guard, the Heavy Machine Gun of combat design.",
+          "tag": "concept"
+        },
+        {
+          "id": "L10-b02",
+          "hook": "Not all games are violent, but violent ones grab headlines",
+          "body": "Games are about action, and some actions are violent, but huge numbers of games have no violence at all, from Tennis for Two to modern phone puzzlers. Doom, Mortal Kombat and GTA get the attention because violence is graphic, dramatic and visceral.",
+          "example": "Tennis for Two, the first video game, was non-violent. Doom, Mortal Kombat and GTA are the headline grabbers.",
+          "f2p": "Mobile charts are full of non-violent conflict: match-3 boards, Monopoly GO! raids, merge puzzles.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L10-b03",
+          "hook": "Violence = the fastest action, result, reward loop",
+          "body": "The player acts (hits, shoots), instantly sees the result (enemy dies) and gets a reward (XP, money, power-up). Quick, frequent interaction. Rogers calls it Freud's pleasure principle: ring the bell, get a treat, so why stop ringing? Footnote joke: the studio that invented the FPS is called id.",
+          "example": "Shooting an enemy and watching coins and XP pop out: the whole loop in one second.",
+          "f2p": "This is the F2P core loop in miniature. Survivor-likes ring that bell dozens of times per second.",
+          "memory": "Pavlov's dog, but holding a rocket launcher.",
+          "tag": "fun"
+        },
+        {
+          "id": "L10-b04",
+          "hook": "Why romance and comedy rarely become gameplay",
+          "body": "Conversation, romance, comedy and manipulation are hard to simulate. So (a) teams explore non-violent play less, (b) players keep buying the same kinds of games, (c) publishers find new styles harder to sell, and (d) well-meaning groups assume all games are violent.",
+          "example": "EA's own marketing team reportedly tried to cancel The Sims during development, convinced nobody would buy it. It became a best seller.",
+          "f2p": "Mobile rewards fresh non-violent loops (merge, cozy sims), so this barrier is lower today.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b05",
+          "hook": "Five ESRB violence labels, from slapstick to gore",
+          "body": "Comic mischief (slapstick or suggestive humor). Cartoon violence (cartoon situations; victims may be unharmed). Fantasy violence (clearly unreal fantasy conflict). Violence (aggressive conflict, maybe bloodless dismemberment). Intense violence (graphic, realistic blood, gore, injury, death). Keep mature games away from kids, the same way you would R-rated movies.",
+          "example": "A Looney Tunes anvil drop is cartoon violence. Realistic gore with a lingering camera is intense violence.",
+          "f2p": "Mobile uses IARC and store ratings. Clash Royale-style cartoon poofs keep ratings broad and ad options open.",
+          "memory": "Comic, Cartoon, Fantasy, Violence, Intense: from Coyote to Carnage.",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b06",
+          "hook": "Violence is context: who does it matters most",
+          "body": "The more violent acts the player personally performs, the higher the rating. Ask: does the player do it, with realistic weapons? How often? Is it rewarded, or shown as inappropriate? How graphic, any dismemberment, does the camera linger? Any residue like blood or gibs? Is it against bad guys, and do enemies suffer?",
+          "example": "Watching a villain fight in a cutscene feels milder than pulling a realistic trigger yourself.",
+          "f2p": "Your store rating decides reachable audience, usable ad networks and kid-privacy duties like COPPA.",
+          "memory": "",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "400 Quatloos on the Newcomer!: personality and signature weapons",
+      "bites": [
+        {
+          "id": "L10-b07",
+          "hook": "Combat style starts with personality, not buttons",
+          "body": "Ask who the character is first: acrobatic like the Prince of Persia, bouncy like Mario, stealthy like Solid Snake, brutal like Kratos. Different personalities produce different combat styles. Then genre and the experience you want decide the weapons. Study real fighting styles so attacks feel realistic and distinct.",
+          "example": "Kratos rips and slams. Solid Snake sneaks and chokes. Both fight, but nothing alike.",
+          "f2p": "Brawl Stars brawlers read their role from silhouette and weapon in a split second.",
+          "memory": "Personality first, pixels second.",
+          "tag": "concept"
+        },
+        {
+          "id": "L10-b08",
+          "hook": "A signature weapon defines a hero instantly",
+          "body": "Give your character a signature weapon. It communicates personality fast and dictates how they fight. Even oddball weapons like a giant spatula or a bubble wand work if you brainstorm every possible use. The more original, the better.",
+          "example": "Cloud Strife's giant sword, Bayonetta's guns. Rygar's throwable shield plays nothing like a Big Daddy's drill.",
+          "f2p": "In gacha the kit sells the pull: banner trailers and ads showcase the signature weapon.",
+          "memory": "Show me your weapon and I'll tell you who you are.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "400 Quatloos: ranges, elevations, directions",
+      "bites": [
+        {
+          "id": "L10-b09",
+          "hook": "Four ranges: close, medium, long, area",
+          "body": "Close: grapples, punches, strikes, sweeps, head butts, uppercuts. Medium: weapon swings, flying kicks, dash attacks. Long: projectiles or spells. Area effect: smart bombs and supers that hit at long range or across the whole screen. Your character's range shapes how players approach every fight.",
+          "example": "Mario is close/medium, so he must touch enemies. Contra is long range, so you keep enemies away.",
+          "f2p": "Clash Royale lists range on every card. Brawl Stars splits brawlers into short, long and lobbing ranges.",
+          "memory": "Close, Medium, Long, Screen: kiss, swing, shoot, nuke.",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b10",
+          "hook": "Four elevations, and each needs its own attacks",
+          "body": "Standing: shoulder height, hits man-sized foes. Low: waist or below, from a crouch. High: over an average head, only by jumping then attacking, used on flyers and bosses. Aerial: jumping or flying attacks. You don't need all four, but every elevation you use needs its own move set.",
+          "example": "Devil May Cry and Dante's Inferno use extended aerial jumps. Marvel Ultimate Alliance and Dark Void use true flight.",
+          "f2p": "Clash Royale's 'targets air/ground' rule is elevation turned into a counter system.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b11",
+          "hook": "Vertical vs horizontal: Maximo's skeleton puzzle",
+          "body": "Any attack can be delivered vertically or horizontally. In Maximo: Ghosts to Glory, a helmeted skeleton deflected overhead vertical strikes while a shielded skeleton blocked horizontal swings. Players had to use the opposite direction, so direction became a puzzle layer in combat.",
+          "example": "Helmet skeleton: swing sideways. Shield skeleton: chop downward.",
+          "f2p": "The ancestor of gacha weakness systems like Honkai: Star Rail weakness types and Genshin's elemental shields.",
+          "memory": "Helmet? Go sideways. Shield? Go overhead.",
+          "tag": "example"
+        },
+        {
+          "id": "L10-b12",
+          "hook": "Rogers' range diagram: melee near, projectiles far, bombs everywhere",
+          "body": "The book's diagram shows a hero with high, mid and low heights. Melee owns the ground nearby and projectiles own the ground farther out. Attack shapes are straight, diagonal and cone, with an aerial arrow pointing up, a radial circle for area attacks, and the entire screen as smart-bomb territory.",
+          "example": "Straight pistol shot, diagonal spread, shotgun cone, ground-pound radial, screen-clearing bomb.",
+          "f2p": "Archero's Front Arrow, Diagonal Arrows and Side Arrow skills are these shapes sold as run upgrades.",
+          "memory": "Line, Diagonal, Cone, Circle, Screen.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "400 Quatloos: the attack matrix, timing, chains, wind-ups",
+      "bites": [
+        {
+          "id": "L10-b13",
+          "hook": "The attack matrix: a spreadsheet that guarantees variety",
+          "body": "Track every attack in a table: name, control scheme, range, speed, direction, damage (label plus number or %), and special. Add columns as needed (severity, defensive items or moves). Compare and contrast so each attack is distinct and useful in a specific situation.",
+          "example": "Book sample: Slash (Square, close, medium speed, horizontal, 10 hp, a shield blocks it). Jump strike (slow, downward, 25 hp, stuns within a two-unit radius).",
+          "f2p": "This is your hero or card stat sheet. Add cost, cooldown, DPS, time-to-kill, counters and rarity.",
+          "memory": "A dating profile for moves: identical profiles get ghosted.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b14",
+          "hook": "Instant response and 60 fps make combat feel right",
+          "body": "When the button is pressed, the attack should come out quickly. Aim for 60 fps. 30 can be fine, but lag and stutter at lower rates hurt combat. Avoid long wind-ups on normal attacks: they throw off timing, so players miss or strike when they didn't mean to. Quick moves chain fast but invite button mashing.",
+          "example": "A sword swing that starts half a second late makes players feel the controls are broken.",
+          "f2p": "Low-end phones throttle when they get hot. Offer 30/60 fps options and protect touch-input latency.",
+          "memory": "Press means punch, not 'press, wait, punch'.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b15",
+          "hook": "Combat chains: tap, tap, TAP for escalating damage",
+          "body": "Mix quick strikes with lunges (fluid thrusts that return to stance) into chains of three or more moves. Pressing again within a short window, usually under a second, continues the chain. Each hit does more damage, so chaining pays. Move the hero forward with each hit, or knocked-back enemies slip out of reach.",
+          "example": "The book's drawings: three escalating axe swings, and a hero who whiffs until he steps forward.",
+          "f2p": "Genshin Impact normal attacks are multi-hit tap strings. Brawl Stars ammo bars limit mashing.",
+          "memory": "Quick, quick, step, SLAM.",
+          "tag": "concept"
+        },
+        {
+          "id": "L10-b16",
+          "hook": "Long wind-ups are great, but only for heavy hitters",
+          "body": "Rogers reverses his own rule: elaborate wind-ups are awesome for oversized or heavy weapons. The player risks the wait for the reward of a devastating hit. That's risk vs. reward, a principle Rogers says becomes huge later in the book.",
+          "example": "A giant axe that takes a full second to raise but cleaves an enemy in two.",
+          "f2p": "Charged attacks and hold-to-power skills. In PvP, the telegraph gives the defender a fair dodge window.",
+          "memory": "Slow swing, big bling.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "400 Quatloos: juice, hit reactions, drama, QTEs, looking cool",
+      "bites": [
+        {
+          "id": "L10-b17",
+          "hook": "Add slice streaks, speed lines and screen-filling debris",
+          "body": "Use particles and VFX to make attacks dynamic and rewarding: slice streaks on sword swings and speed lines on dashes (Onimusha), fire trails and blood splatter (MadWorld). Big moves like ground pounds and uppercuts deserve debris, dust and lightning that fill the screen. Be big, dynamic and dramatic.",
+          "example": "Onimusha's slice streaks. MadWorld's (Sega, 2009) blood splatter.",
+          "f2p": "Mobile uses coin bursts, damage numbers and flashes. Keep enemy telegraphs readable under the VFX.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L10-b18",
+          "hook": "A hit with no reaction is a high-five to a ghost",
+          "body": "Without an enemy reaction animation, a strike feels like it skipped off the surface. If memory limits rule out reaction animations, at least play effects and sounds that confirm the hit. Powerful SFX and vocal 'Oof!' reactions feel rewarding. Exaggerate impact, and have enemies react where they were hit.",
+          "example": "Ragdoll physics (Havok, PhysX) helps, but good keyframe animation often still wins.",
+          "f2p": "Hit-stop freeze frames and haptic ticks sell weight even on tiny characters.",
+          "memory": "High-five to a ghost.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b19",
+          "hook": "Combat should be an opera, not a lecture",
+          "body": "If conflict is drama, combat is opera. Hype powerful strikes with camera shake, controller rumble or slow motion. Batman: Arkham Asylum slows time when you defeat the last enemy in an encounter. The more spectacular, the better.",
+          "example": "Batman AA's slow-mo final blow tells you the fight is over and makes you feel awesome.",
+          "f2p": "Phone haptics replace rumble. Keep shake small and toggleable, and mark wins with victory slow-mo or banners.",
+          "memory": "Valkyries, a final high note, and flying teeth.",
+          "tag": "concept"
+        },
+        {
+          "id": "L10-b20",
+          "hook": "Close battles beat stomps most of the time",
+          "body": "Mowing down hordes is satisfying, but close battles are more exciting. For most of the game, keep the player evenly matched to their skill level.",
+          "example": "Winning a boss fight on a sliver of health is remembered. One-shotting it is forgotten.",
+          "f2p": "Matchmaking and difficulty tuning aim for 'just barely won'. Narrow wins create stories and retention.",
+          "memory": "Photo finishes sell tickets.",
+          "tag": "truth"
+        },
+        {
+          "id": "L10-b21",
+          "hook": "People want games that make them look cool",
+          "body": "Cinematic finishing moves, where the action slows or freezes and the camera swings around, came from fighting games like Soul Calibur and Street Fighter and spread everywhere because they look so cool. Rogers makes it a Very Important Thing: players want to look cool.",
+          "example": "Soul Calibur and Street Fighter finishers. Batman never misses, so neither should the player.",
+          "f2p": "Gacha ultimates with cinematic cut-ins (Honkai: Star Rail, Genshin) sell characters. Ad creatives are 'look cool' reels.",
+          "memory": "Be the action-movie trailer.",
+          "tag": "truth"
+        },
+        {
+          "id": "L10-b22",
+          "hook": "QTEs: button prompts that choreograph spectacular combat",
+          "body": "QTEs date back to Dragon's Lair. They're combat minigames triggered when an enemy or boss reaches a health threshold. Press a button or do a motion within a tiny window. Succeed and the hero performs an elaborate attack. Most need several presses and end in the foe's death. Batman: Arkham Asylum makes players feel like experts this way.",
+          "example": "The book's Mighty Bedbug drawing: A, X and B prompts over a choreographed beatdown.",
+          "f2p": "Pokémon GO's shrinking throw ring is a one-button timing QTE with graded results.",
+          "memory": "Like hot sauce: one dash is great, the whole bottle ruins dinner.",
+          "tag": "concept"
+        },
+        {
+          "id": "L10-b23",
+          "hook": "Five rules for QTEs that don't annoy",
+          "body": "1) Save them for the most bombastic attacks, and ask whether the player could just do it themselves; single-button QTEs make good finishers. 2) Same prompt position every time. 3) Allow about one beat to recognize and press. 4) After a failure, return fast. 5) Prefer heavy damage to instant death on failure.",
+          "example": "If reaching the QTE took three attack patterns, a failure should only require one more. Darksiders and Batman AA use single-button finishers.",
+          "f2p": "Let players skip repeated cinematics. QTE fatigue on mobile turns into skip-button demand.",
+          "memory": "Rare, Same spot, a Beat, Back fast, Bruise don't kill.",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "400 Quatloos: targeting, melee props, weapon design, stealth, grapples, lock-on",
+      "bites": [
+        {
+          "id": "L10-b24",
+          "hook": "Targeting: you pick enemies, or the window does",
+          "body": "Some games let players pick targets in front or behind with a button or a stick direction. Others treat targeting like a QTE: you can attack while the enemy is in view or nearby. Footnote: The Mark of Kri (2002) used an analog-stick radar sweep to queue several enemies, and the technique was patented.",
+          "example": "The Mark of Kri: sweep the stick, tag several foes, then take them down in sequence.",
+          "f2p": "Brawl Stars: tap to auto-aim, drag to aim manually. Mobile Legends offers target-priority settings.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L10-b25",
+          "hook": "Melee means grabbing pipes, chairs and even cars",
+          "body": "Melee is hand-to-hand combat. All the combat rules apply, but hands can also grab impromptu weapons like lead pipes, chairs or cars. Make picking up and dropping them easy, with on-screen prompts if needed.",
+          "example": "Grabbing a chair mid-brawl and smashing it over a thug.",
+          "f2p": "Touch screens favor one contextual action button, plus auto-pickup when you walk over an item.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b26",
+          "hook": "'+3' is invisible: show upgrades on the weapon",
+          "body": "Design weapons around speed, range, damage and extra effects like fire or poison. If a weapon can be upgraded, show the upgrade visually on the weapon. A +3 stat bump gives players neither the gameplay information nor the visual reward they deserve.",
+          "example": "A sword that starts glowing blue at level 2, vs. one that just reads '+3 damage'.",
+          "f2p": "Rarity glows, star tiers and evolution model swaps turn upgrades into visible, shareable rewards.",
+          "memory": "+3 is invisible, flames are forever.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b27",
+          "hook": "Weapons should bounce off stone and stick in wood",
+          "body": "Weapons clipping through objects (sorting) looks bad. Make them react: rebound off stone and metal, sink into wood. The flip side is that weapons rebound off any unbreakable object, so design arenas around it. A giant axe in a room of stone pillars keeps bouncing, giving skeletons free hits.",
+          "example": "The book's drawing: an axe stuck in a tree trunk.",
+          "f2p": "Even top-down mobile games benefit from walls that block projectiles and from destructible cover.",
+          "memory": "Stone says boing, wood says thunk.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b28",
+          "hook": "Stealth kills need conditions, or they become exploits",
+          "body": "Stealth kills dispatch or disable an enemy in one move without alerting others, usually from a crouch, cover or behind the target, often with QTE-style prompts and dramatic kills. Only allow them under conditions (position, cover, shadow), or players will spam them instead of regular attacks. Don't let a cool move go stale.",
+          "example": "Sneaking behind a guard in shadow triggers a silent takedown prompt.",
+          "f2p": "Any burst move (execute, backstab bonus) without conditions becomes the entire meta.",
+          "memory": "No conditions = a cheat code with a nice animation.",
+          "tag": "warning"
+        },
+        {
+          "id": "L10-b29",
+          "hook": "Grapples: rare, hard to animate, devastating when done",
+          "body": "Grapples trigger in specific circumstances and are rare outside fighting and wrestling games. Two-character collision is hard: both characters must animate together to look natural and avoid clipping. The payoff is devastating slams. Make grab and release easy; it's often a context-sensitive move.",
+          "example": "WWE SmackDown vs. Raw 2010 (THQ, 2009) builds whole move sets around grapples.",
+          "f2p": "Mostly absent on mobile. Paired animations show up as special-ability cinematics instead.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L10-b30",
+          "hook": "Lock-on makes any player look like an expert",
+          "body": "The later Legend of Zelda games: press a button to lock onto the nearest or front enemy, flick the stick to switch left or right, stay locked while the button is held, and auto-latch onto the next enemy after a kill. Lock-on needs HUD visuals: a floor marker, pointer arrow, glowing aura or a health bar over the target.",
+          "example": "Zelda's lock-on keeps you facing the right foe in a crowd.",
+          "f2p": "Mobile defaults to auto-targeting the nearest enemy. Floor rings and floating bars are the standard markers.",
+          "memory": "Floor, Arrow, Aura, Bar.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Now You Have to Kiss Me",
+      "bites": [
+        {
+          "id": "L10-b31",
+          "hook": "Missing is fine; quietly helping strugglers is better",
+          "body": "Letting players miss forces them to improve, and mastering timing makes them feel like badasses. If someone just can't get it, enlarge enemy collision on the fly after too many misses or deaths, or offer a lower difficulty. Do whatever you can to keep them playing.",
+          "example": "After five whiffs in a row, the boss's hitbox quietly grows.",
+          "f2p": "Dynamic difficulty is common in F2P. Helping players continue is good. Rigging levels to sell boosters is predatory.",
+          "memory": "Secretly widen the doorway.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "On Moving",
+      "bites": [
+        {
+          "id": "L10-b32",
+          "hook": "Real fighters know: the goal is not getting hit",
+          "body": "In martial arts, moving matters as much as attacking. Give players moves for retreating and avoiding damage, plus moves that combine with attacks for quicker or stronger strikes.",
+          "example": "A dodge that flows into a counter-slash rewards both defense and offense.",
+          "f2p": "Survivor-likes make movement the only input. In Archero you only fire while standing still, so moving is your defense.",
+          "memory": "Float like a butterfly, roll like a burrito.",
+          "tag": "concept"
+        },
+        {
+          "id": "L10-b33",
+          "hook": "Dodges must clear the whole attack, or it's the graveyard hustle",
+          "body": "Dodges and rolls should be quick and easy: one button plus one stick direction. Mind your metrics: the dodge must fully clear wide attacks, long weapons like halberds and big swords, and radius attacks like explosions or spells. Otherwise players end up doing what WoW players call the graveyard hustle.",
+          "example": "A roll that leaves you one step inside an explosion radius feels like a betrayal.",
+          "f2p": "Genshin's dash has invincibility frames. One swipe or one dodge button is the touch translation.",
+          "memory": "Short roll, long walk back from the graveyard.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b34",
+          "hook": "Give dodges a recovery beat, and lock the camera",
+          "body": "After a dodge, add a beat to get back up so players can reorient and can't abuse rolls as fast travel. Dodges can carry players past hazards like closing doors and swinging blades. Cameras tend to crash into those hazards: don't pass through (sloppy) or dip down (disorienting). Lock the camera in place, then catch up.",
+          "example": "Rolling under a swinging blade while the camera holds still, then glides after you.",
+          "f2p": "Stamina costs on dodges (as in Genshin) are the modern anti-exploit beat.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b35",
+          "hook": "Even a basic dash should hurt something",
+          "body": "Dashes are quick forward moves for defense or attack. Devil May Cry and Darksiders let you upgrade dashes with stronger sword or punch moves. A dash should ram enemies, smash breakables, carry momentum into several foes, or set off a sonic boom that sends bad guys flying. Quick, powerful, fast. Dashing.",
+          "example": "Devil May Cry (Capcom, 2001) and Darksiders (THQ, 2009) have upgradable dash attacks.",
+          "f2p": "Mobile dash skills that damage, knock back or break walls double as escape and engage tools.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b36",
+          "hook": "Butt bounces need roomy hitboxes and a recoil bounce",
+          "body": "Jumps can be attacks, like Mario's butt bounce. Make the hitbox like a good pair of pants, with plenty of room in the seat, not pixel-perfect. After a hit, recoil-bounce the player away so they don't land on the enemy, and stun it if it survives. Let players steer the recoil to chain bounces for escalating bonuses.",
+          "example": "Bouncing across three enemies' heads for rising points: a big moment.",
+          "f2p": "Escalating combo multipliers are a staple of arcade mobile games. Make the fourth chained kill feel like a jackpot.",
+          "memory": "Hitboxes like good pants: room in the seat.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b37",
+          "hook": "Five rules for jump attacks with weapons",
+          "body": "1) Max jump height must beat the tallest jump-attackable enemy. 2) Landing is an impact: freeze the action for a beat, add explosive effects, rumble. 3) Even a miss can cause a radial stun or knockback. 4) Allow a quick recovery... 5) ...or add a vulnerable delay as risk/reward, like Mario's planted butt.",
+          "example": "A hammer slam that misses still knocks nearby enemies back.",
+          "f2p": "Leap-and-slam skills in mobile RPGs follow this pattern: telegraph, impact, stagger.",
+          "memory": "Taller, Thud, Ripple, Rise (or Risk).",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b38",
+          "hook": "Too cool to jump? Vault instead",
+          "body": "For space marines and soldiers, vaulting over obstacles adds variety to battlefield movement without goofy jumps. It pairs well with cover systems and ducking. Gears of War 2 shows a prompt when you can vault a low wall.",
+          "example": "Gears of War 2 (2008): vault prompt over low cover.",
+          "f2p": "Context-sensitive auto-vaults suit touch controls: move into a ledge and the hero hops it.",
+          "memory": "",
+          "tag": "example"
+        }
+      ]
+    },
+    {
+      "title": "On Guarding: blocks, shields, armor",
+      "bites": [
+        {
+          "id": "L10-b39",
+          "hook": "Blocks must be instant: general or positional",
+          "body": "General blocks (action games): one button to cross arms or weapons or raise a shield, an all-purpose block for any enemy. Buckler or scutum, same function. Positional blocks (fighting games): block at a specific height, high or low, using the stick and/or a button.",
+          "example": "The book's joke: reading 'WATCH OUT!' takes about as long as you get to react to an attack.",
+          "f2p": "Mobile fighting games like the Shadow Fight series feature blocking. Most mobile action uses dodges instead.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L10-b40",
+          "hook": "CLANG! tells players the block worked",
+          "body": "Confirm blocks with a loud CLANG or sparks, never blood, which signals injury. Some blocks push the player back slightly. Rogers thinks punishing a successful block is a bit of a jerk move, but it's your call.",
+          "example": "A shield block with sparks and a metallic clang vs. a silent one that leaves you unsure.",
+          "f2p": "Pair block or parry flashes with a haptic tick, since many mobile players play muted.",
+          "memory": "Clang good, splat bad.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b41",
+          "hook": "Hold the block? Decide, then counter the campers",
+          "body": "Arm blocks usually drop after about a second. Some games let you hold until a block-breaking attack or a knockdown. Shield blocks can last longer, letting players hide. Counter block-camping with breakable shields or enemy knockback attacks. And don't let the shield clip into the ground when crouch-blocking.",
+          "example": "A boss with a guard-breaking slam stops players turtling forever.",
+          "f2p": "In PvP, unbreakable turtling stalls matches. Guard breaks and timers keep the pace up.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b42",
+          "hook": "Breakable shields get hoarded; unbreakable ones get used",
+          "body": "In Maximo 1 the shield was breakable (and upgradable). As a limited resource, players avoided using it and jumped or dodged instead. In Maximo 2 it was unbreakable, and players happily blocked once the fear of breaking it was gone.",
+          "example": "Maximo 1 vs. Maximo 2: same shield, opposite behavior.",
+          "f2p": "The hoarding problem: players stockpile boosters and revives 'for later'. Give freebies early, regenerate some, add use-it-or-lose-it items.",
+          "memory": "A shield you're scared to break is a shield you'll never use.",
+          "tag": "example"
+        },
+        {
+          "id": "L10-b43",
+          "hook": "Seven things a shield can do besides block",
+          "body": "Dash with it to clear obstacles. Smash enemies up close. Throw it as a short-range projectile. Sled down slopes. Hold it overhead against debris or lava. Use it as a crowbar to move objects. Carry it on your back against back-stabbers. Put it on a chain like Rygar and it becomes a new weapon.",
+          "example": "Rygar's chained shield turns defense into offense.",
+          "f2p": "Multi-use tools save buttons, which is perfect for limited touch layouts.",
+          "memory": "Dash, Smash, Throw, Sled, Roof, Crowbar, Backpack.",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b44",
+          "hook": "Armor: skip encumbrance in action games",
+          "body": "Encumbrance means more armor makes you slower and noisier. It's common in RPGs and rare in action games. Fine if you want realism, but if your game is about action and combat, consider leaving it out.",
+          "example": "A heavy plate set that halves movement speed in a hack-and-slash would feel like lag.",
+          "f2p": "On touch screens, slowness reads as lag. Keep encumbrance out of mobile action.",
+          "memory": "",
+          "tag": "warning"
+        },
+        {
+          "id": "L10-b45",
+          "hook": "Paper doll armor: more slots, more loot, bigger UI",
+          "body": "If combat tracks body parts, armor the head, torso, arms, hands, legs and feet separately. It feels realistic and gives players more items to buy and collect, but needs a large interface that shows the whole body. Make finding, selecting, swapping, discarding and selling armor easy.",
+          "example": "Classic RPG equipment screens with a full-body silhouette and six slots.",
+          "f2p": "Gear slots and set bonuses (e.g. Raid: Shadow Legends artifacts) create sinks and long-term chase.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L10-b46",
+          "hook": "Never give a '+2 chainmail shirt' as a boss prize",
+          "body": "Armor upgrades should look dramatically different, like full plate vs. a leather jerkin, so players can read their rank at a glance. Give them unique names like 'Holy Armor of Protection' or 'Dragon Scale Armor' so the prize feels important and worth having.",
+          "example": "Beating the first boss and getting visibly glowing dragon-scale armor.",
+          "f2p": "Visual tiers and named legendaries are what make gacha and gear pulls feel worth it.",
+          "memory": "If it doesn't look upgraded, it isn't.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b47",
+          "hook": "Armor can be your health bar",
+          "body": "Dead Space puts Isaac's health meter down the spine of his suit, so no HUD is needed. Ghosts 'N Goblins does it in reverse: armor popping off means you're closer to death. That trick also works on enemies, showing how many hits are left.",
+          "example": "Arthur in his underwear = one hit from death.",
+          "f2p": "Breaking armor pieces off bosses shows mobile players progress without squinting at numbers.",
+          "memory": "",
+          "tag": "example"
+        },
+        {
+          "id": "L10-b48",
+          "hook": "Armor can grant abilities, like Mario's Tanooki suit",
+          "body": "Upgrades can unlock new abilities: hydraulic armor that moves heavy blocks, for example. It doesn't have to be a suit: Mario's Tanooki suit added protection plus flight and an invincible statue form. (A tanuki is a Japanese raccoon dog.)",
+          "example": "Mario's Tanooki suit: armor, flight and statue invincibility in one costume.",
+          "f2p": "In fair PvP, hero skins usually stay cosmetic. Ability-granting gear belongs in PvE progression.",
+          "memory": "Raccoon pajamas of power.",
+          "tag": "fun"
+        },
+        {
+          "id": "L10-b49",
+          "hook": "Customization makes other players want your helmet",
+          "body": "Armor lets players customize without changing the base model. World of Warcraft lets you find, buy and craft gear, and when other players see your fancy helmet, they want one too, so they spend more time in the game. Hats, unique weapons and mounts work too. More customization is better.",
+          "example": "WoW gear envy in a crowded city.",
+          "f2p": "Cosmetic skins (Brawl Stars, Mobile Legends, PUBG Mobile) are visible social proof and an ethical top earner.",
+          "memory": "A cool hat is a walking billboard.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "State of the Art Bang Bang: shooting and the Three As",
+      "bites": [
+        {
+          "id": "L10-b50",
+          "hook": "Five shooters, five completely different rhythms",
+          "body": "Quake: linear action, looping movement, pickups that swing fights. Halo: sport-like modes, slower rhythm, regen health encouraging attack-then-retreat, vehicles. CoD Modern Warfare: short-range intensity, RPG-like upgrades. TF2: varied skill-based roles, teamwork. Left 4 Dead: teamwork required, a few players vs. endless hordes, story-like modes.",
+          "example": "Same verb (shoot), five completely different feelings.",
+          "f2p": "Brawl Stars' modes show how game modes reshape the same shooting.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b51",
+          "hook": "Not a shooter? Hand out guns later",
+          "body": "Ranged combat instantly changes a game's dynamic. If shooting isn't your main focus, save guns until later. Let players master their moves and attacks first, then arm them once they've learned all they can.",
+          "example": "A melee adventure that introduces a pistol halfway through as a new chapter.",
+          "f2p": "FTUE pacing: introduce one combat verb at a time and unlock the power tool once the basics land.",
+          "memory": "Learn the fists before the firearm.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b52",
+          "hook": "Ranged combat is about rhythm (Hardy LeBel)",
+          "body": "Hardy LeBel (Halo: Combat Evolved, SOCOM 3) says ranged combat is about building a distinctive rhythm. The factors: targeting methods, reload times, fire rate, accuracy, rate of fire and lethality, ammo availability, area-of-effect weapons like grenades, player health mechanics, plus level design, AI behavior and mechanics.",
+          "example": "Halo's regenerating health plus vehicles gives a slower, ebb-and-flow rhythm.",
+          "f2p": "Brawl Stars tunes rhythm through ammo reloads, out-of-combat healing and bushes.",
+          "memory": "Tune the beat, not just the bullet.",
+          "tag": "concept"
+        },
+        {
+          "id": "L10-b53",
+          "hook": "The Three As: Action, Aiming, Ammo",
+          "body": "Action: loading, firing and unloading. Aiming: how the player sights a target. Ammo: what gets fired. Use them to design any ranged combat, including bows, magic missiles and cones of cold.",
+          "example": "Gears of War's active reload (Action), Halo's aim assist (Aiming), incendiary rounds (Ammo).",
+          "f2p": "Brawl Stars shows all three in a tiny HUD: ammo segments, aim indicator, reload speed.",
+          "memory": "Always Ask About the boomstick: load it, point it, feed it.",
+          "tag": "concept"
+        },
+        {
+          "id": "L10-b54",
+          "hook": "Action questions: reload speed, manual reload, fire rate",
+          "body": "How fast is reloading? Manual or automatic? Reloading creates risk/reward because you're vulnerable while doing it. Is ammo limited, and do you reload at all? What's the fire rate, single shots or bursts? Does the firing bloom block the view? Can one shot hit several targets?",
+          "example": "Gears of War active reload: nail the timing and it's faster; botch it and you're defenseless longer.",
+          "f2p": "Auto-reload with visible ammo bars suits touch. Timing-based reloads are rare on mobile but add skill.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b55",
+          "hook": "Aiming can make or break a shooter",
+          "body": "Early shooters relied on reflexes. Until Halo: Combat Evolved (2001), most successful FPS games were on PC because mice make aiming easy. Halo added aim assist to tame analog sticks. Whatever the method (aim assist, auto-aim, free aim), design targeting for your audience's tastes.",
+          "example": "Halo CE made console FPS work with aim assist.",
+          "f2p": "Touch is harder still: CoD Mobile offers an auto-fire simple mode, and PUBG Mobile supports gyroscope aiming.",
+          "memory": "Mouse, stick, thumb: each needs more help.",
+          "tag": "concept"
+        },
+        {
+          "id": "L10-b56",
+          "hook": "A dozen aiming questions every shooter must answer",
+          "body": "Scope, and how much view it blocks? Depth of field? Manual aim, drift, steadying, max range? Auto-aim, quick-fire, lock-on? Kick, or climb like a Thompson? Aids: lasers, bullet time, heat-seekers? Move while aiming? Alt vision (IR, motion, heartbeat) or mods (silencer, launcher, bayonet)? Trick shots or puzzles? Swappable targeting styles?",
+          "example": "Shooting a lock off a door, or the gun out of an enemy's hand.",
+          "f2p": "Mobile shooters expose many of these as settings toggles.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b57",
+          "hook": "The reticule is your most sophisticated feedback device",
+          "body": "The reticule and iron sights may need to show aim, bullet spread, recoil, jamming, overheating, ammo, hits vs. near misses, and friend or foe, all while staying useful and unobtrusive. Rogers' Very Important Thing: play the best shooters and study their solutions. Deconstruct the best in class.",
+          "example": "A reticule that blooms as you fire and flashes red on a hit.",
+          "f2p": "Hit markers and kill confirms are critical on small screens where impacts are tiny.",
+          "memory": "Steal like a sniper: study the best.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b58",
+          "hook": "Ammo questions: carrying, special rounds and missed shots",
+          "body": "Where and how is ammo carried, and is there a limit? Does each gun need its own ammo? Any special effects: incendiary, poison, heat-seeking, armor-piercing? What happens when a shot misses: does it hit and change the environment, breaking glass, chipping plaster, ricocheting off metal?",
+          "example": "A stray bullet shattering a window makes the world feel real.",
+          "f2p": "Mobile shooters usually simplify ammo (auto-pickup, shared pools) to cut inventory friction.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b59",
+          "hook": "Gunplay juice: full-volume hits, muzzle flash, impact effects",
+          "body": "Sound sells danger: firing, impacts, enemy fire, whizzing bullets. Play gunshot and impact sounds at full volume regardless of distance so players know they hit, and keep character voiceover audible. Add muzzle flash, ejected shells and barrel smoke. Players prefer shorter-range fights. Always show an impact effect.",
+          "example": "A distant sniper hit still pings loudly so you know it landed.",
+          "f2p": "Many mobile players play muted, so visual hit confirms have to carry the load.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b60",
+          "hook": "Level design IS game design for ranged rhythm",
+          "body": "Long open corridors plus high lethality make players cautious. Lots of cover, frequent line-of-sight breaks and regenerating health turn fights into swirling dogfights as players engage, retreat to heal and return. LeBel's advice: players expect ranged combat to feel powerful, so resist weakening weapons and be generous.",
+          "example": "Halo's regen health plus cover produces ebb-and-flow fights.",
+          "f2p": "Brawl Stars' bushes, walls and out-of-combat healing create that dogfight rhythm on a phone.",
+          "memory": "Be generous with the boom.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "The Best Gun for You: weapon archetypes and balance",
+      "bites": [
+        {
+          "id": "L10-b61",
+          "hook": "Start from real guns, then design for effectiveness",
+          "body": "Real weapons are built for roles that carry into games, but that only gets you halfway. Think in effectiveness tiers: the book's joke ladder goes zap pistol (good), zap rifle (better), blazer cannon (best), kill-o-zap (freakin' awesome). Balance for your game's needs first; gun nuts will never all agree.",
+          "example": "Zap pistol to kill-o-zap: a four-step power ladder.",
+          "f2p": "This ladder is the ancestor of rarity tiers (Common to Legendary). Make each tier feel different.",
+          "memory": "Good, Better, Best, Freakin' Awesome.",
+          "tag": "concept"
+        },
+        {
+          "id": "L10-b62",
+          "hook": "Pistols and rifles: straight lines, different risks",
+          "body": "Pistols fire straight (unless you're the bullet-curving guy from Wanted), hit one enemy at a time unless the ammo pierces, keep a slow pace and reload often (6 to 15 rounds). Rifles, especially snipers, need aiming and usually can't hip-fire, so scope tunnel vision leaves you vulnerable. Some hold drums of up to 100 rounds.",
+          "example": "A scoped-in sniper getting flanked: the built-in weakness.",
+          "f2p": "Brawl Stars-style snipers trade close-range safety for long-range reach.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b63",
+          "hook": "Shotguns and flamethrowers spray cones up close",
+          "body": "Both fire in a cone instead of a line. They have shorter range than pistols or rifles but hit several targets and deal high damage up close. Shotguns carry less ammo. Flamethrowers burn propellant fast, but can sustain the blast and add lingering damage.",
+          "example": "A shotgun clearing a doorway of three zombies at once.",
+          "f2p": "Short-range spread brawlers dominate bushes and corners; open maps counter them.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b64",
+          "hook": "Automatics spray; heavy weapons need a warm-up",
+          "body": "Automatics fire fast but lose accuracy and eat ammo. Add kick, drift or spray for realism and mastery, and decide one- vs two-handed and dual-wielding. Heavy weapons hit hard but warm up or cool down. TF2's minigun spins up and can idle-spin, but enemies hear it. Grenade launchers are harder to aim; CoD deliberately made its launcher less accurate.",
+          "example": "TF2's minigun: warm-up time and noise are its balancing costs.",
+          "f2p": "Wind-up weapons in mobile PvP give opponents a readable counter window.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b65",
+          "hook": "The weapon matrix: one champion per range",
+          "body": "The book's matrix: dual pistols are strong short and weak medium. Assault rifle is strong but slow short, very strong medium, weak long. Shotgun is very strong short only. Sniper is medium at medium and very strong long. Little overlap, and any overlap comes with a cost like slow firing or reloading.",
+          "example": "Each range column has exactly one 'very strong' pick.",
+          "f2p": "Clash Royale and Brawl Stars rosters stay readable by giving every unit a niche and a counter.",
+          "memory": "One gun, one job.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b66",
+          "hook": "Friendly fire? Let players toggle it",
+          "body": "In multiplayer, friendly fire depends on the mode: it makes more sense in player-vs-player than in co-op. Whatever you choose, let players turn it on or off. And ranged weapons don't have to be guns; arrows, magic missiles and cones of cold follow the same guidelines: range, damage and the Three As.",
+          "example": "Co-op horde mode with friendly fire off; hardcore PvP with it on.",
+          "f2p": "Mobile PvP almost never uses friendly fire. On small screens, accidental team damage feels like griefing.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b67",
+          "hook": "Out of ammo should never mean out of options",
+          "body": "Players feel powerless in a shooter with nothing to shoot, so always offer a melee option: knife, fists, pistol-whip, rifle butt. Limit loadouts to a main gun plus a sidearm (no golf bag), with fast one-button switching. CoD MW2 draws the sidearm faster than you can raise the rifle.",
+          "example": "Gears of War mounts a chainsaw bayonet on the gun as the ultimate fallback.",
+          "f2p": "Never strand F2P players: if energy runs out, there should still be something to do.",
+          "memory": "Never leave a soldier holding an empty gun.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b68",
+          "hook": "Cover systems: safety with a cost, but never sticky",
+          "body": "Gears of War and Uncharted let players hide behind surfaces and fire blindly or in a limited way. Players are often penalized for playing it safe by not being able to aim properly from cover. Cover usually takes a button press to enter and exit, and it must not be so sticky that players snap in when they don't want to.",
+          "example": "The book's joke: a soldier blind-firing over a wall while his buddies wait for him to run dry.",
+          "f2p": "Touch controls make sticky contextual actions worse. Give clear prompts and easy exits.",
+          "memory": "",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Run and Gun: galleries, mounted guns, vehicles, rails",
+      "bites": [
+        {
+          "id": "L10-b69",
+          "hook": "Seven parts of a shooting gallery screen",
+          "body": "1) Turret showing the weapon and player. 2) Shootable object hiding a reward or power-up. 3) Ground target. 4) Scenery explaining why you can't shoot past the screen. 5) Aerial target with clear hit feedback. 6) Smaller aerial target worth more points. 7) Smaller ground target worth more points.",
+          "example": "Book drawing: turret at the bottom, crate, jeep, cliff edge, smoking plane, tiny plane, tiny ground target.",
+          "f2p": "Smaller-is-worth-more is risk/reward targeting in arcade shooters. Scenery-framed borders keep mobile arenas readable.",
+          "memory": "Turret, Treasure, Truck, Trees, Plane, Tiny plane, Tiny truck.",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b70",
+          "hook": "Mounted guns: waves, bursts, tracers and visible range",
+          "body": "Mounted ranged combat means defending against waves of enemies. Unlimited ammo leads to constant fire. Limited ammo or cooldowns lead to bursts. Tracer bullets look cool and help players lead fast or erratic targets. Show the weapon's range, and visually justify any parts of the screen that can't be hit.",
+          "example": "Tracers arcing toward a zig-zagging plane.",
+          "f2p": "Tower defense games show each tower's range circle: Rogers' 'tell players the range'.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b71",
+          "hook": "Moving targets need time to line up",
+          "body": "In aerial and vehicular combat, both the shooter and the target move. If players can see a target coming, line it up and fire, they feel in control. If targets whip by too fast, players fire blindly and it feels mindless and frustrating. Adjust target or craft speed, naturally or artificially.",
+          "example": "Book drawing: a helicopter chasing a fleeing jeep.",
+          "f2p": "Add spawn telegraphs and off-screen indicators so mobile players can react on small screens.",
+          "memory": "Fair targets slow down to say hello.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b72",
+          "hook": "Rail shooters: you shoot, the designer drives",
+          "body": "Rail shooters remove movement control: House of the Dead: Overkill, Star Fox, plus rail sequences in Red Faction: Guerrilla, Uncharted 2 and Wet. The developer controls the camera and events, guaranteeing scares, furious shooting and scripted drama. Some feel like theme-park dark rides such as the Haunted Mansion, and parks now build interactive shooting rides.",
+          "example": "Footnote: a 1974 bullet hole in the Haunted Mansion's ghost-effect glass was hidden with a rubber spider.",
+          "f2p": "Auto-runners and lane shooters (common in 4X ads) are one-thumb rail experiences with guaranteed pacing.",
+          "memory": "A haunted house you're allowed to shoot back in.",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "Not Just Shooting: grenades, smart bombs, fire, poison, disables",
+      "bites": [
+        {
+          "id": "L10-b73",
+          "hook": "Grenades: show the arc, cook the risk",
+          "body": "Let players predict the arc with throw-path aids (Gears of War, Uncharted): a cook meter, an arc range-finder and a target marker. Sell explosions with dust, debris and flying props. Risk/reward: hold it too long and it goes off, or it bounces back. Grenades can also be fired from rifles or launchers for range and accuracy.",
+          "example": "Call of Duty: Modern Warfare warns you of incoming grenades and lets you throw them back.",
+          "f2p": "Brawl Stars throwers show a lob indicator while aiming. Angry Birds is one long arc lesson.",
+          "memory": "Cook it, chuck it, duck it.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b74",
+          "hook": "Tell players when their grenade goes off",
+          "body": "Players often duck into cover after throwing, so provide sound, visual and rumble cues for the detonation even when they can't see it. And if they stand too close to an exploding grenade, blow them up too.",
+          "example": "A muffled boom plus a rumble while you're crouched behind a wall.",
+          "f2p": "Haptics and screen-edge flashes do this job on phones.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b75",
+          "hook": "Smart bombs: one-shot breathers that must be rationed",
+          "body": "Carpet bombing or a magic meteor storm: smart bombs destroy everything on screen except the player, destructibles included, buying a few seconds of peace. Show their controls so they aren't confused with regular attacks. Activation can be instant (Defender) or charged (R-Type), so show the charge goal. Don't let them charge too fast or come too often.",
+          "example": "Defender's instant bomb vs. R-Type's charge-up shot.",
+          "f2p": "Brawl Stars Supers charge by landing hits. Match-3 color bombs and sold boosters need balancing, or levels stop mattering.",
+          "memory": "Panic button, not autopilot.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b76",
+          "hook": "Fire takes no sides, and it must burn out",
+          "body": "Fire looks great and does lingering damage to enemies and environments. It should hurt players who wander into it, and eventually burn out so they don't get trapped. Flamethrowers do more damage the closer you are and suit players who hate aiming: fire and forget, hose them down.",
+          "example": "A burning hallway that dies down after a few seconds.",
+          "f2p": "Battle-royale zones and the closing poison clouds in Brawl Stars Showdown are hazards that take no sides.",
+          "memory": "No napalm-colored corners.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b77",
+          "hook": "Fire as a mechanic, not just damage",
+          "body": "Flaming weapons can do extra damage to ice enemies, light braziers, set off explosives, burn through ropes, light up dark areas and cauterize wounds. The gameplay possibilities are vast.",
+          "example": "Burning a rope bridge to drop enemies into a chasm.",
+          "f2p": "Elemental systems like Genshin Impact's Pyro interactions turn this into a full combat language.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L10-b78",
+          "hook": "Poison: rare poison, common antidote, never hopeless",
+          "body": "Give poison a distinct visual (green gas, dripping blade, hovering death's head), and give every tick a clear sound and visual. Poison is a timer that turns the player's focus to finding the antidote. Keep antidotes easy to reach and more common than poison. Never make death feel inevitable; always give a fighting chance.",
+          "example": "A green skull icon pulsing over your character with every tick.",
+          "f2p": "In gacha, poison debuffs need visible cleanse options, and readable tick numbers prevent confusion.",
+          "memory": "Rare poison, common antidote.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b79",
+          "hook": "Taking control away feels horrible, so ration it",
+          "body": "Stun, knockback, transformation, loss of balance and sliding can replace damage, but losing control feels terrible, so use them carefully. Stun: brief total loss of control, shown with stars or tweeting birds. Knockback: flung back, deadly near ledges. Knockdown: down for a second or two; get up automatically, or by mashing, waggling or a QTE.",
+          "example": "The book's drawing: stunned, knockback, knockdown, grabbed, transformed, off-balance.",
+          "f2p": "In PvP, CC chains feel awful. Use immunity windows or diminishing returns.",
+          "memory": "Some Knights Keep Losing Their Little Swords.",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b80",
+          "hook": "Latching, transformation, teetering and skidding",
+          "body": "Latching on: an enemy pins you and damages you every second; shake it off by waggling, jumping or spinning. Transformation: frog (Ghosts 'N Goblins) or zombie, old man, baby (Maximo); limited moves, maybe reversed controls; end it quickly and use it rarely. Loss of balance: a teeter, better as an indicator. Sliding: annoying when repeated, and can carry you off ledges.",
+          "example": "Arthur turned into a frog: helpless, funny, best kept short.",
+          "f2p": "Transform debuffs (polymorph-style) should be rare and short, or they cause rage-quits.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b81",
+          "hook": "Double bolting: when one hit costs twice",
+          "body": "In Ratchet & Clank, getting hit spills bolts (the currency), which vanish if you don't collect them. A hit can knock you into another hazard that spills more while you're still stunned and can't collect any. You lose double. Avoid disable chains that multiply punishment.",
+          "example": "The Ratchet & Clank 'double bolting' footnote.",
+          "f2p": "Fail states that strip the run's loot plus your streak plus a life are F2P double bolting.",
+          "memory": "One mistake, one penalty.",
+          "tag": "warning"
+        },
+        {
+          "id": "L10-b82",
+          "hook": "Always enable the player, even while disabling them",
+          "body": "Don't let enemies have all the fun. Give players disabling attacks too so they gain the advantage, but ask what each disable adds to the gameplay. Rogers' maxim: even while you disable the player, keep finding ways to empower them.",
+          "example": "A player freeze ray that briefly locks a boss and exposes a weak point.",
+          "f2p": "Every debuff in your game should have a reachable counter: dodge, cleanse, item or immunity.",
+          "memory": "Disable with an exit sign.",
+          "tag": "truth"
+        }
+      ]
+    },
+    {
+      "title": "Dammit Jones, Where Doesn't It Hurt?: health",
+      "bites": [
+        {
+          "id": "L10-b83",
+          "hook": "Health formula: hits you can take times hurt per hit",
+          "body": "Combat only matters if there's something to lose: health and lives. Base starting health on the maximum damage the player should take. If they should survive 20 average hits before losing a life without healing, and an average hit does 10 hit points, starting health is 20 x 10 = 200.",
+          "example": "20 hits x 10 damage = 200 health.",
+          "f2p": "Use it as a time-to-kill tool, and recheck the ratio across levels. Power-curve drift causes 'level walls'.",
+          "memory": "Hits x Hurt = Health.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b84",
+          "hook": "Numbers, bars and icons: three classic health displays",
+          "body": "Numbers: simple and transparent but boring; they stand out in cluttered MMO and RPG HUDs, so keep them legible. Health bars: small, can be framed with themed art, but small damage is hard to see, so segment them. Icons: green-to-red outlines (WWE SmackDown), blood globes (Diablo), hearts (Zelda).",
+          "example": "Zelda's hearts let you count your health at a glance.",
+          "f2p": "Floating segmented bars over units are the mobile standard (Clash Royale, Brawl Stars).",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b85",
+          "hook": "Let the character's body show the damage",
+          "body": "Companion meters: Crash Bandicoot's tiki mask loses feathers, but can't hold much health. Character-based: Ghosts 'N Goblins armor pops off; Dead Space and Ghostbusters put meters on gear; Resident Evil heroes clutch their stomach and limp; GTA cars drag bumpers and smoke. Players can't always watch a bar, so body cues help them retreat or heal.",
+          "example": "A smoking GTA car tells you to bail. Such cues must never hinder movement or attacks.",
+          "f2p": "Visible boss damage stages (cracked armor, enraged phases) read better on phones than tiny numbers.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b86",
+          "hook": "HUD-less health: blood, blur and heartbeats",
+          "body": "Many modern games show damage with blood splatter that thickens, or a screen that turns red, monochrome or blurry while the music fades to heavy breathing and a heartbeat. Batman: Arkham Asylum short-circuits the screen when you're tasered. Oddballs: Sonic can't die while holding one ring; Bushido Blade 2 had so many one-hit kills it dropped the health bar.",
+          "example": "Sonic: one ring means survival.",
+          "f2p": "Mobile shooters use red edge vignettes and directional hit arrows, which is crucial when thumbs cover the screen.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b87",
+          "hook": "Regaining health: power-ups, levels, or just time",
+          "body": "Health can come back through power-ups, level or XP increases, or time. Halo: Combat Evolved pioneered regenerating health in FPS games: take no damage and it slowly refills. The book says Ratchet & Clank dropped the usual health punishment so players reach the ending. Whatever the system, make getting hurt unmistakable: dramatic animations, particles, hit sounds and vocal 'ow!'s.",
+          "example": "Halo CE's regenerating health creates an attack-and-retreat rhythm.",
+          "f2p": "Brawl Stars brawlers heal after a few seconds out of combat, which drives engage-and-retreat loops.",
+          "memory": "Ouch must be loud.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Death: What Is It Good For?",
+      "bites": [
+        {
+          "id": "L10-b88",
+          "hook": "Lives were invented to eat quarters",
+          "body": "Arcades wanted quarters fast, so games killed players often while making them want to continue, and extra lives became a short-term goal. When heroes became little people instead of spaceships, death gained emotional weight. On home consoles players had already paid, so why kill them? Why not let them finish? Rogers calls lives and game over outdated.",
+          "example": "Arcade 'insert coin to continue' screens.",
+          "f2p": "F2P brought lives back as energy: Candy Crush's five regenerating lives turned death into a pacing and monetization gate again.",
+          "memory": "Death used to cost a quarter; now it costs a continue.",
+          "tag": "concept"
+        },
+        {
+          "id": "L10-b89",
+          "hook": "Punishing deaths make players cheat the system",
+          "body": "Killing players often discourages fair play. Doom players found reloading a save easier than restarting from checkpoints, so they stopped fearing death. Many developers swapped lives for checkpoint retries. Prince of Persia: The Sands of Time lets you rewind time, with a narrator treating death as a storytelling slip. Batman: Arkham Asylum offers a QTE to save Batman from a fall.",
+          "example": "Sands of Time: rewind carefully, because you might not be able to go back far enough.",
+          "f2p": "Roguelite mobile games keep meta-progress after death, so failure still moves you forward.",
+          "memory": "",
+          "tag": "example"
+        },
+        {
+          "id": "L10-b90",
+          "hook": "If you must kill the player, follow these rules",
+          "body": "Tell players they have lives. Show lives clearly in the HUD. Offer many ways to regain them. Kill quickly, without long death animations. Keep game-over screens short and restarts fast. Make death as violent as the rating allows, to build empathy. Don't double-punish. Let boss fights continue. Use the threat of death wisely. Make partner-death rules clear.",
+          "example": "Hyper-casual games like Flappy Bird restart with one tap.",
+          "f2p": "Use these as your fail-state ethics checklist for continue offers.",
+          "memory": "Tell, Show, Refill, Quick, Quicker, Ouch, Keep, Continue, Wisely, Warn.",
+          "tag": "list"
+        },
+        {
+          "id": "L10-b91",
+          "hook": "Don't double-punish, and let boss fights continue",
+          "body": "If the player earned something during a life, don't take it away when they lose that life. If they die in a boss fight, don't make them replay the whole sequence. Let them carry on as if nothing happened, or at most let the boss regain a little health.",
+          "example": "Respawning at the boss door with the boss still at 40% health.",
+          "f2p": "Shared or persistent boss health (e.g. Raid's Clan Boss adds up damage across attempts) brings this rule to F2P.",
+          "memory": "One mistake, one penalty.",
+          "tag": "rule"
+        },
+        {
+          "id": "L10-b92",
+          "hook": "Keep them playing: the 'keep going' screen",
+          "body": "Think hard before using lives at all. If killing the player won't make the game better or more exciting, skip it. The goal is to keep them playing; once you lose them, they may never come back. Replace game over with a 'keep going' screen that previews the next level, story beat, treasure, weapon or power-up.",
+          "example": "Dying and seeing a teaser of the next world's boss.",
+          "f2p": "F2P fail screens show progress ('2 more wins to the chest'). Honest motivation is fine; rigged near-misses are predatory.",
+          "memory": "Death is a door, not a wall.",
+          "tag": "truth"
+        },
+        {
+          "id": "L10-b93",
+          "hook": "Revive with ads or gems: where Rogers meets ethics",
+          "body": "Modern F2P sells continues: extra moves in match-3 (Candy Crush, Royal Match), keys to keep running (Subway Surfers), and in many roguelites one revive per run for gems or an ad. Fair versions: a clear price, an equally visible 'no thanks', capped revives, an ad alternative, fast retry. Predatory versions: escalating prices, pressure timers, rigged near-misses.",
+          "example": "A transparent 'Revive once: watch an ad or pay 50 gems', with a big decline button.",
+          "f2p": "Fair continue design protects retention and trust. Dark patterns attract regulation in some countries.",
+          "memory": "Sell 'one more try', never 'or else'.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "F2P Combat Field Guide (bonus)",
+      "bites": [
+        {
+          "id": "L10-b94",
+          "hook": "Auto-battle: the game executes, you decide",
+          "body": "Auto-battle extends Rogers' Batman logic: the game never misses, so you look cool. Skill moves to team-building, element matchups and ultimate timing. Use manual play for novelty and hard content, auto and sweeps for repetition, and keep at least one meaningful decision in every fight.",
+          "example": "Honkai: Star Rail offers auto battle and speed-up. AFK Arena-style battles let ultimates fire automatically or on a tap.",
+          "f2p": "Show why a fight was lost (power gap, element mismatch) so auto players know what to upgrade.",
+          "memory": "Auto plays the fight, you play the matchup.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L10-b95",
+          "hook": "Elemental systems are Maximo's skeletons with a color palette",
+          "body": "Weakness systems grow out of Rogers' helmet and shield skeletons: hit with the right attack type. Genshin Impact's elemental reactions, Honkai: Star Rail's weakness breaks, Raid's affinity triangle and Pokémon types all teach counters. Show advantages with icons before the fight, and always provide a reachable counter.",
+          "example": "Honkai: Star Rail displays each enemy's weakness types.",
+          "f2p": "Never paywall the only answer to a mandatory element. That's the antidote rule at roster scale.",
+          "memory": "Right key, right lock.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L10-b96",
+          "hook": "Survivor-likes: auto-attack, move-only, horde power fantasy",
+          "body": "Survivor.io-style games auto-fire weapons that cover Rogers' shapes (radial orbits, straight lines, spreads, area bursts) while the player only moves. Hordes deliver the power fantasy; elite and boss waves bring back close-battle tension. XP gems vacuuming in are pure pleasure-principle juice. Slows must stay escapable, since movement is the only input.",
+          "example": "Survivor.io level-up choices build a weapon set that covers every range.",
+          "f2p": "Run-based deaths are cheap and meta-upgrades persist: 'don't double-punish' is built in.",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "L10-b97",
+          "hook": "Readability on small screens wins PvP",
+          "body": "Brawl Stars and Clash Royale teach mobile readability: role from silhouette, team colors everywhere, range indicators while aiming, telegraphs before big hits, few units, big hitboxes, short matches. Keep critical info away from thumbs, pair color with shape for colorblind players, and offer reduce-motion and haptics toggles.",
+          "example": "Clash Royale cards show their range and whether they target air or ground.",
+          "f2p": "If players can't read it in half a second on a 6-inch screen, it isn't fair.",
+          "memory": "Half a second, six inches.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L10-b98",
+          "hook": "Power vs skill: close battles keep everyone playing",
+          "body": "PvP sits on a spectrum: cosmetic-only monetization (skill first), power levels plus trophy matchmaking (Clash Royale ladders), and power-heavy 4X servers. Tools: match on power and skill, level-capped or normalized modes, catch-up mechanics, transparent power displays. A big spender crushing a newcomer isn't a close battle; the newcomer churns and the spender loses opponents.",
+          "example": "Level-capped tournaments let skill decide.",
+          "f2p": "Fair PvP is a retention strategy, not only an ethics stance.",
+          "memory": "Stomps churn, nail-biters return.",
+          "tag": "f2p"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "Check ESRB (on mobile: IARC and store) rating rules while you design anything violent.",
+    "Violence depends on context: the same act feels harsher when the player is the one performing it.",
+    "Equip your hero with one signature move or weapon that defines them.",
+    "Log combat moves and their reactions in an attack matrix.",
+    "Players are drawn to games that make them look impressive.",
+    "A lock-on system empowers the player in a fight.",
+    "Tightly matched fights are more thrilling.",
+    "QTEs add drama to a fight, but overuse makes them stale.",
+    "Fighting enemies should be enjoyable in itself.",
+    "Remember the Three As (Action, Aiming, Ammo) whenever you build projectile combat.",
+    "Prefer hampering or incapacitating the player over killing them.",
+    "Players must plainly see when they have been hit.",
+    "While disabling the player, still hand them a way to act.",
+    "Keep players in the game."
+  ],
+  "mnemonics": [
+    {
+      "name": "The three verbs of combat",
+      "device": "HMG: the Heavy Machine Gun of design",
+      "unpacks": "Hit, Move, Guard (Liddell Hart's hitting, moving, guarding)"
+    },
+    {
+      "name": "The Three As of ranged combat",
+      "device": "Always Ask About the boomstick: load it, point it, feed it",
+      "unpacks": "Action (loading/firing/unloading), Aiming (sighting the target), Ammo (what you fire)"
+    },
+    {
+      "name": "The Combat Rubik's Cube",
+      "device": "Range x Height x Direction",
+      "unpacks": "Ranges: close, medium, long, area. Elevations: standing, low, high, aerial. Directions: vertical, horizontal"
+    },
+    {
+      "name": "Attack matrix columns",
+      "device": "Nobody Can Run So Darn Dang Speedy",
+      "unpacks": "Name, Control scheme, Range, Speed, Direction, Damage, Special"
+    },
+    {
+      "name": "QTE rules",
+      "device": "Rare, Same spot, a Beat, Back fast, Bruise don't kill",
+      "unpacks": "Reserve QTEs for big moments; keep the prompt in the same place; allow a beat to react; return quickly after a failure; heavy damage instead of instant death"
+    },
+    {
+      "name": "Control-loss states",
+      "device": "Some Knights Keep Losing Their Little Swords",
+      "unpacks": "Stun, Knockback, Knockdown, Latching on, Transformation, Loss of balance, Sliding"
+    },
+    {
+      "name": "Starting health formula",
+      "device": "Hits x Hurt = Health",
+      "unpacks": "Hits the player can take before losing a life (e.g. 20) x average enemy damage per hit (e.g. 10) = starting health (200)"
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L10-f01",
+      "q": "What are B.H. Liddell Hart's three elements of combat?",
+      "a": "Guarding, hitting and moving.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f02",
+      "q": "Why does violence give games the quickest positive feedback loop?",
+      "a": "It's graphic and visceral: the player acts, instantly sees a result (the enemy dies) and gets a reward. Freud's pleasure principle: ring the bell, get the treat.",
+      "type": "why"
+    },
+    {
+      "id": "L10-f03",
+      "q": "Name the five ESRB violence-related descriptors Rogers lists.",
+      "a": "Comic mischief, cartoon violence, fantasy violence, violence, intense violence.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f04",
+      "q": "Violence is all about ____: it feels more violent when the player does it.",
+      "a": "context",
+      "type": "cloze"
+    },
+    {
+      "id": "L10-f05",
+      "q": "List the areas Rogers' rating self-check questions cover.",
+      "a": "Whether the player commits it (realistic weapons?), how often, whether it's rewarded or shown as inappropriate, how graphic (dismemberment, lingering camera), residue (blood, gibs), and whether it targets bad guys who suffer.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f06",
+      "q": "Why are romance, comedy and conversation rarely gameplay, per Rogers?",
+      "a": "They're hard to recreate, so teams explore them less, players keep buying familiar genres, and publishers find new styles harder to sell.",
+      "type": "why"
+    },
+    {
+      "id": "L10-f07",
+      "q": "What should decide a character's combat moves first?",
+      "a": "Their personality, then the genre and desired experience, which point to their weapons.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f08",
+      "q": "The four ranges of combat: close, medium, long and ____.",
+      "a": "area effect",
+      "type": "cloze"
+    },
+    {
+      "id": "L10-f09",
+      "q": "Name the four attack elevations.",
+      "a": "Standing, low, high, aerial.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f10",
+      "q": "How is a high attack delivered, and what is it for?",
+      "a": "Jump, then attack. Used against flying or large enemies like bosses.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f11",
+      "q": "Why should each elevation you use get its own attack set?",
+      "a": "Each elevation makes the player handle combat in a different way.",
+      "type": "why"
+    },
+    {
+      "id": "L10-f12",
+      "q": "An enemy wears a helmet that deflects overhead strikes. Following Maximo, how do you beat it?",
+      "a": "Use a horizontal attack, the opposite direction.",
+      "type": "apply"
+    },
+    {
+      "id": "L10-f13",
+      "q": "What seven columns belong in an attack matrix?",
+      "a": "Attack name, control scheme, range, speed, direction, damage (label plus number or %), special.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f14",
+      "q": "In Rogers' sample matrix, what makes the Jump strike special?",
+      "a": "Slow and downward, strong (25 hp), and it stuns any target within a two-unit radius.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f15",
+      "q": "What frame rate should you aim for in combat?",
+      "a": "60 fps. 30 can work, but lag and stutter hurt combat.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f16",
+      "q": "Why avoid long wind-up animations on normal attacks?",
+      "a": "They throw off the player's timing, so they miss or strike when they don't mean to.",
+      "type": "why"
+    },
+    {
+      "id": "L10-f17",
+      "q": "What is a lunge?",
+      "a": "A fluid thrust that returns the character to their original standing position.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f18",
+      "q": "What's the typical input window for continuing a combat chain?",
+      "a": "Usually within about a second.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f19",
+      "q": "Why must chained attacks move the character forward?",
+      "a": "Knocked-back enemies would drift out of reach, so later hits in the chain would miss.",
+      "type": "why"
+    },
+    {
+      "id": "L10-f20",
+      "q": "Your hero wields a giant two-handed axe. Is a long wind-up OK?",
+      "a": "Yes. Heavy or oversized weapons justify long wind-ups as risk vs. reward.",
+      "type": "apply"
+    },
+    {
+      "id": "L10-f21",
+      "q": "Give the VFX examples Rogers cites for attacks.",
+      "a": "Slice streaks and speed lines (Onimusha), fire trails and blood splatter (MadWorld), and screen-filling debris, dust and lightning on big moves.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f22",
+      "q": "Your memory budget can't fit enemy reaction animations. What's the minimum fix?",
+      "a": "Hit effects and sound effects (ideally a vocal reaction) that confirm the hit landed.",
+      "type": "apply"
+    },
+    {
+      "id": "L10-f23",
+      "q": "Name three ways to hype a powerful strike.",
+      "a": "Camera shake, controller rumble, slow motion.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f24",
+      "q": "Close battles are more ____.",
+      "a": "exciting",
+      "type": "cloze"
+    },
+    {
+      "id": "L10-f25",
+      "q": "People want to play games that make them ____.",
+      "a": "look cool",
+      "type": "cloze"
+    },
+    {
+      "id": "L10-f26",
+      "q": "When are QTEs usually triggered in combat?",
+      "a": "When an enemy or boss reaches a certain health level.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f27",
+      "q": "List Rogers' five QTE tips.",
+      "a": "Reserve them for bombastic attacks; same prompt location; allow a beat to react; return quickly after a failure; substantial damage instead of instant death.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f28",
+      "q": "Reaching a QTE took three attack patterns and the player failed it. What should they redo?",
+      "a": "Just one pattern before the QTE triggers again.",
+      "type": "apply"
+    },
+    {
+      "id": "L10-f29",
+      "q": "What did The Mark of Kri's targeting system introduce?",
+      "a": "A radar-style analog-stick sweep to queue up a sequence of enemies. It was patented.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f30",
+      "q": "Why should weapon upgrades show visually on the weapon?",
+      "a": "A '+3' stat bump gives players neither the gameplay information nor the visual reward they deserve.",
+      "type": "why"
+    },
+    {
+      "id": "L10-f31",
+      "q": "How should weapons react to stone or metal vs wood?",
+      "a": "Rebound off stone and metal; blades sink into wood.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f32",
+      "q": "Giant-axe hero, arena full of unbreakable stone pillars. What happens, and why design it this way?",
+      "a": "The axe rebounds off the pillars and gives enemies openings. It uses world collision to create an arena-specific challenge.",
+      "type": "apply"
+    },
+    {
+      "id": "L10-f33",
+      "q": "Why must stealth kills only work under specific conditions?",
+      "a": "Otherwise players spam them instead of regular attacks, which makes them an exploit and the move goes stale.",
+      "type": "why"
+    },
+    {
+      "id": "L10-f34",
+      "q": "Why are grapples technically hard to build?",
+      "a": "Two-character collision: both characters must animate together to look natural and avoid clipping (sorting).",
+      "type": "why"
+    },
+    {
+      "id": "L10-f35",
+      "q": "What four lock-on HUD markers does the book show?",
+      "a": "Floor marker, pointer arrow, glowing aura, health bar over the target.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f36",
+      "q": "How does the later Zelda lock-on handle switching and kills?",
+      "a": "Hold to lock, flick the stick to switch left or right, and it auto-latches onto the next enemy after a kill.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f37",
+      "q": "A player keeps missing and dying. What two fixes does 'Now You Have to Kiss Me' suggest?",
+      "a": "Dynamically enlarge enemy collision, or offer to lower the difficulty.",
+      "type": "apply"
+    },
+    {
+      "id": "L10-f38",
+      "q": "What is 'the graveyard hustle'?",
+      "a": "WoW slang for dying and running back from the graveyard. It's what happens when a dodge doesn't fully clear an attack.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f39",
+      "q": "Why add a recovery beat after a dodge?",
+      "a": "It lets players reorient and stops them using dodges as a movement exploit.",
+      "type": "why"
+    },
+    {
+      "id": "L10-f40",
+      "q": "During a roll, the camera keeps hitting the hazard. What's Rogers' fix?",
+      "a": "Lock the camera in place during the dodge, then let it catch up once the player is clear.",
+      "type": "apply"
+    },
+    {
+      "id": "L10-f41",
+      "q": "Your brawler's dash only moves them. What would Rogers add?",
+      "a": "Make it do something too: ram enemies, smash breakables, hit several foes, or knock enemies flying.",
+      "type": "apply"
+    },
+    {
+      "id": "L10-f42",
+      "q": "What is a recoil bounce?",
+      "a": "After a jump attack hits, the player bounces a short distance away so they don't land on or next to the enemy.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f43",
+      "q": "A jump-attack hitbox should be like a good pair of pants: plenty of room in the ____.",
+      "a": "seat (butt)",
+      "type": "cloze"
+    },
+    {
+      "id": "L10-f44",
+      "q": "What's the rule for jump height vs enemy height?",
+      "a": "The max jump must be taller than the tallest enemy you can jump-attack.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f45",
+      "q": "Your gritty soldier looks silly jumping. What's the alternative?",
+      "a": "Vaulting over obstacles. It pairs with cover and ducking (Gears of War 2 shows a prompt).",
+      "type": "apply"
+    },
+    {
+      "id": "L10-f46",
+      "q": "General vs positional blocks?",
+      "a": "General: one button, all-purpose (action games). Positional: tied to high or low height (fighting games).",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f47",
+      "q": "How should a successful block be confirmed?",
+      "a": "A loud CLANG sound effect or sparks, never blood.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f48",
+      "q": "Two ways to stop players camping behind a block?",
+      "a": "Breakable shields, or enemy knockback (block-breaking) attacks.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f49",
+      "q": "Why did Maximo 2 make the shield unbreakable?",
+      "a": "In Maximo 1, players treated the breakable shield as a limited resource and avoided using it. Unbreakable, they happily blocked.",
+      "type": "why"
+    },
+    {
+      "id": "L10-f50",
+      "q": "F2P players hoard your limited revive tokens and never use them. Which Rogers lesson applies?",
+      "a": "Maximo's breakable shield: limited resources get hoarded. Make them more plentiful, regenerating, or free and unbreakable.",
+      "type": "apply"
+    },
+    {
+      "id": "L10-f51",
+      "q": "Name four alternate uses for a shield from the book.",
+      "a": "Any four: dash to clear obstacles, smash enemies, throw it, sled down slopes, overhead cover from debris or lava, crowbar, back protection (plus Rygar's chain weapon).",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f52",
+      "q": "What is encumbrance, and which games suit it?",
+      "a": "More armor makes you slower and noisier. It fits RPGs; usually skip it in action games.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f53",
+      "q": "What are the six paper doll armor slots?",
+      "a": "Head, torso, arms, hands, legs, feet.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f54",
+      "q": "Give two examples of armor doubling as a health display.",
+      "a": "Dead Space's spine health meter; Ghosts 'N Goblins armor popping off.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f55",
+      "q": "What did Mario's Tanooki suit add besides protection?",
+      "a": "Flight and the ability to turn into an invincible statue.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f56",
+      "q": "Why is armor customization so powerful, per the WoW example?",
+      "a": "It customizes without changing the base model, and other players see your gear and want it, so everyone plays longer.",
+      "type": "why"
+    },
+    {
+      "id": "L10-f57",
+      "q": "The Three As of ranged combat: Action, ____, Ammo.",
+      "a": "Aiming",
+      "type": "cloze"
+    },
+    {
+      "id": "L10-f58",
+      "q": "Which designer said ranged combat is about building a distinctive rhythm?",
+      "a": "Hardy LeBel (Halo: Combat Evolved, SOCOM 3).",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f59",
+      "q": "Your melee adventure hands out a gun in level 1. What does Rogers advise?",
+      "a": "Save guns for later. Let players master their moves and attacks first.",
+      "type": "apply"
+    },
+    {
+      "id": "L10-f60",
+      "q": "How does Gears of War's active reload create risk/reward?",
+      "a": "A well-timed manual reload is faster; a botched one is slower and leaves you defenseless longer.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f61",
+      "q": "Name four things a reticule may need to communicate.",
+      "a": "Any four: aim, bullet spread, recoil, jamming, overheating, ammo, hits vs near misses, friend or foe.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f62",
+      "q": "Why play gunshot and impact sounds at full volume regardless of distance?",
+      "a": "So players can tell whether their shot landed.",
+      "type": "why"
+    },
+    {
+      "id": "L10-f63",
+      "q": "Long open corridors plus high lethality. How will players play?",
+      "a": "Cautiously.",
+      "type": "apply"
+    },
+    {
+      "id": "L10-f64",
+      "q": "Lots of cover, broken sightlines and regenerating health. What rhythm results?",
+      "a": "Swirling dogfights: engage, disengage to heal, re-engage.",
+      "type": "apply"
+    },
+    {
+      "id": "L10-f65",
+      "q": "LeBel: resist making ranged weapons weak, and be ____ to the player.",
+      "a": "generous",
+      "type": "cloze"
+    },
+    {
+      "id": "L10-f66",
+      "q": "Per Rogers, how many rounds does a pistol magazine usually hold?",
+      "a": "6 to 15 rounds.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f67",
+      "q": "What's the sniper rifle's built-in weakness?",
+      "a": "You usually can't fire from the hip, and scope tunnel vision leaves you vulnerable to flankers.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f68",
+      "q": "Shotguns and flamethrowers fire in a ____ rather than a straight line.",
+      "a": "cone",
+      "type": "cloze"
+    },
+    {
+      "id": "L10-f69",
+      "q": "What are the TF2 Heavy minigun's trade-offs?",
+      "a": "It takes time to spin up. You can keep it spinning, but enemies hear you coming.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f70",
+      "q": "In the book's weapon matrix, which weapon is 'very strong' at medium range?",
+      "a": "The assault rifle.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f71",
+      "q": "Why keep weapon overlap minimal?",
+      "a": "Distinct weapons make the game feel well rounded, and any overlap should come with a disadvantage.",
+      "type": "why"
+    },
+    {
+      "id": "L10-f72",
+      "q": "What is Rogers' friendly fire rule?",
+      "a": "It depends on the mode (more logical in PvP than co-op), and players should be able to toggle it.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f73",
+      "q": "Why always give a shooter a melee fallback?",
+      "a": "Players feel powerless with nothing to shoot. Bashing the baddie keeps things fair and realistic.",
+      "type": "why"
+    },
+    {
+      "id": "L10-f74",
+      "q": "What loadout limit and switching rule does Rogers suggest?",
+      "a": "A main gun plus a sidearm, switched quickly, ideally with one button.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f75",
+      "q": "What's the main pitfall of cover systems?",
+      "a": "Being too sticky, so players snap into cover when they don't want to.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f76",
+      "q": "List the seven elements of a shooting gallery screen.",
+      "a": "Turret, reward object, ground target, edge-justifying scenery, aerial target with hit feedback, smaller aerial target (more points), smaller ground target (more points).",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f77",
+      "q": "Aerial targets whip past and players fire blindly. What's the fix?",
+      "a": "Slow down the targets or the craft, naturally or artificially, so players can line up shots.",
+      "type": "apply"
+    },
+    {
+      "id": "L10-f78",
+      "q": "What is a rail shooter's unique advantage?",
+      "a": "The developer controls the camera and the sequence of events: guaranteed scares, furious shooting, scripted drama.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f79",
+      "q": "What are the two smart bomb activation styles?",
+      "a": "Instant (Defender) or charge-up (R-Type).",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f80",
+      "q": "Why ration smart bombs?",
+      "a": "If they charge too fast or can be used too often, they wipe out your carefully designed encounters.",
+      "type": "why"
+    },
+    {
+      "id": "L10-f81",
+      "q": "What three parts does the book's grenade aim aid have?",
+      "a": "A cook meter, an arc range-finder and a target marker.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f82",
+      "q": "Fire takes no ____: players get hurt if they wander into it.",
+      "a": "sides",
+      "type": "cloze"
+    },
+    {
+      "id": "L10-f83",
+      "q": "Why make antidotes more common than poison?",
+      "a": "Never make death feel inevitable. Always give the player a fighting chance.",
+      "type": "why"
+    },
+    {
+      "id": "L10-f84",
+      "q": "Name the seven control-loss states.",
+      "a": "Stun, knockback, knockdown, latching on, transformation, loss of balance, sliding.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f85",
+      "q": "What is 'double bolting'?",
+      "a": "From Ratchet & Clank: knocked into another hazard while stunned, you lose double the bolts (currency) before you can collect any.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f86",
+      "q": "Your gacha PvP lets players chain 4-second stuns and people rage-quit. Which principle?",
+      "a": "Always enable the player, even when disabling them. Add CC immunity windows or diminishing returns.",
+      "type": "apply"
+    },
+    {
+      "id": "L10-f87",
+      "q": "Using Rogers' formula: the player should survive 25 hits at 8 damage each. Starting health?",
+      "a": "200 (25 x 8).",
+      "type": "apply"
+    },
+    {
+      "id": "L10-f88",
+      "q": "What's the health bar's weakness, and the fix?",
+      "a": "Small amounts of damage are hard to see. Segment the bar.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f89",
+      "q": "Which game pioneered regenerating health in FPS games?",
+      "a": "Halo: Combat Evolved.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f90",
+      "q": "Why did arcade games have lives?",
+      "a": "To keep players feeding in quarters. Extra lives were a short-term goal that kept them going.",
+      "type": "why"
+    },
+    {
+      "id": "L10-f91",
+      "q": "What exploit did Doom players use to avoid death?",
+      "a": "Reloading a saved file instead of restarting from a checkpoint, so they stopped fearing death.",
+      "type": "basic"
+    },
+    {
+      "id": "L10-f92",
+      "q": "The player dies in a boss's final phase. What's Rogers' approach?",
+      "a": "Let them continue the fight as if nothing happened, or restore only a little boss health. Never a full replay.",
+      "type": "apply"
+    },
+    {
+      "id": "L10-f93",
+      "q": "Your match-3 fail screen plays 6 seconds of sad animation before Retry appears. Which rule is broken?",
+      "a": "Kill quickly and make the path back to gameplay as fast as possible.",
+      "type": "apply"
+    },
+    {
+      "id": "L10-f94",
+      "q": "On failure, players lose the run's loot AND their streak AND a life. Which rule is broken?",
+      "a": "Don't double-punish (the F2P version of double bolting).",
+      "type": "apply"
+    },
+    {
+      "id": "L10-f95",
+      "q": "Rogers' Very Important Thing about death: you want to ____.",
+      "a": "keep them playing",
+      "type": "cloze"
+    },
+    {
+      "id": "L10-f96",
+      "q": "What is Rogers' 'keep going' screen?",
+      "a": "A replacement for game over that previews the next level, story beat, treasure, weapon or power-up, to excite the player into continuing.",
+      "type": "basic"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "L10-q01",
+      "q": "Liddell Hart's three elements of combat are:",
+      "options": [
+        "Attacking, defending, healing",
+        "Guarding, hitting, moving",
+        "Aiming, firing, reloading",
+        "Range, speed, damage"
+      ],
+      "answer": 1,
+      "why": "Liddell Hart said every action is guarding, hitting or moving. The others mix in healing or ranged-only terms."
+    },
+    {
+      "id": "L10-q02",
+      "q": "According to Rogers, which factor most increases how violent a game feels (and its rating)?",
+      "options": [
+        "The soundtrack's intensity",
+        "Whether the player personally commits the violent act",
+        "How many levels the game has",
+        "Whether enemies are robots"
+      ],
+      "answer": 1,
+      "why": "Violence is about context: the more violent acts the player performs, the higher the rating. Robots or music can matter, but player agency is the core factor."
+    },
+    {
+      "id": "L10-q03",
+      "q": "Contra is mainly what kind of combat game?",
+      "options": [
+        "Close range",
+        "Medium range",
+        "Area effect",
+        "Long range"
+      ],
+      "answer": 3,
+      "why": "Contra is long range: you keep enemies away by shooting them. Mario is the close/medium example."
+    },
+    {
+      "id": "L10-q04",
+      "q": "High-position attacks are:",
+      "options": [
+        "Delivered by jumping then attacking, against flyers and large enemies like bosses",
+        "Delivered from a crouch at waist height",
+        "Thrown projectiles that arc over walls",
+        "Screen-wide smart bombs"
+      ],
+      "answer": 0,
+      "why": "High attacks go over an average enemy's head and need a jump, so they suit flyers and bosses. Crouched strikes are 'low'."
+    },
+    {
+      "id": "L10-q05",
+      "q": "Your three-hit combo keeps whiffing on hit 3 because hit 2 knocks enemies back. Best fix?",
+      "options": [
+        "Lower hit 3's damage",
+        "Extend the chain window to 3 seconds",
+        "Remove knockback from every attack",
+        "Translate the hero forward with each hit"
+      ],
+      "answer": 3,
+      "why": "Rogers: chained attacks must move the character forward, or knocked-back enemies drift out of reach. A longer window doesn't fix distance."
+    },
+    {
+      "id": "L10-q06",
+      "q": "When does Rogers say elaborate wind-up animations are a GOOD idea?",
+      "options": [
+        "On every basic attack, for drama",
+        "Only during cutscenes",
+        "On heavy or oversized weapons, as risk vs. reward",
+        "Never; they always throw off timing"
+      ],
+      "answer": 2,
+      "why": "He warns against wind-ups on normal attacks, then endorses them for heavy weapons: risk the wait, reap a huge hit."
+    },
+    {
+      "id": "L10-q07",
+      "q": "Memory limits mean enemies can't have hit-reaction animations. What's the minimum Rogers asks for?",
+      "options": [
+        "Effects and sound effects that confirm the hit",
+        "Bigger damage numbers only",
+        "Slowing the whole game down",
+        "Removing enemies from close combat"
+      ],
+      "answer": 0,
+      "why": "Without a reaction a hit feels like it skipped off the surface, so at least add FX and SFX (vocal reactions help)."
+    },
+    {
+      "id": "L10-q08",
+      "q": "Which is a Rogers QTE best practice?",
+      "options": [
+        "Randomize the prompt's screen position to keep players alert",
+        "Always make a failed QTE an instant death",
+        "Use QTEs for every attack to look cool",
+        "Keep the button prompt in the same screen location"
+      ],
+      "answer": 3,
+      "why": "A consistent prompt position avoids confusion. Rogers prefers heavy damage over instant death and says to reserve QTEs for big moments."
+    },
+    {
+      "id": "L10-q09",
+      "q": "A player fails a QTE they reached after three attack patterns. What should happen?",
+      "options": [
+        "Restart the level",
+        "Repeat all three patterns",
+        "Repeat one pattern, then retry the QTE",
+        "Skip the QTE and award the kill"
+      ],
+      "answer": 2,
+      "why": "Get them back to the QTE quickly: repeat one set, not all three. Auto-awarding removes the challenge entirely."
+    },
+    {
+      "id": "L10-q10",
+      "q": "What happened with shields across Maximo 1 and Maximo 2?",
+      "options": [
+        "The unbreakable shield in the sequel made players block far more",
+        "The breakable shield in the original was used constantly",
+        "Players asked for the shield to be removed",
+        "The sequel made the shield a consumable"
+      ],
+      "answer": 0,
+      "why": "Players hoarded the breakable shield in Maximo 1 and dodged instead. Making it unbreakable in Maximo 2 encouraged blocking."
+    },
+    {
+      "id": "L10-q11",
+      "q": "Your F2P players stockpile premium boosters and almost never use them. Which book lesson fits best?",
+      "options": [
+        "Close battles are more exciting",
+        "The Three As",
+        "Maximo's breakable shield: limited resources get hoarded",
+        "Rail shooters control the camera"
+      ],
+      "answer": 2,
+      "why": "Scarcity makes players save items 'for later'. Make them more plentiful or regenerating so players use them and feel their value."
+    },
+    {
+      "id": "L10-q12",
+      "q": "Why must stealth kills only work under specific conditions?",
+      "options": [
+        "They're too expensive to animate",
+        "Otherwise players spam them over regular attacks as an exploit",
+        "Rating boards forbid frequent stealth kills",
+        "They only work in multiplayer"
+      ],
+      "answer": 1,
+      "why": "Without conditions (position, cover, shadow) the cool move becomes an exploit and goes stale."
+    },
+    {
+      "id": "L10-q13",
+      "q": "Which lock-on marker is NOT one of the four the book shows?",
+      "options": [
+        "Floor marker",
+        "Pointer arrow",
+        "Minimap ping",
+        "Glowing aura"
+      ],
+      "answer": 2,
+      "why": "The book shows floor marker, pointer arrow, glowing aura and a health bar over the target. A minimap ping isn't one of them."
+    },
+    {
+      "id": "L10-q14",
+      "q": "A dodge in your action game sometimes leaves players inside explosion radiuses. Which rule is broken?",
+      "options": [
+        "Dodges need a three-button input",
+        "The camera must pass through hazards",
+        "Dodges should have no recovery",
+        "Dodge metrics must fully clear wide, long and radius attacks"
+      ],
+      "answer": 3,
+      "why": "Mind your metrics: dodges must completely clear wide attacks, long weapons and radius effects, or players do the 'graveyard hustle'."
+    },
+    {
+      "id": "L10-q15",
+      "q": "The Three As of projectile combat are:",
+      "options": [
+        "Attack, Armor, Agility",
+        "Action, Aiming, Ammo",
+        "Aim, Accuracy, Area",
+        "Ammo, Armor, Assist"
+      ],
+      "answer": 1,
+      "why": "Action (load, fire, unload), Aiming (sighting the target), Ammo (what's fired)."
+    },
+    {
+      "id": "L10-q16",
+      "q": "In the book's weapon matrix, which weapon is 'very strong' at long range?",
+      "options": [
+        "Sniper rifle",
+        "Shotgun",
+        "Assault rifle",
+        "Dual pistols"
+      ],
+      "answer": 0,
+      "why": "The sniper rifle owns long range. The assault rifle owns medium and the shotgun owns short, so overlap is minimal."
+    },
+    {
+      "id": "L10-q17",
+      "q": "What's Hardy LeBel's advice on ranged weapon power?",
+      "options": [
+        "Make ranged weapons weak so the player isn't overpowered",
+        "Remove reloading entirely",
+        "Be generous: players expect ranged combat to feel powerful",
+        "Only ever use auto-aim"
+      ],
+      "answer": 2,
+      "why": "LeBel warns that weakening ranged weapons to offset perceived power is a common mistake. Be generous."
+    },
+    {
+      "id": "L10-q18",
+      "q": "Lots of cover, frequent line-of-sight breaks and regenerating health produce what rhythm?",
+      "options": [
+        "Slow cautious sniping",
+        "Swirling dogfights of engage and disengage",
+        "Players camping one spot",
+        "Rail-shooter pacing"
+      ],
+      "answer": 1,
+      "why": "That's LeBel's dogfight recipe. Long corridors plus high lethality produce cautious play instead."
+    },
+    {
+      "id": "L10-q19",
+      "q": "A shooter player runs out of ammo. What does Rogers say they should always have?",
+      "options": [
+        "An automatic reload animation",
+        "An instant game over",
+        "An always-available melee attack",
+        "Infinite grenades"
+      ],
+      "answer": 2,
+      "why": "Being unable to fight back feels powerless, so give a knife, fists, pistol-whip or rifle butt (Gears even has a chainsaw)."
+    },
+    {
+      "id": "L10-q20",
+      "q": "Which is a correct smart bomb guideline?",
+      "options": [
+        "Let it charge as fast as possible",
+        "Hide its controls to keep it a surprise",
+        "It should damage the player too",
+        "It destroys everything on screen except the player, and players should see what they're charging toward"
+      ],
+      "answer": 3,
+      "why": "Smart bombs clear the screen (destructibles included) but must be rationed and clearly signposted, or encounters get wiped out."
+    },
+    {
+      "id": "L10-q21",
+      "q": "What's Rogers' guidance on poison and antidotes?",
+      "options": [
+        "Make the antidote more common than the poison",
+        "Make antidotes rarer than poison for tension",
+        "Poison should have no visual so it surprises players",
+        "Hide the poison tick sounds"
+      ],
+      "answer": 0,
+      "why": "Poison should be readable and survivable. Never make death feel inevitable; always give a fighting chance."
+    },
+    {
+      "id": "L10-q22",
+      "q": "The player should survive 20 hits and the average enemy hit deals 10. Starting health?",
+      "options": [
+        "30",
+        "100",
+        "2000",
+        "200"
+      ],
+      "answer": 3,
+      "why": "Rogers' formula: hits x damage per hit = 20 x 10 = 200."
+    },
+    {
+      "id": "L10-q23",
+      "q": "Where did lives and game-over screens come from, per Rogers?",
+      "options": [
+        "Console save-file limits",
+        "Arcade quarter economics",
+        "Story requirements",
+        "ESRB rules"
+      ],
+      "answer": 1,
+      "why": "Arcades wanted quarters fast; extra lives kept players paying. On paid home games that logic no longer applies."
+    },
+    {
+      "id": "L10-q24",
+      "q": "The player dies during a long boss fight. Rogers' recommendation?",
+      "options": [
+        "Restart the entire boss sequence",
+        "Remove the boss after three deaths",
+        "Let the fight continue, or restore just a little boss health",
+        "Double the boss's health as a penalty"
+      ],
+      "answer": 2,
+      "why": "Don't make them replay everything. Continue as if nothing happened, or at most regain a bit of boss health."
+    },
+    {
+      "id": "L10-q25",
+      "q": "Your F2P game's D1 retention is fine, but players quit at level 12 after repeated failures, a long fail animation and an expensive continue. Which principle is most violated?",
+      "options": [
+        "Give your character a signature weapon",
+        "Keep the player playing: fast restarts, no reason to stop",
+        "Use a lock-on system",
+        "Friendly fire should be toggleable"
+      ],
+      "answer": 1,
+      "why": "Rogers: never give players a good reason to stop. Kill quickly, restart fast, don't punish. Level 12 has become a churn cliff."
+    },
+    {
+      "id": "L10-q26",
+      "q": "In a gacha PvP mode, one team can chain-stun the other until death. Which Rogers truth addresses this?",
+      "options": [
+        "Always strive to enable the player, even when disabling them",
+        "Close battles are more exciting",
+        "The Three As",
+        "Create an attack matrix"
+      ],
+      "answer": 0,
+      "why": "Disables should leave a way out. CC immunity windows or diminishing returns apply this rule to PvP."
+    },
+    {
+      "id": "L10-q27",
+      "q": "Auto-battle in mobile RPGs most directly extends which Rogers idea?",
+      "options": [
+        "Rail shooters remove movement control",
+        "Breakable shields get hoarded",
+        "Batman never misses, so the player shouldn't either: make players look cool",
+        "Grenades need throw-path aids"
+      ],
+      "answer": 2,
+      "why": "Like Arkham's choreographed combat, auto-battle guarantees flawless execution, and skill moves to team-building and decisions."
+    }
+  ],
+  "sideQuests": [
+    {
+      "id": "L10-s01",
+      "title": "Matrix Me",
+      "task": "Pick a Brawl Stars brawler or a Clash Royale card you know. Fill Rogers' 7 attack-matrix columns for its attacks, then add 3 F2P columns: cost/cooldown, counters, rarity.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L10-s02",
+      "title": "Spatula of Destiny",
+      "task": "Pick an absurd weapon (garden hose, umbrella, rubber chicken). Brainstorm 10 combat and non-combat uses covering at least 3 ranges and 2 elevations.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L10-s03",
+      "title": "Juice Audit",
+      "task": "Play 3 minutes of a mobile combat game with sound on, then 3 minutes muted. List every feedback element (hit-stop, numbers, haptics, flashes, sounds). What breaks when muted?",
+      "minutes": 10,
+      "xp": 35
+    },
+    {
+      "id": "L10-s04",
+      "title": "Weapon Venn",
+      "task": "Design 4 weapons for a hypothetical mobile shooter. Fill a short/medium/long matrix so each range has exactly one 'very strong' weapon and every overlap pays a cost.",
+      "minutes": 15,
+      "xp": 45
+    },
+    {
+      "id": "L10-s05",
+      "title": "Rewrite the Fail Screen",
+      "task": "Screenshot a mobile game's fail or continue screen. Mark what's ethical and what's pressure, then sketch a fairer version using Rogers' 'keep going' screen and death rules.",
+      "minutes": 10,
+      "xp": 40
+    },
+    {
+      "id": "L10-s06",
+      "title": "CC Fairness Check",
+      "task": "List every disable effect in a game you play (stun, knockback, freeze...). For each, write how the player escapes or counters it. Flag any with no counter.",
+      "minutes": 10,
+      "xp": 35
+    },
+    {
+      "id": "L10-s07",
+      "title": "Health Math",
+      "task": "Use Rogers' formula to set a level-1 hero's HP. Then predict what happens over 10 levels if enemy damage grows 15% per level while hero HP grows 10%.",
+      "minutes": 5,
+      "xp": 20
+    }
+  ],
+  "mainQuests": [
+    {
+      "id": "L10-m01",
+      "title": "The Combat One-Pager for a Mobile Game",
+      "task": "Design the combat for an original F2P mobile game (survivor-like, hero brawler or auto-battler). Cover: personality to signature weapon; an attack matrix with 5+ moves (Rogers' 7 columns plus cost/cooldown and counter); ranges and elevations with a range-diagram sketch; a feel plan (chain timing, one heavy wind-up attack, 5 mobile juice elements); one enemy disable and how the player escapes it; your health formula; and your fail-state and revive policy with an ethics statement.",
+      "deliverable": "A one-page combat design doc with an attack matrix table and a range sketch.",
+      "doneWhen": "Every matrix row is distinct, every disable has a counter, the fail flow returns to gameplay in 2 taps or fewer, each choice cites a Rogers principle, and it's posted publicly for feedback.",
+      "minutes": 90,
+      "xp": 250
+    },
+    {
+      "id": "L10-m02",
+      "title": "Revive Offer Teardown",
+      "task": "Compare the fail/continue flows of 3 F2P games (e.g. a match-3, a runner, a roguelite or survivor-like). For each, record time from death to retry, offer price and currency, ad option, cap per run, what you lose by declining, and a 1-5 fairness score based on Rogers' death rules.",
+      "deliverable": "A comparison table with screenshots, one 'steal this' and one 'never do this' per game, plus a 3-sentence conclusion.",
+      "doneWhen": "All 3 games are scored with evidence, and the conclusion states what makes a revive feel fair.",
+      "minutes": 60,
+      "xp": 180
+    }
+  ],
+  "playLabs": [
+    {
+      "id": "L10-p01",
+      "game": "Brawl Stars",
+      "minutes": 10,
+      "lookFor": "How range, ammo and reload, tap auto-aim vs drag aim, bushes and walls, and out-of-combat healing shape the rhythm of a match.",
+      "question": "Which of Hardy LeBel's rhythm factors does Brawl Stars lean on most, and how does the map change fights?"
+    },
+    {
+      "id": "L10-p02",
+      "game": "Survivor.io or Archero",
+      "minutes": 10,
+      "lookFor": "Which attack shapes (straight, diagonal, radial, area) your skills cover, how the game creates close-battle tension despite hordes, and what the death or revive screen offers.",
+      "question": "When did you feel most in danger, and was the revive offer fair by Rogers' death rules?"
+    },
+    {
+      "id": "L10-p03",
+      "game": "Honkai: Star Rail or AFK Journey",
+      "minutes": 10,
+      "lookFor": "One fight played manually and one on auto: where the decisions live (team, weakness/element, ultimate timing) and whether cinematics can be skipped.",
+      "question": "What does the game still ask YOU to decide on auto, and how does it show why you won or lost?"
+    },
+    {
+      "id": "L10-p04",
+      "game": "Candy Crush Saga or Royal Match",
+      "minutes": 10,
+      "lookFor": "The continue offer when you run out of moves: price, the size of the 'no thanks' option, lives, and how fast you can retry.",
+      "question": "Which of Rogers' death rules does it follow, and which does it bend for monetization?"
+    }
+  ],
+  "retrieval": [
+    {
+      "q": "What are Liddell Hart's three elements of combat?",
+      "a": "Hitting, moving and guarding."
+    },
+    {
+      "q": "Give Rogers' two reasons violent games get so much attention, and the loop behind the second.",
+      "a": "Violence is graphic, dramatic and visceral, so it gives the quickest positive feedback loop: action, immediate result, reward (Freud's pleasure principle)."
+    },
+    {
+      "q": "List the questions for judging how violent your game feels.",
+      "a": "Does the player do it, with realistic weapons? How often? Is it rewarded or shown as inappropriate? How graphic (dismemberment, lingering)? Any residue (blood, gibs)? Is it against bad guys, and do enemies suffer?"
+    },
+    {
+      "q": "Name the four ranges and four elevations of combat.",
+      "a": "Ranges: close, medium, long, area effect. Elevations: standing, low, high, aerial."
+    },
+    {
+      "q": "What columns belong in an attack matrix?",
+      "a": "Name, control scheme, range, speed, direction, damage (label plus number or %), special, plus extra columns as needed."
+    },
+    {
+      "q": "How does a combat chain work, and why must the hero translate forward?",
+      "a": "Three or more moves; pressing within about a second continues to stronger hits. Forward movement keeps knocked-back enemies in reach."
+    },
+    {
+      "q": "When are long wind-ups good?",
+      "a": "On heavy or oversized weapons: risk the wait for a devastating payoff (risk vs reward)."
+    },
+    {
+      "q": "List the QTE design tips.",
+      "a": "Reserve them for bombastic attacks (single-button finishers are fine); same prompt location; a beat to react; quick return after failure; heavy damage rather than instant death."
+    },
+    {
+      "q": "What did Maximo teach about shields?",
+      "a": "A breakable shield got hoarded and avoided; an unbreakable one made players block happily."
+    },
+    {
+      "q": "What are the Three As, with one question each?",
+      "a": "Action (manual or auto reload?), Aiming (auto-aim or free aim, scope obstruction?), Ammo (carry limits, special rounds, what misses do?)."
+    },
+    {
+      "q": "What does the book's weapon matrix teach?",
+      "a": "Each range has one 'very strong' weapon (shotgun short, assault rifle medium, sniper long); minimal overlap, and overlap carries a cost."
+    },
+    {
+      "q": "Name the seven control-loss states and one caution.",
+      "a": "Stun, knockback, knockdown, latching, transformation, loss of balance, sliding. Use them judiciously, avoid double bolting, end transformations quickly, always leave an escape."
+    },
+    {
+      "q": "What is Rogers' starting-health formula?",
+      "a": "Hits the player can take before losing a life without healing, times average enemy damage: 20 x 10 = 200."
+    },
+    {
+      "q": "List Rogers' rules for killing the player.",
+      "a": "Tell them about lives; show lives clearly; offer ways to regain lives; kill quickly; short game over and fast restart; death as violent as the rating allows; no double punishment; boss fights continue; use the threat wisely; make partner-death rules clear."
+    },
+    {
+      "q": "What is the 'keep going' screen, and how does F2P use it?",
+      "a": "It replaces game over with a preview of what's next. F2P fail screens show progress and next rewards; honest when transparent, predatory with rigged near-misses or pressure timers."
+    }
+  ],
+  "feynman": "Explain to a 12-year-old in 60 seconds why a good game fight needs hitting, moving AND guarding, and why a game should sometimes let you NOT die. Use an example from a game they know (Brawl Stars or Mario), and don't say 'mechanic' or 'monetization'.",
+  "links": [
+    "L03",
+    "L05",
+    "L06",
+    "L07",
+    "L08",
+    "L09",
+    "L11",
+    "L12",
+    "L13",
+    "L14",
+    "F2P"
+  ]
+}

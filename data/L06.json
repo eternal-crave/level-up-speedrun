@@ -1,0 +1,1571 @@
+{
+  "id": "L06",
+  "order": 7,
+  "kind": "book",
+  "label": "Level 6",
+  "title": "The Three Cs, Part 2 — Camera",
+  "bookPages": "121–153",
+  "emoji": "🎥",
+  "tagline": "Bad cameras break TVs. Learn to point the lens so players never rage-quit.",
+  "f2pRelevance": 3,
+  "f2pWhy": "Most F2P games use fixed, iso or top-down cameras, but the camera choice still decides portrait vs landscape, one-thumb play, readability on small screens and how rewards and heroes get showcased.",
+  "minutes": 70,
+  "tldr": [
+    "Pick ONE main camera. It drives how the camera is programmed, how levels are designed, how controls are mapped and how art is made. Other views are only for special moments.",
+    "Every camera type is a trade-off (static, scrollable, parallax, 2.5D, iso, God view, top-down, first and third person). Use the one best for your gameplay.",
+    "Let, lock or lend camera control. If you take it away, make sure the player knows, and keep controls consistent during fancy camera moves.",
+    "Treat the camera like a person with a spotter: give it room, keep gameplay out of corners, stop it clipping through geometry, and never lose sight of the character.",
+    "Steal Hollywood's toolkit (shot sizes, angles, moves, rule of thirds, don't cross the line) and always point the camera at the objective.",
+    "Motion sickness (DIMS) is real. High frame rate, gentle camera speed and flat levels prevent it."
+  ],
+  "sections": [
+    {
+      "title": "Get It Right: Camera Views",
+      "bites": [
+        {
+          "id": "L06-b01",
+          "hook": "A bad camera is the fastest way to lose a player",
+          "body": "Rogers opens with a controller smashed through an HDTV (and admits his '1 billion TVs a year' stat is made up). The point is real: nothing makes players quit faster than a poor camera. Camera choice affects four things at once: how it's programmed, how the game is designed, how controls are mapped, and how the art is made.",
+          "example": "A static camera means art only needs one side. A free 3D camera means every building needs a back, and the controls need a camera stick.",
+          "f2p": "On mobile, the camera choice is welded to orientation. Portrait means one thumb and casual play. Landscape means two thumbs and midcore play. Decide on day one.",
+          "memory": "Camera = the foundation slab. Pour it crooked and every wall leans.",
+          "tag": "concept"
+        },
+        {
+          "id": "L06-b02",
+          "hook": "One main camera, special cameras only for special moments",
+          "body": "Games often use more than one camera style, but you should stick with one main style for most of the gameplay. Other views are reserved for specific gameplay situations. Constant switching makes players relearn how to see your game.",
+          "example": "A third-person action game that switches to over-the-shoulder only while aiming, then snaps back.",
+          "f2p": "Mobile RPGs keep a stable battle camera and only swoop into cinematic angles for ultimates or summons, usually with a skip button.",
+          "memory": "One home camera, a few vacation cameras.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Static Camera",
+      "bites": [
+        {
+          "id": "L06-b03",
+          "hook": "The camera that never moves is still everywhere",
+          "body": "A static camera stays fixed on one screen. Early games used it because (a) scrolling hadn't been invented, (b) players could watch several elements at once, and (c) in early 3D, art seen from one angle needs no back, which saves production and processing time.",
+          "example": "Peggle and hidden-object games still use static screens.",
+          "f2p": "Static is the king of casual F2P: Candy Crush Saga, Royal Match, Toon Blast, Block Blast! all show the whole board so you can plan.",
+          "memory": "Static camera = a puppet theater stage.",
+          "tag": "concept"
+        },
+        {
+          "id": "L06-b04",
+          "hook": "Static shots set mood and never miss an event",
+          "body": "Two more advantages: a static shot can set the mood (each room framed for maximum effect), and you can stage events reliably because the player can't be looking the other way when they happen.",
+          "example": "Alone in the Dark and Resident Evil gave each room one carefully composed, creepy static shot.",
+          "f2p": "Clash Royale and Marvel Snap use a fixed full-arena view so both sides are always readable. Static means fair and clear.",
+          "memory": "The horror director picks the angle. You don't get to look away.",
+          "tag": "example"
+        },
+        {
+          "id": "L06-b05",
+          "hook": "A static screen dies without animation and effects",
+          "body": "Static screens aren't very dynamic. Rogers' fix: compensate with lots of animation and effects so the screen stays lively. If that's still not enough, ask your programmer (nicely) to make it scroll.",
+          "example": "A static puzzle board where pieces idle-wiggle, sparkle and burst into particles on every match.",
+          "f2p": "This is 'juice' in match-3: particles, combo text, booster screen shake, characters reacting at the edges. It's a big part of what makes one match-3 feel premium.",
+          "memory": "The stage doesn't move, so the puppets had better dance.",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "Scrollable Camera",
+      "bites": [
+        {
+          "id": "L06-b06",
+          "hook": "A scrollable camera is a window sliding over your desk",
+          "body": "Picture a cluttered desk seen from above, with a gray box marking what you can see. Slide the box and you find your lost pen next to a book. A scrollable camera keeps static's advantages and adds (a) the engaging act of moving the camera and (b) hiding things off screen or revealing them dramatically.",
+          "example": "Day of the Tentacle (adventure). With God or iso views it simulates a tabletop: Dawn of War, Diablo III.",
+          "f2p": "Drag to pan, pinch to zoom: Clash of Clans villages, Hay Day farms, vertical saga maps that tease locked worlds just above you.",
+          "memory": "Flashlight on a dark map.",
+          "tag": "concept"
+        },
+        {
+          "id": "L06-b07",
+          "hook": "Tune the camera's hydraulics or players overshoot forever",
+          "body": "Hydraulics = how fast the camera accelerates and decelerates. Too fast and it overshoots, so players correct back and forth until they go insane. Too slow and it can't reach the action in time (your platoon dies to tanks). Keep camera-move controls simple and relative to the controller.",
+          "example": "An RTS where the camera takes three seconds to crawl to your base while it's being destroyed.",
+          "f2p": "On touch, hydraulics = fling inertia, friction and edge bounce. Tune them on a real phone, not in the editor.",
+          "memory": "Too twitchy: you strobe past the treasure. Too sluggish: the goblins eat you first.",
+          "tag": "rule"
+        },
+        {
+          "id": "L06-b08",
+          "hook": "Let players pick scroll speed, and give real choices",
+          "body": "You can let players choose their scroll speed. Make sure they can find the option, and offer several speeds. Just 'fast' and 'slow' won't cut it.",
+          "example": "A strategy game options menu with a 1–10 camera speed slider.",
+          "f2p": "Camera sensitivity sliders are standard in mobile shooters and builders. Put them where players can actually find them.",
+          "memory": "Two speeds is a light switch, not a setting.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Parallax Scrolling, Mode 7 and Multi-plane",
+      "bites": [
+        {
+          "id": "L06-b09",
+          "hook": "1982: parallax scrolling made worlds long and deep",
+          "body": "Static screens served the early-80s arcade hits. In 1982 Irem (with its moon-buggy game) brought parallax scrolling: as the camera moves, layered scenery slides past at different speeds. It revolutionized games by allowing longer, deeper worlds.",
+          "example": "Moon Patrol's layered backgrounds rolling past the buggy.",
+          "f2p": "Parallax layers are still one of the cheapest ways to get depth on low-end phones, as in side-view games like Hill Climb Racing.",
+          "memory": "Layers on conveyor belts, each at its own speed.",
+          "tag": "concept"
+        },
+        {
+          "id": "L06-b10",
+          "hook": "Plain scroll: the player drives, and can outrun the load",
+          "body": "In plain scrolling, the player's movement controls the camera. The player stays near the center while the world slides by, like an actor bouncing in front of a moving western backdrop. Danger: players can outrun the level loading. Always play your level backwards to make sure nobody can break it.",
+          "example": "A speedrunner sprinting faster than the level streams in and falling into the void.",
+          "f2p": "Test streaming at max speed on your minimum-spec Android device. Fast runners plus slow loading make holes in the world.",
+          "memory": "Treadmill: you run, the scenery moves.",
+          "tag": "warning"
+        },
+        {
+          "id": "L06-b11",
+          "hook": "Forced scroll: keep up with the camera or die",
+          "body": "In a forced scroll the camera moves on its own and the player must keep up. Usually failing means something horrible, like death. It's great for pressure, but don't use it all the time, unless your whole game is built on the idea.",
+          "example": "Moon Patrol and Scramble, Operation Wolf, Panzer Dragoon, and Crash Bandicoot's chase scenes.",
+          "f2p": "The endless runner IS a forced-scroll game. Subway Surfers and Temple Run never stop pushing you forward: the one allowed exception.",
+          "memory": "The treadmill is chasing you, and it has teeth.",
+          "tag": "concept"
+        },
+        {
+          "id": "L06-b12",
+          "hook": "Mode 7 faked 3D with a scrolling perspective floor",
+          "body": "Mode 7 (named after the 7th of the Super Nintendo's 8 background layers) drew the ground in perspective stretching to the horizon. Scrolling it, plus a sprite facing toward or away from the screen, faked driving into the screen. Design trap: the level has no real back wall, so it only works over a background that never ends. Night Racer (1977) and Pole Position (1982) did it first.",
+          "example": "Mario Kart, F-Zero and Super Star Wars on SNES.",
+          "f2p": "Mostly history now, but retro-styled mobile racers still borrow the look.",
+          "memory": "A rug that scrolls toward the horizon forever.",
+          "tag": "example"
+        },
+        {
+          "id": "L06-b13",
+          "hook": "Multi-plane cameras zoomed through layers, birthing 2.5D",
+          "body": "Borrowed from traditional animation, the multi-plane camera tracks in and out along the Z-axis through layered planes, creating depth and parallel paths. This bi-dimensional gameplay was the forerunner of 2.5D. Side effect: zooming non-scaling sprites caused heavy pixelation, which retro games now imitate on purpose.",
+          "example": "Disney's Hercules Action Game (Virgin, 1997).",
+          "f2p": "Layered depth in casual backgrounds and menus. Watch zoom levels so sprites don't pixelate on high-res phones.",
+          "memory": "A diorama with a camera on a slider.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "First Person Camera",
+      "bites": [
+        {
+          "id": "L06-b14",
+          "hook": "First person: perfect aim, blind feet",
+          "body": "Popularized by Wolfenstein 3D (1992) and Doom (1993). Pros: easier aiming, you are the character (immersion), easier atmosphere (horror), close looks at weapons, objects and puzzles. Cons: hard to judge jumps and distances, weaker emotional link to an unseen hero, player may not look where you want, and pickups must be oversized to read at distance.",
+          "example": "Doom made first person synonymous with the FPS.",
+          "f2p": "Rare in casual F2P. Shooters like Call of Duty: Mobile and PUBG Mobile offer first-person modes.",
+          "memory": "4 pros, 4 cons, a dead-even tie.",
+          "tag": "list"
+        },
+        {
+          "id": "L06-b15",
+          "hook": "Screen FX: blood, rain, Predator vision, drunk cam",
+          "body": "First person enables fun lens effects: blood splatter and dimming for damage (but don't punish a dying player by hiding the action), raindrops, mist and lens flare (some racers add wipers), thermal 'Predator vision' (must give a real gameplay advantage), and blurry drunk cam (fine if it doesn't hurt control for too long).",
+          "example": "Night-vision goggles that actually reveal hidden enemies, not just tint the screen green.",
+          "f2p": "Use edge vignettes and directional damage markers instead of covering the center of a tiny phone screen.",
+          "memory": "Cool filter, no advantage? It's just Instagram.",
+          "tag": "list"
+        },
+        {
+          "id": "L06-b16",
+          "hook": "DIMS: when your eyes move but your inner ear doesn't",
+          "body": "Doom-Induced Motion Sickness happens when the eyes register motion the inner ear doesn't feel. Rogers ties it to field of view (wider FOV, more sickness, in his account). Symptoms: clammy skin, sweating, dizziness, headache and nausea.",
+          "example": "Rogers threw up after half an hour on a GoldenEye N64 level with an undulating floor.",
+          "f2p": "Less common on small screens, but camera shake and fast rotation still bother some players. Add shake and motion toggles.",
+          "memory": "Eyes say 'rollercoaster', ears say 'couch'. Stomach votes 'barf'.",
+          "tag": "warning"
+        },
+        {
+          "id": "L06-b17",
+          "hook": "Six fixes that stop players vomiting on your game",
+          "body": "Rogers' DIMS remedies: get close to 60 fps, avoid bobbing foreground elements like the weapon, keep floors flat, add large stationary objects to focus on, don't whip the camera around, and don't make players look up and down too fast or too often. For players: fresh air, water, non-drowsy meds.",
+          "example": "A flat arena with a big central tower gives the eye a stable anchor.",
+          "f2p": "Mobile adds battery and heat limits. Offer 30/60 fps settings and keep camera motion smooth even at 30.",
+          "memory": "FRAMES: Frame rate, Rein in bob, Anchors, Move gently, Elevation changes rare, Smooth floors.",
+          "tag": "rule"
+        },
+        {
+          "id": "L06-b18",
+          "hook": "2026 update: an FOV slider beats one 'correct' FOV",
+          "body": "Later research on motion sickness is more nuanced than 'wider FOV is worse'. Some players feel sicker with a narrow FOV up close to a big screen. Modern best practice: an FOV slider plus toggles for camera shake, head bob and motion blur. The principle holds: comfort is the designer's job.",
+          "example": "PC and console shooters routinely ship FOV sliders and motion toggles.",
+          "f2p": "Respect OS 'reduce motion' settings where possible and give players a shake toggle.",
+          "memory": "Don't guess their stomach. Give them the dial.",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "Third Person Camera",
+      "bites": [
+        {
+          "id": "L06-b19",
+          "hook": "Third person shows you, the world, and the skeleton behind you",
+          "body": "Pulling the camera back behind the character reduces DIMS (the character gives the eye something to focus on) and shows the world, the action and what's coming up behind you. But it raises questions: can the hero run toward the camera, are controls camera or player relative, and how does the player reset the view?",
+          "example": "War, the hero of Darksiders, sees a sword-wielding skeleton sneaking up behind him.",
+          "f2p": "Angled top-down is mobile's version of third person: you see your hero AND the arena (Brawl Stars, Archero).",
+          "memory": "Seeing yourself = situational awareness.",
+          "tag": "concept"
+        },
+        {
+          "id": "L06-b20",
+          "hook": "The follow cam may be the hardest thing your team builds",
+          "body": "Getting third person right may be a team's biggest challenge. Rogers filmed high school sports, backed into coaches and tripped over gear until a friend acted as his spotter. Lesson: treat the camera like a person. Give it room to maneuver and give the player a way to manipulate it. This is called a follow cam.",
+          "example": "Rogers' spotter kept him from colliding with the sideline while he filmed.",
+          "f2p": "Mobile third-person games (Genshin Impact, Stumble Guys) use drag-to-rotate on the right side of the screen and rely heavily on wall fading.",
+          "memory": "Every camera needs a spotter.",
+          "tag": "rule"
+        },
+        {
+          "id": "L06-b21",
+          "hook": "Sorting: when the camera walks through walls",
+          "body": "Sorting is when the camera passes through characters or geometry, often revealing the sky or a flat background color. Fixes: give the camera a detection radius to move over, under or around objects, or (cheaper) turn objects transparent. That works for interior objects, not perimeter walls. Never make objects vanish completely, because flicker disorients players.",
+          "example": "A camera that clips into a pillar and shows a blue void.",
+          "f2p": "Top-down and iso mobile games fade walls and roofs or draw an outline of the hero instead of clipping.",
+          "memory": "A ghost camera breaks the illusion.",
+          "tag": "warning"
+        },
+        {
+          "id": "L06-b22",
+          "hook": "Push up to look down? Only if you're a plane",
+          "body": "Cameras often break when pointed straight up or down. On the 'airplane vs player-relative' debate, Rogers says pushing up shouldn't make a character look down. You're a person, not an aircraft. If you include inverted controls, make them changeable: character-relative as default, airplane-style as the option.",
+          "example": "Many FPSs of the era shipped inverted look as the default.",
+          "f2p": "Mobile shooters with touch or gyro look should offer invert toggles for both axes. It's cheap and respectful.",
+          "memory": "Match the mental model of what you're steering.",
+          "tag": "rule"
+        },
+        {
+          "id": "L06-b23",
+          "hook": "Corners are the number one cause of camera flipping",
+          "body": "Flipping = the camera bouncing between objects while trying to settle. Don't build a complicated camera system. Keep players out of corners with visible blockers (retaining walls, shrubs, boulders, fences), never invisible walls. Keep collectables and enemy AI paths out of corners and move gameplay to the middle of the room.",
+          "example": "A power-up wedged in a corner makes the camera spaz between two walls.",
+          "f2p": "Arena maps in mobile games keep key objectives central and open, which keeps the camera and the action readable.",
+          "memory": "Stay out of corners. I mean it!",
+          "tag": "rule"
+        },
+        {
+          "id": "L06-b24",
+          "hook": "Must use a corner? Make the camera climb like Spider-Man",
+          "body": "If a power-up absolutely must sit in a corner, raise the camera as the character walks in. It should slide up the wall to a bird's-eye view, the way Spider-Man climbs when he hits a wall. But avoid a direct top-down view, which looks bad and invites more flipping.",
+          "example": "The camera scoots up the wall and looks down at an angle while the hero grabs the corner gem.",
+          "f2p": "",
+          "memory": "Spidey-cam: hit a wall, climb it, but don't hang directly overhead.",
+          "tag": "fun"
+        },
+        {
+          "id": "L06-b25",
+          "hook": "Camera on a stick, or laid-back surfer cam?",
+          "body": "Designers argue whether the camera should be rigidly attached to the character (like a stick on their belt) or laid back, catching up when it feels like it. Rogers prefers laid back: fewer obstructions, you see the hero's face sometimes, enemies can sneak up behind, and chases are easier to stage. It's contentious because designers must give up some control.",
+          "example": "A loose follow cam lets a monster appear behind the hero, then catches up.",
+          "f2p": "One-thumb mobile action uses near-rigid centered cameras, often with slight look-ahead in the movement direction.",
+          "memory": "Rigid = selfie stick. Laid back = a chill cameraman friend.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Giving Up Control",
+      "bites": [
+        {
+          "id": "L06-b26",
+          "hook": "Three doors: let, lock, or lend the camera",
+          "body": "Players with camera control poke it into walls, get it stuck in geometry and miss things. Your three choices: let the player control the camera, take control away completely, or decide when they get control and when they don't. Rogers frames it as a choose-your-own-adventure.",
+          "example": "Let: free 360 camera. Lock: rail shooter. Lend: designer camera with a free-look button.",
+          "f2p": "Most casual F2P locks the camera. Base builders lend it: free pan at home, the game takes over in battles and tutorials.",
+          "memory": "Let · Lock · Lend.",
+          "tag": "concept"
+        },
+        {
+          "id": "L06-b27",
+          "hook": "Full 360 control means disorientation and missed clues",
+          "body": "Method 1 for player control: full control of the follow cam with the analog stick or mouse, 360 degrees, any time: running, standing, fighting. Downsides: players get disoriented, miss important events and clues, or get motion sick.",
+          "example": "A player spinning the camera mid-fight and missing the boss telegraph.",
+          "f2p": "Mobile third-person games give full drag control but usually auto-recenter during movement to help one-thumb players.",
+          "memory": "Total freedom, total confusion.",
+          "tag": "concept"
+        },
+        {
+          "id": "L06-b28",
+          "hook": "Free-look: stop, press a button, turn your head",
+          "body": "Method 2: a free-look camera. A button press enters a mode where the movement stick rotates the view, effectively first person. Some versions limit it to just under 180 degrees, like a human neck. On exit, the player usually faces where they were looking.",
+          "example": "Rogers' drawing: the head tilts up and down through about a quarter circle and turns left and right through about a half circle.",
+          "f2p": "Pinch-zoom or hold-to-peek features in mobile games are lightweight free-look modes.",
+          "memory": "Free-look = owl mode, with a human neck limit.",
+          "tag": "concept"
+        },
+        {
+          "id": "L06-b29",
+          "hook": "Give a one-button reset, and cameras with hydraulics",
+          "body": "Players love a quick single button that snaps the camera back behind the character, especially in combat and platforming. When players rotate the camera, it should ease to a stop, never stop dead, which also reduces DIMS. Rogers' trick: overshoot slightly when the player stops, then creep back to center. Never let the player leave the view.",
+          "example": "Tap a shoulder button to recenter behind the hero before a tricky jump.",
+          "f2p": "Auto-recenter and a recenter button help one-thumb players who can't manage a camera.",
+          "memory": "Smooth brakes, not a brick wall.",
+          "tag": "rule"
+        },
+        {
+          "id": "L06-b30",
+          "hook": "Selective control simulates gear, so mimic the gear's limits",
+          "body": "Method 3: selective control. A button zooms in on an object's detail or enters a special mode like a sniper scope. The difference from free-look is context: free-look simulates turning your head, selective control simulates equipment (binoculars, a telescope). Its limits should match the real object's limits. Realism sells it.",
+          "example": "A scope that sways and has a narrow view because real scopes do.",
+          "f2p": "Scope modes in mobile shooters and inspect-zoom in hidden-object games are selective control.",
+          "memory": "Head = free-look. Gadget = selective.",
+          "tag": "concept"
+        },
+        {
+          "id": "L06-b31",
+          "hook": "Over the shoulder and second person: alternatives to switching",
+          "body": "Switching from third to first person can feel jarring. Resident Evil 4's fix: when aiming, the camera drops to hover behind the hero's shoulder. A rarer option is second person view, handing the camera to a different character, with a button press to return.",
+          "example": "Mark of Kri: see through Kuzo the bird on spy flights. The Darkness: a tentacle cam peeks around corners.",
+          "f2p": "Over-the-shoulder aiming is standard in third-person mobile shooters' aim modes.",
+          "memory": "RE4 put the camera on your shoulder like a parrot.",
+          "tag": "example"
+        },
+        {
+          "id": "L06-b32",
+          "hook": "Taking camera control away has six big benefits",
+          "body": "No camera control means: one less thing to worry about; more visual bang for your buck (build only what's seen, like God of War's theater-set environments); dark-ride framing; better-looking set-up shots (worm's-eye bosses, skewed creepy angles); nothing important gets missed; and elaborate cinematic moves. Just keep the gameplay controls consistent during those moves.",
+          "example": "Disneyland's Haunted Mansion 'doom buggies' always face the best scene. Rail shooters Time Crisis and House of the Dead do the same.",
+          "f2p": "This is why match-3, merge, idle, card and auto-battle games lock the camera: simpler for one thumb, cheaper art, and you never miss the moment.",
+          "memory": "Your game is a dark ride. You're the ride designer.",
+          "tag": "list"
+        },
+        {
+          "id": "L06-b33",
+          "hook": "Hidden behind a fence? Keep pushing and you'll come out",
+          "body": "If you let the character get obstructed or leave the view, character-relative controls must let the player guide them back: keep pushing the same direction and they emerge on the other side. Don't put hazards behind the obstruction and don't widen the path there (it allows Z-axis wandering). Unseen spots are great for hiding goodies, though.",
+          "example": "A fence crossing the foreground of a fixed-camera level with a secret coin behind it.",
+          "f2p": "Top-down mobile games keep hidden areas small and safe, or reveal the hero with an outline.",
+          "memory": "Hide treasure behind the fence, never traps.",
+          "tag": "rule"
+        },
+        {
+          "id": "L06-b34",
+          "hook": "Most important: make it obvious they don't control the camera",
+          "body": "The single most important rule when removing camera control: make it clear to the player. Once they know, they stop worrying about the camera and focus on the game. And 2D vs 3D? All that matters is the camera that's best for your gameplay. 'Sometimes control' means combining both doors wisely.",
+          "example": "A rail shooter that never pretends you can steer the view.",
+          "f2p": "Never make a screen look draggable when it isn't. Ambiguous screens feel broken to players.",
+          "memory": "Put a sign on the door: 'The designer is driving.'",
+          "tag": "truth"
+        },
+        {
+          "id": "L06-b35",
+          "hook": "F2P auto-camera: cinematic ultimates with a skip button",
+          "body": "Mobile RPGs use designer-controlled cinematic angles for ultimates and summons, a locked camera in the best sense. But a cinematic that's thrilling on view 1 is friction on view 50, so good games add auto-battle, speed-up and skip toggles.",
+          "example": "Honkai: Star Rail plays cinematic camera moves for character ultimates and offers auto-battle and speed-up.",
+          "f2p": "Track how often players skip. If almost everyone skips, shorten it.",
+          "memory": "Wow the first time, get out of the way after that.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "Two and a Half D",
+      "bites": [
+        {
+          "id": "L06-b36",
+          "hook": "2.5D: 3D models obeying 2D camera rules",
+          "body": "Crash Bandicoot (1996) was one of the first to move 2D platforming into 3D. Bi-dimensional games use sprites. 2.5D uses 3D characters and worlds but limits the camera like a 2D game: up, down, and in/out on the Z-axis. Follow the parallax scrolling rules plus the take-control-away guidelines.",
+          "example": "Crash Bandicoot's corridors toward and away from the camera.",
+          "f2p": "Many 3D casual games are really 2.5D: a fixed-angle 3D camera over a flat playfield keeps taps simple. Lane runners fit too.",
+          "memory": "A 3D actor on a 2D stage.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Isometric Camera and God View",
+      "bites": [
+        {
+          "id": "L06-b37",
+          "hook": "Isometric: the toy-box view builders love",
+          "body": "Introduced by Zaxxon (1982), iso is neither side nor top-down, which creates a toy-like view. That, plus smooth-scrolling 3D on a 2D display, made it popular for building and simulation. Players get a quick snapshot of layout and item relationships (great for environmental puzzles), and hordes look more impressive.",
+          "example": "Diablo and Starcraft hordes look epic from the iso angle.",
+          "f2p": "Clash of Clans, Boom Beach, Hay Day and Township use the toy-box angle. Your base looks like a collectible toy, which fuels pride of ownership.",
+          "memory": "Your toys on the bedroom floor.",
+          "tag": "concept"
+        },
+        {
+          "id": "L06-b38",
+          "hook": "Iso's weakness: is that thing high and near, or low and far?",
+          "body": "Elevation causes problems in iso. Something higher and closer can appear in the same screen spot as something lower and farther away, so players can't tell which is which. Iso subjects look small, but iso games can still be detailed and beautiful.",
+          "example": "A ledge that looks reachable but is actually far below.",
+          "f2p": "Mobile iso games keep playfields mostly flat and use shadows, outlines and team colors so tiny units stay readable.",
+          "memory": "Iso flattens height into a guessing game.",
+          "tag": "warning"
+        },
+        {
+          "id": "L06-b39",
+          "hook": "God view: isometric from low orbit",
+          "body": "If detail on inhabitants matters less, step into the sandals of the divine. God view is essentially isometric with a much wider field of view, sometimes as high as low orbit. It suits games about controlling cities or dominating land masses.",
+          "example": "Spore and Supreme Commander.",
+          "f2p": "The 4X world map: Rise of Kingdoms, Whiteout Survival and Last War let you zoom from city to world, switching buildings to icons as detail drops.",
+          "memory": "Iso = bedroom floor. God view = from the ceiling fan.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Top-Down Camera",
+      "bites": [
+        {
+          "id": "L06-b40",
+          "hook": "Top-down: old-fashioned, but mobile brought it back",
+          "body": "A top-down view still shows up in action arcade games. Downsides: you can't get a good look at the character or the world, and depth-based concepts should be avoided from this perspective.",
+          "example": "Smash TV and Gauntlet.",
+          "f2p": "Mobile loves slightly angled top-down: Brawl Stars, Archero, Survivor.io, Among Us. Joystick up = screen up, no confusion. Big heads and bold colors fix readability.",
+          "memory": "The security-camera view.",
+          "tag": "concept"
+        },
+        {
+          "id": "L06-b41",
+          "hook": "Top-down world, side-view characters: the Egyptian tomb look",
+          "body": "A quirky variant: world elements and power-ups are shown from above, while characters are shown from the side. It has a charm similar to Egyptian tomb art, where figures always appear in profile.",
+          "example": "Snake-style and Tower Defense games.",
+          "f2p": "Many tower defense and lane-battle games show a top-down map with units drawn facing sideways or toward the camera for charm and readability.",
+          "memory": "Pharaoh's camera: map from above, people in profile.",
+          "tag": "example"
+        }
+      ]
+    },
+    {
+      "title": "Special Case Cameras and Tunnel Vision",
+      "bites": [
+        {
+          "id": "L06-b42",
+          "hook": "Flying and swimming need their own camera rules",
+          "body": "Special movement adds complexity. Keep the camera moving with a flying or swimming player and never let them rise or fall off screen. Going straight up or down, don't let the camera sort through the floor. Underwater, keep the camera under with the player unless they swim at the surface: keep 'in water' and 'on land' distinct. Don't bob the camera underwater, because it causes DIMS.",
+          "example": "A swim level where the camera stays submerged with the hero.",
+          "f2p": "Bonus modes (a flying run in an endless runner) deserve their own distinct framing so players instantly feel the mode change.",
+          "memory": "Underwater camera = scuba buddy, not a bobbing cork.",
+          "tag": "list"
+        },
+        {
+          "id": "L06-b43",
+          "hook": "In caves and sewers, put the camera on rails",
+          "body": "Low ceilings, narrow passages and tight doorways wreck free cameras. Rogers restricts the camera with a rail camera in these spots. It removes camera problems and keeps the claustrophobic feel. Avoid low angles: keep the camera at shoulder height or slightly above. Watch for low-hanging stalactites causing sorting.",
+          "example": "A dungeon corridor with a fixed rail path just above the hero's shoulder.",
+          "f2p": "In top-down and iso games, 'tunnels' become occlusion. Use cutaway roofs, fading walls or hero outlines.",
+          "memory": "In a tunnel, ride the train tracks.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Camera Shot Guide",
+      "bites": [
+        {
+          "id": "L06-b44",
+          "hook": "Seven shot sizes from horizon to nostril",
+          "body": "EWS: subject very far away (castles looming). VWS: some detail, used for establishing shots or 'stranded at sea'. WS: whole subject in frame, used to introduce a hero or vehicle. MS: waist up. MCU: head and shoulders, for talking (animate hands). CU: face and expression (CG flaws show, use sparingly). ECU: eyes, or puzzle-clue details.",
+          "example": "EWS of a planet-killing space station. ECU on a spaghetti-western stare.",
+          "f2p": "On phones, close shots read better than wide ones. Dialogue uses MCU/CU portraits, while an EWS is a speck.",
+          "memory": "Every Very Wide Movie Makes Close Encounters.",
+          "tag": "list"
+        },
+        {
+          "id": "L06-b45",
+          "hook": "Cutaway, cut in, two shot, OSS, noddy, POV",
+          "body": "Cutaway: cut to the thing mentioned (the magic sword) or to a reaction. Cut in: cut to a close-up detail of what's examined (the clue). Two shot: two characters on screen. Over the shoulder: reveals hidden things (a gun on the back, crossed fingers). Noddy: a listener reacting, like in news interviews. POV: from anyone's or anything's eyes, even a floating power-up.",
+          "example": "The hero says 'I need that sword', then cut to the sword (cutaway).",
+          "f2p": "Unlocking a new hero or building triggers a full-screen cut in. Tapping Upgrade cuts away to the building transforming.",
+          "memory": "Cutaway = go look at it. Cut in = lean in close.",
+          "tag": "list"
+        },
+        {
+          "id": "L06-b46",
+          "hook": "Close-ups expose cheap models, so use them sparingly",
+          "body": "When the camera gets tight on a CG character, flaws show: mouth interiors, low-res textures. Rogers recommends using close-ups sparingly. Same for zooms: crisp textures turning to pixels breaks reality.",
+          "example": "A cutscene close-up revealing a character's blurry teeth texture.",
+          "f2p": "Mobile models are low-poly for performance. Don't push the camera into faces that weren't built for it, and set pinch-zoom limits.",
+          "memory": "Closer camera, bigger pimples.",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "Camera Angle Guide",
+      "bites": [
+        {
+          "id": "L06-b47",
+          "hook": "Low angle makes bosses huge, high angle makes them small",
+          "body": "Eye level: neutral, aimed at the subject's eyes. High angle: above looking down, makes things less impressive and shows elements in relation to each other. Low angle: below looking up, makes things menacing or impressive, great for bosses. Worm's-eye: on the floor looking up. Bird's-eye: high in the sky.",
+          "example": "A low-angle boss intro that makes a troll look like a skyscraper.",
+          "f2p": "Gacha hero showcases often frame from below to sell power (and value). Puzzle boards use high angles for clarity.",
+          "memory": "Low = skyscraper boss. High = chess-piece boss.",
+          "tag": "list"
+        },
+        {
+          "id": "L06-b48",
+          "hook": "Dutch tilt: subtle feels wrong, severe feels broken",
+          "body": "Tilting the camera so everything is cockeyed makes a scene feel creepy or wacky, like Sam Raimi horror or the 1960s Batman show. A subtle tilt makes players sense something's wrong without knowing why. A severe tilt makes everything feel messed up.",
+          "example": "Rogers' team used a Dutch tilt in Maximo: Ghosts to Glory's in-game camera.",
+          "f2p": "A subtle tilt on a Halloween LiveOps event screen or a 'something's wrong' story beat.",
+          "memory": "Dutch tilt = the camera had one drink too many.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Camera Movement Guide",
+      "bites": [
+        {
+          "id": "L06-b49",
+          "hook": "Arc around the hero when something amazing happens",
+          "body": "Arc: the camera dollies around the subject in an arc. A classic move is a full 360-degree arc around the player when something wondrous happens, like gaining a new power. Dolly zoom: change focal length while moving the camera so the subject stays the same size and the background warps, used in Spielberg films for amazement or dawning dread.",
+          "example": "A hero raises a new glowing sword as the camera circles them.",
+          "f2p": "The hero-unlock spin in gacha games is an arc, and it sells the character you just pulled.",
+          "memory": "New power? Victory lap for the camera.",
+          "tag": "list"
+        },
+        {
+          "id": "L06-b50",
+          "hook": "Follow, pedestal, pan, tilt: the everyday moves",
+          "body": "Follow: move with the subject (add handheld shake for grit). Pedestal: move the camera up vertically. Passing foreground objects adds speed, good for something rising powerfully. Pan: move left or right, past objects, with foreground items for interest. Tilt: aim up or down while position stays fixed. Lens flare spices it up.",
+          "example": "A pedestal shot rising from feet to face as a giant stands up.",
+          "f2p": "A pan across your base to reveal a new event building. A rising pedestal shot as a building upgrades.",
+          "memory": "Pedestal = elevator. Pan = swivel chair. Tilt = nodding head.",
+          "tag": "list"
+        },
+        {
+          "id": "L06-b51",
+          "hook": "Dolly vs zoom: move the camera or change the lens",
+          "body": "Dolly (tracking or crab shot): the camera physically moves smoothly toward or away. Speed sets the mood: slow crawl for suspense, rocket forward for danger. Start and end the move before the subject moves for dynamism. Zoom: the focal length changes, creating the illusion of movement. Don't zoom through objects or too close to low-detail art.",
+          "example": "A slow dolly toward a mysterious door. A fast zoom onto a ticking bomb.",
+          "f2p": "Tutorials push in on the button to tap, then pull back. Keep it short so players don't feel hijacked.",
+          "memory": "A Dizzy Fox Pedals Past Ten Donut Zones = Arc, Dolly zoom, Follow, Pedestal, Pan, Tilt, Dolly, Zoom.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Other Camera Notes",
+      "bites": [
+        {
+          "id": "L06-b52",
+          "hook": "Rule of thirds: tic-tac-toe your shot",
+          "body": "Unappealing composition kills a shot. The basic rule: split the screen with imaginary lines into thirds and put the item of focus a third of the way up or a third of the way across. Once you've mastered it, break it. You're an artist.",
+          "example": "The hero's face placed on the upper-left grid intersection.",
+          "f2p": "In portrait games the bottom third is often under the thumb, so focal points go in the upper two thirds. Store screenshots use thirds too.",
+          "memory": "Park the star where the tic-tac-toe lines cross.",
+          "tag": "rule"
+        },
+        {
+          "id": "L06-b53",
+          "hook": "Don't cross the line or your hero seems to reverse",
+          "body": "Crossing the line: an imaginary line runs through the scene. Put cameras on both sides and a hero running from a trap seems to run right, then left. Add a front-on shot to show it's the same guy going the same way. With two characters talking, crossing the line makes them seem to talk to someone off screen.",
+          "example": "Two pirates both facing the same screen direction look like they're talking to a third pirate (Rogers crosses out that panel).",
+          "f2p": "Battle layouts keep your side at the bottom and the enemy at the top every match. Flipping it breaks orientation.",
+          "memory": "The line is a velvet rope your camera may not cross.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Always Point the Camera to the Objective",
+      "bites": [
+        {
+          "id": "L06-b54",
+          "hook": "The camera should tell players what to look at",
+          "body": "In-game or in cutscenes, the camera should show what matters: puzzle elements, what enemies look like and where they are, a dramatic architectural reveal, the exit, or all of these. Chekhov's gun applies: if you show it, it should matter. Show everything players need for the scene. Spool clues out, but never make them guess blindly.",
+          "example": "Entering a mysterious underground chamber, the camera sweeps past the lever, the guards and the exit.",
+          "f2p": "Puzzle games show the level goal before handing over control. In the FTUE, don't show five currencies when the player needs only one.",
+          "memory": "The camera is a tour guide with a red umbrella.",
+          "tag": "rule"
+        },
+        {
+          "id": "L06-b55",
+          "hook": "Can't see the objective? Give players a way to see it",
+          "body": "If the objective is out of sight, give players tools to find it. A special vision mode can reveal enemies and secret paths, and picture-in-picture can show clues or enemy beauty shots.",
+          "example": "Batman: Arkham Asylum's detective mode (X-ray specs) and Heavenly Sword's picture-in-picture during boss fights.",
+          "f2p": "Hint buttons, objective arrows, and quest buttons that jump the camera to the right building are mobile detective modes.",
+          "memory": "No line of sight? Hand them X-ray specs.",
+          "tag": "example"
+        }
+      ]
+    },
+    {
+      "title": "Never Let the Character Get out of the Camera's Sight",
+      "bites": [
+        {
+          "id": "L06-b56",
+          "hook": "Six tricks to show a hero hidden behind walls",
+          "body": "Show an arrow, name tag or ghost outline through geometry. Use an X-ray or thermal look (skeleton or heat signature). Make the wall transparent. Point an arrow or icon at an off-screen character (multiplayer). Zoom into first person. Build geometry with gaps (tinted windows, arrow slits, grates). Meanwhile, the camera must not behave differently.",
+          "example": "A hero walking behind a grate stays visible through the gaps.",
+          "f2p": "Hero outlines through walls, fading foreground objects, off-screen arrows and minimaps are everywhere in mobile arena games.",
+          "memory": "A ghost in X-ray glasses peeks through a grate, holding a neon arrow.",
+          "tag": "list"
+        },
+        {
+          "id": "L06-b57",
+          "hook": "Hide from enemies, never from yourself",
+          "body": "Rogers' rule is about the player always knowing where their own character is. You can break it on purpose for opponents: hiding becomes a mechanic as long as the player can still see themselves.",
+          "example": "In Brawl Stars, a brawler in a bush is hidden from distant enemies, but you still see your own brawler semi-transparent.",
+          "f2p": "Give the player's own unit the strongest contrast on screen (a ring, glow or color) so it never gets lost in effects.",
+          "memory": "Invisible to them, visible to you.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "Multiple Player Cameras",
+      "bites": [
+        {
+          "id": "L06-b58",
+          "hook": "Multiplayer cameras: split it, zoom it, or inset it",
+          "body": "Split screen: GoldenEye 007's 4-way split worked if you didn't need detail, and War of the Monsters split only when fighters got far apart. Big screens make splits better. Zooming screen: LittleBigPlanet zooms out for everyone, uses arrows for off-screen players and 'kills' anyone off screen too long. Power Stone scales for four. Camera in picture: insets work for sports, not FPSs.",
+          "example": "LittleBigPlanet's zoom-out camera keeping a whole co-op team in frame.",
+          "f2p": "Mobile is one player per device, so the job becomes tracking others: minimaps, off-screen indicators, pings, kill cams and replays.",
+          "memory": "Slice the pizza, step back from the table, or put a slice in the corner.",
+          "tag": "list"
+        },
+        {
+          "id": "L06-b59",
+          "hook": "Async replays are a camera too",
+          "body": "When players watch someone else's game, such as a replay of who raided their base, the camera should frame the key moments so the viewer learns why they lost. That makes the replay a lesson and a motivator, not a confusing video.",
+          "example": "Clash of Clans lets you watch replays of attacks on your village.",
+          "f2p": "Good replay framing turns a loss into 'I'll fix my defense', which feeds re-engagement and upgrades.",
+          "memory": "A replay camera is a coach, not a security tape.",
+          "tag": "f2p"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "Pick the camera that fits your game.",
+    "Head off motion sickness (DIMS) by watching frame rate, camera movement speed and how bumpy your level terrain is.",
+    "A first person camera gives players deeper immersion.",
+    "A third person camera gives players a good view of both their character and the world.",
+    "Treat the camera as the player's spotter.",
+    "Take camera control away from the player whenever it becomes a problem.",
+    "If you remove camera control, make sure the player knows it.",
+    "Borrow Hollywood-style shots and angles to boost the game's visuals and drama.",
+    "Never let the character leave the camera's sight.",
+    "Plan your game camera so it works for multiple players."
+  ],
+  "mnemonics": [
+    {
+      "name": "Follow-cam traps",
+      "device": "Some Cameras Can't Park",
+      "unpacks": "Sorting (clipping through geometry), Controls (straight up/down, inverted axes), Corners (cause flipping), Position (rigid stick vs laid-back follow)."
+    },
+    {
+      "name": "DIMS remedies",
+      "device": "FRAMES",
+      "unpacks": "Frame rate near 60 fps, Rein in bobbing foreground elements, Anchor objects (large and stationary), Move the camera gently, Elevation (look up/down) changes rare, Smooth flat floors."
+    },
+    {
+      "name": "Shot sizes far to near",
+      "device": "Every Very Wide Movie Makes Close Encounters",
+      "unpacks": "Extreme wide shot, Very wide shot, Wide shot, Medium shot, Medium close up, Close up, Extreme close up."
+    },
+    {
+      "name": "Camera moves",
+      "device": "A Dizzy Fox Pedals Past Ten Donut Zones",
+      "unpacks": "Arc, Dolly zoom, Follow, Pedestal, Pan, Tilt, Dolly, Zoom."
+    },
+    {
+      "name": "Camera control choices",
+      "device": "Let · Lock · Lend",
+      "unpacks": "Let the player control the camera (full, free-look, selective), Lock it (designer/rail camera), or Lend it only when needed."
+    },
+    {
+      "name": "Never lose the character",
+      "device": "A ghost in X-ray glasses peeks through a grate holding a neon arrow",
+      "unpacks": "Ghost outline or name tag, X-ray or thermal view, transparent walls, off-screen arrows, first-person zoom, gaps in geometry, and the camera keeps behaving normally."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L06-f01",
+      "q": "What four things does your camera choice affect?",
+      "a": "How the camera is programmed, how the game is designed, how controls are mapped, how art is created.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f02",
+      "q": "How many 'main' camera styles should a game have?",
+      "a": "One main style for most of the gameplay. Others only for specific situations.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f03",
+      "q": "Define a static camera.",
+      "a": "A camera that never moves and stays fixed on a single screen, location and image.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f04",
+      "q": "Why does art for a static camera cost less?",
+      "a": "Objects seen from only one angle don't need a back, which saves production and processing time.",
+      "type": "why"
+    },
+    {
+      "id": "L06-f05",
+      "q": "What is the main danger of a static screen, and the fix?",
+      "a": "It isn't dynamic. Compensate with lots of animation and effects.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f06",
+      "q": "Which survival horror games used static cameras to set mood?",
+      "a": "Alone in the Dark and Resident Evil.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f07",
+      "q": "What two advantages does a scrollable camera add over a static one?",
+      "a": "The engaging act of moving the camera, and the ability to hide things off screen and reveal them dramatically.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f08",
+      "q": "What are a camera's 'hydraulics'?",
+      "a": "Its acceleration and deceleration speed.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f09",
+      "q": "Why is a scrollable camera that moves too fast frustrating?",
+      "a": "It overshoots the target and the player corrects back and forth.",
+      "type": "why"
+    },
+    {
+      "id": "L06-f10",
+      "q": "If you let players set scroll speed, what two rules apply?",
+      "a": "Make the option easy to find, and offer several speeds (not just fast/slow).",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f11",
+      "q": "Which company introduced parallax scrolling in 1982?",
+      "a": "Irem (with its moon-buggy game, Moon Patrol).",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f12",
+      "q": "What testing tip goes with plain parallax scrolling?",
+      "a": "Play the level backwards to make sure the player can't outrun the load and break the game.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f13",
+      "q": "What is a forced scroll camera?",
+      "a": "A camera that moves on its own. The player must keep up or something horrible (like death) happens.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f14",
+      "q": "Why shouldn't you use forced scrolling throughout a game?",
+      "a": "It's exhausting pressure. Use it for moments, unless the whole game is built on the idea.",
+      "type": "why"
+    },
+    {
+      "id": "L06-f15",
+      "q": "Why is level design for Mode 7 tricky?",
+      "a": "The level has no real far wall, so the illusion only holds over a background that never ends.",
+      "type": "why"
+    },
+    {
+      "id": "L06-f16",
+      "q": "Which game used a multi-plane camera for bi-dimensional gameplay, the forerunner of 2.5D?",
+      "a": "Disney's Hercules Action Game (Virgin Interactive, 1997).",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f17",
+      "q": "Which two games popularized the first-person camera?",
+      "a": "Wolfenstein 3D (1992) and Doom (1993).",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f18",
+      "q": "Name the four disadvantages of the first-person camera.",
+      "a": "Hard to judge jumps and distances; can't see the character (weaker emotional link); player may not look where the designer wants; pickups must be exaggerated in scale.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f19",
+      "q": "Why does Rogers dislike heavy screen darkening for dying players?",
+      "a": "It unfairly adds a second penalty by hiding the gameplay and where damage comes from.",
+      "type": "why"
+    },
+    {
+      "id": "L06-f20",
+      "q": "What must 'Predator vision' effects provide besides looking cool?",
+      "a": "A real gameplay advantage.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f21",
+      "q": "What does DIMS stand for?",
+      "a": "Doom-Induced Motion Sickness.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f22",
+      "q": "Why does DIMS happen?",
+      "a": "The eyes register movement but the inner ear (balance) doesn't feel it.",
+      "type": "why"
+    },
+    {
+      "id": "L06-f23",
+      "q": "Name Rogers' six designer remedies for DIMS.",
+      "a": "~60 fps; no bobbing foreground (weapon); flat floors; large stationary focus objects; don't whip the camera; limit fast or frequent up/down looking.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f24",
+      "q": "Why does a third-person camera reduce DIMS somewhat?",
+      "a": "The character gives the player something stable to focus on.",
+      "type": "why"
+    },
+    {
+      "id": "L06-f25",
+      "q": "What is 'sorting'?",
+      "a": "When the camera passes through a character or geometry, often revealing the sky or background color.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f26",
+      "q": "Where should the 'turn objects transparent' fix for sorting NOT be used?",
+      "a": "On perimeter walls. It works for objects inside the walls.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f27",
+      "q": "Why shouldn't objects disappear completely when the camera gets close?",
+      "a": "Things flickering in and out of existence disorient players (and look bad).",
+      "type": "why"
+    },
+    {
+      "id": "L06-f28",
+      "q": "What is camera flipping and its number one cause?",
+      "a": "The camera bouncing between objects while trying to settle. Corners cause it most.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f29",
+      "q": "How should you keep players out of corners?",
+      "a": "Visible blocking geometry (retaining walls, shrubs, boulders, fences), never invisible walls. Keep collectables and AI paths out of corners.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f30",
+      "q": "Which follow-cam position does Rogers prefer, and why?",
+      "a": "Laid back (loose follow): fewer obstructions, you see the hero's face, enemies can sneak up behind, chases are easier.",
+      "type": "why"
+    },
+    {
+      "id": "L06-f31",
+      "q": "What are the three methods for giving players camera control?",
+      "a": "Full 360 follow-cam control, free-look camera, selective control.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f32",
+      "q": "How does selective control differ from free-look?",
+      "a": "Context: free-look simulates turning your head; selective simulates equipment (scope, binoculars) and should share its limits.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f33",
+      "q": "Why are some free-look cameras limited to just under 180 degrees?",
+      "a": "To mimic the natural rotation of the human neck.",
+      "type": "why"
+    },
+    {
+      "id": "L06-f34",
+      "q": "What camera trick does Rogers use when the player stops moving?",
+      "a": "Slightly overshoot the target, then creep back to center if the player stays still.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f35",
+      "q": "What was Resident Evil 4's solution to the jarring third-to-first-person switch?",
+      "a": "When aiming, the camera shifts to hover behind the character's shoulder.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f36",
+      "q": "What is second person view? Give an example.",
+      "a": "The camera is given to a different character. Mark of Kri's bird Kuzo, or The Darkness's tentacle cam.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f37",
+      "q": "Why did God of War build environments like theater sets?",
+      "a": "With a designer-controlled camera, unseen sides never need to be built, which saves polygons and textures.",
+      "type": "why"
+    },
+    {
+      "id": "L06-f38",
+      "q": "What is the most important rule when removing camera control?",
+      "a": "Make it clear to the player that they don't have control.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f39",
+      "q": "What two things should you never do behind an obstruction that hides the character?",
+      "a": "Place hazards there, or widen the path (allowing Z-axis movement).",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f40",
+      "q": "How does 2.5D differ from bi-dimensional gameplay?",
+      "a": "2.5D uses 3D models but 2D-style camera limits. Bi-dimensional uses sprites.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f41",
+      "q": "Which game introduced the isometric camera?",
+      "a": "Zaxxon (Sega, 1982).",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f42",
+      "q": "Why can elevation be confusing in an isometric view?",
+      "a": "High-and-near and low-and-far objects can appear in the same screen spot.",
+      "type": "why"
+    },
+    {
+      "id": "L06-f43",
+      "q": "What is God view?",
+      "a": "An isometric camera with a much wider field of view (up to 'low orbit'), for controlling cities or land masses.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f44",
+      "q": "What should be avoided in top-down views?",
+      "a": "Depth-based concepts. You also can't see the character or world well.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f45",
+      "q": "Where should a swimming player's camera be?",
+      "a": "Underwater with the player, unless they swim at the surface. Keep 'in water' and 'on land' distinct, and don't bob.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f46",
+      "q": "Why use a rail camera in caves and sewers?",
+      "a": "It avoids camera problems in tight spaces and keeps the feeling of claustrophobia.",
+      "type": "why"
+    },
+    {
+      "id": "L06-f47",
+      "q": "What does a medium close up (MCU) show, and when is it used?",
+      "a": "Head and shoulders, mostly for talking characters. Animate the hands.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f48",
+      "q": "What's the difference between a cutaway and a cut in?",
+      "a": "Cutaway: cut to the thing mentioned or a reaction. Cut in: cut to a close-up detail of what's being examined.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f49",
+      "q": "What is a 'noddy' shot?",
+      "a": "A character reacting (nodding) to someone else speaking.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f50",
+      "q": "What does a low camera angle do to a subject?",
+      "a": "Makes it look menacing or impressive, great for bosses.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f51",
+      "q": "What is a dolly zoom?",
+      "a": "Changing focal length while moving the camera so the subject stays the same size and the background warps.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f52",
+      "q": "Pedestal vs tilt?",
+      "a": "Pedestal physically moves the camera up. Tilt aims the camera up or down while its position stays fixed.",
+      "type": "basic"
+    },
+    {
+      "id": "L06-f53",
+      "q": "Extreme wide shot, very wide shot, wide shot, medium shot, ____, close up, extreme close up.",
+      "a": "Medium close up (MCU)",
+      "type": "cloze"
+    },
+    {
+      "id": "L06-f54",
+      "q": "The #1 cause of camera flipping is ____.",
+      "a": "corners",
+      "type": "cloze"
+    },
+    {
+      "id": "L06-f55",
+      "q": "Rule of thirds: put the focus item a ____ of the way up or across the screen.",
+      "a": "third",
+      "type": "cloze"
+    },
+    {
+      "id": "L06-f56",
+      "q": "Treat the camera like it's the player's ____.",
+      "a": "spotter",
+      "type": "cloze"
+    },
+    {
+      "id": "L06-f57",
+      "q": "Scenario: your match-3 board looks lifeless in playtests. Which static-camera rule applies?",
+      "a": "Static screens aren't dynamic. Compensate with lots of animation and effects (juice).",
+      "type": "apply"
+    },
+    {
+      "id": "L06-f58",
+      "q": "Scenario: players in your base builder fling the map and keep overshooting their buildings. What do you tune?",
+      "a": "The camera's hydraulics (acceleration/deceleration, inertia and friction), and maybe offer speed settings.",
+      "type": "apply"
+    },
+    {
+      "id": "L06-f59",
+      "q": "Scenario: in your top-down brawler, the hero vanishes behind tall walls. Name two fixes.",
+      "a": "Fade the walls or draw a ghost outline of the hero through them (also gaps in geometry, arrows).",
+      "type": "apply"
+    },
+    {
+      "id": "L06-f60",
+      "q": "Scenario: a cutscene shows the hero running right, then the next shot shows him running left. What rule was broken?",
+      "a": "Crossing the line (180° rule). Add a front-on shot or keep cameras on one side.",
+      "type": "apply"
+    },
+    {
+      "id": "L06-f61",
+      "q": "Scenario: you want a gacha hero reveal to feel powerful. Which angle and movement?",
+      "a": "A low angle plus an arc (360 orbit) around the hero.",
+      "type": "apply"
+    },
+    {
+      "id": "L06-f62",
+      "q": "Scenario: playtesters say a screen 'feels broken' because they keep trying to drag it. Which camera rule?",
+      "a": "If players don't control the camera, make that clear. Don't make a screen look draggable when it isn't.",
+      "type": "apply"
+    },
+    {
+      "id": "L06-f63",
+      "q": "Scenario: your 4X game needs a view of the whole continent. Which camera?",
+      "a": "God view: isometric with a very wide field of view.",
+      "type": "apply"
+    },
+    {
+      "id": "L06-f64",
+      "q": "Scenario: your runner's player can sprint faster than chunks load on cheap phones. What does Rogers advise?",
+      "a": "Watch for 'outrunning the load'. Test by playing the level backwards and at max speed to try to break it.",
+      "type": "apply"
+    },
+    {
+      "id": "L06-f65",
+      "q": "Scenario: players miss the level goal in your puzzle game. Which principle?",
+      "a": "Always point the camera to the objective. Show the goal at level start. Chekhov's gun.",
+      "type": "apply"
+    },
+    {
+      "id": "L06-f66",
+      "q": "Why is isometric popular for base-building games?",
+      "a": "Its toy-like view plus quick reads of layout and item relationships make planning easy and the base look like a toy.",
+      "type": "why"
+    },
+    {
+      "id": "L06-f67",
+      "q": "Scenario: your third-person mobile game camera keeps jittering between two walls when players collect a corner chest. What's the cleanest fix?",
+      "a": "Move the chest out of the corner (keep gameplay mid-room). If it must stay, raise the camera up the wall to an angled bird's-eye view.",
+      "type": "apply"
+    },
+    {
+      "id": "L06-f68",
+      "q": "Scenario: the scope in your mobile shooter has a perfect 360° view with zero sway. Which rule does this ignore?",
+      "a": "Selective control should mirror the real equipment's limits. Realism sells the view.",
+      "type": "apply"
+    },
+    {
+      "id": "L06-f69",
+      "q": "Scenario: your underwater bonus level bobs the camera to feel realistic and testers feel queasy. What do you change?",
+      "a": "Remove the bobbing (it causes DIMS) and keep the camera submerged with the player.",
+      "type": "apply"
+    },
+    {
+      "id": "L06-f70",
+      "q": "Scenario: you want your F2P art budget focused only on what players see. Which camera choice enables 'theater set' art?",
+      "a": "A designer-controlled (locked) camera, since unseen sides never need building.",
+      "type": "apply"
+    },
+    {
+      "id": "L06-f71",
+      "q": "Scenario: a co-op mode keeps losing track of the second player when they run ahead. Name two options from the book.",
+      "a": "Zoom out to fit both (with off-screen arrows) or use split screen (possibly only when far apart). Camera in picture is a third.",
+      "type": "apply"
+    },
+    {
+      "id": "L06-f72",
+      "q": "Scenario: you're adding a night-vision booster to a hidden-object game. What test must it pass?",
+      "a": "It must give a real gameplay advantage (reveal hidden things), not just look cool.",
+      "type": "apply"
+    },
+    {
+      "id": "L06-f73",
+      "q": "Plain parallax tip: always play your level ____ to make sure players can't outrun the load.",
+      "a": "backwards",
+      "type": "cloze"
+    },
+    {
+      "id": "L06-f74",
+      "q": "DIMS stands for Doom-Induced ____ ____.",
+      "a": "Motion Sickness",
+      "type": "cloze"
+    },
+    {
+      "id": "L06-f75",
+      "q": "Isometric with a much wider field of view, up to 'low orbit', is called ____ view.",
+      "a": "God",
+      "type": "cloze"
+    },
+    {
+      "id": "L06-f76",
+      "q": "Why use a high camera angle for puzzle and strategy boards?",
+      "a": "High angles show elements in relationship to each other, which makes planning clear.",
+      "type": "why"
+    },
+    {
+      "id": "L06-f77",
+      "q": "Why should top-down games avoid depth-based challenges?",
+      "a": "From straight above, height and depth are hard to read, so jumps or vertical puzzles become guesswork.",
+      "type": "why"
+    },
+    {
+      "id": "L06-f78",
+      "q": "Where does the name 'Mode 7' come from?",
+      "a": "It is named after the 7th (out of 8) background layer of the Super Nintendo, the one used for the scaled, perspective ground plane.",
+      "type": "recall"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "L06-q01",
+      "q": "According to Rogers, how many camera styles should drive most of your gameplay?",
+      "options": [
+        "As many as possible, for variety",
+        "Two, alternated every level",
+        "One main style, with others only for specific situations",
+        "It doesn't matter as long as the art is good"
+      ],
+      "answer": 2,
+      "why": "Pick one main camera for most gameplay. Extra views are only for special situations. Constant switching forces players to relearn how to see the game."
+    },
+    {
+      "id": "L06-q02",
+      "q": "Which is NOT one of the reasons early games used static cameras?",
+      "options": [
+        "Static cameras reduce motion sickness in VR",
+        "Players could watch many elements at once",
+        "Art seen from one angle needs no back",
+        "Scrolling hadn't been invented"
+      ],
+      "answer": 0,
+      "why": "Rogers lists no scrolling yet, seeing many elements at once, and one-angle art saving production. VR comfort isn't in the book."
+    },
+    {
+      "id": "L06-q03",
+      "q": "Your RTS camera takes ages to reach a battle and players lose units. What's the problem?",
+      "options": [
+        "Sorting",
+        "Forced scroll",
+        "Crossing the line",
+        "Camera hydraulics tuned too slow"
+      ],
+      "answer": 3,
+      "why": "Hydraulics = acceleration/deceleration. Too slow means the camera can't reach the action in time. Too fast means overshooting."
+    },
+    {
+      "id": "L06-q04",
+      "q": "Forced scroll is best used…",
+      "options": [
+        "Throughout every level for consistency",
+        "For pressure moments like chases, or when the whole game is built on it",
+        "Only in menus",
+        "Never, it's outdated"
+      ],
+      "answer": 1,
+      "why": "Forced scroll creates pressure. Don't use it all the time unless the entire game is built around it, as with endless runners."
+    },
+    {
+      "id": "L06-q05",
+      "q": "Which is a DISADVANTAGE of first-person cameras in Rogers' table?",
+      "options": [
+        "Harder to aim weapons",
+        "Harder to create horror atmosphere",
+        "Hard to judge jump and movement distances",
+        "Players can't inspect puzzle items closely"
+      ],
+      "answer": 2,
+      "why": "First person makes aiming, atmosphere and close inspection easier. Judging jumps and distances is harder."
+    },
+    {
+      "id": "L06-q06",
+      "q": "Which change would most likely INCREASE DIMS?",
+      "options": [
+        "Raising frame rate toward 60 fps",
+        "Flattening the floor",
+        "Adding large stationary landmarks",
+        "Adding a bobbing weapon in the foreground"
+      ],
+      "answer": 3,
+      "why": "Bobbing foreground elements are a DIMS trigger. The other three are Rogers' remedies."
+    },
+    {
+      "id": "L06-q07",
+      "q": "To avoid sorting cheaply without heavy collision detection, Rogers suggests…",
+      "options": [
+        "Making interior objects turn transparent",
+        "Making objects vanish completely",
+        "Making perimeter walls transparent",
+        "Locking the camera top-down"
+      ],
+      "answer": 0,
+      "why": "Transparency works for objects inside the walls, not perimeter walls. Vanishing objects disorient players and look bad."
+    },
+    {
+      "id": "L06-q08",
+      "q": "A designer insists a power-up must sit in a room's corner. What should the camera do?",
+      "options": [
+        "Snap to a direct top-down view",
+        "Rise up the wall to an angled bird's-eye view, avoiding pure top-down",
+        "Pass through the wall",
+        "Stay put and let it flip"
+      ],
+      "answer": 1,
+      "why": "Spider-Man camera: climb the wall. Pure top-down looks bad and invites more flipping."
+    },
+    {
+      "id": "L06-q09",
+      "q": "What's the key difference between free-look and selective control?",
+      "options": [
+        "Free-look is always 360°, selective is 90°",
+        "There is no difference",
+        "Selective is only for cutscenes",
+        "Context: head-turning vs simulating a piece of equipment"
+      ],
+      "answer": 3,
+      "why": "Free-look simulates turning the head. Selective simulates gear like binoculars or a scope, and should share the gear's limits."
+    },
+    {
+      "id": "L06-q10",
+      "q": "Which is the MOST important rule when you remove camera control?",
+      "options": [
+        "Use only static cameras",
+        "Add a free-look button anyway",
+        "Make it clear to the player they don't control it",
+        "Always use a Dutch tilt"
+      ],
+      "answer": 2,
+      "why": "Once players know the camera isn't theirs, they stop worrying about it and focus on playing."
+    },
+    {
+      "id": "L06-q11",
+      "q": "Your fixed-camera level has a fence that hides the character. What should you put behind it?",
+      "options": [
+        "A hidden goodie",
+        "A wider path for exploration",
+        "A spike trap for surprise",
+        "An enemy spawn"
+      ],
+      "answer": 0,
+      "why": "No hazards or path-widening behind obstructions (unfair damage or getting lost), but hidden spots are great for goodies."
+    },
+    {
+      "id": "L06-q12",
+      "q": "In an isometric view, what makes elevation confusing?",
+      "options": [
+        "Characters are too large",
+        "High-and-near and low-and-far objects can occupy the same screen spot",
+        "Iso can't show buildings",
+        "Iso always rotates"
+      ],
+      "answer": 1,
+      "why": "Iso flattens height. Different heights and distances can project to the same screen location."
+    },
+    {
+      "id": "L06-q13",
+      "q": "Your F2P strategy game needs to show an entire continent for empire management. Which camera fits?",
+      "options": [
+        "First person",
+        "Medium close up",
+        "God view",
+        "Top-down/side view"
+      ],
+      "answer": 2,
+      "why": "God view = iso with a very wide field of view for controlling cities and land masses, where detail matters less."
+    },
+    {
+      "id": "L06-q14",
+      "q": "Which shot is 'head and shoulders' and best for talking characters?",
+      "options": [
+        "Medium close up",
+        "Wide shot",
+        "Extreme close up",
+        "Very wide shot"
+      ],
+      "answer": 0,
+      "why": "The MCU frames head and shoulders. Rogers adds: animate the hands to keep it lively."
+    },
+    {
+      "id": "L06-q15",
+      "q": "To make a boss look menacing, use…",
+      "options": [
+        "High angle",
+        "Bird's-eye view",
+        "Eye level",
+        "Low angle"
+      ],
+      "answer": 3,
+      "why": "Low angles make subjects impressive or menacing. High angles make them smaller and less impressive."
+    },
+    {
+      "id": "L06-q16",
+      "q": "The subject stays the same size while the background seems to stretch. Which move is it?",
+      "options": [
+        "Pan",
+        "Dolly zoom",
+        "Pedestal",
+        "Tilt"
+      ],
+      "answer": 1,
+      "why": "A dolly zoom changes focal length while moving the camera to keep the subject constant. It's Spielberg's realization shot."
+    },
+    {
+      "id": "L06-q17",
+      "q": "In a dialogue scene, two characters both face screen-right in their close-ups. What happened?",
+      "options": [
+        "The camera crossed the line",
+        "Rule of thirds violated",
+        "Sorting",
+        "A Dutch tilt"
+      ],
+      "answer": 0,
+      "why": "Crossing the line makes the characters look like they're talking to someone off screen."
+    },
+    {
+      "id": "L06-q18",
+      "q": "Your puzzle game's D1 retention dips because new players don't understand level goals. Which camera principle helps most?",
+      "options": [
+        "Never let the character out of sight",
+        "Use forced scrolling",
+        "Always point the camera to the objective",
+        "Add split screen"
+      ],
+      "answer": 2,
+      "why": "Show players what matters (goal, key pieces) before handing over control. Don't make them guess blindly."
+    },
+    {
+      "id": "L06-q19",
+      "q": "Which of these is NOT one of Rogers' tricks for keeping a hidden character visible?",
+      "options": [
+        "Ghost outline through geometry",
+        "Transparent walls",
+        "Gaps in geometry like grates",
+        "Making the camera spin wildly to find them"
+      ],
+      "answer": 3,
+      "why": "While the character is obscured, the camera must NOT behave differently. The player shouldn't have to fight the camera."
+    },
+    {
+      "id": "L06-q20",
+      "q": "LittleBigPlanet's multiplayer camera mainly uses…",
+      "options": [
+        "Four-way split screen",
+        "A zooming screen with off-screen arrows",
+        "Camera in picture",
+        "First-person view"
+      ],
+      "answer": 1,
+      "why": "LBP zooms out to fit players, uses arrows for off-screen characters, and 'kills' players who stay off screen too long."
+    },
+    {
+      "id": "L06-q21",
+      "q": "Why does Rogers favor a laid-back follow cam over one rigidly attached to the character?",
+      "options": [
+        "It's cheaper to program",
+        "It removes the need for collision",
+        "Fewer obstructions, see the hero's face, enemies can sneak up behind, easier chases",
+        "It prevents all motion sickness"
+      ],
+      "answer": 2,
+      "why": "Those four reasons are his. Designers resist it because it means giving up some camera control."
+    },
+    {
+      "id": "L06-q22",
+      "q": "Your F2P battle screen sometimes puts the player's team on top and sometimes on the bottom. Which camera idea does this violate?",
+      "options": [
+        "Crossing the line / consistent screen direction",
+        "Rule of thirds",
+        "Mode 7",
+        "Hydraulics"
+      ],
+      "answer": 0,
+      "why": "Like the 180° rule, keeping sides consistent preserves orientation. Flipping them makes players misread who's who."
+    }
+  ],
+  "sideQuests": [
+    {
+      "id": "L06-s01",
+      "title": "Camera census",
+      "task": "Check the top 10 grossing games on your phone's store. For each, note the main camera type (static, scrollable, iso, top-down, third person...) and portrait vs landscape. Which camera dominates which genre?",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L06-s02",
+      "title": "Shot-ladder screenshot hunt",
+      "task": "In any gacha or story mobile game, screenshot one wide shot, one medium close up, one close up and one cut in. Label each.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L06-s03",
+      "title": "Thumb occlusion test",
+      "task": "Play a portrait game one-handed for 5 minutes. Find a moment where your thumb hid something important, or note how the designers avoided it.",
+      "minutes": 5,
+      "xp": 20
+    },
+    {
+      "id": "L06-s04",
+      "title": "Juice audit",
+      "task": "Play 3 levels of a static-camera match-3 and list every animation or effect that keeps the fixed screen alive. Aim for 10 or more.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L06-s05",
+      "title": "Rewrite three Truths for F2P",
+      "task": "Pick 3 of the 10 Universal Truths and rewrite each as a concrete rule for a specific F2P genre.",
+      "minutes": 5,
+      "xp": 20
+    },
+    {
+      "id": "L06-s06",
+      "title": "Draw the 180° line",
+      "task": "Sketch a top view of a two-character dialogue with three camera positions: two legal, one that crosses the line. Mark the line.",
+      "minutes": 10,
+      "xp": 30
+    }
+  ],
+  "mainQuests": [
+    {
+      "id": "L06-m01",
+      "title": "The Camera Spec One-Pager",
+      "task": "For a real or invented F2P concept, write a camera spec: main camera type and orientation (with pros/cons reasoning), who controls the camera (Let/Lock/Lend) and how the player knows, 3 special camera moments (shot size, angle, movement each), how the player's units stay visible (2+ of Rogers' tricks), comfort options (shake toggle, zoom limits, fps target), plus a sketch of the main screen with rule-of-thirds lines and the thumb zone marked.",
+      "deliverable": "A one-page camera spec with a sketch.",
+      "doneWhen": "All six parts are answered, the sketch is included, and at least 5 chapter terms are used correctly. Bonus: posted publicly for feedback.",
+      "minutes": 75,
+      "xp": 180
+    }
+  ],
+  "playLabs": [
+    {
+      "id": "L06-p01",
+      "game": "Clash of Clans",
+      "minutes": 10,
+      "lookFor": "Scroll inertia, zoom limits, the iso angle, and what happens to camera control when you attack.",
+      "question": "Is this Let, Lock or Lend? How does the game tell you when you have camera control?"
+    },
+    {
+      "id": "L06-p02",
+      "game": "Brawl Stars or Archero",
+      "minutes": 10,
+      "lookFor": "Where your character sits on screen, whether the camera leads your movement, and how you're shown when hidden or behind walls.",
+      "question": "Which of Rogers' 'never lose the character' tricks does it use?"
+    },
+    {
+      "id": "L06-p03",
+      "game": "Royal Match or Candy Crush Saga",
+      "minutes": 10,
+      "lookFor": "The level intro, goal reveal and win sequence on a fully static camera.",
+      "question": "How does a static camera still feel dynamic, and how does it point you at the objective?"
+    },
+    {
+      "id": "L06-p04",
+      "game": "Honkai: Star Rail, AFK Journey or Raid: Shadow Legends",
+      "minutes": 10,
+      "lookFor": "Shot sizes, angles and camera moves during ultimates and summons.",
+      "question": "Which film techniques sell the character's power, and can you skip them?"
+    }
+  ],
+  "retrieval": [
+    {
+      "q": "Name four parts of development that the camera choice affects.",
+      "a": "Camera programming, game/level design, control mapping, art creation."
+    },
+    {
+      "q": "Give three reasons early games used static cameras and one danger.",
+      "a": "No scrolling yet; see many elements at once; one-angle art needs no back. Danger: not dynamic, so compensate with animation and effects."
+    },
+    {
+      "q": "What are camera hydraulics and what goes wrong when they're mistuned?",
+      "a": "Acceleration/deceleration. Too fast overshoots, too slow can't reach the action. Offer several player-selectable speeds."
+    },
+    {
+      "q": "Describe the two treatments of parallax scrolling.",
+      "a": "Plain scroll (player drives the camera and stays centered; beware outrunning the load, test backwards) and forced scroll (camera moves itself, keep up or die; use for pressure moments)."
+    },
+    {
+      "q": "What is DIMS and how do you prevent it?",
+      "a": "Doom-Induced Motion Sickness, eyes vs inner ear mismatch. ~60 fps, no bobbing foreground, flat floors, stationary landmarks, gentle camera, limited up/down looking."
+    },
+    {
+      "q": "List the four follow-cam traps with a fix each.",
+      "a": "Sorting (detection radius/transparency); Controls (character-relative default, inverted optional); Corners (visible blockers, gameplay in the middle, raise camera if needed); Position (laid-back follow preferred)."
+    },
+    {
+      "q": "What are the three ways to let players control the camera?",
+      "a": "Full 360 follow cam; free-look (button, neck-like limits, reorient on exit); selective control (scope or zoom, mimic the equipment's limits)."
+    },
+    {
+      "q": "What are the benefits of removing camera control, and the key rule?",
+      "a": "Less to worry about, art efficiency (theater sets), dark-ride framing, better shots, nothing missed, cinematic moves. Key rule: make it clear the player has no control."
+    },
+    {
+      "q": "Compare iso, God view and top-down.",
+      "a": "Iso: toy-like angled view, great layout reading, elevation ambiguity. God view: iso with a huge field of view for empires. Top-down: straight down, hard to see characters, avoid depth."
+    },
+    {
+      "q": "Name the seven shot sizes in order and the six purpose-based shots.",
+      "a": "EWS, VWS, WS, MS, MCU, CU, ECU. Cutaway, cut in, two shot, over the shoulder, noddy, POV."
+    },
+    {
+      "q": "What do the rule of thirds and crossing the line protect?",
+      "a": "Thirds: appealing composition. The line: consistent screen direction, so runners don't seem to reverse and talkers face each other."
+    },
+    {
+      "q": "How do you keep a hidden character visible?",
+      "a": "Ghost outline/arrow/name tag, X-ray/thermal, transparent walls, off-screen arrows, first-person zoom, gaps in geometry. The camera behaves normally throughout."
+    }
+  ],
+  "feynman": "Explain to a 12-year-old in 60 seconds why some games let you move the camera and others don't, and how a designer decides. Use a match-3 board and a game where you look around as examples, and say what goes wrong when the player controls the camera badly.",
+  "links": [
+    "L05",
+    "L07",
+    "L08",
+    "L09",
+    "L10",
+    "L11",
+    "L14",
+    "L16",
+    "F2P1"
+  ]
+}

@@ -1,0 +1,1566 @@
+{
+  "id": "L03",
+  "order": 4,
+  "kind": "book",
+  "label": "Level 3",
+  "title": "Writing the Story",
+  "bookPages": "37–56",
+  "emoji": "📜",
+  "tagline": "Story is the salt, gameplay is the meat, and only ONE corner of your world gets to be weird.",
+  "f2pRelevance": 3,
+  "f2pWhy": "Most F2P games use light story, but meta-narratives, lovable characters, short titles and story-driven LiveOps strongly support retention, marketing and store pages.",
+  "minutes": 55,
+  "tldr": [
+    "Games don't need a story, but every play session creates a narrative. Design for the player's narrative and never confuse story with gameplay.",
+    "Classic structure: hero with a desire, a problem, a failed try, a reversal, bigger then biggest problems, resolution, reward. Always beginning, middle, end. Story is salt; gameplay is meat.",
+    "Triangle of Weirdness: of characters, activities and world, make only ONE weird or players won't get it.",
+    "Serve three audiences (story fans, lore divers, skippers): optional depth, story through gameplay, start late, keep moving, suspense over surprise, no amnesia cliché.",
+    "End when players feel satisfied; keep titles short (literal, cool, punny, purple cow); give characters a first act; make death matter; build humor and actions from personality; choose fitting names.",
+    "Kids deserve complex stories; licenses demand deep knowledge, early no-no checks and lots of reference, then make it your own. F2P add-on: meta-narratives, character IP and story as LiveOps fuel."
+  ],
+  "sections": [
+    {
+      "title": "Story vs gameplay",
+      "bites": [
+        {
+          "id": "L03-b01",
+          "hook": "Bioshock vs Doom: the designer food fight",
+          "body": "Pro-story designers say games need story to engage and are an artistic medium. Anti-story designers say story is how people describe play afterward, or what you watch while the game loads. Rogers: both are right and wrong. A game doesn't need a story, yet it always has one.",
+          "example": "At GDCs one camp yells 'Bioshock!' (story-rich), the other 'Doom!' (pure action).",
+          "f2p": "Homescapes uses a story meta; Block Blast! has none. Both can succeed.",
+          "memory": "Doesn't need one, always has one.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "The classic story structure",
+      "bites": [
+        {
+          "id": "L03-b02",
+          "hook": "Every story starts with someone who wants something",
+          "body": "The basic structure, taught from Aristotle to screenwriters, starts with a hero who has a desire. Then an event throws life into disarray and blocks the desire: that's the problem. The hero tries to overcome it, but the method fails.",
+          "example": "Book doodles: a stick hero loves a princess in a tower; lightning splits the ground; he tries to jump the chasm and falls in.",
+          "f2p": "An event's Day 1 sets the desire (fix the lighthouse), Day 2 the disaster (a storm wrecks it).",
+          "memory": "Desire, Disaster, Try, Fail...",
+          "tag": "list"
+        },
+        {
+          "id": "L03-b03",
+          "hook": "Then it gets worse. And worse. Then dragon.",
+          "body": "After the failure: a reversal of fortune brings more trouble; an even greater problem raises the risk; one last problem brings the most risk of all. The hero resolves the final problem and gains the object of desire. Happily ever after, until the sequel.",
+          "example": "The hero is stuck in the pit, rain floods it, a dragon rises, he leaps off the dragon's head, and the story ends in a kiss.",
+          "f2p": "Map the escalation onto difficulty: the hardest event stage is the dragon.",
+          "memory": "...Flip, Worse, Worst, Win, Prize.",
+          "tag": "list"
+        },
+        {
+          "id": "L03-b04",
+          "hook": "Beginning, middle, end. Always.",
+          "body": "Whatever the story, it ALWAYS has a beginning, middle and end. Learn from Hollywood's craft: screenwriting books, classes, websites. But you're not chained to Campbell's Hero's Journey or Syd Field's Three Act Structure.",
+          "example": "Try another medium's structure: a song, a TV news report, a Homeric poem, or non-Western storytelling.",
+          "f2p": "TV series (episodic cliffhangers) suits LiveOps; sitcoms suit evergreen casual; comic strips suit 2-line dialog popups.",
+          "memory": "Borrow the wheel, don't reinvent it, but you can choose a different wheel.",
+          "tag": "rule"
+        },
+        {
+          "id": "L03-b05",
+          "hook": "Gameplay is the meat. Story is the salt.",
+          "body": "Games are interactive; as Shakespeare put it, the play's the thing. Just enough story adds flavor, too much ruins everything. Some games have no story at all and are still engaging.",
+          "example": "Tetris, Bejeweled and Pac-Man need no story.",
+          "f2p": "Salt levels: block puzzles none, match-3 metas a pinch, gacha RPGs heavy seasoning, but combat and collecting stay the meat.",
+          "memory": "Nobody orders a plate of salt with a side of steak.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Story vs narrative",
+      "bites": [
+        {
+          "id": "L03-b06",
+          "hook": "No story? You still have a narrative.",
+          "body": "Narrative literally means an order of events. Humans experience time linearly, so every play session becomes a narrative even without a written story. There are infinite possible narratives; the designer's job is to make them ALL fun.",
+          "example": "The book's doodle: a person excitedly describing a Tetris board to a friend.",
+          "f2p": "The one-move-left booster win and the last-hour clan war comeback are the stories players actually retell.",
+          "memory": "The writer writes the script; the player writes the diary.",
+          "tag": "concept"
+        },
+        {
+          "id": "L03-b07",
+          "hook": "You can't predict everything. Call it a feature.",
+          "body": "Rogers' footnote: examine as many narratives as you can guess, a giant game of 'what if'. But possibilities are endless, so predicting everything isn't worth it. When something unexpected happens and doesn't break the game, designers happily call it a feature.",
+          "example": "Emergent surprises that don't break the game become part of its charm.",
+          "f2p": "Live data reveals narratives you never predicted; keep the good ones, patch the exploits.",
+          "memory": "Unplanned + unbroken = feature.",
+          "tag": "fun"
+        },
+        {
+          "id": "L03-b08",
+          "hook": "The player is the hero of the narrative",
+          "body": "Look at the game from the player's perspective and order events and experiences so each builds on the last, creating rising emotional states. Then design systems that choreograph those experiences, which produce emotion.",
+          "example": "Left 4 Dead's Director AI reads the player's stress (health, skill, location) and adjusts zombie numbers, item spawns and music.",
+          "f2p": "Dynamic difficulty is the mobile Director. Use it to shape tension and relief ethically, not just to squeeze purchases.",
+          "memory": "Choreograph the feelings, not just the events.",
+          "tag": "concept"
+        },
+        {
+          "id": "L03-b09",
+          "hook": "Never mistake story for gameplay (or vice versa)",
+          "body": "Know the narrative the player will experience: it can end up very different from the game's written story. Never mistake story for gameplay, and never mistake gameplay for story. Most devs lack a Director AI, so the designer must craft these situations by hand.",
+          "example": "Left 4 Dead generates a unique experience; most teams must hand-build pacing.",
+          "f2p": "A gorgeous renovation story can't save a weak match-3 core.",
+          "memory": "Frosting isn't cake.",
+          "tag": "truth"
+        }
+      ]
+    },
+    {
+      "title": "Almost anything can be gameplay",
+      "bites": [
+        {
+          "id": "L03-b10",
+          "hook": "A mosquito, a city, a rapping dog",
+          "body": "Rogers believes almost ANYTHING can become gameplay. Don't feel limited by subject matter.",
+          "example": "Mr. Mosquito: drink a family's blood. SimCity: build and manage a city. PaRappa the Rapper: a dog raps to win his flower girlfriend.",
+          "f2p": "Mobile proof: sorting (Match Factory!), being a hole that eats a city (Hole.io), farming (Hay Day), cooking time-managers.",
+          "memory": "If people do it or dream it, it can be a game.",
+          "tag": "concept"
+        },
+        {
+          "id": "L03-b11",
+          "hook": "Little Red Riding Hood gets a boss fight",
+          "body": "A simple fairy tale has everything: walk the forest (exploration, collect goodies into a basket inventory, jump logs); meet the wolf (first enemy, can't kill yet); full basket (gating) opens Grandma's house (next level); 'what big eyes' (quiz, puzzle or rhythm game); wolf revealed (boss fight).",
+          "example": "Rogers prefers a boss fight to the original ending of Red being eaten and saved by a woodcutter. Not a LONG game, but a game.",
+          "f2p": "As a 5-day event: collection quest, wolf obstacle levels, basket gate, quiz mini-game, wolf boss level with a big chest.",
+          "memory": "Picnic basket = inventory. Grandma = boss.",
+          "tag": "example"
+        }
+      ]
+    },
+    {
+      "title": "The Triangle of Weirdness",
+      "bites": [
+        {
+          "id": "L03-b12",
+          "hook": "Production triangle: pick two",
+          "body": "The famous production triangle has Time, Quality and Money, and you can choose two. Games are limited only by imagination (and platform tech), allowing non-Newtonian physics, bizarre characters and absurd quests. But you can go too crazy, especially in the story.",
+          "example": "Fast and good means expensive; cheap and fast means lower quality.",
+          "f2p": "",
+          "memory": "Time, Quality, Money: two out of three.",
+          "tag": "concept"
+        },
+        {
+          "id": "L03-b13",
+          "hook": "Weirdness triangle: pick only ONE",
+          "body": "Rogers' Triangle of Weirdness has three corners: characters, activities, world. Unlike the production triangle, make only one corner weird. Choose more and you risk alienating your audience.",
+          "example": "Oz: weird characters, typical fairy-tale world. Star Wars: familiar archetypes, weird world. Holy Grail: archetypal knights, weird activities.",
+          "f2p": "Your ad has about 3 seconds to be understood. One weird corner is a hook; three is noise.",
+          "memory": "The triangle says CAW: Characters, Activities, World. Only one weird crow.",
+          "tag": "rule"
+        },
+        {
+          "id": "L03-b14",
+          "hook": "Oz: weird friends, normal road",
+          "body": "The Wizard of Oz has weird characters (a Tin Man, a Lion, a Scarecrow), but Oz was a fairly typical fairy-tale land when written in the 1900s, and the characters' desires are relatable: courage, love, getting home.",
+          "example": "Book doodle: the Oz gang skipping down the yellow brick road.",
+          "f2p": "Plants vs. Zombies 2: weird characters, ordinary backyard, familiar defend-the-house activity.",
+          "memory": "Weird faces, normal feelings.",
+          "tag": "example"
+        },
+        {
+          "id": "L03-b15",
+          "hook": "Star Wars: normal heroes, weird galaxy",
+          "body": "Star Wars' main characters are familiar (young hero, princess in distress, charming rogue) with familiar desires (join the war, defeat villains, get the girl). It's the world that's weird: Jawas, Wookiees, Jedi, and a cantina of strange scum.",
+          "example": "The cantina is the weirdness showcase.",
+          "f2p": "Premium mobile example: Monument Valley's impossible architecture with a simple walking character.",
+          "memory": "Farm boy in a freak-show galaxy.",
+          "tag": "example"
+        },
+        {
+          "id": "L03-b16",
+          "hook": "Holy Grail: normal knights, weird quests",
+          "body": "Monty Python and the Holy Grail has archetypal characters (King Arthur and his knights) on a classic quest through medieval England, but the activities are bizarre: fetching a shrubbery for the Knights Who Say Ni, being slaughtered by the killer rabbit of Caerbannog.",
+          "example": "Book doodle: knights with coconut horses fleeing a killer rabbit.",
+          "f2p": "Hole.io: a normal city, but your activity is being a hole that swallows it.",
+          "memory": "Normal knights, absurd chores.",
+          "tag": "example"
+        },
+        {
+          "id": "L03-b17",
+          "hook": "Nobody likes to feel stupid",
+          "body": "Go weird on every corner and audiences feel they 'didn't get it'. Unique and creative isn't enough if people feel stupid. Violate the Triangle of Weirdness at your own peril.",
+          "example": "Films Dune (1984) and The City of Lost Children (1995), games SkullMonkeys and Muscle Man March.",
+          "f2p": "A concept that tests poorly in ad creatives may simply have too many weird corners.",
+          "memory": "Confused players scroll past.",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "Three story audiences and tips",
+      "bites": [
+        {
+          "id": "L03-b18",
+          "hook": "Surfers, divers and skippers",
+          "body": "Ken Levine (Bioshock) observed three audience types: players into your story as it happens, players who want it in depth, and players who don't care at all. Serving all three is hard. Rule of thumb: story serves gameplay, never the reverse.",
+          "example": "Rogers credits the observation to Levine's 2009 GDC talk.",
+          "f2p": "In casual mobile, skippers are often the majority: every dialog needs a skip button.",
+          "memory": "Surf it, dive it, skip it.",
+          "tag": "list"
+        },
+        {
+          "id": "L03-b19",
+          "hook": "Give divers depth that never blocks the road",
+          "body": "For players who want more, provide details that don't get in the way of the main story.",
+          "example": "Bioshock and Batman: Arkham Asylum hide optional collectible audiotapes with deeper lore.",
+          "f2p": "Character profiles, collection books, codex entries and event side stories, common in gacha games like Genshin Impact.",
+          "memory": "Lore in the side pockets, not in the doorway.",
+          "tag": "rule"
+        },
+        {
+          "id": "L03-b20",
+          "hook": "Skippers will mash past your cutscene",
+          "body": "Ride-along players 'A button' through cutscenes and audio cues. Reveal story through gameplay and level design too, or they'll get lost. Or make story playable: flashbacks and puzzles. Yes, it's their fault for skipping, but the first rule of responsible design is love thy player.",
+          "example": "Playable flashbacks turn exposition into play.",
+          "f2p": "Renovation metas show progress visually: skip every line and you still see the room transform.",
+          "memory": "Love thy player, even the impatient one.",
+          "tag": "rule"
+        },
+        {
+          "id": "L03-b21",
+          "hook": "Start as late into the action as possible",
+          "body": "Kick the story off mid-boss-fight, just as a level wraps up, or halfway through a car chase. This works best for traditional stories; starting Tetris with dozens of pieces raining down is probably not a good idea.",
+          "example": "Rogers' Tetris caveat: abstract puzzle games don't need an in-media-res opening.",
+          "f2p": "FTUE: players should be playing within seconds. Save the story setup for after the first win.",
+          "memory": "Skip the alarm clock scene.",
+          "tag": "rule"
+        },
+        {
+          "id": "L03-b22",
+          "hook": "Change something every 15 minutes",
+          "body": "Keep stories lively. Professional screenwriters introduce a plot or action change roughly every 15 minutes. Even non-story games are moving to bite-sized sessions players can enjoy in short bursts.",
+          "example": "Rogers noted in 2010 that play sessions were getting bite-sized.",
+          "f2p": "Mobile sessions are often minutes long: give something new every session (new blocker, area, character line, reward).",
+          "memory": "Rogers predicted mobile and didn't know it.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Surprise, suspense and stakes",
+      "bites": [
+        {
+          "id": "L03-b23",
+          "hook": "Twist endings are overrated",
+          "body": "Rogers blames Hollywood for the twist-ending trend. Predictable endings have merit: wish fulfillment means people like seeing good guys win. Predicting outcomes makes players feel smart. You don't need to be clever, just entertaining.",
+          "example": "1980s James Bond films: you knew the gadget, the car, the saved world and the girl. You knew WHO, WHAT and WHY, not HOW.",
+          "f2p": "Casual players love the known shape (finish room, room looks great). The fun is the how.",
+          "memory": "Know the destination, enjoy the road.",
+          "tag": "concept"
+        },
+        {
+          "id": "L03-b24",
+          "hook": "Amnesia: the #1 game story cliché",
+          "body": "Writers use amnesia to mirror the player's lack of knowledge at the start. But it becomes an excuse for an unreliable narrator to hide information for a shock ending. It feels forced and isn't fair to the player.",
+          "example": "Rogers ranks amnesia as the number one video game cliché of all time.",
+          "f2p": "Mobile's fair alternative: the player is the newcomer (new mayor, new commander), so not knowing is natural.",
+          "memory": "Amnesia is the writer forgetting to be fair.",
+          "tag": "warning"
+        },
+        {
+          "id": "L03-b25",
+          "hook": "Show the bomb under the table",
+          "body": "Hitchcock: two men chat about baseball, then a bomb explodes: about 15 seconds of shock. Instead, show the bomb with a 5-minute timer first: the audience squirms, emotionally involved, and the climax is far more exciting. Footnote: don't kill the characters; in a game that's game over.",
+          "example": "Surprise lasts seconds; suspense lasts minutes.",
+          "f2p": "Candy Crush Saga's candy bombs show a countdown. Event timers, nearly-full chests and final-hour races are visible bombs.",
+          "memory": "Firecracker vs lit fuse.",
+          "tag": "concept"
+        },
+        {
+          "id": "L03-b26",
+          "hook": "Not every game must save the world",
+          "body": "Ask what's at stake. Not every movie is a blockbuster and not every game needs to save the world. Small themes matter as much as big ones. A theme other than 'violence solves all problems' is worth pursuing.",
+          "example": "Frogger, Zoo Tycoon and Braid worked without world-saving violence.",
+          "f2p": "Casual hits use small stakes: fixing a mansion (Homescapes), restoring a garden, building a town (Township).",
+          "memory": "Save the sofa, not the galaxy.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Time to wrap it up",
+      "bites": [
+        {
+          "id": "L03-b27",
+          "hook": "Games used to end when the code broke",
+          "body": "Early games had no ending, just a kill screen, or ran forever with scores wrapping like an odometer. Then Dragon's Lair made everyone wonder if Dirk rescued the princess, and the video game story was born.",
+          "example": "Kill screen: a bug, not a design. Pac-Man's level 256 garbles half the screen so the board can't be cleared; owners had to unplug the machine.",
+          "f2p": "F2P games are designed never to end, but hitting a content cliff causes churn.",
+          "memory": "Level 256: where Pac-Man's world fell apart.",
+          "tag": "example"
+        },
+        {
+          "id": "L03-b28",
+          "hook": "End when the player feels satisfied",
+          "body": "Average length: about 40 hours long ago, 20 in the old days, 8–10 in 2010, but it depends on the game. End when players feel satisfied. Dangling threads for replay or sequels are fine, but play fair: players should feel they accomplished everything they needed to.",
+          "example": "After 8 hours of Fallout 3 you've barely scratched the surface.",
+          "f2p": "F2P length is open-ended, but every chapter, event and season needs satisfying closure.",
+          "memory": "Leave them full, not stuffed or starving.",
+          "tag": "rule"
+        },
+        {
+          "id": "L03-b29",
+          "hook": "Build a world they'll come back to",
+          "body": "Extras let players continue after the story without rehearing it: multiple endings, minigames, unlockable and downloadable content, deleted levels like DVD deleted scenes. If players want to play in your world, they'll return. Some teams write story last; Rogers finds that nerve-wracking.",
+          "example": "Deleted levels are the game version of DVD extras.",
+          "f2p": "Today's version is LiveOps: events, side modes, season passes, collection albums. Involve narrative early to avoid bolted-on stories.",
+          "memory": "A world worth living in beats a story worth hearing once.",
+          "tag": "truth"
+        }
+      ]
+    },
+    {
+      "title": "Naming your game",
+      "bites": [
+        {
+          "id": "L03-b30",
+          "hook": "Four flavors of game title",
+          "body": "Literal: named after the main character, location, or a gameplay activity/component. Action/cool: captures the spirit without names. Punny: clever wordplay (careful, humor is subjective). Purple cow: makes people stop, stare and wonder why; after playing they understand.",
+          "example": "Literal: Sonic the Hedgehog, Castle Wolfenstein, Command & Conquer. Cool: Gears of War. Punny: Half-Life. Purple cow: LittleBigPlanet, Far Cry, Resident Evil.",
+          "f2p": "Literal: Block Blast!, Merge Mansion. Cool: Brawl Stars. Punny: Homescapes. Purple cow: Among Us.",
+          "memory": "LAP-Cow: Literal, Action, Punny, purple Cow.",
+          "tag": "list"
+        },
+        {
+          "id": "L03-b31",
+          "hook": "Purple cows own their words",
+          "body": "A purple cow title, named after Gelett Burgess' poem about a purple cow, grabs attention and once associated with your game, others can't use the word without evoking you.",
+          "example": "It'll be a long time before anyone names a game Halo.",
+          "f2p": "A distinctive word also helps you rank for your own name in store search.",
+          "memory": "Nobody forgets a purple cow.",
+          "tag": "concept"
+        },
+        {
+          "id": "L03-b32",
+          "hook": "Two or three syllables wins",
+          "body": "Short titles are easier to remember, say, and turn into logos for start screens and boxes. The habit likely began with arcade marquees, which had to grab attention, create mystery and describe gameplay. Subtitles should stay short too.",
+          "example": "Star Wars, Donkey Kong, Pac-Man, Halo. Defender sums up its game in one three-syllable word. Uncharted: Drake's Fortune and Batman: Arkham Asylum keep subtitles tight.",
+          "f2p": "Store names have tight character limits (around 30) and home-screen labels truncate. Many add a keyword after a colon for ASO.",
+          "memory": "If it doesn't fit on a marquee, or under an app icon, cut it.",
+          "tag": "rule"
+        },
+        {
+          "id": "L03-b33",
+          "hook": "Name it early, check it's free",
+          "body": "Name your game sooner rather than later; dev-made titles beat names invented later by others, and if you wait, publisher marketing will name it for you. Your title may already be in use or trademarked: check with legal before getting attached. A quick web search is a start.",
+          "example": "Rogers prefers titles developers create.",
+          "f2p": "Search both app stores for collisions and check meanings in key localization languages.",
+          "memory": "Don't fall in love before the background check.",
+          "tag": "rule"
+        },
+        {
+          "id": "L03-b54",
+          "hook": "Cool titles vs punny titles: worked examples",
+          "body": "An action/cool title captures the spirit of the game without naming characters or places. A punny title makes you appreciate its cleverness, but puns are word play and humor is subjective, so your audience may miss the reference.",
+          "example": "Cool: Darksiders, Brütal Legend, Gears of War. Punny: Just Cause, Half-Life, System Shock.",
+          "f2p": "Store-page titles are read in a second: a cool title like Brawl Stars works; a pun like Homescapes works only if players parse it instantly.",
+          "memory": "Cool = vibe, no nouns. Punny = a wink that must land.",
+          "tag": "example"
+        }
+      ]
+    },
+    {
+      "title": "Creating characters",
+      "bites": [
+        {
+          "id": "L03-b34",
+          "hook": "Devs only tell the second act",
+          "body": "Andy Ashcraft says developers only care about act 2, the grind toward act 3 (last level and boss). They skip act 1 with a cutscene or the manual nobody reads. But act 1 is where players learn about and care for a character, even one you'll kill repeatedly or turn into a killing machine.",
+          "example": "Rogers agrees with fellow designer Andy Ashcraft.",
+          "f2p": "FTUE is act 1: let players bond with the mascot or helper through a few warm lines and a shared win.",
+          "memory": "No act 1, no attachment.",
+          "tag": "concept"
+        },
+        {
+          "id": "L03-b35",
+          "hook": "Robocop should start as a human cop",
+          "body": "In the film, honest cop Alex Murphy earns our sympathy before being gunned down and rebuilt. The games showed his death in a cutscene and started you as Robocop. Rogers' fix: level 1 as Murphy, ending in his death, so the rebirth hits hard.",
+          "example": "Rogers knows why devs did it: cyborgs are more fun, 1988 carts lacked memory for two player models, and the game is called Robocop.",
+          "f2p": "Give players a short playable bond before a big story turn.",
+          "memory": "Not 'Guy Who Gets Shot and Eventually Becomes Robocop'.",
+          "tag": "example"
+        },
+        {
+          "id": "L03-b36",
+          "hook": "Make death matter",
+          "body": "Players must care before a death means anything, especially for non-main characters. Making the victim a relative isn't a shortcut if they die in the first cutscene. Invest time, even if you plan to kill them.",
+          "example": "Rogers played a game where the hero's relative died after one level; he felt none of the hero's righteous anger.",
+          "f2p": "Collectible heroes usually stay playable; F2P loss is softer: an NPC leaving, a betrayal, an area to rebuild.",
+          "memory": "No bond, no grief.",
+          "tag": "rule"
+        },
+        {
+          "id": "L03-b37",
+          "hook": "Make the character matter to gameplay",
+          "body": "Even better than story ties: make the character useful. They can teach you how to play, run the economy as the shopkeeper, or regularly hand out health. Remove them and the player feels it. Build characters up before tearing them down.",
+          "example": "Aeris in Final Fantasy VII: damsel, love-triangle member, plot problem-solver and playable party member. Her death hit on many levels.",
+          "f2p": "Tutorial guides, shopkeepers fronting daily deals, login-reward givers: charming helpers make the economy feel friendly.",
+          "memory": "The more jobs a character has, the bigger the hole they leave.",
+          "tag": "rule"
+        },
+        {
+          "id": "L03-b38",
+          "hook": "Pets can break hearts too",
+          "body": "Companions don't need to be human. All that matters is the bond the player has formed when the loss happens.",
+          "example": "Players mourned animal companions too: Dogmeat the dog from Fallout 3 and Agro the horse from Shadow of the Colossus.",
+          "f2p": "Pets and companions are strong F2P features precisely because players bond with them.",
+          "memory": "Bond first, loss second.",
+          "tag": "example"
+        },
+        {
+          "id": "L03-b39",
+          "hook": "The secret of game humor is character",
+          "body": "Comedy is harder than drama. Rogers believes humor comes from characters being true to themselves, reinforced by appearance, animation and voice barks, not from gags, jokes or burping.",
+          "example": "Team Fortress 2: the wry Australian sniper defending his job to his parents; the Russian heavy too fond of his sandvich.",
+          "f2p": "Supercell characters sell personality through animation and short videos rather than written jokes.",
+          "memory": "Funny people, not funny lines.",
+          "tag": "concept"
+        },
+        {
+          "id": "L03-b40",
+          "hook": "A demolitions expert doesn't knock",
+          "body": "If a character is defined by a profession or activity, most of their actions should relate to it. Start from personality and you get interesting animations and gameplay.",
+          "example": "The demolitions expert blows up the prison, maybe even a door instead of turning the knob. Impatient Maximo kicks treasure chests open.",
+          "f2p": "Brawl Stars: Dynamike the miner throws dynamite; Barley the robot bartender lobs bottles.",
+          "memory": "Kick the chest, don't open it.",
+          "tag": "rule"
+        },
+        {
+          "id": "L03-b41",
+          "hook": "Eight motivations that drive characters",
+          "body": "Characters can be driven by success, revenge, love, acceptance, escape, hunger, responsibility or knowledge. Many have several, often conflicting. Knowing them tells you what the character will do and say, making them richer.",
+          "example": "Conflicting motivations (love vs responsibility) create inner drama.",
+          "f2p": "Character motivations generate endless LiveOps event premises.",
+          "memory": "Some Really Lonely Aliens Eat Hot Rocks Kindly.",
+          "tag": "list"
+        },
+        {
+          "id": "L03-b42",
+          "hook": "Never name your barbarian Mortimer",
+          "body": "Names carry weight. Unless it's a parody or comedy, a mighty barbarian can't be Mortimer. Baby-name books help. Choose names tied to personality or occupation. Rule of thumb: look at the character's image; the name should fit.",
+          "example": "Luke Skywalker: homespun farm boy who longs for the stars. His original surname, Starkiller, would have spoiled the ending.",
+          "f2p": "F2P names must read in tiny UI and work across languages.",
+          "memory": "Never name a character after the ending.",
+          "tag": "rule"
+        },
+        {
+          "id": "L03-b43",
+          "hook": "Harry Burns vs Sally Allbright",
+          "body": "Juxtaposed names give instant personality snapshots, even if obvious. Comedic characters need fitting names too: not heroic, but perfect for their games.",
+          "example": "When Harry Met Sally: curmudgeonly Harry Burns vs sunny Sally Allbright. Comic names: Guybrush Threepwood, SpongeBob SquarePants, Larry Laffer.",
+          "f2p": "Pair a grumpy and a cheerful helper character for instant contrast in short dialogs.",
+          "memory": "Burns vs Allbright: the name is the personality.",
+          "tag": "example"
+        }
+      ]
+    },
+    {
+      "title": "Writing for kids of all ages",
+      "bites": [
+        {
+          "id": "L03-b44",
+          "hook": "Narnia isn't simple. Why is your kids' game?",
+          "body": "Writing for kids doesn't mean it has to stink. The most common mistake is oversimplifying 'because it's for kids'. Children's classics are full of complex themes, interactions and emotions. Coming of age means more than the hero finally carrying a sword.",
+          "example": "Where the Wild Things Are, Heidi, The Chronicles of Narnia.",
+          "f2p": "Casual mobile's broad audience enjoys cartoon looks but not dumbed-down content.",
+          "memory": "Simple look, smart soul.",
+          "tag": "rule"
+        },
+        {
+          "id": "L03-b45",
+          "hook": "Teach them without them noticing",
+          "body": "Kids' games (and all games) can teach while entertaining, not as 'edutainment' but like old movies and comics did. Don't be afraid to educate; players may learn something, and so may you while writing.",
+          "example": "One Batman comic taught Rogers about 1920s comedians, African masks, the opera Pagliacci and how paraffin wax changes color as it ages.",
+          "f2p": "Pokémon GO gets people exploring their neighborhoods; Duolingo shows how much learning players accept when it's wrapped in streaks.",
+          "memory": "Smuggle the vegetables into the pizza.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Writing for licenses",
+      "bites": [
+        {
+          "id": "L03-b46",
+          "hook": "Licensor, licensee, property: who's who",
+          "body": "A licensed game uses pre-existing IP from movies, comics, real life, TV or other games. The property is licensed for a fee by the licensee (publisher or developer) from the licensor (the owner). Public domain stories are free, but base your work on the original, not someone else's version.",
+          "example": "Properties: Star Wars, Batman, Harry Potter, SpongeBob. Licensors: Lucasfilm, DC Comics, J.K. Rowling, Nickelodeon. Public domain: Cinderella, Dracula, The Three Musketeers, Dante's Inferno.",
+          "f2p": "Licensed F2P: Marvel Snap, Pokémon GO, Monopoly GO!, Dragon Ball Legends, Star Wars: Galaxy of Heroes.",
+          "memory": "Licensor owns, licensee pays, property is the prize.",
+          "tag": "concept"
+        },
+        {
+          "id": "L03-b47",
+          "hook": "Brand limitations, and why you should still ask",
+          "body": "Paying doesn't let you make anything: you design within brand limitations (e.g., a character may not be allowed to kill). Some licensors are lenient, others strict. But ask: Rogers' team pitched a new genre for a license with 10+ similar games, and the tired licensor gave them more freedom.",
+          "example": "The licensor admitted they were tired of the same style but had never considered changing direction.",
+          "f2p": "Licensors may have rules on gacha, ads, pricing or offers. Every asset may need approval, so plan LiveOps further ahead.",
+          "memory": "It never hurts to ask.",
+          "tag": "rule"
+        },
+        {
+          "id": "L03-b48",
+          "hook": "Five tips for licensed games",
+          "body": "1) Know the license inside out and celebrate the fans. 2) Uncover the big no-nos early. 3) Get every reference: TV bibles, comic back issues, scripts, animatics, storyboards, production photos. 4) Visit the movie set and shoot reference. 5) Respect it, but make it your own and expand the fiction with the licensor.",
+          "example": "A 2-hour movie may not fill an 8–10 hour game, so the fiction must grow.",
+          "f2p": "Live games run for years: original variants and side stories, worked out with the licensor, fill the calendar.",
+          "memory": "Deep, Dealbreakers, Docs, Set, Spin.",
+          "tag": "list"
+        },
+        {
+          "id": "L03-b49",
+          "hook": "The vegetarian who couldn't eat the power-up",
+          "body": "A licensed game used hamburgers as an invulnerability power-up. One playable main character was a vegetarian, a fact never even mentioned in the show, and the creators objected to their character eating meat. The power-up had to change: discover the no-nos early.",
+          "example": "Rogers' cautionary tale for tip 2: uncover the big issues early.",
+          "f2p": "Clear monetization and character-use rules with licensors before building the economy.",
+          "memory": "Ask about allergies before cooking.",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "F2P bonus: narrative in mobile",
+      "bites": [
+        {
+          "id": "L03-b50",
+          "hook": "The renovation meta: story that pays for itself",
+          "body": "Play a match-3 level, earn stars, spend them on a story task (fix stairs, pick a sofa), see a short dialog, unlock the next task. Story serves gameplay, shows progress visually for skippers, keeps stakes small, and uses cliffhangers to pull players on.",
+          "example": "Homescapes (Austin the butler's mansion), Gardenscapes (the garden), Royal Match (King Robert's castle areas).",
+          "f2p": "Decor choices add LeBlanc's Expression fun. Keep ads honest: regulators have ruled against misleading game ads.",
+          "memory": "Every win buys a brick in the story.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L03-b51",
+          "hook": "Characters are F2P's most valuable IP",
+          "body": "Strong characters read at thumbnail size, power ads and merch, and can cross between games. In gacha, writing makes players want a character before the banner opens, so narrative directly drives revenue.",
+          "example": "Supercell reuses Clash characters across Clash Royale and Squad Busters. Brawl Stars gives every brawler a look, kit and voice.",
+          "f2p": "Start from personality (Rogers) and the kit, animations and marketing follow.",
+          "memory": "A mascot is a marketing budget that never sleeps.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L03-b52",
+          "hook": "Story as LiveOps fuel",
+          "body": "Episodic chapters and new regions in version updates work like TV seasons. Season passes wrap rewards in themes. Events can follow the 9-step arc across days. Character motivations generate endless event premises. A steady 'something new' cadence prevents stagnation.",
+          "example": "Genshin Impact and Honkai: Star Rail add story chapters in regular version updates.",
+          "f2p": "End each chapter with a visible bomb under the table to bring players back next session.",
+          "memory": "Cliffhanger today, login tomorrow.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "Universal Truths",
+      "bites": [
+        {
+          "id": "L03-b53",
+          "hook": "Nine truths of game story in one breath",
+          "body": "Some games need a story, all need gameplay. Every story has a beginning, middle and end. Story is not gameplay, and gameplay is not story. Nearly anything can become gameplay. Build a world players want to return to. A death must count. Short, descriptive names. Kids are sharp. Honor the license and add your spin.",
+          "example": "Each truth maps to a section of the chapter.",
+          "f2p": "For F2P, the world players want to return to is retention in one sentence.",
+          "memory": "Gameplay first, salt second, world forever.",
+          "tag": "truth"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "Some games need a story and some don't, but every game needs gameplay.",
+    "A story always has a beginning, a middle and an end.",
+    "Never confuse story with gameplay.",
+    "Almost anything can be turned into gameplay.",
+    "Build a world players want to be in, and they will return to play.",
+    "Make a death count.",
+    "Short, descriptive names win.",
+    "Kids are smarter than you think, so never underestimate them.",
+    "Honor the license, but add your own spin."
+  ],
+  "mnemonics": [
+    {
+      "name": "Classic story structure",
+      "device": "Desire, Disaster, Try, Fail, Flip, Worse, Worst, Win, Prize",
+      "unpacks": "Hero's desire; event causes problem; hero tries; method fails; reversal of fortune; greater problem; final biggest problem; hero resolves it; gains object of desire"
+    },
+    {
+      "name": "Triangle of Weirdness",
+      "device": "The triangle says CAW, and only one crow can be weird",
+      "unpacks": "Characters, Activities, World: make only one corner weird"
+    },
+    {
+      "name": "Three story audiences",
+      "device": "Surfers, Divers, Skippers",
+      "unpacks": "Into the story as it happens; want depth; don't care at all"
+    },
+    {
+      "name": "Four title types",
+      "device": "LAP-Cow",
+      "unpacks": "Literal, Action/cool, Punny, purple Cow"
+    },
+    {
+      "name": "Character motivations",
+      "device": "Some Really Lonely Aliens Eat Hot Rocks Kindly",
+      "unpacks": "Success, Revenge, Love, Acceptance, Escape, Hunger, Responsibility, Knowledge"
+    },
+    {
+      "name": "Licensed game tips",
+      "device": "Deep, Dealbreakers, Docs, Set, Spin",
+      "unpacks": "Know the license deeply; find the no-nos early; get all reference material; visit the set; make it your own"
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L03-f01",
+      "q": "What is Rogers' resolution of the story vs gameplay debate?",
+      "a": "A game doesn't need a story, yet it always has one (every play creates a narrative).",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f02",
+      "q": "What is step 1 of the classic story structure?",
+      "a": "A hero who has a desire",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f03",
+      "q": "In the classic structure, what happens right after the hero's first attempt?",
+      "a": "The method fails.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f04",
+      "q": "Classic structure step 5 is a ____ of fortune that causes more trouble.",
+      "a": "reversal",
+      "type": "cloze"
+    },
+    {
+      "id": "L03-f05",
+      "q": "What are steps 6 and 7 of the classic structure?",
+      "a": "An even greater problem with greater risk; then one last problem with the most risk of all.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f06",
+      "q": "What does every story ALWAYS have?",
+      "a": "A beginning, a middle and an end",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f07",
+      "q": "Which two standard structures does Rogers say you needn't be chained to?",
+      "a": "Joseph Campbell's Hero's Journey and Syd Field's Three Act Structure",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f08",
+      "q": "Name two other media Rogers suggests borrowing story structure from.",
+      "a": "Any two of: songs, TV news reports, Homeric poems, non-Western storytelling",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f09",
+      "q": "If gameplay is the meat, story is the ____.",
+      "a": "salt",
+      "type": "cloze"
+    },
+    {
+      "id": "L03-f10",
+      "q": "What does 'narrative' literally mean?",
+      "a": "An order of events",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f11",
+      "q": "Why do story-less games like Tetris still produce narratives?",
+      "a": "Humans perceive time linearly, so they experience and retell play as an ordered sequence of events.",
+      "type": "why"
+    },
+    {
+      "id": "L03-f12",
+      "q": "What is the designer's job regarding player narratives?",
+      "a": "Anticipate as many possible narratives as practical and make them all fun, building rising emotional states.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f13",
+      "q": "What three variables does Left 4 Dead's Director use to estimate stress (per the book)?",
+      "a": "Health, skill and location (among others)",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f14",
+      "q": "What does Left 4 Dead's Director adjust?",
+      "a": "Number of attacking zombies, items generated (ammo, health) and the music",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f15",
+      "q": "Name Rogers' three examples showing almost anything can be gameplay.",
+      "a": "Mr. Mosquito, SimCity, PaRappa the Rapper",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f16",
+      "q": "In Rogers' Little Red Riding Hood game, what does the full picnic basket act as?",
+      "a": "A gating mechanism (it unlocks Grandma's house, the next level)",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f17",
+      "q": "What game element does 'what big eyes you have' become?",
+      "a": "A quiz, a puzzle or a rhythm game",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f18",
+      "q": "What are the three corners of the production triangle?",
+      "a": "Time, Quality, Money (choose two)",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f19",
+      "q": "What are the three corners of the Triangle of Weirdness?",
+      "a": "Characters, Activities, World",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f20",
+      "q": "How many Triangle of Weirdness corners may you make weird?",
+      "a": "Only one",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f21",
+      "q": "Why make only one corner weird?",
+      "a": "More weirdness alienates the audience; people feel they 'didn't get it', and nobody likes to feel stupid.",
+      "type": "why"
+    },
+    {
+      "id": "L03-f22",
+      "q": "Which corner is weird in The Wizard of Oz?",
+      "a": "Characters",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f23",
+      "q": "Which corner is weird in Star Wars?",
+      "a": "World",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f24",
+      "q": "Which corner is weird in Monty Python and the Holy Grail?",
+      "a": "Activities",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f25",
+      "q": "Name two works Rogers says went too far with weirdness.",
+      "a": "Any two of: Dune (1984), The City of Lost Children (1995), SkullMonkeys, Muscle Man March",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f26",
+      "q": "Who observed the three types of story audience?",
+      "a": "Ken Levine, director of Bioshock (2009 GDC talk)",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f27",
+      "q": "What are the three types of story audience?",
+      "a": "Into the story as it happens; want it in depth; don't care at all",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f28",
+      "q": "What's the rule of thumb for serving all three audiences?",
+      "a": "Story serves the gameplay, never the other way around.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f29",
+      "q": "How did Bioshock and Batman: Arkham Asylum serve depth-seekers?",
+      "a": "Optional collectible audiotapes with deeper story details",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f30",
+      "q": "Why reveal story through gameplay and level design too?",
+      "a": "Many players skip cutscenes and audio cues; without it they get lost (love thy player).",
+      "type": "why"
+    },
+    {
+      "id": "L03-f31",
+      "q": "Screenwriters change plot or action about every ____ minutes.",
+      "a": "15",
+      "type": "cloze"
+    },
+    {
+      "id": "L03-f32",
+      "q": "When doesn't 'start late in the action' apply well?",
+      "a": "Games without a traditional story, like puzzle games such as Tetris.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f33",
+      "q": "Why does Rogers defend predictable endings?",
+      "a": "Wish fulfillment (good guys win) and predicting outcomes makes players feel smart; the fun is in the how.",
+      "type": "why"
+    },
+    {
+      "id": "L03-f34",
+      "q": "With 1980s Bond films, Rogers knew the WHO, WHAT and WHY but not the ____.",
+      "a": "HOW",
+      "type": "cloze"
+    },
+    {
+      "id": "L03-f35",
+      "q": "What does Rogers call the #1 video game story cliché?",
+      "a": "Amnesia",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f36",
+      "q": "Why does Rogers consider amnesia plots unfair?",
+      "a": "They become an excuse for an unreliable narrator to withhold information for a shock ending.",
+      "type": "why"
+    },
+    {
+      "id": "L03-f37",
+      "q": "In Hitchcock's example, how long does the surprise explosion's shock last?",
+      "a": "About 15 seconds",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f38",
+      "q": "Why does suspense beat surprise, per Hitchcock?",
+      "a": "Showing the danger in advance makes the audience emotionally involved for the whole scene.",
+      "type": "why"
+    },
+    {
+      "id": "L03-f39",
+      "q": "Name the three games Rogers cites for themes beyond 'violence solves all problems'.",
+      "a": "Frogger, Zoo Tycoon, Braid",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f40",
+      "q": "What was a kill screen originally?",
+      "a": "A screen caused by a bug or oversight, not a designed game over (e.g., Pac-Man level 256)",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f41",
+      "q": "Which game made players want to know if the hero rescued the princess, giving birth to game story?",
+      "a": "Dragon's Lair (Dirk)",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f42",
+      "q": "What average game length does Rogers cite for 2010?",
+      "a": "8–10 hours (vs about 20 in the old days and 40 in the really old days)",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f43",
+      "q": "When should a game end, according to Rogers?",
+      "a": "When the player feels satisfied and has accomplished everything they needed to (play fair).",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f44",
+      "q": "Name four kinds of extras that extend play after the story.",
+      "a": "Multiple endings, minigames, unlockable/downloadable content, deleted levels",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f45",
+      "q": "What are the four title types?",
+      "a": "Literal, action/cool, punny, purple cow",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f46",
+      "q": "What are the three sources of a literal title?",
+      "a": "Main character, main location, or a gameplay activity/component",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f47",
+      "q": "What's the risk of a punny title?",
+      "a": "The audience may not get the reference or find it funny; humor is subjective.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f48",
+      "q": "What's the big advantage of a purple cow title?",
+      "a": "Once a word is linked to your game, others can't use it without evoking your game (e.g., Halo).",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f49",
+      "q": "Why are short titles better?",
+      "a": "Easier to remember and say, and easier to make into logos for start screens and boxes.",
+      "type": "why"
+    },
+    {
+      "id": "L03-f50",
+      "q": "Which single word does Rogers call one of the best game names ever?",
+      "a": "Defender",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f51",
+      "q": "Why name your game early?",
+      "a": "Otherwise the publisher's marketing department will name it for you.",
+      "type": "why"
+    },
+    {
+      "id": "L03-f52",
+      "q": "Per Andy Ashcraft, which act do developers mostly tell?",
+      "a": "The second act",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f53",
+      "q": "Why does the first act matter for characters?",
+      "a": "It's where players learn about and come to care about the character, so later events have impact.",
+      "type": "why"
+    },
+    {
+      "id": "L03-f54",
+      "q": "How would Rogers redesign the Robocop game opening?",
+      "a": "Level 1 plays as human cop Alex Murphy, ending with his death, before he becomes Robocop.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f55",
+      "q": "Name three gameplay roles that make a character's loss felt.",
+      "a": "Teaching how to play, running the economy (shopkeeper), providing health power-ups",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f56",
+      "q": "Which game death does Rogers call the only truly impactful one?",
+      "a": "Aeris in Final Fantasy VII",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f57",
+      "q": "Where does humor come from, according to Rogers?",
+      "a": "Character: characters being true to themselves (e.g., Team Fortress 2)",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f58",
+      "q": "How did Maximo's personality shape his animations?",
+      "a": "He was impatient, so he kicked treasure chests open instead of opening them.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f59",
+      "q": "List Rogers' eight character motivations.",
+      "a": "Success, revenge, love, acceptance, escape, hunger, responsibility, knowledge",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f60",
+      "q": "What lesson comes from Luke Skywalker's original name, Starkiller?",
+      "a": "Never give a character a name that gives away the ending.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f61",
+      "q": "What's the rule of thumb for character names?",
+      "a": "When you look at the character's image, the name should fit what you see.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f62",
+      "q": "What's the most common mistake in writing for kids?",
+      "a": "Making the story too simple",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f63",
+      "q": "What's the difference between licensor and licensee?",
+      "a": "Licensor owns the property; licensee pays a fee to use it in a game.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f64",
+      "q": "What is a TV show 'bible'?",
+      "a": "A detailed document outlining the show's characters and worlds",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f65",
+      "q": "Why base public-domain games on the original material?",
+      "a": "Someone else's interpretation may be protected; the original is free.",
+      "type": "why"
+    },
+    {
+      "id": "L03-f66",
+      "q": "Your F2P event story is 4 screens of text before level 1. Which tip is broken?",
+      "a": "Start as late into the action as possible (and serve the skippers).",
+      "type": "apply"
+    },
+    {
+      "id": "L03-f67",
+      "q": "Your concept has alien heroes, on an alien planet, doing an alien sport. What's the risk?",
+      "a": "It violates the Triangle of Weirdness: players won't get it. Make two corners familiar.",
+      "type": "apply"
+    },
+    {
+      "id": "L03-f68",
+      "q": "You want players to feel tension in a limited-time event. Which idea fits?",
+      "a": "Hitchcock's suspense: show the danger in advance (visible timers, approaching threats).",
+      "type": "apply"
+    },
+    {
+      "id": "L03-f69",
+      "q": "Your story kills the shopkeeper in chapter 1 and nobody cares. What went wrong?",
+      "a": "No first act or bond: invest time and make the character important to gameplay before the loss.",
+      "type": "apply"
+    },
+    {
+      "id": "L03-f70",
+      "q": "A licensor forbids gacha mechanics after you built the economy. Which tip did you skip?",
+      "a": "Uncover the big issues (no-nos) early.",
+      "type": "apply"
+    },
+    {
+      "id": "L03-f71",
+      "q": "Your brawler is a chef but fights with a sniper rifle. Which principle is broken?",
+      "a": "Profession should drive actions: give the chef kitchen-themed attacks.",
+      "type": "apply"
+    },
+    {
+      "id": "L03-f72",
+      "q": "Your mobile game's name is 7 words long. What should you do?",
+      "a": "Shorten it (2–3 syllables ideal); store names have character limits and home screens truncate.",
+      "type": "apply"
+    },
+    {
+      "id": "L03-f73",
+      "q": "Name the book's examples of action/cool titles and of punny titles.",
+      "a": "Action/cool: Darksiders, Brütal Legend, Gears of War. Punny: Just Cause, Half-Life, System Shock.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f74",
+      "q": "Give the book's examples of literal titles by source (character, location, activity/component).",
+      "a": "Character: Sonic the Hedgehog, Voodoo Vince. Location: Castle Wolfenstein, Saints Row. Activity/component: Command & Conquer, Boom Blocks.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f75",
+      "q": "Where does the term \"purple cow\" come from, and which titles does the book use as purple cows?",
+      "a": "A poem by Gelett Burgess about never having seen a purple cow. Titles: LittleBigPlanet, Far Cry, Resident Evil (and Halo, a word now tied to its game).",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f76",
+      "q": "By roughly which page of the Robocop script do we care about Alex Murphy?",
+      "a": "About page 25: honest cop in futuristic Detroit, so his shooting hurts before he becomes the cyborg.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f77",
+      "q": "Give Rogers' three reasons the Robocop games started you as Robocop.",
+      "a": "(1) A criminal-blasting cyborg is more appealing than a fragile human. (2) 1988 cartridges lacked memory for two different player models. (3) The title is Robocop.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f78",
+      "q": "In Rogers' Little Red Riding Hood game, why can't you kill the wolf at the first encounter?",
+      "a": "It is the first enemy encounter and the wolf is the eventual boss, unless the early enemies are \"wolf minions\".",
+      "type": "why"
+    },
+    {
+      "id": "L03-f79",
+      "q": "What does Hitchcock add about the characters in the bomb-under-the-table scene, and why does it matter for games?",
+      "a": "Don't actually kill them; in a game that would be game over.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f80",
+      "q": "Why must designers craft pacing by hand if they have no Left 4 Dead style Director?",
+      "a": "Most developers lack that technology, so it is up to the designer to build those paced, emotional situations as best they can.",
+      "type": "why"
+    },
+    {
+      "id": "L03-f81",
+      "q": "How did arcade owners recover from the Pac-Man level-256 kill screen?",
+      "a": "Half the screen turns to garbled data so the board can't be cleared; owners had to unplug (\"kill\") the machine and restart it.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f82",
+      "q": "Match the licensors to their properties: Lucasfilm, DC Comics, J.K. Rowling, Nickelodeon.",
+      "a": "Lucasfilm: Star Wars. DC Comics: Batman. J.K. Rowling: Harry Potter. Nickelodeon: SpongeBob SquarePants.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f83",
+      "q": "Which public-domain properties does Rogers list, and what is the caveat?",
+      "a": "Dracula, Dante's Inferno, Cinderella, The Three Musketeers, The Wizard of Oz, The Bible. Base your game on the original material, not someone else's interpretation.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f84",
+      "q": "Which name pairs does Rogers use as examples of juxtaposed names and of comedic names?",
+      "a": "Juxtaposed: Harry Burns (curmudgeonly) and Sally Allbright (positive, naive) from When Harry Met Sally. Comedic: Guybrush Threepwood, SpongeBob SquarePants, Larry Laffer.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f85",
+      "q": "What did a childhood Batman comic teach Rogers, and what point does that prove?",
+      "a": "African masks, 1920s comedians, the opera Pagliacci and how paraffin wax changes color over the years: entertainment can teach without feeling like edutainment.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f86",
+      "q": "Which Team Fortress 2 characters does Rogers use to show humor from character?",
+      "a": "The wry Australian sniper who defends his job to his parents and the Russian heavy who loves his \"sanviches\"; looks, animations and voice barks all reinforce their personalities.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f87",
+      "q": "At GDC, which game does each side shout in the story vs gameplay fight?",
+      "a": "Pro-story designers shout Bioshock; anti-story designers shout Doom.",
+      "type": "basic"
+    },
+    {
+      "id": "L03-f88",
+      "q": "What does each camp in the story vs gameplay debate claim?",
+      "a": "Pro-story: games need a story to engage players and are an artistic medium for telling stories. Anti-story: story is how people describe play afterward, or what you watch while the game loads.",
+      "type": "basic"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "L03-q01",
+      "q": "What is Rogers' position in the story vs gameplay debate?",
+      "options": [
+        "Story is always more important",
+        "Gameplay is all that matters; story is filler",
+        "A game doesn't need a story, yet it always has one",
+        "Only RPGs need stories"
+      ],
+      "answer": 2,
+      "why": "Both camps are right and wrong: every playthrough creates a narrative even without a written story. The other options take one extreme side."
+    },
+    {
+      "id": "L03-q02",
+      "q": "In the classic 9-step structure, what immediately follows the hero's failed method?",
+      "options": [
+        "The final problem",
+        "A reversal of fortune causing more trouble",
+        "The hero gains the desire",
+        "An event that creates the first problem"
+      ],
+      "answer": 1,
+      "why": "Order: desire, event/problem, attempt, failure, reversal, greater problem, final problem, resolution, reward. The first problem comes before the attempt."
+    },
+    {
+      "id": "L03-q03",
+      "q": "What does the meat-and-salt metaphor mean?",
+      "options": [
+        "Story should be the main course",
+        "A little story adds flavor; too much ruins the game",
+        "Gameplay and story should be equal",
+        "Salty players skip story"
+      ],
+      "answer": 1,
+      "why": "Gameplay is the meat; story is seasoning. It's not about equality or making story the main course."
+    },
+    {
+      "id": "L03-q04",
+      "q": "Left 4 Dead's Director is Rogers' example of what?",
+      "options": [
+        "A cutscene system",
+        "A system that shapes pacing and emotion based on player stress",
+        "A level editor",
+        "Procedural story writing"
+      ],
+      "answer": 1,
+      "why": "It reads stress (health, skill, location) and adjusts zombies, items and music to choreograph the player's narrative. It doesn't write story text."
+    },
+    {
+      "id": "L03-q05",
+      "q": "In Rogers' Little Red Riding Hood game, the 'what big eyes you have' scene becomes:",
+      "options": [
+        "A cutscene",
+        "A boss fight",
+        "A quiz, puzzle or rhythm game",
+        "A collectible hunt"
+      ],
+      "answer": 2,
+      "why": "The questioning becomes a quiz/puzzle/rhythm game; the reveal afterward is the boss fight; the forest walk is the collection phase."
+    },
+    {
+      "id": "L03-q06",
+      "q": "How does the Triangle of Weirdness differ from the production triangle?",
+      "options": [
+        "You pick two corners in both",
+        "You pick only one weird corner instead of two",
+        "It has four corners",
+        "It applies only to art style"
+      ],
+      "answer": 1,
+      "why": "Production triangle: pick two of time, quality, money. Weirdness triangle: make only one of characters, activities, world weird."
+    },
+    {
+      "id": "L03-q07",
+      "q": "Star Wars illustrates which weird corner?",
+      "options": [
+        "World",
+        "Characters",
+        "Activities",
+        "None"
+      ],
+      "answer": 0,
+      "why": "Its characters are familiar archetypes with familiar desires; the world (Jawas, Wookiees, Jedi, the cantina) is weird. Oz is weird characters; Holy Grail is weird activities."
+    },
+    {
+      "id": "L03-q08",
+      "q": "Your F2P concept: bizarre blob creatures on a melting crystal planet doing an invented sport. Ad tests flop. What's the likeliest diagnosis?",
+      "options": [
+        "Art quality is too low",
+        "It breaks the Triangle of Weirdness: too many weird corners",
+        "The title is too long",
+        "Players hate sports"
+      ],
+      "answer": 1,
+      "why": "Weird characters + weird world + weird activity means viewers can't grasp it in seconds. Keep two corners familiar."
+    },
+    {
+      "id": "L03-q09",
+      "q": "Who does Rogers credit with the three types of story audience?",
+      "options": [
+        "Syd Field",
+        "Ken Levine",
+        "Tim Schafer",
+        "Andy Ashcraft"
+      ],
+      "answer": 1,
+      "why": "Ken Levine (Bioshock) at GDC 2009. Syd Field is the Three Act Structure, Schafer is wish fulfillment (L02), Ashcraft is the second-act observation."
+    },
+    {
+      "id": "L03-q10",
+      "q": "Best way to keep cutscene-skipping players from getting lost?",
+      "options": [
+        "Make cutscenes unskippable",
+        "Also reveal story through gameplay and level design",
+        "Put the story in the manual",
+        "Remove the story"
+      ],
+      "answer": 1,
+      "why": "Rogers: reveal story through gameplay/level design, or make it playable (flashbacks, puzzles). Forcing cutscenes contradicts 'love thy player'."
+    },
+    {
+      "id": "L03-q11",
+      "q": "Why does Rogers defend predictable endings?",
+      "options": [
+        "They're cheaper to write",
+        "Players enjoy wish fulfillment and feeling smart; the fun is the how",
+        "Twists are illegal in games",
+        "Publishers demand them"
+      ],
+      "answer": 1,
+      "why": "Like 1980s Bond films: you know who, what and why; the fun is how. Cost and publishers aren't his arguments."
+    },
+    {
+      "id": "L03-q12",
+      "q": "Why does Rogers dislike amnesia plots?",
+      "options": [
+        "They're hard to animate",
+        "They excuse withholding info for an unfair shock ending",
+        "Players can't relate to amnesia",
+        "They make games too long"
+      ],
+      "answer": 1,
+      "why": "It mirrors the player's ignorance but becomes an unreliable-narrator trick. Fairness is the issue, not animation or length."
+    },
+    {
+      "id": "L03-q13",
+      "q": "Your event's finale is a sudden surprise attack nobody saw coming. Applying Hitchcock, what's better?",
+      "options": [
+        "Make the surprise louder",
+        "Show the threat coming days ahead with a visible countdown",
+        "Remove the finale",
+        "Hide the timer"
+      ],
+      "answer": 1,
+      "why": "Suspense (showing the bomb under the table) keeps players emotionally involved far longer than a 15-second surprise."
+    },
+    {
+      "id": "L03-q14",
+      "q": "What does Rogers recommend for how long a game should be?",
+      "options": [
+        "Always exactly 8–10 hours",
+        "At least 40 hours",
+        "End when the player feels satisfied and fairly accomplished",
+        "As long as possible"
+      ],
+      "answer": 2,
+      "why": "8–10 hours was the 2010 average, but he says it depends; end at satisfaction and play fair."
+    },
+    {
+      "id": "L03-q15",
+      "q": "Far Cry, LittleBigPlanet and Resident Evil are examples of which title type?",
+      "options": [
+        "Literal",
+        "Punny",
+        "Action/cool",
+        "Purple cow"
+      ],
+      "answer": 3,
+      "why": "Purple cow titles make you stop and wonder why; their meaning clicks after playing. Half-Life is punny; Gears of War is cool; Sonic is literal."
+    },
+    {
+      "id": "L03-q16",
+      "q": "What problem does Rogers see in most Robocop game adaptations?",
+      "options": [
+        "Bad controls",
+        "They skipped the first act, showing Murphy's death only as a cutscene",
+        "Too much story",
+        "The cyborg was too weak"
+      ],
+      "answer": 1,
+      "why": "Without a playable human first act, players never bond with Murphy, so his death and rebirth lack impact."
+    },
+    {
+      "id": "L03-q17",
+      "q": "Why did Aeris' death in Final Fantasy VII hit so hard, per Rogers?",
+      "options": [
+        "It was a surprise",
+        "She filled many roles, including a playable party member",
+        "The cutscene was long",
+        "She was the main character"
+      ],
+      "answer": 1,
+      "why": "Damsel, love-triangle member, plot problem-solver and playable party member: her loss was felt on many levels. She wasn't the main character."
+    },
+    {
+      "id": "L03-q18",
+      "q": "Where does Rogers say game humor really comes from?",
+      "options": [
+        "Physical gags",
+        "Jokes in dialog",
+        "Characters true to themselves",
+        "Burping and farting"
+      ],
+      "answer": 2,
+      "why": "Team Fortress 2 is funny through consistent personalities in look, animation and barks, not gags or jokes."
+    },
+    {
+      "id": "L03-q19",
+      "q": "What's the most common mistake writing stories for kids?",
+      "options": [
+        "Too much violence",
+        "Making the story too simple",
+        "Too many characters",
+        "Using animals"
+      ],
+      "answer": 1,
+      "why": "Children's classics like Narnia and Heidi have complex themes; oversimplifying 'because it's for kids' is the mistake."
+    },
+    {
+      "id": "L03-q20",
+      "q": "A licensed game used hamburgers as power-ups, but a playable character was vegetarian. Which tip does this illustrate?",
+      "options": [
+        "Visit the set",
+        "Uncover the big issues early",
+        "Get the TV bible",
+        "Make it your own"
+      ],
+      "answer": 1,
+      "why": "The no-no wasn't even in the episodes; asking the licensor early would have saved rework."
+    },
+    {
+      "id": "L03-q21",
+      "q": "Your casual mobile game has a long story intro before the first level and D1 retention is weak. Best first fix?",
+      "options": [
+        "Add more story",
+        "Start late in the action: get players playing in seconds, story after the first win",
+        "Add an amnesia twist",
+        "Make the intro unskippable"
+      ],
+      "answer": 1,
+      "why": "Start late, serve skippers and keep story in service of gameplay. More or forced story worsens the FTUE."
+    }
+  ],
+  "sideQuests": [
+    {
+      "id": "L03-s01",
+      "title": "Nine-Doodle Story",
+      "task": "Draw the 9-step structure as stick figures for a match-3 event about saving a bakery, one doodle per step.",
+      "minutes": 10,
+      "xp": 35
+    },
+    {
+      "id": "L03-s02",
+      "title": "Triangle Audit",
+      "task": "For 5 games on your phone, mark which corner (characters, activities, world) is weird. Find one that breaks the rule and judge whether it suffers.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L03-s03",
+      "title": "Little Red Remix",
+      "task": "Turn another fairy tale into a 5-beat game outline with exploration, inventory, gating, a mini-game and a boss.",
+      "minutes": 15,
+      "xp": 40
+    },
+    {
+      "id": "L03-s04",
+      "title": "Title Forge",
+      "task": "Write one title of each type (literal, cool, punny, purple cow) for one idea, ideally 2–3 syllables, then search the stores for collisions.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L03-s05",
+      "title": "Bomb Under the Table",
+      "task": "Redesign a surprise moment from a game you know as suspense: what does the player see coming, and for how long?",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L03-s06",
+      "title": "Name Fit Test",
+      "task": "Sketch or describe 3 characters, name them, and ask a friend whether each name fits the look.",
+      "minutes": 10,
+      "xp": 25
+    },
+    {
+      "id": "L03-s07",
+      "title": "Skipper Test",
+      "task": "Play a story-meta mobile game skipping every dialog. Note whether you still understand the goal and what told you.",
+      "minutes": 15,
+      "xp": 40
+    }
+  ],
+  "mainQuests": [
+    {
+      "id": "L03-m01",
+      "title": "Write a Light Meta-Narrative for an F2P Game",
+      "task": "Pick a core loop. Write a one-page narrative bible (setting with one weird corner, main character with name, look, personality and 2+ motivations, a helper important to gameplay, a title of a chosen type). Write Chapter 1 as 9 beats tied to gameplay actions, 6 dialog popups of max 2 lines, and a cliffhanger leading into a LiveOps event.",
+      "deliverable": "Narrative bible, 9-beat chapter, 6 dialogs, cliffhanger",
+      "doneWhen": "Every beat links to a gameplay action, the chapter makes sense with all dialogs skipped, a friend can retell it from environment changes alone, and the title passed a store search. Bonus: post Chapter 1 publicly.",
+      "minutes": 150,
+      "xp": 220
+    }
+  ],
+  "playLabs": [
+    {
+      "id": "L03-p01",
+      "game": "Homescapes",
+      "minutes": 10,
+      "lookFor": "The loop: level, stars, task, dialog, new task",
+      "question": "How much story per minute of play do you get, and can you follow the plot while skipping dialogs?"
+    },
+    {
+      "id": "L03-p02",
+      "game": "Royal Match",
+      "minutes": 10,
+      "lookFor": "Moments of visible danger to the king or nearly-complete areas",
+      "question": "Where does the game use suspense rather than surprise?"
+    },
+    {
+      "id": "L03-p03",
+      "game": "Brawl Stars",
+      "minutes": 10,
+      "lookFor": "5 brawlers' looks, kits, animations and voice lines",
+      "question": "How do look, kit and voice match each personality or profession? Which is most 'true to themselves'?"
+    },
+    {
+      "id": "L03-p04",
+      "game": "Marvel Snap, Pokémon GO or Monopoly GO!",
+      "minutes": 10,
+      "lookFor": "Details that show deep knowledge of the license",
+      "question": "Where did the team celebrate the license, and where did they make it their own?"
+    }
+  ],
+  "retrieval": [
+    {
+      "q": "What's Rogers' answer to story vs gameplay?",
+      "a": "Games don't need a story but always have one: every playthrough creates a narrative."
+    },
+    {
+      "q": "List the 9 steps of the classic story structure.",
+      "a": "Hero with desire; event causes problem; hero tries; method fails; reversal of fortune; greater problem; final biggest problem; hero resolves it; gains the desire."
+    },
+    {
+      "q": "What's the difference between story and narrative?",
+      "a": "Story is what the writer tells; narrative is the order of events the player experiences. Designers should make all likely narratives fun."
+    },
+    {
+      "q": "How does Left 4 Dead's Director shape the player's narrative?",
+      "a": "It estimates stress from health, skill and location, then adjusts zombie numbers, item spawns and music."
+    },
+    {
+      "q": "How would you turn Little Red Riding Hood into a game?",
+      "a": "Forest exploration with basket inventory, first wolf encounter, full basket gates Grandma's house, quiz/puzzle/rhythm questioning, wolf boss fight."
+    },
+    {
+      "q": "Explain the Triangle of Weirdness with its three examples.",
+      "a": "Characters, activities, world: make only one weird. Oz = characters, Star Wars = world, Holy Grail = activities. Too much weird (Dune, SkullMonkeys) loses audiences."
+    },
+    {
+      "q": "What are the three story audiences and how do you serve them?",
+      "a": "As-it-happens fans, depth-seekers, don't-cares. Optional lore, story through gameplay/level design, story serves gameplay, start late, change things every ~15 minutes."
+    },
+    {
+      "q": "Why prefer suspense to surprise?",
+      "a": "Hitchcock: a surprise bomb shocks for ~15 seconds; showing the bomb with a timer keeps the audience involved for minutes."
+    },
+    {
+      "q": "What does Rogers say about endings and length?",
+      "a": "End when players feel satisfied and fairly accomplished; length depends on the game; extras (multiple endings, minigames, DLC, deleted levels) keep them in a world they love."
+    },
+    {
+      "q": "What are the four title types and the rules for titles?",
+      "a": "Literal, action/cool, punny, purple cow. Keep them short (2–3 syllables), name early, check trademarks."
+    },
+    {
+      "q": "How do you make a character's death matter?",
+      "a": "Give a first act to bond, invest time, and make the character important to gameplay (teacher, shopkeeper, healer), like Aeris."
+    },
+    {
+      "q": "How should personality and profession shape characters?",
+      "a": "Actions follow profession (demolitions expert blows up doors), personality drives animation (Maximo kicks chests), humor comes from characters true to themselves, names fit the look."
+    },
+    {
+      "q": "What are Rogers' five licensed-game tips?",
+      "a": "Know it inside out; find no-nos early; collect all reference; visit the set; respect it but make it your own."
+    },
+    {
+      "q": "How does story work in F2P mobile?",
+      "a": "As a meta-layer (renovation stories), as character IP that drives marketing and gacha revenue, and as LiveOps fuel (episodic chapters, seasonal themes, collabs)."
+    }
+  ],
+  "feynman": "Explain the Triangle of Weirdness and suspense vs surprise to a 12-year-old in 60 seconds, using one movie they know and one mobile game they play.",
+  "links": [
+    "L02",
+    "L04",
+    "L05",
+    "L09",
+    "L11",
+    "L16",
+    "F2P"
+  ]
+}

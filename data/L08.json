@@ -1,0 +1,1869 @@
+{
+  "id": "L08",
+  "order": 9,
+  "kind": "book",
+  "label": "Level 8",
+  "title": "Sign Language — HUD and Icon Design",
+  "bookPages": "171–196",
+  "emoji": "🪧",
+  "tagline": "Your screen is a sign language. Speak it so clearly that nobody needs subtitles.",
+  "f2pRelevance": 5,
+  "f2pWhy": "In F2P mobile the lobby, currency bar, red dots, store and results screens are HUD, and their clarity, thumb reach and readability directly drive retention and revenue.",
+  "minutes": 80,
+  "tldr": [
+    "The HUD is any visual element that tells the player something. The 7 classics are health, reticule, ammo, inventory, score, radar/map and context prompt. Keep them clear, clean, simple.",
+    "Keep the center for the action and vital info top-left. Stay inside the safe area, avoid bracketing the screen, and fade inactive HUD with an easy recall.",
+    "Icons: right and current image, color plus shape coding, no text, strong outlines, no look-alikes, feedback on press, biggest = most important. KYSS.",
+    "QTEs: only for big cinematic moments, a beat to see and a beat to press, predictable, short, consistent and optional.",
+    "Three-Press Rule: no screen more than 3 presses away. Plan the pause screen like a level, and make loading, save, tally, legal and credits screens fun.",
+    "F2P: safe areas and notches, thumb zones, a 1-tap PLAY button, honest red dots, decluttered lobbies, clear store UI, and localization-ready fonts."
+  ],
+  "sections": [
+    {
+      "title": "Welcome to the HUD zone",
+      "bites": [
+        {
+          "id": "L08-b01",
+          "hook": "Anything on screen that tells you something is HUD",
+          "body": "Rogers defines the HUD (named after fighter-jet heads-up displays) as ANY visual element that communicates information to the player. It is the designer's most effective communication channel. It can carry information, emotion, direction (where to go) and instruction (what to do).",
+          "example": "The book's zombie-shooter figure numbers every element: score top-left, health bar under it, ammo down the left edge, inventory bottom-left, radar bottom-right, reticule on the zombie, and a \"!\" over a usable fire extinguisher.",
+          "f2p": "By this definition the F2P lobby is HUD too: currency bars, event buttons, timers and red dots all count, so judge them by how clearly they communicate.",
+          "memory": "HUD = the game's sign language. If players need subtitles, you are not fluent yet.",
+          "tag": "concept"
+        },
+        {
+          "id": "L08-b02",
+          "hook": "The 7 classic HUD elements",
+          "body": "A typical game screen carries seven classics: health bar (or lives), the aiming reticule, an ammo gauge, inventory, score or XP, a radar or map, and the context prompt. Self-explanatory extras include fuel gauges, speedometers and countdown timers. For all of them, the winning formula is the same: clear, clean, simple.",
+          "example": "In the book figure, status info hugs corners and edges, the reticule sits dead center, and the prompt floats in-world above the object it refers to.",
+          "f2p": "Mobile versions: HP over units, aim previews, elixir/energy bars, booster trays, stars and trophies, mini-maps or saga maps, and contextual action buttons.",
+          "memory": "Happy Teens Always Invite Some Real Company: Health, Targeting, Ammo, Inventory, Score, Radar, Context.",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "Health bar",
+      "bites": [
+        {
+          "id": "L08-b03",
+          "hook": "Health bars are the shape-shifters of the HUD",
+          "body": "The health bar shows how close the player is to death or a restart, and it is the most flexible HUD element. Forms: a bar or icons that drain, an inverted damage bar that fills, an on-board defense system, shields (one hit from death when empty, or shown as a %), even story.",
+          "example": "Metroid: suit systems. Star Wars: X-Wing: shields with a % readout. Assassin's Creed: stray from the \"correct\" story and the narrator objects, then resets you (desynchronization). The figure shows a bar, hearts, and a demon holding a health orb.",
+          "f2p": "Match-3 move counters are a level's health bar, and Brawl Stars puts HP bars over each brawler. Theme fail meters to your fiction (\"energy\", \"mood\").",
+          "memory": "Bar, hearts, orb, shield, story, heartbeat: six faces of \"almost dead\".",
+          "tag": "list"
+        },
+        {
+          "id": "L08-b04",
+          "hook": "Wait for health beats a game-over screen",
+          "body": "Losing health need not be permanent. With regenerating health, the player finds cover, waits, and refills to full. Rogers calls it a good compromise compared with a death screen, which pulls the player out of the game.",
+          "example": "Halo popularized the \"wait for health\" recharge, and it has since become standard in action games.",
+          "f2p": "Puzzle games stretch this across real hours: lives refill on a timer. Brawl Stars brawlers regenerate after a short time out of combat.",
+          "memory": "Duck, breathe, heal: the Halo nap.",
+          "tag": "concept"
+        },
+        {
+          "id": "L08-b05",
+          "hook": "Screen effects can replace the bar, if they stay readable",
+          "body": "Damage can be shown with first-person-style effects (used in third person too): blood smears or a red blur pointing toward the damage source, screen fritz on electric hits, darkening with heavy breathing and a heartbeat. Do not obscure the view so much that players cannot see the action.",
+          "example": "Uncharted 2 (directional blur, darkening), Metroid Prime and Batman: Arkham Asylum (fritz), Call of Duty (darkening with heartbeat audio), Silent Hill (rumble heartbeat while dying).",
+          "f2p": "Mobile shooters show red edge arcs pointing at the attacker. Phone haptics replace rumble, so always offer a toggle.",
+          "memory": "The moment you are nearly dead is the moment you most need to see.",
+          "tag": "warning"
+        },
+        {
+          "id": "L08-b06",
+          "hook": "The F2P fail screen is a business moment",
+          "body": "In F2P, running out of health or moves often triggers a \"continue?\" offer (pay gems or watch an ad). Rogers' warning that death screens pull players out still applies, so make the screen fast, honest and skippable.",
+          "example": "A typical match-3 out-of-moves screen offers extra moves for premium currency.",
+          "f2p": "Never fake near-wins to sell continues. Show the exact offer, and make declining one obvious tap.",
+          "memory": "A continue screen should feel like a helping hand, not a mugging.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "Targeting",
+      "bites": [
+        {
+          "id": "L08-b07",
+          "hook": "Reticules: visible, not dominant, never pure white",
+          "body": "A targeting reticule helps players find or lock onto ranged targets, from a laser dot to a lock-on showing health and range. It should not dominate the screen or be too small to see. White reticules vanish on some surfaces and backgrounds. Zoom modes are common, and some reticules resize for precision.",
+          "example": "Red Faction: Guerrilla (2009) changes reticule size when zoomed. The book figure contrasts a simple scope crosshair with an ornate lock-on frame.",
+          "f2p": "Phones get played outdoors at low brightness, so give crosshairs and aim previews dark outlines.",
+          "memory": "A white crosshair on a white wall is a ghost, not a guide.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b08",
+          "hook": "Make the reticule flirt: color change plus sticky aim",
+          "body": "Have the reticule change color or sharpen when it is over a target, which cues the player to fire. Add stickiness (aim assist) so it gravitates toward targets for faster aiming. This works especially well for vehicle weapons.",
+          "example": "Many shooters tint the crosshair red over an enemy. Aim assist keeps controller and vehicle aiming fluid.",
+          "f2p": "Touch aiming needs this badly: tap to auto-target the nearest enemy, drag to aim manually (Brawl Stars). COD Mobile layers aim assist and an optional auto-fire.",
+          "memory": "Notice, light up, lean in: a reticule with a crush.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b09",
+          "hook": "Build gameplay into the reticule",
+          "body": "UI can be a mechanic. Rogers suggests designing reticules that create interaction, not just information.",
+          "example": "Team Fortress 2: the zoomed sniper reticule projects a laser dot that enemies can see, so they can try to dodge the shot.",
+          "f2p": "Mobile action games flip it: red ground markers or lines telegraph enemy attacks, turning a targeting display into a dodge mechanic.",
+          "memory": "TF2's laser dot says \"I see you\" to both players.",
+          "tag": "example"
+        }
+      ]
+    },
+    {
+      "title": "Ammo gauge",
+      "bites": [
+        {
+          "id": "L08-b10",
+          "hook": "The ammo gauge is the most-watched number on screen",
+          "body": "Bullets or a number, the ammo gauge is one of the most-watched readouts, so scarce-ammo games must put it somewhere easy to see. If there is room, show clips and individual bullets. Bring up other ammo types with a button press. Always show the armed weapon's ammo, and display it even when infinite, since it tells players which weapon is armed.",
+          "example": "Resident Evil 2 (scarce ammo), Operation Wolf (clips + bullets), Ratchet & Clank: Tools of Destruction (grenades and rockets on a button), Metal Slug (shows infinite ammo). Figure: a \"7 | 30\" readout.",
+          "f2p": "Clash Royale's elixir bar sits right under the card hand. Ability buttons show charge rings, so the gauge lives on the button you press.",
+          "memory": "The scarcer the fuel, the bigger and closer the gauge.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Inventory",
+      "bites": [
+        {
+          "id": "L08-b11",
+          "hook": "Inventory: grab fast, admire slowly",
+          "body": "Inventory lets players track and use collected objects (keys, potions, puzzle items, weapons). It needs quick access via hotkeys or drag-and-drop for things like potions and spell components, and a place to inspect items in all their glory.",
+          "example": "Tomb Raider (1995) shows Lara's backpack items at a larger scale for inspection. The book figure shows a paper-doll equipment screen above an item grid.",
+          "f2p": "In-level items belong in a booster tray within thumb reach, never inside a menu.",
+          "memory": "Holster for speed, display case for pride.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b12",
+          "hook": "Limited inventory can be a puzzle, and should grow",
+          "body": "Size-based grids turn packing into a puzzle. Items can look realistic or iconic, but need clear silhouettes and simple color schemes. If inventory is restricted, let it expand later: pouch, then backpack, then a magic bag of infinite holding.",
+          "example": "Diablo gives each item a size in a limited grid, so players must fit as much as possible.",
+          "f2p": "Merge games make board space the inventory puzzle. Extra storage slots are a classic premium sink, so keep limits interesting, not pure pain.",
+          "memory": "Pouch, backpack, bag of holding: inventory that hits the gym.",
+          "tag": "concept"
+        },
+        {
+          "id": "L08-b13",
+          "hook": "Never lose the player's stuff",
+          "body": "Give players a permanent place (like a home base) to store items, because nobody likes losing what they found or bought. Even better is a \"magic box\": items stored in one box appear in boxes found later, so there is no backtracking.",
+          "example": "Resident Evil 2's linked item boxes.",
+          "f2p": "The mailbox/inbox is F2P's magic box. When inventory is full, overflow goes to the mail, never deleted. Purchased items vanishing is a trust disaster.",
+          "memory": "Lose a player's loot and you lose the player.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Score",
+      "bites": [
+        {
+          "id": "L08-b14",
+          "hook": "From 1-digit scores to leaderboards",
+          "body": "The earliest games had single-digit scores, then four digits, then six. In the early-80s arcade boom, the high score (and your three initials) was king. At home, stat tracking and text combo meters took over. Online leaderboards then revived scoring alongside stats and achievements.",
+          "example": "Pong and Computer Space (1 digit), Space Invaders (4), Galaxian (6), Devil May Cry (combo meters), Final Fantasy (JRPG scoring), Borderlands (scoring in Western RPGs).",
+          "f2p": "Weekly tournaments, league ladders, trophy roads and guild rankings make scoring central to F2P again.",
+          "memory": "Score had a midlife crisis, then got online and became famous again.",
+          "tag": "fun"
+        },
+        {
+          "id": "L08-b15",
+          "hook": "You cannot overdo congratulating the player",
+          "body": "Games easily make players feel clumsy but rarely make them feel brilliant. So when scoring happens, make it big and flashy.",
+          "example": "Zack & Wiki (Capcom, 2007) rewards every small success with fireworks, congratulatory text and back-flipping pirate rabbits, so even weak players feel like geniuses.",
+          "f2p": "Candy Crush's deep-voiced praise words and end-of-level fireworks are this rule at massive scale.",
+          "memory": "Always ask: where are my back-flipping bunnies?",
+          "tag": "concept"
+        },
+        {
+          "id": "L08-b16",
+          "hook": "Six ways to make rewards feel rewarding",
+          "body": "1) Voice and sound effects on every reward. 2) Freeze gameplay to savor it, or have the hero celebrate. 3) You can never have too many particles. 4) Clear cause and effect: the coin flies to the tally with a cha-ching. 5) An easy-to-read font, minding text length. 6) Fill the screen with celebration, but never cover gameplay.",
+          "example": "Collect a coin in the world, watch it travel to the counter, hear the Las Vegas-style cha-ching.",
+          "f2p": "F2P coins and gems fly into the top currency bar, teaching players where their wealth lives.",
+          "memory": "Shout it, freeze it, sparkle it, trace it, spell it clearly, frame it.",
+          "tag": "list"
+        },
+        {
+          "id": "L08-b17",
+          "hook": "Juice without hostage-taking",
+          "body": "Rogers says celebration cannot be overdone, but routine rewards repeated hundreds of times can wear players out. Modern practice is to keep big moments loud and let veterans speed through repeats.",
+          "example": "A big level-complete celebration delights the first time but can drag by the 300th chest.",
+          "f2p": "Add tap-to-skip, speed-up and batch opening. Celebrate during natural pauses, and since many play muted, make every celebration visual and haptic too.",
+          "memory": "Applause, not a hostage situation.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "Radar/map",
+      "bites": [
+        {
+          "id": "L08-b18",
+          "hook": "Maps must be legible and usable on the move",
+          "body": "Make the map big enough to read but not screen-filling. If it must fill the screen, pause the game. Let players move and read the map at once, since open-memorize-close is a chore.",
+          "example": "GTA4 lets players place their own map markers, and the route then guides them to the objective.",
+          "f2p": "Tap the mobile mini-map to open the full map. Tapping to place pings or markers doubles as team communication.",
+          "memory": "Open, memorize, close, forget, repeat: the map-chore loop to avoid.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b19",
+          "hook": "Legend, elevation, direction",
+          "body": "Give map icons a legend (checkpoints, doorways, quest items, traversal goals, story points). Show elevation changes with a color code or an onion-skin effect for the current layer. Show the player's facing direction with an arrow so they can reorient toward goals.",
+          "example": "Multi-floor levels confuse players fast without layer cues.",
+          "f2p": "4X world maps need strong legends, filters (resources only, allies only) and zoom levels that hide clutter.",
+          "memory": "Where am I, which way am I facing, where is the good stuff?",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b20",
+          "hook": "Fog of war: clear it, never re-fog it",
+          "body": "Fog of war hides the map until the player clears it by moving through. You can offer ways to reveal the whole map, but never re-fog cleared areas. That confuses players with the very tool meant to orient them.",
+          "example": "Classic RTS and exploration games use fog that lifts as you explore.",
+          "f2p": "In 4X games like Rise of Kingdoms, sending scouts to clear fog is itself a reward loop.",
+          "memory": "Re-fogging is like a GPS that forgets your street.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b21",
+          "hook": "From Rally-X's radar to themed, info-rich maps",
+          "body": "The first game radar/map was Rally-X (Namco, 1980): it showed power-ups without revealing the map or enemy cars. Maps now outline playfields, reveal clues and carry extra aids like distance to goal, detection cones and NPC names. Theme them too (parchment for fantasy, hologram for sci-fi): even the map adds to the gestalt.",
+          "example": "Batman: Arkham Asylum (distance counter), Metal Gear (vision cones), Harry Potter and the Order of the Phoenix (NPC names on the Marauder's Map). Figure: a themed mini-map next to a sweep radar.",
+          "f2p": "MOBA and battle-royale mini-maps sit in a top corner, away from thumbs. Saga maps are themed progress paths.",
+          "memory": "Rally-X: the grandparent of every mini-map. A map in costume still has to give directions.",
+          "tag": "example"
+        }
+      ]
+    },
+    {
+      "title": "Context-sensitive prompt",
+      "bites": [
+        {
+          "id": "L08-b22",
+          "hook": "Prompts appear exactly when you can act",
+          "body": "A context-sensitive prompt is a small icon or line of text that pops up when the player stands close to something they can use, most often showing the button to press.",
+          "example": "GTA3 shows a \"Y\" button icon when you stand next to a car you can hijack. The figure shows a chest with an (A) button floating above it.",
+          "f2p": "On touch, the prompt IS the button: a contextual action button pops up in a consistent spot near the thumb (open door, pick up, revive).",
+          "memory": "A waiter who appears exactly when you look up.",
+          "tag": "concept"
+        },
+        {
+          "id": "L08-b23",
+          "hook": "Plings: prompts that also say \"you can't\"",
+          "body": "On Maximo, Rogers' team made \"plings\": emoticon prompts that showed when the player could NOT do an action as well as when they could. Plings can also show NPC moods: catch an NPC in a good mood for a better response or reward than if they are angry, scared or sad.",
+          "example": "Maximo: Ghosts to Glory. The figure shows a knight with a big \"!\" over his head.",
+          "f2p": "A greyed button with a lock or \"Unlocks at Lv. 12\" beats a silent tap that feels like a bug. Emote systems let players be the pling.",
+          "memory": "Pling = a tiny face that says yes, no, or \"he is grumpy today\".",
+          "tag": "concept"
+        },
+        {
+          "id": "L08-b24",
+          "hook": "Nine places to use context prompts",
+          "body": "Doors, gates, hatches. Mechanisms (cranks, levers, pushables). NPC interaction and moods. Collectible items and weapons. Vehicles or mini-games such as a mid-level turret. Jump spots. QTE prompts. Combat notices that an enemy is vulnerable to an attack type. Secret treasure when the player is near it.",
+          "example": "Zelda (jump prompts), God of War (QTE prompts).",
+          "f2p": "F2P extras: tutorial hand pointers (fade them out later), \"!\" over quest givers, and bouncing buildings that mean \"ready to collect\".",
+          "memory": "Doors, gears, faces, loot, rides, leaps, QTEs, weak spots, secrets.",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "The clean screen",
+      "bites": [
+        {
+          "id": "L08-b25",
+          "hook": "Fade the HUD when nobody needs it",
+          "body": "To balance a cinematic look with communication, step one is making HUD elements move or fade off screen when inactive. They must reappear when relevant (damage, treasure), and players need a quick way to call them back, such as one shoulder-button press.",
+          "example": "Many action games hide health and ammo until something changes.",
+          "f2p": "Mobile: floating joysticks appear only on touch, booster trays hide during cascades, event rails collapse in combat.",
+          "memory": "HUD that naps when idle, wakes when needed.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b26",
+          "hook": "Going HUD-less: King Kong's four tricks",
+          "body": "Some games remove HUD almost entirely and use sound, animation and VFX instead. Tips: 1) characters react to the world (look at collectibles, reach for reachable spots, comment on interactables); 2) prefer big full-screen effects over subtle ones; 3) add glows and attention effects; 4) let characters or a glowing arrow lead the way.",
+          "example": "Peter Jackson's King Kong (Ubisoft, 2005): a few early prompts, then nearly everything conveyed through the world.",
+          "f2p": "Hyper-casual games live near zero HUD. A pet or character glancing toward the goal is cheap, charming guidance.",
+          "memory": "Look, reach, glow, lead.",
+          "tag": "list"
+        },
+        {
+          "id": "L08-b27",
+          "hook": "The Scooby-Doo effect, on purpose",
+          "body": "In late-60s/70s Hanna-Barbera cartoons, lushly painted backgrounds made the flat-colored, unshaded animated objects accidentally stand out, so you always knew which rock would move. Rogers suggests using that contrast deliberately to flag interactive objects.",
+          "example": "Any painted scene where the interactable prop is cleaner and flatter than the background.",
+          "f2p": "Mobile games add outlines, rim light or a gentle bounce to interactables so they pop on tiny, busy screens.",
+          "memory": "If it is flatter than the background, it is about to move.",
+          "tag": "concept"
+        },
+        {
+          "id": "L08-b28",
+          "hook": "Planet No Interface vs Planet Gobs of Interface",
+          "body": "Picture interfaces as a galaxy: Planet No Interface at one end, Planet Gobs of Interface at the other. RPGs, RTSs, sims, adventure games and some shooters live on Gobs. That is fine, since their players make lots of choices, but every icon must then be instantly readable.",
+          "example": "The book's full-page MMO illustration: mini-map, character sheet, backpack grid, hotbars on two edges. The world is a sliver between panels.",
+          "f2p": "Hyper-casual sits on No Interface. Mid-core F2P lobbies are the capital city of Gobs.",
+          "memory": "Are your locals No Interfacians or Goblings?",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "Icon Has Cheezburger? (icon design)",
+      "bites": [
+        {
+          "id": "L08-b29",
+          "hook": "Right picture, current metaphor",
+          "body": "Pick the obvious image: if the icon builds tanks, draw a tank. Make sure the image is current. Rogers' team drew an ink-stamp function as a postage stamp, and younger testers did not know what a postage stamp was. Metaphors age.",
+          "example": "The postage-stamp icon that confused younger testers.",
+          "f2p": "Floppy-disk \"save\" icons and phone handsets may not read for every age group or region. Test icons with your real target players.",
+          "memory": "Draw the tank, not the postage stamp.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b30",
+          "hook": "Color-code by meaning, then by category",
+          "body": "Fire = red or orange, frost = blue. Go further and give whole categories a background color, such as green for \"advance to next screen\" and red for sword combat (a different red from fire). The goal is that players spot similarities and pick the right icon at a glance. When color is not enough, use shape as a differentiator.",
+          "example": "A spell bar where element colors make the right choice instant.",
+          "f2p": "Rarity frames are a common F2P category code. About 1 in 12 men has a color-vision deficiency (mostly red-green), so back colors up with shape or pattern and test in a simulator.",
+          "memory": "Color is the icon's family name. Shape is its face. If it only works in color, it does not work.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b31",
+          "hook": "No text in icons, no visual mash-ups",
+          "body": "Avoid text in icons: it must be redone for localization and may be too small to read. If a word IS the icon, make it legible and button-like. Never combine several elements (text + character + logo) on one icon.",
+          "example": "An icon with a tiny word, a face and a logo reads as noise at small sizes.",
+          "f2p": "F2P games ship in many languages, so keep labels separate and translatable. This also makes A/B tests and event reskins easy.",
+          "memory": "One icon, one idea.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b32",
+          "hook": "Outline it, and line them all up",
+          "body": "Surround icons with a strong black or white outline so they pop off any background. View all icons together to catch look-alikes, and make each one as individual as possible.",
+          "example": "Lay the full icon sheet on one page and squint for twins.",
+          "f2p": "Review icons at real size on the smallest supported phone. Blur and grayscale tests catch problems fast.",
+          "memory": "Every icon gets a bodyguard (the outline) and a unique face.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b33",
+          "hook": "Tooltips, real artists, and borrowed wisdom",
+          "body": "Show the item name when the cursor hovers over an icon, since a reminder never hurts. Do not leave icons to programmers, who care about function, not design or art. Learn from dedicated icon artists (Apple, Adobe, Microsoft), graphic-design books, icon font sets and icon-heavy RTS and sim games. Do not reinvent the wheel.",
+          "example": "Maximo's ability icons were inspired by Boy Scout merit badges.",
+          "f2p": "Touch has no hover: use long-press info or an \"i\" button. Study top-grossing games in your genre, whose currency and rarity icons are a shared vocabulary.",
+          "memory": "Programmer art is a placeholder, not a plan. Merit badges: tiny, round, instantly readable.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b34",
+          "hook": "Every press must do SOMETHING",
+          "body": "When an icon is pressed, register it: a color change, a click sound, anything. Avoid a voice bark on every click. If you need voice, never let the same line come back sooner than about three clicks, and record several extra variants to rotate.",
+          "example": "The book's own sample run: click 1 plays one acknowledgment, click 2 a second, click 3 a third, and only click 4 loops back to the first line.",
+          "f2p": "Mobile: a squish animation, a click and a light haptic. Visual feedback is mandatory because many play muted.",
+          "memory": "Click, glow, buzz. Talk sparingly, and never repeat a line within three clicks.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b35",
+          "hook": "Biggest = most important, nearest = most used",
+          "body": "The most important button should be the biggest, and so should the most-used one. Put the most-used buttons within easy reach of the screen center or wherever the cursor spends most time. Make icons a little sticky so the cursor gravitates to them.",
+          "example": "An RTS where the build button is huge and next to where the cursor already lives.",
+          "f2p": "Giant PLAY buttons (Brawl Stars), Monopoly GO!'s GO button. Sticky becomes generous hit boxes: about 44x44 pt (Apple) or 48x48 dp (Material).",
+          "memory": "Size is a vote: give the most votes to the most important button.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b36",
+          "hook": "KYSS: Keep Your Symbols Simple",
+          "body": "Rogers' rule of thumb for all icons is KYSS, a riff on KISS. Players already know icons from comics, cartoons and desktops, and games have built their own icon vocabulary. Use it.",
+          "example": "Comics icons: stars and birds circling a dazed head, POW bursts, scribbles over an angry head.",
+          "f2p": "Your app-store icon is the most important icon you will ever make: one subject, no text, strong silhouette.",
+          "memory": "KYSS your icons goodnight.",
+          "tag": "truth"
+        },
+        {
+          "id": "L08-b37",
+          "hook": "The classic game-icon dictionary",
+          "body": "Red cross = healing. 1UP (or a mini head/doll of the hero) = extra life. Heart = health. Food, soda or pills = energy or healing. \"!\" = surprise over enemies, or \"can interact\" over the hero. \"No\" sign = cannot use or do not need. Skull = poison, death, danger. Coin or cash sack = money. Controller-button icons = press this, common in QTEs.",
+          "example": "Figures show heart, 1UP, burger, soda can, red-cross box and pill, then a \"no\" sign, skull and crossbones, coin and an (A) button.",
+          "f2p": "Still standard on mobile: hearts for lives, \"!\" over quest givers, potions for heals. Touch swaps controller icons for on-screen buttons and finger gestures.",
+          "memory": "Heart, head, cross, can, pill, bang, no, skull, coin, button.",
+          "tag": "list"
+        },
+        {
+          "id": "L08-b38",
+          "hook": "The Red Cross emblem is not a free icon",
+          "body": "A footnote says the Canadian Red Cross contacted developers, arguing that its red cross in violent games misuses a protected emblem. The industry had not formally responded as of 2010.",
+          "example": "Health kits drawn as white crosses on red boxes in countless shooters.",
+          "f2p": "Many modern games use hearts, green crosses or potions for healing, which also avoids the issue.",
+          "memory": "Heal with hearts, not with a humanitarian logo.",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "Don't Get QTE (quick-time events)",
+      "bites": [
+        {
+          "id": "L08-b39",
+          "hook": "QTE: press it now or suffer",
+          "body": "A quick-time event is a prompt that forces a split-second action, with (usually painful or fatal) consequences for failing. Players love or hate them, but they are here to stay. They are just a tool, so use them responsibly.",
+          "example": "Dragon's Lair (1983) was one big QTE. Cliffhanger, Space Ace and Thayer's Quest followed, then QTEs nearly vanished. Shenmue (1999) revived and named them. Resident Evil 4 and God of War made them standard.",
+          "f2p": "Mobile timing prompts include Pokémon GO's shrinking catch circle and \"tap now\" ultimates in RPGs.",
+          "memory": "QTE: Quick! Too late. Explode.",
+          "tag": "concept"
+        },
+        {
+          "id": "L08-b40",
+          "hook": "Only for moments players could not do themselves",
+          "body": "Never use a QTE for something the player can do with normal controls. Rogers uses them as shortcuts into cinematic sequences, saved for big exciting moments and nigh-impossible actions.",
+          "example": "A QTE for a spectacular boss finisher, not for opening a door.",
+          "f2p": "Prefer bonus-for-success over death-for-failure. A mandatory QTE that costs a life or energy feels like a cash grab.",
+          "memory": "QTEs are fireworks, not footsteps.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b41",
+          "hook": "One beat to see, one beat to press",
+          "body": "Timing is everything: give players one beat to notice the QTE icon and another beat to press the button. Do not string QTEs out too long, because failing usually means repeating the whole sequence.",
+          "example": "A long QTE chain where one miss restarts everything is a classic rage trigger.",
+          "f2p": "Phone latency, touch sampling and Bluetooth audio lag vary, so use generous timing windows.",
+          "memory": "ba-DUM: see it, hit it.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b42",
+          "hook": "Fair means predictable: no random QTEs",
+          "body": "Random QTE prompts sound like variety, but this is the one place you want predictability. Once players memorize the pattern they can enjoy watching the action. Rogers dislikes random QTEs because winning feels like luck, not skill.",
+          "example": "Same boss, same prompt sequence, so a second attempt becomes mastery instead of a dice roll.",
+          "f2p": "Timing mini-games should reward learnable skill, consistent every time.",
+          "memory": "Random QTE = slot machine with a sword.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b43",
+          "hook": "Easy buttons, big icons, same place, optional",
+          "body": "Keep QTEs on one control set (face buttons or a stick), avoiding hard-to-reach shoulder buttons. Make icons big and keep their position consistent. Try not to make QTEs mandatory. Keep motion waggles short and not too many in a row.",
+          "example": "Uncharted 2 and Batman: Arkham Asylum offer QTEs as optional takedowns, with plenty of other ways if you miss.",
+          "f2p": "Put timing taps where thumbs already rest. Auto-battlers that let you manually fire ultimates offer optional skill expression.",
+          "memory": "Gamers want to play your game, not ice their wrists.",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "HUDs, and where to stick 'em",
+      "bites": [
+        {
+          "id": "L08-b44",
+          "hook": "Keep the center for the action",
+          "body": "The middle of the screen is where the action is, and objects there are almost never obscured. Rogers calls it the safe frame. Keep HUD out of it except for targeting, reticules or labels identifying objects. Make full-screen displays translucent so players do not lose their place.",
+          "example": "Dead Space's translucent holographic menus keep the world visible. In the zombie diagram, a box over the center is where the action lives.",
+          "f2p": "Mobile playfields are tiny, so even small center overlays cover a big share. Keep pop-ups out of active play.",
+          "memory": "Center for zombies.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b45",
+          "hook": "Top-left for vital info",
+          "body": "The upper left traditionally holds the most important info (health, score). Western eyes read left to right, so info on the left lets the eye flow back into the game on the right. A footnote notes many languages read right to left, but Rogers knew no game with a right-to-left HUD.",
+          "example": "Zombie diagram 2: a box in the top-left corner.",
+          "f2p": "Portrait F2P puts profile and level top-left and currencies top-right. Arabic localization today often mirrors whole layouts.",
+          "memory": "Read the HUD, then fall back into the game.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b46",
+          "hook": "Edges get clipped: stay inside the safe area",
+          "body": "The bottom works for icons, but watch for clipping on uncalibrated screens. Assume at least half your audience has a bad TV, since even good sets clip the sides. Keep info close to the safe area and always offer screen calibration.",
+          "example": "Zombie diagram 3: a strip along the bottom edge.",
+          "f2p": "Phone notches, Dynamic Islands, rounded corners and home bars are the new overscan. Anchor UI inside the OS safe area, and test both landscape orientations.",
+          "memory": "Overscan is dead. Long live the notch.",
+          "tag": "warning"
+        },
+        {
+          "id": "L08-b47",
+          "hook": "The bracketing effect turns screens into mail slots",
+          "body": "Using the left, right and bottom edges for HUD brackets the game view, making it feel small and claustrophobic. Rogers has seen RTS screens so full it felt like looking through a mail slot.",
+          "example": "Zombie diagram 4: UI top-left, top-right, a right column and a bottom strip, with a frightened zombie in the middle.",
+          "f2p": "The number-one F2P lobby disease: currency bar, two side rails of event icons, offer bubbles and a nav bar.",
+          "memory": "Bracketed screen = peeping through a mail slot at your own game.",
+          "tag": "warning"
+        },
+        {
+          "id": "L08-b48",
+          "hook": "Let players customize, but protect the playfield",
+          "body": "With lots of icons, let players choose which to show and prioritize where they go, but never let them block the main gameplay area. Icons that open other screens need a quick way back. Consider pausing so players are not ambushed while browsing inventory.",
+          "example": "Dead Space deliberately keeps the world running during inventory, unlike Resident Evil's freeze, to create dread.",
+          "f2p": "PUBG Mobile and COD Mobile let players drag, resize and fade HUD buttons. Real-time PvP cannot pause, so keep mid-match menus minimal.",
+          "memory": "Freeze for comfort, or keep running for dread: choose on purpose.",
+          "tag": "concept"
+        },
+        {
+          "id": "L08-b49",
+          "hook": "The Three-Press Rule",
+          "body": "Rogers' unbreakable interface rule: no game screen may sit more than three button presses away. Players want to play, not navigate. Aim for a press or two, and consolidate screens if needed.",
+          "example": "On one of his games it took 16 button presses to reach gameplay. After rework, it took 4.",
+          "f2p": "Three-Tap Rule: PLAY is 1 tap from the lobby, other features 1-2. Some games put the core action on the home screen itself (Monopoly GO!, Coin Master).",
+          "memory": "Three knocks max on any door.",
+          "tag": "truth"
+        },
+        {
+          "id": "L08-b50",
+          "hook": "Thumb zones are the new reading order",
+          "body": "On phones, placement is about where the thumb can reach, not just where the eye starts. Portrait: read-only info at the top, interactive elements in the bottom third. Landscape: joystick bottom-left, actions bottom-right, info along the top edge.",
+          "example": "Typical portrait lobby: currencies on top, a big PLAY button and nav tabs at the bottom.",
+          "f2p": "Put rarely used settings or pause buttons in top corners, where they are hard to hit by accident. Never put critical info under resting thumbs.",
+          "memory": "Eyes up top, thumbs down low.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "There are other screens than the HUD",
+      "bites": [
+        {
+          "id": "L08-b51",
+          "hook": "Four title-screen styles, then three screens deep max",
+          "body": "The title screen sets the mood. Styles: movie poster (mirrors box art), heroic pose (hero on a windy bluff), enigmatic image (meaning revealed later), logo screen (add motion). Title menus (save/load, players, options, bonus, difficulty) should be no more than three screens deep, not counting logos and legal. Many functions can live on the pause screen.",
+          "example": "Parodies: Die Zombie Die!, Dude With Sword, Relic Raider (monkey idol), Super Magic Guy. A footnote admits warning and logo screens come first.",
+          "f2p": "Your real title screen is the store page (icon, screenshots, video). Every launch screen bleeds players, so first launch should reach gameplay in seconds.",
+          "memory": "Poster, pose, puzzle, logo. Then get out of the way.",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "The pause that refreshes",
+      "bites": [
+        {
+          "id": "L08-b52",
+          "hook": "Plan the pause screen like a level",
+          "body": "A pause screen can save, reach options, map or inventory, or be enjoyable in itself. Players must not feel they miss anything by pausing (most pause for bathroom breaks). Do not put Resume first: let the pause button close the menu, and put the most common choice first (save, else map or inventory).",
+          "example": "Banjo-Kazooie plays a lovely acoustic theme on pause. Dead Space skips the pause screen entirely.",
+          "f2p": "Mobile must auto-pause and save on backgrounding (calls, notifications). Resume action games with a 3-2-1 countdown.",
+          "memory": "The pause screen is a bathroom-break hub: one press to what matters.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b53",
+          "hook": "Pause and options: hubs with spokes, not labyrinths",
+          "body": "The book's pause diagram has nine spokes: sound/music volume, save/load, cheat codes, calibration tool, bonus material, exit game, credits, difficulty settings and the controller screen. Options screens tend to lead to more screens like a labyrinth, so treat them as a hub with spokes and never lose players in a maze.",
+          "example": "A plain black Save/Load/Options/Credits/Exit list is the book's example of what NOT to ship: too boring.",
+          "f2p": "Mobile settings hub: audio toggles, haptics, notifications, language, graphics/battery, account, support, privacy, credits, and redeem codes (cheat codes reborn).",
+          "memory": "Theseus needed string. Your players need a hub.",
+          "tag": "list"
+        },
+        {
+          "id": "L08-b54",
+          "hook": "Calibrate before you play",
+          "body": "Dark, moody games should include a screen calibration tool: adjust contrast on a dark image or color bars. It can live in options, but Rogers prefers calibration before the game starts so players see it as intended.",
+          "example": "Horror games asking you to adjust brightness until a logo is barely visible.",
+          "f2p": "On mobile, calibration is reborn as accessibility settings: text size, color-blind modes, reduced flashing, haptics toggles. Offer them early.",
+          "memory": "See the game in its best darkness.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b55",
+          "hook": "Saving: automatic, early, plentiful, descriptive",
+          "body": "Keep saving simple and automated. Start every new game by creating a save file, and teach where saving is, even in the tutorial. Offer at least three save files (replays, backups after bad choices, other players). Let players name files and store playtime, chapter names, lives or gear, plus icons.",
+          "example": "The book's save screen: portrait, custom name, % complete, lives, location and delete/save prompts.",
+          "f2p": "In F2P the account is the save. Prompt account linking once players have something to lose, because lost progress on a new phone drives churn.",
+          "memory": "A save file is a diary entry: name it, date it, add a picture.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b56",
+          "hook": "Autosave yes, reset system no",
+          "body": "Autosave backs up engrossed players, so let them load from a manual save or the autosave (turning it off is allowed but pointless). Do not let saving become a reset system where reloading beats dying and restarting. It breaks immersion.",
+          "example": "Games where reloading is faster than dying invite constant save-scumming.",
+          "f2p": "Server-side RNG blocks reload-to-win. Gacha reroll culture is the F2P reset system, so decide deliberately whether to allow or channel it.",
+          "memory": "If reload is the best move, your save button is a cheat code.",
+          "tag": "warning"
+        },
+        {
+          "id": "L08-b57",
+          "hook": "Loading screens are part of the game",
+          "body": "Players find loading annoying because developers do not treat it as part of the game. Disguise loads seamlessly with slow doors, long elevators or lifting fog. Hardware makers require a moving image so players know it has not crashed. Always show a progress bar or percentage.",
+          "example": "The book jokes about hiding loads in abnormally long corridors, slowly unlocking doors... and microwaving popcorn.",
+          "f2p": "F2P first launch often downloads big asset packs. Show real progress, and let the tutorial play while downloading.",
+          "memory": "If it is not moving, players assume it is dead.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b58",
+          "hook": "Eleven ways to spruce up a loading screen",
+          "body": "Concept art; trivia; a playable mini-game (Namco once patented this, since expired); the game map; character bios; non-repeating tips (never show ones already seen); story gap-fillers; a mission video briefing; endless waves or destroying a big object; beauty shots of characters or items; an interactive object like the logo.",
+          "example": "Rogers promises a dozen and lists eleven.",
+          "f2p": "Rotate tips by player level, show upcoming event art, or preview the hero you are about to play.",
+          "memory": "A loading screen is a free stage: put on a show.",
+          "tag": "list"
+        },
+        {
+          "id": "L08-b59",
+          "hook": "Controls screen: show the controller",
+          "body": "First, show an image of the controller with labeled inputs. Some games show the character performing each action. At minimum, text explains each control. Keep it reachable from in-game, and allow customization or several preset schemes.",
+          "example": "The book diagram labels every input: bumpers, triggers, Back = map, Start = pause, face buttons, sticks, and a d-pad for inventory.",
+          "f2p": "Mobile teaches by doing (animated fingers) and offers fixed or floating joysticks, button size/opacity sliders, custom layouts and left-handed modes.",
+          "memory": "No controller? Then your fingers are the diagram.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b60",
+          "hook": "Tally screens: count everything, make it fun",
+          "body": "The end-of-level tally shows progress and performance: score, time, accuracy, enemies defeated, money collected/spent, lives, a letter grade or word rating (the book's examples: \"Awesome Dude\", \"Master of the Universe\"), objectives, secrets as X/Y, and silly stats like distance traveled or chests smashed.",
+          "example": "Book figure: gold collected, chests 18/20, pirates 182/200, accuracy 72 percent, secrets 13/20, grade C+, labeled too boring.",
+          "f2p": "F2P results screens add stars, flying rewards, progress to the next chest or pass tier, and \"x2 with ad\". Make Next Level the biggest button.",
+          "memory": "Stats are the post-credits scene of every level.",
+          "tag": "list"
+        },
+        {
+          "id": "L08-b61",
+          "hook": "Legal and credits: accurate, skippable, never boring",
+          "body": "Legal/copyright screens are required by publishers and hardware makers, so keep them legible, accurate and skippable. Credits celebrate the makers: everyone who worked on a game deserves a credit matching their business-card title. Make credits entertaining.",
+          "example": "LittleBigPlanet's entertaining credits. Typing of the Dead lets you type the credits as a mini-game.",
+          "f2p": "Mobile legal means ToS, privacy, GDPR consent, the iOS tracking prompt, age gates and loot-box odds. Make declining as easy as accepting.",
+          "memory": "Give credit where credit is due, and never be boring.",
+          "tag": "truth"
+        },
+        {
+          "id": "L08-b62",
+          "hook": "Gestalt: steal from DVD menus",
+          "body": "Movie DVD menus build a gestalt (German for \"whole\": the overall feel) around the film. That takes art-direction effort but is always worth it. Game over, bonus and store screens are covered later in the book.",
+          "example": "Rogers' gestalt picks: Twisted Metal: Black, Brütal Legend, House of the Dead: Overkill.",
+          "f2p": "Keep one visual language across lobby, store, events and results. Event reskins change art and color, not learned layouts.",
+          "memory": "Every screen wears the same costume.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "A final word on fonts",
+      "bites": [
+        {
+          "id": "L08-b63",
+          "hook": "Fonts: themed but readable",
+          "body": "Fonts follow the same legibility rules as icons. Theme the font to the game, but avoid overly ornate ones. Watch font and background colors: never red text on black, which blurs on many TVs (especially old ones or composite connections).",
+          "example": "Medieval script on a score counter looks cool and reads terribly.",
+          "f2p": "Chunky fonts with dark outlines stay readable over busy mobile art, which is why so many F2P games use them.",
+          "memory": "A fancy font on a phone is a love letter in invisible ink.",
+          "tag": "rule"
+        },
+        {
+          "id": "L08-b64",
+          "hook": "Under 18 point is unreadable on SD TVs",
+          "body": "HD allowed sharper fonts, but Rogers found text under 18 point very hard to read on standard-definition TVs. Not everyone has a state-of-the-art screen.",
+          "example": "Dead Rising (2006) used text so small that SD-TV players could not read mission objectives, making the game effectively unplayable for them.",
+          "f2p": "Test physical size on the smallest supported phone at arm's length. Apple uses 17 pt as default body text and about 11 pt as the floor.",
+          "memory": "If they cannot read the objective, there is no objective.",
+          "tag": "warning"
+        },
+        {
+          "id": "L08-b65",
+          "hook": "Localization breaks layouts: plan for it",
+          "body": "Rogers warns to watch text length and keep text out of icons. Localization multiplies both problems.",
+          "example": "English \"Settings\" grows longer in German, and short labels can double in length.",
+          "f2p": "Budget about 30% expansion, support CJK glyph sets and line breaking, mirror layouts for right-to-left languages, give diacritics line height, and pseudo-localize early.",
+          "memory": "Build buttons with stretch pants.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "F2P Mobile UI Toolkit (beyond the book)",
+      "bites": [
+        {
+          "id": "L08-b66",
+          "hook": "Anatomy of the F2P lobby",
+          "body": "A typical portrait lobby: profile and currency bar on top (with + buttons to the store), side rails of events, passes and offers with timers, a hero or base showcase, a giant PLAY button, and a bottom nav bar. Rogers' rules apply: biggest = most important, rewards fly to the tally, three taps max.",
+          "example": "Many F2P lobbies follow this layout across genres.",
+          "f2p": "Keep side rails short and collapsible to avoid the bracketing mail slot.",
+          "memory": "Shop window on a busy street: one big door, honest signs, clean glass.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L08-b67",
+          "hook": "Red dots must mean something",
+          "body": "Notification badges are context prompts for the meta-game. Use them only for actionable things (rewards, affordable upgrades, messages), clear them when visited, propagate them up tab hierarchies, keep a small vocabulary (dot, number, NEW, !), and budget how many appear.",
+          "example": "Eight dots after every login means none of them matter.",
+          "f2p": "Zombie dots that never clear, or fake dots to push the store, train players to ignore everything. That is a dark pattern.",
+          "memory": "A red dot that lies is the boy who cried wolf.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L08-b68",
+          "hook": "Fighting home-screen bloat",
+          "body": "F2P home screens bloat because every feature and event wants a button and nobody removes any. Fixes: one event hub, priority slots, collapsible rails, hiding irrelevant icons, unlocking UI progressively, capping login pop-ups (about one or two), and A/B testing removals.",
+          "example": "4X games such as Whiteout Survival and Last War are known for icon-dense home screens.",
+          "f2p": "A calm lobby is an FTUE feature: new players should see only what they can use.",
+          "memory": "Every new button must evict an old one.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L08-b69",
+          "hook": "Draw the screen flow before building it",
+          "body": "A screen flow diagram maps every screen and the taps between them: launch, consent, loading, FTUE, lobby, features, results, back. Count taps, mark modal pop-ups, and hunt dead ends and duplicates. That is how you prove the Three-Press Rule.",
+          "example": "Rogers' 16-presses-to-4 story is exactly what a flow diagram uncovers.",
+          "f2p": "Track taps from launch to first gameplay as an FTUE metric.",
+          "memory": "No map, no maze-proofing.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L08-b70",
+          "hook": "Store UI: clear, honest, reachable",
+          "body": "Structure: featured offer, timed deals, bundles, currency packs, often a free daily item. Show exactly what you get with icons and numbers, real local prices, honest \"best value\" tags and real timers. Confirm big purchases, keep restore purchases reachable, and show gacha odds and pity.",
+          "example": "Currency bars' + buttons that jump to the right store section.",
+          "f2p": "Distinct soft and hard currency icons, and no text baked into offer art (prices and languages change).",
+          "memory": "Make the price obvious, or the player assumes it is a trick.",
+          "tag": "f2p"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "The HUD exists to communicate the game's concepts to the player.",
+    "Players must be able to get HUD information quickly.",
+    "Keep HUD elements away from the screen's outer edges and inside the safe area.",
+    "Design icons that are easy to see and easy to read.",
+    "Quick-time events must be fair and easy to perform.",
+    "Nothing in the game should take more than three button presses to reach.",
+    "Never make players dig through screens to find important information.",
+    "Fonts must be easy to read: not too small and not too fancy.",
+    "Even the most \"boring\" screens can be made exciting and interesting.",
+    "Give credit where credit is due."
+  ],
+  "mnemonics": [
+    {
+      "name": "The 7 HUD elements",
+      "device": "Happy Teens Always Invite Some Real Company",
+      "unpacks": "Health bar/lives, Targeting reticule, Ammo gauge, Inventory, Score/experience, Radar/map, Context-sensitive prompt"
+    },
+    {
+      "name": "KYSS",
+      "device": "KYSS = Keep Your Symbols Simple",
+      "unpacks": "Rogers' master rule for icons (a riff on KISS): one picture, one meaning, strong outline, no text"
+    },
+    {
+      "name": "Four Rs of icon art",
+      "device": "Right, Recent, Rainbow, Rim",
+      "unpacks": "Right image (tank builds tanks), Recent/current metaphor (no postage stamps), Rainbow = color-code plus shape backup, Rim = strong black/white outline"
+    },
+    {
+      "name": "QTE rhythm",
+      "device": "Beat to see, beat to press (ba-DUM)",
+      "unpacks": "Give one beat to notice the QTE icon and one beat to press. Keep QTEs predictable, short, consistent and optional"
+    },
+    {
+      "name": "Placement chant",
+      "device": "Center for zombies, corners for numbers, edges for nobody, three knocks max",
+      "unpacks": "Keep the action center clear, put vital info in corners (top-left), stay inside the safe area and avoid bracketing, and keep every screen within 3 presses"
+    },
+    {
+      "name": "Map check",
+      "device": "Where am I? Which way? Where is the good stuff?",
+      "unpacks": "Player marker, facing-direction arrow, and a legend with goals/items. Plus: never re-fog, show elevation, theme it"
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L08-f01",
+      "q": "How does Rogers define the HUD?",
+      "a": "Any visual element that communicates information to the player.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f02",
+      "q": "What is the HUD named after?",
+      "a": "The heads-up display in modern (fighter) aircraft.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f03",
+      "q": "List the 7 classic HUD elements.",
+      "a": "Health bar/lives, targeting reticule, ammo gauge, inventory, score/experience, radar/map, context-sensitive prompt.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f04",
+      "q": "What is the winning formula for any HUD system?",
+      "a": "Clear, clean, simple.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f05",
+      "q": "Which HUD element does Rogers call the most flexible?",
+      "a": "The health bar.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f06",
+      "q": "What is a \"damage bar\"?",
+      "a": "An inverted health bar that fills as you take damage; when it is full, the player dies.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f07",
+      "q": "How does Star Wars: X-Wing represent health?",
+      "a": "As shields. When all shields are gone, the next hit destroys you. Shields can also show as a numeric %.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f08",
+      "q": "How does Assassin's Creed use health as a story device?",
+      "a": "Stray from the \"correct\" story and the narrator objects; you are reset to the right point in the story.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f09",
+      "q": "Why does Rogers prefer regenerating \"wait for health\" (Halo) to a game-over screen?",
+      "a": "A death/game-over screen pulls the player out of the game; regen keeps them in it.",
+      "type": "why"
+    },
+    {
+      "id": "L08-f10",
+      "q": "What is the main danger of screen-effect health (blood smears, red blur)?",
+      "a": "Obscuring the view so much that the player cannot see the action.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f11",
+      "q": "Your mobile horror game needs a near-death cue that does not cover the screen. Which book ideas fit?",
+      "a": "A haptic heartbeat (Silent Hill rumble), heartbeat and breathing audio, and light edge darkening (Call of Duty, Uncharted 2), without obscuring the view.",
+      "type": "apply"
+    },
+    {
+      "id": "L08-f12",
+      "q": "Why can white reticules be a problem?",
+      "a": "They become hard to see on some surfaces and backgrounds.",
+      "type": "why"
+    },
+    {
+      "id": "L08-f13",
+      "q": "Why should a reticule change color or sharpen over a target?",
+      "a": "It cues the player when to fire.",
+      "type": "why"
+    },
+    {
+      "id": "L08-f14",
+      "q": "Reticule \"stickiness\" is also known as ____.",
+      "a": "aim assist",
+      "type": "cloze"
+    },
+    {
+      "id": "L08-f15",
+      "q": "How does Team Fortress 2 build gameplay into its sniper reticule?",
+      "a": "The zoomed reticule projects a laser dot that enemies can see and try to dodge.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f16",
+      "q": "Why must ammo gauges be especially visible in games like Resident Evil 2?",
+      "a": "Ammo is scarce, so it is one of the most-watched readouts.",
+      "type": "why"
+    },
+    {
+      "id": "L08-f17",
+      "q": "Why display ammo even for an infinite-ammo weapon (Metal Slug)?",
+      "a": "It still tells the player which weapon is armed.",
+      "type": "why"
+    },
+    {
+      "id": "L08-f18",
+      "q": "How should players access multiple ammo types (Ratchet & Clank)?",
+      "a": "Bring them up with a button press.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f19",
+      "q": "What two input methods give quick inventory access?",
+      "a": "Hotkeys and drag-and-drop.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f20",
+      "q": "How does Diablo turn inventory into a puzzle?",
+      "a": "Each item has a size in a limited grid; players try to fit as much as possible.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f21",
+      "q": "What progression does Rogers suggest for restricted inventories?",
+      "a": "Let it expand: pouch, then backpack, then a magic bag of infinite holding.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f22",
+      "q": "What is Resident Evil 2's \"magic box\"?",
+      "a": "Items stored in one box appear in boxes found later, so there is no backtracking.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f23",
+      "q": "Inventory items, realistic or iconic, need clear ____ and simple color schemes.",
+      "a": "silhouettes",
+      "type": "cloze"
+    },
+    {
+      "id": "L08-f24",
+      "q": "Which game replaced score bars with text combo meters (2001)?",
+      "a": "Devil May Cry.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f25",
+      "q": "What brought scoring back after stat tracking replaced high scores?",
+      "a": "Online leaderboards.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f26",
+      "q": "Why does Rogers say you cannot overdo congratulating the player?",
+      "a": "Games easily make players feel clumsy but rarely make them feel brilliant, so praise needs to be loud.",
+      "type": "why"
+    },
+    {
+      "id": "L08-f27",
+      "q": "Which game showers success with fireworks and back-flipping pirate rabbits?",
+      "a": "Zack & Wiki: Quest for Barbaros' Treasure.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f28",
+      "q": "Give the 6 reward pointers.",
+      "a": "Voice/SFX; freeze or hero celebrates; tons of particles; clear cause and effect (coin flies to tally); readable font, mind text length; fill the screen but never cover gameplay.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f29",
+      "q": "What is the \"cause and effect\" example for scoring?",
+      "a": "A collected coin travels up to the tally with a Las Vegas-style cha-ching.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f30",
+      "q": "The first game radar/map appeared in ____ (Namco, 1980).",
+      "a": "Rally-X",
+      "type": "cloze"
+    },
+    {
+      "id": "L08-f31",
+      "q": "Why should players be able to read the map while moving?",
+      "a": "Opening a map, memorizing it and closing it is a chore that breaks the flow of play.",
+      "type": "why"
+    },
+    {
+      "id": "L08-f32",
+      "q": "What does GTA4 let players do with the map?",
+      "a": "Place their own markers, which then guide them to the objective.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f33",
+      "q": "Why must maps indicate elevation, and how?",
+      "a": "Multi-level spaces confuse players easily; use a color code or onion-skin effect to show the current layer.",
+      "type": "why"
+    },
+    {
+      "id": "L08-f34",
+      "q": "Why should you never re-fog cleared areas of a fog-of-war map?",
+      "a": "It confuses players with the very tool meant to help them navigate.",
+      "type": "why"
+    },
+    {
+      "id": "L08-f35",
+      "q": "Name the three extra map aids Rogers cites.",
+      "a": "Distance-to-goal counter (Batman: AA), guard detection cones (Metal Gear), NPC names on the map (Harry Potter: Order of the Phoenix).",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f36",
+      "q": "What is a context-sensitive prompt?",
+      "a": "A small icon or line of text that shows up when the player stands near something usable, usually displaying the button to press.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f37",
+      "q": "What were Maximo's \"plings\"?",
+      "a": "Emoticon prompts that showed when the player could NOT do an action as well as when they could.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f38",
+      "q": "How can plings make NPC interactions deeper?",
+      "a": "They show the NPC's mood; a good mood gives a better response or reward than angry, scared or sad.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f39",
+      "q": "First step to a clean screen?",
+      "a": "Fade or move inactive HUD off screen, bring it back when relevant, and offer a quick button to call it up.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f40",
+      "q": "Which game conveyed almost everything without HUD through sound, animation and VFX?",
+      "a": "Peter Jackson's King Kong (Ubisoft, 2005).",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f41",
+      "q": "What is the Scooby-Doo effect?",
+      "a": "Flat-colored interactive objects stand out against detailed painted backgrounds (Hanna-Barbera); use it deliberately.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f42",
+      "q": "Name the two \"planets\" of interface.",
+      "a": "Planet No Interface and Planet Gobs of Interface (RPGs, RTSs, sims, adventure, some shooters).",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f43",
+      "q": "KYSS = Keep Your ____ ____.",
+      "a": "Symbols Simple",
+      "type": "cloze"
+    },
+    {
+      "id": "L08-f44",
+      "q": "What does the postage-stamp anecdote teach?",
+      "a": "Icon images must be current: younger testers did not recognize a postage stamp used for an ink-stamp function.",
+      "type": "why"
+    },
+    {
+      "id": "L08-f45",
+      "q": "Why avoid text in icons? (2 reasons)",
+      "a": "It must be redone for localization, and it may be too small to read.",
+      "type": "why"
+    },
+    {
+      "id": "L08-f46",
+      "q": "When color is not enough to tell icons apart, use ____.",
+      "a": "shape",
+      "type": "cloze"
+    },
+    {
+      "id": "L08-f47",
+      "q": "What outline does Rogers recommend for icons?",
+      "a": "A strong black or white outline so they pop off the background.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f48",
+      "q": "How often should a unit's voice confirmation play on clicks?",
+      "a": "Sparingly: rotate several recorded variants so the same line never returns sooner than about three clicks later.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f49",
+      "q": "Which buttons should be the biggest?",
+      "a": "The most important one, and the most-used one.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f50",
+      "q": "What inspired Maximo's ability icons?",
+      "a": "Boy Scout merit badges.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f51",
+      "q": "Why should programmers not design icons alone?",
+      "a": "They care about function, not design or art.",
+      "type": "why"
+    },
+    {
+      "id": "L08-f52",
+      "q": "Classic icon meanings: skull? coin? exclamation point over the hero?",
+      "a": "Danger/poison/death; money; the hero can interact with something.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f53",
+      "q": "Define a QTE.",
+      "a": "A prompt forcing a split-second action, or you suffer (usually painful or fatal) consequences.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f54",
+      "q": "Which game introduced QTEs, and which named and revived them?",
+      "a": "Dragon's Lair (1983) introduced them; Shenmue (1999) revived and named them.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f55",
+      "q": "Rogers' QTE timing rule?",
+      "a": "One beat to process the icon, another beat to press the button.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f56",
+      "q": "Why does Rogers dislike random QTE prompts?",
+      "a": "They make players feel they won by luck, not skill; predictability lets them enjoy the action.",
+      "type": "why"
+    },
+    {
+      "id": "L08-f57",
+      "q": "Why should QTEs avoid shoulder buttons?",
+      "a": "They are harder to reach; QTEs should stick to one easy control set (face buttons or a stick).",
+      "type": "why"
+    },
+    {
+      "id": "L08-f58",
+      "q": "Where should HUD never go (with exceptions)?",
+      "a": "The center of the screen, except reticules, targeting or labels identifying game objects.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f59",
+      "q": "Why place the most important info top-left?",
+      "a": "Western eyes read left to right, so the eye flows back into the game on the right.",
+      "type": "why"
+    },
+    {
+      "id": "L08-f60",
+      "q": "What is the bracketing effect?",
+      "a": "HUD on the left, right and bottom edges makes the screen feel small and claustrophobic, like a mail slot.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f61",
+      "q": "Why does Dead Space let enemies attack while you browse inventory?",
+      "a": "To deny the \"gamey\" world-freeze and build dread.",
+      "type": "why"
+    },
+    {
+      "id": "L08-f62",
+      "q": "You should never have to press a button more than ____ times to reach any game screen.",
+      "a": "three",
+      "type": "cloze"
+    },
+    {
+      "id": "L08-f63",
+      "q": "Rogers' button-press war story: from ____ presses to gameplay down to ____.",
+      "a": "16; 4",
+      "type": "cloze"
+    },
+    {
+      "id": "L08-f64",
+      "q": "Name the 4 title-screen styles.",
+      "a": "Movie poster, heroic pose, enigmatic image, logo screen.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f65",
+      "q": "Your pause menu lists Resume, Options, Help, then Save, and players save constantly. Fix it the Rogers way.",
+      "a": "Let the pause button close the menu (drop Resume) and put Save, the most common choice, first.",
+      "type": "apply"
+    },
+    {
+      "id": "L08-f66",
+      "q": "How many save files does Rogers recommend at minimum, and why?",
+      "a": "At least three: replays, backups against catastrophic choices, other players.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f67",
+      "q": "What is a save \"reset system\", and why avoid it?",
+      "a": "Reloading is easier than dying and restarting, so saving becomes a gameplay mechanic; it breaks immersion.",
+      "type": "why"
+    },
+    {
+      "id": "L08-f68",
+      "q": "Why must loading screens show a moving image and a progress indicator?",
+      "a": "Motion shows the game has not crashed (hardware makers require it); a progress bar or % shows how long to wait.",
+      "type": "why"
+    },
+    {
+      "id": "L08-f69",
+      "q": "Your loading screen shows the same control tip every time. Which rule is broken?",
+      "a": "Do not repeat tips; never show control tips the player has already seen.",
+      "type": "apply"
+    },
+    {
+      "id": "L08-f70",
+      "q": "What three qualities must legal screens have?",
+      "a": "Legible, accurate and skippable.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f71",
+      "q": "Which games have fun credits?",
+      "a": "LittleBigPlanet (entertaining sequence) and Typing of the Dead (type the credits).",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f72",
+      "q": "What does \"gestalt\" mean in games?",
+      "a": "German for \"whole\": the overall feel of an experience.",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f73",
+      "q": "Why never place red text on black?",
+      "a": "It blurs on many TVs (old sets, composite cables) and has low contrast.",
+      "type": "why"
+    },
+    {
+      "id": "L08-f74",
+      "q": "Rogers found any font under ____ point very hard to read on standard-definition TVs.",
+      "a": "18",
+      "type": "cloze"
+    },
+    {
+      "id": "L08-f75",
+      "q": "Which game's tiny text made objectives unreadable on SD TVs?",
+      "a": "Dead Rising (2006).",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f76",
+      "q": "Your mobile shooter's fire button sits under the notch in one landscape orientation. Which principle?",
+      "a": "Safe area / safe frame: keep HUD away from clipped edges and inside the guaranteed-visible area.",
+      "type": "apply"
+    },
+    {
+      "id": "L08-f77",
+      "q": "Players say your 4X lobby feels \"cramped\" with icons on every edge. Which effect?",
+      "a": "The bracketing effect (mail-slot screen). Consolidate into hubs and collapse rails.",
+      "type": "apply"
+    },
+    {
+      "id": "L08-f78",
+      "q": "New players can't find the PLAY button among 14 icons. Which icon rule fixes it?",
+      "a": "The most important (and most-used) button must be the biggest.",
+      "type": "apply"
+    },
+    {
+      "id": "L08-f79",
+      "q": "Reaching your event shop takes 5 taps from the lobby. Which rule is broken?",
+      "a": "The Three-Press (Three-Tap) Rule.",
+      "type": "apply"
+    },
+    {
+      "id": "L08-f80",
+      "q": "Rarity tiers differ only by red vs green frames. What is the risk?",
+      "a": "Red-green color-blind players cannot tell them apart. Add shape or pattern coding (color is not enough).",
+      "type": "apply"
+    },
+    {
+      "id": "L08-f81",
+      "q": "Your boss finisher QTE uses random prompts and players call it unfair. What do you change?",
+      "a": "Make it predictable (same pattern), give a beat to see and a beat to press, and consider making it optional.",
+      "type": "apply"
+    },
+    {
+      "id": "L08-f82",
+      "q": "Players can't tell how they earned coins after a level. What should you add?",
+      "a": "Clear cause and effect: coins fly from the action into the counter with a sound.",
+      "type": "apply"
+    },
+    {
+      "id": "L08-f83",
+      "q": "Your German build overflows every button. Which two Rogers warnings apply?",
+      "a": "Watch text length, and avoid text in icons (localization). Budget about 30% expansion.",
+      "type": "apply"
+    },
+    {
+      "id": "L08-f84",
+      "q": "Players lose a life when a phone call interrupts a level. What should happen?",
+      "a": "Auto-pause and save state on app backgrounding, then resume gracefully.",
+      "type": "apply"
+    },
+    {
+      "id": "L08-f85",
+      "q": "Your home screen shows red dots that never clear. Why is this harmful?",
+      "a": "Players learn to ignore all dots, so the signal dies (it is also a dark pattern).",
+      "type": "apply"
+    },
+    {
+      "id": "L08-f86",
+      "q": "Your sword-combat icons and fire-spell icons are both plain red. What does Rogers advise?",
+      "a": "Color-code by category but use a different shade of red for each, and add shape differences.",
+      "type": "apply"
+    },
+    {
+      "id": "L08-f87",
+      "q": "A new stamp tool uses a postage-stamp icon and teen testers are confused. Which rule?",
+      "a": "Use current, accurate images, because metaphors age.",
+      "type": "apply"
+    },
+    {
+      "id": "L08-f88",
+      "q": "Your tutorial hand pointer never goes away and veterans complain. Which principle?",
+      "a": "The clean screen: fade HUD elements when they are not needed and bring them back only when relevant.",
+      "type": "apply"
+    },
+    {
+      "id": "L08-f89",
+      "q": "How does the book's worked example of voice acknowledgments on icon clicks clarify the \"every third click\" rule?",
+      "a": "It cycles three different lines (click 1, 2, 3) and only returns to the first on click 4, so the same line never repeats sooner than about three clicks; record extra cues to avoid repetition.",
+      "type": "why"
+    },
+    {
+      "id": "L08-f90",
+      "q": "What two kinds of rating can a tally screen show, and what are the book's word-rating examples?",
+      "a": "A letter grade (A, B, C) or a word rating, such as \"Awesome Dude\" or \"Master of the Universe\".",
+      "type": "basic"
+    },
+    {
+      "id": "L08-f91",
+      "q": "Name six things a level-end tally screen can count.",
+      "a": "Any six of: score, completion time, shooting accuracy, enemies slain, money remaining/collected/spent, lives, a rating, objectives completed, secrets found as X/Y, or silly stats like blood spilled, distance travelled and chests smashed.",
+      "type": "basic"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "L08-q01",
+      "q": "By Rogers' definition, which counts as part of the HUD?",
+      "options": [
+        "Any visual element that communicates information to the player",
+        "Only the health and ammo bars",
+        "Only elements that sit in the screen corners",
+        "Only elements players can interact with"
+      ],
+      "answer": 0,
+      "why": "Rogers defines HUD broadly as any visual element that communicates info. That is why F2P lobbies, timers and red dots count too."
+    },
+    {
+      "id": "L08-q02",
+      "q": "Which is NOT one of the 7 classic HUD elements in the book?",
+      "options": [
+        "Radar/map",
+        "Context-sensitive prompt",
+        "Ammunition gauge",
+        "Dialogue subtitles"
+      ],
+      "answer": 3,
+      "why": "The 7 are health, targeting, ammo, inventory, score, radar/map and context prompt. Subtitles are not on the list."
+    },
+    {
+      "id": "L08-q03",
+      "q": "Why does Rogers favor regenerating health (Halo) over a death screen?",
+      "options": [
+        "It is cheaper to implement",
+        "A game-over screen pulls the player out of the game",
+        "It makes games harder",
+        "It removes the need for a health display"
+      ],
+      "answer": 1,
+      "why": "The death/game-over screen breaks immersion. Regen still needs a display, and difficulty is not the point."
+    },
+    {
+      "id": "L08-q04",
+      "q": "Assassin's Creed's health bar is an example of health as...",
+      "options": [
+        "A shield percentage",
+        "A damage bar that fills up",
+        "A story device that resets you if you stray from the narrative",
+        "An on-board defense system"
+      ],
+      "answer": 2,
+      "why": "Its narrator objects when you stray from the correct story, and you are reset. Shields are X-Wing, defense systems are Metroid."
+    },
+    {
+      "id": "L08-q05",
+      "q": "Your mobile shooter's white crosshair disappears on snowy maps. Which fix follows the book?",
+      "options": [
+        "Make it larger so it dominates the screen",
+        "Show it only when zoomed",
+        "Remove the crosshair entirely",
+        "Add a contrasting outline or color, and color-shift it over targets"
+      ],
+      "answer": 3,
+      "why": "White reticules vanish on some backgrounds. Keep it moderately sized, use contrast, and color-change over targets. Making it dominant breaks the size rule."
+    },
+    {
+      "id": "L08-q06",
+      "q": "Team Fortress 2's sniper laser dot illustrates which reticule rule?",
+      "options": [
+        "Build gameplay into your reticule",
+        "Use aim assist for vehicles",
+        "Keep reticules small",
+        "Avoid white reticules"
+      ],
+      "answer": 0,
+      "why": "Enemies see the dot and can dodge, so the UI becomes a mechanic."
+    },
+    {
+      "id": "L08-q07",
+      "q": "Why show an ammo counter for an infinite-ammo weapon (Metal Slug)?",
+      "options": [
+        "To trick players into conserving shots",
+        "Hardware makers require it",
+        "It shows which weapon is currently armed",
+        "To fill empty HUD space"
+      ],
+      "answer": 2,
+      "why": "The display doubles as a \"which weapon\" indicator."
+    },
+    {
+      "id": "L08-q08",
+      "q": "Which inventory idea removes backtracking?",
+      "options": [
+        "Diablo's size-based grid",
+        "Resident Evil 2's linked magic item boxes",
+        "Tomb Raider's large-scale item view",
+        "Hotkeys"
+      ],
+      "answer": 1,
+      "why": "Items stored in one RE2 box appear in later boxes. The grid is a puzzle, the large view is for inspection."
+    },
+    {
+      "id": "L08-q09",
+      "q": "A merge game's players hit \"inventory full\" and lose event rewards. Which principle is broken, and what is the F2P fix?",
+      "options": [
+        "Never lose the player's stuff; overflow rewards to a mailbox",
+        "Score must be flashy; add particles",
+        "Inventory should be a puzzle; shrink it further",
+        "Use text in icons; label the slots"
+      ],
+      "answer": 0,
+      "why": "Nobody likes losing what they found or bought. A mailbox is the modern magic box."
+    },
+    {
+      "id": "L08-q10",
+      "q": "Which is one of Rogers' reward-feedback pointers?",
+      "options": [
+        "Keep celebrations small so they do not distract",
+        "Avoid sound so players are not annoyed",
+        "Use ornate fonts for celebratory text",
+        "Show clear cause and effect, like a coin flying to the tally"
+      ],
+      "answer": 3,
+      "why": "Cause and effect is pointer 4. He says you cannot overdo celebration, and wants readable fonts and voice/SFX."
+    },
+    {
+      "id": "L08-q11",
+      "q": "According to Rogers, what is true about congratulating the player?",
+      "options": [
+        "It should be rare to keep it meaningful",
+        "There is no such thing as overdoing it",
+        "It should only happen at level end",
+        "It should be text-only"
+      ],
+      "answer": 1,
+      "why": "Games are bad at making players feel good, so pile it on. Modern F2P adds skip options for repeated rewards."
+    },
+    {
+      "id": "L08-q12",
+      "q": "What should you do if a map must fill the whole screen?",
+      "options": [
+        "Make it translucent and keep the game running",
+        "Re-fog explored areas",
+        "Pause the gameplay",
+        "Remove the legend"
+      ],
+      "answer": 2,
+      "why": "Rogers says to pause if the map fills the screen. Never re-fog, and always include a legend."
+    },
+    {
+      "id": "L08-q13",
+      "q": "Your 4X game re-hides map areas after players leave them. What is the problem?",
+      "options": [
+        "Nothing, it adds challenge",
+        "It causes the bracketing effect",
+        "It violates the Three-Press Rule",
+        "Re-fogging confuses players with the very tool meant to orient them"
+      ],
+      "answer": 3,
+      "why": "Fog of war is fine. Re-fogging is not."
+    },
+    {
+      "id": "L08-q14",
+      "q": "What made Maximo's \"plings\" different from standard context prompts?",
+      "options": [
+        "They also showed when the player could NOT do an action",
+        "They were voice lines",
+        "They appeared only in menus",
+        "They replaced the health bar"
+      ],
+      "answer": 0,
+      "why": "Plings were emoticons for both can and can't, and they could show NPC moods."
+    },
+    {
+      "id": "L08-q15",
+      "q": "Which is NOT one of Rogers' tips for a HUD-less game?",
+      "options": [
+        "Characters react to and look at interactable things",
+        "Use glows or the Scooby-Doo effect on items",
+        "Prefer subtle, small effects to avoid overemphasis",
+        "Use characters or glowing arrows to lead the way"
+      ],
+      "answer": 2,
+      "why": "He says the opposite: prefer big, full-screen effects, since it never hurts to overemphasize."
+    },
+    {
+      "id": "L08-q16",
+      "q": "Which icon practice does Rogers recommend?",
+      "options": [
+        "Combine a character, logo and text for richness",
+        "Give icons a strong black or white outline",
+        "Put the word inside the icon to avoid confusion",
+        "Make similar actions look nearly identical"
+      ],
+      "answer": 1,
+      "why": "Outlines make icons pop. Never combine elements, avoid text, and make each icon distinct."
+    },
+    {
+      "id": "L08-q17",
+      "q": "A strategy game plays a voice line on every unit click and testers hate it. Rogers' fix?",
+      "options": [
+        "Play voice about every third click and rotate several recorded variants",
+        "Remove all feedback",
+        "Make the voice louder",
+        "Replace voice with text pop-ups"
+      ],
+      "answer": 0,
+      "why": "Keep visual/click feedback every press, and voice only occasionally, with variety."
+    },
+    {
+      "id": "L08-q18",
+      "q": "Your rarity tiers are coded only red vs green. Which book rule plus modern concern applies?",
+      "options": [
+        "KYSS; nothing else needed",
+        "Avoid outlines; they hide color",
+        "Biggest button first; make rare items bigger",
+        "If color is not enough, use shape; red-green color blindness is common"
+      ],
+      "answer": 3,
+      "why": "Color alone fails for many color-blind players. Shape coding is Rogers' own backup rule."
+    },
+    {
+      "id": "L08-q19",
+      "q": "Which is a Rogers rule for fair QTEs?",
+      "options": [
+        "Randomize prompts so players cannot memorize them",
+        "Give a beat to see the icon and a beat to press it",
+        "Use shoulder buttons for variety",
+        "Make QTEs mandatory so players do not skip content"
+      ],
+      "answer": 1,
+      "why": "Beat-beat timing. He wants predictability, face buttons and optional QTEs."
+    },
+    {
+      "id": "L08-q20",
+      "q": "Where does Rogers say QTEs belong?",
+      "options": [
+        "Routine actions like opening doors",
+        "Menus and inventory screens",
+        "Big exciting moments and near-impossible actions, as shortcuts into cinematics",
+        "Every enemy encounter"
+      ],
+      "answer": 2,
+      "why": "Never QTE something players can already do with normal controls."
+    },
+    {
+      "id": "L08-q21",
+      "q": "Where should the HUD generally NOT go?",
+      "options": [
+        "Top-left corner",
+        "Bottom edge near the safe area",
+        "Top-right corner",
+        "Center of the screen, except reticules or object IDs"
+      ],
+      "answer": 3,
+      "why": "The center is where the action is. Top-left is for vital info, and the bottom is fine if not clipped."
+    },
+    {
+      "id": "L08-q22",
+      "q": "Your lobby has a currency bar on top, event rails on both sides and a nav bar on the bottom, and players say it feels cramped. Which concept?",
+      "options": [
+        "The bracketing effect",
+        "The Scooby-Doo effect",
+        "Fog of war",
+        "The safe frame"
+      ],
+      "answer": 0,
+      "why": "UI on three-plus edges brackets the view into a mail slot."
+    },
+    {
+      "id": "L08-q23",
+      "q": "Rogers' unbreakable interface rule is that any game screen should be reachable in no more than...",
+      "options": [
+        "One press",
+        "Two presses",
+        "Three presses",
+        "Five presses"
+      ],
+      "answer": 2,
+      "why": "The Three-Press Rule. His war story cut 16 presses to 4."
+    },
+    {
+      "id": "L08-q24",
+      "q": "Your F2P game needs 6 taps from launch to the first match, after FTUE. What best applies?",
+      "options": [
+        "Add more loading-screen tips",
+        "Consolidate screens to respect the Three-Press (Tap) Rule",
+        "Add a calibration tool",
+        "Make the logo screen animate"
+      ],
+      "answer": 1,
+      "why": "Consolidating screens is Rogers' fix for button-press bloat."
+    },
+    {
+      "id": "L08-q25",
+      "q": "What does Rogers say about pause-screen menu order?",
+      "options": [
+        "Let the pause button close the menu and put the most common action first",
+        "Options should be first",
+        "Resume should always be first",
+        "Exit Game should be first"
+      ],
+      "answer": 0,
+      "why": "Resume first wastes presses. Put save (or map/inventory) first and let Start close the menu."
+    },
+    {
+      "id": "L08-q26",
+      "q": "Why warn against a save system that becomes a \"reset system\"?",
+      "options": [
+        "It uses too much memory",
+        "Autosave stops working",
+        "Players cannot find the save button",
+        "Reloading becomes easier than dying and restarting, turning saves into a gameplay mechanic that breaks immersion"
+      ],
+      "answer": 3,
+      "why": "Save-scumming breaks immersion. In F2P, server-side RNG and reroll policies are the modern versions of this issue."
+    },
+    {
+      "id": "L08-q27",
+      "q": "Which two things should every loading screen have?",
+      "options": [
+        "Trivia and concept art",
+        "A moving image and a progress bar or percentage",
+        "A mini-game and a map",
+        "Legal text and credits"
+      ],
+      "answer": 1,
+      "why": "Moving image (hardware makers require it, so players know it has not crashed) plus a progress indicator. The rest are optional ideas."
+    },
+    {
+      "id": "L08-q28",
+      "q": "Which statement about fonts matches the book?",
+      "options": [
+        "Serif and medieval fonts are ideal for score readouts",
+        "Red text on black is a safe high-impact choice",
+        "Fonts under about 18 point are very hard to read on SD TVs",
+        "Font color does not matter on HDTVs"
+      ],
+      "answer": 2,
+      "why": "Rogers cites 18 point and the Dead Rising tiny-text disaster. Ornate fonts and red-on-black are warned against."
+    },
+    {
+      "id": "L08-q29",
+      "q": "Which mobile issue is the modern equivalent of Rogers' TV clipping and overscan warnings?",
+      "options": [
+        "Rewarded ads",
+        "Cloud saves",
+        "Battery drain",
+        "Notches, rounded corners and home-indicator safe areas"
+      ],
+      "answer": 3,
+      "why": "Safe areas replace TV safe frames. Anchor interactive UI inside the OS-reported safe area."
+    },
+    {
+      "id": "L08-q30",
+      "q": "Which red-dot practice is healthiest for long-term engagement?",
+      "options": [
+        "Dots only for actionable items, cleared on visit, from a small consistent vocabulary",
+        "Dots that never clear so players keep checking",
+        "Show dots on every tab after login to drive visits",
+        "Fake dots on the store to raise conversion"
+      ],
+      "answer": 0,
+      "why": "Honest, actionable, clearable dots keep the signal meaningful. The others train players to ignore dots, and fake dots are a dark pattern."
+    }
+  ],
+  "sideQuests": [
+    {
+      "id": "L08-s01",
+      "title": "HUD Bingo",
+      "task": "Screenshot the gameplay screen of any mobile game. Circle and number the 7 classic HUD elements, or mark each \"absent\" and note what replaced it (e.g., moves counter = health).",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L08-s02",
+      "title": "Zombie Placement Test",
+      "task": "On the same screenshot, shade the action center, the thumb-rest zones and the notch/safe-area margins. Flag any HUD element that sits in a bad zone and suggest a new spot.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L08-s03",
+      "title": "Red-Dot Audit",
+      "task": "Open a F2P game you play and count every red dot or badge on the home screen. Tap each: is it actionable, and does it clear? Score the game's dot honesty out of 10.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L08-s04",
+      "title": "Tap Counter",
+      "task": "From a cold app launch, count taps until you are actually playing. Then count lobby to store, lobby to settings and lobby to an event. Does it pass the Three-Tap Rule?",
+      "minutes": 5,
+      "xp": 20
+    },
+    {
+      "id": "L08-s05",
+      "title": "KYSS Icon Sprint",
+      "task": "Sketch 6 icons for a hypothetical merge game (energy, coins, gems, storage, quest, settings) at 2 cm size. Squint at them and view them in grayscale, then fix any look-alikes.",
+      "minutes": 15,
+      "xp": 40
+    },
+    {
+      "id": "L08-s06",
+      "title": "Loading-Screen Makeover",
+      "task": "Pick a boring loading screen from any game and redesign it on paper using at least 3 of Rogers' eleven ideas, plus a progress indicator.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L08-s07",
+      "title": "Localization Stress Test",
+      "task": "Take 5 button labels (Play, Claim, Upgrade, Shop, Settings), look up their German and Russian translations, and check whether they fit the original button widths. Note which buttons need redesign.",
+      "minutes": 10,
+      "xp": 30
+    }
+  ],
+  "mainQuests": [
+    {
+      "id": "L08-m01",
+      "title": "Lobby Surgeon: teardown and redesign of a F2P home screen",
+      "task": "Screenshot the home screen of a mid-core F2P game with a busy lobby. Annotate every element (type, dot/timer, tap distance), score it against this chapter's rules (biggest button, bracketing, safe area, thumb zone, dot honesty, readability, color-blind safety), then wireframe a redesign that keeps all functionality using an event hub, priority rail slots and a clear PLAY hierarchy.",
+      "deliverable": "Annotated screenshot + score table + redesigned wireframe + 5 bullet justifications citing Rogers' rules (one page or image).",
+      "doneWhen": "Every element is annotated, at least 6 rules are scored, the redesign removes the bracketing effect without deleting features, and every main feature is 2 taps or fewer from home. Bonus: post the before/after publicly for feedback.",
+      "minutes": 90,
+      "xp": 200
+    },
+    {
+      "id": "L08-m02",
+      "title": "Flow & Icons: screen flow diagram plus core icon set",
+      "task": "For your own game concept (or a hypothetical cozy merge + island-building game), draw the full screen flow from launch through consent, loading, FTUE, lobby, every feature and results, labeling each arrow with its tap and marking modal pop-ups (max 2 at login). Then design 10 core icons following all 16 icon rules and KYSS, and test them at 48 px, in grayscale and in a color-blind simulator.",
+      "deliverable": "One flow-diagram image + an icon sheet at 48 px and 128 px + a short note on which rules shaped which icons.",
+      "doneWhen": "No screen is more than 3 taps from the lobby, there are no dead-end screens, all 10 icons pass the squint, grayscale and color-blind checks, and no icon contains text.",
+      "minutes": 120,
+      "xp": 250
+    }
+  ],
+  "playLabs": [
+    {
+      "id": "L08-p01",
+      "game": "Brawl Stars",
+      "minutes": 10,
+      "lookFor": "The PLAY button's size and position in the lobby; joystick, attack and super placement in a match; tap-to-auto-aim vs drag-to-aim; health bars over brawlers.",
+      "question": "Which Rogers rules (biggest = most important, sticky aim, keep the center clear, reach) does it follow, and where does it bend them for touch?"
+    },
+    {
+      "id": "L08-p02",
+      "game": "Royal Match or Candy Crush Saga",
+      "minutes": 10,
+      "lookFor": "Every piece of reward feedback across 3 levels: voice, particles, freezes, coins flying to the tally, win celebration and the results screen.",
+      "question": "List the juice techniques you saw. Which can you skip, and how many taps does it take from results to the next level?"
+    },
+    {
+      "id": "L08-p03",
+      "game": "Whiteout Survival or Last War: Survival",
+      "minutes": 10,
+      "lookFor": "Number of home-screen icons, timers and red dots after login, and how many pop-ups appear before you can act.",
+      "question": "Is this Planet Gobs of Interface justified by depth, or is it bracketing and dot inflation? What would you consolidate first?"
+    },
+    {
+      "id": "L08-p04",
+      "game": "Clash Royale",
+      "minutes": 10,
+      "lookFor": "Where the elixir bar sits relative to your cards and thumbs during a match; how the shop presents contents and prices.",
+      "question": "Why is that the right spot for the most-watched gauge, and how clearly does the shop show what you get and what it costs?"
+    }
+  ],
+  "retrieval": [
+    {
+      "q": "What is Rogers' definition of the HUD, and what are the 7 classic elements?",
+      "a": "Any visual element that communicates info to the player. Health/lives, targeting reticule, ammo gauge, inventory, score/XP, radar/map, context-sensitive prompt."
+    },
+    {
+      "q": "Name six ways to represent health, with examples.",
+      "a": "Draining bar or icons; inverted damage bar; defense system (Metroid); shields or % (X-Wing); story-device reset (Assassin's Creed); regen (Halo); directional blur (Uncharted 2); fritz (Metroid Prime, Batman: AA); darken with heartbeat (Call of Duty); rumble heartbeat (Silent Hill)."
+    },
+    {
+      "q": "Give five reticule rules.",
+      "a": "Not too big or small; avoid pure white; zoom modes and resizing (Red Faction: Guerrilla); color change over targets; sticky aim assist (great for vehicles); build in gameplay (TF2 laser dot)."
+    },
+    {
+      "q": "What four tips does Rogers give for ammo gauges?",
+      "a": "Clips plus bullets if there is room (Operation Wolf); button press to show other ammo types (Ratchet & Clank); always show the armed weapon's ammo; show even infinite ammo to indicate the weapon (Metal Slug)."
+    },
+    {
+      "q": "Summarize the inventory rules.",
+      "a": "Hotkeys/drag-and-drop; a large inspection view (Tomb Raider); size-grid puzzles (Diablo); clear silhouettes and simple colors; expandable capacity; permanent storage; linked magic boxes (Resident Evil 2)."
+    },
+    {
+      "q": "What are the six reward-feedback pointers?",
+      "a": "Voice/SFX; freeze or hero celebration; lots of particles; clear cause and effect (coin to tally); readable font, watch length; fill the screen without covering gameplay."
+    },
+    {
+      "q": "List the map rules.",
+      "a": "Legible, not full-screen (pause if it is); usable while moving, with markers (GTA4); a legend; elevation via color or onion-skin; a facing arrow; fog of war without re-fogging; extra aids (distance, vision cones, NPC names); a themed look."
+    },
+    {
+      "q": "What are context prompts, plings, and where do prompts go?",
+      "a": "Icons that appear near interactables (GTA3 Y button). Plings (Maximo) show can and can't, plus NPC mood. Uses: doors, mechanisms, NPCs, collectibles, vehicles/mini-games, jumps (Zelda), QTEs (God of War), vulnerability notices, secret treasure."
+    },
+    {
+      "q": "What are the clean-screen strategies and HUD-less tips?",
+      "a": "Fade inactive HUD with an easy recall, or remove HUD (King Kong). Tips: characters look, reach and comment; big effects; glows or the Scooby-Doo effect; guides or glowing arrows."
+    },
+    {
+      "q": "Give ten icon rules and the master rule.",
+      "a": "Right image; current metaphor; color-code with category backgrounds; shape backup; no text; button-like words; no mash-ups; outlines; no look-alikes; tooltips; not left to programmers; learn from experts; press feedback with sparse voice; biggest = most important/used; most-used near the cursor; sticky. KYSS."
+    },
+    {
+      "q": "What are the QTE rules?",
+      "a": "Only for big cinematic or impossible moments; beat to see plus beat to press; short; predictable (no random prompts); one control set, no shoulder buttons; big icons in a consistent spot; optional where possible; short motion waggles."
+    },
+    {
+      "q": "Explain the zombie placement diagrams.",
+      "a": "Center = action, keep clear except reticules (translucent overlays OK, Dead Space). Top-left = vital info (left-to-right reading). Bottom = OK but watch clipping, offer calibration. Bracketing = UI on many edges makes a claustrophobic mail slot."
+    },
+    {
+      "q": "What is the Three-Press Rule and its war story?",
+      "a": "No screen should take more than 3 presses to reach. One game took 16 presses to reach gameplay; Rogers' team cut it to 4 by consolidating."
+    },
+    {
+      "q": "What belongs on and around the pause screen?",
+      "a": "The pause button also closes it, with the most common option first. Spokes: sound/music, save/load, cheats, calibration, bonus, exit, credits, difficulty, controller screen. Options as a hub, not a labyrinth."
+    },
+    {
+      "q": "What are the rules for save, loading, controls, tally, legal and credits screens?",
+      "a": "Save: automate, create a save at start, 3+ named descriptive slots, autosave, no reset system. Loading: disguise loads, eleven spruce-up ideas, moving image plus progress bar. Controls: controller image, reachable in-game, remappable. Tally: fun stats and a rating. Legal: legible, accurate, skippable. Credits: credit everyone, never boring."
+    }
+  ],
+  "feynman": "Explain to a 12-year-old in 60 seconds: why does a game screen keep the middle empty, put the score in a corner and make the PLAY button huge, and why should you never need more than three taps to get anywhere? Use the zombie, the mail slot and the back-flipping bunnies.",
+  "links": [
+    "L04",
+    "L05",
+    "L06",
+    "L07",
+    "L09",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L14",
+    "L15",
+    "L16",
+    "L17",
+    "F2P1",
+    "F2P2",
+    "F2P"
+  ]
+}

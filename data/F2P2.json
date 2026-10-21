@@ -1,0 +1,1760 @@
+{
+  "id": "F2P2",
+  "order": 21,
+  "kind": "dlc",
+  "label": "DLC 2",
+  "title": "F2P Live: Monetization, LiveOps, Social & Getting Hired",
+  "bookPages": "—",
+  "emoji": "📡",
+  "tagline": "The game is fun. Now make it earn, keep it alive for five years, and get paid to design it.",
+  "f2pRelevance": 5,
+  "f2pWhy": "Monetization, LiveOps, social systems, data and launch strategy are the daily work of F2P mobile designers, and the book (2010, console-first) never covers them.",
+  "minutes": 150,
+  "tldr": [
+    "Monetization is design, not a price tag: decide what is sold, who sees it, when, and why it feels worth it. The best offers solve a problem the player already feels.",
+    "Gacha sells chance, a pass sells the right to earn, ads trade attention for rewards. Each has its own math, psychology and ethical traps, and gacha carries country-specific legal risk (check current law).",
+    "LiveOps is the heartbeat: a layered daily, weekly, monthly, seasonal and yearly calendar built from reusable event templates and remote config.",
+    "Social systems (friends, clans, co-op, leagues) are the strongest long-term retention glue: leaving the game means leaving people.",
+    "Data tells you what happened, playtests and intuition tell you why. A/B tests need a hypothesis, guardrails, enough players and patience.",
+    "Trust is the real currency: dark patterns borrow from your future. To get hired, show your thinking with deconstructions, specs and economy models, built in public."
+  ],
+  "sections": [
+    {
+      "title": "1. Monetization design: what you sell, who sees it, when",
+      "bites": [
+        {
+          "id": "F2P2-b01",
+          "hook": "Nobody wants gems. They want what gems do.",
+          "body": "Players buy **outcomes and feelings**: progress, power, time saved, self-expression, status, belonging. Monetization design means deciding what is for sale, who sees it, when it appears and why it feels worth it. The best offer solves a problem the player already feels.",
+          "example": "\"+5 moves\" on a match-3 level you have failed eight times sells an outcome (finally winning), not 'moves'.",
+          "f2p": "Write every offer as \"this helps you ___\". If you can't fill the blank, the offer is noise.",
+          "memory": "Sell the drill's hole, not the drill.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b02",
+          "hook": "The IAP menu: eleven things you can sell",
+          "body": "**Consumables** (used up), **durables** (permanent), **cosmetics** (looks only), **convenience** (saves time), **subscriptions** (recurring), **VIP systems** (spend-based perks), **bundles**, **starter packs**, **limited-time offers**, **personalized offers** and **passes**. Consumables pay the bills, durables and cosmetics build attachment, and subscriptions and passes build predictable revenue and habits.",
+          "example": "A typical healthy store mixes a daily free gift, cheap boosters, a $4.99 pass, cosmetic skins and a currency ladder up to $99.99.",
+          "f2p": "Make sure there's something at every depth: free, tiny, medium and big. No small offers means non-payers never start.",
+          "memory": "Free, tiny, medium, deep: a pool needs a shallow end.",
+          "tag": "list"
+        },
+        {
+          "id": "F2P2-b03",
+          "hook": "Consumables are the engine, durables are the anchor",
+          "body": "**Consumables** (currency, boosters, energy, revives, speed-ups) get used up and can be bought again, so they drive recurring revenue, but overuse feels like 'pay or lose'. **Durables** (characters, skins, ad removal, extra build slots) are bought once and kept: high perceived value, one-time revenue, and a balance risk if they grant power.",
+          "example": "Clash of Clans sells extra builder huts for gems, a classic durable that permanently speeds progress.",
+          "f2p": "Balance both: consumables for repeat spend, durables for 'investment' feelings. Check whether a durable breaks PvP fairness.",
+          "memory": "Consumables = coffee (daily). Durables = the coffee machine (once).",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b04",
+          "hook": "Monthly cards: the tiny subscription that builds a daily habit",
+          "body": "**Subscriptions** (monthly card, VIP club, ad-free plus perks) give steady value each period, often as a daily currency drip that rewards logging in. They must deliver value every period and be easy to cancel. **VIP systems** (cumulative-spend levels unlocking perks) are common in Asian 4X/RPG games but ethically debated, because they openly reward spending with power and status.",
+          "example": "Genshin Impact's 30-day monthly card is the famous example: a small price, with premium currency claimed each day you log in.",
+          "f2p": "Pair a cheap sub with daily claims: you get retention and monetization in one product.",
+          "memory": "A sub is a newspaper: it has to land on the doorstep every morning.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b05",
+          "hook": "The store is a level: layout, flow and a reason to return",
+          "body": "Typical top-to-bottom order: **hero offer**, **daily deals** (with a **free daily gift**), passes and subs, bundles, gacha (with odds link), **currency ladder**, cosmetics, ad-reward corner. The free daily gift trains a daily store visit without nagging. Show real-money prices, preview items in action, use a clear confirm step, and save red dots for genuinely new things.",
+          "example": "Many mobile stores put a free chest at the top of daily deals: tap it every day, see today's offers on the way.",
+          "f2p": "Cap session-start pop-ups (one or two is a common rule of thumb). The store also lives in contextual moments, not just one screen.",
+          "memory": "A red dot that cries wolf gets ignored.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b06",
+          "hook": "The currency ladder: bigger packs, bigger bonus, honest tags",
+          "body": "A classic ladder has ~5–7 hard-currency packs ($0.99 to $99.99). The **bonus %** grows with pack size (a volume discount). Tag a mid pack **\"Most Popular\"** (social proof) and the top pack **\"Best Value\"** (anchor). A **first-purchase bonus** ('double gems on your first buy of each pack') makes trying a new tier feel safe.",
+          "example": "Hypothetical ladder: $0.99 (+0%), $4.99 (+10%), $9.99 (+20%), $19.99 (+30%), $49.99 (+40%), $99.99 (+50%).",
+          "f2p": "Check that gems-per-dollar improves at every step, or the ladder feels broken.",
+          "memory": "Climb the ladder, the view (value) gets better.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b07",
+          "hook": "Anchors and decoys: the first price you see rewires the rest",
+          "body": "**Anchoring:** the first number seen becomes the reference, so a $99.99 pack makes $19.99 feel reasonable. **Decoy effect:** a third option exists mainly to make another look smart. **Charm pricing** uses .99 endings. **Regional pricing** adjusts for purchasing power. Reference prices ('was $20') must be real: fake discounts are deceptive and legally risky.",
+          "example": "$9.99 = 1,000 gems, $19.99 = 2,200, $24.99 = 2,300. Nobody buys the $24.99 pack, and that's its job: it makes $19.99 look like the smart pick.",
+          "f2p": "Set per-region prices. A US impulse buy can be a day's wage elsewhere.",
+          "memory": "The decoy is a bodyguard: it exists to make the star look good.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b08",
+          "hook": "The $0 to $0.01 wall is the hardest sale in gaming",
+          "body": "The first purchase breaks the 'I never pay' identity and the payment friction. Afterwards, repeat purchases become much more likely. **Starter packs**: high value, low price, one-time only, shown **after** players understand item value (post-FTUE, often after the first wall), with something usable immediately. Then **ladder** gently upward, or use **chain offers** where free and paid tiles alternate.",
+          "example": "A $1.99 pack with a strong hero shown after the first boss beats the same pack shown in minute one, when 'Mythic Shard' means nothing.",
+          "f2p": "Treat the starter pack as a handshake, not a profit centre. And never punish non-payers: they fill queues and guilds.",
+          "memory": "First date: bring flowers, not an invoice.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P2-b09",
+          "hook": "Personalize the moment and content, keep prices consistent",
+          "body": "**Segment** players by payer status, spend, progression, frequency, recency and region. **Triggered offers** fire at moments of need (out of moves, new hero unlocked, returning after 14 days). Use cooldowns, daily caps and priority rules. **Dynamic pricing** (different prices for the same item) is controversial: players compare offers online, and discovering they paid more breaks trust.",
+          "example": "A lapsed player returning after two weeks gets a comeback gift plus a modest win-back offer, not a $99 mega bundle.",
+          "f2p": "Personalization should match value to need. It should never hunt players showing compulsive patterns.",
+          "memory": "Tailor the suit, don't change the price tag per customer.",
+          "tag": "warning"
+        },
+        {
+          "id": "F2P2-b10",
+          "hook": "Web shops: the store fee workaround reshaping mobile monetization",
+          "body": "Standard app store fees are 30%, with 15% tiers for small developers and some subscriptions. Since 2024–2025, legal and policy changes in the US and EU made it easier to link to a game's own **web shop (D2C)**. Many games now give web-shop bonuses. The rules differ by country and change often, so check current platform policies.",
+          "example": "A hypothetical game offers +10% bonus gems when buying the same pack on its website instead of in-app.",
+          "f2p": "As a monetization designer, expect to design both in-app and web-store offer flows, and keep the two consistent.",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "F2P2-b11",
+          "hook": "A store is a vending machine in a dungeon",
+          "body": "Put it where people get hungry (contextual), stock snacks at every price (depth), label them honestly (transparency) and never glue the coins to the slot (no traps). The healthy-offer checklist is **SPEND**: Segment, Price point, Exchange value, Need moment, Deadline (honest timers only).",
+          "example": "Out-of-moves offer = the vending machine right outside the boss room.",
+          "f2p": "Run every offer spec through SPEND before it goes to review.",
+          "memory": "SPEND: Segment, Price, Exchange value, Need moment, Deadline.",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "2. Gacha & loot boxes: selling chance, responsibly",
+      "bites": [
+        {
+          "id": "F2P2-b12",
+          "hook": "Gacha sells chance, and chance is powerful",
+          "body": "**Gacha** (from Japanese *gachapon* capsule machines) and **loot boxes** sell random rewards. Unpredictable rewards are deeply motivating (variable-ratio reinforcement), which is also why they're gambling-like, regulated in some countries and scrutinized everywhere. People mostly pull for characters they love, so collection and attachment drive it.",
+          "example": "Genshin Impact and Honkai: Star Rail are built around character banners: you pull for a specific featured character.",
+          "f2p": "Design gacha with math, transparency and guardrails, or don't use it. Check current law in every target country.",
+          "memory": "Capsule toy machine + your favourite character inside = gacha.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b13",
+          "hook": "Banner, rate-up, 10-pull: speak gacha fluently",
+          "body": "A **pull** is one draw. A **10-pull** often guarantees a minimum rarity. **Rates** are the probabilities. A **banner** is a time-limited pool with **featured (rate-up)** items. A **standard banner** is permanent. **Step-up banners** change cost or guarantees per step. A **box gacha** draws without replacement, so the prize is eventually guaranteed. **Selector tickets** let you choose.",
+          "example": "A box gacha with 100 items and one grand prize guarantees the prize by draw 100 at the latest.",
+          "f2p": "In interviews, using these terms correctly signals you've actually played and analysed gacha games.",
+          "memory": "Box gacha = a bag of marbles you never put back.",
+          "tag": "list"
+        },
+        {
+          "id": "F2P2-b14",
+          "hook": "Pity and spark turn 'maybe never' into 'definitely, eventually'",
+          "body": "**Hard pity** guarantees a top-rarity item by pull N. **Soft pity** raises rates step by step after a threshold. **50/50 + guarantee**: lose the featured coin-flip once and the next top item is guaranteed featured. **Spark** (term from Granblue Fantasy): pulls earn points you exchange for a chosen item. Disclose whether pity **carries over** between banners.",
+          "example": "Genshin Impact popularized the visible pity counter plus the 50/50-then-guaranteed structure for featured characters.",
+          "f2p": "Pity lets players **save toward a known worst case**, which makes spending plannable instead of blind.",
+          "memory": "Pity = safety net. Spark = a ladder out of the net.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b15",
+          "hook": "Averages lie, tails rage: the 1% math",
+          "body": "With a 1% rate and no pity, the expected cost is 100 pulls. But 0.99^100 ≈ 37% of players still don't have it after 100 pulls, and about 1 in 10 need ~230+ pulls. Those unlucky players fill the angry forum threads. Hard pity (say at 80) caps the worst case for everyone.",
+          "example": "Hypothetical: two friends each do 100 pulls on a 1% banner. There's a good chance at least one walks away empty-handed and furious.",
+          "f2p": "Always model the unluckiest 10% in your gacha spreadsheet, not just the average.",
+          "memory": "The average player doesn't post on Reddit. The 230-pull player does.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P2-b16",
+          "hook": "Duplicates: the hidden lever that decides fairness",
+          "body": "Dupe options: **dupes = power** (copies unlock upgrades: deep chase, but pay-to-win risk), **dupes = currency/shards** (bad luck converts into crafting progress), **duplicate protection** (no dupes until the set is complete: very fair, less revenue) and **dupes = cosmetic variants** (no power pressure).",
+          "example": "Hearthstone turns unwanted cards into crafting dust, so duplicates become progress toward the card you choose.",
+          "f2p": "Decide dupe handling early. It changes the whole economy and the community's perception of fairness.",
+          "memory": "A dupe should feel like change back, not a slap.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b17",
+          "hook": "Loot box law: a patchwork that changes fast",
+          "body": "Orientation only, so check current law. **Apple** (2017) and **Google** (2019) require odds before purchase. **China** has required odds disclosure since 2017. **Japan** banned 'kompu gacha' in 2012. **South Korea** made disclosure mandatory in 2024. **Belgium** treats paid loot boxes as gambling (2018). The **UK** chose industry principles. **Australia** raised age ratings (2024). **Brazil** restricted them for minors (2025).",
+          "example": "PEGI and the ESRB added 'In-game purchases (includes random items)' labels around 2020.",
+          "f2p": "Legal and publishing teams check every target country before launch. As a designer, know the landscape and design compliant from day one.",
+          "memory": "Gacha law is weather, not climate: check the forecast before you ship.",
+          "tag": "warning"
+        },
+        {
+          "id": "F2P2-b18",
+          "hook": "US regulators police how loot boxes are sold",
+          "body": "The US has no federal loot box law, but the **FTC** enforces consumer and children's privacy rules. Epic Games settled in 2022 over children's privacy and 'dark pattern' purchases, and Genshin Impact's publisher settled in 2025 over loot box sales to minors and how odds and currency were presented. The EU has pushed principles for clear in-game currency pricing.",
+          "example": "Compliant-and-decent looks like this: odds one tap away, plain-language pity, pull history, real-money prices, age-gating, no cash-out.",
+          "f2p": "Presentation matters legally, not just mechanics: confusing currency and buried odds are enforcement targets.",
+          "memory": "",
+          "tag": "warning"
+        },
+        {
+          "id": "F2P2-b19",
+          "hook": "Fair gacha comes in PODS",
+          "body": "If you need gacha at all (alternatives are direct purchase, rotating shops, passes, crafting and choice tickets), use **PODS**: **P**ity, **O**dds disclosed, **D**upes made useful, **S**park or selector. Also: honest reveal animations (no fake near-misses), generous free pulls, watch power creep, and **never real money in and real money out**.",
+          "example": "A gold glow before a 5-star reveal is fun. A fake 'almost got it!' animation is manipulation.",
+          "f2p": "Present PODS in design tests to show you can monetize and protect players at the same time.",
+          "memory": "A gacha without pity is a slot machine wearing a cute hat.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P2-b20",
+          "hook": "How many pulls does a free player earn?",
+          "body": "Economy designers compute the **free-player pull budget**: pulls a non-payer earns per banner cycle from events, dailies and the pass. A patient, engaged free player should be able to get **some** featured items by saving. Banners rotating every few weeks create 'save or spend?' decisions, and reruns reduce FOMO.",
+          "example": "Hypothetical: a free player earns ~40 pulls per three-week banner, so with a hard pity of 80 on the featured unit, saving across two banners guarantees one.",
+          "f2p": "Free players are your matchmaking population and community. Lock them out completely and everyone suffers.",
+          "memory": "Feed the free players or the whole aquarium empties.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "3. Battle / season pass: sell the right to earn",
+      "bites": [
+        {
+          "id": "F2P2-b21",
+          "hook": "A battle pass sells the chance to earn, not the loot",
+          "body": "A **battle pass** is a time-limited track of reward tiers climbed with **pass XP** from playing. Everyone gets the **free track**. Buying unlocks the **premium track**. It works through a clear goal plus progress bar (the **goal-gradient effect**), daily mission habits, high value per dollar, predictable revenue and the fairness of 'I earned it'.",
+          "example": "Dota 2 and then Fortnite popularized passes. Mobile followed fast: Clash of Clans Gold Pass, Clash Royale Pass Royale, Brawl Stars Brawl Pass.",
+          "f2p": "A pass is often the best first purchase for players who never pay: cheap and visibly valuable.",
+          "memory": "A gym membership that actually makes you go.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b22",
+          "hook": "Pass anatomy: tracks, tiers, XP sources and variants",
+          "body": "Seasons are commonly ~4 weeks on mobile. Tiers: often 30–100. Tracks: **free**, **premium** (commonly ~$5–$10, rough rule), **premium+** (tier skips and extras). XP comes from gameplay plus **daily**, **weekly** and **season missions**. **Overflow tiers** reward play after the final tier. Variants: **event pass**, **progression/milestone pass** (no time limit) and **mini pass**.",
+          "example": "A short event pass rides on top of one LiveOps event. A progression pass rewards trophies or levels forever.",
+          "f2p": "Pick the variant to match the goal: time pressure for engagement spikes, permanent passes for FOMO-free value.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "F2P2-b23",
+          "hook": "Retroactive unlock: the pile of loot you already earned",
+          "body": "Buy the premium pass at tier 23 and you instantly get **every premium reward from tiers 1–23**. The player has watched those rewards sit behind a lock on *their* track. This is mild loss aversion, so keep it honest. It's often the biggest conversion moment in a season.",
+          "example": "Hypothetical: a player at tier 23 sees 12 locked premium rewards. One purchase pops all 12 at once, an instant jackpot feeling.",
+          "f2p": "Show locked premium rewards clearly on the pass screen, and make the 'claim all' moment feel celebratory.",
+          "memory": "Buy the ticket, get the backpay.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b24",
+          "hook": "Pace XP so the regular player finishes with a buffer",
+          "body": "Decide **who finishes, and when**. Example: 30 days, 50 tiers × 1,000 XP = 50,000 XP. The target player is active ~21 days and finishes around day 26, so ~2,400 XP per active day: dailies 21,000 + gameplay 16,800 + weeklies 12,000 ≈ 50,000. Simulate casual, regular and hardcore personas in a spreadsheet.",
+          "example": "If your casual persona (2 days/week) only reaches tier 12, make sure tiers 1–12 still feel worth the price.",
+          "f2p": "Flat XP per tier is simple and common. Rising curves hook early but can make the end feel impossible.",
+          "memory": "Total XP ÷ active days = daily budget.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P2-b25",
+          "hook": "Catch-up mechanics: late joiners shouldn't feel doomed",
+          "body": "Tools: **weekly missions** that stay open (sometimes stacking), **XP boosts** for players behind the expected curve or in the final week, **double-XP weekends**, **rested XP** that builds while away, and **tier purchases** priced so they never feel mandatory. Late-season pass discounts can annoy early buyers, so bonus rewards for late buyers are an alternative.",
+          "example": "A player who joins in week 3 gets boosted XP until they reach the 'expected' tier for that date.",
+          "f2p": "Catch-up keeps late-season purchases alive. Without it, nobody buys a pass with 10 days left.",
+          "memory": "Rubber-band racing, but for reward tracks.",
+          "tag": "list"
+        },
+        {
+          "id": "F2P2-b26",
+          "hook": "Reward rhythm: small, small, medium, small, small, BOOM",
+          "body": "Give **instant value** at premium tier 1, place milestone peaks every ~5–10 tiers, avoid **dead tiers** (every tier gives something) and put the **chase reward** (signature skin or character) at the end. Mix currency, progression items, cosmetics and boosters. Some passes return enough premium currency to buy the next one (Fortnite made it famous).",
+          "example": "Premium track: big skin at tier 1, medium at 10, big at 20 and 40, signature cosmetic at 50.",
+          "f2p": "Compute 'value ×N' claims against your real store prices, and plan a value level you can sustain every season.",
+          "memory": "Small, small, medium, small, small, BOOM.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P2-b27",
+          "hook": "Pass pitfalls: grind, pay-to-win and pass soup",
+          "body": "Too grindy turns the pass into a second job, causing burnout and resentment. Too easy gives no engagement lift. **Power** in a PvP pass makes it feel mandatory. **Pass soup** (season + event + VIP + mega pass at once) causes fatigue. Forced-mode missions annoy, so offer rerolls. Watch reward inflation and FOMO cruelty (bring old items back later).",
+          "example": "'Win 5 games in a mode you hate' plus no reroll means a player skips the pass entirely next season.",
+          "f2p": "Rule of thumb: one main pass plus at most one small event pass at a time.",
+          "memory": "One pass is a treat; five passes is a tax.",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "4. Ads in F2P: attention as currency",
+      "bites": [
+        {
+          "id": "F2P2-b28",
+          "hook": "Seven ad formats and how each one feels",
+          "body": "**Rewarded video** (opt-in for a reward, best engagement), **interstitial** (forced full-screen at transitions, big revenue, the main churn risk), **rewarded interstitial** (reward at a break, skippable), **banner** (low revenue, clutter), **app-open** (hurts first impressions), **offerwall** (tasks in other apps for currency, with quality and fraud issues) and **playables** (mostly user acquisition).",
+          "example": "Ad-heavy puzzle games show interstitials between rounds plus rewarded continues after a fail.",
+          "f2p": "Default to rewarded. Add interstitials only with strict caps, and question banners in a polished UI.",
+          "memory": "Rewarded = handshake. Interstitial = ambush.",
+          "tag": "list"
+        },
+        {
+          "id": "F2P2-b29",
+          "hook": "Rewarded placements: real value at the moment of need",
+          "body": "Classic spots: **double rewards** after a level, **continue/revive** after failing (high intent), **free chest/spin/daily item**, **timer skips**, **extra lives or energy**, **try a booster or skin** for one level (a taste that can convert to IAP) and **rerolls**. Show the offer in context, exactly where the player feels the need.",
+          "example": "Archero/Survivor.io-style hybrid-casual games offer a rewarded revive or extra chest alongside IAP and passes.",
+          "f2p": "Track **opt-in rate** (how many choose to watch) and **engagement rate** (views per player) as health signals.",
+          "memory": "Ask at the cliff edge, not in the lobby.",
+          "tag": "list"
+        },
+        {
+          "id": "F2P2-b30",
+          "hook": "Don't let a free ad undercut a $4.99 pack",
+          "body": "Placement rules: **daily caps** keep rewards special and protect IAP, ads give **small, frequent** value while IAP gives **big, permanent** value (don't cannibalize), **never lie** about the reward, and always deliver it even when an ad fails to load (or retry clearly).",
+          "example": "If one ad gives the same booster bundle the store sells for $4.99, payers feel stupid and stop paying.",
+          "f2p": "Map every rewarded placement against the store: same item? Then the ad version must be smaller or capped.",
+          "memory": "Ads are snacks, IAP is dinner.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P2-b31",
+          "hook": "Interstitial etiquette: grace period, caps, natural breaks",
+          "body": "Rules of thumb: **no interstitials in the FTUE**, **frequency caps** (minimum time and levels between ads), **natural breaks only** (after a level, never mid-action), **not after every loss** (it stacks frustration) and **no forced ads for payers**. A **Remove Ads** durable removes forced ads, while rewarded ads often stay because the player chooses them.",
+          "example": "A hypothetical runner shows its first interstitial only after day 1 and at most one every few levels.",
+          "f2p": "A/B test interstitial frequency against D7/D30 retention and LTV, not just ad revenue.",
+          "memory": "Toll booths belong on highways, not in your living room.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P2-b32",
+          "hook": "Hybrid monetization: ads for the many, IAP for the few",
+          "body": "Ads monetize the majority who never pay, while IAP monetizes the minority who do. Pure ad-driven **hyper-casual** got squeezed by rising user acquisition costs and Apple's **ATT** (2021) privacy change, so many studios moved to **hybrid-casual**: simple core, meta progression, IAP and ads. Ad prices (eCPM) vary hugely by country. **Mediation** platforms auction each ad slot.",
+          "example": "AppLovin MAX, Unity LevelPlay and Google AdMob are common mediation platforms you'll hear about.",
+          "f2p": "Segment: more rewarded opportunities for non-payers, fewer forced ads for engaged players, none for payers.",
+          "memory": "Two wallets: time from the many, money from the few.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b33",
+          "hook": "Ad fatigue: the revenue you earn today, the players you lose tomorrow",
+          "body": "Repeated ads lower engagement with rewarded offers, and annoying ads push players to quit. Lower retention means lost future ad and IAP revenue. Bad ads (inappropriate, loud, broken) hurt your reviews. Privacy rules apply: EU consent for personalized ads, Apple ATT prompts and strict kids' rules (certified networks, no behavioural targeting).",
+          "example": "A game doubling interstitials sees ad revenue rise for a week, then D30 retention and IAP drop. That's a classic hidden cost.",
+          "f2p": "Rewarded ads are a tip jar the player chooses to use. Interstitials are a toll booth on every road.",
+          "memory": "Every forced ad spends a bit of goodwill.",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "5. LiveOps: the game's heartbeat",
+      "bites": [
+        {
+          "id": "F2P2-b34",
+          "hook": "In live games, launch day is day one of years",
+          "body": "In **games as a service (GaaS)**, **LiveOps** is the ongoing work of running events, offers, seasons, balance and community for years. Events exist for **retention**, **re-engagement**, **monetization**, **novelty without new systems**, **community moments**, **economy health** (sinks and sources) and as a **testing ground** for new modes.",
+          "example": "A limited-time mode that's hugely popular can become a permanent mode, already validated with live players.",
+          "f2p": "The live team is often bigger than the launch team, and most revenue arrives after launch.",
+          "memory": "Shipping is the wedding. LiveOps is the marriage.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b35",
+          "hook": "The LiveOps toolbox: sixteen event types",
+          "body": "**Collection/token**, **points race/leaderboard**, **race** (vs a small group), **tournament**, **team/clan**, **community goal**, **limited-time mode**, **boss raid**, **story event**, **holiday**, **collab/crossover**, **login/streak**, **album/sticker collection**, **mini-game**, **milestone** and **sale events**. Each serves a goal: engagement, competition, social, novelty, moments or revenue.",
+          "example": "Monopoly GO! runs overlapping tournaments, partner (co-op) events and sticker albums with trading.",
+          "f2p": "Rotate types so players don't burn out on one flavour. Competitive, then cooperative, then relaxing.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "F2P2-b36",
+          "hook": "Global leaderboards motivate the top 0.1%. Buckets motivate everyone.",
+          "body": "Leaderboard and race events work best in **small buckets** where players have a real chance. Watch matchmaking fairness and be transparent about bots. Team events need visible contribution to prevent free-rider resentment. Global goals need each player's contribution to be visible.",
+          "example": "A match-3 'race' puts you against a handful of players: first to win 10 levels takes the prize.",
+          "f2p": "Design bucket size so most participants are within striking distance of a reward.",
+          "memory": "Big pond = minnow. Small pond = shark.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P2-b37",
+          "hook": "An event spec has fourteen parts",
+          "body": "Theme, duration and time zones, entry gate, **core action** (the existing loop plus a twist), progress mechanic, reward track, competition layer, social layer, monetization hooks, **economy impact**, UI and flow, communication (push, inbox, loading screens), **success metrics** and risks with fallback (pause, compensate).",
+          "example": "Post-event report: 'Participation 61%, completion 18%. The final milestone was too far, so cut it 20% next time.'",
+          "f2p": "Event specs are the most common LiveOps design-test deliverable. Practise this structure.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b38",
+          "hook": "The LiveOps heartbeat: Tick-Tock-Drum-Gong-Boom-Cake",
+          "body": "Layered rhythm: **daily** (missions, login, deals), **weekly** (weekend events, leaderboards, guild wars), **event rotation** every ~1–2 weeks, **monthly** (season, pass, banner), **quarterly** (big updates) and **yearly** (anniversary, holidays). Calendars are planned weeks to months ahead and localized for regional holidays.",
+          "example": "Pokémon GO's monthly Community Days (a featured Pokémon with boosted spawns for a few hours) are a textbook monthly beat.",
+          "f2p": "The anniversary is often one of the biggest moments of a game's year. Plan it months ahead.",
+          "memory": "Tick (daily), Tock (weekly), Drum (rotation), Gong (monthly), Boom (quarterly), Cake (yearly).",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b39",
+          "hook": "Event soup kills clarity: one glance, one plan",
+          "body": "At any moment, aim for **one primary event**, **one or two secondaries** and the always-on systems. Players should understand 'what's happening now' at a glance. Alternate flavours (competitive, cooperative, relaxing) and leave breathing room: a quiet week makes the next big event feel bigger.",
+          "example": "Ten timers on the home screen = stress. One hero event banner plus a small weekend race = clarity.",
+          "f2p": "When reviewing a calendar, look for overloaded days and back-to-back intense events.",
+          "memory": "A buffet with 40 dishes means nobody tastes anything.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P2-b40",
+          "hook": "Build the oven once, bake a hundred cakes",
+          "body": "Engineers build **event templates** once, and designers **configure** new events in data. **Remote config** changes numbers without a client update. **Reskins** reuse templates with new art. **On-demand assets** keep the app small. A **release train** ships client updates on a fixed cadence. LiveOps tools schedule, target segments and roll back mistakes. QA live content on staging, with a kill switch.",
+          "example": "A 'collection event' template becomes Halloween candy one month and spring flowers the next, the same code with new config and art.",
+          "f2p": "Fight the **content treadmill** with systemic content (PvP, procedural levels, UGC) and remixing.",
+          "memory": "Events are config, not code.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b41",
+          "hook": "Never silently nerf what people paid for",
+          "body": "**Live balancing** keeps the meta fresh, so explain changes in patch notes. Nerfing paid items needs **compensation** (resource refunds, free swaps). Monitor currency balances for inflation. Level designers retune hard puzzle levels via config using win rates and churn. Hotfix exploits fast and send fair **compensation mail**. Plan an honest **sunset** when a game ends.",
+          "example": "Hypothetical: a paid hero is nerfed 30%. The team offers a free swap to another hero of the same rarity, and the community calms down.",
+          "f2p": "Community managers channel feedback from Discord and Reddit. Treat it as data about feelings.",
+          "memory": "Apology plus gems: the oldest spell in LiveOps.",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "6. Social & competition: people are the glue",
+      "bites": [
+        {
+          "id": "F2P2-b42",
+          "hook": "Nobody quits the gym where their best friend waits",
+          "body": "Social systems retain through **switching cost** (your clan doesn't transfer), **reciprocity** (gifts get returned), **obligation** (the team needs you, so use it gently), **status** (ranks, cosmetics seen by others), **belonging** (clan identity), **social learning** (clanmates teach) and **competition** (rivals are free content).",
+          "example": "Candy Crush's Facebook-era life gifting made players log in just to return a friend's favour.",
+          "f2p": "Even single-player cores like match-3 wrap a persistent social layer (teams, gifts, leagues) around the puzzle.",
+          "memory": "The 3 Gs of social glue: Gift, Guild, Grind together.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b43",
+          "hook": "Clan features that turn strangers into a team",
+          "body": "**Chat** with filters plus **quick emotes**, **donations and requests**, **alliance help** (tap to shorten clanmates' timers), **clan goals**, **clan wars**, **clan bosses**, **clan shop and currency**, **roles** (leader, co-leader, elder) and **clan discovery** that recommends active clans by level and language.",
+          "example": "Clash Royale's card requests and donations make helping visible. Clash of Clans has Clan Wars and Clan War Leagues.",
+          "f2p": "Players who run a clan are among your most invested players. Give leaders good tools.",
+          "memory": "A clan is a campfire: someone has to keep adding wood.",
+          "tag": "list"
+        },
+        {
+          "id": "F2P2-b44",
+          "hook": "Async PvP: fight a player who isn't even online",
+          "body": "**Asynchronous PvP** attacks another player's saved base or team: no waiting, no lag, very mobile-friendly. **Synchronous (real-time) PvP** needs matchmaking, netcode and short matches. **Ladders** use trophies or Elo-like **MMR**, and seasons with a **soft reset** keep hope alive. **Ranked modes** raise the stakes.",
+          "example": "Clash of Clans attacks are async. Clash Royale, Brawl Stars and Mobile Legends: Bang Bang are real-time.",
+          "f2p": "Pay-to-win poisons PvP. Players tolerate paying for speed or cosmetics far more than paying to beat them.",
+          "memory": "Async = chess by mail. Sync = speed chess.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b45",
+          "hook": "Leagues: small ponds make big fish",
+          "body": "**Leagues** group players into small buckets (e.g. 30–50 people). Top finishers promote, bottom finishers demote, and it resets weekly. In a small bucket you have a real chance, while in a global board of millions you don't. Show the nearest goal ('3 spots from promotion'), not global rank #2,483,991.",
+          "example": "Duolingo's weekly leagues are the most famous example of bucketed competition. Many casual games copy the structure.",
+          "f2p": "Use global boards only as a showcase for the very top. Give everyone else a reachable race.",
+          "memory": "Promotion is a carrot, demotion is a gentle stick.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b46",
+          "hook": "Unlock social after the FTUE, and prevent guild death",
+          "body": "Introduce clans once players understand the game. Match intensity to the audience: **casual** players get low-pressure gifting and helping, **midcore** players get wars and rankings. When a clan goes inactive its members churn, so recommend active clans, merge or kick inactive ones and support leader hand-over. Offer **vacation mode** and opt-outs, plus safety tools.",
+          "example": "Clash of Clans unlocks clans when you rebuild the Clan Castle, a neat in-world gate.",
+          "f2p": "Design edge cases: the leader quits, someone joins mid-war, a member is inactive for 30 days.",
+          "memory": "A dead guild is a churn bomb.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P2-b47",
+          "hook": "Co-op, partners and trading: social for everyone",
+          "body": "**Raids** let friends or strangers beat a shared boss. **Partner events** have a few chosen players build something together. **Trading** creates conversation but invites exploits, bots and real-money trading. **Spectating, replays and sharing** spread social proof. **Referral rewards** pay both inviter and friend.",
+          "example": "Pokémon GO raids (including remote ones), Monopoly GO! partner events and sticker swaps, Pokémon TCG Pocket trading.",
+          "f2p": "Co-op suits casual audiences: shared wins, no losers.",
+          "memory": "",
+          "tag": "example"
+        }
+      ]
+    },
+    {
+      "title": "7. Data-driven design: measure, test, still think",
+      "bites": [
+        {
+          "id": "F2P2-b48",
+          "hook": "Log the questions you'll want answered, not everything",
+          "body": "An **analytics event** records something that happened, plus **parameters** and **user properties**. Use consistent names (level_start, level_fail, offer_shown, purchase_complete, currency_spent). Log **every currency source and sink**. Write your questions first. Basic **SQL** is a real hiring plus. Respect consent and privacy.",
+          "example": "level_fail with parameters level_id, attempt_number, moves_left and boosters_used reveals whether a level is unfair or just tough.",
+          "f2p": "Every feature spec you write should include an analytics section listing the events it logs.",
+          "memory": "No telemetry, no diagnosis.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b49",
+          "hook": "Funnels find the leak, cohorts find the change",
+          "body": "A **funnel** shows the % completing each step (FTUE, store → purchase), so look for the biggest drop. A **level funnel** shows cliffs at bad levels. A **cohort** groups players by a shared start (install week) to compare versions or channels. A **segment** groups by behaviour or attribute and explains averages that hide differences.",
+          "example": "A sudden cliff at level 37 in the level funnel means that level needs retuning.",
+          "f2p": "Correlation isn't causation: clan members retain better, but engaged players may simply join clans. Test it.",
+          "memory": "Funnel = leaky pipe. Cohort = class photo by year.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b50",
+          "hook": "Have Many Smart Dogs Decided? The A/B test checklist",
+          "body": "**Hypothesis** ('If we X, then metric Y will Z because W'), **Metrics** (one primary plus **guardrails** that must not worsen, chosen beforehand), **Sample size** (enough to detect the effect), **Duration** (full weeks, long enough to see the metric) and **Decision rule** (what result ships, kills or iterates).",
+          "example": "'If we show the starter pack after the first boss, first-purchase conversion rises because players understand item value.' Guardrail: D7 retention.",
+          "f2p": "Interviewers love candidates who say 'here's how I'd measure it' unprompted.",
+          "memory": "H-M-S-D-D: Have Many Smart Dogs Decided?",
+          "tag": "list"
+        },
+        {
+          "id": "F2P2-b51",
+          "hook": "Small effects need huge samples: 16·p(1−p)/δ²",
+          "body": "Rule of thumb (≈80% power, 5% significance): **n per group ≈ 16 × p(1−p) / δ²**. D1 retention 40% → 42% needs ~9,600 per group. Conversion 2.0% → 2.2% needs ~78,000 per group. Revenue is heavily skewed by a few big spenders, so revenue tests need far more players or time.",
+          "example": "'B won by 0.3%' on 500 players is noise, not a result.",
+          "f2p": "Before proposing a test, sanity-check that your game has enough players to detect the change.",
+          "memory": "Tiny change, giant crowd.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P2-b52",
+          "hook": "Seven ways A/B tests lie to you",
+          "body": "**Peeking** and stopping early, **too-small samples**, the **novelty effect**, **too many metrics or variants** (false wins), **short-term vs long-term** trade-offs (use **holdout groups**), **contamination** in social games (randomize by clan), **seasonality** and **Simpson's paradox**. Plus the **local maximum**: tests climb hills, they don't find mountains.",
+          "example": "A harsher offer lifts revenue this week but hurts D30. Only a holdout group reveals it.",
+          "f2p": "In clan-heavy games, players compare notes, so test by clan or region to avoid leakage.",
+          "memory": "A/B tests climb hills; vision finds mountains.",
+          "tag": "warning"
+        },
+        {
+          "id": "F2P2-b53",
+          "hook": "Data is the speedometer, not the steering wheel",
+          "body": "Data finds *where* players struggle, measures effect size and picks between options. **Qualitative research** (playtests, interviews, surveys, community, reviews) explains *why*. **Intuition** generates bold ideas and judges feel, fun and ethics. Be **data-informed, not data-driven**. When data and gut disagree, dig deeper.",
+          "example": "Data shows a drop at FTUE step 4. A playtest reveals players can't see the button because it blends into the background.",
+          "f2p": "Pair every dashboard insight with a 'why' check: watch five players hit that moment.",
+          "memory": "Numbers say what, people say why.",
+          "tag": "truth"
+        }
+      ]
+    },
+    {
+      "title": "8. Production pipeline, launch, UA & ASO",
+      "bites": [
+        {
+          "id": "F2P2-b54",
+          "hook": "Prototype to live: a series of 'invest more?' gates",
+          "body": "**Concept** (often with a **marketability test**: fake ads to measure CTR and CPI before building), **prototype** (find the fun in weeks), **vertical slice** (core + meta + art, economy planned early), **production**, **beta/tech test**, **soft launch**, **global launch**, **live** for years and an eventual **sunset**.",
+          "example": "A studio runs concept-art video ads for three game ideas and builds only the one with the cheapest installs.",
+          "f2p": "Monetization is planned in pre-production, not bolted on at the end.",
+          "memory": "Every gate asks: is this worth more money?",
+          "tag": "list"
+        },
+        {
+          "id": "F2P2-b55",
+          "hook": "Why soft launches start in Canada and the Philippines",
+          "body": "**Canada, Australia and NZ** are English-speaking proxies for US behaviour, cheaper and lower-profile, so the US isn't burned. The **Nordics and Netherlands** are high-income spending proxies. The **Philippines, Indonesia, Vietnam and India** offer cheap installs at volume and low-end devices to test tech and retention. **Brazil, Mexico and Turkey** are mid-cost big markets. **Japan, Korea and China** need separate plans.",
+          "example": "Brawl Stars spent well over a year in soft launch and switched from portrait to landscape before going global.",
+          "f2p": "Soft launch is for iterating, not just measuring. Big changes still happen there.",
+          "memory": "Test the recipe in small towns before opening in New York.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b56",
+          "hook": "The Rocket Must Scale: four soft-launch phases",
+          "body": "1. **Tech**: crashes, load times, devices, servers. 2. **Retention**: D1/D7/D30 (if the core doesn't retain, nothing else matters). 3. **Monetization**: conversion, ARPDAU, early LTV signals. 4. **Scale**: can you buy players profitably as spend increases?",
+          "example": "A game passes tech and retention but CPI doubles when UA spend rises: it fails the scale phase.",
+          "f2p": "Junior designers often join during soft launch, when the game changes fastest.",
+          "memory": "Tech, Retention, Monetization, Scale = The Rocket Must Scale.",
+          "tag": "list"
+        },
+        {
+          "id": "F2P2-b57",
+          "hook": "Kill early, kill proudly",
+          "body": "A game can scale with paid acquisition when **LTV > CPI** with margin and payback comes within an acceptable time. **Retention is the ceiling**: weak core retention is very hard to fix. The options are **scale, iterate, pivot or kill**. Avoid the **sunk-cost fallacy**: two years spent is not a reason to continue.",
+          "example": "Supercell is famous for killing many games in soft launch (e.g. Clash Quest, Clash Mini, Everdale) and celebrating the learnings.",
+          "f2p": "In interviews, a story about killing your own idea based on evidence is gold.",
+          "memory": "Sunk cost is a ghost: don't let it drive.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P2-b58",
+          "hook": "Creative is king: the ad decides your CPI",
+          "body": "**UA** means buying installs on ad networks. Key metrics: **CTR**, **IPM**, store **CVR**, **CPI** and **ROAS**. With automated targeting and Apple's **ATT** limiting tracking, the **creative** is often the biggest lever, so UA teams test many a week. Organic growth: **featuring**, word of mouth, referrals, creators, cross-promo and ASO.",
+          "example": "'Fail' ads show a player messing up so viewers think 'I could do that better' and install.",
+          "f2p": "Design **marketable hooks**: features that look amazing in 15 seconds (destruction, numbers going up, a clear fantasy).",
+          "memory": "An ad is a promise; the FTUE is the delivery truck.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b59",
+          "hook": "Fake ads: when marketing rewrites the game",
+          "body": "Many mobile ads show gameplay that isn't in the game: pin-pull puzzles, runner gates. The UK **ASA** ruled in 2020 that some Homescapes and Gardenscapes ads were misleading. Some studios made ads more honest, while others **added the advertised mini-games** into their games. Misleading ads bring players who expected something else, and they churn fast and leave angry reviews.",
+          "example": "Playrix's games later added pin-pull style levels, letting the ads shape the design.",
+          "f2p": "Honest ads plus an FTUE that pays off the promise give better retention and fewer one-star reviews.",
+          "memory": "Bait and switch catches fish that jump right back out.",
+          "tag": "warning"
+        },
+        {
+          "id": "F2P2-b60",
+          "hook": "ASO: get found, then get installed",
+          "body": "**Discoverability**: title, subtitle, keyword field (App Store), description keywords (Google Play), category, ratings, localization. **Conversion**: an icon readable at tiny sizes, the **first 2–3 screenshots** (rule of thumb), the video's first seconds (often muted). Ask for ratings at happy moments. Tools: store A/B tests, **custom product pages**, in-app events, pre-registration.",
+          "example": "A custom product page matching a 'merge' ad shows merge screenshots first, so the page keeps the ad's promise.",
+          "f2p": "Store page conversion directly lowers CPI: a better page means cheaper players.",
+          "memory": "Icon = handshake, screenshots = elevator pitch.",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "9. Ethics & player trust",
+      "bites": [
+        {
+          "id": "F2P2-b61",
+          "hook": "The 5 Fs of bad monetization",
+          "body": "**Fake scarcity** (timers on offers that come back tomorrow), **Fogged prices** (currency confusion, leftover traps), **Friction-for-sale** (annoyance designed only to sell the fix), **FOMO overload** (constant last-chance pressure) and **Fooling kids**. Also avoid accidental purchases, confirmshaming, hidden odds, streak guilt, social shaming, PvP pay-to-win, predatory personalization, pop-up storms and fake near-misses.",
+          "example": "'No thanks, I like losing' on a decline button is confirmshaming. Use a neutral 'No thanks'.",
+          "f2p": "For every dark pattern, there's a healthy alternative that still meets a business goal. Bring it to the review.",
+          "memory": "If your design has an F, it fails.",
+          "tag": "list"
+        },
+        {
+          "id": "F2P2-b62",
+          "hook": "Dark patterns borrow revenue from your future",
+          "body": "They backfire through **regulation and fines**, **store rejection**, **refunds and chargebacks**, **reputation** damage (review bombs, influencer backlash), **LTV collapse** (tricked players distrust every offer), **burnout churn** and **team morale** loss. Ethical design is good long-term business and increasingly the law.",
+          "example": "The FTC's 2022 settlement with Epic Games (Fortnite) included hundreds of millions in refunds tied to purchase flows regulators considered dark patterns.",
+          "f2p": "Frame ethics in reviews as LTV protection. Producers respond to that.",
+          "memory": "Trust is a currency you can't buy back with gems.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P2-b63",
+          "hook": "Say 'spender tiers', and build a duty of care",
+          "body": "Words shape behaviour, so prefer **spender tiers** to 'whales'. Some high spenders are wealthy fans, others may be struggling. Tools: in-game **spending history**, optional **self-set spending limits**, **cooling-off** (no escalating offers after big buys), **spend alerts** and play-time reminders. Point players to platform tools like Apple's Ask to Buy and Screen Time and Google Play's purchase authentication.",
+          "example": "Hypothetical: after three big purchases in one night, the game pauses personalized offers for 48 hours.",
+          "f2p": "Player-protection reviews are becoming normal at studios. Know the vocabulary.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b64",
+          "hook": "Assume kids are playing anything colourful",
+          "body": "Know (and check): **COPPA** (US, under-13 data needs parental consent), the **GDPR** digital age of consent (13–16 by country), the **UK Children's Code** (2021, privacy by default), **China's** minor play-time and spending limits and **store families programmes** (certified ad networks, no behavioural ads). Design: no loot boxes for kids, no pressure offers, parental gates, safe or no chat, clear real-money prices.",
+          "example": "A casual cartoon puzzle game is 'likely to be used by children' even if it isn't marketed to them.",
+          "f2p": "Kids' rules affect ads, analytics and purchase flows, so design them in from the start.",
+          "memory": "",
+          "tag": "warning"
+        },
+        {
+          "id": "F2P2-b65",
+          "hook": "Four trust tests before anything ships",
+          "body": "**Newspaper test:** comfortable if this mechanic were explained accurately in a news article? **Parent test:** could you explain the offer to a 12-year-old's parent with a straight face? **State test:** does it only work when the player is tired, confused, angry or impulsive? **Friend test:** would you recommend this purchase to a friend?",
+          "example": "A 3 a.m. escalating mega-offer fails the state test instantly.",
+          "f2p": "Be transparent about real-money prices, odds, pass contents, offer returns and subscription renewals.",
+          "memory": "Newspaper, Parent, State, Friend.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "10. Getting hired as a F2P / mobile designer",
+      "bites": [
+        {
+          "id": "F2P2-b66",
+          "hook": "Six design jobs hiding behind 'Game Designer'",
+          "body": "**Game designer** (generalist), **systems designer** (interlocking rules, progression, social), **economy designer** (currencies, pricing, gacha rates), **level designer** (huge demand in puzzle studios), **LiveOps/event designer** (calendar, event specs) and **monetization designer/offer manager** (store, offers, tests). Adjacent: technical designer, UX designer, game product manager.",
+          "example": "Puzzle studios behind games like Royal Match or Candy Crush hire level designers in large numbers. 4X studios hire economy and LiveOps designers.",
+          "f2p": "Pick a target role and build portfolio pieces that prove its specific skills.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "F2P2-b67",
+          "hook": "Three to five great pieces beat twenty okay ones",
+          "body": "A F2P portfolio: a **deep deconstruction** (loops, economy, monetization, LiveOps, what you'd change), a **feature spec** targeting a KPI, an **economy model** spreadsheet, a **role-specific piece** (levels, LiveOps calendar, store plan) and a small **prototype**. Format each as Problem → Goal/KPI → Constraints → Solution → Expected impact → Test plan → Learnings.",
+          "example": "A Royal Match deconstruction with loop diagrams, an economy sheet and three improvement proposals with A/B plans.",
+          "f2p": "Hiring managers may skim for minutes, so lead with your best piece.",
+          "memory": "Your portfolio is your store page: the first screenshot sells it.",
+          "tag": "concept"
+        },
+        {
+          "id": "F2P2-b68",
+          "hook": "The design test: your real job interview",
+          "body": "Common take-homes: **feature design/spec** ('improve D7 in our game'), **deconstruction** of a game, an **economy task** (balance or debug a spreadsheet), a **level design task** (build levels with a curve), a **LiveOps task** (a month of events) and a **monetization task** (store or offer redesign). They often come with a few days' deadline.",
+          "example": "'Design a feature for our match-3 game that increases D7 retention without hurting monetization.'",
+          "f2p": "A giant unpaid test that looks like real production work is a red flag. It's okay to ask about scope.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "F2P2-b69",
+          "hook": "Ace design tests with GAMES",
+          "body": "**G**oal: restate the problem and KPI on top. **A**ssumptions: list them. **M**ockups: wireframes and flows. **E**dge cases and ethics. **S**uccess metrics and scope: analytics, A/B plan, MVP vs later. Plus: a one-page executive summary first, play their game deeply, fit their game rather than replacing it, give numbers with rationale, respect the time box, proofread.",
+          "example": "'Reward = 50 gems, about two days of free income, so it feels meaningful without breaking the economy.' That's a number with rationale.",
+          "f2p": "Reviewers judge clarity of thinking as much as the idea itself.",
+          "memory": "Goal, Assumptions, Mockups, Edge cases & ethics, Success metrics & scope.",
+          "tag": "rule"
+        },
+        {
+          "id": "F2P2-b70",
+          "hook": "Build in public: one solid post a week",
+          "body": "Post deconstructions, specs and economy models on LinkedIn, X/Bluesky, Medium or Substack. Join F2P analysis communities (Deconstructor of Fun is well known), Discords and meetups. Do **game jams** (Global Game Jam, Ludum Dare, itch.io). Summarize GDC talks with your own F2P take. Network generously. Stack skills: spreadsheets, basic SQL, probability, Figma, Unity and clear writing.",
+          "example": "Interview prep: 'What F2P game are you playing and why does it monetize that way?' Have a specific, analytical answer ready.",
+          "f2p": "At junior level, a public portfolio of deconstructions can stand in for shipped titles.",
+          "memory": "Unseen work doesn't get hired.",
+          "tag": "f2p"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "Players buy outcomes and feelings, not currency: write every offer as 'this helps you ___'.",
+    "The first purchase is the hardest; make the starter pack a generous handshake, not a profit centre.",
+    "Contextual beats constant: an offer at the moment of need converts better and annoys less than a pop-up storm.",
+    "Averages lie, tails rage: design gacha for the unluckiest 10%, which is what pity is for.",
+    "Sell the right to earn: passes feel fair because players work for their rewards.",
+    "Rewarded ads are a choice; interstitials are a toll. Price your tolls carefully.",
+    "Launch is the beginning: in games as a service, most of the work and revenue comes after day one.",
+    "Build the oven once, bake a hundred cakes: event templates and remote config beat one-off code.",
+    "Clarity beats event soup: players should grasp what's on now in one glance.",
+    "People are the strongest retention mechanic: friends, clans and rivals make quitting costly.",
+    "Small ponds make big fish: bucketed leagues give everyone a winnable race.",
+    "Data says what; people say why. Combine analytics with playtests and community feedback.",
+    "Decide the metric before the test: peeking and metric-shopping manufacture fake wins.",
+    "A/B tests climb hills; vision finds mountains.",
+    "Kill early, kill proudly: most prototypes should die, and sunk cost is not a strategy.",
+    "An ad is a promise: misleading ads buy players who churn and complain.",
+    "Trust compounds, tricks decay: dark patterns borrow revenue from your future.",
+    "Show your thinking to get hired: deconstructions, specs and models, posted in public."
+  ],
+  "mnemonics": [
+    {
+      "name": "SPEND — healthy offer checklist",
+      "device": "SPEND",
+      "unpacks": "Segment (who sees it), Price point (ladder and anchor), Exchange value (clear contents), Need moment (contextual trigger), Deadline (honest timers only)."
+    },
+    {
+      "name": "PODS — fair gacha guardrails",
+      "device": "Fair gacha comes in PODS",
+      "unpacks": "Pity (caps bad luck), Odds disclosed (before purchase), Dupes made useful (shards, upgrades or protection), Spark or selector (luck always converts into progress)."
+    },
+    {
+      "name": "The LiveOps heartbeat",
+      "device": "Tick-Tock-Drum-Gong-Boom-Cake",
+      "unpacks": "Daily (tick), weekly (tock), main event rotation every 1–2 weeks (drum), monthly season or pass (gong), quarterly big update (boom), yearly anniversary (cake)."
+    },
+    {
+      "name": "A/B test checklist",
+      "device": "Have Many Smart Dogs Decided?",
+      "unpacks": "Hypothesis, Metrics (primary + guardrails), Sample size, Duration, Decision rule."
+    },
+    {
+      "name": "The 5 Fs of bad monetization",
+      "device": "If your design has an F, it fails",
+      "unpacks": "Fake scarcity, Fogged prices, Friction-for-sale, FOMO overload, Fooling kids."
+    },
+    {
+      "name": "GAMES — acing a design test",
+      "device": "Ace the test with GAMES",
+      "unpacks": "Goal (restate problem and KPI), Assumptions (list them), Mockups (wireframes and flows), Edge cases and ethics, Success metrics and scope (analytics, A/B plan, MVP vs later)."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "F2P2-f01",
+      "q": "What's the difference between a consumable and a durable IAP?",
+      "a": "Consumables are used up and can be bought again (boosters, currency). Durables are bought once and kept (skins, characters, ad removal).",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f02",
+      "q": "What is a starter pack?",
+      "a": "A one-time, high-value, low-price first offer designed to break the first-purchase barrier.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f03",
+      "q": "What is the decoy effect in store pricing?",
+      "a": "Adding an option mainly to make another option look like the smart choice.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f04",
+      "q": "What is price anchoring?",
+      "a": "The first price a player sees becomes their reference, so a $99.99 pack makes $19.99 feel reasonable.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f05",
+      "q": "Which pack usually carries the 'Best Value' tag, and which the 'Most Popular' tag?",
+      "a": "'Best Value' goes on the biggest pack (the anchor). 'Most Popular' goes on a mid pack (social proof).",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f06",
+      "q": "What is a first-purchase bonus in a currency ladder?",
+      "a": "Extra currency (often double) on the first buy of each pack, which makes trying a new tier feel safe.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f07",
+      "q": "What is a chain (endless) offer?",
+      "a": "A track of rewards where free and paid tiles alternate: claim a free tile, and a paid one unlocks the next free one.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f08",
+      "q": "What are standard app store fees on IAP?",
+      "a": "30%, with 15% tiers for small developers and some subscriptions (check current policies).",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f09",
+      "q": "Where does the word 'gacha' come from?",
+      "a": "Japanese 'gachapon' capsule-toy vending machines.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f10",
+      "q": "What is hard pity?",
+      "a": "A guarantee of a top-rarity item by a fixed pull number N.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f11",
+      "q": "What is soft pity?",
+      "a": "Rates increase step by step after a threshold, so most players hit before hard pity.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f12",
+      "q": "What is a 'spark' system?",
+      "a": "Each pull earns points you can exchange for a chosen item. The term comes from Granblue Fantasy.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f13",
+      "q": "What is a box gacha?",
+      "a": "A finite pool drawn without replacement, so the prize is guaranteed once enough of the box is emptied.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f14",
+      "q": "What gacha mechanic did Japan declare illegal in 2012?",
+      "a": "'Kompu gacha' (complete gacha): collecting a full set of random items to unlock a prize.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f15",
+      "q": "What do Apple's and Google's store policies require for loot boxes?",
+      "a": "Disclosing the odds before purchase.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f16",
+      "q": "When did South Korea's mandatory gacha probability disclosure law take effect?",
+      "a": "2024.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f17",
+      "q": "How did Belgium's gaming regulator view paid loot boxes in 2018?",
+      "a": "As gambling, illegal under its gambling law without a licence.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f18",
+      "q": "What is retroactive unlock in a battle pass?",
+      "a": "Buying premium mid-season instantly grants every premium reward for tiers already reached.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f19",
+      "q": "What is a 'premium+' pass tier?",
+      "a": "A pricier pass version that includes instant tier skips and/or extra rewards.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f20",
+      "q": "What are overflow (bonus) tiers in a pass?",
+      "a": "Repeatable rewards after the final tier, so engaged players keep earning.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f21",
+      "q": "What is a common season length for mobile battle passes (rule of thumb)?",
+      "a": "About 4 weeks (often a calendar month). It varies by game.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f22",
+      "q": "What separates rewarded video from interstitial ads?",
+      "a": "Rewarded video is opt-in for a reward. Interstitials are forced full-screen ads at transitions.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f23",
+      "q": "What is an offerwall?",
+      "a": "A list of tasks in other apps (installs, sign-ups) that pay in-game currency.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f24",
+      "q": "What is ad mediation?",
+      "a": "A platform that auctions each ad slot among many ad networks (e.g. AppLovin MAX, Unity LevelPlay, AdMob).",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f25",
+      "q": "What is hybrid-casual?",
+      "a": "Simple casual core plus meta progression, monetized with both IAP and ads.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f26",
+      "q": "What does GaaS mean?",
+      "a": "Games as a service: the game is operated and updated for years after launch.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f27",
+      "q": "What is remote config?",
+      "a": "Server-side settings that change game numbers and schedules without a client update.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f28",
+      "q": "What is an LTM?",
+      "a": "A limited-time mode: new rules, map or mode available for a short window.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f29",
+      "q": "What is a race event?",
+      "a": "You compete against a small group of players to be first to reach a goal.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f30",
+      "q": "What is asynchronous PvP?",
+      "a": "Attacking another player's saved base or team while they're offline.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f31",
+      "q": "How do bucketed leagues work?",
+      "a": "Small groups (e.g. 30–50) compete weekly. The top promote, the bottom demote, then it resets.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f32",
+      "q": "What is a cohort in analytics?",
+      "a": "A group of players sharing a start point, usually install date or week.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f33",
+      "q": "What is a guardrail metric in an A/B test?",
+      "a": "A metric that must not get worse (e.g. retention, crash rate) while you optimize the primary metric.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f34",
+      "q": "What is a holdout group?",
+      "a": "A slice of players who never get the change, used to measure long-term effects.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f35",
+      "q": "What is a marketability test?",
+      "a": "Running ads for a game concept before building it, to measure CTR and CPI.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f36",
+      "q": "What does IPM measure in user acquisition?",
+      "a": "Installs per thousand ad impressions.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f37",
+      "q": "What are the two goals of ASO?",
+      "a": "Discoverability (being found in search and browse) and conversion (store visitor → install).",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f38",
+      "q": "What does COPPA regulate?",
+      "a": "US rules on collecting personal data from children under 13, which requires verifiable parental consent.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f39",
+      "q": "What does an economy designer own?",
+      "a": "Currencies, sources and sinks, pricing, reward values and gacha rates, usually modelled in spreadsheets.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f40",
+      "q": "What is the case-study format for portfolio pieces?",
+      "a": "Problem → Goal/KPI → Constraints → Solution → Expected impact → Test plan → Learnings.",
+      "type": "basic"
+    },
+    {
+      "id": "F2P2-f41",
+      "q": "Why does the first purchase matter so much?",
+      "a": "It breaks the 'I don't pay' identity and payment friction, and repeat purchases become far more likely afterwards.",
+      "type": "why"
+    },
+    {
+      "id": "F2P2-f42",
+      "q": "Why put a free daily gift in the store?",
+      "a": "It trains a daily store visit, so players see offers without being nagged by pop-ups.",
+      "type": "why"
+    },
+    {
+      "id": "F2P2-f43",
+      "q": "Why is dynamic pricing (different prices for the same item) risky?",
+      "a": "Players compare offers online. Discovering they paid more breaks trust.",
+      "type": "why"
+    },
+    {
+      "id": "F2P2-f44",
+      "q": "Why does pity matter more than the average drop rate?",
+      "a": "Averages hide the unlucky tail. Pity caps the worst case, where rage and churn live.",
+      "type": "why"
+    },
+    {
+      "id": "F2P2-f45",
+      "q": "Why should gacha duplicates be made useful?",
+      "a": "So bad luck converts into progress (shards, upgrades, crafting) instead of feeling wasted.",
+      "type": "why"
+    },
+    {
+      "id": "F2P2-f46",
+      "q": "Why do battle passes feel fair to players?",
+      "a": "They buy the opportunity to earn rewards by playing, so the rewards feel earned, not bought.",
+      "type": "why"
+    },
+    {
+      "id": "F2P2-f47",
+      "q": "Why add catch-up mechanics to a pass?",
+      "a": "So late joiners can still finish, which keeps late-season purchases and engagement alive.",
+      "type": "why"
+    },
+    {
+      "id": "F2P2-f48",
+      "q": "Why avoid interstitial ads during the FTUE?",
+      "a": "First impressions drive retention. A forced ad early costs more future value than it earns.",
+      "type": "why"
+    },
+    {
+      "id": "F2P2-f49",
+      "q": "Why must rewarded ads not give the same value as IAP packs?",
+      "a": "It cannibalizes IAP: payers feel foolish and stop buying.",
+      "type": "why"
+    },
+    {
+      "id": "F2P2-f50",
+      "q": "Why build LiveOps events from templates?",
+      "a": "Designers can configure many events cheaply without new code or client updates.",
+      "type": "why"
+    },
+    {
+      "id": "F2P2-f51",
+      "q": "Why use bucketed leaderboards instead of a global one?",
+      "a": "In small groups most players have a realistic chance to win, which motivates them.",
+      "type": "why"
+    },
+    {
+      "id": "F2P2-f52",
+      "q": "Why unlock clans after the FTUE?",
+      "a": "Players need to understand the game first. Social features add value once basics are learned.",
+      "type": "why"
+    },
+    {
+      "id": "F2P2-f53",
+      "q": "Why is 'peeking' at A/B results a problem?",
+      "a": "Stopping when results look significant inflates false positives.",
+      "type": "why"
+    },
+    {
+      "id": "F2P2-f54",
+      "q": "Why soft launch outside the US?",
+      "a": "To test cheaply and quietly without burning the biggest market or attracting press.",
+      "type": "why"
+    },
+    {
+      "id": "F2P2-f55",
+      "q": "Why do misleading ads hurt a game?",
+      "a": "They attract players expecting something else, who churn fast and leave angry reviews. They also invite regulator action.",
+      "type": "why"
+    },
+    {
+      "id": "F2P2-f56",
+      "q": "Why do dark patterns lower long-term revenue?",
+      "a": "Tricked players distrust every offer, so conversion and LTV fall, and fines, refunds and bad reviews follow.",
+      "type": "why"
+    },
+    {
+      "id": "F2P2-f57",
+      "q": "Your starter pack converts poorly, and it appears in minute one. What do you change?",
+      "a": "Show it after players understand item value (post-FTUE, after the first wall), with something immediately usable.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P2-f58",
+      "q": "Reddit is full of players who did 200+ pulls without the featured hero. What's your fix?",
+      "a": "Add or lower hard pity, add a spark or selector, and make pity rules visible.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P2-f59",
+      "q": "Regular players finish your 30-day pass on day 15. What do you do?",
+      "a": "Raise the XP needed or cut XP sources so they finish near day 25–27, and add overflow tiers for hardcore players.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P2-f60",
+      "q": "Pass purchases collapse after week 2. What mechanic helps?",
+      "a": "Catch-up: XP boosts for players behind, stacking weekly missions, late-buyer bonuses.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P2-f61",
+      "q": "Doubling interstitials raised ad revenue, but D30 retention fell. What happened?",
+      "a": "The hidden cost of ad fatigue. Cap frequency and judge ad tests on LTV and retention, not ad revenue alone.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P2-f62",
+      "q": "The home screen shows nine event timers and players say they're confused. Diagnosis and fix?",
+      "a": "Event soup. Run one primary event, one or two secondary events and the always-on systems.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P2-f63",
+      "q": "Clan members retain twice as well, so your boss wants to force everyone into clans. Your response?",
+      "a": "Correlation isn't causation. A/B test a clan-join nudge first.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P2-f64",
+      "q": "Variant B 'wins' after 2 days with 600 players. Ship it?",
+      "a": "No. The sample is too small and the test was stopped early. Run full weeks with a pre-computed sample size.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P2-f65",
+      "q": "You must nerf a hero sold in a $20 bundle. How do you handle it?",
+      "a": "Explain why in patch notes and compensate buyers (resource refund or free swap).",
+      "type": "apply"
+    },
+    {
+      "id": "F2P2-f66",
+      "q": "Soft launch shows weak D1 retention but strong monetization. What's the call?",
+      "a": "Retention is the ceiling. Fix the core (iterate or pivot) or kill. Don't scale.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P2-f67",
+      "q": "In a leaderboard event, 95% of players never get a reward. What's the fix?",
+      "a": "Bucket players into small groups so most have a reachable goal.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P2-f68",
+      "q": "A design test asks you to improve D7 retention. What's your first move?",
+      "a": "GAMES: restate the goal and KPI, then list your assumptions before designing.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P2-f69",
+      "q": "A player made three big purchases at 3 a.m. and the system queues a mega offer. What should happen?",
+      "a": "Cooling-off: pause escalating offers. The design fails the 'state test'.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P2-f70",
+      "q": "You're A/B testing store prices in a clan-heavy game. What's the risk, and the fix?",
+      "a": "Contamination (clanmates compare offers). Randomize by clan instead of by player.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P2-f71",
+      "q": "A cosy farming game wants more social play without stress. Which systems fit?",
+      "a": "Gifting, helping and team events with no punishment for absence (low-pressure social).",
+      "type": "apply"
+    },
+    {
+      "id": "F2P2-f72",
+      "q": "Your UA ad shows a puzzle that isn't in the game, and reviews say 'not like the ads'. What do you do?",
+      "a": "Make the creatives honest, or truly deliver that promise in the game and FTUE.",
+      "type": "apply"
+    },
+    {
+      "id": "F2P2-f73",
+      "q": "A/B sample size rule of thumb: n per group ≈ 16 × ____ / δ²",
+      "a": "p(1−p)",
+      "type": "cloze"
+    },
+    {
+      "id": "F2P2-f74",
+      "q": "With a 1% rate and no pity, about ____ of players still lack the item after 100 pulls.",
+      "a": "37%",
+      "type": "cloze"
+    },
+    {
+      "id": "F2P2-f75",
+      "q": "A game can scale with paid UA when ____ > CPI with margin.",
+      "a": "LTV",
+      "type": "cloze"
+    },
+    {
+      "id": "F2P2-f76",
+      "q": "Soft launch phases: Tech, Retention, Monetization, ____.",
+      "a": "Scale",
+      "type": "cloze"
+    },
+    {
+      "id": "F2P2-f77",
+      "q": "Fair gacha PODS: Pity, Odds disclosed, Dupes useful, ____.",
+      "a": "Spark / selector",
+      "type": "cloze"
+    },
+    {
+      "id": "F2P2-f78",
+      "q": "LiveOps heartbeat: Tick, Tock, Drum, Gong, Boom, ____.",
+      "a": "Cake (the yearly anniversary)",
+      "type": "cloze"
+    },
+    {
+      "id": "F2P2-f79",
+      "q": "GAMES for design tests: Goal, Assumptions, Mockups, ____, Success metrics & scope.",
+      "a": "Edge cases & ethics",
+      "type": "cloze"
+    },
+    {
+      "id": "F2P2-f80",
+      "q": "Ads should give small, frequent value. IAP should give ____ value.",
+      "a": "Big, permanent",
+      "type": "cloze"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "F2P2-q01",
+      "q": "Which IAP type is usually the main recurring revenue engine in F2P?",
+      "options": [
+        "Durables like ad removal",
+        "Consumables like boosters and currency",
+        "Cosmetic skins",
+        "One-time starter packs"
+      ],
+      "answer": 1,
+      "why": "Consumables are used up and bought again and again. Durables and starter packs are one-time, and cosmetics build attachment more than recurring volume."
+    },
+    {
+      "id": "F2P2-q02",
+      "q": "When is the best moment to show a starter pack?",
+      "options": [
+        "In the first 30 seconds, before the tutorial",
+        "Only after 30 days of play",
+        "After the player understands what the items do, often after the first wall",
+        "Only to players who have already paid"
+      ],
+      "answer": 2,
+      "why": "Value must be understood first. Too early, the items mean nothing. Too late, many players have churned. Showing it only to payers misses its purpose: converting non-payers."
+    },
+    {
+      "id": "F2P2-q03",
+      "q": "A store sells $9.99 = 1,000 gems, $19.99 = 2,200 gems, $24.99 = 2,300 gems. What is the $24.99 pack mainly for?",
+      "options": [
+        "It's a decoy that makes the $19.99 pack look smart",
+        "It's the 'Best Value' anchor",
+        "It's a starter pack",
+        "It's a regional price adjustment"
+      ],
+      "answer": 0,
+      "why": "It offers barely more gems for $5 more, so its job is to make the $19.99 option look like the clever choice. That's the decoy effect."
+    },
+    {
+      "id": "F2P2-q04",
+      "q": "What's the main risk of dynamic pricing (different prices for the same item for different players)?",
+      "options": [
+        "App stores forbid any personalization",
+        "It always lowers revenue",
+        "It requires a client update every time",
+        "Players compare offers online, and discovering unequal prices breaks trust"
+      ],
+      "answer": 3,
+      "why": "Communities share offers on Reddit and Discord. Personalizing the content and the moment is safer than charging different prices for the same thing."
+    },
+    {
+      "id": "F2P2-q05",
+      "q": "A featured item has a 1% drop rate with no pity. Roughly what share of players still don't have it after 100 pulls?",
+      "options": [
+        "0%: 100 pulls guarantees it",
+        "About 37%",
+        "About 10%",
+        "About 63%"
+      ],
+      "answer": 1,
+      "why": "0.99^100 ≈ 0.37. The average is 100 pulls, but averages hide the tail. About 63% *do* have it, and about 10% need ~230+ pulls."
+    },
+    {
+      "id": "F2P2-q06",
+      "q": "What does 'soft pity' mean in a gacha?",
+      "options": [
+        "The pity counter resets every day",
+        "The guaranteed item is a weaker version",
+        "Rates increase step by step after a threshold, before hard pity",
+        "Players can refund pulls"
+      ],
+      "answer": 2,
+      "why": "Soft pity raises odds gradually so most players hit before the hard guarantee. Hard pity is the fixed guarantee at pull N."
+    },
+    {
+      "id": "F2P2-q07",
+      "q": "What did Japan's consumer authority declare illegal in 2012?",
+      "options": [
+        "'Kompu gacha': completing a set of random items to unlock a prize",
+        "All paid loot boxes",
+        "Showing gacha odds",
+        "Battle passes"
+      ],
+      "answer": 0,
+      "why": "The kompu (complete) gacha mechanic was targeted. Gacha in general remains legal in Japan, with industry guidelines on display and practices."
+    },
+    {
+      "id": "F2P2-q08",
+      "q": "Which statement about the UK's approach to loot boxes (2022) is most accurate?",
+      "options": [
+        "Loot boxes were banned outright",
+        "Loot boxes were classified as gambling",
+        "Only cosmetic loot boxes were banned",
+        "The government chose not to classify them as gambling and backed industry-led principles"
+      ],
+      "answer": 3,
+      "why": "The UK opted for industry principles (e.g. parental consent for under-18s, odds transparency). Always check current law, because this area changes."
+    },
+    {
+      "id": "F2P2-q09",
+      "q": "Hearthstone converting unwanted cards into crafting dust is an example of which duplicate strategy?",
+      "options": [
+        "Dupes = power upgrades",
+        "Dupes = currency or shards toward a chosen item",
+        "Duplicate protection",
+        "Dupes = cosmetic variants"
+      ],
+      "answer": 1,
+      "why": "Dust turns bad luck into progress toward the card you choose. Power-upgrade dupes would make copies strengthen the same card instead."
+    },
+    {
+      "id": "F2P2-q10",
+      "q": "A player buys the premium pass at tier 23. What does retroactive unlock do?",
+      "options": [
+        "Resets their progress to tier 1",
+        "Gives a discount on the next season",
+        "Instantly grants all premium rewards for tiers 1–23",
+        "Unlocks only the final chase reward"
+      ],
+      "answer": 2,
+      "why": "They receive every premium reward already passed. Seeing that pile of earned-but-locked loot is a major conversion driver."
+    },
+    {
+      "id": "F2P2-q11",
+      "q": "Data shows your regular players finish a 30-day pass by day 12. What's the best response?",
+      "options": [
+        "Increase total XP required (or reduce XP sources) so regulars finish near the end, and add overflow tiers",
+        "Remove the free track",
+        "Double the pass price",
+        "Add more daily pop-up offers"
+      ],
+      "answer": 0,
+      "why": "Pacing is off: target a finish with a small buffer before the season ends. Overflow tiers keep hardcore players rewarded. The other options don't fix pacing."
+    },
+    {
+      "id": "F2P2-q12",
+      "q": "Your game runs a season pass, an event pass, a VIP pass and a 'mega pass' at once. What's the likely problem?",
+      "options": [
+        "Too little revenue per player",
+        "Pass soup: fatigue, confusion and a feeling of being taxed",
+        "Not enough FOMO",
+        "Regulators require at least one pass"
+      ],
+      "answer": 1,
+      "why": "Too many passes dilute value and stress players. A common rule of thumb is one main pass plus at most one small event pass at a time."
+    },
+    {
+      "id": "F2P2-q13",
+      "q": "Which interstitial ad rule is most widely recommended?",
+      "options": [
+        "Show one right after the app opens on day one",
+        "Show one after every loss to monetize frustration",
+        "Show them to payers too, for fairness",
+        "No interstitials during the FTUE, plus frequency caps"
+      ],
+      "answer": 3,
+      "why": "First impressions drive retention, and caps prevent fatigue. Ads after losses stack frustration, and payers usually shouldn't see forced ads."
+    },
+    {
+      "id": "F2P2-q14",
+      "q": "A rewarded ad gives the same booster bundle the store sells for $4.99. What's the problem?",
+      "options": [
+        "Cannibalization: the free ad undercuts the paid offer",
+        "Ad networks forbid booster rewards",
+        "It lowers eCPM",
+        "Nothing: more value is always better"
+      ],
+      "answer": 0,
+      "why": "Ads should give small, frequent value. IAP gives big, permanent value. Matching them makes payers feel foolish and stop buying."
+    },
+    {
+      "id": "F2P2-q15",
+      "q": "Why did many hyper-casual studios move toward hybrid-casual design?",
+      "options": [
+        "App stores banned interstitial ads",
+        "Players stopped watching ads entirely",
+        "Rising UA costs and privacy changes like Apple's ATT squeezed pure ad-driven models",
+        "Hybrid-casual games need no meta progression"
+      ],
+      "answer": 2,
+      "why": "Ad-only models depend on cheap installs and good targeting, both of which got harder. Adding meta and IAP raised LTV. Hybrid-casual *adds* meta, it doesn't remove it."
+    },
+    {
+      "id": "F2P2-q16",
+      "q": "Players say they don't know what to do because nine event timers are on screen. What's the best fix?",
+      "options": [
+        "Add a tenth event to explain the others",
+        "Remove all events for a month",
+        "Make every event shorter",
+        "Run one primary event, one or two secondary events and the always-on systems"
+      ],
+      "answer": 3,
+      "why": "Event soup kills clarity. Layer events so 'what's on now' reads in one glance. Removing everything kills retention, and shorter events just mean more timers flipping over."
+    },
+    {
+      "id": "F2P2-q17",
+      "q": "What's the main reason LiveOps teams use event templates and remote config?",
+      "options": [
+        "To create new events by configuring data, without new code or client updates",
+        "To avoid testing events",
+        "Because app stores require them",
+        "To make every event identical"
+      ],
+      "answer": 0,
+      "why": "Build the system once, then configure many events (new rules, rewards, art) cheaply. It still needs QA, and reskins should still feel fresh."
+    },
+    {
+      "id": "F2P2-q18",
+      "q": "You must nerf a hero that was sold in a $20 bundle. What's the trust-preserving approach?",
+      "options": [
+        "Nerf it silently so nobody notices",
+        "Never nerf anything that was sold",
+        "Explain the change and compensate buyers (refund resources or offer a free swap)",
+        "Raise the bundle price before nerfing"
+      ],
+      "answer": 2,
+      "why": "Silent nerfs of paid items destroy trust. 'Never nerf' can wreck balance. Transparency plus compensation keeps both balance and goodwill."
+    },
+    {
+      "id": "F2P2-q19",
+      "q": "Why do many games use bucketed leagues instead of one global leaderboard?",
+      "options": [
+        "Global boards are illegal",
+        "In small buckets most players have a realistic chance to win or promote",
+        "Buckets reduce server costs",
+        "Global boards can't show rankings"
+      ],
+      "answer": 1,
+      "why": "Global boards motivate only the very top. Small ponds make everyone feel the race is winnable. Duolingo's leagues are the famous example."
+    },
+    {
+      "id": "F2P2-q20",
+      "q": "What makes asynchronous PvP especially mobile-friendly?",
+      "options": [
+        "It needs perfect netcode",
+        "Both players must be online at the same time",
+        "It only works on tablets",
+        "You attack another player's saved base or team, with no waiting or lag"
+      ],
+      "answer": 3,
+      "why": "Async PvP (e.g. Clash of Clans attacks) fits short sessions and unreliable connections. Real-time PvP is the one that needs netcode and both players online."
+    },
+    {
+      "id": "F2P2-q21",
+      "q": "Clan members retain twice as well as non-members. What's the best conclusion?",
+      "options": [
+        "It may be correlation (engaged players join clans), so A/B test a clan-join nudge",
+        "Force every player into a clan immediately",
+        "Remove clans, since they split the community",
+        "Clans cause retention, proven"
+      ],
+      "answer": 0,
+      "why": "Correlation isn't causation. Only an experiment shows whether *pushing* clan joining helps."
+    },
+    {
+      "id": "F2P2-q22",
+      "q": "Using n ≈ 16·p(1−p)/δ², about how many players per group do you need to detect D1 retention moving from 40% to 42%?",
+      "options": [
+        "About 100",
+        "About 1,000",
+        "About 9,600",
+        "About 1,000,000"
+      ],
+      "answer": 2,
+      "why": "16 × 0.24 / 0.02² = 3.84 / 0.0004 ≈ 9,600. Smaller effects or noisier metrics (revenue) need far more."
+    },
+    {
+      "id": "F2P2-q23",
+      "q": "An analyst checks a test every day and stops it the first day B looks significant. What's wrong?",
+      "options": [
+        "Nothing: faster is better",
+        "Peeking inflates false positives, so decide sample size and duration in advance",
+        "Tests should always run exactly one day",
+        "B should automatically ship anyway"
+      ],
+      "answer": 1,
+      "why": "Repeated checking until 'significant' manufactures fake wins. Pre-commit to sample size, full-week duration and a decision rule."
+    },
+    {
+      "id": "F2P2-q24",
+      "q": "Why do many studios soft launch in Canada, Australia and New Zealand?",
+      "options": [
+        "They have the cheapest installs in the world",
+        "App stores require it",
+        "They have no competition",
+        "English-speaking, US-like behaviour at lower cost, without burning the US market"
+      ],
+      "answer": 3,
+      "why": "They're Western proxies for the US. The *cheapest* installs for tech and retention testing come from markets like the Philippines or Indonesia."
+    },
+    {
+      "id": "F2P2-q25",
+      "q": "In soft launch your game shows weak D1 retention but strong early monetization. What's the soundest call?",
+      "options": [
+        "Fix the core (iterate or pivot) or kill. Don't scale, because retention is the ceiling",
+        "Scale UA immediately, since monetization is strong",
+        "Add more offers to raise revenue further",
+        "Launch globally and fix retention with LiveOps later"
+      ],
+      "answer": 0,
+      "why": "Strong monetization on a leaky bucket doesn't last. Weak core retention is very hard to fix later, and LiveOps can't rescue a core players don't return to."
+    },
+    {
+      "id": "F2P2-q26",
+      "q": "Ads show a pin-pull puzzle that's barely in the game. Which outcome is most likely?",
+      "options": [
+        "Higher long-term retention",
+        "Mismatched expectations, fast churn, angry reviews and possible regulator action",
+        "Lower CPI with no downside",
+        "Automatic store featuring"
+      ],
+      "answer": 1,
+      "why": "The UK ASA ruled some Homescapes/Gardenscapes ads misleading in 2020. Mismatched players churn, so an ad must be a promise the FTUE delivers."
+    },
+    {
+      "id": "F2P2-q27",
+      "q": "Which of these is NOT a dark pattern?",
+      "options": [
+        "A countdown on an offer that reappears tomorrow",
+        "A decline button that says 'No thanks, I like losing'",
+        "An honest timer with a note saying when the offer returns",
+        "Packs priced so players always have leftover currency"
+      ],
+      "answer": 2,
+      "why": "Honest timers are the healthy alternative. The others are fake scarcity, confirmshaming and leftover-currency traps."
+    },
+    {
+      "id": "F2P2-q28",
+      "q": "You receive a take-home design test: 'Improve D7 retention in our game.' What should open your document?",
+      "options": [
+        "A full redesign of their core loop",
+        "Twenty pages of lore",
+        "Your CV",
+        "A one-page summary restating the goal and KPI, plus your key assumptions"
+      ],
+      "answer": 3,
+      "why": "GAMES starts with Goal and Assumptions. Reviewers are busy, so lead with an executive summary. Redesigning their whole game reads as arrogance."
+    }
+  ],
+  "sideQuests": [
+    {
+      "id": "F2P2-s01",
+      "title": "Price a store page",
+      "task": "Sketch a hard-currency ladder of 6 packs (price, gem amount, bonus %). Tag 'Most Popular' and 'Best Value' and add one honest decoy. Check that gems per dollar improve at every step.",
+      "minutes": 15,
+      "xp": 40
+    },
+    {
+      "id": "F2P2-s02",
+      "title": "Pity math drill",
+      "task": "For a 0.8% rate, compute expected pulls (1/p), the % still unlucky after 100 pulls (0.992^100) and pick a hard pity number. Write one sentence justifying it.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "F2P2-s03",
+      "title": "Ad placement map",
+      "task": "For a casual game idea, list 5 rewarded placements (moment, reward, daily cap) and 2 interstitial rules (grace period, frequency cap).",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "F2P2-s04",
+      "title": "Hypothesis drill",
+      "task": "Write 3 A/B hypotheses as 'If we X, then metric Y will Z because W', each with a primary metric and one guardrail metric.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "F2P2-s05",
+      "title": "Dark-pattern hunt",
+      "task": "Open any F2P game's store and pop-ups. Find 2 good practices and 1 questionable pattern, then rewrite the questionable one ethically while keeping a business goal.",
+      "minutes": 15,
+      "xp": 40
+    },
+    {
+      "id": "F2P2-s06",
+      "title": "Event speed-round",
+      "task": "Invent 5 events for a farming game, each using a different event type (collection, race, team, limited mode, holiday). One line each: core action plus reward.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "F2P2-s07",
+      "title": "ASO teardown",
+      "task": "Study a top game's store page: rate the icon, the first 3 screenshots and the video's first 3 seconds. Write the promise the page makes in one sentence.",
+      "minutes": 10,
+      "xp": 25
+    },
+    {
+      "id": "F2P2-s08",
+      "title": "Job-ad mapping",
+      "task": "Find 2 real F2P designer job ads (e.g. economy, LiveOps, level designer). List each requirement and the portfolio piece that would prove it.",
+      "minutes": 15,
+      "xp": 40
+    }
+  ],
+  "mainQuests": [
+    {
+      "id": "F2P2-m01",
+      "title": "Season Architect: 30-day LiveOps calendar + battle pass track",
+      "task": "Pick a real F2P game (or your concept). Build a 30-day calendar with primary and secondary events, weekend beats, a themed moment, a season finale and always-on systems, noting each event's type and goal. Design a battle pass: tiers, XP per tier, XP sources and daily budget, free vs premium rewards with $ value estimates, instant value, milestone peaks and the chase reward. Simulate casual, regular and hardcore personas. Add 2 short event specs using the 14-point anatomy.",
+      "deliverable": "A spreadsheet or table with the calendar, the pass reward track with persona completion days, 2 event specs and a one-paragraph economy impact note. Post a screenshot and short thread publicly.",
+      "doneWhen": "No event-soup days (at most 1 primary + 2 secondary events), no dead pass tiers, the regular persona finishes with 3–5 days to spare, every event lists a success metric, and the economy note exists.",
+      "minutes": 180,
+      "xp": 250
+    },
+    {
+      "id": "F2P2-m02",
+      "title": "Mock Design Test: 1-page feature spec under a time box",
+      "task": "Simulate a studio take-home: 'Design a new feature for [a match-3 or midcore game] that increases D7 retention without hurting monetization.' Use GAMES: goal and KPI, assumptions, wireframes and flow, rules and edge cases, ethics check, analytics events, an A/B plan (hypothesis, primary and guardrail metrics, rough sample size via 16·p(1−p)/δ²) and MVP vs later scope. Strict 4-hour limit.",
+      "deliverable": "A 1-page executive summary + 2–4 pages of detail with at least one wireframe or flow diagram. Ask a designer or community to review it as a hiring manager would, then add it to your portfolio.",
+      "doneWhen": "Page 1 alone explains the feature, at least one visual flow exists, every number has a rationale, the test plan names a guardrail metric, and you stayed within 4 hours.",
+      "minutes": 240,
+      "xp": 300
+    }
+  ],
+  "playLabs": [
+    {
+      "id": "F2P2-p01",
+      "game": "Monopoly GO!",
+      "minutes": 10,
+      "lookFor": "Every simultaneous event, timer and offer on the main screen. Which are solo and which are social (partner events, sticker trading)?",
+      "question": "How do the events feed each other, and is it clear what to do first, or is it event soup?"
+    },
+    {
+      "id": "F2P2-p02",
+      "game": "Brawl Stars or Clash Royale",
+      "minutes": 10,
+      "lookFor": "The pass screen (free vs premium track, instant value, chase reward) and the club/clan screen.",
+      "question": "What social actions take under 30 seconds, and which ones create obligation? Where does the pass place its strongest premium hook?"
+    },
+    {
+      "id": "F2P2-p03",
+      "game": "Genshin Impact or Honkai: Star Rail",
+      "minutes": 10,
+      "lookFor": "Taps from the banner to the odds/details page and the pull history, and how pity and the featured guarantee are explained.",
+      "question": "Would a new player understand the real cost of a guaranteed featured character from what the game shows?"
+    },
+    {
+      "id": "F2P2-p04",
+      "game": "An ad-monetized casual game (e.g. Block Blast!, a hyper-casual chart-topper, or an Archero/Survivor.io-style hybrid)",
+      "minutes": 10,
+      "lookFor": "Every ad moment: type (rewarded, interstitial, banner), trigger and reward.",
+      "question": "Which ads did you choose, which were forced, and did any appear at a frustrating moment?"
+    }
+  ],
+  "retrieval": [
+    {
+      "q": "Name six IAP types and one design risk of each.",
+      "a": "Consumables (pay-or-lose feeling), durables (balance-breaking power, one-time revenue), cosmetics (need an audience), convenience (artificial friction suspicion), subscriptions (must deliver every period, easy cancel), bundles (need a hero item), starter packs (bad timing), LTOs (fake urgency), personalized offers (fairness and exploitation), passes (pass fatigue)."
+    },
+    {
+      "q": "Why is the first purchase so important, and when should a starter pack appear?",
+      "a": "It breaks the 'I don't pay' identity and payment friction, and repeat purchases become far more likely. Show it after the player understands item value (post-FTUE, often after the first wall): high value, low price, one time only."
+    },
+    {
+      "q": "What is the decoy effect? Give a store example.",
+      "a": "A third option exists to make another look better. E.g. $9.99 = 1,000 gems, $19.99 = 2,200, $24.99 = 2,300, which makes the $19.99 look smart."
+    },
+    {
+      "q": "Explain hard pity, soft pity and spark. Why does pity matter more than the average rate?",
+      "a": "Hard pity guarantees the top item by pull N. Soft pity raises rates after a threshold. Spark exchanges pull points for a chosen item. Pity caps the worst-case tail, where frustration and churn live."
+    },
+    {
+      "q": "With a 1% rate and no pity, roughly what share of players still lack the item after 100 pulls?",
+      "a": "About 37% (0.99^100), and about 10% need ~230 or more pulls."
+    },
+    {
+      "q": "Name four loot box rules or disclosure requirements and what they require.",
+      "a": "Apple and Google: odds before purchase. China: odds disclosure plus minors' limits. Japan: kompu gacha banned (2012). South Korea: mandatory disclosure (2024). Belgium: paid loot boxes can be gambling. UK: industry principles. Australia: higher age ratings (2024). Brazil: restrictions for minors (2025). Check current law."
+    },
+    {
+      "q": "What is retroactive unlock in a battle pass, and why does it convert?",
+      "a": "Buying premium mid-season instantly grants all premium rewards for tiers already reached. The player sees a pile of loot they've already earned."
+    },
+    {
+      "q": "How would you pace XP for a 30-day, 50-tier pass?",
+      "a": "Total XP = tiers × XP per tier. Pick a target persona (e.g. 5 days/week finishing ~day 26). Divide by active days to get a daily budget, split it across dailies, gameplay and weeklies, simulate casual, regular and hardcore personas, and add catch-up."
+    },
+    {
+      "q": "When should you NOT show interstitials?",
+      "a": "During the FTUE, mid-action, after every loss, too frequently (use caps) and to payers."
+    },
+    {
+      "q": "List six LiveOps event types and the main goal of each.",
+      "a": "Collection (engagement), leaderboard or race (competition), tournament (competitive spend), team/clan (social retention), community goal (togetherness), LTM (novelty and testing), boss raid (co-op), holiday (moments and offers), collab (buzz, new players), album (long arc + trading)."
+    },
+    {
+      "q": "What are the layers of a LiveOps calendar?",
+      "a": "Daily, weekly, main event rotation (~1–2 weeks), monthly (season or pass), quarterly (big updates), yearly (anniversary and holidays)."
+    },
+    {
+      "q": "Why are bucketed leagues more motivating than global leaderboards?",
+      "a": "In a small bucket every player has a realistic chance to place or promote. Global boards only motivate the very top."
+    },
+    {
+      "q": "What are the five steps of an A/B test, and three classic pitfalls?",
+      "a": "Hypothesis, Metrics (primary + guardrails), Sample size, Duration, Decision rule. Pitfalls: peeking, small samples, novelty effect, metric-shopping, seasonality, contamination, short- vs long-term effects, Simpson's paradox, local maximum."
+    },
+    {
+      "q": "Why do soft launches often use Canada/Australia/NZ and the Philippines?",
+      "a": "Canada/Aus/NZ are English-speaking proxies for US behaviour, cheaper and lower-profile, without burning the US. The Philippines offers cheap installs at volume to test tech and retention on low-end devices."
+    },
+    {
+      "q": "Name four dark patterns, their healthy alternatives, and two reasons they backfire.",
+      "a": "Fake timers → honest timers. Currency fog → real-money prices. Friction for sale → challenge for fun. Accidental purchases → confirm steps. Streak guilt → freezes. They backfire through fines, store removal, refunds, reputation damage, trust collapse (lower LTV) and burnout churn."
+    }
+  ],
+  "feynman": "Explain to a producer in 60 seconds how a F2P game keeps making money for five years without being evil. Cover the store with depth and contextual offers, a pass that sells the right to earn, rewarded ads for non-payers, a layered LiveOps calendar, social systems that keep friends together, A/B tests with guardrails, and why trust is worth more than any single offer.",
+  "links": [
+    "F2P1",
+    "L02",
+    "L04",
+    "L05",
+    "L08",
+    "L09",
+    "L13",
+    "L14",
+    "L16",
+    "L17",
+    "BX",
+    "F2P"
+  ]
+}

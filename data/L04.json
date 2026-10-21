@@ -1,0 +1,1775 @@
+{
+  "id": "L04",
+  "order": 5,
+  "kind": "book",
+  "label": "Level 4",
+  "title": "You Can Design a Game, But Can You Do the Paperwork?",
+  "bookPages": "57–82",
+  "emoji": "📝",
+  "tagline": "Nobody reads the GDD. Write it anyway, and learn the one-pagers and specs that get you hired.",
+  "f2pRelevance": 5,
+  "f2pWhy": "F2P designers write one-pagers, feature specs and economy sheets every week, and design tests ask for exactly these documents.",
+  "minutes": 75,
+  "tldr": [
+    "Docs are the recipe: making a game is like making chili (recipe, ingredients and tools, right order, short boil = crunch, long simmer = polish).",
+    "Four preproduction docs grow into each other: one-sheet, then ten-pager, then beat chart, then the GDD, which should be just long enough to describe the game.",
+    "Write for your reader: execs want images and bullets, the team wants diagrams and precise terms. Use threes, winning comps, about five real USPs, and design toward your age rating.",
+    "Nobody reads the GDD, but you will. Communicate any way that works (storyboards, diagrams, animatics, beat charts, wiki), use specific words, and remember everything is liquid.",
+    "The beat chart maps every level on one sheet (15 fields) and exposes clumping, samey-ness, repetitive colors and music, and a broken economy early.",
+    "F2P add-on: feature one-pagers, LiveOps feature specs, economy spreadsheets, IARC/Apple/Google Play ratings and living docs in Confluence, Notion or Miro are the modern paperwork."
+  ],
+  "sections": [
+    {
+      "title": "The chili recipe (chapter intro)",
+      "bites": [
+        {
+          "id": "L04-b01",
+          "hook": "Making games is nothing like fishing. It's like chili.",
+          "body": "A visiting director claimed making games is like fishing. Rogers disagreed: fishing is quiet, slow waiting for something that may never happen. His replacement analogy is chili. You need a recipe (documentation), ingredients and tools (team and software), the right order of steps, a short boil and a long simmer.",
+          "example": "The fishing riddle was mystical and useless. The chili model maps onto real production steps you can act on.",
+          "f2p": "In F2P the recipe never ends: after launch you keep adding pages for events, offers and balance passes.",
+          "memory": "Really Interesting Chili Better Simmered: Recipe, Ingredients, Combine, Boil, Simmer.",
+          "tag": "concept"
+        },
+        {
+          "id": "L04-b02",
+          "hook": "Your documentation is the recipe: what goes in AND how",
+          "body": "A good recipe lists the ingredients and the method. Game docs should cover what's in the game and how it gets made. Follow the recipe, but expect to change it when something goes wrong, and season to taste by turning up the meatiest parts of your game.",
+          "example": "Ending up with soup when you wanted chili is what happens when the recipe is vague about the game you're building.",
+          "f2p": "A feature spec that lists rewards but skips the flow, edge cases and telemetry is a recipe without the method.",
+          "memory": "You're making chili, not soup or stew.",
+          "tag": "concept"
+        },
+        {
+          "id": "L04-b03",
+          "hook": "Ingredients are people. Pots and pans are tools.",
+          "body": "A design needs a team and tools to build it. You won't always have the ideal team or equipment, so improvise. Productions can be meticulous or a mad dash and still work, but follow the recipe so nothing gets forgotten, and do things in the right order.",
+          "example": "Cowboys made good chili with a campfire and a tin can. Rogers learned to brown the meat first the hard way.",
+          "f2p": "Small mobile teams improvise constantly. Off-the-shelf engines, backend services and asset stores are the campfire and tin can.",
+          "memory": "Always brown the meat first.",
+          "tag": "concept"
+        },
+        {
+          "id": "L04-b04",
+          "hook": "Crunch is boiling: short bursts only, or the kitchen burns",
+          "body": "Bringing chili to a boil is like crunch: a frantic push to get everything in and working. Boil too long and you ruin the chili, scorch the pot, maybe set the stove on fire. Games and whole studios have been destroyed by too much crunch. Be responsible.",
+          "example": "Rogers warns plainly that excessive crunch has wrecked games and studios.",
+          "f2p": "Live games never stop shipping, so crunching on every update leads to burnout. Plan a sustainable sprint and event cadence.",
+          "memory": "Boil = crunch. Keep the timer short.",
+          "tag": "warning"
+        },
+        {
+          "id": "L04-b05",
+          "hook": "Polish is simmering: chili tastes better the next day",
+          "body": "Chili isn't ready the moment it's assembled. Games need time to iterate and to fix bugs and code, art and design problems, so budget for it. Let the team play sections to learn what works. Last-minute rescues happen but aren't a plan. Ugly chili can taste great, just as good gameplay outlasts looks.",
+          "example": "Troubled games have been turned around at the eleventh hour, but Rogers warns it causes stomach upset.",
+          "f2p": "Soft launch is the mobile simmer: months of tuning retention and monetization in test markets before global launch.",
+          "memory": "Ugly chili can still be delicious.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "The four preproduction documents",
+      "bites": [
+        {
+          "id": "L04-b06",
+          "hook": "Four docs, one ladder: one-sheet, ten-pager, beat chart, GDD",
+          "body": "Four documents guide preproduction: the one-sheet, the ten-pager, the beat chart and the game design document. Each has its own job, and all of them eventually grow into the GDD. You don't write the giant document from scratch; you climb up to it.",
+          "example": "The smaller docs are stepping stones, so the GDD stops being intimidating.",
+          "f2p": "The modern ladder: feature one-pager, then approval, then feature spec, then the living wiki and economy sheet.",
+          "memory": "One, Ten, Beat, Bible-sized.",
+          "tag": "list"
+        },
+        {
+          "id": "L04-b07",
+          "hook": "GDDs often run 300+ pages. Should they?",
+          "body": "Many GDDs average over 300 pages, but there's no fixed number; scope decides. A movement in the industry pushes for short GDDs. Rogers' rule: a GDD should be just long enough to accurately describe what happens in the game.",
+          "example": "A Grand Theft Auto GDD would be far longer than a Tetris GDD.",
+          "f2p": "Apply the rule per feature: each spec should be just long enough to build and test that one feature.",
+          "memory": "Long enough to describe the action, not a page more.",
+          "tag": "rule"
+        },
+        {
+          "id": "L04-b08",
+          "hook": "No official format exists. Communication is the point.",
+          "body": "None of these documents has an official format, so use whatever communicates best. The goal of design documentation is communication with the player, your team and your publishing partners. The clearer it is, the easier it is to get coworkers excited about your ideas.",
+          "example": "Consultant Mark Cerny writes design material as one bullet-point page per topic because his teams find it easier to digest.",
+          "f2p": "Many mobile teams work the way Cerny does: short, linked pages in Confluence or Notion instead of one giant document.",
+          "memory": "A doc nobody understands is just a diary.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Writing the GDD, Step 1: The One-Sheet",
+      "bites": [
+        {
+          "id": "L04-b09",
+          "hook": "The one-sheet: your whole game on one page",
+          "body": "A simple overview for teammates, publishers and others, so it must be interesting, informative and short: one page, no more. Any layout works as long as it has eight fields: title, systems, target age, intended ESRB rating, a gameplay-focused story summary, distinct modes, USPs and comps.",
+          "example": "The book's appendix has a sample one-sheet with all eight fields on a single page.",
+          "f2p": "The concept one-pager is the most common F2P design-test deliverable. Add business model, session design, KPIs and risks.",
+          "memory": "TSAR SMUC: Title, Systems, Age, Rating, Story, Modes, USPs, Comps.",
+          "tag": "list"
+        },
+        {
+          "id": "L04-b10",
+          "hook": "Story summary? Focus on what the player DOES.",
+          "body": "The story field isn't a plot synopsis. It summarizes the story with the focus on gameplay: what the player does, where, and why. Distinct modes of gameplay get their own field, so the reader sees the shape of the whole product.",
+          "example": "'Hero fights through a haunted graveyard to rescue his love' says more about play than a page of lore.",
+          "f2p": "On mobile, write the player fantasy and the core loop as one sentence: renovate a diner by winning match-3 levels.",
+          "memory": "Plot is the sauce. Gameplay is the meat.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "ESRB ratings and the age-rating world",
+      "bites": [
+        {
+          "id": "L04-b11",
+          "hook": "The ESRB: self-regulation, letter grades, US and Canada",
+          "body": "The ESRB is a self-regulatory body for the US and Canada. It runs a rating system and enforces advertising and online-privacy principles. Its creation echoes the comics industry's Comics Code, but its ratings look more like the MPAA's film grades: games are reviewed and given a letter based on content.",
+          "example": "Other systems include PEGI in Europe, the BBFC in the UK and USK in Germany. Age and content limits vary by country.",
+          "f2p": "Google Play uses IARC: one questionnaire produces regional ratings (ESRB, PEGI, USK, ClassInd, ACB) or generic IARC ages.",
+          "memory": "Movie-style letters for games.",
+          "tag": "concept"
+        },
+        {
+          "id": "L04-b12",
+          "hook": "Six ESRB ratings in 2010: eC, E, E10+, T, M, AO",
+          "body": "eC: nothing parents would object to. E: mild cartoon or fantasy violence, occasional mild language. E10+: more of that, plus suggestive themes. T: violence, crude humor, minimal blood, occasional strong language. M (17+): intense violence, gore, sexual content, strong language. AO (18+): prolonged intense violence, graphic sexual content, nudity.",
+          "example": "eC was retired in 2018 and folded into E.",
+          "f2p": "Apple uses its own tiers, updated in 2025 to 4+, 9+, 13+, 16+ and 18+. Check App Store Connect for the current tiers.",
+          "memory": "Every Explorer Earns Ten Mighty Achievements: eC, E, E10+, T, M, AO.",
+          "tag": "list"
+        },
+        {
+          "id": "L04-b13",
+          "hook": "eC means 'baby game'. AO means no store will sell it.",
+          "body": "Ratings carry stigma. Many gamers saw eC as baby games, because it mostly appeared on edutainment and licensed kids' titles. At the other end, no US brick-and-mortar retailer would stock an AO game, the industry's X rating, so most publishers refuse to make one and work hard to avoid getting it.",
+          "example": "Teens skipping a game because it looks too young is the eC stigma at work.",
+          "f2p": "The mobile version of the AO problem is store rejection: stores refuse some content outright, and simulated gambling pushes ratings up.",
+          "memory": "Too young gets ignored. Too adult can't be sold.",
+          "tag": "warning"
+        },
+        {
+          "id": "L04-b14",
+          "hook": "The Punisher went black-and-white to dodge an AO rating",
+          "body": "In The Punisher (THQ, 2005), interrogations included curb-stomps and a woodchipper. The scenes were so graphic that the developer changed camera angles and showed them in black and white to bring the rating down from AO to M. The lesson: know your target rating and design toward it.",
+          "example": "Presentation (camera angle, color) changed the rating without cutting the feature.",
+          "f2p": "F2P descriptors like 'Includes Random Items' come from design choices like loot boxes. Decide early whether you want them.",
+          "memory": "Rate first, design second.",
+          "tag": "example"
+        },
+        {
+          "id": "L04-b15",
+          "hook": "In F2P, purchase descriptors matter as much as violence",
+          "body": "The ESRB added an In-Game Purchases notice in 2018 and an Includes Random Items notice in 2020, and PEGI has matching descriptors. Apple and Google require you to disclose odds for randomized paid items. Some countries regulate paid loot boxes further. A kids' audience adds COPPA and the stores' family-policy rules.",
+          "example": "A gacha game shows its random-items descriptor on the store page that parents see.",
+          "f2p": "Put the target rating and expected descriptors on your one-pager, and flag any feature that would change them.",
+          "memory": "Your rating decides who can find you, buy from you and be shown your ads.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "Comps and USPs",
+      "bites": [
+        {
+          "id": "L04-b16",
+          "hook": "Comps: always pick a winning horse",
+          "body": "Competitive products, or comps, are already-released games similar to yours. They help readers grasp your game quickly. Choose comps that are very familiar or successful. Publishers know exactly how every game sold, so comparing your idea to a flop can scare them away.",
+          "example": "'It's like that hit game, plus X' reassures a publisher. 'It's like that game that bombed' worries them.",
+          "f2p": "Use recent top-grossing comps with numbers, in a set of three: one for core gameplay, one for meta, one for art or tone.",
+          "memory": "Bet on the champion horse, never the one headed for the glue factory.",
+          "tag": "rule"
+        },
+        {
+          "id": "L04-b17",
+          "hook": "About five USPs: what fit on the back of a box",
+          "body": "Unique selling points are the back-of-the-box bullets. Rogers recommends about five, because that's roughly how many fit on a game box. 'Amazing graphics', 'awesome story' and 'sequel to an award-winner' don't count; every game should have them, and gamers smell marketing BS. USPs must be genuinely unique features.",
+          "example": "The book's spun samples: a giant co-op mode, a huge licensed soundtrack, an open world, named signature weapons, a new physics engine, downloadable costumes.",
+          "f2p": "The modern box back is the store screenshot strip. Your 3–5 USPs become the captions.",
+          "memory": "Brag about specifics, never about good graphics.",
+          "tag": "rule"
+        },
+        {
+          "id": "L04-b18",
+          "hook": "A USP excites. The ten-pager explains.",
+          "body": "USPs should get readers excited about features without long explanations. The detail is the ten-pager's job. Each USP should be concrete and specific enough that a reader can picture it right away.",
+          "example": "'Mow through enemies with a fire-ant weapon' beats 'innovative combat'.",
+          "f2p": "The test: can you show this USP in a 15-second ad? If you can't, it probably isn't a USP.",
+          "memory": "A trailer, not the movie.",
+          "tag": "concept"
+        },
+        {
+          "id": "L04-b71",
+          "hook": "Sample USPs are one-liners built on a number or a name",
+          "body": "Rogers' spun sample USPs each pair a concrete number or a name with a hook and then stop: 256-player co-op, 1,000+ tunes, 200 levels, three named weapons (blastinator, skull-defiler, fire-ant anguisher), a named engine (Realitech), downloadable costumes. Specifics excite the reader; the ten-pager is where the explaining happens.",
+          "example": "'Over 1000 tunes' says more than 'great soundtrack', and 'fire-ant anguisher' is memorable where 'cool weapons' is not.",
+          "f2p": "Store captions work the same way: '100+ heroes' or 'Real-time 3v3 in under 3 minutes' beat 'amazing gameplay'.",
+          "memory": "Number or name, then stop.",
+          "tag": "example"
+        }
+      ]
+    },
+    {
+      "title": "Writing the GDD, Step 2: The Ten-Pager",
+      "bites": [
+        {
+          "id": "L04-b19",
+          "hook": "The ten-pager lays out your game's spine",
+          "body": "A broad-strokes document that lets readers grasp the basics of the final product without excruciating detail. Keeping it interesting may matter most, because the people who fund the game read it. Use plenty of relevant visuals, skip fancy fonts and ornate layouts, and prioritize readability. Build it in PowerPoint so you can pitch on screen or print a leave-behind.",
+          "example": "Present the deck live in the meeting, then leave the printout on the table.",
+          "f2p": "The F2P version is a greenlight deck: gameplay pages for the team, market, KPI and monetization pages for executives.",
+          "memory": "The spine, not the whole skeleton.",
+          "tag": "concept"
+        },
+        {
+          "id": "L04-b20",
+          "hook": "Same doc, two audiences: the team and the money",
+          "body": "The production team wants clear gameplay diagrams, short punchy sentences, specific terminology and comparisons to appropriate games, even old ones. Marketing and executives want exciting concept images, bullet points, vivid examples and successful modern comps. One document can serve both because both will read it, though a tailored version never hurts.",
+          "example": "An old classic is a fine comparison for a designer and a weak one for an executive.",
+          "f2p": "Put the KPI and market page up front for executives, and the flowcharts and rules for the team.",
+          "memory": "Blueprints for the crew, fireworks for the investors.",
+          "tag": "list"
+        },
+        {
+          "id": "L04-b21",
+          "hook": "Ten pages is a guideline, not a law (preferably fewer)",
+          "body": "The ten-page count is a guideline, not a hard rule. Going over or under is fine as long as you communicate the basics concisely, and Rogers' footnote adds: preferably under. Keep asking yourself who your audience is.",
+          "example": "The 'guidelines, not rules' line is borrowed from a pirate movie.",
+          "f2p": "Design tests often set hard page limits. Respect them; reviewers skim dozens of submissions.",
+          "memory": "Arr, more what you'd call guidelines.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "The Rule of Threes",
+      "bites": [
+        {
+          "id": "L04-b22",
+          "hook": "Three is a magic number",
+          "body": "People like things in threes, especially examples. The first example gives the idea but can mislead. The second gives something to compare or contrast. The third complements or contrasts the other two so the set doesn't feel binary or contrived. More than three gets long and boring. Group your ten-pager examples in threes.",
+          "example": "Rogers proves it with trios: the original Star Wars trilogy, Goldilocks and the Three Bears, Asimov's three laws of robotics.",
+          "f2p": "Three comps, three how-it-works bullets, three KPIs (one primary, two guardrails), three offer tiers.",
+          "memory": "One misleads, two divides, three decides.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Ten-Pager outline, page by page",
+      "bites": [
+        {
+          "id": "L04-b23",
+          "hook": "Page 1: title, systems, age, rating, ship date, logo",
+          "body": "The title page lists the game title, intended systems, target age, intended ESRB rating and projected ship date. Make a placeholder logo: the right font tells readers the genre instantly, without any pictures.",
+          "example": "The book's quiz: 'Super Magic World' in a bouncy cartoon font, 'Very Fast Cars' in wide techno type, 'Dude with Sword' in a carved serif.",
+          "f2p": "The app icon and store title do this job now, at thumbnail size. Stores let you A/B test store assets.",
+          "memory": "The font is the first trailer.",
+          "tag": "list"
+        },
+        {
+          "id": "L04-b24",
+          "hook": "Page 2: story summary plus game flow",
+          "body": "Expand the one-sheet story into a few paragraphs with a beginning, middle and end. Then describe the game flow: the action in the context of its locations, with each environment's special gameplay. Answer four questions: what are the challenges and how are they overcome, how do progression and rewards work, how does gameplay tie to story, and what's the victory condition?",
+          "example": "One sentence about Tomb Raider: Legend covers who (Lara), camera (third person), genre, locations (Bolivia to Tibet) and goals.",
+          "f2p": "Describe loops over time (30 seconds, a session, a day, a season, months) and the long-term goal, since F2P rarely ends.",
+          "memory": "Does the hero rescue the princess? Tell them.",
+          "tag": "list"
+        },
+        {
+          "id": "L04-b25",
+          "hook": "No hero? Sell the places, events and tracks instead.",
+          "body": "If there's no main character, focus on the environments the levels represent. Sports games should highlight special events and stadiums; driving games, tracks and races. The key is always to walk readers through the experience with vivid pictures of the places and activities.",
+          "example": "Peggle has no hero, but each level represents a Peggle Master who lives in a particular place.",
+          "f2p": "Puzzle games sell their meta places: the mansion, the kingdom, the diner you'll renovate.",
+          "memory": "Paint the postcard.",
+          "tag": "example"
+        },
+        {
+          "id": "L04-b26",
+          "hook": "Page 3: a character whose personality shows up in play",
+          "body": "Give specifics such as age, sex and dossier details, but only when they serve the character (skip blood type unless it matters). Concept art is a must. Cover the backstory, how they got into this mess, their personality and how they face challenges, plus signature moves and any other play styles (driving, flying, swimming).",
+          "example": "God of War's team called Kratos brutal, so everything he did, even opening chests, showed it. Mario has jump-and-stomp; Simon Belmont has his whip.",
+          "f2p": "In collection games, 'character' means the roster: rarity, role, signature skill, and readability at icon size.",
+          "memory": "Even the treasure chest gets opened brutally.",
+          "tag": "list"
+        },
+        {
+          "id": "L04-b27",
+          "hook": "Draw a control map on a picture of the controller",
+          "body": "Find an image of the controller your game uses (mouse and keyboard, Wii Remote, gamepad) and label what each input does. Make sure you mention every major style of play in the game.",
+          "example": "The book's PS3 action map: left stick moves, right stick aims the camera, X jumps, square and triangle attack, circle interacts, triggers cycle targets.",
+          "f2p": "Replace it with a gesture map on a phone outline: tap, swipe, drag and hold, plus one-thumb reach zones in portrait.",
+          "memory": "If you can't label it, you can't control it.",
+          "tag": "example"
+        },
+        {
+          "id": "L04-b28",
+          "hook": "Page 4: gameplay, set pieces and platform features",
+          "body": "Apply the genres from Level 3. Explain the sequence of play (chapters, levels or rounds). Call out cool scenarios and big set pieces, reuse your USPs, outline minigames with a short description and illustration, and diagram hard-to-picture ideas. Then cover platform features (storage, downloads, camera, motion control, split screen), because they set the tech requirements.",
+          "example": "Cool scenarios include driving while shooting or running from a giant boulder.",
+          "f2p": "Today's platform features: orientation, one-thumb play, download size, low-end Android, offline play, notifications, haptics, cloud save.",
+          "memory": "Set pieces sell. Tech pages warn.",
+          "tag": "list"
+        },
+        {
+          "id": "L04-b29",
+          "hook": "Page 5: the world, its moods, its music and its map",
+          "body": "Show images and short descriptions of each environment from the story. Explain how each location ties to the story, its mood, its music, and how locations connect in the world and in the player's journey. Include a simple map or flowchart of how the player gets around.",
+          "example": "The book shows a galaxy of linked planets and a straight castle-to-castle path. Either works, as long as it shows the player where to go.",
+          "f2p": "This is your saga map, chapter map or base. Show how areas unlock and where events appear.",
+          "memory": "Path or galaxy, just show the way.",
+          "tag": "list"
+        },
+        {
+          "id": "L04-b30",
+          "hook": "Page 6: gestalt, the feel of the whole thing",
+          "body": "Gestalt means 'the whole'. A complete experience accounts for start screens, cinematics, music, sound and camera: everything. Define your gestalt (humorous, horrific, thrilling, hardcore, foreboding, sexy) and how it reaches players from the first moment. Cover what they see first, the intended emotions, and how audio conveys the feel.",
+          "example": "DVD menus capture a film's feel with a little music, a few fonts and some visuals. Special modes: Call of Duty 4's helicopter gunner sequence, Wet's Rage Mode.",
+          "f2p": "Gestalt starts at the store page and the ad, then continues through the FTUE and the home screen. The order of login pop-ups is a gestalt decision.",
+          "memory": "Gestalt is the whole pot, not one bean.",
+          "tag": "concept"
+        },
+        {
+          "id": "L04-b31",
+          "hook": "Draw the menu flowchart, or ship a lousy interface",
+          "body": "Page 6 also needs a simple flowchart of how the player moves through the game's shell, meaning its menus. Rogers notes that many games end up with bad interfaces simply because the team never thought about them.",
+          "example": "Main menu, options, level select, save, back: if nobody draws it, nobody owns it.",
+          "f2p": "Map home, play, results, rewards, shop, events, pass and social, and count the taps it takes to reach the core loop.",
+          "memory": "Undrawn menus become mazes.",
+          "tag": "warning"
+        },
+        {
+          "id": "L04-b32",
+          "hook": "Mechanic vs hazard: you use one, the other hurts you",
+          "body": "A mechanic is something the player interacts with to create or help gameplay: moving platforms, opening doors, rope swings, slippery ice. A hazard is a mechanic that can hurt or kill but has no intelligence: electrified platforms, spike pits, swinging blades, flame jets. At the ten-pager stage, about three of each is enough.",
+          "example": "The book's sketches: a hero on a moving block next to a rope, then spikes, a pendulum blade and fire jets.",
+          "f2p": "In match-3, special tiles are mechanics, and blockers like ice or spreading goo are hazards.",
+          "memory": "Mechanics help, hazards hurt, and neither one thinks.",
+          "tag": "concept"
+        },
+        {
+          "id": "L04-b33",
+          "hook": "Power-ups help now. Collectibles pay off later.",
+          "body": "A power-up is collected and helps gameplay directly: ammo, extra lives, invulnerability. Collectibles have no immediate effect: coins, puzzle pieces, trophies. Explain what's collected, why, and whether it buys items, unlocks abilities or content, or earns achievements. If there's an economy, briefly cover earning, spending and where players shop (a store or a peddler).",
+          "example": "The book draws a mushroom, a star and a health kit as power-ups, and a coin, a money bag, a diamond and cash as collectibles.",
+          "f2p": "Boosters are power-ups; stars, cards and event tokens are collectibles. In F2P the economy is the business model, not a brief aside.",
+          "memory": "A power-up is pizza now. A collectible is a piggy bank.",
+          "tag": "concept"
+        },
+        {
+          "id": "L04-b34",
+          "hook": "Page 8: a hazard with AI is an enemy",
+          "body": "If a hazard uses artificial intelligence, it's an enemy. Describe the enemies, what makes each unique and how players beat them. Bosses are bigger, scarier enemies at the end of levels or chapters, often villains with personality. Say who they are, where they appear, how they're beaten and what players earn. Show them off; they make great visuals.",
+          "example": "The book's sketch: a skeleton warrior, a huge horned ogre and a flying eyeball facing a cheerful stick-figure hero.",
+          "f2p": "Bosses become boss levels, raid bosses with shared HP bars, and event bosses. Always state what they drop.",
+          "memory": "Spikes don't think. Skeletons do.",
+          "tag": "concept"
+        },
+        {
+          "id": "L04-b35",
+          "hook": "Page 9: cutscenes, how they're made and when they play",
+          "body": "Does the game have movies or cutscenes? Explain how they're presented, how they'll be made (CG, Flash animation, even puppets), when players see them (during play, at the start or end of levels) and any attract-mode movies.",
+          "example": "An attract mode is the demo loop that plays when nobody is touching the game.",
+          "f2p": "Keep story short, skippable and subtitled for sound-off play. Your store video and UA ads are the modern attract mode.",
+          "memory": "The popcorn page.",
+          "tag": "list"
+        },
+        {
+          "id": "L04-b36",
+          "hook": "Page 10: bonus materials, the reasons to play again",
+          "body": "The final page covers bonus materials and unlockables that encourage replay. Give examples of what players can unlock and explain their incentive to come back. This is where multiplayer, downloadable content and episodic content go.",
+          "example": "Unlockable costumes, extra modes and post-launch content were classic replay hooks in 2010.",
+          "f2p": "In F2P this is the most important page: LiveOps events, seasons and passes, collections, clans and content cadence. Replay is the business model.",
+          "memory": "In F2P, the bonus page is the main course.",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "The GDD (and the awful truth about writing them)",
+      "bites": [
+        {
+          "id": "L04-b37",
+          "hook": "The GDD outlines everything in the game",
+          "body": "Once the ten-pager has put meat on the bones, the GDD fills in the rest: everything that will be in the game. The whole team uses it as a reference during production.",
+          "example": "Rogers' own GDD pages were illustrated, with one feature per landscape page.",
+          "f2p": "Today's GDD is usually a hub wiki page that links feature specs, the economy sheet and the bible.",
+          "memory": "Skeleton first (ten-pager), then flesh (GDD).",
+          "tag": "concept"
+        },
+        {
+          "id": "L04-b38",
+          "hook": "A game bible is not a GDD",
+          "body": "The show bible comes from TV. It covers the world's rules and the characters' backgrounds and relationships, which is useful for marketing sites, comic adaptations and merchandise. But it has nothing to do with gameplay. The GDD covers how the character interacts with the world, not how they relate to it. Write the bible after the GDD is underway.",
+          "example": "How a hero feels about his family belongs in the bible. How he interacts with a breakable crypt lid belongs in the GDD.",
+          "f2p": "LiveOps needs a strong bible so that years of event themes and characters stay on-brand.",
+          "memory": "Bible = who they are. GDD = what you do.",
+          "tag": "rule"
+        },
+        {
+          "id": "L04-b39",
+          "hook": "The awful truth: nobody reads the GDD",
+          "body": "GDDs take huge effort, yet nobody wants to read them: they're long, intimidating and full of everything from useful to arcane. Everyone is interested; nobody makes time. So why write one? Because you'll need to read it yourself. If the game lives only in your head, you'll get overwhelmed or forget a great idea.",
+          "example": "Rogers' cautionary example: forgetting all about your gun that shoots fire ants.",
+          "f2p": "Write short, scannable specs with tables and flows so people actually read them, including future you.",
+          "memory": "The cookbook nobody reads, except the chef at 2 a.m.",
+          "tag": "warning"
+        },
+        {
+          "id": "L04-b40",
+          "hook": "Rogers drew his GDD, and the team got it faster",
+          "body": "Unlike screenplays, GDDs have no official format. Rogers likes to draw, so he illustrated his design documents and found teammates understood concepts faster. His sample page covers a single feature with sketches, comic-strip panels of the abilities, bold key terms and a boxed story note. Find whatever works for you.",
+          "example": "The Maximo III page shows a transformation that drains health over time and is sustained by collecting souls, with panels showing traversal and attacks.",
+          "f2p": "Wireframes and flowcharts in Figma or Miro are the modern version of the drawn GDD page.",
+          "memory": "One feature, one page, mostly pictures.",
+          "tag": "example"
+        },
+        {
+          "id": "L04-b41",
+          "hook": "Five ways to communicate design: boards, diagrams, animatics, beats, wiki",
+          "body": "Storyboards work even with stick figures. Diagrams need consistent shapes and colors plus a legend. Animatics animate the boards and leave little room for misreading. A beat chart shows the whole game on one page. A team wiki is current and editable, but easily neglected and out of date once production starts.",
+          "example": "For storyboard inspiration: film storyboards, comics or the book's own diagrams. 'Grok', from Heinlein, means to understand completely.",
+          "f2p": "Modern equivalents: Figma prototypes, Miro flows, gray-box builds, and Confluence or Notion pages with owners and status tags.",
+          "memory": "SDABW: Sketch, Draw, Animate, Beat, Wiki.",
+          "tag": "list"
+        },
+        {
+          "id": "L04-b42",
+          "hook": "Everything is liquid",
+          "body": "Designs are living things: they change, flow, mutate and evolve. Let ideas simmer, or you'll miss great gameplay. Much of what you write will become obsolete, and eventually writing becomes counterproductive and the job is finishing the game. But the GDD is your launch pad.",
+          "example": "Rogers ties it back to chili: let the idea simmer.",
+          "f2p": "In live games, change continues after launch through A/B tests and remote config. Mark which values in a spec are tunable.",
+          "memory": "Write it in pencil and launch it anyway.",
+          "tag": "truth"
+        },
+        {
+          "id": "L04-b43",
+          "hook": "Know your four readers: producer, designer, artist, programmer",
+          "body": "The GDD's main audience is four kinds of people, and each thinks, works and prioritizes differently. The most important part of a designer's job is communication: ask teammates what matters most to them and adjust the format. They'll appreciate it.",
+          "example": "A programmer hunts for rules and edge cases. An artist hunts for references and asset lists.",
+          "f2p": "Add the PM or LiveOps manager, economy designer, data analyst, UA/marketing and QA, who look for KPIs, numbers, telemetry and edge cases.",
+          "memory": "Communication is the job.",
+          "tag": "rule"
+        },
+        {
+          "id": "L04-b44",
+          "hook": "Say 'clockwork undead', not 'robots'",
+          "body": "Words are powerful. Use very specific terms for characters and mechanics, and invent one when none exists. On Maximo vs. Army of Zin, Rogers called the Zin robots, and his team pictured everything from C-3PO to the Iron Giant. He meant riveted brass skeletons with gears for guts, so he renamed them clockwork undead.",
+          "example": "The book's drawing: a boxy classic robot next to a skeletal brass Zin holding a blade.",
+          "f2p": "'Reward' is the 'robot' of F2P docs. Write '3 gold chests, 500–800 coins each' instead, and keep a team glossary.",
+          "memory": "One vague word, ten different pictures.",
+          "tag": "example"
+        }
+      ]
+    },
+    {
+      "title": "Gameplay progression",
+      "bites": [
+        {
+          "id": "L04-b45",
+          "hook": "Five ways to start a player's journey",
+          "body": "1) Ground zero: level 1, no skills or gear. 2) Skills shown at the start but unlocked over time, gated by XP, money or something else. 3) Skills present, but the player doesn't know how to use them yet. 4) Big power right away, lost after a boss or first fight. 5) Big power right away, then back to zero because the story is a flashback.",
+          "example": "Rogers describes these as patterns without naming specific games.",
+          "f2p": "Locked-but-visible features on the home screen build anticipation. Power-fantasy tutorials let you play a maxed team, then reset you to starters.",
+          "memory": "Zero, Locked, Clueless, Robbed, Rewind.",
+          "tag": "list"
+        },
+        {
+          "id": "L04-b46",
+          "hook": "Amnesia: the oldest eye-roll in games",
+          "body": "The amnesiac hero, who has skills but can't remember them, is one of the oldest clichés in games. Avoid it unless your twist is exceptionally clever. The only thing that makes players roll their eyes faster is 'it was all a dream.'",
+          "example": "Use a mentor tutorial or a flashback instead of yet another case of convenient memory loss.",
+          "f2p": "FTUE time is precious. Skip clichéd setups and get to the core loop fast.",
+          "memory": "Forget amnesia.",
+          "tag": "warning"
+        },
+        {
+          "id": "L04-b47",
+          "hook": "Know how it ends, not just how it starts",
+          "body": "You need to know how the game ends as well as how it begins. The beat chart is a big help here: it maps the full arc, so progression has somewhere to go.",
+          "example": "Without an ending in mind, levels pile up with no climax or payoff.",
+          "f2p": "Endless F2P games still need an endgame loop (PvP ladder, raids, collections) and enough content runway.",
+          "memory": "Plan the last bite before the first.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "The Beat Chart",
+      "bites": [
+        {
+          "id": "L04-b48",
+          "hook": "The beat chart: your game's structure on one sheet",
+          "body": "A tool that helps develop GDD content and maps the game's structure, which is essential for checking progression. Each level gets 15 fields: name, file name, time of day, story, progression focus, play time, color scheme, enemies and bosses, mechanics, hazards, power-ups, new abilities or gear, treasure, bonus material, music.",
+          "example": "The book charts Maximo: Ghosts to Glory World 1-1 'Grave Danger' and 1-2 'Dead Heat', each 15 minutes, at night, in the Boneyard.",
+          "f2p": "Puzzle teams keep level progression sheets with one row per level: goal, moves, new blocker, booster, difficulty, rewards.",
+          "memory": "The beat chart is your game's EKG.",
+          "tag": "list"
+        },
+        {
+          "id": "L04-b49",
+          "hook": "Diff the columns: Maximo 1-1 teaches, 1-2 tests",
+          "body": "In the Maximo chart, 1-1 teaches movement, combat, defense and ability collecting. 1-2 moves on to mastering hazardous jumps and harder combat, swaps green for lava red, uses a new music track, and adds a few new enemies, mechanics, hazards and one ability. Comparing columns reveals patterns, gaps and bloat.",
+          "example": "New in 1-2: a blue sword skeleton, guardian skeleton and raven; an enemy coffin and floating platform; a swinging gate and flame jet; throw shield.",
+          "f2p": "Compare consecutive puzzle levels the same way: what's new, what's repeated, what's missing.",
+          "memory": "Teach, then test.",
+          "tag": "example"
+        },
+        {
+          "id": "L04-b50",
+          "hook": "Watch for clumping: too many new things at once",
+          "body": "Clumping means introducing too many new enemies or mechanics in one place. Spread them across the game. The first level always has several new elements, so it technically doesn't count. Rogers' rule of thumb: two or three new mechanics, enemies and rewards per level.",
+          "example": "After a busy first level, Maximo 1-2 adds only a handful of new elements.",
+          "f2p": "Two brand-new blockers in one puzzle level causes a churn spike. Introduce one at a time, with a tutorial.",
+          "memory": "Don't dump the whole spice rack in at once.",
+          "tag": "warning"
+        },
+        {
+          "id": "L04-b51",
+          "hook": "Avoid samey-ness: vary colors, time of day and music",
+          "body": "Samey-ness means repeating the same combinations of enemies and mechanics. Mix them up to keep things fresh. Alternate time of day and color schemes so levels don't look and feel repetitive, and alternate music so players don't get sick of one track.",
+          "example": "Maximo goes from a green graveyard to a red lava graveyard, and from the Graveyard 1 track to Graveyard 2.",
+          "f2p": "Alternate goal types, chapter themes and event types on the LiveOps calendar, and use a difficulty sawtooth.",
+          "memory": "Same song, same color, same snooze.",
+          "tag": "warning"
+        },
+        {
+          "id": "L04-b52",
+          "hook": "Economy check: never broke, never drowning in cash",
+          "body": "Players should have enough money to buy useful items, but not so much that money becomes worthless. Introduce mechanics and enemies together with the items and abilities needed to beat them. Track treasure per level so you can see the flow.",
+          "example": "Maximo lists treasure per level: 200 koins in each, plus two death koins in 1-1 and one in 1-2.",
+          "f2p": "Compare coins earned per level with booster prices, and watch for stacked events flooding the economy with currency.",
+          "memory": "The wallet is never empty and never overflowing.",
+          "tag": "rule"
+        },
+        {
+          "id": "L04-b53",
+          "hook": "Give players everything by 75%, then let them play",
+          "body": "When does the player have everything: every weapon, skill, vehicle and armor upgrade? Rogers aims for about 75% of the way through, so the last quarter lets players enjoy all their cool stuff.",
+          "example": "If the best weapon unlocks in the final level, nobody gets to play with it.",
+          "f2p": "Endless games have no 75% mark, so give every new tool a stretch of easy levels to play with before the next gate.",
+          "memory": "The last quarter is the playground.",
+          "tag": "rule"
+        },
+        {
+          "id": "L04-b54",
+          "hook": "Bite-size or epic? Either way, give them their money's worth.",
+          "body": "The rise of casual games pushed players toward shorter sessions, averaging about 15 minutes in 2010, though tastes could swing back toward hardcore. What matters most is giving players their money's worth. For action games, Rogers advises at least 8–10 hours, not counting replays, cutscenes and dialogue. Extra content never hurts, since you can cut it if production slips.",
+          "example": "Level 9 of the book covers tricks for estimating play time.",
+          "f2p": "Mobile sessions are shorter and more frequent. Plan content runway so players can't burn through content faster than you make it.",
+          "memory": "You can trim fat later, but you can't add meat at the last minute.",
+          "tag": "concept"
+        },
+        {
+          "id": "L04-b72",
+          "hook": "Diff both ways: what 1-2 drops tells you as much as what it adds",
+          "body": "Compare the Maximo columns in both directions. 1-2 drops the wooden coffin and chest mimic, breakable rocks and the cave gate, the water, bridge and fall-away hazards, the iron key and 'foot cheese', and brings in fire hazards, a swinging gate, new enemies and throw shield. The combat kit stays, the hazard set rotates, and the villain Achille's drill drives the story.",
+          "example": "Achille's name is already on 1-1's key statue and statue hazard before his drill cracks the ground in 1-2.",
+          "f2p": "When you diff two puzzle levels, note what disappears (a blocker, a booster) as well as what appears, so the rotation feels fresh.",
+          "memory": "Added, kept, dropped.",
+          "tag": "example"
+        }
+      ]
+    },
+    {
+      "title": "Above all, don't be a schmuck",
+      "bites": [
+        {
+          "id": "L04-b55",
+          "hook": "Good ideas come from anywhere: beware 'not invented here'",
+          "body": "'Not invented here' syndrome is believing that only the design team's ideas count. That's arrogant nonsense. Good designers keep their ear to the ground, share their ideas and designs, and listen, while remembering they don't have to take every suggestion.",
+          "example": "A tester, an artist or a programmer can suggest the best feature in the game.",
+          "f2p": "Community managers, support tickets, reviews, Discord, analysts and winning ad creatives are idea goldmines.",
+          "memory": "Ears open, ego closed.",
+          "tag": "rule"
+        },
+        {
+          "id": "L04-b56",
+          "hook": "Decide and stick with it: endless redos drain everything",
+          "body": "Designs evolve, but redoing work over and over is the worst thing you can do. Perfectionism is fine, yet many problems can be solved on paper before a single pixel is rendered or line of code written. Projects lose time, resources and morale when leads can't commit to a direction.",
+          "example": "Rogers has watched projects drain away because design leads couldn't pick a direction.",
+          "f2p": "Keep a decision log. Change direction because test data says so, not because opinions keep shifting.",
+          "memory": "Paper is cheaper than pixels.",
+          "tag": "rule"
+        },
+        {
+          "id": "L04-b57",
+          "hook": "Update often, and tackle the tough problems first",
+          "body": "Keep colleagues informed with emails, document comments, and systems like comment threads or page colors. Talk to art and programming leads early about how they work and which parts of your design worry them. Solve the hard problems first, so if they don't work out you can still change course.",
+          "example": "If you leave the riskiest feature for last, there's no time left to fix it.",
+          "f2p": "In F2P the tough problems are often server-side: real-time multiplayer, anti-cheat, economy exploits, time zones. De-risk them early.",
+          "memory": "Eat the frog first.",
+          "tag": "rule"
+        },
+        {
+          "id": "L04-b58",
+          "hook": "Trust your instincts, but pick your fights",
+          "body": "Sometimes nobody else will believe in your idea, and you'll have to fight for it. Pick your fights: if everything becomes drama, teammates tune out and you get branded a prima donna. But don't be afraid to fight for a good idea; you may turn out to be right.",
+          "example": "The designer who fights every battle ends up winning none of them.",
+          "f2p": "Back your instincts with a cheap test (a prototype, a fake-door test, a small A/B) instead of a shouting match.",
+          "memory": "Fight like a sniper, not a machine gun.",
+          "tag": "rule"
+        },
+        {
+          "id": "L04-b59",
+          "hook": "Respect peers' strengths, and ask what they want to work on",
+          "body": "Teammates are better at some things than others. Work with your producer to put the right person on each job, and avoid giving work to someone with no talent or interest for it. Ask teammates what they'd like to work on; people do better work when they're into it.",
+          "example": "The artist who loves monsters should probably be drawing the bosses.",
+          "f2p": "Cross-discipline feature squads work best when people opt into the features they care about.",
+          "memory": "Right chef, right dish.",
+          "tag": "rule"
+        },
+        {
+          "id": "L04-b60",
+          "hook": "Save often and always, because babies happen",
+          "body": "Accidents, vacations and births mean designers aren't always around at critical moments. Make designs accessible to the team, especially the producer. Keep docs in version control (Perforce, Alienbrain, Subversion) on drives that are backed up regularly. Don't keep the game in your head: write it down and file it so you can find it.",
+          "example": "If the only copy of the design is in one person's head, the project stalls the day they're out.",
+          "f2p": "Use Git or Perforce, Unity Version Control, cloud docs with version history, and documented remote-config values.",
+          "memory": "If it isn't saved, it didn't happen.",
+          "tag": "rule"
+        },
+        {
+          "id": "L04-b61",
+          "hook": "Stay organized: names and dates humans can read",
+          "body": "Use naming conventions people understand: a forest level's name should include 'forest', or at least an 'f'. Rogers prefers day, month as text, then year (like 27 JUL 09) for clarity across many versions. Putting dates in file names helps on long projects. Name everything in the game consistently.",
+          "example": "'lvl_f03_27JUL09' beats 'final_FINAL_v2_new'.",
+          "f2p": "ISO dates (2026-10-10) sort correctly. Name events, SKUs, analytics events and config keys consistently.",
+          "memory": "Future you is a stranger, so label things for them.",
+          "tag": "rule"
+        },
+        {
+          "id": "L04-b62",
+          "hook": "Be prepared: cheats, camera, extras and a demo",
+          "body": "Other people will need shortcuts: level skips, a flexible cheat camera for screenshots, and cheat codes for invulnerability, power-ups and money. Ask publishing and marketing early what they'll need (extra levels, costumes, bonus material) and don't leave it to the last minute. Plan for a demo, and earmark levels that show the game at its best.",
+          "example": "Marketing needs screenshots of the final boss: a cheat camera and a level skip save hours.",
+          "f2p": "Debug menus (add currency, skip level, time travel), GM tools, UA creative captures, playable-ad builds, store screenshots, soft launch.",
+          "memory": "Build the back door before the guests arrive.",
+          "tag": "rule"
+        },
+        {
+          "id": "L04-b63",
+          "hook": "Don't be a schmuck: all nine rules in one go",
+          "body": "Good ideas come from anywhere. Decide and stick with it. Update often. Tackle tough problems first. Trust your instincts but pick your fights. Respect your peers. Save often. Stay organized. Be prepared. It all sounds like common sense, but common sense isn't that common.",
+          "example": "The schmuck hoards ideas, flip-flops, never sends updates, leaves the boss fight for last, keeps the only GDD in his pocket, then goes on vacation.",
+          "f2p": "These habits matter even more on live teams that ship every few weeks.",
+          "memory": "Good Decisions Usually Take Teams Really Seriously, Organized and Prepared.",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "F2P paperwork toolkit",
+      "bites": [
+        {
+          "id": "L04-b64",
+          "hook": "The F2P feature one-pager: one feature, one page",
+          "body": "Include: name and pitch; the problem, with data; the goal, a primary KPI and guardrail metrics; the target segment; how it works in three bullets; rewards and economy impact; any monetization hook, with an ethics check; three comps; an effort estimate; risks; and success criteria with a test plan.",
+          "example": "Hypothetical: a weekend Chili Cook-Off team race to lift weekend engagement in a match-3 game.",
+          "f2p": "This is the most common design-test deliverable. Lead with the problem and the KPI.",
+          "memory": "Problem, Goal, How, Cost, Risk, Test.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L04-b65",
+          "hook": "The LiveOps feature spec: a GDD chapter for one event",
+          "body": "Sections: a header with owner and status; goals and KPIs; player fantasy; numbered rules and a glossary; player flow with wireframes; reward tables linked to the economy sheet; monetization and compliance; assets; timing and time zones; edge cases; tech and remote config; telemetry; a test plan with cheat tools; rollout; risks and a changelog.",
+          "example": "Edge cases: late joiners, quitters, leaderboard ties, disconnects, leftover event currency, players changing the device clock.",
+          "f2p": "Analysts read the telemetry section, QA reads the edge cases, economy designers read the numbers. Write for all of them.",
+          "memory": "Rules, Flow, Rewards, Edges, Data.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L04-b66",
+          "hook": "The economy spreadsheet is a design document too",
+          "body": "Typical tabs: currencies, sources and sinks per player type, progression curves, reward tables and drop rates, store pricing, a day-by-day simulation of a payer vs a non-payer, and sanity checks for inflation and starvation. Add a README tab explaining who owns what and which cells are inputs.",
+          "example": "Rogers' beat-chart check (enough money, never worthless) is exactly what the simulation tab tests.",
+          "f2p": "Many design tests include balancing a curve or an economy in a spreadsheet. Show your formulas.",
+          "memory": "Faucets and drains, by spender tier.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L04-b67",
+          "hook": "Living docs: Confluence, Notion, Miro, and how to stop wiki rot",
+          "body": "Studios use Confluence (often alongside Jira), Notion, Google Docs and Sheets, Miro or FigJam for flows and calendars, and Figma for UI. To avoid the wiki rot Rogers warned about: one owner per page, status labels, a changelog, a last-verified date, archived deprecated pages, specs linked from tickets, and a glossary.",
+          "example": "A spec marked 'Live, v3, verified 2026-10-01, owner: you' gets trusted. An unowned page gets ignored.",
+          "f2p": "Stale specs cause real bugs in live games: wrong reward values get shipped.",
+          "memory": "Every page needs a parent.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L04-b68",
+          "hook": "Design tests ask for exactly the documents in this chapter",
+          "body": "Common take-home prompts: a one-pager for a new LiveOps event, a feature spec to improve D7 retention or conversion, a competitor deconstruction, an economy or progression sheet, or ten levels introducing a new blocker. To ace them: problem and KPI first, respect page limits, visuals, precise terms, threes, numbers, edge cases, ethics, and stated assumptions.",
+          "example": "'Design 10 levels introducing a new blocker' is a beat-chart test in disguise.",
+          "f2p": "Fit the studio's game: match its gestalt, audience and age rating.",
+          "memory": "Write as if the reviewer has 90 seconds.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L04-b69",
+          "hook": "The F2P One-Sheet: Rogers' 8 fields plus 4 new ones",
+          "body": "Title; platforms and device profile; audience and motivations; target IARC and Apple rating; player fantasy and core loop; loops and modes; 3–5 USPs written as screenshot captions; three winning comps. The four additions: business model, session design, target KPIs, and why now plus risks.",
+          "example": "Hypothetical Simmer Down!: renovate a roadside diner by winning match-3 levels, with a weekend Chili Cook-Off team race.",
+          "f2p": "Each USP should be something you can show in a 15-second ad.",
+          "memory": "TSAR SMUC plus Money, Minutes, Metrics, Risks.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L04-b70",
+          "hook": "The F2P Ten-Pager: the same ten pages, rebuilt for a service",
+          "body": "Title and snapshot; pitch and loops; roster and gesture map; core gameplay and device features; meta map; FTUE and UI shell; mechanics, boosters and economy; opposition and boss levels; narrative and store video; LiveOps, social, monetization and KPIs. Page 10 becomes the heaviest, because F2P sells a service.",
+          "example": "Rogers' bonus page (unlockables, DLC) becomes the event calendar, season pass and clan systems.",
+          "f2p": "Executives read pages 1, 2 and 10 first. The team reads pages 4 to 7.",
+          "memory": "A cookbook in 2010, a restaurant's operating manual in 2026.",
+          "tag": "f2p"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "Making a game resembles cooking chili: it takes a proper recipe, the right tools and ingredients, and enough time on the stove.",
+    "A design document should run only as long as it takes to describe what happens in the game.",
+    "Know your intended age rating (ESRB in the book) and design toward it.",
+    "Climb the ladder: one-sheet first, then ten-pager, then the full game design document.",
+    "Lean on beat charts and similar tools to spot design problems early.",
+    "Nobody enjoys wading through huge design docs, so choose whatever format best gets your ideas across to the team.",
+    "Everything is liquid: your design WILL change during production.",
+    "Give players their money's worth.",
+    "Be smart about how you name and organize documents and files."
+  ],
+  "mnemonics": [
+    {
+      "name": "The chili production model",
+      "device": "Really Interesting Chili Better Simmered",
+      "unpacks": "Recipe (documentation), Ingredients (team and tools), Combine (production, in the right order), Boil (crunch, keep it brief), Simmer (polish, bug fixing, iteration)."
+    },
+    {
+      "name": "One-sheet fields",
+      "device": "TSAR SMUC (a Tsar who throws two-page one-sheets in the fire)",
+      "unpacks": "Title, Systems, Age, Rating (ESRB), Story summary focused on gameplay, Modes, USPs, Comps. F2P adds Money (business model), Minutes (session design), Metrics (KPIs), Risks."
+    },
+    {
+      "name": "Ten-Pager memory palace",
+      "device": "Front door, Hallway, Mirror, Couch, Window, Stereo, Kitchen, Basement, TV, Garage",
+      "unpacks": "1 Title page, 2 Game outline (flow), 3 Character, 4 Gameplay, 5 Game world (view and map), 6 Game experience (gestalt), 7 Mechanics, hazards, power-ups, collectibles, economy (kitchen gadgets), 8 Enemies and bosses, 9 Cutscenes, 10 Bonus materials."
+    },
+    {
+      "name": "Five ways to start progression",
+      "device": "Zero, Locked, Clueless, Robbed, Rewind",
+      "unpacks": "Ground zero with no skills; skills shown but unlocked over time; has skills but doesn't know how to use them yet; big power lost after a boss; big power, then back to zero in a flashback structure."
+    },
+    {
+      "name": "Don't be a schmuck: the nine rules",
+      "device": "Good Decisions Usually Take Teams Really Seriously, Organized and Prepared",
+      "unpacks": "Good idea from anywhere, Decide and stick, Update often, Tough ones first, Trust instincts, Respect peers, Save often, Organized, Prepared."
+    },
+    {
+      "name": "ESRB ratings, 2010",
+      "device": "Every Explorer Earns Ten Mighty Achievements",
+      "unpacks": "eC (Early Childhood), E (Everyone), E10+ (Everyone 10+), T (Teen), M (Mature 17+), AO (Adults Only 18+). eC was retired in 2018."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L04-f01",
+      "q": "What are the four preproduction documents, in order?",
+      "a": "One-sheet, ten-pager, beat chart, game design document (GDD).",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f02",
+      "q": "What do all four preproduction documents eventually evolve into?",
+      "a": "The game design document (GDD).",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f03",
+      "q": "How long do many GDDs average, according to Rogers?",
+      "a": "Over 300 pages, though it isn't a fixed number.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f04",
+      "q": "What is Rogers' rule for how long a GDD should be?",
+      "a": "Just long enough to accurately describe what's going on in the game.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f05",
+      "q": "How does Mark Cerny format his design material?",
+      "a": "One page per topic, in bullet points.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f06",
+      "q": "What is the goal of design documentation?",
+      "a": "Communication: with the player, the team and publishing partners.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f07",
+      "q": "Why must a one-sheet fit on a single page?",
+      "a": "Many busy people (teammates, publishers) read it, so it has to be short as well as interesting and informative.",
+      "type": "why"
+    },
+    {
+      "id": "L04-f08",
+      "q": "What are the eight fields of Rogers' one-sheet?",
+      "a": "Title, game systems, target age, intended ESRB rating, story summary focused on gameplay, distinct modes, USPs, competitive products.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f09",
+      "q": "Besides ratings, what does the ESRB enforce?",
+      "a": "Advertising and online-privacy principles, for the US and Canada.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f10",
+      "q": "Which rating system do the ESRB's letter ratings most resemble?",
+      "a": "The MPAA movie ratings (G, PG, PG-13, R, X).",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f11",
+      "q": "Name three non-US rating systems mentioned in the book.",
+      "a": "PEGI (Europe), BBFC (UK), USK (Germany).",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f12",
+      "q": "What were the six ESRB ratings in 2010?",
+      "a": "eC, E, E10+, T, M (17+), AO (18+).",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f13",
+      "q": "Why did the eC rating carry stigma?",
+      "a": "Gamers saw it as 'baby games', since it mostly appeared on edutainment and licensed titles for young kids.",
+      "type": "why"
+    },
+    {
+      "id": "L04-f14",
+      "q": "Why did publishers avoid the AO rating?",
+      "a": "No US brick-and-mortar retailer would stock an AO game; it was the industry's X rating.",
+      "type": "why"
+    },
+    {
+      "id": "L04-f15",
+      "q": "What are comps?",
+      "a": "Already-released games similar to yours, listed to help readers understand your game quickly.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f16",
+      "q": "Why should comps be successful or very familiar games?",
+      "a": "Publishers know sales figures, and comparing your game to a flop can scare them off.",
+      "type": "why"
+    },
+    {
+      "id": "L04-f17",
+      "q": "Rogers recommends about ____ USPs.",
+      "a": "five",
+      "type": "cloze"
+    },
+    {
+      "id": "L04-f18",
+      "q": "Why about five USPs?",
+      "a": "That's roughly how many bullet points fit on the back of a game box.",
+      "type": "why"
+    },
+    {
+      "id": "L04-f19",
+      "q": "Name three phrases that don't count as USPs.",
+      "a": "'Amazing graphics', 'awesome story', 'sequel to an award-winning game'.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f20",
+      "q": "What is a ten-pager?",
+      "a": "A broad-strokes design document that lays out the game's spine without excruciating detail.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f21",
+      "q": "Why build a ten-pager in PowerPoint or similar?",
+      "a": "It helps formatting, and you can present it on screen in a pitch or print it as a leave-behind.",
+      "type": "why"
+    },
+    {
+      "id": "L04-f22",
+      "q": "What does the production team want from a ten-pager?",
+      "a": "Clear gameplay diagrams, short punchy sentences, specific terminology, and comparisons to appropriate games, even old ones.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f23",
+      "q": "What do marketing and executives want from a ten-pager?",
+      "a": "Exciting concept images, bullet points, vivid examples, and successful modern games as comps.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f24",
+      "q": "What five items go on the Ten-Pager title page?",
+      "a": "Title, game systems, target age, intended ESRB rating, projected ship date.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f25",
+      "q": "Why make a placeholder logo with a carefully chosen font for the ten-pager?",
+      "a": "The font tells readers the genre instantly, without needing pictures.",
+      "type": "why"
+    },
+    {
+      "id": "L04-f26",
+      "q": "What are the two parts of Ten-Pager Page 2 (game outline)?",
+      "a": "The game story summary and the game flow.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f27",
+      "q": "What questions should the game flow answer?",
+      "a": "What the challenges are and how to overcome them; how progression and rewards work; how gameplay ties to the story; what the victory condition is.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f28",
+      "q": "God of War's team described Kratos with one word that shaped all his actions: ____.",
+      "a": "Brutal",
+      "type": "cloze"
+    },
+    {
+      "id": "L04-f29",
+      "q": "What diagram must Ten-Pager Page 5 (game world) include?",
+      "a": "A simple map or flowchart showing how the player navigates the world.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f30",
+      "q": "Gestalt translates as ____.",
+      "a": "'the whole' (the overall feel of the complete experience)",
+      "type": "cloze"
+    },
+    {
+      "id": "L04-f31",
+      "q": "Why should Page 6 include a flowchart of the game's shell (menus)?",
+      "a": "Many games have lousy interfaces because the team never thought about them.",
+      "type": "why"
+    },
+    {
+      "id": "L04-f32",
+      "q": "What is a mechanic?",
+      "a": "Something the player interacts with to create or aid gameplay (moving platforms, doors, rope swings, ice).",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f33",
+      "q": "What is a hazard?",
+      "a": "A mechanic that can harm or kill the player but has no intelligence.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f34",
+      "q": "A hazard that uses artificial intelligence is an ____.",
+      "a": "enemy",
+      "type": "cloze"
+    },
+    {
+      "id": "L04-f35",
+      "q": "What's the difference between a power-up and a collectible?",
+      "a": "A power-up helps gameplay directly; a collectible has no immediate gameplay effect but may buy or unlock things later.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f36",
+      "q": "How many mechanics does Rogers say to describe at the ten-pager stage?",
+      "a": "About three.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f37",
+      "q": "What questions should the ten-pager answer about each boss?",
+      "a": "Who they are, where they appear, how they're defeated, and what the player earns.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f38",
+      "q": "What does Ten-Pager Page 10 cover?",
+      "a": "Bonus materials and unlockables that encourage replay: multiplayer, DLC, episodic content.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f39",
+      "q": "How does a game bible differ from a GDD?",
+      "a": "The bible covers world rules and character backgrounds and relationships; the GDD covers gameplay.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f40",
+      "q": "If nobody reads the GDD, why write it?",
+      "a": "You'll need it yourself; keeping the game in your head leads to overwhelm and forgotten ideas.",
+      "type": "why"
+    },
+    {
+      "id": "L04-f41",
+      "q": "What are Rogers' five techniques for communicating a design?",
+      "a": "Storyboards, diagrams, animatics, beat charts, the team wiki.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f42",
+      "q": "Why is a team wiki risky?",
+      "a": "Once preproduction becomes production, the design team tends to neglect it and it goes out of date.",
+      "type": "why"
+    },
+    {
+      "id": "L04-f43",
+      "q": "Why should gameplay diagrams use consistent shapes and colors plus a legend?",
+      "a": "So readers know what each icon and shape means and read the diagram the same way.",
+      "type": "why"
+    },
+    {
+      "id": "L04-f44",
+      "q": "'Everything is ____' means your design will change during production.",
+      "a": "liquid",
+      "type": "cloze"
+    },
+    {
+      "id": "L04-f45",
+      "q": "Who are the GDD's four primary readers?",
+      "a": "The producer, designer, artist and programmer.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f46",
+      "q": "What does Rogers call the most important part of a game designer's job?",
+      "a": "Communication.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f47",
+      "q": "What term did Rogers invent to replace 'robots' for the Zin?",
+      "a": "Clockwork undead.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f48",
+      "q": "Why do vague words like 'robot' cause problems in a GDD?",
+      "a": "Each teammate pictures something different (C-3PO vs the Iron Giant), so the team ends up on different pages.",
+      "type": "why"
+    },
+    {
+      "id": "L04-f49",
+      "q": "What is 'progression'?",
+      "a": "How the gameplay unfolds for the player over the course of the game.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f50",
+      "q": "What are the five ways to start a game's progression?",
+      "a": "Ground zero; skills shown but unlocked over time; skills without knowing how to use them; big power then lost; big power then back to zero via a flashback.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f51",
+      "q": "Which story cliché does Rogers say to avoid unless you're exceptionally clever?",
+      "a": "The hero with amnesia (and 'it was all a dream').",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f52",
+      "q": "A beat chart has ____ required elements per level.",
+      "a": "15",
+      "type": "cloze"
+    },
+    {
+      "id": "L04-f53",
+      "q": "What is 'clumping' in a beat chart?",
+      "a": "Introducing too many new enemies or mechanics at once.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f54",
+      "q": "What is 'samey-ness'?",
+      "a": "Too many identical combinations of enemies and mechanics.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f55",
+      "q": "By what point should the player have everything?",
+      "a": "About 75% of the way through the game.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f56",
+      "q": "Why give the player everything by about 75%?",
+      "a": "So the last quarter lets them play with all their cool stuff.",
+      "type": "why"
+    },
+    {
+      "id": "L04-f57",
+      "q": "Rogers’ rule of thumb: introduce ____ new mechanics, enemies and rewards per level.",
+      "a": "two or three",
+      "type": "cloze"
+    },
+    {
+      "id": "L04-f58",
+      "q": "What minimum gameplay time does Rogers advise for action games?",
+      "a": "8–10 hours, not counting replays, cutscenes or dialogue.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f59",
+      "q": "What is 'not invented here' syndrome?",
+      "a": "Believing that ideas from anyone outside the design team aren't valid.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f60",
+      "q": "Why tackle the tough design problems first?",
+      "a": "If they don't work out, there's still time to change course.",
+      "type": "why"
+    },
+    {
+      "id": "L04-f61",
+      "q": "What date format does Rogers prefer for documents?",
+      "a": "Day, month as text, year (e.g., 27 JUL 09).",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f62",
+      "q": "What is IARC?",
+      "a": "The International Age Rating Coalition: one questionnaire generates regional age ratings (used by Google Play and other stores).",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f63",
+      "q": "What are Apple's App Store age tiers after the 2025 update?",
+      "a": "4+, 9+, 13+, 16+, 18+.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f64",
+      "q": "Which ESRB notices matter most for F2P games?",
+      "a": "'In-Game Purchases' (2018) and 'In-Game Purchases (Includes Random Items)' (2020).",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f65",
+      "q": "Your event spec just says 'players get a reward', and QA, art and economy each picture something different. Which principle applies?",
+      "a": "Be specific with words (the 'clockwork undead' rule): name the exact rewards and amounts and keep a glossary.",
+      "type": "apply"
+    },
+    {
+      "id": "L04-f66",
+      "q": "Level 31 of your puzzle game introduces two new blockers and a booster at once, and its win rate crashes. Which beat-chart warning is this?",
+      "a": "Clumping. Spread new elements out (2–3 per level at most; on mobile, one blocker at a time) and introduce each with its counter.",
+      "type": "apply"
+    },
+    {
+      "id": "L04-f67",
+      "q": "Your pitch lists eight comps, including a recent flop. What two rules are you breaking?",
+      "a": "The Rule of Threes (use three examples) and 'always pick a winning horse' (successful or very familiar comps).",
+      "type": "apply"
+    },
+    {
+      "id": "L04-f68",
+      "q": "Your store screenshot caption says 'Stunning graphics!' What's wrong with it?",
+      "a": "It isn't a USP. Every game claims it. Replace it with a unique feature you can show.",
+      "type": "apply"
+    },
+    {
+      "id": "L04-f69",
+      "q": "Executives ask why the game will make money, while the team asks how the event works. How should the deck handle both?",
+      "a": "Use the ten-pager audience split: a KPI and market page for executives, diagrams and rules for the team, all in one document.",
+      "type": "apply"
+    },
+    {
+      "id": "L04-f70",
+      "q": "The team rewrites the event rules every sprint and morale is dropping. Which schmuck rule applies?",
+      "a": "Make a decision and stick with it. Work it out on paper first, and change direction only on evidence.",
+      "type": "apply"
+    },
+    {
+      "id": "L04-f71",
+      "q": "Late in production, your team wants to add paid loot boxes. Which Universal Truth should you raise?",
+      "a": "Know your target rating and design toward it: random-item descriptors, odds disclosure and regional rules all apply.",
+      "type": "apply"
+    },
+    {
+      "id": "L04-f72",
+      "q": "Players unlock the best hero in the final chapter and never get to use it. Which beat-chart guideline does this break?",
+      "a": "Give players everything by about 75% (in F2P, give every new tool a stretch of play before the next gate).",
+      "type": "apply"
+    },
+    {
+      "id": "L04-f73",
+      "q": "Your LiveOps calendar runs the same race event every weekend for ten weeks. Which beat-chart problem is this?",
+      "a": "Samey-ness. Alternate event types and themes.",
+      "type": "apply"
+    },
+    {
+      "id": "L04-f74",
+      "q": "A stale wiki spec caused the wrong reward values to ship. Which warning came true, and what's the fix?",
+      "a": "Wiki rot (the team wiki going out of date). Fix: one owner per page, status labels, a changelog, frequent updates.",
+      "type": "apply"
+    },
+    {
+      "id": "L04-f75",
+      "q": "Marketing needs screenshots of a boss at level 200 by tomorrow. Which rule would have saved you?",
+      "a": "Be prepared: level skips, a cheat camera, debug and cheat menus.",
+      "type": "apply"
+    },
+    {
+      "id": "L04-f76",
+      "q": "A new FTUE lets players fight with a maxed-out team, then resets them to starter heroes. Which of Rogers' progression starts is this?",
+      "a": "Significant power right away, then lost after the first confrontation.",
+      "type": "apply"
+    },
+    {
+      "id": "L04-f77",
+      "q": "You're pitching a puzzle game with no main character. What should Page 2 emphasize instead?",
+      "a": "The environments and places the levels represent (like Peggle's Peggle Masters), told vividly.",
+      "type": "apply"
+    },
+    {
+      "id": "L04-f78",
+      "q": "Rogers' motto for choosing comps: always pick a ____.",
+      "a": "winning horse",
+      "type": "cloze"
+    },
+    {
+      "id": "L04-f79",
+      "q": "What do all of Rogers' sample USPs have in common?",
+      "a": "Each is a single line with a concrete number or name plus a hook (256-player co-op, 1,000+ tunes, 200 levels, named weapons, a named engine) and no lengthy detail.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f80",
+      "q": "In Rogers' sample USP list, the co-op mode supports ____ players, the soundtrack has over ____ tunes, and the open world has ____ levels.",
+      "a": "256; 1,000; 200",
+      "type": "cloze"
+    },
+    {
+      "id": "L04-f81",
+      "q": "Name the three signature weapons in Rogers' sample USP list, and the Rule of Threes link.",
+      "a": "The blastinator, the skull-defiler and the fire-ant anguisher: three named examples in one bullet, with the engine named Realitech in another.",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f82",
+      "q": "What does Maximo 1-2 drop compared with 1-1 on the beat chart?",
+      "a": "The wooden coffin and chest mimic enemies; breakable rocks and the cave gate; the Achille statue, fall-away ground, breakaway bridge and deep water hazards; the iron key; and the 'foot cheese' ability (swapped for throw shield).",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f83",
+      "q": "Why compare beat-chart columns for what a level drops as well as what it adds?",
+      "a": "Drops show how the level rotates its hazard set (water and bridges out, fire and a swinging gate in) while the core kit stays, keeping a mastery level fresh without clumping.",
+      "type": "why"
+    },
+    {
+      "id": "L04-f84",
+      "q": "Who is the villain behind the drill in Maximo 1-2's story, and where else does his name appear on the chart?",
+      "a": "Achille. His name is already on 1-1's key statue (mechanic) and statue (hazard).",
+      "type": "basic"
+    },
+    {
+      "id": "L04-f85",
+      "q": "What five things does Rogers' one-sentence Tomb Raider: Legend game-flow example convey?",
+      "a": "Who you play (Lara Croft), camera (third person), genre (action-adventure), locations (Bolivia's jungles to Tibet's mountains) and goals (find the Ghalali key, solve the mystery of Lara's lost mother).",
+      "type": "basic"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "L04-q01",
+      "q": "In what order do Rogers' four preproduction documents build on each other?",
+      "options": [
+        "Ten-pager, one-sheet, GDD, beat chart",
+        "One-sheet, beat chart, ten-pager, GDD",
+        "One-sheet, ten-pager, beat chart, GDD",
+        "Beat chart, one-sheet, ten-pager, GDD"
+      ],
+      "answer": 2,
+      "why": "The one-sheet expands into the ten-pager, the beat chart maps the structure, and all of them grow into the GDD. The other orders put detail before the overview."
+    },
+    {
+      "id": "L04-q02",
+      "q": "What is Rogers' position on GDD length?",
+      "options": [
+        "Just long enough to accurately describe the game",
+        "Always about 300 pages for a professional project",
+        "Never more than ten pages",
+        "One page per topic, always"
+      ],
+      "answer": 0,
+      "why": "300 pages is a common average, not a rule. Ten pages is the ten-pager. One page per topic is Mark Cerny's personal style, which Rogers mentions as one valid option."
+    },
+    {
+      "id": "L04-q03",
+      "q": "Which of these is NOT one of the eight one-sheet fields?",
+      "options": [
+        "Competitive products",
+        "Intended ESRB rating",
+        "Distinct modes of gameplay",
+        "Projected ship date"
+      ],
+      "answer": 3,
+      "why": "The projected ship date first appears on the ten-pager's title page. The other three are all one-sheet fields."
+    },
+    {
+      "id": "L04-q04",
+      "q": "Why did The Punisher's developers change camera angles and show the interrogations in black and white?",
+      "options": [
+        "To save rendering performance on consoles",
+        "To bring the rating down from AO to M",
+        "To get an E10+ rating for younger players",
+        "To give the game a film-noir art style"
+      ],
+      "answer": 1,
+      "why": "The scenes were graphic enough to risk an AO rating, which retailers wouldn't stock. Changing the presentation brought it down to M, an example of designing toward a rating."
+    },
+    {
+      "id": "L04-q05",
+      "q": "Which of these is the best USP for an F2P store page?",
+      "options": [
+        "Stunning next-gen graphics",
+        "From the makers of an award-winning hit",
+        "An epic, unforgettable story",
+        "Collect 100+ heroes and battle in 3-minute real-time matches"
+      ],
+      "answer": 3,
+      "why": "USPs must be unique and concrete. Graphics, story and pedigree claims are things every game should have, and Rogers says they don't count."
+    },
+    {
+      "id": "L04-q06",
+      "q": "Which comp would Rogers most likely approve for your pitch?",
+      "options": [
+        "A recent, successful game in your genre",
+        "A cult classic that sold poorly",
+        "An obscure game, so you look more original",
+        "Your team's unreleased prototype"
+      ],
+      "answer": 0,
+      "why": "'Always pick a winning horse.' Publishers know the sales numbers, so flops and unknowns hurt your pitch."
+    },
+    {
+      "id": "L04-q07",
+      "q": "According to the audience table, what should a ten-pager give marketing and executives?",
+      "options": [
+        "Specific terminology and comparisons to vintage games",
+        "Clear gameplay diagrams and short, punchy sentences",
+        "Exciting concept images, bullet points and successful modern comps",
+        "Detailed control maps and technical requirements"
+      ],
+      "answer": 2,
+      "why": "Diagrams, punchy sentences, precise terminology and old comps are for the production team. Executives respond to exciting images, bullets, vivid examples and successful modern comps."
+    },
+    {
+      "id": "L04-q08",
+      "q": "In the Rule of Threes, what job does the second example do?",
+      "options": [
+        "It gives the reader the first idea, which may mislead",
+        "It gives something to compare or contrast with the first",
+        "It keeps the set from feeling binary or contrived",
+        "It summarizes the list"
+      ],
+      "answer": 1,
+      "why": "Example 1 introduces the idea (and may mislead), example 2 gives a comparison or contrast, and example 3 rounds it out so it doesn't feel binary. Going past three gets boring."
+    },
+    {
+      "id": "L04-q09",
+      "q": "Which Ten-Pager page covers gestalt, the first screen and the menu flow?",
+      "options": [
+        "Page 6: Game Experience",
+        "Page 4: Gameplay",
+        "Page 5: Game World",
+        "Page 9: Cutscenes"
+      ],
+      "answer": 0,
+      "why": "Page 6 covers the overall feel: start screens, music, sound, camera and the shell flowchart. Page 5 is the world map and moods, Page 4 is play sequence and tech, Page 9 is movies."
+    },
+    {
+      "id": "L04-q10",
+      "q": "An electrified floor that hurts the player but has no intelligence is a...",
+      "options": [
+        "Mechanic",
+        "Enemy",
+        "Hazard",
+        "Power-up"
+      ],
+      "answer": 2,
+      "why": "A hazard is a mechanic that can harm or kill but has no intelligence. Give it AI and it becomes an enemy. Plain mechanics aid gameplay, and power-ups are collected for help."
+    },
+    {
+      "id": "L04-q11",
+      "q": "Coins that have no immediate gameplay effect but buy items later are...",
+      "options": [
+        "Power-ups",
+        "Collectibles",
+        "Hazards",
+        "Bonus materials"
+      ],
+      "answer": 1,
+      "why": "Collectibles don't affect gameplay right away but can buy items, unlock things or earn achievements. Power-ups help immediately."
+    },
+    {
+      "id": "L04-q12",
+      "q": "How does a game bible differ from a GDD?",
+      "options": [
+        "The bible is the long version of the GDD",
+        "The bible is the technical spec for programmers",
+        "The bible covers gameplay and the GDD covers lore",
+        "The bible covers world rules and character relationships, not gameplay"
+      ],
+      "answer": 3,
+      "why": "The show bible (a TV term) covers the world and characters for marketing, comics and merchandise. The GDD covers gameplay: how the character interacts with the world."
+    },
+    {
+      "id": "L04-q13",
+      "q": "What does Rogers see as the biggest danger of a team wiki?",
+      "options": [
+        "It costs too much to host",
+        "It gets neglected and out of date once production starts",
+        "Artists can't edit it",
+        "It's too public and leaks the design"
+      ],
+      "answer": 1,
+      "why": "Wikis keep everyone current and let the team contribute, but once preproduction turns into production the design team often stops updating them."
+    },
+    {
+      "id": "L04-q14",
+      "q": "What does the 'clockwork undead' story teach?",
+      "options": [
+        "Enemies should always be robots",
+        "Use very specific terms, and invent one if none exists",
+        "Lore belongs in the GDD",
+        "Always show concept art before writing"
+      ],
+      "answer": 1,
+      "why": "'Robots' made teammates picture everything from C-3PO to the Iron Giant. A precise invented term got everyone seeing the same thing."
+    },
+    {
+      "id": "L04-q15",
+      "q": "Your FTUE has the player wield godlike power, then lose it in the first boss fight. Which progression start is this?",
+      "options": [
+        "Ground zero",
+        "Skills shown but unlocked over time",
+        "Big power right away, lost after a boss or first confrontation",
+        "Big power, then back to zero through a flashback"
+      ],
+      "answer": 2,
+      "why": "This is power-then-loss. A flashback start resets you because the story jumps back in time, not because of a fight."
+    },
+    {
+      "id": "L04-q16",
+      "q": "Your beat chart shows level 12 introducing four new enemy types and three new mechanics. What's the problem?",
+      "options": [
+        "Clumping",
+        "Samey-ness",
+        "Economy inflation",
+        "Too few music tracks"
+      ],
+      "answer": 0,
+      "why": "Clumping means too many new things at once. Samey-ness is the opposite problem: too many identical combinations."
+    },
+    {
+      "id": "L04-q17",
+      "q": "By roughly what point does Rogers want players to have everything?",
+      "options": [
+        "25% of the way through",
+        "50% of the way through",
+        "75% of the way through",
+        "The final level"
+      ],
+      "answer": 2,
+      "why": "About 75%, so the last quarter lets players enjoy all their cool stuff. Unlocking the best gear in the final level means nobody gets to use it."
+    },
+    {
+      "id": "L04-q18",
+      "q": "What is Rogers' rule of thumb for new content per level?",
+      "options": [
+        "One new thing every three levels",
+        "Two or three new mechanics, enemies and rewards",
+        "As many as possible, to keep things exciting",
+        "Nothing new after the first world"
+      ],
+      "answer": 1,
+      "why": "Two or three per level keeps things fresh without clumping. Level 1 is the exception and naturally has more."
+    },
+    {
+      "id": "L04-q19",
+      "q": "Your F2P puzzle game has healthy D1 retention, but many players quit at level 12, where two new blockers appear with no booster to counter them. Which principle fixes it?",
+      "options": [
+        "Alternate the music tracks",
+        "Make level 12 longer so players get used to it",
+        "Give players everything by 75%",
+        "Spread the blockers out and introduce each with the items or abilities that beat it"
+      ],
+      "answer": 3,
+      "why": "Rogers says to introduce mechanics alongside the tools that defeat them and to avoid clumping. Music won't help, longer frustration makes it worse, and the 75% rule is about the endgame."
+    },
+    {
+      "id": "L04-q20",
+      "q": "How does Google Play assign age ratings?",
+      "options": [
+        "Through the IARC questionnaire in Play Console",
+        "You mail a build to the ESRB for review",
+        "It reuses your Apple age rating",
+        "F2P apps don't need a rating"
+      ],
+      "answer": 0,
+      "why": "Google Play uses IARC: one questionnaire generates regional ratings (ESRB, PEGI, USK, etc.). Apple runs its own separate questionnaire."
+    },
+    {
+      "id": "L04-q21",
+      "q": "Your design team rejects every idea from QA and art as 'not design's job'. Which rule are they breaking?",
+      "options": [
+        "Make a decision and stick with it",
+        "A good idea can come from anywhere",
+        "Tackle the tough ones first",
+        "Stay organized"
+      ],
+      "answer": 1,
+      "why": "That's 'not invented here' syndrome. Rogers says good designers keep their ear to the ground and share their designs, though they don't have to take every suggestion."
+    },
+    {
+      "id": "L04-q22",
+      "q": "Why does Rogers insist on 'Save often and always'?",
+      "options": [
+        "Hard drives were small in 2010",
+        "Publishers audit design documents",
+        "Designers may be missing at critical moments, so designs must be accessible and backed up",
+        "To keep earlier versions for marketing"
+      ],
+      "answer": 2,
+      "why": "Accidents, vacations and new babies happen. Designs must be accessible to the team, especially the producer, and stored in backed-up version control, not in someone's head."
+    },
+    {
+      "id": "L04-q23",
+      "q": "A design test asks for a one-pager on a new LiveOps event. What should lead the page?",
+      "options": [
+        "The event's lore and backstory",
+        "The full art asset list",
+        "Ten comps from the genre",
+        "The problem, target KPI and player segment, then how it works"
+      ],
+      "answer": 3,
+      "why": "Write the execs-first part first: why the feature exists and how you'll measure it. Lore belongs in the bible, asset lists in the spec, and ten comps break the Rule of Threes."
+    },
+    {
+      "id": "L04-q24",
+      "q": "Which date format does Rogers recommend for naming documents?",
+      "options": [
+        "07/27/09",
+        "27 JUL 09",
+        "2009-07-27",
+        "27/07/2009"
+      ],
+      "answer": 1,
+      "why": "Rogers prefers day, month as text, year, which is unambiguous for humans. Modern teams often use ISO (2009-07-27) because it sorts correctly, but that isn't what the book says."
+    },
+    {
+      "id": "L04-q25",
+      "q": "In 2010, what did an AO rating mean commercially?",
+      "options": [
+        "Higher prices allowed",
+        "Only online sales were permitted",
+        "No US brick-and-mortar retailer would stock the game",
+        "Extra marketing support from platform holders"
+      ],
+      "answer": 2,
+      "why": "AO was the game industry's X rating. Retailers refused to carry it, so most publishers wouldn't make AO games and worked to avoid the rating."
+    }
+  ],
+  "sideQuests": [
+    {
+      "id": "L04-s01",
+      "title": "Recipe card",
+      "task": "Write your own analogy for making games (not chili, not fishing) with at least five mapped steps, including crunch and polish.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L04-s02",
+      "title": "USP detox",
+      "task": "Open the store page of a top-grossing F2P game. Rewrite its screenshot captions as 5 USPs, delete any filler like 'amazing graphics', and mark which ones you could show in a 15-second ad.",
+      "minutes": 10,
+      "xp": 35
+    },
+    {
+      "id": "L04-s03",
+      "title": "Font genre quiz",
+      "task": "Mock up the fake title 'Gem Kingdom' in three fonts that signal three different genres, then ask a friend to guess the genre of each.",
+      "minutes": 5,
+      "xp": 20
+    },
+    {
+      "id": "L04-s04",
+      "title": "Clockwork undead drill",
+      "task": "Take three vague words from any design doc ('reward', 'enemy', 'event') and replace each with a specific term or definition nobody could misread.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L04-s05",
+      "title": "Rating detective",
+      "task": "Look up one F2P game's rating on Google Play and on the App Store. List the descriptors (in-app purchases, random items, user interaction) and explain why you think it got that tier.",
+      "minutes": 10,
+      "xp": 35
+    },
+    {
+      "id": "L04-s06",
+      "title": "Rule of Threes rewrite",
+      "task": "Take any list of five or more examples you've written and cut it to the best three: one that sets up the idea, one that contrasts, and one that rounds it out.",
+      "minutes": 5,
+      "xp": 20
+    },
+    {
+      "id": "L04-s07",
+      "title": "Mini beat chart diff",
+      "task": "Make two columns for levels 1 and 2 of a mobile game you play (goal, new mechanic, new blocker, booster, reward, theme). Mark what's new in level 2, then check for clumping or samey-ness.",
+      "minutes": 15,
+      "xp": 45
+    }
+  ],
+  "mainQuests": [
+    {
+      "id": "L04-m01",
+      "title": "The F2P One-Sheet + Feature One-Pager (design-test simulation)",
+      "task": "Pick a real F2P game you know well. Write a one-page F2P One-Sheet for it (all 12 fields), as if you were pitching it before it existed. Then write a feature one-pager for a new LiveOps event for that game, with a mini reward table and a three-step player flow diagram.",
+      "deliverable": "Two one-page PDFs: the F2P One-Sheet and the feature one-pager.",
+      "doneWhen": "Each doc is exactly one page; three successful comps; 3–5 showable, non-filler USPs; the one-pager has a primary KPI plus two guardrails, a target segment, an economy line, an ethics check, at least two edge cases and a note on age-rating impact. Bonus: post it publicly and ask for one piece of feedback.",
+      "minutes": 120,
+      "xp": 250
+    },
+    {
+      "id": "L04-m02",
+      "title": "The F2P beat chart",
+      "task": "In Google Sheets, build a 20-level progression sheet for a hypothetical puzzle game: one row per level with goal type, moves, new mechanic or blocker, booster unlocked, difficulty tier, reward, theme and music track, plus a coin column compared against booster prices.",
+      "deliverable": "A shared spreadsheet plus three sentences on what you'd change after seeing win-rate data.",
+      "doneWhen": "No level after level 1 introduces more than one new blocker; goal types and themes alternate (no more than three identical goals in a row); there's a difficulty sawtooth; every new blocker arrives with its counter; the player can afford a booster about every 3–5 levels.",
+      "minutes": 90,
+      "xp": 200
+    }
+  ],
+  "playLabs": [
+    {
+      "id": "L04-p01",
+      "game": "Royal Match",
+      "minutes": 10,
+      "lookFor": "When each new blocker or booster first appears in the early levels, and whether it comes with a tutorial or a free sample.",
+      "question": "Does it follow Rogers' '2–3 new things per level' and 'introduce with the counter' rules, or go even slower? Why might mobile go slower?"
+    },
+    {
+      "id": "L04-p02",
+      "game": "Brawl Stars",
+      "minutes": 10,
+      "lookFor": "Features on a new or low-level account's home screen that are visible but locked.",
+      "question": "Which of Rogers' five progression starts is this, and what does showing locked features do for motivation?"
+    },
+    {
+      "id": "L04-p03",
+      "game": "Monopoly GO!",
+      "minutes": 10,
+      "lookFor": "Every event running right now, with its timer, theme and reward type.",
+      "question": "Sketch a one-week LiveOps beat chart from what you see. Is there clumping or samey-ness, and how do they keep it from feeling repetitive?"
+    },
+    {
+      "id": "L04-p04",
+      "game": "Any top-10 grossing F2P game (store page)",
+      "minutes": 10,
+      "lookFor": "The age rating, descriptors, screenshot captions and the first lines of the description.",
+      "question": "What are its 'five USPs', which three comps would you put on its one-sheet, and which rating did it design toward?"
+    }
+  ],
+  "retrieval": [
+    {
+      "q": "What are the four preproduction documents, in order, and what do they all become?",
+      "a": "One-sheet, ten-pager, beat chart, GDD. They all eventually evolve into the GDD."
+    },
+    {
+      "q": "List the eight fields of Rogers' one-sheet.",
+      "a": "Title; game systems; target age; intended ESRB rating; story summary focused on gameplay; distinct modes; USPs; competitive products."
+    },
+    {
+      "q": "What were the six ESRB ratings in 2010, and which two carried stigma?",
+      "a": "eC, E, E10+, T, M, AO. eC was seen as 'baby games'; AO meant no US retailer would stock the game. (eC was retired in 2018.)"
+    },
+    {
+      "q": "What did The Punisher's developers change, and why?",
+      "a": "Camera angles, plus black-and-white presentation for the brutal interrogations, to bring the rating down from AO to M."
+    },
+    {
+      "q": "What makes a good comp, and what's Rogers' motto?",
+      "a": "A released game that's very familiar or successful, because a flop scares publishers. The motto: always pick a winning horse."
+    },
+    {
+      "q": "How many USPs, where does the number come from, and what doesn't count?",
+      "a": "About five, because that's what fits on a box back. Amazing graphics, awesome story and sequel-to-an-award-winner don't count."
+    },
+    {
+      "q": "What does the production team want from a ten-pager vs marketing and executives?",
+      "a": "Team: diagrams, punchy sentences, specific terms, appropriate (even old) comps. Execs: concept images, bullets, vivid examples, successful modern comps."
+    },
+    {
+      "q": "Explain the Rule of Threes example by example.",
+      "a": "The first gives the idea but can mislead; the second gives comparison or contrast; the third complements so it isn't binary; more than three is boring."
+    },
+    {
+      "q": "Name the ten Ten-Pager pages in order.",
+      "a": "Title page, game outline, character, gameplay, game world, game experience, gameplay mechanics, enemies, cutscenes, bonus materials."
+    },
+    {
+      "q": "Define mechanic, hazard, enemy, power-up and collectible.",
+      "a": "A mechanic is interacted with to aid gameplay; a hazard is a mechanic that harms but has no intelligence; an enemy is a hazard with AI; a power-up helps directly; a collectible has no immediate effect but may buy or unlock things."
+    },
+    {
+      "q": "How does a game bible differ from a GDD?",
+      "a": "The bible covers world rules and character backgrounds and relationships, for sharing with marketing, comics and merch. The GDD covers gameplay: interacting, not relating."
+    },
+    {
+      "q": "What are Rogers' five communication techniques, and what's the wiki danger?",
+      "a": "Storyboards, diagrams (with a legend), animatics, beat charts, the team wiki. The danger: the wiki gets neglected and goes out of date during production."
+    },
+    {
+      "q": "What does 'Everything is liquid' mean, and who are the GDD's four readers?",
+      "a": "Designs change and evolve, docs become obsolete, and at some point finishing beats writing, but the GDD is the launch pad. The readers: producer, designer, artist, programmer."
+    },
+    {
+      "q": "Name the five ways to start progression and the cliché to avoid.",
+      "a": "Ground zero; shown but locked; skills without knowing how; big power then lost; big power then flashback. Avoid amnesia (and 'it was all a dream')."
+    },
+    {
+      "q": "Name ten beat-chart elements and five warning signs, plus Rogers' two numeric rules.",
+      "a": "Elements: name, file name, time of day, story, progression, play time, color, enemies, mechanics, hazards, power-ups, abilities, treasure, bonus, music. Warnings: clumping, samey-ness, repeated time and color, repeated music, broken economy, mechanics without counters. Rules: everything by 75%; 2–3 new things per level."
+    }
+  ],
+  "feynman": "Explain to a producer in 60 seconds why the team should write a one-page feature brief, a short spec and a beat chart before building the next LiveOps event, even though nobody reads design docs. Use the chili recipe, your own memory, two audiences, catching clumping early, and 'everything is liquid'.",
+  "links": [
+    "L02",
+    "L03",
+    "L05",
+    "L06",
+    "L07",
+    "L08",
+    "L09",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L14",
+    "L16",
+    "L17",
+    "F2P1",
+    "F2P2"
+  ]
+}

@@ -1,0 +1,1186 @@
+{
+  "id": "L15",
+  "order": 16,
+  "kind": "book",
+  "label": "Level 15",
+  "title": "Some Notes on Music (and Sound)",
+  "bookPages": "393–405",
+  "emoji": "🎵",
+  "tagline": "Make the music more exciting than the action, then make it work on mute.",
+  "f2pRelevance": 3,
+  "f2pWhy": "Sound is half of game feel and reward juice and powers ad creatives, but many mobile players play muted, so audio must amplify visual feedback rather than replace it.",
+  "minutes": 40,
+  "tldr": [
+    "Plan music and sound early; leaving it to the end wastes design opportunities.",
+    "Music is licensed (fees, buyouts, covers, libraries) or original (hire a music director). Never ship anything you lack the rights to.",
+    "Learn to speak musician and give composers examples via a temp soundtrack.",
+    "Use dynamic scoring (mystery, warning, combat, chase, victory, walking) and leitmotifs; make the music more exciting than the action.",
+    "SFX are feedback: build the list with the move set, pitch up for good and down for bad, sweeten, sync to animation, and prioritize local/distant/priority sounds.",
+    "Silence is a tool, and sound can be gameplay, but always echo it with visuals."
+  ],
+  "sections": [
+    {
+      "title": "Intro — why music can't wait",
+      "bites": [
+        {
+          "id": "L15-b01",
+          "hook": "Star Wars without its theme didn't feel like Star Wars",
+          "body": "Disney's Imagineers first built the Star Tours ride to sound realistic: only the ship and the pilot's voice. In testing it felt wrong. It didn't feel like Star Wars until John Williams' theme was added. Music carries identity and emotion that visuals alone can't.",
+          "example": "Star Tours at Disneyland: the classic theme was added after testing.",
+          "f2p": "A game's jingle or signature voice line becomes its audio logo in ads and memes, like Candy Crush's deep-voiced 'Sweet!' and 'Delicious!'.",
+          "memory": "No theme, no dream.",
+          "tag": "example"
+        },
+        {
+          "id": "L15-b02",
+          "hook": "Leaving sound until last is a classic mistake",
+          "body": "Music and sound need coordination across many team members, so they usually get pushed to late production. That's a mistake: they bring so much that leaving them to the last minute misses great design opportunities.",
+          "example": "",
+          "f2p": "Plan FTUE audio, reward stings and ad-creative audio in preproduction, not the week before soft launch.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L15-b03",
+          "hook": "From beeps and boops to unforgettable jingles",
+          "body": "In the 1970s and 80s programmers only had electronic beeps, yet created memorable themes for Pac-Man, Donkey Kong and The Legend of Zelda. Each new system improved audio: voice synthesis and MIDI made music lusher, but sound used up precious cartridge memory.",
+          "example": "Pac-Man, Donkey Kong, Zelda: iconic tunes from tiny chips.",
+          "f2p": "Constraints breed memorable audio. A short, catchy jingle beats a long, forgettable track.",
+          "memory": "",
+          "tag": "example"
+        },
+        {
+          "id": "L15-b04",
+          "hook": "CDs and DVDs freed music, streaming made it creative",
+          "body": "CD games used Red Book audio, the CD audio standard, so music sounded like any recording and more of it fit. DVDs removed storage as an insurmountable problem. By 2010, compressed streaming audio (MP3, Ogg Vorbis, console formats) decoded on the fly shifted the focus from technical limits to creative use.",
+          "example": "",
+          "f2p": "Mobile brought the limits back: download size and memory matter again, so loops and compression are back in fashion.",
+          "memory": "Beeps → MIDI → CD → DVD → stream → phone (budget again).",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Licensed vs original music",
+      "bites": [
+        {
+          "id": "L15-b05",
+          "hook": "Licensed music: renting someone else's hit",
+          "body": "Licensed music is previously recorded music you pay a fee to use. Music publishers own the rights; agencies such as ASCAP and Third Element negotiate for them. The game's publisher usually handles licenses and deals.",
+          "example": "",
+          "f2p": "Live games run for years: make sure licenses cover the whole live period, all territories and ad creatives.",
+          "memory": "Rent the hit or own the score.",
+          "tag": "concept"
+        },
+        {
+          "id": "L15-b06",
+          "hook": "$2,500 to $30,000+ per song (2010 prices)",
+          "body": "Because games didn't pay royalties after release, publishers negotiated one-time buyout fees lasting from 7 years to the life of the product. Fees ran from about $2,500 to over $30,000 per song; the more popular and prestigious, the pricier. Rogers didn't want to imagine The Beatles: Rock Band's bill.",
+          "example": "The Beatles: Rock Band as the ultimate expensive license.",
+          "f2p": "Those are 2010 console numbers. The principle holds: know the rights scope and budget before falling in love with a song.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L15-b07",
+          "hook": "Can't afford the song? Cover it or go to the library",
+          "body": "If a song is too expensive, license a cheaper cover version (the first Guitar Hero did this) or find a similar-sounding, cheaper track in a music library. Libraries are great when you need many styles or incidental music, like a radio playing or background music in a bar.",
+          "example": "Guitar Hero (2005) used cover versions.",
+          "f2p": "Most F2P games use original or library/royalty-free music. Check that library licenses include advertising use.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L15-b08",
+          "hook": "Original music: hire a music director",
+          "body": "Original music is composed specifically for your game. Unless you can compose, perform and record it yourself, hire a music director. They create the music and handle performing, recording and preparing it for the game. The designer still has lots of prep work first.",
+          "example": "",
+          "f2p": "Small F2P teams often hire a freelance composer with a clear audio brief: references, needs list and file-size budget.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L15-b09",
+          "hook": "You can't play a note? Bring a mix tape",
+          "body": "You don't need to write music or carry a tune; you need to know what you like and have opinions. Give the composer examples to remove guesswork. For Maximo: Ghosts to Glory, Rogers made a mix tape of film scores and songs that fit each level. A musical vocabulary helps you request changes.",
+          "example": "Maximo: Ghosts to Glory mix tape for the composer.",
+          "f2p": "Today it's a shared playlist with a one-line 'why' per track.",
+          "memory": "",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Speak musician",
+      "bites": [
+        {
+          "id": "L15-b10",
+          "hook": "Time words: beat, tempo, rhythm, accent, upbeat",
+          "body": "Beat: the pulse of music, fast or slow. Tempo: its speed (walking pace is called andante). Rhythm: the controlled movement of music in time, as Ravel's Bolero builds to a frantic end. Accent: emphasis making a beat louder or longer. Upbeat: technically the last beat of a measure; casually, happier, friendlier or faster.",
+          "example": "Ravel's Bolero: rhythm building to a climax.",
+          "f2p": "Speed up the tempo when moves or time run low: instant urgency.",
+          "memory": "Time, Height, Color, Loud.",
+          "tag": "list"
+        },
+        {
+          "id": "L15-b11",
+          "hook": "Height words: pitch, octave, chord",
+          "body": "Pitch: how high or low a tone is, from chipmunk to demon. Octave: the jump to double (up) or half (down) the frequency; you'll often ask to take something up or down an octave. Chord: three or more tones forming a harmony.",
+          "example": "Shifting a sword clang's pitch so it doesn't repeat identically.",
+          "f2p": "Randomize pitch a few percent on taps, coins and pops so 10,000 repeats never grate.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L15-b12",
+          "hook": "Color words: instrument, tone, mood, theme, volume",
+          "body": "Instrument: what produces the sound; changing it can transform the mood. Tone: the character of a voice or instrument. Mood: the feel, based on emotion, action or location. Theme: the heart of a piece, written first then fleshed out. Volume: loudness or softness.",
+          "example": "Spielberg couldn't pick between two themes, so John Williams combined them into the Raiders of the Lost Ark march.",
+          "f2p": "Themed LiveOps events change instrument and mood on the same melody: sleigh bells for winter, accordion for pirates.",
+          "memory": "",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "Style and temp soundtrack",
+      "bites": [
+        {
+          "id": "L15-b13",
+          "hook": "Sci-fi with polka? Pick your style on purpose",
+          "body": "The traditional route uses the style tied to your genre. For sci-fi: orchestral like Star Wars, synth like Vangelis' Blade Runner, or 1950s theremin like The Day the Earth Stood Still. Or go creative: hip-hop, trance or even polka.",
+          "example": "Star Wars, Blade Runner, The Day the Earth Stood Still: three sci-fi sounds.",
+          "f2p": "Style is audience targeting: lo-fi for a cozy merge game, punchy electronic for a PvP brawler, orchestral bombast for 4X war.",
+          "memory": "Lederhosen in Space.",
+          "tag": "concept"
+        },
+        {
+          "id": "L15-b14",
+          "hook": "Temp tracks: great for clarity, dangerous if forgotten",
+          "body": "A temporary soundtrack of reference tracks cuts the composer's guesswork. Programmers can even drop it into the build. Dangers: the team grows attached to (or sick of) the temp tracks, and any unlicensed music left in the game could cost huge fees or force you to scrap work.",
+          "example": "",
+          "f2p": "Soft-launch builds go public in real countries. Prefix temp audio (TEMP_) and block it from release builds.",
+          "memory": "",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "Music needs list",
+      "bites": [
+        {
+          "id": "L15-b15",
+          "hook": "Count your levels: each needs a soundtrack",
+          "body": "List your levels, environments, chapters, tracks and unique encounters. Each needs background music, an audio backdrop for play. Traditionally it's themed to the level: spooky for the haunted house, medieval for the castle, jungle drums for the jungle.",
+          "example": "",
+          "f2p": "F2P adds home/meta screen, shop, event hub, summon screen, battle pass, clan screen and LiveOps event themes.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L15-b16",
+          "hook": "Loops save money, but the seam must be invisible",
+          "body": "Background tracks usually run a few minutes and loop, saving memory and composition time. Work with the music director so the end flows into the beginning without a gap of silence or an awkward tempo change.",
+          "example": "",
+          "f2p": "Players hear your home-screen loop thousands of times. Make it seamless and non-fatiguing.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L15-b17",
+          "hook": "Two songs per world, alternated",
+          "body": "Can you afford music on every level? Maybe not, so plan reuse. In Maximo vs. Army of Zin, each world had two songs that alternated, so players never heard the same song twice in a row.",
+          "example": "Maximo vs. Army of Zin alternated two tracks per world.",
+          "f2p": "Seasonal remixes of the main theme are cheap LiveOps freshness.",
+          "memory": "",
+          "tag": "example"
+        },
+        {
+          "id": "L15-b18",
+          "hook": "Put your best song on the title screen",
+          "body": "Budget music for the title screen, pause/options/save screens, game over, and any bonus games or minigames. The opening theme is the first music players hear and sets the stage, so use your best piece there.",
+          "example": "",
+          "f2p": "Your F2P title screen is the home screen plus the first 30 seconds of the FTUE: that's where your best audio belongs.",
+          "memory": "Best song first.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Dynamic scoring and leitmotifs",
+      "bites": [
+        {
+          "id": "L15-b19",
+          "hook": "Dynamic scores react to what's happening",
+          "body": "Instead of one song per level, break music into themes that play when situations arise. Combat music kicks in to make a fight feel faster; the main theme returns when the fight is won. Plan it with the sound programmer and music director.",
+          "example": "Combat music swapping in and out around a fight.",
+          "f2p": "Cheap mobile version: intensity layers that add instruments as a combo grows or time runs out.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L15-b20",
+          "hook": "Leitmotifs: every hero gets a theme",
+          "body": "A leitmotif is a theme tied to a specific character or scenario. Dynamic scoring works the same way. In the Star Wars films, Darth Vader, Luke, Yoda and the Leia/Han romance each have a theme that plays when they're on screen.",
+          "example": "Star Wars character themes.",
+          "f2p": "Gacha games often give heroes a signature motif in their reveal trailers; music becomes part of what you're pulling for.",
+          "memory": "Hum the villain before he appears.",
+          "tag": "concept"
+        },
+        {
+          "id": "L15-b21",
+          "hook": "Mystery, warning, combat, chase: situational themes",
+          "body": "Mystery: entering a new, mysterious place. Warning: sinister music near hazards or enemies, common in horror. Combat: exciting music during fights. Chase / fast movement: dinosaurs, villains or a rolling boulder behind you.",
+          "example": "Horror games use warning music before danger.",
+          "f2p": "Warning = 'hard level' or boss announcement; chase = endless runner music; mystery = unlocking a new area of the meta.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L15-b22",
+          "hook": "Always reward the player with a victory sting",
+          "body": "Always reward players sonically, even with a sting, a very short piece of music, when a fight is won or something is accomplished. The Legend of Zelda games are great at rewarding players with music.",
+          "example": "Zelda's item and puzzle-solved jingles.",
+          "f2p": "Level-complete, chest-open and rank-up stings are the most important music in mobile games.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L15-b23",
+          "hook": "Make the music more exciting than the action",
+          "body": "Rogers believes slow 'walking' music makes players move slowly, while a beat faster than the walk pushes them to move faster. His one big rule for the chapter: the soundtrack should always outpace what is happening on screen.",
+          "example": "Peggle (also on mobile): the final peg triggers Ode to Joy and fireworks, turning a tiny ball into a stadium moment.",
+          "f2p": "Endless runners use driving music to keep thumbs fast; PvP overtime music raises the stakes.",
+          "memory": "Music is the hype man: always a bit louder than the rapper.",
+          "tag": "truth"
+        }
+      ]
+    },
+    {
+      "title": "Environmental effects and silence",
+      "bites": [
+        {
+          "id": "L15-b24",
+          "hook": "Ambient sound is the music of the world",
+          "body": "Every place has its own soundscape: a graveyard at night vs a city at lunch. Music can be overbearing or wrong for some places. Mixing environmental effects with a dynamic score that punctuates action works well. Maximo: Ghosts to Glory used ambient effects in hubs and traditional music in gameplay levels.",
+          "example": "Maximo hubs (ambient) vs levels (music).",
+          "f2p": "Meta screens like farms, villages and mansions feel alive with ambient beds (birds, wind, chatter) without music fatigue.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L15-b25",
+          "hook": "Silence is a sound effect",
+          "body": "Silence is powerful and signals something special. It can convey great speed (music drops when you boost in Burnout), intense action (F.E.A.R.'s slow-motion reflex time), suspense, or a joke that falls flat (cue crickets, which aren't technically silent).",
+          "example": "Burnout boost; F.E.A.R. reflex time.",
+          "f2p": "A hush or drumroll before a chest or summon reveal makes the payoff explode.",
+          "memory": "The drop is only epic because of the pause before it.",
+          "tag": "truth"
+        }
+      ]
+    },
+    {
+      "title": "Sounds like a game to me — SFX",
+      "bites": [
+        {
+          "id": "L15-b26",
+          "hook": "Build the SFX list alongside the move set",
+          "body": "Develop sound effect lists as you develop the move sets of characters and enemies, starting with the main character. Movement: footsteps on stone, gravel, metal or water ground the character; jumps, landings, rolls and slides confirm the move. Attacks: a swoosh makes swings dynamic, and unique attacks need distinct sounds.",
+          "example": "Pac-Man eating a ghost; Mario's jump and stomp.",
+          "f2p": "Mobile's list is UI-heavy: taps, swipes, matches, merges, coin pickups, count-ups, chest opens, errors.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L15-b27",
+          "hook": "Impacts and weapons: bigger weapon, bigger sound",
+          "body": "Impacts: a meaty whack makes a punch feel powerful; weapons, spells and explosions need loud, dynamic sounds so players know they hit. Include object reactions: breaking wood, shattering glass, clanging metal. Weapons: guns bang, swords clang, blasters go pew pew; bigger weapon, bigger sound; they can sound as unique as they look.",
+          "example": "The lightsaber's iconic hum.",
+          "f2p": "Escalate reward sounds the same way: bigger reward, bigger, longer, higher sound.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L15-b28",
+          "hook": "Ouch! Hit reactions are among the most important sounds",
+          "body": "Grunts like oomph, ow and aargh feel funny to record, but they're among the most important sounds in the game: whenever players get hit, they must know it. Death sounds should cover every way to die: a groan when slain, a gurgle when drowning, a long scream when falling off a cliff.",
+          "example": "",
+          "f2p": "In PvP, hits must also read without sound: flashes, knockback and damage numbers.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L15-b29",
+          "hook": "Let your character talk to the player",
+          "body": "Vocal cues communicate: a hero says 'What's this?' near treasure or 'That's better!' after healing. They tell players what's possible or done and add personality. Add effort cues like grunts when pushing blocks. Success: combine a musical sting with vocal celebration like 'woo-hoo!' or 'yeah!'.",
+          "example": "",
+          "f2p": "Candy Crush's announcer rewards combos with 'Sweet!' and 'Divine!'; Clash Royale's emotes carry voice personality in a text-free battle.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L15-b30",
+          "hook": "Cougar sneezes on demand: temp SFX libraries",
+          "body": "For temp SFX, buy libraries (Rogers names Sound Ideas and Hollywood Edge) with absurdly specific sounds, even famous film effects. Free online sounds exist, but always check copyright. If you can't find a sound, mix two or more in an editor like Sound Forge or Vegas to show your sound designer the idea. Expect hours of searching.",
+          "example": "A cougar sneezing or a nuclear reactor humming, straight from a library.",
+          "f2p": "Same today with online libraries: verify the license for commercial and ad use.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L15-b31",
+          "hook": "Realistic or cartoony? Choose with your theme",
+          "body": "Theme usually sets the style, with exceptions. Realistic sounds ground the world but can be too subdued. Cartoony sounds are exaggerated and great for video-gamey things like extra lives and treasure, but can be too on-the-nose and pull players out of the world.",
+          "example": "",
+          "f2p": "Mobile rewards love cartoony sounds, but don't let the shop sound like a slot machine; casino-like presentation raises ethical and regulatory flags.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L15-b32",
+          "hook": "Pitch up for good, pitch down for bad",
+          "body": "Use sound to its full potential: make sounds rise in pitch and tempo for positive things (collecting an extra life, finishing a task) and fall for negative and failure moments.",
+          "example": "",
+          "f2p": "The combo ladder: each cascade plays a slightly higher note, so chains feel like climbing stairs.",
+          "memory": "Up = yay, down = nay.",
+          "tag": "rule"
+        },
+        {
+          "id": "L15-b33",
+          "hook": "Bones that sound like bowling pins",
+          "body": "Sometimes the real-world sound just doesn't sound right, so the sound designer sweetens it. Rogers found breaking bones sounded like dry twigs, so his team sweetened the effect with a bowling ball crashing into pins.",
+          "example": "Bone break + bowling strike = convincing crunch.",
+          "f2p": "Satisfying merge or pop sounds are often layered from unexpected sources. Right beats real.",
+          "memory": "Real isn't always right; right is right.",
+          "tag": "fun"
+        },
+        {
+          "id": "L15-b34",
+          "hook": "Sync every sound to its animation frame",
+          "body": "Work with animators on attack and reaction sounds so they don't outlast the animation or end early. Lock the animation timing first, then fit the sound, and tell the sound programmer exactly which frame triggers it.",
+          "example": "",
+          "f2p": "Juice formula: sound, animation, particles, haptic and screen shake on the same frame. Miss one and the action feels dead.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L15-b35",
+          "hook": "Sounds can warn and guide",
+          "body": "A falling bomb's whistle gives players time to dive for cover. An electrical crackle or magical thrum makes them pause at a protected door. Players can find a lost pocket watch or phone by following its ticking or ringing.",
+          "example": "The whistle of an incoming shell.",
+          "f2p": "Wind-up sounds telegraph boss attacks, but always pair with a visual telegraph for muted players.",
+          "memory": "",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Sound priority and naming",
+      "bites": [
+        {
+          "id": "L15-b36",
+          "hook": "Local, distant, priority: stop the cacophony",
+          "body": "Too many sounds at once make noise, so prioritize; your sound programmer helps you sort every sound into one of three categories. Local: heard near the source, fades with distance (brook, clock, machinery, enemy growls). Distant: heard from far away (explosions, wolf howls, engines). Priority: always plays as gameplay feedback (health loss, pickups, score or combo, timers, enemy hits, death, landings, impacts, footsteps).",
+          "example": "",
+          "f2p": "Phones have limited voices and tiny speakers: cap simultaneous coin sounds and duck music under feedback.",
+          "memory": "Local = whisper, Distant = shout, Priority = referee's whistle.",
+          "tag": "list"
+        },
+        {
+          "id": "L15-b37",
+          "hook": "Name sound files so nobody has to guess",
+          "body": "As with level files, give music and sound cues short but descriptive names. Book examples: Lv2Song.wav for level 2 music, roblast2.wav for a variant of a robot's blaster shot.",
+          "example": "Lv2Song.wav, roblast2.wav.",
+          "f2p": "Live games add hundreds of sounds a year: use a pattern like sfx_ui_button_tap_01 or mus_event_winter_loop.",
+          "memory": "",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Sound and music as gameplay",
+      "bites": [
+        {
+          "id": "L15-b38",
+          "hook": "Never let sound be the only clue",
+          "body": "Whole genres center on music, from Dance Dance Revolution to Band Hero. When building sound-based gameplay, don't rely only on sound: echo it with visuals. You can never give too many clues, and hearing-impaired players can play too.",
+          "example": "Dance Dance Revolution shows arrows for every beat.",
+          "f2p": "On mobile this is survival, not just accessibility: muted players need a visual or haptic twin for every cue.",
+          "memory": "If it only beeps, it's a secret.",
+          "tag": "rule"
+        },
+        {
+          "id": "L15-b39",
+          "hook": "Memory and rhythm games, and the wrist problem",
+          "body": "Short-term memory games (Simon, PaRappa the Rapper) make players memorize and repeat music; visuals help memory and include deaf and tone-deaf players. Rhythm games (Taiko: Drum Master, Rhythm Heaven, Guitar Hero) keep the beat, often with instrument peripherals. Watch for fatigue: build mandatory breaks between songs to prevent injury.",
+          "example": "Simon's colored lights; Guitar Hero's plastic guitar.",
+          "f2p": "Mobile rhythm games (tile-tapping games, Beatstar) are the one genre where sound-on is required. Short levels protect thumbs.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L15-b40",
+          "hook": "Sing, create, or remix: the strange music games",
+          "body": "Pitch games make you sing into a mic (SingStar, Karaoke Revolution). Music creation games (Electroplankton, Fluid) aim to create and enjoy, not win. Others defy categories: Vib-Ribbon builds levels from any CD you insert, Rez composes music as you shoot enemies, Battle of the Bands is a genre tug-of-war duel.",
+          "example": "Rez: destroying enemies adds to the soundtrack.",
+          "f2p": "Music-maker and remix toys appear in social and casual apps: low pressure, very shareable.",
+          "memory": "",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "F2P deep dive — audio for phones",
+      "bites": [
+        {
+          "id": "L15-b41",
+          "hook": "Design sound-off first, then make sound-on sing",
+          "body": "Many mobile players play muted: on buses, in bed, with a podcast on. Every important event needs a clear visual signal; sound is the bonus layer. Let players' own music keep playing, offer separate music and SFX toggles, and caption informative voice lines. Check your own data.",
+          "example": "",
+          "f2p": "Playtest every build muted at least once.",
+          "memory": "Mute-proof, then make it sing.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L15-b42",
+          "hook": "Haptics: the sound you feel on mute",
+          "body": "Vibration works even when muted. Use light taps for UI, medium for matches or merges, heavy for big rewards or damage. iOS offers fine control; Android support varies, so test devices. Don't overdo it (battery, annoyance) and always include a toggle.",
+          "example": "",
+          "f2p": "A tiny buzz on a successful merge adds feel at almost zero cost.",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "L15-b43",
+          "hook": "Reward juice: audio's highest-return job",
+          "body": "Level complete, chest open, rarity reveal and rank-up are the moments players remember. Give each a rising sting layered with particles and haptics, and give each rarity tier its own signature. Celebrate achievement, not spending.",
+          "example": "",
+          "f2p": "Rarity-specific reveal sounds tell players what they got before they read it.",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "L15-b44",
+          "hook": "Ads: win muted, then win with sound",
+          "body": "Feed ads often autoplay muted, so the first seconds must work visually with captions and clear action. Sound-on short-video platforms reward an audio hook: a voice line, a meme-able sting, a recognizable theme. Test both versions, and check licenses cover advertising.",
+          "example": "",
+          "f2p": "A consistent audio logo across hundreds of ad variants builds brand recall.",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "L15-b45",
+          "hook": "Every megabyte of audio costs installs",
+          "body": "Install size affects store conversion, especially on cellular data and low-storage phones. Compress music, use mono for most SFX, lower sample rates for short UI sounds, stream long tracks, and download extra music or voice after install.",
+          "example": "Rogers' loops and two-songs-per-world trick were memory budget tricks.",
+          "f2p": "Use post-install asset delivery (Play Asset Delivery, On-Demand Resources or asset bundles) for event music and VO.",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "L15-b46",
+          "hook": "Your shop should not sound like Vegas",
+          "body": "Cartoony coin showers and fanfares make rewards feel great, but on purchase or gacha screens casino-style ringing can feel manipulative and draws regulator attention. Save the biggest celebrations for player achievements.",
+          "example": "",
+          "f2p": "Audit your store and summon audio with an ethics lens.",
+          "memory": "",
+          "tag": "fun"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "Work out your sound needs early in production, not at the last minute.",
+    "Learn to speak musician so you can tell the composer what you want.",
+    "Use sound effects and vocal cues to tell the player about important game actions.",
+    "Never use music or sound effects you don't have the rights to.",
+    "Use music to drive the game's action.",
+    "Use leitmotifs to help tell your story.",
+    "Set the proximity and timing of sound and music so the game feels realistic and interactive.",
+    "Silence can hit as hard as music does.",
+    "Use music and sound as gameplay, but include visuals so sound-impaired players can play."
+  ],
+  "mnemonics": [
+    {
+      "name": "Speak musician groups",
+      "device": "Time, Height, Color, Loud",
+      "unpacks": "Time: beat, tempo, rhythm, accent, upbeat. Height: pitch, octave, chord. Color: instrument, tone, mood, theme. Loud: volume."
+    },
+    {
+      "name": "Dynamic themes",
+      "device": "My Weird Cat Chases Victory Walks",
+      "unpacks": "Mystery, Warning, Combat, Chase, Victory, Walking."
+    },
+    {
+      "name": "SFX list for the main character",
+      "device": "MAIW-HVDS: Move, Attack, Impact, Weapon, Hit, Voice, Death, Success",
+      "unpacks": "Movement, attacks, impacts, weapons, hit reactions, vocal cues, death, success."
+    },
+    {
+      "name": "Sound priority",
+      "device": "Whisper, Shout, Whistle",
+      "unpacks": "Local (fades with distance), distant (heard from afar), priority (always plays: gameplay feedback)."
+    },
+    {
+      "name": "Pitch direction",
+      "device": "Up = yay, down = nay",
+      "unpacks": "Rising pitch and tempo for positive events; falling for negative or failure."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L15-f01",
+      "q": "What did testing the Star Tours ride reveal?",
+      "a": "Without John Williams' Star Wars theme it didn't feel like Star Wars; the theme was added.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f02",
+      "q": "Why is music usually left until late in production?",
+      "a": "It requires a lot of work and coordination among many team members.",
+      "type": "why"
+    },
+    {
+      "id": "L15-f03",
+      "q": "What is Red Book audio?",
+      "a": "The set of standards for CD audio, which let game music sound like any recorded music.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f04",
+      "q": "What are the two kinds of game music?",
+      "a": "Licensed and original.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f05",
+      "q": "Who usually handles music licensing deals for a game?",
+      "a": "The game's publisher.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f06",
+      "q": "What range of per-song license fees does the book give (2010)?",
+      "a": "About $2,500 to over $30,000 per song.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f07",
+      "q": "Game music buyouts typically last from 7 years to ____.",
+      "a": "life of product",
+      "type": "cloze"
+    },
+    {
+      "id": "L15-f08",
+      "q": "Name two cheaper alternatives to an expensive licensed song.",
+      "a": "A cover version (like the first Guitar Hero) or a similar-sounding music library track.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f09",
+      "q": "What does a music director do?",
+      "a": "Creates the music and handles performing, recording and preparing it for the game.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f10",
+      "q": "Why did Rogers give his Maximo composer a mix tape?",
+      "a": "Concrete examples cut out guesswork about what each level should sound like.",
+      "type": "why"
+    },
+    {
+      "id": "L15-f11",
+      "q": "What is tempo?",
+      "a": "The speed of the music (walking pace = andante).",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f12",
+      "q": "Moving one octave up ____ the frequency.",
+      "a": "doubles (one octave down halves it)",
+      "type": "cloze"
+    },
+    {
+      "id": "L15-f13",
+      "q": "How can pitch add variety to game sounds?",
+      "a": "Shifting a sound's frequency (e.g., a sword clang) avoids identical repetition without new recordings.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f14",
+      "q": "A ____ is three or more tones creating a harmony.",
+      "a": "chord",
+      "type": "cloze"
+    },
+    {
+      "id": "L15-f15",
+      "q": "What three things can a piece's mood be based on?",
+      "a": "Emotion, action, or location.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f16",
+      "q": "What is a musical theme, per the book?",
+      "a": "The heart of the composition; composers usually write it first, then flesh it out.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f17",
+      "q": "What's the risk of putting temp music into the build?",
+      "a": "The team gets attached to or tired of it, and unlicensed music left in can cost huge fees or force scrapping work.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f18",
+      "q": "Why do background tracks loop?",
+      "a": "To save memory and composition time.",
+      "type": "why"
+    },
+    {
+      "id": "L15-f19",
+      "q": "How did Maximo vs. Army of Zin avoid music repetition on a budget?",
+      "a": "Two songs per world, alternated so the same one never played twice in a row.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f20",
+      "q": "Why should your best piece of music go on the start screen?",
+      "a": "It is the first music players hear, sets the stage for the whole game and gets them excited to play.",
+      "type": "why"
+    },
+    {
+      "id": "L15-f21",
+      "q": "What is a dynamic score?",
+      "a": "Music broken into themes that play when certain situations arise (e.g., combat).",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f22",
+      "q": "What is a leitmotif?",
+      "a": "A specific musical theme associated with a character or scenario.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f23",
+      "q": "Name the six common dynamic score themes.",
+      "a": "Mystery, warning, combat, chase/fast movement, victory, walking.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f24",
+      "q": "What is a sting?",
+      "a": "A very short piece of music, e.g., to signal victory.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f25",
+      "q": "Always make the music more exciting than the ____ on screen.",
+      "a": "action",
+      "type": "cloze"
+    },
+    {
+      "id": "L15-f26",
+      "q": "Why should walking music be faster than the walk?",
+      "a": "Slow music makes players move slowly; a faster beat motivates them to move faster.",
+      "type": "why"
+    },
+    {
+      "id": "L15-f27",
+      "q": "Why might a hub area use environmental effects instead of background music?",
+      "a": "Music can be overbearing or wrong for some places; ambient sound sets the mood (Maximo hubs used effects, levels used music).",
+      "type": "why"
+    },
+    {
+      "id": "L15-f28",
+      "q": "Name three things silence can convey.",
+      "a": "Great speed (Burnout boost), intense action (F.E.A.R. reflex time), suspense (or failed humor).",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f29",
+      "q": "When should you build the sound effects list?",
+      "a": "As you develop the move sets of characters and enemies, starting with the main character.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f30",
+      "q": "Why are hit reaction sounds so important?",
+      "a": "Whenever players get hit, they need to know it.",
+      "type": "why"
+    },
+    {
+      "id": "L15-f31",
+      "q": "What two jobs do vocal cues do?",
+      "a": "Tell the player what's possible or accomplished, and add personality to the character.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f32",
+      "q": "Positive events: make sounds go ____ in pitch and tempo.",
+      "a": "up (down for negative/failure)",
+      "type": "cloze"
+    },
+    {
+      "id": "L15-f33",
+      "q": "What is sweetening? Give the book example.",
+      "a": "Enhancing a sound that doesn't sound right in reality; bone breaks sweetened with a bowling ball hitting pins.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f34",
+      "q": "What should you tell the sound programmer about an attack sound?",
+      "a": "Which animation frame it should play on (after timing is locked with animators).",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f35",
+      "q": "Local vs distant vs priority sounds?",
+      "a": "Local fades with distance; distant is heard from far away; priority always plays as gameplay feedback.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f36",
+      "q": "Why must sound-based gameplay have visuals?",
+      "a": "More clues for everyone, and hearing-impaired players can play.",
+      "type": "why"
+    },
+    {
+      "id": "L15-f37",
+      "q": "What health risk do rhythm games carry, and the fix?",
+      "a": "Fatigue/injury from constant hand and wrist movement; mandatory breaks between songs or levels.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f38",
+      "q": "Your puzzle game's 'out of moves' warning is only a beep. Testers on mute keep losing by surprise. Which principle?",
+      "a": "Don't rely on sound alone: echo important cues with visuals (and haptics).",
+      "type": "apply"
+    },
+    {
+      "id": "L15-f39",
+      "q": "Coins collected from a chest all play the identical clink 40 times and testers find it grating. Fix?",
+      "a": "Use pitch variation (and voice limits) so repeated sounds vary.",
+      "type": "apply"
+    },
+    {
+      "id": "L15-f40",
+      "q": "A soft-launch build still contains a pop song the team used as temp music. What's the danger?",
+      "a": "Using music without rights: possible huge fees or having to scrap work. Replace it before shipping.",
+      "type": "apply"
+    },
+    {
+      "id": "L15-f41",
+      "q": "Your gacha reveal feels flat. Which two audio tools from the chapter could fix it?",
+      "a": "Silence/build-up before the reveal, then a victory sting with rising pitch (rarity-specific).",
+      "type": "apply"
+    },
+    {
+      "id": "L15-f42",
+      "q": "During a boss fight, combos, coins, the boss roar and music all play at once and feedback gets lost. Which concept?",
+      "a": "Sound prioritization: make feedback sounds priority, limit and duck the rest.",
+      "type": "apply"
+    },
+    {
+      "id": "L15-f43",
+      "q": "You want a villain's arrival to be recognized before players see him. Which tool?",
+      "a": "A leitmotif: a signature theme tied to the character.",
+      "type": "apply"
+    },
+    {
+      "id": "L15-f44",
+      "q": "Short descriptive names like Lv2Song.wav help because ____.",
+      "a": "nobody has to guess what a file is",
+      "type": "cloze"
+    },
+    {
+      "id": "L15-f45",
+      "q": "Name two music-game families besides rhythm games.",
+      "a": "Short-term memory (Simon, PaRappa), pitch/singing (SingStar), music creation (Electroplankton, Fluid).",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f46",
+      "q": "Your sci-fi game team says an orchestral score feels too expected. What does the book allow?",
+      "a": "Go in another creative direction (hip-hop, trance, even polka), as long as it fits the experience.",
+      "type": "apply"
+    },
+    {
+      "id": "L15-f47",
+      "q": "Players keep missing a hidden chest in a dark corner. Which sound technique could guide them (plus a visual)?",
+      "a": "Sound as a clue: a ticking, ringing or shimmering sound they can follow.",
+      "type": "apply"
+    },
+    {
+      "id": "L15-f48",
+      "q": "Who helps you assign sounds to the local, distant and priority categories, and what problem does that solve?",
+      "a": "The sound programmer; it prevents cacophony from too many sounds playing at once.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f49",
+      "q": "Which companies negotiate music licenses on behalf of publishers, and who usually handles the deal for a game?",
+      "a": "ASCAP and Third Element negotiate for the music publishers; the game's own publisher usually handles obtaining the rights.",
+      "type": "basic"
+    },
+    {
+      "id": "L15-f50",
+      "q": "A free sound effect from the internet fits your trailer perfectly. What must you check before using it, and why?",
+      "a": "Its copyright and license; better to be sure up front than face a huge lawsuit later.",
+      "type": "apply"
+    },
+    {
+      "id": "L15-f51",
+      "q": "Besides pitch, what else should rise to make a sound feel positive, and what does a negative sound do?",
+      "a": "Tempo as well as pitch goes up for positive moments (extra life, task done); negative or failure sounds go down.",
+      "type": "basic"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "L15-q01",
+      "q": "According to the book, when should you determine your game's sound needs?",
+      "options": [
+        "After alpha, when gameplay is locked",
+        "Early in production",
+        "During certification",
+        "Only after hiring a composer"
+      ],
+      "answer": 1,
+      "why": "Leaving sound to the last minute misses design opportunities; it's the chapter's first truth."
+    },
+    {
+      "id": "L15-q02",
+      "q": "Your dream licensed song is far too expensive. Which is a book-approved alternative?",
+      "options": [
+        "Use it anyway as temp and hope nobody notices",
+        "Rerecord it yourself without a license",
+        "Use only silence",
+        "License a cheaper cover version or a similar library track"
+      ],
+      "answer": 3,
+      "why": "Guitar Hero used covers; libraries offer similar-sounding tracks. Using unlicensed music is the trap the book warns about."
+    },
+    {
+      "id": "L15-q03",
+      "q": "Asking the composer to take a melody 'up an octave' means making it:",
+      "options": [
+        "Higher pitched (double the frequency)",
+        "Louder",
+        "Faster",
+        "More upbeat in mood"
+      ],
+      "answer": 0,
+      "why": "An octave up doubles the frequency. Volume and tempo are different terms; upbeat is mood or beat position."
+    },
+    {
+      "id": "L15-q04",
+      "q": "Rogers' 'very important thing' about music is:",
+      "options": [
+        "Always license famous songs",
+        "Music should match the action exactly",
+        "Always make the music more exciting than the action on screen",
+        "Music should stop during gameplay"
+      ],
+      "answer": 2,
+      "why": "Faster, more exciting music drives players to move and act faster."
+    },
+    {
+      "id": "L15-q05",
+      "q": "Which is NOT one of the common dynamic score themes listed?",
+      "options": [
+        "Mystery",
+        "Shopping",
+        "Chase",
+        "Warning"
+      ],
+      "answer": 1,
+      "why": "The six are mystery, warning, combat, chase, victory and walking."
+    },
+    {
+      "id": "L15-q06",
+      "q": "A theme that plays whenever a specific character appears is called a:",
+      "options": [
+        "Sting",
+        "Loop",
+        "Chord",
+        "Leitmotif"
+      ],
+      "answer": 3,
+      "why": "Leitmotif ties music to a character or scenario. A sting is a very short piece, a loop repeats, a chord is a harmony."
+    },
+    {
+      "id": "L15-q07",
+      "q": "In Burnout, the music drops away when the player boosts. What does this silence communicate?",
+      "options": [
+        "Great speed",
+        "A bug",
+        "Game over",
+        "A menu opening"
+      ],
+      "answer": 0,
+      "why": "Silence signals something special; the book cites Burnout's boost as conveying speed."
+    },
+    {
+      "id": "L15-q08",
+      "q": "Footsteps, score increases and health loss belong to which sound category?",
+      "options": [
+        "Local",
+        "Distant",
+        "Priority",
+        "Ambient"
+      ],
+      "answer": 2,
+      "why": "Priority sounds always play because they are gameplay feedback; local and distant depend on proximity."
+    },
+    {
+      "id": "L15-q09",
+      "q": "Your bone-break SFX recorded from real life sounds like snapping twigs. What does the book suggest?",
+      "options": [
+        "Use it anyway: realism first",
+        "Sweeten it with another sound (like a bowling ball hitting pins)",
+        "Remove the sound",
+        "Lower the volume"
+      ],
+      "answer": 1,
+      "why": "Sweetening layers or replaces sounds so they feel right, even if not literally real."
+    },
+    {
+      "id": "L15-q10",
+      "q": "A positive event like collecting an extra life should use sound that:",
+      "options": [
+        "Goes down in pitch",
+        "Is silent",
+        "Is the same as failure but louder",
+        "Goes up in pitch and tempo"
+      ],
+      "answer": 3,
+      "why": "Up = positive, down = negative or failure."
+    },
+    {
+      "id": "L15-q11",
+      "q": "Why should rhythm games include mandatory breaks?",
+      "options": [
+        "To prevent fatigue and injury from constant hand and wrist movement",
+        "To show ads",
+        "To load the next song",
+        "To reduce file size"
+      ],
+      "answer": 0,
+      "why": "The book specifically cites player fatigue and injury prevention."
+    },
+    {
+      "id": "L15-q12",
+      "q": "Your mobile boss telegraphs its big attack only with a roar sound. Muted players keep dying. Which truth applies?",
+      "options": [
+        "Silence is as powerful as music",
+        "Use leitmotifs to tell your story",
+        "Use sound as gameplay, but with accompanying visuals",
+        "Learn to speak musician"
+      ],
+      "answer": 2,
+      "why": "Sound-based cues need visual echoes; on mobile, many players are muted."
+    },
+    {
+      "id": "L15-q13",
+      "q": "Your F2P home screen track annoys long-term players after weeks. Which book idea helps most?",
+      "options": [
+        "Make it louder",
+        "Use ambient environmental effects and alternate tracks so it isn't the same song every time",
+        "Add more voice lines",
+        "Remove all SFX"
+      ],
+      "answer": 1,
+      "why": "Maximo used ambient effects in hubs and alternated songs per world to avoid repetition."
+    },
+    {
+      "id": "L15-q14",
+      "q": "An attack sound keeps playing after the sword animation has ended. What went wrong?",
+      "options": [
+        "Sound priority was wrong",
+        "It needed a leitmotif",
+        "It should be cartoony",
+        "Timing wasn't set with animators: sounds shouldn't outlast or end before the animation"
+      ],
+      "answer": 3,
+      "why": "Lock the animation timing, fit the sound to it, and specify the trigger frame."
+    },
+    {
+      "id": "L15-q15",
+      "q": "Which is a risk of cartoony sound effects, according to the book?",
+      "options": [
+        "They can be too on-the-nose and take players out of the world",
+        "They're too subdued",
+        "They cost more to license",
+        "They can't be used for treasure"
+      ],
+      "answer": 0,
+      "why": "Realistic sounds risk being subdued; cartoony ones risk breaking immersion, though they're great for extra lives and treasure."
+    }
+  ],
+  "sideQuests": [
+    {
+      "id": "L15-s01",
+      "title": "Mute test",
+      "task": "Play 3 levels of an F2P game muted, then 3 with sound. List 3 moments where sound added information and check whether a visual covered it too.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L15-s02",
+      "title": "Speak musician",
+      "task": "Describe a game's home-screen track using at least 6 of the 13 musical terms.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L15-s03",
+      "title": "Sting collector",
+      "task": "Note the level-complete, fail and chest-open sounds of 2 games. Which go up in pitch, which go down?",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L15-s04",
+      "title": "Leitmotif draft",
+      "task": "Invent a hero and a villain for a mobile RPG and describe each one's motif (instrument, tempo, mood) and when it plays.",
+      "minutes": 15,
+      "xp": 40
+    },
+    {
+      "id": "L15-s05",
+      "title": "Priority sort",
+      "task": "List 15 sounds in a match-3 or merge game and label each local, distant or priority.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L15-s06",
+      "title": "Sweeten it",
+      "task": "For 3 actions (gem merge, shield break, coin shower) propose a surprising real-world sound to sweeten each.",
+      "minutes": 10,
+      "xp": 25
+    },
+    {
+      "id": "L15-s07",
+      "title": "Naming pass",
+      "task": "Write a sound naming convention and name 10 imaginary sounds for a LiveOps event.",
+      "minutes": 5,
+      "xp": 20
+    }
+  ],
+  "mainQuests": [
+    {
+      "id": "L15-m01",
+      "title": "Audio Brief for a F2P mobile game",
+      "task": "Write an audio brief: style and temp soundtrack (5–8 references with reasons), music needs list (every screen and event), dynamic themes, leitmotifs, SFX list by category plus mobile UI sounds, priority table, sound-off plan (visual + haptic twin for each priority sound), file-size budget and delivery plan, licensing checklist (including ads), naming convention.",
+      "deliverable": "A 2–4 page audio brief document.",
+      "doneWhen": "A composer and a sound designer could start without a meeting; every priority sound has a visual twin; at least 8 musical terms are used correctly; it's shared publicly or with a musician friend for feedback.",
+      "minutes": 90,
+      "xp": 200
+    }
+  ],
+  "playLabs": [
+    {
+      "id": "L15-p01",
+      "game": "Candy Crush Saga",
+      "minutes": 10,
+      "lookFor": "How the announcer voice, pitch and music change as combos grow.",
+      "question": "What stays readable with sound off, and what is only heard?"
+    },
+    {
+      "id": "L15-p02",
+      "game": "Clash Royale",
+      "minutes": 10,
+      "lookFor": "Play 2 matches with sound and 1 muted; listen to overtime music.",
+      "question": "What information did you lose when muted, and how did overtime music change your play?"
+    },
+    {
+      "id": "L15-p03",
+      "game": "Subway Surfers (or another endless runner)",
+      "minutes": 10,
+      "lookFor": "Music tempo vs on-screen speed.",
+      "question": "Does the music feel more exciting than the action, and does it make you play faster?"
+    },
+    {
+      "id": "L15-p04",
+      "game": "Any gacha or chest-opening game",
+      "minutes": 10,
+      "lookFor": "The reveal sequence: build-up, silence, rarity sounds.",
+      "question": "Where is silence or a build-up used, and how do sounds signal rarity before you read it?"
+    }
+  ],
+  "retrieval": [
+    {
+      "q": "What did the Star Tours story teach?",
+      "a": "Music carries identity and emotion; without the Star Wars theme the ride didn't feel like Star Wars."
+    },
+    {
+      "q": "Why is leaving sound to the end a mistake?",
+      "a": "It needs team-wide coordination and offers big design opportunities that get missed."
+    },
+    {
+      "q": "Licensed vs original: what are they, and how can you save on licensed music?",
+      "a": "Licensed = existing recordings for a fee (buyouts, $2,500–$30,000+ per song in 2010); original = composed for you by a music director. Save with covers or library tracks."
+    },
+    {
+      "q": "Define tempo, pitch, octave and theme.",
+      "a": "Speed; high/low; interval of double/half frequency; heart of the composition written first."
+    },
+    {
+      "q": "Why use a temp soundtrack and what are its dangers?",
+      "a": "Removes guesswork; team attachment and unlicensed music left in the game."
+    },
+    {
+      "q": "How did Maximo vs. Army of Zin stretch its music?",
+      "a": "Two songs per world, alternated."
+    },
+    {
+      "q": "Where does your best music go?",
+      "a": "The title screen, because it sets the stage."
+    },
+    {
+      "q": "Name the six dynamic themes.",
+      "a": "Mystery, warning, combat, chase, victory, walking."
+    },
+    {
+      "q": "What is a leitmotif?",
+      "a": "A theme tied to a character or scenario, like Vader's in Star Wars."
+    },
+    {
+      "q": "What's the chapter's very important thing?",
+      "a": "Always make the music more exciting than the action on screen."
+    },
+    {
+      "q": "Three uses of silence?",
+      "a": "Speed (Burnout), intense action (F.E.A.R.), suspense, failed humor."
+    },
+    {
+      "q": "List the eight SFX categories.",
+      "a": "Movement, attacks, impacts, weapons, hit reactions, vocal cues, death, success."
+    },
+    {
+      "q": "What is sweetening?",
+      "a": "Enhancing a sound that doesn't sound right; bones + bowling pins."
+    },
+    {
+      "q": "Local, distant, priority?",
+      "a": "Near-and-fading; heard from far; always plays as feedback."
+    },
+    {
+      "q": "Rule for sound-based gameplay?",
+      "a": "Echo sound with visuals for clarity and hearing-impaired players."
+    }
+  ],
+  "feynman": "Explain to your grandma in 60 seconds why a game needs great sound even though many people play it muted, and what you do for the muted players.",
+  "links": [
+    "L05",
+    "L08",
+    "L09",
+    "L10",
+    "L13",
+    "L14",
+    "L16",
+    "F2P1",
+    "F2P"
+  ]
+}

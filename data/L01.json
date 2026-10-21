@@ -1,0 +1,1903 @@
+{
+  "id": "L01",
+  "order": 2,
+  "kind": "book",
+  "label": "Level 1",
+  "title": "Welcome, N00bs!",
+  "bookPages": "1–22",
+  "emoji": "🐣",
+  "tagline": "What a game actually is, where mobile F2P came from, every genre, and who does what on the team.",
+  "f2pRelevance": 4,
+  "f2pWhy": "The game definition, the one-sentence objective test, genre literacy and knowing every team role (including LiveOps, economy, PM, data and UA) are day-one skills for any F2P mobile designer.",
+  "minutes": 60,
+  "tldr": [
+    "A game is an activity with at least one player, rules and a victory condition. A video game is one played on a screen.",
+    "If you can't state the objective in one board-game-box sentence (Battleship, not Mouse Trap), you have a problem.",
+    "Game history is a tech chase: labs → arcades → consoles, handhelds and PCs → phones and F2P. New hardware creates new genres. Adapt or get left behind.",
+    "Genres describe the style of gameplay and constantly mix. Mobile hits are mostly hybrids.",
+    "Games are made by specialists: programmers, artists, designers, producers, testers, composers, sound designers, writers, plus publishing roles. F2P adds LiveOps, economy, monetization, PM, data and UA.",
+    "A designer creates the ideas and rules, explains WHY something works or fails, and owns whether the game is fun."
+  ],
+  "sections": [
+    {
+      "title": "What is a game?",
+      "bites": [
+        {
+          "id": "L01-b01",
+          "hook": "Academics overthink it: a game needs just three things",
+          "body": "Rogers' definition: an activity counts as a game once it has at least one player, a set of rules and a way to win. That's it. He thinks academic definitions (a closed formal system representing reality, or players in conflict) try too hard to sound smart.",
+          "example": "Chris Crawford (1982) called games formal systems representing reality. Kevin Langdon (1979) said games need players in conflict. Rogers says both overcomplicate it.",
+          "f2p": "Run the test on any F2P event: who plays, what are the rules, how do you win? If there's no clear win, it's a chore, not a game.",
+          "memory": "P-R-V: Player, Rules, Victory. 'Play Requires Victory.'",
+          "tag": "concept"
+        },
+        {
+          "id": "L01-b02",
+          "hook": "Bouncing a ball off a wall breaks the textbooks",
+          "body": "Hand ball needs only one player, so nobody is in conflict, and it hardly represents reality. On its own it's a time-waster. Add rules (throw right, catch left, never drop it) and a victory condition (10 catches in a row) and it becomes a game.",
+          "example": "Hand ball was simple enough to inspire one of the first video games, Tennis for Two, shown on an oscilloscope.",
+          "f2p": "A tap-to-jump toy becomes a hyper-casual game the moment you add a score goal and a fail state.",
+          "memory": "Picture someone spiking a handball like a touchdown after catch #10.",
+          "tag": "example"
+        },
+        {
+          "id": "L01-b03",
+          "hook": "Every victory condition secretly creates a failure state",
+          "body": "Once you have rules and a victory condition, breaking a rule or missing the goal becomes the failure state. Rules + objective + failure is the full skeleton of a game.",
+          "example": "Hand ball: dropping the ball, or catching with the wrong hand, means you fail.",
+          "f2p": "In match-3 the failure state (out of moves) is where players decide whether to retry, wait, watch an ad or pay. Design it deliberately and ethically.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L01-b04",
+          "hook": "Bernard Suits: games are obstacles you choose on purpose",
+          "body": "Philosopher Bernard Suits (The Grasshopper, 1978) described playing a game as voluntarily trying to overcome unnecessary obstacles. Rogers finds it amusing but still too scholarly. It's still a useful lens: players opt into difficulty they don't need.",
+          "example": "Nobody needs to clear level 312 of a puzzle game. They choose the obstacle for the fun of beating it.",
+          "f2p": "That 'voluntary' part matters in F2P: obstacles that feel forced (paywalls) stop feeling like play.",
+          "memory": "Golf: walking would be easier, but you use a stick on purpose.",
+          "tag": "concept"
+        },
+        {
+          "id": "L01-b05",
+          "hook": "A video game is just a game on a screen",
+          "body": "Rogers' definition of a video game: a game played on a video screen. You can complicate it with devices, peripherals, control schemes, player metrics, boss fights and zombies, but the core really is that simple.",
+          "example": "Tennis for Two on an oscilloscope and a match-3 on a phone both qualify.",
+          "f2p": "Phones, tablets and watches all count. What changed is where and how long people play: short bursts between other things.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L01-b06",
+          "hook": "Only a real n00b reads the n00b footnote",
+          "body": "N00b is short for newbie, someone new to a game. The term is older than the Internet but caught on in online multiplayer communities. It isn't flattering, since it implies inexperience. Level 1 is written for n00bs, but Rogers warns veterans they'll miss good stuff if they skip it.",
+          "example": "Rogers jokes that only a true n00b would read a footnote defining n00b.",
+          "f2p": "Your FTUE is written for n00bs too. Assume zero knowledge of genre conventions.",
+          "memory": "",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "The objective test (Bilson's box rule)",
+      "bites": [
+        {
+          "id": "L01-b07",
+          "hook": "Can your game's goal fit on a board-game box?",
+          "body": "Danny Bilson's rule of thumb: you should be able to sum up a game's objective as easily as old Milton Bradley board games did on the box. If you can't state it quickly and clearly, you have a problem.",
+          "example": "Battleship: sink all your opponent's ships. Operation: successful operations earn money, and failures set off the alarm.",
+          "f2p": "It has to fit a store subtitle, a 3-second ad hook and one tutorial line. Clash Royale: destroy the enemy towers before they destroy yours.",
+          "memory": "Battleship, not Mouse Trap.",
+          "tag": "rule"
+        },
+        {
+          "id": "L01-b08",
+          "hook": "Mouse Trap: the objective that needs a bathtub and a diving board",
+          "body": "Mouse Trap's box describes a Rube Goldberg chain: crank, gears, lever, shoe, bucket, ball, stairs, rain pipe, bowling ball, bathtub, diving board, diver, wash tub, cage. That's the counterexample. Keep objectives simple.",
+          "example": "If your pitch needs more than one breath to explain the goal, it's a Mouse Trap.",
+          "f2p": "The midcore trap: 12 currencies and 8 systems at once. Introduce systems gradually so the current objective is always obvious.",
+          "memory": "If explaining the goal requires a diving board, start over.",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "A brief history of video games",
+      "bites": [
+        {
+          "id": "L01-b09",
+          "hook": "Video games started in 1950s labs on oscilloscopes",
+          "body": "The first game programmers were university lab students (like at MIT) and military research staff at Brookhaven National Laboratory. Early titles such as OXO (1952), Spacewar! (1962) and Colossal Cave (1976) used very basic graphics, or none, on tiny black-and-white oscilloscope screens.",
+          "example": "Colossal Cave was a text adventure, with no graphics at all.",
+          "f2p": "Lab tinkerers making games for fun are the ancestors of today's game jams and quick prototypes.",
+          "memory": "Lab → Bar → Arcade → Couch → Pocket.",
+          "tag": "list"
+        },
+        {
+          "id": "L01-b10",
+          "hook": "The first arcade game started in a bar",
+          "body": "After playing Spacewar! at the University of Utah, future Atari founders Ted Dabney and Nolan Bushnell made Computer Space (1971), the first arcade video game. Early arcade games were found in bars. Dedicated arcades appeared by the late 1970s.",
+          "example": "Computer Space: one cabinet, one game, and you paid per play.",
+          "f2p": "Arcades invented pay-per-attempt. A quarter per life became 'continue?', which became F2P's extra moves.",
+          "memory": "",
+          "tag": "example"
+        },
+        {
+          "id": "L01-b11",
+          "hook": "Lines vs pixels: vector and raster graphics",
+          "body": "Vector graphics draw images from lines (Asteroids, Battlezone, Star Castle). Raster graphics build images from a grid of colored dots called pixels (Galaxian). Color raster graphics made cartoon characters possible, and Pac-Man (1980) and Donkey Kong (1982) became overnight pop-culture icons.",
+          "example": "Asteroids' outlined rocks vs Galaxian's colorful pixel aliens.",
+          "f2p": "Pixels made characters, and characters made brands. Mobile invests in mascots (Angry Birds, Candy Crush's candies) because a readable character is always-on marketing.",
+          "memory": "Vector = Lines (Very Linear). Raster = Rows of dots.",
+          "tag": "concept"
+        },
+        {
+          "id": "L01-b12",
+          "hook": "Stand, sit or climb in: three arcade cabinets",
+          "body": "Early-1980s arcades had three cabinet styles: uprights (stand in front), cocktail tables (sit, with the game set into a table top) and cockpits (lean or sit inside an immersive cabinet).",
+          "example": "The book sketches an upright, a sit-down cocktail table and a spaceship cockpit.",
+          "f2p": "The physical setup shaped the experience. On mobile the 'cabinet' is a phone held one-handed on a bus, so design for one thumb and interruptions.",
+          "memory": "Upright, Cocktail, Cockpit: stand, sit, strap in.",
+          "tag": "list"
+        },
+        {
+          "id": "L01-b13",
+          "hook": "Arcades became theme-park rides, then went extinct",
+          "body": "Mid-1980s cabinets got elaborate: back-to-back cockpits (Tail Gunner), Kirk's command chair (Star Trek), a moving Ferrari (Out Run). By the late 1990s there were rideable horses, gyro simulators and punch-and-kick booths. BattleTech Centers linked 8 players in mech pods. Then space and maintenance costs, plus better home consoles, killed arcades.",
+          "example": "Rogers' footnote: BattleTech pods had working dip switches everywhere, and just learning them took a half-hour session.",
+          "f2p": "Spectacle that costs too much to run dies. Live games survive on content that's cheap to make and endlessly replayable.",
+          "memory": "",
+          "tag": "example"
+        },
+        {
+          "id": "L01-b14",
+          "hook": "The claw machine lesson: rigged games kill trust",
+          "body": "Arcades were replaced by redemption machines and skill games like Skee-Ball. Rogers says US claw machines are rigged to make you (almost) always lose, while Japan's are winnable and stocked with cool prizes. Cabinets went to collectors and the golden age ended.",
+          "example": "Rogers would rather play the lottery than a US claw machine.",
+          "f2p": "Gacha and difficulty tuning walk the same line. Transparent odds and pity systems keep trust. Rigged-feeling ones burn players, and loot-box rules now enforce some fairness.",
+          "memory": "Be the Japanese claw machine, not the American one.",
+          "tag": "warning"
+        },
+        {
+          "id": "L01-b15",
+          "hook": "Arcades reborn: LAN centers, cafés and dark rides",
+          "body": "Arcades became social spaces: LAN centers (pay by the hour, sometimes theater-sized events) and internet cafés. Disney and the Sally Corporation merged dark rides with games. Toy Story Midway Mania (2008) sends 4-player carts past giant screens with air and water effects, and it came home on the Wii.",
+          "example": "Dark rides are attractions like Pirates of the Caribbean and Haunted Mansion.",
+          "f2p": "Social play leads to esports: Mobile Legends and PUBG Mobile tournaments. Play in physical spaces leads to Pokémon GO's real-world events.",
+          "memory": "",
+          "tag": "example"
+        },
+        {
+          "id": "L01-b16",
+          "hook": "Consoles: one box, many games",
+          "body": "A console is a home gaming platform that sends a video signal to a TV. Unlike arcades, its controller has enough buttons, triggers and analog sticks for many games, and swappable media (cartridges, CDs, DVDs) replaced one-game motherboards. Examples: Atari 2600, Intellivision, ColecoVision, NES, SNES, Genesis, Dreamcast, 3DO, then PS3, Xbox 360, Wii.",
+          "example": "Footnote exception: the Vectrex (1982) built its screen, controller and a game into one portable unit.",
+          "f2p": "Swappable media became downloadable updates, which is what makes LiveOps possible. The app store is 'one device, many games' taken to the extreme.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L01-b17",
+          "hook": "Tetris on Game Boy made handhelds explode",
+          "body": "Early handhelds held one game each: Auto Race (Mattel, 1976, digital display), Game & Watch (Nintendo, 1980, LCD). Microvision (1979) had swappable cartridges. Handhelds took off with Tetris on the Game Boy (1989), forerunner of the DS. By 2010 the PSP could run PlayStation One-level games.",
+          "example": "From Mattel Football's blips to the PSP in about 30 years.",
+          "f2p": "Puzzle was the portable killer app then and still is. The line runs straight to match-3 and Block Blast!.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L01-b18",
+          "hook": "2010 asked: is mobile the future? Answer: yes.",
+          "body": "Rogers noted phone games were quick and cheaper to make, mobile developers were multiplying fast, and he asked whether mobile was the future. It became the largest segment of the industry, roughly half of global game revenue in recent years.",
+          "example": "One phone now does what a shelf of Game & Watch units once did, times thousands.",
+          "f2p": "Cheap and fast to make in 2010 became hyper-casual test-and-scale a few years later.",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "L01-b19",
+          "hook": "Keyboard made text adventures, the mouse made FPS",
+          "body": "Late-1970s PCs created bedroom coders (games on tapes and floppies). The keyboard allowed richer input, which created text adventures. Longer sessions created simulations, construction/management and strategy. CDs and DVDs added complexity. The mouse popularized the FPS. By the mid-1990s the PC was the ultimate platform, and strategy, FPS and MMOs stay strong there.",
+          "example": "Commodore 64, Macintosh Plus, tower PC: the book's PC sketches.",
+          "f2p": "Touch created mobile's native verbs: swipe, tap, drag, slice. That's why match-3, runners and Fruit Ninja thrive, and shooters needed virtual sticks and aim assist.",
+          "memory": "The input device decides the genre.",
+          "tag": "concept"
+        },
+        {
+          "id": "L01-b20",
+          "hook": "2012: the F2P big bang",
+          "body": "After the App Store (2008) and freemium in-app purchases (2009), 2012 brought Puzzle & Dragons (gacha), Candy Crush Saga (lives, boosters, saga map), Hay Day and Clash of Clans (timers, bases, clans). Facebook games like FarmVille had already taught a mass audience energy, gifting and friend invites.",
+          "example": "Clash of Clans launched in 2012 and is still live: launch is a starting line.",
+          "f2p": "Most modern F2P systems (lives, timers, clans, gacha) were already in place by 2012.",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "L01-b21",
+          "hook": "Every mobile genre has an arcade or PC grandparent",
+          "body": "Arcade pay-per-life became extra moves and revives. Game Boy Tetris became block puzzles. Tamagotchi became daily logins and streaks. PC construction/management became farm builders. RTS's four X's became mobile 4X. MMORPG raids became clans and raid bosses. LAN centers became mobile esports.",
+          "example": "Hay Day descends from SimCity-style construction/management. Rise of Kingdoms descends from RTS.",
+          "f2p": "Find the ancestor and you know which classic design advice still applies to your genre.",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "L01-b22",
+          "hook": "2016–2024: PvP, AR, hyper-casual and hybrid-casual",
+          "body": "Clash Royale and Pokémon GO (2016). The hyper-casual ad-driven boom (around 2017–2019). Battle royale on phones (PUBG Mobile, Free Fire). Genshin Impact (2020). Apple's ATT (2021) shook up ad targeting and pushed hybrid-casual. Then Royal Match, Marvel Snap, Monopoly GO!, Squad Busters, Pokémon TCG Pocket and block-puzzle hits.",
+          "example": "ATT changed how UA works overnight. Studios that adapted fastest won.",
+          "f2p": "Rogers' truth 'adapt or get left behind' is the whole story of mobile.",
+          "memory": "",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "Game genres",
+      "bites": [
+        {
+          "id": "L01-b23",
+          "hook": "A genre describes what you DO, not where it's set",
+          "body": "A game genre describes the style of gameplay. Gaming has split into many genres and subgenres over the years. Don't confuse genre with theme: the same genre can wear many themes.",
+          "example": "Royal Match's genre is match-3; its theme is royal castle renovation.",
+          "f2p": "Mobile studios often reskin a proven genre with a fresh theme. Keep the two separate in teardowns.",
+          "memory": "Genre = verb. Theme = costume.",
+          "tag": "concept"
+        },
+        {
+          "id": "L01-b24",
+          "hook": "Action: six flavors of hand-eye coordination",
+          "body": "Action games need hand-eye coordination. Subgenres: action-adventure (items, puzzles, long-term story), action-arcade (twitch, scoring, short play), platformer (a mascot jumping through platforms, once the most popular subgenre), stealth (avoid enemies), fighting (arena battles with deep controls), beat 'em up/hack 'n' slash (waves of harder enemies).",
+          "example": "Tomb Raider, Dig Dug/Diner Dash, Mario, Metal Gear/Thief, Street Fighter/Mortal Kombat, Double Dragon/Castle Crashers.",
+          "f2p": "Runners (Subway Surfers) are the mobile platformer. Archero and Survivor.io are wave-based beat 'em up descendants.",
+          "memory": "AAPSFB: Adventure, Arcade, Platformer, Stealth, Fighting, Beat 'em up.",
+          "tag": "list"
+        },
+        {
+          "id": "L01-b25",
+          "hook": "Shooters are sorted by where the camera sits",
+          "body": "Shooters focus on firing projectiles and are fast and twitchy. FPS: through the player's eyes, tighter, more limiting but more personal (Quake, Team Fortress 2). Shmup: arcade-style, hordes of enemies, dodge hazards, usually a vehicle avatar (Space Invaders, Contra). TPS: camera behind the character (Star Wars Battlefront, GTA).",
+          "example": "Same shooting, three cameras, three different feels.",
+          "f2p": "Call of Duty: Mobile (FPS), PUBG Mobile (third person by default), Survivor.io (shmup-like auto-shooting).",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L01-b26",
+          "hook": "Adventure: puzzles, items, inventory, and RPGs too",
+          "body": "Adventure games center on puzzle solving, item collection and inventory (the first were text-only: Colossal Cave, King's Quest, Leisure Suit Larry). Subgenres: graphical adventure (point and click: Myst, Monkey Island), RPG (pen-and-paper roots, classes, stats via combat, exploration and treasure: KOTOR, Mass Effect), MMORPG, survival/horror.",
+          "example": "The book files RPG under Adventure. Modern lists treat RPG as top-level.",
+          "f2p": "RPG stats and classes became gacha hero-collection games (Raid, AFK Arena, Honkai: Star Rail).",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L01-b27",
+          "hook": "MMORPGs gave us grinding, raids and guilds",
+          "body": "An MMORPG is an RPG supporting hundreds of players in one world, known for player-vs-player combat, repetitive 'grinding' and group battles called 'raids' (World of Warcraft, DC Universe Online). Survival/horror has players survive horror with limited resources like scarce ammo (Resident Evil, Silent Hill).",
+          "example": "Scarce ammo in Resident Evil creates tension through limitation.",
+          "f2p": "MMO DNA lives on in clans, raid bosses and guild wars. Scarcity-as-tension powers energy and resource loops.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L01-b28",
+          "hook": "Build it, nurture it: management and life sims",
+          "body": "Construction/management: build and expand with limited resources, story- or toy-based (SimCity, Zoo Tycoon). Life simulation: build relationships with artificial life (The Sims, Princess Maker). Pet simulation: Tamagotchi-style feeding and bonding (World of Zoo).",
+          "example": "SimCity is the 'toy' type: no fixed story, just build.",
+          "f2p": "Hay Day and Township are construction/management with timers. Tamagotchi's check-in loop became daily logins and streaks.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L01-b29",
+          "hook": "Rhythm, party and puzzle: the casual trio",
+          "body": "Music/rhythm: match a beat to score (from Simon to Rock Band). Party: built for multiple players, competitive, usually minigames (Mario Party, Buzz!). Puzzle: logic and pattern completion, either slow and methodical or hand-eye (The Incredible Machine, Tetris).",
+          "example": "Tetris is a puzzle game that needs fast hands. Puzzles don't have to be slow.",
+          "f2p": "Puzzle is mobile's biggest casual family: match-3, blast, block and sort puzzles, usually with a decorating or story meta.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L01-b30",
+          "hook": "Sports games ship every year. Mobile ships every season.",
+          "body": "Sports games are based on athletic competition, traditional or extreme, and annual versions are common (Madden, Tony Hawk). Sports management has you manage players or teams instead of playing (FIFA Manager, NFL Head Coach).",
+          "example": "Madden's yearly release cycle is the classic sports business model.",
+          "f2p": "On mobile, live seasons and card-collection squads replace annual releases (EA SPORTS FC Mobile, Top Eleven).",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L01-b31",
+          "hook": "The four X's: expand, explore, exploit, exterminate",
+          "body": "Strategy is about thinking and planning (chess, Civilization). RTS is faster and focuses on the four X's: expansion, exploration, exploitation, extermination. In 2010 it was the dominant strategy subgenre (Command & Conquer, Dawn of War). Turn-based gives time to think (X-Com, Advance Wars). Tower defense, then new, uses automated towers (Defense Grid, Lock's Quest).",
+          "example": "Turn-based is slower but allows deeper strategy.",
+          "f2p": "Mobile 4X (Rise of Kingdoms, Whiteout Survival) runs the four X's on persistent maps. Clash Royale fits strategy into 3-minute battles.",
+          "memory": "4X = the empire-builder's to-do list.",
+          "tag": "list"
+        },
+        {
+          "id": "L01-b32",
+          "hook": "Vehicle sims: from Lunar Lander to Ace Combat",
+          "body": "Vehicle simulation aims to make piloting feel real (Lunar Lander, Densha de Go! 64). Driving: race and upgrade vehicles, realistic or action (Gran Turismo, NASCAR Racing, Wave Race, SSX). Flying: for pleasure (Flight Simulator), combat (Ace Combat, Blazing Angels) or space (Starfox, X-Wing/TIE Fighter).",
+          "example": "Densha de Go! 64 is a train-driving sim: realism as the fun.",
+          "f2p": "On mobile, racing thrives as car collection and upgrades (Asphalt, CSR Racing) or physics fun (Hill Climb Racing). Flight sims are niche.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L01-b33",
+          "hook": "GTA is five genres in a trench coat",
+          "body": "Genres keep merging. Grand Theft Auto mixes action-adventure, third-person shooter, driving, life sim and action-arcade. Tuper Tario Tros. fuses Super Mario Bros. with Tetris. There are also cross-genre labels: adult, serious, advergames and vehicular combat. The next big genre might be yours.",
+          "example": "Tuper Tario Tros. (Swing Swing Submarine) is a free Newgrounds game.",
+          "f2p": "Mobile hits are hybrids: match-3 + decoration, board game + social events, roguelite + one-thumb shooter. Advergames evolved into playable ads.",
+          "memory": "Genres are LEGO bricks, not museum labels.",
+          "tag": "truth"
+        },
+        {
+          "id": "L01-b34",
+          "hook": "Map mobile genres by depth and session length",
+          "body": "Plot genres on two axes: casual vs midcore (depth) and short bursts vs long arcs (session pattern). Block puzzles and runners sit casual/short. Farm and merge games sit casual/long. PvP arenas sit midcore/short. 4X and gacha RPGs sit midcore/long.",
+          "example": "Block Blast! (casual, short), Hay Day (casual, long), Clash Royale (midcore, short), Rise of Kingdoms (midcore, long).",
+          "f2p": "The map tells you the session design, monetization style and team skills each genre needs.",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "L01-b35",
+          "hook": "Genres the 2010 book never saw coming",
+          "body": "Mobile charts are led by genres the book doesn't list: match-3 with meta, merge, idle, hyper-casual, hybrid-casual, battle royale, MOBA, gacha RPG, card battlers and casino-lite. Meanwhile platformers, stealth and flight sims went niche on phones because they need precise controls or long sessions.",
+          "example": "Monopoly GO! (casino-lite board game) and Merge Mansion (merge) have no 2010 genre label.",
+          "f2p": "Rogers' rule held: genres constantly mix and new ones keep appearing.",
+          "memory": "",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "Who makes this stuff?",
+      "bites": [
+        {
+          "id": "L01-b36",
+          "hook": "Prince of Persia was made by one person",
+          "body": "Early games were solo projects: Jordan Mechner programmed, designed, animated and scored the original Prince of Persia. Then teams grew to 2–3 programmers, artists joined as players wanted better looks, design was done by whoever had the idea, and finally a dedicated design job appeared. Specialization keeps increasing.",
+          "example": "Teams are now like film or TV production crews: many creatives working together.",
+          "f2p": "Mobile repeated this fast: tiny early App Store teams, now live teams of dozens to hundreds. Hyper-casual still wears many hats.",
+          "memory": "One-man band → orchestra.",
+          "tag": "concept"
+        },
+        {
+          "id": "L01-b37",
+          "hook": "Programmers: graphics, controls, camera, physics, AI, tools",
+          "body": "Programmers (C++ and Java in the book) code display, controls, camera, physics, AI and object scripting. Specialists build tools, physics such as water and inverse kinematics, or sound tools. They need math, 2D/3D graphics, physics, particles, UI, AI, input devices and networking. Some work as contract 'hired guns'.",
+          "example": "One programmer might only build tools that speed up everyone else.",
+          "f2p": "Mobile: Unity/C# clients, server engineers keeping economies cheat-proof, LiveOps config tools, SDK integrations, low-end device performance.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L01-b38",
+          "hook": "Mario: maximum personality per pixel",
+          "body": "Early art was so crude that placeholder art is still called 'programmer art'. Miyamoto made Mario and Donkey Kong memorable with an 8-bit CPU and 2-bit pixels. Laserdisc games (Dragon's Lair, Space Ace, by ex-Disney animator Don Bluth) were rare exceptions. Better hardware brought Darkstalkers and Metal Slug. Then came 3D: pre-rendered (Myst, DKC) and true 3D pushed by PlayStation.",
+          "example": "Battlezone (1980) already had true 3D in arcades.",
+          "f2p": "Icons and characters must read at thumbnail size. Miyamoto's constraint is yours.",
+          "memory": "Personality beats resolution.",
+          "tag": "example"
+        },
+        {
+          "id": "L01-b39",
+          "hook": "Nine art jobs in one pipeline",
+          "body": "Concept artist (designs characters and worlds), storyboard artist (cinematics and gameplay boards), 3D modelers and environment artists (Maya, 3ds Max), texture artists (paint surfaces), VFX artists, UI artist (icons, HUD), animators (characters and cutscenes), technical artists (rigging, teaching tools), art director (vision). Advice: study basics, keep drawing.",
+          "example": "Technical artists rig models so animators can move them.",
+          "f2p": "UI art (shop, offers, banners, currency icons) and marketing/ad art are central in F2P, with new event art every few weeks.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L01-b40",
+          "hook": "'It sucks' is never acceptable design feedback",
+          "body": "Whatever the title (director, planner, producer, lead or senior designer), the designer creates the ideas and rules of a game. They need many skills, and loving games is only the baseline. Critically, they must tell good from bad and explain why. Jesse Schell's list of design knowledge covers 19 fields, from anthropology to visual arts.",
+          "example": "Not 'level 47 sucks' but 'level 47's first-try win rate is far below target and players quit there' (hypothetical).",
+          "f2p": "In F2P, 'explain why' means evidence: data plus taste.",
+          "memory": "Be the chef who says 'too much salt', not the critic who says 'yuck'.",
+          "tag": "rule"
+        },
+        {
+          "id": "L01-b41",
+          "hook": "Level, system, scripter, combat, creative director",
+          "body": "Design specializations: level designers (paper maps, grey-box worlds, populating levels), system designers (how elements relate: economy, tech tree), scripters (trigger traps and camera moves with tools), combat designers (player-vs-enemy combat and balancing), creative director (vision, supervising designers). Designers also own whether the game is fun.",
+          "example": "Grey-boxing: building a level in plain untextured blocks to test layout before art.",
+          "f2p": "System designer splits into systems and economy designers. Scripters became technical designers. Combat became PvP/gacha balance. New: LiveOps, monetization, UX.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L01-b42",
+          "hook": "The producer: first on, last off, dinner orderer",
+          "body": "Producers began as designers who managed. Now they hire and build teams, write contracts, contribute to design, run the schedule and budget, settle creative vs programming disputes, represent the team to management and publishers, coordinate outside art, music and cutscenes, and arrange testing and localization. They're often the public face.",
+          "example": "Ordering dinner for a team working late may look menial but is among the most valuable things a producer does.",
+          "f2p": "Live producers run the release train and LiveOps calendar. Many studios split the role into producer, PM and game director.",
+          "memory": "Juggler on a unicycle who still remembers who's vegetarian.",
+          "tag": "list"
+        },
+        {
+          "id": "L01-b43",
+          "hook": "Some studios think producers are unnecessary",
+          "body": "Producer influence varies wildly. Some studios see producers as unnecessary. Others want them to have no creative control, only production and schedule. Assistant and associate producers handle day-to-day tasks. Producers become the face of the game because they're the one person who keeps all the moving parts straight.",
+          "example": "Like designers, a producer's role is defined by each studio's culture.",
+          "f2p": "Ask in interviews: who owns the roadmap here, the producer, the PM or the director?",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L01-b44",
+          "hook": "Testers prevent games from sucking",
+          "body": "Testers replay the same content over and over, with long hours, cramped spaces and mind-numbing repetition. They need patience, persistence and clear communication to report bugs. Without them, games crash on load, cameras are bad, combat is broken and difficulty is unfair. QA testing takes weeks or months before a publisher approves release.",
+          "example": "Rogers has seen testers become designers, artists, producers and studio heads.",
+          "f2p": "Mobile QA covers device fragmentation, every event config and price, time zones, and store compliance. It's still a classic gateway job.",
+          "memory": "The tester is the goalkeeper: nobody notices 1,000 saves.",
+          "tag": "concept"
+        },
+        {
+          "id": "L01-b45",
+          "hook": "You can still hum Zelda: why composers matter",
+          "body": "Music is hugely important to games. Composers mostly work on keyboards or synths. Orchestral scores add skills like conducting. To break in, write music, record it and get samples to a producer. Designers hire the sample that matches the style in their head, and unique music that fits wins.",
+          "example": "Danny Elfman's distinct Beetlejuice and Pee-wee scores made everyone want his sound.",
+          "f2p": "Many mobile players play muted, so never put critical info only in audio. Music still builds brand and event freshness.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L01-b46",
+          "hook": "Game music must loop forever without annoying anyone",
+          "body": "Game themes are usually very short or repeat over and over, unlike film scores. Writing powerful music within those limits beats just writing 'songs'. Sports and rhythm games still use traditional songs. More in Level 15.",
+          "example": "A menu loop you hear for hundreds of hours across sessions.",
+          "f2p": "Home-screen and map loops must survive endless replays. Rotate tracks by season and keep download size in mind.",
+          "memory": "A jingle that survives 1,000 replays without making you throw your phone.",
+          "tag": "rule"
+        },
+        {
+          "id": "L01-b47",
+          "hook": "Sound effects are information, not decoration",
+          "body": "Sound designers create every sound effect. Play a game muted and you'll feel the gap: audio cues carry information. Positive sounds confirm success or good loot. Warning sounds flag danger or bad choices. Games come alive with sound, so even placeholder SFX matter.",
+          "example": "Turn the sound off in any action game: you suddenly miss incoming attacks and pickups. That gap is the sound designer's work.",
+          "f2p": "Reward sounds plus VFX plus haptics make F2P juice. Haptics is the phone's extra channel that works on mute.",
+          "memory": "Opening a legendary chest in total silence. Sad.",
+          "tag": "concept"
+        },
+        {
+          "id": "L01-b48",
+          "hook": "Game writers get hired late, unlike Hollywood",
+          "body": "In games, writers usually join late and freelance. If you want to be the idea person, become a designer. Five reasons writers get hired: fix a bad story, write dialogue, clarify instructions and prompts, write manuals and fiction support, add star power. You need grammar and screenplay format, but above all to know how to write for games.",
+          "example": "Level 3 is devoted to writing for games.",
+          "f2p": "Mobile writing = narrative design + UX microcopy + push notifications + store text + localization-friendly strings.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L01-b61",
+          "hook": "Sound designer entrance exam: the phlegmy cougar",
+          "body": "Rogers' test for future sound designers: make a creature sound like a phlegmy cougar from hell, but more shrieky than growly. It was a real direction given to a real sound designer, who still delivered a great effect. Taking vague direction is part of the job.",
+          "example": "Directors often know the feeling they want, not the words for it.",
+          "f2p": "Expect briefs like 'make the chest opening feel more expensive.' Translate feelings into sound layers.",
+          "memory": "Picture a cat with a cold auditioning for a horror movie.",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "Have you thought about publishing?",
+      "bites": [
+        {
+          "id": "L01-b49",
+          "hook": "The secret second career path: publishing",
+          "body": "Publishers fund development teams, manage production, handle legal issues, manufacture the game, run PR and marketing, and distribute the finished product. They employ creative and technical people in oversight roles, not just business staff.",
+          "example": "Rogers himself was a creative manager at publisher THQ.",
+          "f2p": "On mobile, app stores distribute (taking a revenue share), manufacturing is gone, and many studios self-publish. Mobile publishers still offer UA money and expertise.",
+          "memory": "The publisher is the record label.",
+          "tag": "concept"
+        },
+        {
+          "id": "L01-b50",
+          "hook": "Book product manager ≠ mobile product manager",
+          "body": "In the book, the publisher's product manager manages the studio against the schedule, sets production priorities, liaises with legal, approves milestones, pays the studio and secures the ESRB rating. Influence over content varies by publisher.",
+          "example": "ESRB: the US game rating board.",
+          "f2p": "A modern F2P PM owns the game's KPIs and roadmap (retention, ARPDAU, LTV), prioritizes features and runs A/B tests. A business owner, not a schedule keeper.",
+          "memory": "",
+          "tag": "warning"
+        },
+        {
+          "id": "L01-b51",
+          "hook": "The creative manager's thousand-foot view",
+          "body": "Creative managers are designers or writers in publishing. They develop games with teams, write pitches, work with licensors, and play builds to keep them true to the core idea and fun. Their big value is the thousand-foot view: an unbiased outside perspective that spots weaknesses and gives clear feedback or new directions. They also help marketing and PR.",
+          "example": "A 'build' (or 'burn') is an in-progress playable version of the game.",
+          "f2p": "Modern version: publishing producers and greenlight reviews that read soft-launch KPIs and play builds to decide scale, pivot or kill.",
+          "memory": "A drone shot of your game, not a microscope.",
+          "tag": "concept"
+        },
+        {
+          "id": "L01-b52",
+          "hook": "Publisher art and technical directors",
+          "body": "A publishing art director is a creative manager for art only: sets visual style, suggests new directions, globalizes the visual language for clarity, and supplies packaging and marketing assets. A technical director (programming background) recommends tools, supports weak programming teams, and does due diligence on whether a studio can actually build the game.",
+          "example": "The box cover was the art director's marketing job.",
+          "f2p": "The box cover is now your store icon, screenshots and ad creatives, A/B tested constantly. Due diligence is now tech audits of SDKs, crashes and build size.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L01-b53",
+          "hook": "Biz dev, lawyers, brand, PR, QA manager and friends",
+          "body": "Other publishing roles: business development (studio relationships, pitches, demos, deals, acquisitions), lawyer (contracts, legal safety of content), brand manager (marketing strategy, manuals, boxes), PR manager (magazines, press events), QA manager (runs testing, relays bug sheets). Around them: talent recruiters, game reviewers and licensors protecting their brands.",
+          "example": "Run a studio someday and you'll meet a lot of business developers.",
+          "f2p": "Mobile equivalents: partnership managers, compliance (privacy, loot-box odds), UA and ASO, community managers, creators and influencers, IP collab partners.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L01-b62",
+          "hook": "The dream job: sometimes it really is playing games all day",
+          "body": "Rogers describes creative manager as the job people imagine when they picture working in games. It's not only dreaming up and playing games all day… but sometimes it is. And the thousand-foot view means looking down from high up, not staring at thousands of feet.",
+          "example": "Playing builds to check they're still fun is a real, core duty.",
+          "f2p": "Mobile version: playing competitors and your own builds every week is part of the job. Teardowns count as work.",
+          "memory": "A drone over the game, not a shoe store.",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "The modern F2P mobile team",
+      "bites": [
+        {
+          "id": "L01-b54",
+          "hook": "Game designer vs systems designer",
+          "body": "The game (feature) designer asks what the player does and feels: features, rules, specs, prototypes, playtests. The systems designer asks how all the numbers and rules interlock so the game stays balanced for months: progression, formulas, upgrade trees.",
+          "example": "Designer: 'a hero-upgrade screen that feels exciting.' Systems: 'how many upgrades per week, and how stats scale to level 100.'",
+          "f2p": "Both descend from Rogers' designer and system designer.",
+          "memory": "Feel vs formula.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L01-b55",
+          "hook": "The economy designer keeps the wallet from inflating",
+          "body": "Economy designers own currencies, sources and sinks, reward tables and in-game prices. They model how much each player segment earns and spends so the economy neither floods nor starves. They watch currency balances, sink usage and progression pace by spender tier.",
+          "example": "If an event hands out too many boosters, the economy designer catches it before players stop needing to earn them.",
+          "f2p": "The book's 'system designer: the game's economy' grew into a full specialty.",
+          "memory": "Central banker of the game.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L01-b56",
+          "hook": "Level designer builds forever; LiveOps designer builds this weekend",
+          "body": "Puzzle level designers craft permanent content and the difficulty curve, living in per-level win rates, attempts and churn. LiveOps designers own the temporary content calendar: tournaments, seasons, passes and limited-time modes, measured by participation, retention lift and event revenue.",
+          "example": "Level designer: level 1,240. LiveOps designer: next weekend's pumpkin race.",
+          "f2p": "Match-3 level design is a common entry door, and LiveOps has no 2010 ancestor.",
+          "memory": "Track builder vs parade organizer.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L01-b57",
+          "hook": "Monetization designer vs economy designer",
+          "body": "The economy designer protects the value system for all players. The monetization designer designs how and when value is offered for money: store, bundles, starter packs, passes and ad placements, measured by conversion, ARPPU, offer take-rate and ads per user.",
+          "example": "A 'finish the race' offer is monetization. Making sure it doesn't break event balance is economy.",
+          "f2p": "Good studios make them partners so monetization never wrecks the economy, and keep it ethical.",
+          "memory": "Gift shop vs ticket economy.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L01-b58",
+          "hook": "PM, data analyst, UA: the growth trio",
+          "body": "The product manager owns KPIs and the roadmap. The data analyst builds dashboards, funnels, cohort retention and A/B test analysis. The UA manager buys installs through ad networks, aiming for LTV above CPI and positive ROAS, working with creative teams on video and playable ads.",
+          "example": "UA: 'CPI rose, so we need new creatives.' Data: 'the new event lifted D7 retention in segment B.'",
+          "f2p": "None of these existed as game-team roles in the book. Tester bug sheets grew into telemetry, and brand managers into UA.",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "L01-b59",
+          "hook": "One event, eleven roles",
+          "body": "A weekend event: PM sets the goal (a retention lift in a segment). LiveOps picks the template and calendar slot. Economy checks rewards. Monetization adds an optional bundle. Level design builds themed levels. UX, art and narrative make it look good. Engineers configure it. QA checks every time zone. CRM sends pushes. UA makes ad variants. Data writes the post-mortem.",
+          "example": "A hypothetical 'Halloween Haunt' match-3 event.",
+          "f2p": "And the game director still asks Rogers' question: was it fun?",
+          "memory": "Live-Game Theme Park: rides, tracks, tokens, parades, gift shops, billboards.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L01-b60",
+          "hook": "Doors into F2P design are wide open",
+          "body": "Common paths: QA into level design or LiveOps, puzzle level designer into systems or lead, data analyst into economy, community or support into LiveOps or CRM, playable-ad developer into prototyping, artist or programmer into design (Rogers' route), indie and jam games into a junior designer role.",
+          "example": "Rogers himself went from pixel artist to designer.",
+          "f2p": "Ship small finished games. That's the 'preparation' Rogers says you need when opportunity knocks.",
+          "memory": "",
+          "tag": "f2p"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "A game is an activity with rules and a victory condition (and at least one player).",
+    "Keep your game's objective simple, as simple as a 1950s board-game box.",
+    "Genres come in all shapes and sizes, so don't be afraid to mix and match them.",
+    "Technology never stops advancing, so keep adapting or get left behind.",
+    "Making video games takes many different kinds of people."
+  ],
+  "mnemonics": [
+    {
+      "name": "Game definition",
+      "device": "P-R-V: 'Play Requires Victory'",
+      "unpacks": "Player (at least one), Rules, Victory condition. Add a screen and it's a video game."
+    },
+    {
+      "name": "Objective test",
+      "device": "Battleship, not Mouse Trap",
+      "unpacks": "State the goal in one breath like a board-game box. If it needs a Rube Goldberg chain, simplify."
+    },
+    {
+      "name": "History path",
+      "device": "Lab → Bar → Arcade → Couch → Pocket",
+      "unpacks": "1950s university and military labs → first arcade games in bars → dedicated arcades → home consoles and PCs → handhelds and phones."
+    },
+    {
+      "name": "Strategy's four X's",
+      "device": "The empire-builder's to-do list: Expand, Explore, Exploit, Exterminate",
+      "unpacks": "The four X's of RTS in the book. Today '4X' also names the mobile alliance-war strategy genre."
+    },
+    {
+      "name": "Arcade cabinets",
+      "device": "Stand, Sit, Strap in",
+      "unpacks": "Upright (stand), Cocktail table (sit), Cockpit (lean or sit inside)."
+    },
+    {
+      "name": "Live-Game Theme Park",
+      "device": "Rides, Tracks, Tokens, Parades, Gift shops, Billboards, Footstep counters",
+      "unpacks": "Game designer (rides), level designer (tracks), economy designer (tokens), LiveOps (parades), monetization (gift shops), UA (billboards), data analyst (footsteps). PM decides what to build next, QA checks the bolts, the director asks 'is it fun?'"
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L01-f01",
+      "q": "What three things make an activity a game, according to Rogers?",
+      "a": "At least one player, rules, and a victory condition.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f02",
+      "q": "What is a video game, in Rogers' definition?",
+      "a": "A game played on a video screen.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f03",
+      "q": "Why does hand ball break the 'players in conflict' definition?",
+      "a": "It needs only one player, so there's nobody to be in conflict with.",
+      "type": "why"
+    },
+    {
+      "id": "L01-f04",
+      "q": "What turns hand ball from a time-waster into a game?",
+      "a": "Adding rules and an objective (victory condition), which also creates a failure state.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f05",
+      "q": "Which early video game was inspired by something as simple as hand ball?",
+      "a": "Tennis for Two.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f06",
+      "q": "Whose definition of play is 'a voluntary effort to overcome unnecessary obstacles'?",
+      "a": "Bernard Suits (The Grasshopper, 1978).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f07",
+      "q": "What is Danny Bilson's rule of thumb for a game's objective?",
+      "a": "Sum it up as simply as an old Milton Bradley board game did on its box.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f08",
+      "q": "Which board game is the book's counterexample of a too-complex objective?",
+      "a": "Mouse Trap.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f09",
+      "q": "Fill in: Battleship's box objective is to sink all of your ____'s ships.",
+      "a": "opponent",
+      "type": "cloze"
+    },
+    {
+      "id": "L01-f10",
+      "q": "Name the three lab-era games Rogers lists, with years.",
+      "a": "OXO (1952), Spacewar! (1962), Colossal Cave (1976).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f11",
+      "q": "Where did the first video game programmers work?",
+      "a": "University computer labs (like MIT) and military facilities like Brookhaven National Laboratory.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f12",
+      "q": "What was the first arcade video game, and when?",
+      "a": "Computer Space, 1971.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f13",
+      "q": "Who created Computer Space, and what inspired them?",
+      "a": "Future Atari founders Ted Dabney and Nolan Bushnell, after playing Spacewar! at the University of Utah.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f14",
+      "q": "Where were the first arcade games found, before dedicated arcades?",
+      "a": "In bars.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f15",
+      "q": "What are vector graphics?",
+      "a": "Images constructed from lines (e.g. Asteroids, Battlezone, Star Castle).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f16",
+      "q": "What are raster graphics?",
+      "a": "Images built from a grid of dots called pixels (e.g. Galaxian, Pac-Man).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f17",
+      "q": "Why did color raster graphics matter for game characters?",
+      "a": "They made cartoon-style characters possible, and Pac-Man and Donkey Kong became pop icons.",
+      "type": "why"
+    },
+    {
+      "id": "L01-f18",
+      "q": "Name the three early-1980s arcade cabinet styles.",
+      "a": "Uprights, cocktail tables, cockpits.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f19",
+      "q": "What was Virtual World's BattleTech Center?",
+      "a": "A steampunk arcade with linked battle pods where 8 players fought in virtual mechs.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f20",
+      "q": "Why did the arcade golden age end?",
+      "a": "Elaborate cabinets needed floor space and costly maintenance, and late-1990s home systems matched and then beat arcade graphics.",
+      "type": "why"
+    },
+    {
+      "id": "L01-f21",
+      "q": "What replaced video games in many arcades?",
+      "a": "Redemption machines (like claw games) and skill games like Skee-Ball.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f22",
+      "q": "What's the difference between a LAN center and an internet café?",
+      "a": "Both rent play time. LAN centers mix retail and social space for PC and console play; internet cafés emphasize a café atmosphere.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f23",
+      "q": "What is a 'dark ride'?",
+      "a": "An amusement-park ride past scenes of (usually) animatronic characters, like Pirates of the Caribbean.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f24",
+      "q": "Which game-ified dark ride also came home on the Wii?",
+      "a": "Toy Story Midway Mania (2008).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f25",
+      "q": "What two features set home consoles apart from arcade machines?",
+      "a": "Multi-purpose controllers (many buttons, triggers, analog sticks) and swappable media (cartridge, CD, DVD).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f26",
+      "q": "Which game and handheld made handheld gaming take off?",
+      "a": "Tetris on the Nintendo Game Boy (1989).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f27",
+      "q": "What were the first handheld games limited to?",
+      "a": "One game per device (e.g. Auto Race, Game & Watch).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f28",
+      "q": "Why did the keyboard lead to new PC genres?",
+      "a": "It allowed much richer input than arcade controls, which created text adventures.",
+      "type": "why"
+    },
+    {
+      "id": "L01-f29",
+      "q": "Which input device does Rogers credit for the rise of the FPS?",
+      "a": "The mouse.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f30",
+      "q": "Which genres does Rogers say remain strong on PC?",
+      "a": "Strategy, FPS and MMOs.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f31",
+      "q": "What does a game genre describe?",
+      "a": "The style of gameplay.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f32",
+      "q": "What sets fighting games apart from other action games?",
+      "a": "The depth of their player controls.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f33",
+      "q": "What is action-arcade's emphasis?",
+      "a": "Twitch gameplay, scoring, and short play time.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f34",
+      "q": "What separates the shooter subgenres from each other?",
+      "a": "The camera view (first person, behind the player, or arcade-style views).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f35",
+      "q": "What is the trade-off of the FPS camera vs third person?",
+      "a": "Tighter and more limiting, but more personal.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f36",
+      "q": "What is the player's avatar usually in a shmup?",
+      "a": "A vehicle (like a spaceship) rather than a character.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f37",
+      "q": "Three things MMORPGs are known for?",
+      "a": "PvP, repetitive grinding, and group battles called raids.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f38",
+      "q": "What defines survival/horror?",
+      "a": "Surviving a horror scenario with limited resources, like scarce ammo.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f39",
+      "q": "Fill in: the four X's of RTS are expansion, exploration, exploitation and ____.",
+      "a": "extermination",
+      "type": "cloze"
+    },
+    {
+      "id": "L01-f40",
+      "q": "Why does turn-based strategy allow more strategy than real-time?",
+      "a": "The slower pace gives players time to think.",
+      "type": "why"
+    },
+    {
+      "id": "L01-f41",
+      "q": "Name two hybrid games the book uses to show genre mixing.",
+      "a": "Grand Theft Auto (five genres) and Tuper Tario Tros. (Super Mario Bros. + Tetris).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f42",
+      "q": "Who made the original Prince of Persia single-handedly?",
+      "a": "Jordan Mechner (he even composed the music).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f43",
+      "q": "Why is placeholder art called 'programmer art'?",
+      "a": "Early programmers made all the art, and it was blocky and crude.",
+      "type": "why"
+    },
+    {
+      "id": "L01-f44",
+      "q": "What does a technical artist do?",
+      "a": "Supports all artists, e.g. rigging models for animators and teaching new tools.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f45",
+      "q": "What is the designer's core role, regardless of title?",
+      "a": "Create the ideas and rules that make up a game.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f46",
+      "q": "What do system designers define, per the book?",
+      "a": "How game elements relate to one another, e.g. the economy or tech tree.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f47",
+      "q": "What do level designers do, per the book?",
+      "a": "Make paper maps, build grey-box worlds, and populate levels with enemies and treasure.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f48",
+      "q": "Why do producers often become the 'face of the game'?",
+      "a": "They're the one team member who can keep all the moving parts straight.",
+      "type": "why"
+    },
+    {
+      "id": "L01-f49",
+      "q": "What three skills does a good tester need?",
+      "a": "Patience, persistence and great communication.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f50",
+      "q": "How does game music differ from film music, per Rogers?",
+      "a": "Game themes are usually very short or must repeat over and over.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f51",
+      "q": "What two kinds of sound cues does a sound designer create to help the player?",
+      "a": "Positive sounds (doing well, good loot) and warning sounds (danger, bad choices).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f52",
+      "q": "List the five reasons game writers get hired.",
+      "a": "Rewrite the story, write dialogue, clarify prompts, write the manual and fiction support, add star power.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f53",
+      "q": "What six things do publishers do?",
+      "a": "Fund, manage production, handle legal, manufacture, PR/marketing, distribute.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f54",
+      "q": "What is the creative manager's 'thousand-foot view'?",
+      "a": "An unbiased, high-level outside view of a game that roots out design and construction weaknesses.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f55",
+      "q": "What does a publisher's technical director do in due diligence?",
+      "a": "Assesses whether a new team can actually make the game it's being hired for.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f56",
+      "q": "Your event spec says 'collect stuff to win stuff'. A teammate can't explain the goal. Which Level 1 idea applies?",
+      "a": "Bilson's box test: state the objective in one clear sentence (Battleship, not Mouse Trap).",
+      "type": "apply"
+    },
+    {
+      "id": "L01-f57",
+      "q": "You're designing an idle game with no final ending. How do you keep it game-like per Rogers' definition?",
+      "a": "Add clear short-term victory conditions (stage clears, chapter goals, event milestones), since games need a victory condition.",
+      "type": "apply"
+    },
+    {
+      "id": "L01-f58",
+      "q": "Your pitch: 'Tower defense meets card collection meets live PvP.' Which Universal Truth backs it?",
+      "a": "Genres come in all shapes and sizes: mix and match.",
+      "type": "apply"
+    },
+    {
+      "id": "L01-f59",
+      "q": "Apple's ATT disrupted your UA overnight. Which Universal Truth applies?",
+      "a": "Technology never stops advancing, so keep adapting or get left behind.",
+      "type": "apply"
+    },
+    {
+      "id": "L01-f60",
+      "q": "A designer says 'level 88 sucks' in review. What does Rogers demand instead?",
+      "a": "Explain WHY with specifics (cause, evidence, fix). 'It sucks' is never acceptable.",
+      "type": "apply"
+    },
+    {
+      "id": "L01-f61",
+      "q": "Players keep missing a critical cue that's only a sound. Mobile fix?",
+      "a": "Back every audio cue with a visual (and haptic) one, since many mobile players play muted.",
+      "type": "apply"
+    },
+    {
+      "id": "L01-f62",
+      "q": "In a modern F2P studio, who owns currencies, sources and sinks?",
+      "a": "The economy designer.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f63",
+      "q": "In a modern F2P studio, who owns the event calendar?",
+      "a": "The LiveOps designer.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f64",
+      "q": "How does a modern F2P product manager differ from the book's?",
+      "a": "The book's PM is a publisher-side schedule, milestone and payments manager. The F2P PM owns KPIs, roadmap and A/B testing.",
+      "type": "why"
+    },
+    {
+      "id": "L01-f65",
+      "q": "What two numbers must a UA manager keep in the right relationship?",
+      "a": "LTV must exceed CPI (lifetime value above cost per install).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f66",
+      "q": "Your rewards for a new event would double players' weekly booster income. Who should flag it?",
+      "a": "The economy designer (sources vs sinks, inflation risk).",
+      "type": "apply"
+    },
+    {
+      "id": "L01-f67",
+      "q": "Fill in: Level 1's last Universal Truth says making video games takes many different kinds of ____.",
+      "a": "people",
+      "type": "cloze"
+    },
+    {
+      "id": "L01-f68",
+      "q": "Fill in: arcade designers' 'continue?' countdown is the ancestor of F2P's '+5 ____' offer.",
+      "a": "moves",
+      "type": "cloze"
+    },
+    {
+      "id": "L01-f69",
+      "q": "Why does Rogers say you need a simple objective?",
+      "a": "If you can't sum up the objective quickly and clearly, players (and your team) won't get it, which signals a design problem.",
+      "type": "why"
+    },
+    {
+      "id": "L01-f70",
+      "q": "Why did consoles let players play many kinds of games when arcade cabinets couldn't?",
+      "a": "Their controllers had enough buttons, triggers and analog controls for variety, and swappable media replaced one-game boards.",
+      "type": "why"
+    },
+    {
+      "id": "L01-f71",
+      "q": "Why did longer PC sessions matter for genres?",
+      "a": "Time at the computer allowed longer experiences, so simulations, construction/management and strategy games grew.",
+      "type": "why"
+    },
+    {
+      "id": "L01-f72",
+      "q": "Why were laserdisc games like Dragon's Lair rare exceptions?",
+      "a": "They needed laserdiscs to play animated video footage, unlike normal sprite-based hardware.",
+      "type": "why"
+    },
+    {
+      "id": "L01-f73",
+      "q": "Why does Rogers say even placeholder sound effects matter?",
+      "a": "Games come alive once sound is added, and sound carries gameplay information.",
+      "type": "why"
+    },
+    {
+      "id": "L01-f74",
+      "q": "Why does Rogers advise would-be 'idea people' to choose design over writing?",
+      "a": "Game writers are usually hired late as freelancers, while designers create the ideas and rules.",
+      "type": "why"
+    },
+    {
+      "id": "L01-f75",
+      "q": "Why is specialization increasing on game teams?",
+      "a": "Games keep getting bigger, more complex and longer to make.",
+      "type": "why"
+    },
+    {
+      "id": "L01-f76",
+      "q": "Why do composers need a distinct style to get hired?",
+      "a": "Designers hire the sample matching the style in their head, and unique music that fits stands out (Danny Elfman effect).",
+      "type": "why"
+    },
+    {
+      "id": "L01-f77",
+      "q": "Why does the claw-machine footnote matter to F2P designers?",
+      "a": "Games that feel rigged destroy trust. Fair, transparent odds (like winnable Japanese claws) keep players.",
+      "type": "why"
+    },
+    {
+      "id": "L01-f78",
+      "q": "You're pitching a match-3 with a renovation story to a publisher. Which genre lesson are you using?",
+      "a": "Mix and match genres (puzzle + construction/management + story), like GTA or Tuper Tario Tros.",
+      "type": "apply"
+    },
+    {
+      "id": "L01-f79",
+      "q": "Your runner's hazards are hard to read at speed. Which book genre's lessons should you study?",
+      "a": "Platformers, the runner's ancestor (jumping through challenging environments with readable hazards).",
+      "type": "apply"
+    },
+    {
+      "id": "L01-f80",
+      "q": "A teammate wants a feature with 4 new currencies in the first session. Which Level 1 warning applies?",
+      "a": "The Mouse Trap problem: too many systems blur the objective. Introduce them gradually.",
+      "type": "apply"
+    },
+    {
+      "id": "L01-f81",
+      "q": "You're in QA at a mobile studio and want to become a designer. What does Level 1 say?",
+      "a": "Testing is a classic gateway: testers become designers, artists, producers and studio heads. Learn fast and prepare.",
+      "type": "apply"
+    },
+    {
+      "id": "L01-f82",
+      "q": "Your event shipped with a misconfigured reward that gave away premium currency. Which modern role should have caught it?",
+      "a": "QA (live event config checks), with the economy designer reviewing reward values.",
+      "type": "apply"
+    },
+    {
+      "id": "L01-f83",
+      "q": "Your CPI is rising and installs are falling. Which role and team do you call?",
+      "a": "The UA manager with the creative/ad team (new video and playable ads).",
+      "type": "apply"
+    },
+    {
+      "id": "L01-f84",
+      "q": "You need to know whether last weekend's event lifted D7 retention. Who do you ask?",
+      "a": "The data analyst (cohort and A/B analysis).",
+      "type": "apply"
+    },
+    {
+      "id": "L01-f85",
+      "q": "A studio asks you to judge an outside team's prototype without bias. Which book role are you playing?",
+      "a": "Creative manager, giving the thousand-foot view.",
+      "type": "apply"
+    },
+    {
+      "id": "L01-f86",
+      "q": "Fill in: A creative manager's best benefit is the 'thousand-____ view'.",
+      "a": "foot",
+      "type": "cloze"
+    },
+    {
+      "id": "L01-f87",
+      "q": "Fill in: Placeholder art is nicknamed '____ art'.",
+      "a": "programmer",
+      "type": "cloze"
+    },
+    {
+      "id": "L01-f88",
+      "q": "Fill in: Miyamoto created memorable characters with an 8-bit CPU and ____-bit pixels.",
+      "a": "2",
+      "type": "cloze"
+    },
+    {
+      "id": "L01-f89",
+      "q": "Which two scholars' definitions of \"game\" does Rogers say try too hard to sound smart, and what does each claim?",
+      "a": "Chris Crawford (1982): a closed formal system that subjectively represents part of reality. Kevin Langdon (1979): a contest of players in conflict with each other.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f90",
+      "q": "What does \"n00b\" mean, and where did the word spread?",
+      "a": "Short for \"newbie\", someone new to a game. It predates the Internet but spread through online communities, and it implies inexperience.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f91",
+      "q": "What defines a platformer, and what was its status at one time?",
+      "a": "A mascot character jumps (or swings, bounces) through challenging platform environments, sometimes with shooting or fighting. It was once the most popular subgenre (Mario titles).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f92",
+      "q": "What is the emphasis of stealth games, and what are two examples?",
+      "a": "Avoiding enemies instead of fighting them directly: the Metal Gear series and Thief: The Dark Project.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f93",
+      "q": "What is a beat 'em up (hack 'n' slash)?",
+      "a": "You battle wave after wave of enemies that grow harder (Double Dragon, Castle Crashers).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f94",
+      "q": "What is the RPG subgenre based on, and how do players progress?",
+      "a": "Pen-and-paper RPGs like Dungeons & Dragons. You choose a character class and grow stats through combat, exploration and finding treasure (Knights of the Old Republic, Mass Effect).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f95",
+      "q": "What do players do in a graphical adventure?",
+      "a": "Use a mouse or cursor to click around, uncover clues and navigate (Myst, Monkey Island, Sam & Max).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f96",
+      "q": "What separates life simulation from construction/management?",
+      "a": "Construction/management: build and expand a place with limited resources (SimCity, Zoo Tycoon). Life sim: build and nurture relationships with artificial life forms (The Sims, Princess Maker).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f97",
+      "q": "What are pet simulators descended from, and what do they revolve around?",
+      "a": "Tamagotchi digital pets. You nurture animals through feeding and relationships (World of Zoo).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f98",
+      "q": "How wide is the music/rhythm genre, and what format do party games usually use?",
+      "a": "Music/rhythm: match a beat to score, from Simon to Rock Band. Party: designed for several competing players, usually as minigames (Mario Party, Buzz!).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f99",
+      "q": "How does the book define puzzle games?",
+      "a": "Games of logic and pattern completion, either slow and methodical or reliant on hand-eye coordination (The Incredible Machine, Tetris).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f100",
+      "q": "What is the sports management subgenre?",
+      "a": "You manage players or teams rather than playing the sport (FIFA Manager, NFL Head Coach). Sports franchises often ship annual versions.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f101",
+      "q": "What is tower defense, according to the book, and how new was it in 2010?",
+      "a": "A relatively new subgenre on PC and handhelds where you build automated projectile-firing towers that hold enemies back (Defense Grid, Lock's Quest).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f102",
+      "q": "What is vehicle simulation's goal, and what are its two subgenres?",
+      "a": "Make piloting or driving feel as \"real\" as possible. Subgenres: driving (race and upgrade vehicles) and flying (for pleasure, combat or space).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f103",
+      "q": "Which other classifications does the book say cut across several genres?",
+      "a": "Adult games, serious games, advert games (advergames) and vehicular combat.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f104",
+      "q": "In what order did game teams evolve, per Rogers?",
+      "a": "Solo creators (Prince of Persia), then two or three programmers, artists joining as players wanted better looks, design by whoever had the idea, and finally a dedicated design role. Specialization keeps growing.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f105",
+      "q": "What specializations does the book list for programmers?",
+      "a": "Tools programmers, physics/simulation programmers (realistic water, inverse kinematics) and sound-tools programmers. Some freelance as contract \"hired guns\".",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f106",
+      "q": "Which art roles does the book list?",
+      "a": "Concept artist, storyboard artist, 3-D modeler/environment artist, texture artist, VFX artist, UI artist, animator, technical artist and art director.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f107",
+      "q": "How did 3-D reach games in the book's history?",
+      "a": "Film first (Tron, 1982; Luxo Jr., 1986), then pre-rendered 3-D in Myst (1993) and Donkey Kong Country (1994). True 3-D existed in Battlezone (1980), and the 1994 PlayStation pushed realistic 3-D at home.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f108",
+      "q": "Which hand-drawn, hand-animated games show what better hardware allowed artists?",
+      "a": "Darkstalkers (Capcom, 1994) and Metal Slug (SNK, 1996).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f109",
+      "q": "How many fields are on Jesse Schell's \"well-rounded designer\" list that Rogers endorses?",
+      "a": "19 fields, from the arts (animation, visual arts, music, sound design) and people skills (psychology, anthropology, public speaking) to economics, mathematics and technical writing.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f110",
+      "q": "List the producer's responsibilities.",
+      "a": "Hire and build teams, write contracts, contribute to design, manage the schedule, balance the budget, resolve disputes between creative and programming leads, represent the team to management and publishers, coordinate outside art/music/cutscenes, and arrange testing and localization.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f111",
+      "q": "When do producers usually join and leave a project?",
+      "a": "They are typically the first team member on and the last off.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f112",
+      "q": "What is \"quality assurance\", and how long does it take?",
+      "a": "QA is just the test department. Reaching the publisher's quality bar takes weeks, if not months, of thorough testing.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f113",
+      "q": "What are the publisher-side product manager's duties?",
+      "a": "Manage the team against the agreed schedule, help set production priorities, act as go-between with the publisher's legal department, review and approve milestones, pay the studio, and work with the ESRB for a rating.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f114",
+      "q": "What is the ESRB?",
+      "a": "The Entertainment Software Rating Board, which determines a game's rating in the US.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f115",
+      "q": "What is a \"build\" (or \"burn\")?",
+      "a": "An in-progress version of the game that can be played on a computer or special console.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f116",
+      "q": "What has Rogers done as a THQ creative manager?",
+      "a": "Helped teams create and develop games, written pitches, worked with licensors on concepts, played builds to keep them true to the core idea and fun, and supplied press materials with marketing and PR.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f117",
+      "q": "What does a publisher's art director do?",
+      "a": "Like a creative manager for art only: helps shape a visual style, suggests new directions, globalizes the visual language so it is clear to the player, and works with marketing on packaging and promotional assets.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f118",
+      "q": "What does business development do at a publisher?",
+      "a": "Builds relationships with studios, runs pitch meetings, reviews demos, makes deals with outside studios and scouts emerging studios to acquire.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f119",
+      "q": "Match the publishing role: negotiates contracts and watches for legal trouble; builds marketing strategy and print material; handles press events; runs the test department.",
+      "a": "Lawyer; brand manager; PR manager; QA manager.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f120",
+      "q": "Who are talent recruiters, game reviewers and licensors?",
+      "a": "Recruiters place people with developers and publishers. Reviewers play games before release and write reviews and interviews. Licensors work for entertainment companies and make sure their brands are represented properly in games.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f121",
+      "q": "Why is the Vectrex the footnote exception to the console definition?",
+      "a": "Its processor, screen, controller and a game were all in one self-contained portable unit (Smith Engineering, 1982).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f122",
+      "q": "How far did handheld power travel in the book's story?",
+      "a": "From the digital blips of Mattel Football to the Sony PSP, whose processor can run the equivalent of a PlayStation One game.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f123",
+      "q": "Name the three elaborate arcade cabinets Rogers highlights.",
+      "a": "Tail Gunner (Vectorbeam, 1979, back-to-back cockpit), Star Trek (Sega, 1982, Captain Kirk's command chair) and Out Run (Sega, 1986, a moving Ferrari Testarossa).",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f124",
+      "q": "How did late-1990s arcade games change?",
+      "a": "They turned into mini theme-park rides: rideable race horses, gyroscopic simulators and fighting booths where you used real punches and kicks.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f125",
+      "q": "What did Rogers recall about the BattleTech pods?",
+      "a": "Photo-booth-sized cockpits with dual joysticks, foot pedals and banks of working dipswitches. Learning every switch took about a half-hour session.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f126",
+      "q": "What does the footnote say about the Nintendo DS and Game & Watch?",
+      "a": "The DS has several design similarities to the original Game & Watch devices, which Rogers says is no surprise.",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f127",
+      "q": "Why were mobile games growing in 2010, according to Rogers?",
+      "a": "Phone games are quick and less expensive to make, so the number of mobile developers exploded in a few years.",
+      "type": "why"
+    },
+    {
+      "id": "L01-f128",
+      "q": "Which designer task does Rogers postpone to later in the book?",
+      "a": "Making sure the game is \"fun\".",
+      "type": "basic"
+    },
+    {
+      "id": "L01-f129",
+      "q": "Fill in: Bilson says a game's objective should read as simply as an old ____ board game box.",
+      "a": "Milton Bradley",
+      "type": "cloze"
+    },
+    {
+      "id": "L01-f130",
+      "q": "State Level 1's five Universal Truths in your own words.",
+      "a": "1) A game needs a player, rules and a victory condition. 2) Keep the objective as simple as a classic board game box. 3) Genres come in every shape, so mix and match. 4) Technology keeps advancing, so adapt. 5) Making games takes many kinds of people.",
+      "type": "basic"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "L01-q01",
+      "q": "According to Rogers, which is NOT required for an activity to be a game?",
+      "options": [
+        "At least one player",
+        "Rules",
+        "Players in conflict with each other",
+        "A victory condition"
+      ],
+      "answer": 2,
+      "why": "Hand ball has one player and no conflict, yet it's a game once you add rules and a victory condition. 'Players in conflict' is Kevin Langdon's definition, which Rogers rejects."
+    },
+    {
+      "id": "L01-q02",
+      "q": "Which objective best passes Danny Bilson's box test?",
+      "options": [
+        "Clear the board by matching 3 candies before you run out of moves",
+        "Manage your empire's 9 resources across 4 tech trees while forming alliances",
+        "Experience an emotional journey through a richly detailed world",
+        "Collect, upgrade, evolve, fuse and ascend your heroes"
+      ],
+      "answer": 0,
+      "why": "One clear sentence with a clear win. The others are a feature list (Mouse Trap-style), a vague mood statement, or a system dump with no victory condition."
+    },
+    {
+      "id": "L01-q03",
+      "q": "What was the first arcade video game?",
+      "options": [
+        "Pong",
+        "Tennis for Two",
+        "Spacewar!",
+        "Computer Space"
+      ],
+      "answer": 3,
+      "why": "Computer Space (1971) by Dabney and Bushnell. Spacewar! inspired it but ran on lab computers, and Tennis for Two was an oscilloscope experiment. Pong isn't named in the chapter."
+    },
+    {
+      "id": "L01-q04",
+      "q": "Asteroids, Battlezone and Star Castle are examples of:",
+      "options": [
+        "Raster graphics",
+        "Pre-rendered 3D",
+        "Vector graphics",
+        "LCD handheld games"
+      ],
+      "answer": 2,
+      "why": "Vector graphics draw with lines. Raster uses a pixel grid (Galaxian, Pac-Man). Pre-rendered 3D is Myst and DKC. LCD is Game & Watch."
+    },
+    {
+      "id": "L01-q05",
+      "q": "Which arcade cabinet style let players sit at a small table with the screen in the tabletop?",
+      "options": [
+        "Upright",
+        "Cocktail table",
+        "Cockpit",
+        "Battle pod"
+      ],
+      "answer": 1,
+      "why": "Cocktail tables put the game in a table top. Uprights are played standing. Cockpits are immersive sit-in or lean-in cabinets, and battle pods were BattleTech's linked cockpits."
+    },
+    {
+      "id": "L01-q06",
+      "q": "Per the book, why did arcades decline in the late 1990s?",
+      "options": [
+        "Big cabinets were costly to house and maintain, and home systems matched and then beat arcade graphics",
+        "Laws banned video arcades",
+        "Mobile phones stole their players",
+        "Players lost interest in multiplayer"
+      ],
+      "answer": 0,
+      "why": "Floor space, maintenance cost and better home hardware. Mobile came later, there was no ban, and multiplayer moved to LAN centers rather than disappearing."
+    },
+    {
+      "id": "L01-q07",
+      "q": "Which two innovations most distinguished home consoles from arcade machines?",
+      "options": [
+        "Color graphics and sound",
+        "Motion controls and 3D",
+        "Online play and achievements",
+        "Multi-purpose controllers and swappable game media"
+      ],
+      "answer": 3,
+      "why": "Consoles had controllers flexible enough for many games and cartridges/CDs/DVDs to swap games, unlike one-game arcade boards. The others aren't what the book highlights."
+    },
+    {
+      "id": "L01-q08",
+      "q": "According to Rogers, the rise of the first-person shooter is credited to:",
+      "options": [
+        "The keyboard",
+        "The mouse",
+        "The analog stick",
+        "CD-ROM storage"
+      ],
+      "answer": 1,
+      "why": "The mouse made the FPS popular on PC. The keyboard enabled text adventures, and CD/DVD storage enabled more complex games generally."
+    },
+    {
+      "id": "L01-q09",
+      "q": "In the book, which subgenres are filed under Adventure?",
+      "options": [
+        "Platformer, stealth, fighting",
+        "RTS, turn-based, tower defense",
+        "Graphical adventure, RPG, MMORPG, survival/horror",
+        "Driving, flying"
+      ],
+      "answer": 2,
+      "why": "Rogers groups graphical adventure, RPG, MMORPG and survival/horror under Adventure. The others are Action, Strategy and Vehicle simulation subgenres."
+    },
+    {
+      "id": "L01-q10",
+      "q": "Your mobile 4X game's first hour is all combat and no base growth. Which classic framework helps you check the pacing of its core verbs?",
+      "options": [
+        "The four X's: expand, explore, exploit, exterminate",
+        "The three cabinet styles",
+        "Vector vs raster graphics",
+        "The five writer reasons"
+      ],
+      "answer": 0,
+      "why": "The four X's are strategy's core verbs. Balancing when each appears is a pacing question. The other frameworks describe hardware or staffing."
+    },
+    {
+      "id": "L01-q11",
+      "q": "Your team pitches 'roguelite + one-thumb shooter + idle progression'. Which Level 1 truth supports this?",
+      "options": [
+        "A game needs at least one player",
+        "Keep the objective simple",
+        "Testers prevent games from sucking",
+        "Genres come in all shapes and sizes: mix and match"
+      ],
+      "answer": 3,
+      "why": "Rogers explicitly encourages mixing genres (GTA, Tuper Tario Tros.). Keeping the objective simple still applies, but the hybrid itself is a mix-and-match move."
+    },
+    {
+      "id": "L01-q12",
+      "q": "Which statement about designers matches Rogers?",
+      "options": [
+        "Saying a game 'sucks' is enough if you're senior",
+        "Designers only write documents; producers decide the rules",
+        "Designers create the ideas and rules and must explain why something is good or bad",
+        "Designers don't need to love games"
+      ],
+      "answer": 2,
+      "why": "The role is ideas and rules, plus articulating why. 'It sucks' is never acceptable, and loving games is a baseline, not optional."
+    },
+    {
+      "id": "L01-q13",
+      "q": "In the book, a 'system designer' works on:",
+      "options": [
+        "How game elements relate, e.g. the economy or tech tree",
+        "Paper maps and grey-box levels",
+        "Camera choreography scripts",
+        "Player-vs-enemy balancing only"
+      ],
+      "answer": 0,
+      "why": "Level designers do maps and grey boxes, scripters do camera and trap scripting, and combat designers do player-vs-enemy balance."
+    },
+    {
+      "id": "L01-q14",
+      "q": "Which task does Rogers say may look menial but is among a producer's most valuable?",
+      "options": [
+        "Writing the GDD",
+        "Testing every level personally",
+        "Composing placeholder music",
+        "Ordering dinner for a team working late"
+      ],
+      "answer": 3,
+      "why": "Caring for the team (like a late-night dinner order) matters a lot. The other tasks belong to designers, composers and testers."
+    },
+    {
+      "id": "L01-q15",
+      "q": "Why does Rogers call testing a great gateway job?",
+      "options": [
+        "It pays the most",
+        "You learn a lot about games fast, and testers move into design, art, production and studio leadership",
+        "It requires no skills",
+        "Testers set the release date"
+      ],
+      "answer": 1,
+      "why": "He has seen testers become designers, artists, producers and studio heads. Testing does require patience, persistence and communication, and doesn't control release dates."
+    },
+    {
+      "id": "L01-q16",
+      "q": "A player complains your mobile game's 'danger' warning is easy to miss on the bus. What's the best fix given modern mobile play?",
+      "options": [
+        "Make the warning sound louder",
+        "Remove the hazard",
+        "Back the audio cue with a clear visual and haptic signal",
+        "Add a voice-over"
+      ],
+      "answer": 2,
+      "why": "Sound designers create warning cues, but many mobile players play muted, so cues need visual and haptic backups. Louder sound and voice-over still fail on mute, and removing the hazard dodges the design problem."
+    },
+    {
+      "id": "L01-q17",
+      "q": "According to Rogers, game writers are typically:",
+      "options": [
+        "The first people hired, to come up with the core idea",
+        "Full-time leads who own the design",
+        "Freelancers brought in late to fix story, write dialogue, clarify prompts, write support material or add star power",
+        "Unnecessary in modern games"
+      ],
+      "answer": 2,
+      "why": "Unlike Hollywood, game writers usually join late. If you want to be the idea person, Rogers says become a designer."
+    },
+    {
+      "id": "L01-q18",
+      "q": "In the book, the publisher's product manager does all of these EXCEPT:",
+      "options": [
+        "Approves milestones and pays the studio",
+        "Composes the game's music",
+        "Works with the ESRB to secure a rating",
+        "Liaises between the studio and the legal department"
+      ],
+      "answer": 1,
+      "why": "Music is the composer's job. The other three are listed product manager duties."
+    },
+    {
+      "id": "L01-q19",
+      "q": "Your F2P game's soft-launch numbers are mediocre and the team is too close to see why. Which book role's key value do you need?",
+      "options": [
+        "The lawyer's contract review",
+        "The brand manager's box art",
+        "The QA manager's bug sheets",
+        "The creative manager's thousand-foot view"
+      ],
+      "answer": 3,
+      "why": "An unbiased outside perspective that spots design weaknesses and suggests directions. Today that's greenlight reviews or publishing producers reading KPIs and playing builds."
+    },
+    {
+      "id": "L01-q20",
+      "q": "Which modern F2P role is responsible for keeping currency sources and sinks balanced so the economy doesn't inflate?",
+      "options": [
+        "Economy designer",
+        "UA manager",
+        "Community manager",
+        "Level designer"
+      ],
+      "answer": 0,
+      "why": "Economy designers own currencies, sources and sinks. UA buys installs, community managers handle players, and level designers tune levels."
+    },
+    {
+      "id": "L01-q21",
+      "q": "Your match-3 needs a Halloween event planned on the calendar with tournament tiers. Who usually owns this?",
+      "options": [
+        "The LiveOps designer",
+        "The technical director",
+        "The data analyst",
+        "The sound designer"
+      ],
+      "answer": 0,
+      "why": "LiveOps designers own the event calendar and event structure. The data analyst measures results afterward, and the others aren't event owners."
+    },
+    {
+      "id": "L01-q22",
+      "q": "What is the key profitability rule a UA manager watches?",
+      "options": [
+        "DAU must exceed MAU",
+        "Session length must exceed 30 minutes",
+        "Lifetime value (LTV) must exceed cost per install (CPI)",
+        "Every player must make a purchase"
+      ],
+      "answer": 2,
+      "why": "If acquiring a player costs more than they're worth over their lifetime, growth loses money. DAU can't exceed MAU, and the others aren't UA rules."
+    },
+    {
+      "id": "L01-q23",
+      "q": "Rogers' 2010 question 'are mobile games the future of gaming?' Which answer best fits 2026?",
+      "options": [
+        "No, mobile faded after 2012",
+        "Only in Japan",
+        "Only for hyper-casual games",
+        "Yes: mobile became the largest games segment, roughly half of global revenue"
+      ],
+      "answer": 3,
+      "why": "Mobile grew into the biggest segment of the games industry, roughly half of global game revenue in recent years, across many genres and regions, not just Japan or hyper-casual."
+    }
+  ],
+  "sideQuests": [
+    {
+      "id": "L01-s01",
+      "title": "Box test x5",
+      "task": "Write one-sentence 'board-game box' objectives for 5 F2P games. Flag any that need more than 12 words as Mouse Traps.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L01-s02",
+      "title": "P-R-V audit",
+      "task": "Pick a LiveOps event in a game you play. Write its player requirement, 3 rules, victory condition and failure state. Is the victory condition clear in the UI?",
+      "minutes": 10,
+      "xp": 40
+    },
+    {
+      "id": "L01-s03",
+      "title": "Genre DNA",
+      "task": "Write 3 top-grossing mobile games as hybrid formulas: 'Book genre A + Book genre B + meta C'.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L01-s04",
+      "title": "Ancestor hunt",
+      "task": "Find one mobile game's oldest ancestor in the book's history (arcade, Game & Watch, PC strategy...) and write what it inherited.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L01-s05",
+      "title": "Role spotting",
+      "task": "Open a mobile studio's credits or careers page. Count the book roles vs modern-only roles (LiveOps, UA, data, monetization).",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L01-s06",
+      "title": "Fix the feedback",
+      "task": "Rewrite 'this level sucks' into a designer-grade critique with cause, evidence and a suggested fix.",
+      "minutes": 5,
+      "xp": 20
+    },
+    {
+      "id": "L01-s07",
+      "title": "Hand ball remix",
+      "task": "Invent a one-player game with one everyday object: 2 rules, 1 victory condition, 1 failure state. Play it for 2 minutes.",
+      "minutes": 5,
+      "xp": 20
+    }
+  ],
+  "mainQuests": [
+    {
+      "id": "L01-m01",
+      "title": "The Genre Lineage Poster",
+      "task": "Map 12 current mobile games onto mobile genre families, connect each to its book ancestor genre, and tag each as ad-driven, hybrid or IAP-driven. Circle one empty spot where a new hybrid could exist and pitch it in one sentence.",
+      "deliverable": "One poster image (Figma, Miro, Canva or paper).",
+      "doneWhen": "All 12 games placed with ancestor lines and monetization tags, plus one circled gap with a one-sentence hybrid pitch. Bonus: post it publicly.",
+      "minutes": 90,
+      "xp": 200
+    },
+    {
+      "id": "L01-m02",
+      "title": "Org chart of a hit",
+      "task": "Design the team for a hypothetical 30-person F2P match-3 studio after global launch: every role with headcount, what they own and the one metric they watch. Then trace your own event idea through the team in 8-12 steps.",
+      "deliverable": "One-page org chart + feature flow.",
+      "doneWhen": "Headcount totals 30, every role has an owner metric, and the flow includes PM, LiveOps, economy, level design, QA, data and UA steps.",
+      "minutes": 75,
+      "xp": 180
+    }
+  ],
+  "playLabs": [
+    {
+      "id": "L01-p01",
+      "game": "Royal Match",
+      "minutes": 10,
+      "lookFor": "The rules, victory condition, failure state, and what's offered at failure across 3 levels.",
+      "question": "Can you state each level's objective in under 8 words, and how does the game show it on screen?"
+    },
+    {
+      "id": "L01-p02",
+      "game": "Clash of Clans",
+      "minutes": 10,
+      "lookFor": "The four X's (expand, explore, exploit, exterminate) in the first sessions.",
+      "question": "Which X appears first and which last, and why might the designers order them that way?"
+    },
+    {
+      "id": "L01-p03",
+      "game": "Subway Surfers",
+      "minutes": 10,
+      "lookFor": "Platformer DNA: mascot, jumps and dodges, readable hazards.",
+      "question": "What did the runner keep from platformers, and what did it drop to fit a one-thumb phone game?"
+    },
+    {
+      "id": "L01-p04",
+      "game": "Any top-grossing F2P game",
+      "minutes": 10,
+      "lookFor": "Which parts came from UA/creative (store screenshots, video), LiveOps (current event) and monetization (first offer).",
+      "question": "Which team role would you most want on this game, and why?"
+    }
+  ],
+  "retrieval": [
+    {
+      "q": "What three things make an activity a game, and what makes it a video game?",
+      "a": "At least one player, rules, and a victory condition. A video game is a game played on a video screen."
+    },
+    {
+      "q": "How does hand ball break academic definitions, and what turns it into a game?",
+      "a": "One player (no conflict), no real reality metaphor. Rules (e.g. throw right, catch left) plus a victory condition (10 catches in a row) make it a game, and a failure state follows."
+    },
+    {
+      "q": "What's Danny Bilson's objective test, and why does Mouse Trap fail it?",
+      "a": "Sum up the objective like an old board-game box (Battleship: sink all opposing ships). Mouse Trap's box describes a long Rube Goldberg chain."
+    },
+    {
+      "q": "Name the lab-era games and their screen type.",
+      "a": "OXO (1952), Spacewar! (1962), Colossal Cave (1976), on small black-and-white oscilloscope screens."
+    },
+    {
+      "q": "What was the first arcade game, who made it, and what inspired it?",
+      "a": "Computer Space (1971) by Ted Dabney and Nolan Bushnell, inspired by Spacewar! at the University of Utah."
+    },
+    {
+      "q": "Vector vs raster graphics?",
+      "a": "Vector = lines (Asteroids). Raster = a grid of pixels (Galaxian, Pac-Man), which enabled cartoon characters."
+    },
+    {
+      "q": "Name the three early arcade cabinet styles.",
+      "a": "Upright (stand), cocktail table (sit, screen in the tabletop), cockpit (lean or sit inside)."
+    },
+    {
+      "q": "Why did arcades decline, and what replaced the games?",
+      "a": "Costly floor space and maintenance, and home systems matching and beating arcade graphics. Replaced by redemption machines and skill games like Skee-Ball."
+    },
+    {
+      "q": "What two features distinguished consoles from arcades?",
+      "a": "Versatile controllers and swappable media (cartridges, CDs, DVDs)."
+    },
+    {
+      "q": "How did input devices shape PC genres?",
+      "a": "Keyboard → text adventures. Longer sessions → sims, management, strategy. Mouse → FPS."
+    },
+    {
+      "q": "List the book's top-level genres.",
+      "a": "Action, Shooter, Adventure, Construction/management, Life simulation, Music/rhythm, Party, Puzzle, Sports, Strategy, Vehicle simulation."
+    },
+    {
+      "q": "What are the four X's?",
+      "a": "Expansion, exploration, exploitation, extermination."
+    },
+    {
+      "q": "Name the book's design specializations.",
+      "a": "Level designer, system designer, scripter, combat designer, creative director."
+    },
+    {
+      "q": "What are the five reasons writers get hired?",
+      "a": "Fix the story, write dialogue, clarify prompts, write manuals and fiction support, add star power."
+    },
+    {
+      "q": "What's the creative manager's thousand-foot view?",
+      "a": "An unbiased, high-level outside view that spots design and construction weaknesses and offers clear feedback or new directions."
+    },
+    {
+      "q": "How does a modern F2P PM differ from the book's product manager?",
+      "a": "The book's PM handles publisher-side schedule, milestones, payments, legal liaison and ratings. The F2P PM owns KPIs, roadmap and A/B tests."
+    },
+    {
+      "q": "Economy designer vs LiveOps designer?",
+      "a": "Economy: currencies, sources and sinks, reward values, inflation. LiveOps: event calendar, tournaments, seasons, passes and their rhythm."
+    }
+  ],
+  "feynman": "In 60 seconds, explain to a 12-year-old what makes something a game (use hand ball) and why a mobile game needs a whole team of different jobs (designer, LiveOps, data, UA) instead of one person.",
+  "links": [
+    "L00",
+    "L02",
+    "L03",
+    "L04",
+    "L07",
+    "L08",
+    "L09",
+    "L10",
+    "L11",
+    "L13",
+    "L14",
+    "L15",
+    "L17",
+    "F2P"
+  ]
+}

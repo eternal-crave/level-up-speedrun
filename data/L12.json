@@ -1,0 +1,1454 @@
+{
+  "id": "L12",
+  "order": 13,
+  "kind": "book",
+  "label": "Level 12",
+  "title": "The Nuts and Bolts of Mechanics",
+  "bookPages": "332–354",
+  "emoji": "⚙️",
+  "tagline": "Doors, death traps, timers and puzzles: the stuff that turns a hallway into a game.",
+  "f2pRelevance": 5,
+  "f2pWhy": "Match-3 blockers, merge-board obstacles, build/energy timers, paid hints, continues and minigame ad creatives are all Level 12 design decisions.",
+  "minutes": 55,
+  "tldr": [
+    "Fill levels with four kinds of stuff: mechanics, hazards, props and puzzles.",
+    "Hazards must look deadly, move predictably and kill fairly: no dropping rocks on the player's head.",
+    "Challenge builds skill; difficulty just punishes. Aim for challenge.",
+    "Orchestrate like music: one new element at a time, then combine, then twist. Rotate mechanics like pitchers.",
+    "Checkpoints face forward, sit somewhere safe and flat, and save automatically.",
+    "A puzzle is a challenge with a right answer: show the goal first, keep pieces simple, offer fair hints, no cat mustaches."
+  ],
+  "sections": [
+    {
+      "title": "Intro: the four types + mechanics",
+      "bites": [
+        {
+          "id": "L12-b01",
+          "hook": "An empty level is a hallway, not a game",
+          "body": "Levels need stuff in the player's way. Rogers sorts it into four types: **mechanics** (interactive objects), **hazards** (mechanics that hurt), **props** (objects that sit still until you mess with them) and **puzzles** (challenges with a right answer).",
+          "example": "A corridor with nothing but walls is just a loading screen you have to walk through. Add a door, a spike pit, a desk and a riddle and it becomes a level.",
+          "f2p": "A match-3 board is mostly mechanics + hazards (blockers) + puzzle (the goal). A merge board adds props (decorations).",
+          "memory": "M-H-P-P: Mechanics, Hazards, Props, Puzzles. 'My Hamster Plays Piano.'",
+          "tag": "list"
+        },
+        {
+          "id": "L12-b02",
+          "hook": "'Mechanics' suffers from multiple definition syndrome",
+          "body": "Board-game designers use mechanics to mean rule systems: turns, action points, resource management, bidding, dice. In this chapter, video-game mechanics are **things in the world that produce gameplay once the player engages with them**: jumped on, triggered with a button, or pushed around.",
+          "example": "Common ones: doors, pushable blocks, switches and levers, slippery floors, conveyor belts, moving platforms.",
+          "f2p": "F2P teams use both meanings: 'core mechanic' (swap-to-match) and board mechanics (conveyor belts, portals, blockers).",
+          "memory": "MDS = Multiple Definition Syndrome. Always ask which 'mechanics' someone means.",
+          "tag": "concept"
+        },
+        {
+          "id": "L12-b03",
+          "hook": "26 species of platform, and some of them bite",
+          "body": "Rogers' Platform Primer shows how one idea can behave dozens of ways: floating, moving, Ferris-wheel, pendulum, swinging, rolling, extending, flipping, tilting, tipping, see-saw, growing, exploding, collapsing, smashable, sinking, bouncy, switch-activated, returns-when-stepped-off, rope bridge, and ones that carry or chase hazards.",
+          "example": "An exploding platform counts down 3-2-1; a 'returns when stepped off' platform slides back home once you leave it.",
+          "f2p": "Match-3 has its own primer: layered blockers, spreading blockers, locks, drop-down collectibles, conveyor belts and portals. Variety comes from behavior, not new skins.",
+          "memory": "Same box, new behavior = new gameplay.",
+          "tag": "list"
+        },
+        {
+          "id": "L12-b04",
+          "hook": "How your hero opens a door says who they are",
+          "body": "Decide how doors open (normally, carefully, aggressively) and match the character's personality. Then decide which way they open (in, out, rising portcullis, lowering) because each direction creates different gameplay. Once decided, keep entry consistent all game.",
+          "example": "Kratos kicks doors in, Soap MacTavish blows them up, Jill Valentine creeps them open. Mappy's doors whack enemies; a dropping portcullis forces a timed dash.",
+          "f2p": "",
+          "memory": "Kick, boom, creak: three heroes, one door.",
+          "tag": "example"
+        },
+        {
+          "id": "L12-b05",
+          "hook": "Doors snag players, so many games animate them",
+          "body": "Fast doors clip into or knock back the player, and doorframes snag movement. After hundreds of snags, players rage. That's why many games turn opening a door into a canned animation.",
+          "example": "Early Resident Evil used the slow door animation to hide level loading while building dread. One door, two jobs.",
+          "f2p": "Mobile games hide loading the same way: map zooms, cloud wipes or 'travel' transitions between meta and level.",
+          "memory": "A good door hides the loading bar.",
+          "tag": "example"
+        },
+        {
+          "id": "L12-b06",
+          "hook": "Locked doors must look locked",
+          "body": "Locked doors steer players to another route, but it must be obvious why they can't pass: unbreakable metal, a giant lock they lack the key for, or immovable debris. Locked doors often (some say too often) kick off the quest for the key.",
+          "example": "A door that looks exactly like openable doors but doesn't open = frustration and wall-humping.",
+          "f2p": "F2P 'locked doors' are feature gates: a greyed-out icon labeled 'Unlocks at Level 12' tells players why and what opens it.",
+          "memory": "If it's locked, make it LOOK locked.",
+          "tag": "rule"
+        },
+        {
+          "id": "L12-b07",
+          "hook": "Three rules for every switch and lever",
+          "body": "Keep switches simple and grounded in reality so cause and effect is clear. 1) Make them visible with a glow or icon (levers are skinny). 2) Show the effect with a camera cut, voice or sound. 3) Show the new state by changing color, position or shape.",
+          "example": "A one-way switch plays a meaty 'clunk'. A resetting switch plays a ticking sound, maybe with a timer graphic showing time left.",
+          "f2p": "Every F2P boost badge with a countdown ring ('2x coins 04:59') is a resetting switch with a timer graphic.",
+          "memory": "SEE it, see its EFFECT, see its STATE.",
+          "tag": "rule"
+        },
+        {
+          "id": "L12-b08",
+          "hook": "Cranks: switches that take time",
+          "body": "Cranks take time to activate: hold a button, mash a button, or sync presses to an animation like a rhythm game. Or make it a combat puzzle: enemies attack while you crank, and a hit knocks you off and unwinds your progress.",
+          "example": "Devil May Cry-style crank puzzles force players to alternate between fighting and cranking.",
+          "f2p": "Tap-and-hold and charge-up actions are mobile cranks. Interruptions that undo progress must be clearly telegraphed.",
+          "memory": "Crank = lever + clock (+ goons).",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "Holy Death Trap! (hazards)",
+      "bites": [
+        {
+          "id": "L12-b09",
+          "hook": "Hazards: the mechanic's evil little brother",
+          "body": "Hazards look and act like mechanics but hurt you. What separates them from enemies is intelligence and/or mobility: hazards have predictable patterns and limited movement.",
+          "example": "Spike pits, smashing blocks, flame jets, exploding barrels, laser-guided missile turrets.",
+          "f2p": "Countdown bombs and spreading blockers in match-3 are hazards: predictable, patterned, no AI.",
+          "memory": "Enemies think. Hazards just tick.",
+          "tag": "concept"
+        },
+        {
+          "id": "L12-b10",
+          "hook": "Rule #1: hazards must LOOK dangerous",
+          "body": "Spiky, flaming, frosty, sparking, poisonous; slap a skull on it if needed. Use shape, color, sound and particles. Borrow danger from the real world (cacti, razor wire) and theme hazards to the level.",
+          "example": "Maximo's dungeon: hands grabbing through grates, an axe-swinging suit of armor, spinning spiked iron maidens, a toxic sewer with floating coffin platforms.",
+          "f2p": "Small screens need louder signals: high-contrast red, warning icons, wind-up animations.",
+          "memory": "If it doesn't look like it bites, players will pet it.",
+          "tag": "rule"
+        },
+        {
+          "id": "L12-b11",
+          "hook": "Bees are dangerous, so make it yellow? Nope.",
+          "body": "Rogers wanted a hazard colored red, a widely understood danger color. The artist wanted yellow-and-black stripes because bees are dangerous. It ended up red. Use the danger language players already read.",
+          "example": "Red = danger is near-universal; 'bee logic' needs a footnote.",
+          "f2p": "Global F2P audiences need culturally clear danger signals. Test readability with players, not with your art team's cleverness.",
+          "memory": "Facepalm x1: the hazard went red.",
+          "tag": "fun"
+        },
+        {
+          "id": "L12-b12",
+          "hook": "NO DROPPING ROCKS ON THE PLAYER'S HEAD",
+          "body": "A designer's fix for players who 'miss the boat' was to drop a rock on them so they'd die and restart. Rogers cut the level. Instant-death hazards are cheap and mean. If the player dies, it should be their fault (attention, timing), not the designer's decree. Death is a terrible teacher.",
+          "example": "A ship sails away at level start; players who pause to look around would be crushed. The level was never made.",
+          "f2p": "F2P rocks: unwinnable boards, unseeable obstacles, impossible matchmaking, unwarned instant fails.",
+          "memory": "Blame their thumbs, never your name in the credits.",
+          "tag": "rule"
+        },
+        {
+          "id": "L12-b13",
+          "hook": "Difficulty punishes. Challenge teaches.",
+          "body": "Difficulty leads to pain and loss, while challenge leads to skill and improvement. A difficult game goes out of its way to punish the player; a challenging one sets obstacles that skill and knowledge can overcome. Challenge pays off better and is what carries players to the finish.",
+          "example": "Famously difficult: Demon's Souls, Ninja Gaiden, Contra, Ikaruga, Shinobi, Devil May Cry 3, Ghosts 'n Goblins, Defender, Battletoads. Few players finish them.",
+          "f2p": "F2P lives on retention: every unfair loss is a churn risk. Challenge-with-fairness is a business rule.",
+          "memory": "Challenge says 'bet you can't!' Difficulty spikes your drink.",
+          "tag": "truth"
+        },
+        {
+          "id": "L12-b14",
+          "hook": "Never go over the fun curve",
+          "body": "Rogers' early name for the point where a game stops being challenging and becomes difficult and frustrating. He later learned psychology calls the sweet spot 'flow'. His fix is ramping gameplay: build each system on the last, teach a move, let it be mastered, then combine and gently intensify.",
+          "example": "Teach jumping, then jumping over pits, then jumping pits while dodging fire.",
+          "f2p": "Match-3 difficulty curves use a sawtooth: spikes followed by relief levels to stay near the fun curve.",
+          "memory": "Ramp, don't cliff.",
+          "tag": "concept"
+        },
+        {
+          "id": "L12-b15",
+          "hook": "The near-miss sold for gems",
+          "body": "Losing by one move feels exciting when it's honest. Tuning levels so most players lose by one move, then offering +5 moves for hard currency, is a rock on the head with a price tag.",
+          "example": "Hypothetical: a level where 90% of players fail with 1–2 goals left, right as a continue offer pops up.",
+          "f2p": "Ethical test: would this level be tuned this way if continues couldn't be bought? Players and reviewers notice.",
+          "memory": "Honest near-miss = thrill. Engineered near-miss = trap.",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "Time to Die (timing puzzles, props, crates)",
+      "bites": [
+        {
+          "id": "L12-b16",
+          "hook": "Wait for it… wait for it… GO!",
+          "body": "Timing puzzles are mechanics (usually hazards) that move. They create tension (dash through whirling blades) and anticipation (hop onto a moving platform). A flame jet that flickers, roars, then smokes teaches the rhythm by itself.",
+          "example": "Rogers suggests Dragon's Lair's spinning paddles in the Spectre chamber may be the first video-game timing puzzle.",
+          "f2p": "Runner obstacles, match-3 countdown bombs and timed levels are timing puzzles for thumbs.",
+          "memory": "Flicker = warning, blast = danger, smoke = green light.",
+          "tag": "concept"
+        },
+        {
+          "id": "L12-b17",
+          "hook": "The 4 rules of a fair timing puzzle",
+          "body": "1) A readable movement pattern (back-forth, up-down, zigzag, circle, figure eight). 2) Predictable timing: random timing is unfair. 3) A tight but possible window, with leeway at the opening and closing edges. 4) World 'tells' that mark safe and deadly spots.",
+          "example": "Tells: bloodstains, floor grooves, light and shadow, sound, particles, geometry, decorations.",
+          "f2p": "Mobile tells: a bomb's move counter on the tile, a red warning zone before a boss slam, an obstacle flash before it arrives.",
+          "memory": "PATTERN, PREDICTABLE, POSSIBLE, PROMPTS: the 4 Ps.",
+          "tag": "rule"
+        },
+        {
+          "id": "L12-b18",
+          "hook": "Two kinds of timers live in F2P",
+          "body": "In-level timers are hazards: tension and skill. Meta timers (build, production, lives, chest unlocks, events) pace sessions, create appointments and become a monetizable wait. Same clock icon, totally different job.",
+          "example": "Clash of Clans build timers, Hay Day crop timers and Candy Crush life refills are meta timers; a match-3 countdown bomb is an in-level hazard.",
+          "f2p": "Apply Rogers' rule to both: always show remaining time clearly and never surprise the player.",
+          "memory": "Hazard timer = heartbeat. Meta timer = alarm clock.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L12-b19",
+          "hook": "When does a timer become a toll booth?",
+          "body": "A timer that paces play (take a breather, come back later) is design. A timer tuned so the wait is painful enough to make people pay is pressure. Ask whether the timer would exist if nobody could pay to skip it.",
+          "example": "Hypothetical: lives that refill in 30 minutes vs. a 'premium' tier that sells the same refill for gems after every loss.",
+          "f2p": "Healthy pattern: free waits are tolerable, skips are optional convenience, and the game still feels complete without paying.",
+          "memory": "Pacing timer = a rest stop. Paywall timer = a toll booth.",
+          "tag": "warning"
+        },
+        {
+          "id": "L12-b20",
+          "hook": "Props: mechanics after Thanksgiving dinner",
+          "body": "Props don't move unless someone makes them. They make a level feel like a real place and can act as barricades, obstacles or cover: desks, chairs, parked cars, barricades, statues, gravestones, trees, fences, walls, potted plants, water coolers.",
+          "example": "Rogers' prop brainstorm drill: Easy = Wild West street, Medium = supervillain lair, Hard = Chinese clothing factory.",
+          "f2p": "Decorations in Hay Day, Township and Clash of Clans are props: vanity purchases and soft-currency sinks.",
+          "memory": "Props are couch potatoes until poked.",
+          "tag": "concept"
+        },
+        {
+          "id": "L12-b21",
+          "hook": "Brainstorm until it gets silly, then stop",
+          "body": "Brainstorm props by free association: start with the obvious items for the setting and branch out. Once ideas get silly or filthy, you've hit bottom. Let it rest a day or two, or take a research break with books, games, movies or the web.",
+          "example": "Supervillain lair: shark tank, self-destruct button, monologue podium… minion snack machine (getting silly; stop).",
+          "f2p": "",
+          "memory": "Silly = the well is dry.",
+          "tag": "rule"
+        },
+        {
+          "id": "L12-b22",
+          "hook": "Let players poke the furniture",
+          "body": "Give props natural reactions: shoot a water cooler and it splashes, knock over light things, shove heavy ones, examine statues, bookshelves and paintings. Breakables can reveal new areas or treasure, but too much smashing becomes a mindless smash-fest.",
+          "example": "Lego games let you destroy almost everything for studs, the game's money: hugely satisfying.",
+          "f2p": "Blockers that burst into coins or confetti give the Lego feeling. If everything explodes into rewards, nothing feels special.",
+          "memory": "Smash for cash, but don't turn the level into a piñata party.",
+          "tag": "rule"
+        },
+        {
+          "id": "L12-b23",
+          "hook": "Your crate is the Lorem Ipsum of level design",
+          "body": "Crates break into goodies and double as platforms, but they're a tired industry joke and a lazy fallback. Old Man Murray's satirical 'start to crate' metric measures how fast a game shows its first crate. Rogers lists 50 alternatives.",
+          "example": "Rogers' alternatives include vases, mailboxes, fish tanks, hay bales, skull piles, tiki idols, ATMs, safes, coffins, arcade cabinets, vending machines… and a toilet.",
+          "f2p": "Try 'start to chest': how many seconds after install until a reward box appears?",
+          "memory": "Start to crate: the shorter it is, the lazier the game.",
+          "tag": "fun"
+        },
+        {
+          "id": "L12-b24",
+          "hook": "The rarest mechanic: just for fun",
+          "body": "Some mechanics exist only to delight: a player piano that plinks as you approach, a toilet that flushes when touched. No gameplay purpose. Include them anyway; they make the world feel alive and reward curiosity.",
+          "example": "A player piano tinkling a tune as you walk past.",
+          "f2p": "Tap-to-react decorations, idle animations and silly emotes are just-for-fun mechanics, and often sell as vanity items.",
+          "memory": "Flushable toilets build loyal players.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "The Music of Mechanics",
+      "bites": [
+        {
+          "id": "L12-b25",
+          "hook": "Hazards are the beans in the chili",
+          "body": "Hazards are filler when there isn't enough meat (enemies) to go around, and they help you make 'music'. The goal of level design is flow: a state between boredom and too-much-difficulty where players are absorbed, energized, focused and lose track of time.",
+          "example": "Flow comes from psychologist Mihály Csíkszentmihályi. Rogers' footnote spells out the pronunciation (roughly 'cheek-sent-me-high-ee').",
+          "f2p": "Short F2P sessions still need flow: each level or run is a tiny song.",
+          "memory": "Beans = filler + music. You know why.",
+          "tag": "concept"
+        },
+        {
+          "id": "L12-b26",
+          "hook": "Peter and the Wolf is a level design tutorial",
+          "body": "Each instrument enters one at a time: strings (Peter) = basic movement, flute (bird) = treasure/collectibles, oboe (duck) = complex movement and mechanics, clarinet (cat) = hazards, wolf = enemies, drums (hunters) = the crashing climax.",
+          "example": "Prokofiev layers instruments so you learn each theme before they combine and the music intensifies.",
+          "f2p": "Match-3 episodes do the same: basic swaps, special pieces, a new blocker, a spreading hazard, then a hard 'wolf' level.",
+          "memory": "Strings, flute, oboe, clarinet, WOLF, drums = move, collect, mechanics, hazards, enemies, climax.",
+          "tag": "concept"
+        },
+        {
+          "id": "L12-b27",
+          "hook": "The 7-step orchestration recipe",
+          "body": "1) Simple movement and collecting. 2) Add one mechanic; repeat it. 3) Add a second; then combine them. 4) Add a hazard to normal activities. 5) Add enemies; let players learn them. 6) Combine enemies and hazards. 7) Twist one element on its head.",
+          "example": "Book strip: walk, flames, spikes, flames+spikes, skeleton, skeleton+flames, skeleton + an upside-down ceiling flame before the exit.",
+          "f2p": "Use it for any FTUE or new-feature rollout: never introduce two new things at once.",
+          "memory": "Learn, learn, combine, danger, enemy, chaos, twist.",
+          "tag": "list"
+        },
+        {
+          "id": "L12-b28",
+          "hook": "Vib Ribbon turned your CDs into levels",
+          "body": "A footnote: the ancient Greeks linked music and math. Vib Ribbon (1999) generated obstacles from the beats of any music CD. Orchestration can also be done as a formula, and Rogers has heard Mark Cerny (Marble Madness, Crash Bandicoot) works that way.",
+          "example": "Insert a CD, get a level built from its rhythm.",
+          "f2p": "Data-driven level tuning (difficulty formulas, procedural boards) is the modern descendant of this idea.",
+          "memory": "Beats in, obstacles out.",
+          "tag": "fun"
+        },
+        {
+          "id": "L12-b29",
+          "hook": "Enemies + hazards = peanut butter + chocolate",
+          "body": "Design enemies and hazards to complement each other and they become versatile building blocks. Decide the order of activities and set up scenarios players can figure out.",
+          "example": "Pit combo: a hazardous pit with an enemy waiting on the far side, placed far enough back not to engage until the player lands. Add timing (pit opens/closes, pendulum, fire, sliding block) for intensity.",
+          "f2p": "Survivor-likes combine room hazards with enemy waves the same way.",
+          "memory": "Two great tastes that kill great together.",
+          "tag": "rule"
+        },
+        {
+          "id": "L12-b30",
+          "hook": "Shoot the shooter, or hide behind the hazard",
+          "body": "An enemy fires projectiles through a moving hazard, timed to pass when the gap opens. Players solve it by shooting the enemy first, or by using the moving obstacle as cover to get close.",
+          "example": "A swinging metal panel between you and a gunman: duck behind it as it passes.",
+          "f2p": "",
+          "memory": "Every obstacle is also a shield.",
+          "tag": "example"
+        },
+        {
+          "id": "L12-b31",
+          "hook": "Let the saw blade eat the bad guys too",
+          "body": "A whirling saw blade in an arena full of enemies makes players dance between fighting and dodging. The blade should kill enemies too, so players feel clever luring them in. Give players chances to turn death traps against their makers.",
+          "example": "Lure an axe-wielding brute into the blade = comeuppance.",
+          "f2p": "Match-3 equivalent: a blocker that, once cleared, damages neighbors, turning the hazard into a tool.",
+          "memory": "Villains deserve their own traps.",
+          "tag": "rule"
+        },
+        {
+          "id": "L12-b32",
+          "hook": "A handful of mechanics is all you need",
+          "body": "Fire pit, moving obstacle, whirling blade: three mechanics, endless combinations. Well-designed games use few mechanics; the key is combining them. Study Treasure (Gunstar Heroes, Dynamite Headdy, Ikaruga) and Naughty Dog (Crash Bandicoot, Uncharted).",
+          "example": "Treasure's games remix a small toolkit into constantly fresh situations.",
+          "f2p": "Small teams win by combining a few great blockers rather than shipping dozens of shallow ones.",
+          "memory": "Few tools, many tricks.",
+          "tag": "truth"
+        },
+        {
+          "id": "L12-b33",
+          "hook": "Rotate mechanics like baseball pitchers",
+          "body": "Players get bored if a mechanic is overused. Think about context and rotate mechanics in and out so they stay fresh and effective.",
+          "example": "Even an ace pitcher gets shelled if he pitches every inning.",
+          "f2p": "Match-3 games rotate subsets of blockers so each level has a personality; runners rotate obstacle sets by zone; LiveOps rotate event mechanics.",
+          "memory": "Bench your star before the fans boo.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "A Nice Little Calm Spot (checkpoints)",
+      "bites": [
+        {
+          "id": "L12-b34",
+          "hook": "Visible or invisible checkpoints?",
+          "body": "Checkpoints are preset spots to save progress, rest, or rethink gear and route. Visible ones give a target, security, a fun activation and a sense of accomplishment, but can look gamey and need explaining. Invisible ones keep immersion but leave players unsure where they'll respawn.",
+          "example": "A glowing flag you touch vs. a silent trigger you never see.",
+          "f2p": "Level-based maps are visible checkpoints: every cleared level is permanent progress with a celebration.",
+          "memory": "Visible = security blanket. Invisible = mystery respawn.",
+          "tag": "concept"
+        },
+        {
+          "id": "L12-b35",
+          "hook": "Five checkpoint commandments",
+          "body": "1) Face the checkpoint in the direction of travel. 2) Never next to a hazard or in an enemy's detection zone. 3) Respawn on the ground, with no long respawn animation. 4) Use flat, even ground to avoid collision issues. 5) Save data automatically; no menu trip.",
+          "example": "Respawning mid-air above spikes, facing backwards: breaks rules 1, 2 and 3 at once.",
+          "f2p": "Continues ('Save me', '+5 moves') should drop players somewhere safe, instantly.",
+          "memory": "FACE · SAFE · GROUND · FLAT · SAVED.",
+          "tag": "rule"
+        },
+        {
+          "id": "L12-b36",
+          "hook": "On mobile, the whole app is a checkpoint",
+          "body": "Mobile players get interrupted constantly. Save every meaningful action, resume exactly where they left off, and sync progress across devices via cloud save.",
+          "example": "Losing progress because the OS killed your app is the 2026 version of respawning next to a spike pit.",
+          "f2p": "Reliable resume + cloud save are retention features, not tech chores.",
+          "memory": "Phone rings? Game remembers.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "Riddle Me This (puzzles)",
+      "bites": [
+        {
+          "id": "L12-b37",
+          "hook": "A puzzle is a challenge that has a right answer",
+          "body": "Scott Kim defines a puzzle as something fun with a right answer. Rogers swaps 'fun' for 'challenge', since fun is subjective and you can't brute-force a puzzle the way you can a boss. A puzzle's challenge is simply: solve me.",
+          "example": "A tough boss can be beaten by persistence; a puzzle you don't understand can't.",
+          "f2p": "Every match-3 level is a puzzle with many possible right answers, but at least one must exist.",
+          "memory": "Puzzle = Challenge + Answer. Fun is the player's call.",
+          "tag": "concept"
+        },
+        {
+          "id": "L12-b38",
+          "hook": "Show 'em the door, THEN send 'em after the key",
+          "body": "Before solving, players must know what they're trying to do and what they'll get: open a door, complete a picture, translate a message. Door and key are metaphors.",
+          "example": "Show the locked vault first; the scattered combination digits only matter once players know there's a vault.",
+          "f2p": "Match-3 goal screens ('collect 40 red, clear the ice') and reward previews are door-first design.",
+          "memory": "Goal before grind.",
+          "tag": "rule"
+        },
+        {
+          "id": "L12-b39",
+          "hook": "Puzzle pieces: simple, modular, uniform",
+          "body": "Use few pieces for many combinations and few moving parts. Changed pieces must look changed, with a clear way to reset. Keep pieces uniform unless irregularity is the puzzle. One button press should show a result, so players think about the puzzle, not the controls.",
+          "example": "A sliding-tile puzzle with a 'reset' button and tiles that visibly snap into place.",
+          "f2p": "The tile grid is the ultimate uniform piece set; every swap animates and invalid moves bounce back.",
+          "memory": "Wrestle the puzzle, not the joystick.",
+          "tag": "rule"
+        },
+        {
+          "id": "L12-b40",
+          "hook": "Why are there chess pieces in a police station?",
+          "body": "Players test a puzzle against every ability, item and object they have. Unclear relationships between pieces cause stumps. Avoid cultural references and weird object uses, and tie puzzles to the story.",
+          "example": "Resident Evil 2 had players put chess pieces into a police-station control panel. Dead officers' ID cards would have made sense.",
+          "f2p": "Theme your puzzle objectives to the meta story (renovating a kitchen? collect tools, not chess pieces).",
+          "memory": "If a cop would ask 'why?', redesign it.",
+          "tag": "example"
+        },
+        {
+          "id": "L12-b41",
+          "hook": "Keep the tools close and the layout honest",
+          "body": "Give players everything they need nearby; making them roam the world testing items is unfair. The layout is a clue: a board-style layout lets players visualize moves and patterns before acting.",
+          "example": "A chessboard-like floor lets players plan moves before stepping.",
+          "f2p": "Grids, lanes and boards are why mobile puzzles read so fast.",
+          "memory": "The board is a hint.",
+          "tag": "rule"
+        },
+        {
+          "id": "L12-b42",
+          "hook": "Puzzles are gates, so build side doors",
+          "body": "Puzzles gate progress. If you have many, provide multiple paths of progression so stuck players can do something else and come back later, maybe with the answer figured out.",
+          "example": "Three temple puzzles unlock in any order instead of one after another.",
+          "f2p": "Stuck on a match-3 level? Events, decorating, team play and side modes keep you engaged instead of churning.",
+          "memory": "One locked door, three open windows.",
+          "tag": "rule"
+        },
+        {
+          "id": "L12-b43",
+          "hook": "Hotter… colder… the designer as hint-giver",
+          "body": "Tell players if they're getting close, like the kids' hide-and-seek game. Make hints relevant and ask 'what would I want to know now?' Remind them of the goal, use camera cuts for cause and effect, and voice and sound for positive reinforcement.",
+          "example": "A distant gate rumbles a little each time you rotate the right statue.",
+          "f2p": "Idle move hints, goal progress bars and 'almost there!' popups are hot/cold feedback.",
+          "memory": "Warmer, warmer, BOILING!",
+          "tag": "rule"
+        },
+        {
+          "id": "L12-b44",
+          "hook": "Four ways to crack any puzzle",
+          "body": "Reason, knowledge, skill or plain dumb luck. The best puzzles allow all four in some form. You don't want players stumbling onto the answer, but a stumped player should at least be able to.",
+          "example": "A lock you can deduce, recall from lore, pick with dexterity, or brute-force by trying combinations.",
+          "f2p": "Boosters act as 'luck insurance' for stumped match-3 players, which is why their pricing is so sensitive.",
+          "memory": "RKSL ('rascal'): Reason, Knowledge, Skill, Luck.",
+          "tag": "list"
+        },
+        {
+          "id": "L12-b45",
+          "hook": "The A-Ha! moment, then quick grunt work",
+          "body": "Aim for the instant the player sees how it all fits. After that, carrying out the solution should be fast; it's just grunt work.",
+          "example": "Realizing the mirrors must bounce the light: rotating them should take seconds, not minutes.",
+          "f2p": "In puzzle F2P, the satisfying click of understanding is your retention hook. Don't bury it under fiddly execution.",
+          "memory": "A-Ha, then ta-da.",
+          "tag": "concept"
+        },
+        {
+          "id": "L12-b46",
+          "hook": "Progression is a right, not a reward",
+          "body": "If players can't solve it, don't make it a big deal: offer hints or even the answer. It should cost something mild (a bonus or cash), never something severe like a life. Paying to skip must be the player's choice.",
+          "example": "Professor Layton's diminishing rewards: using hints or guessing wrong lowers what you earn.",
+          "f2p": "Paid hints (coins or a rewarded ad) follow Layton's model. Fair version: skill or patience can always progress free; money only speeds it up.",
+          "memory": "A fine, not a funeral.",
+          "tag": "rule"
+        },
+        {
+          "id": "L12-b47",
+          "hook": "NO CAT MUSTACHES",
+          "body": "In one adventure game you made a disguise by taping a fence hole, collecting cat hair and fashioning a mustache, to impersonate someone who didn't have a mustache. Don't be so clever. Rube Goldberg solutions are overthought. It's player vs. puzzle, not designer vs. player.",
+          "example": "Rube Goldberg cartoons (and the board game Mouse Trap) show absurd machines for simple tasks.",
+          "f2p": "Mobile players give you seconds: puzzle logic must read at a glance.",
+          "memory": "Picture a guard gluing cat fur to his clean-shaven lip.",
+          "tag": "truth"
+        },
+        {
+          "id": "L12-b48",
+          "hook": "Four families of puzzle games",
+          "body": "Dexterity/action puzzles (Bejeweled, Puzzle Quest), observation puzzles (Mystery Case Files), pure puzzles (Sudoku, crosswords), and knowledge/trivia puzzles (Buzz!, You Don't Know Jack).",
+          "example": "Bejeweled is the ancestor of today's match-3 giants.",
+          "f2p": "All four thrive on mobile: match-3, hidden object, block/number puzzles and trivia/word games.",
+          "memory": "Fingers, eyes, logic, facts.",
+          "tag": "list"
+        },
+        {
+          "id": "L12-b49",
+          "hook": "Trivia rules: short, clear, mostly simple, LOTS",
+          "body": "Don't assume players know what you know. Keep questions short and clear. Research what your audience wants. Span simple to obscure, but mostly simple. Write lots: a knowledge game stops being fun once every question is used up.",
+          "example": "A quiz that repeats questions by day three is dead by day four.",
+          "f2p": "Word and trivia F2P games ship thousands of levels and daily puzzles to avoid running dry.",
+          "memory": "Content is the fuel tank of a quiz game.",
+          "tag": "rule"
+        },
+        {
+          "id": "L12-b50",
+          "hook": "Multiple choice, find-it, or fill-in?",
+          "body": "Multiple choice: at least 3 options, close wrong answers, sometimes ask for the wrong one among right ones. Find the object: not pixel-perfect, room around targets, vary orientation, color and size. Fill-in: a flexible parser for synonyms, slang and regional terms; show the vocabulary if it's small.",
+          "example": "Scribblenauts on DS recognized 22,802 words.",
+          "f2p": "Fat fingers on small screens: generous tap targets matter even more in mobile hidden-object games.",
+          "memory": "Choose it, spot it, type it.",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "A Short Word on Minigames and Microgames",
+      "bites": [
+        {
+          "id": "L12-b51",
+          "hook": "Minigames vs microgames",
+          "body": "A minigame is a simple game that adds variety, represents an activity, or adds value, often remixing classic arcade or console games. A microgame lasts seconds; half the challenge is figuring out how to play before time runs out.",
+          "example": "WarioWare is a compilation of microgames.",
+          "f2p": "Hyper-casual games are often one microgame turned into a whole product.",
+          "memory": "Mini = minutes. Micro = moments.",
+          "tag": "concept"
+        },
+        {
+          "id": "L12-b52",
+          "hook": "Any activity can be a minigame",
+          "body": "Minigames are quick to build and test, easy to play, and work as metaphors for complex activities.",
+          "example": "Lockpicking (Oblivion), hacking (Arkham Asylum), portrait painting (SpongeBob's Atlantis SquarePantis), tagging walls (The Warriors), cooking (Cooking Mama), serving (Diner Dash), even sex (God of War).",
+          "f2p": "Event minigames (digging, dice boards, spin wheels) add variety to F2P metas.",
+          "memory": "If you can do it, you can minigame it.",
+          "tag": "example"
+        },
+        {
+          "id": "L12-b53",
+          "hook": "Seven rules for minigames",
+          "body": "Simple controls. Short sessions (5–10 min; micro = seconds). Decide designed vs random progression and ramp gently. Add something new each step (major or minor, even new art or music). Few buttons, one action each. Allow customization. Make the ending and victory condition clear.",
+          "example": "Upgrade Complete (2009) let you upgrade everything, even the copyright screen.",
+          "f2p": "These rules double as a spec for playable ads and LiveOps minigames.",
+          "memory": "Simple, short, gentle, fresh, few, yours, finished.",
+          "tag": "list"
+        },
+        {
+          "id": "L12-b54",
+          "hook": "Give the brain a gear-shift",
+          "body": "Minigames can be fused with the core game, but give players a moment to switch mental modes: a 'Ready?' screen or a pause.",
+          "example": "Henry Hatsworth (platformer + puzzle) and Puzzle Quest (RPG + puzzle) blend two styles.",
+          "f2p": "Match-3 + renovation hybrids (Gardenscapes, Homescapes) need clear transitions between puzzle mode and meta mode.",
+          "memory": "Clutch in before you change gears.",
+          "tag": "rule"
+        },
+        {
+          "id": "L12-b55",
+          "hook": "Minigames sell games: the ad creative",
+          "body": "Mobile user acquisition leans on short playable and video ads built around minigames: pull-the-pin rescues, path choices, quick sorts. Rogers' rules (simple, seconds-long, clear goal) describe a high-converting creative.",
+          "example": "Regulators like the UK's ASA have ruled against mobile ads showing gameplay that wasn't representative, and some big puzzle games then added ad-style minigames into their games.",
+          "f2p": "Ethics/compliance: your ad's minigame should exist in your game.",
+          "memory": "Don't advertise a game you didn't make.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L12-b56",
+          "hook": "Whack-a-Mole: last stop on the creativity train",
+          "body": "Rogers' five complaints: it's reaction-only (no decisions), random (no strategy), repetitive (only speed varies), needs minimal input (one motion), and endless (people quit from boredom, not victory).",
+          "example": "Moles pop up randomly, faster and faster, forever.",
+          "f2p": "Reaction-only hyper-casual loops often churn fast. Add decisions, progression and variety.",
+          "memory": "RRRIE: Reflex-only, Random, Repetitive, Input-minimal, Endless.",
+          "tag": "warning"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "Design mechanics, hazards and props to work with your enemies and complement each other.",
+    "Good game design works like music: players can sense its rhythm.",
+    "Aim for challenging, not overly difficult, games.",
+    "No rocks on the player's head: be fair when you punish the player.",
+    "Be inventive: steer clear of tired standbys such as crates and Whack-a-Mole, unless nothing else works.",
+    "No cat mustaches: puzzles shouldn't be so cryptic that logic, knowledge or skill can't solve them.",
+    "A puzzle is a challenge with one right answer.",
+    "Show them the door, then send them after the key.",
+    "Give players chances to catch their breath with plenty of checkpoints.",
+    "Keep minigames and microgames simple and short."
+  ],
+  "mnemonics": [
+    {
+      "name": "Four types of level stuff",
+      "device": "My Hamster Plays Piano",
+      "unpacks": "Mechanics, Hazards, Props, Puzzles"
+    },
+    {
+      "name": "Timing puzzle rules",
+      "device": "The 4 Ps",
+      "unpacks": "Pattern (readable movement), Predictable timing, Possible window with leeway, Prompts (world tells)"
+    },
+    {
+      "name": "Orchestration order",
+      "device": "Strings, flute, oboe, clarinet, WOLF, drums",
+      "unpacks": "Basic movement, collectibles, complex mechanics, hazards, enemies, climax (Peter and the Wolf)"
+    },
+    {
+      "name": "Checkpoint rules",
+      "device": "FACE · SAFE · GROUND · FLAT · SAVED",
+      "unpacks": "Face direction of travel; away from hazards/enemy detection; respawn on ground with no long animation; flat even ground; auto-save on activation"
+    },
+    {
+      "name": "Ways to solve a puzzle",
+      "device": "RKSL ('rascal')",
+      "unpacks": "Reason, Knowledge, Skill, Luck"
+    },
+    {
+      "name": "Whack-a-Mole's sins",
+      "device": "RRRIE",
+      "unpacks": "Reflex-only, Random, Repetitive, Input-minimal, Endless"
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L12-f01",
+      "q": "What are Rogers' four types of level 'stuff'?",
+      "a": "Mechanics, hazards, props, puzzles.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f02",
+      "q": "In board games, what does 'mechanics' mean?",
+      "a": "Rule systems: turns, action points, resource management, bidding, dice rolling.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f03",
+      "q": "In video games (per Rogers), what is a mechanic?",
+      "a": "An object that creates gameplay when the player interacts with it (jump on, activate, push).",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f04",
+      "q": "Name four common video-game mechanics from the chapter.",
+      "a": "Any four: doors, pushable blocks, switches/levers, slippery floors, conveyor belts, moving platforms.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f05",
+      "q": "Why should door-opening match the character?",
+      "a": "It expresses personality (Kratos kicks, Soap explodes, Jill creeps) and sets how entry plays.",
+      "type": "why"
+    },
+    {
+      "id": "L12-f06",
+      "q": "What did early Resident Evil's door animation secretly do?",
+      "a": "Hid level loading while building tension.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f07",
+      "q": "Once you've decided how doors work, what's the rule?",
+      "a": "Keep the method of entry consistent throughout the whole game.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f08",
+      "q": "What must a locked door communicate?",
+      "a": "Clearly why it can't be opened (unbreakable metal, a big lock, immovable debris).",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f09",
+      "q": "Three must-dos for switches and levers?",
+      "a": "Make them visible (glow/icon), show their effect (camera/voice/sound), show their new state (color/position/shape).",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f10",
+      "q": "What sound cue should a resetting switch use?",
+      "a": "A ticking timer sound, optionally with a timer graphic showing time left.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f11",
+      "q": "What sound cue suits a one-way switch?",
+      "a": "A meaty sound signaling a permanent state change.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f12",
+      "q": "What makes a crank different from a lever?",
+      "a": "It takes time to activate (hold, mash, or rhythm), and can be turned into a combat puzzle.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f13",
+      "q": "What separates a hazard from an enemy?",
+      "a": "Intelligence and/or mobility: hazards have predictable patterns and limited movement.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f14",
+      "q": "Rule #1 of hazard design?",
+      "a": "Make it look dangerous (spiky, flaming, icy, sparking, poisonous).",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f15",
+      "q": "Why did Rogers' hazard end up red instead of bee-striped?",
+      "a": "Red is a widely understood danger color; 'bees are dangerous' logic isn't clear to players.",
+      "type": "why"
+    },
+    {
+      "id": "L12-f16",
+      "q": "Difficulty promotes ____; challenge promotes ____.",
+      "a": "pain and loss; skill and improvement",
+      "type": "cloze"
+    },
+    {
+      "id": "L12-f17",
+      "q": "Why are instant-death hazards bad design?",
+      "a": "They're cheap and mean. Death should come from the player's own inattention or timing, and death is a poor teacher.",
+      "type": "why"
+    },
+    {
+      "id": "L12-f18",
+      "q": "What is the 'fun curve'?",
+      "a": "Rogers' term for the point where challenge tips into difficulty and frustration; never go over it.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f19",
+      "q": "What's Rogers' fix for going over the fun curve?",
+      "a": "Ramping gameplay: build each system on the last, teach, master, then combine and gently intensify.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f20",
+      "q": "Four rules of a timing puzzle?",
+      "a": "Readable pattern, predictable timing, tight-but-possible window with leeway, world tells.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f21",
+      "q": "Why is random timing unfair in a timing puzzle?",
+      "a": "Players must learn the pattern to succeed; randomness makes learning impossible.",
+      "type": "why"
+    },
+    {
+      "id": "L12-f22",
+      "q": "Name three kinds of 'tells' for timing hazards.",
+      "a": "Any three: bloodstains, floor grooves, light/shadow, sound, particles, geometry, decorations.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f23",
+      "q": "Which game may have had the first video-game timing puzzle, per Rogers' footnote?",
+      "a": "Dragon's Lair (spinning paddles in the Spectre chamber).",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f24",
+      "q": "What are props?",
+      "a": "Objects that don't move unless the player interacts; they make levels feel real and can serve as obstacles or cover.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f25",
+      "q": "When should you stop a prop brainstorm?",
+      "a": "When ideas get silly or filthy: rest a day or two or do research.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f26",
+      "q": "What's the risk of making everything breakable for loot?",
+      "a": "Gameplay turns into a mindless smash-fest.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f27",
+      "q": "What is 'start to crate'?",
+      "a": "Old Man Murray's satirical metric: time until a game shows its first crate; a gauge of creativity.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f28",
+      "q": "What's the rarest type of mechanic?",
+      "a": "The just-for-fun one (player piano, flushing toilet).",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f29",
+      "q": "In Rogers' chili metaphor, hazards are the ____.",
+      "a": "beans (filler that also makes 'music')",
+      "type": "cloze"
+    },
+    {
+      "id": "L12-f30",
+      "q": "What is flow?",
+      "a": "Csíkszentmihályi's state between boredom and too-much-difficulty: absorbed, energized, focused, losing track of time.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f31",
+      "q": "In the Peter and the Wolf analogy, what does the cat (clarinet) represent?",
+      "a": "Hazards (conflict).",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f32",
+      "q": "In the Peter and the Wolf analogy, what does the bird (flute) represent?",
+      "a": "Treasure and collectibles.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f33",
+      "q": "What's step 7 of the orchestration recipe?",
+      "a": "Twist one element on its head to keep players on their toes.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f34",
+      "q": "In the pit + enemy combo, where do you place the enemy?",
+      "a": "Far enough away that it doesn't engage until the player has landed safely.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f35",
+      "q": "Why should the saw blade also kill enemies?",
+      "a": "Players feel clever luring enemies in; traps can be turned against their makers.",
+      "type": "why"
+    },
+    {
+      "id": "L12-f36",
+      "q": "Which two developers does Rogers cite for getting the most from few mechanics?",
+      "a": "Treasure and Naughty Dog.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f37",
+      "q": "What's the baseball-pitcher lesson?",
+      "a": "Rotate mechanics in and out so they stay fresh; overuse bores players.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f38",
+      "q": "Pros and cons of invisible checkpoints?",
+      "a": "Pro: no immersion break. Con: unclear when one is triggered or where you'll respawn.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f39",
+      "q": "Why respawn players on the ground?",
+      "a": "So they don't wait to land (and avoid long respawn animations).",
+      "type": "why"
+    },
+    {
+      "id": "L12-f40",
+      "q": "Rogers' puzzle definition?",
+      "a": "A puzzle is a challenge that has a right answer.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f41",
+      "q": "Why did Rogers drop 'fun' from Scott Kim's definition?",
+      "a": "Fun is subjective; challenging the player is the puzzle's real job.",
+      "type": "why"
+    },
+    {
+      "id": "L12-f42",
+      "q": "Show 'em the ____ and then send 'em after the ____.",
+      "a": "door; key",
+      "type": "cloze"
+    },
+    {
+      "id": "L12-f43",
+      "q": "What was wrong with Resident Evil 2's chess-piece puzzle?",
+      "a": "Arbitrary and unrelated to the story (chess pieces in a police station); ID cards would have fit.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f44",
+      "q": "Four ways to solve a puzzle?",
+      "a": "Reason, knowledge, skill, dumb luck.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f45",
+      "q": "How should the game handle a player who can't solve a puzzle?",
+      "a": "No big deal: offer hints or the answer at a mild cost, never a life, and let the player choose to pay.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f46",
+      "q": "Progression is a ____, not a ____.",
+      "a": "right; reward",
+      "type": "cloze"
+    },
+    {
+      "id": "L12-f47",
+      "q": "Which game series is Rogers' example of diminishing rewards for hints?",
+      "a": "Professor Layton.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f48",
+      "q": "What does 'no cat mustaches' warn against?",
+      "a": "Overclever, nonsensical Rube Goldberg solutions; it's player vs. puzzle, not designer vs. player.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f49",
+      "q": "How many words did Scribblenauts recognize?",
+      "a": "22,802.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f50",
+      "q": "Minimum number of options for multiple-choice questions?",
+      "a": "Three.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f51",
+      "q": "Max session length for a minigame per Rogers?",
+      "a": "5–10 minutes (microgames: seconds).",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f52",
+      "q": "Why add a 'Ready?' screen when mixing a minigame into the core game?",
+      "a": "To give players a 'brain shift' between play styles.",
+      "type": "why"
+    },
+    {
+      "id": "L12-f53",
+      "q": "Five reasons Whack-a-Mole is a creative dead end?",
+      "a": "Reaction-only, random, repetitive, minimal input, endless.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f54",
+      "q": "A match-3 level is tuned so most players lose by one move, then a gem continue pops. Which principle is violated?",
+      "a": "No rocks on the player's head / challenge, not difficulty: failure is engineered, not earned.",
+      "type": "apply"
+    },
+    {
+      "id": "L12-f55",
+      "q": "Your new blocker and new booster launch in the same level and testers are confused. Which principle helps?",
+      "a": "Orchestration: introduce one new element at a time, then combine.",
+      "type": "apply"
+    },
+    {
+      "id": "L12-f56",
+      "q": "Players respawn after a continue right in front of the obstacle that killed them. Which rule is broken?",
+      "a": "Checkpoint rule: never respawn next to a hazard.",
+      "type": "apply"
+    },
+    {
+      "id": "L12-f57",
+      "q": "Your word game's hint costs a full life. What's the Rogers fix?",
+      "a": "Make the cost mild (coins or bonus), optional, and never a life.",
+      "type": "apply"
+    },
+    {
+      "id": "L12-f58",
+      "q": "Players skip your locked feature because they don't know why it's locked. What fixes it?",
+      "a": "Make the lock obvious and say what opens it (e.g., 'Unlocks at Level 12').",
+      "type": "apply"
+    },
+    {
+      "id": "L12-f59",
+      "q": "A timed boost has no countdown on screen and players feel cheated when it ends. What principle applies?",
+      "a": "Resetting-switch rule: show a timer graphic and an expiry cue.",
+      "type": "apply"
+    },
+    {
+      "id": "L12-f60",
+      "q": "Every level in your game uses all 12 blockers and players say it feels samey. What's the fix?",
+      "a": "Rotate mechanics like pitchers: use subsets so each level has its own personality.",
+      "type": "apply"
+    },
+    {
+      "id": "L12-f61",
+      "q": "Why does Rogers prefer red over 'clever' color schemes for hazards?",
+      "a": "Players must read danger instantly; widely understood signals beat artistic cleverness.",
+      "type": "why"
+    },
+    {
+      "id": "L12-f62",
+      "q": "Why should players be able to see that a puzzle piece was adjusted and reset it?",
+      "a": "It's easy to lose track of progress; visible state and a reset keep the focus on the puzzle, not confusion.",
+      "type": "why"
+    },
+    {
+      "id": "L12-f63",
+      "q": "Why give a stuck player multiple paths of progression?",
+      "a": "Puzzles are gates; side paths let them keep playing and return later, maybe with the answer.",
+      "type": "why"
+    },
+    {
+      "id": "L12-f64",
+      "q": "Why should executing a puzzle solution be quick after the A-Ha moment?",
+      "a": "The reward is the insight; after that, execution is just grunt work and shouldn't drag.",
+      "type": "why"
+    },
+    {
+      "id": "L12-f65",
+      "q": "Why limit minigame controls to a few buttons with one action each?",
+      "a": "Minigames imply easy-to-learn play; simple controls keep them a fun variety break, not a chore.",
+      "type": "why"
+    },
+    {
+      "id": "L12-f66",
+      "q": "Why does Rogers prefer challenging games to difficult ones if you want completion?",
+      "a": "Only a minority finish difficult games; challenge rewards skill and keeps most players progressing.",
+      "type": "why"
+    },
+    {
+      "id": "L12-f67",
+      "q": "Your hazard is a neon-pink cloud that players walk into because it looks like candy. Which rule is broken?",
+      "a": "Hazards must look dangerous (shape, color, sound, particles).",
+      "type": "apply"
+    },
+    {
+      "id": "L12-f68",
+      "q": "Your puzzle needs an item found three zones away. Players give up. Which Rogers rule applies?",
+      "a": "Keep the tools needed to solve a puzzle nearby.",
+      "type": "apply"
+    },
+    {
+      "id": "L12-f69",
+      "q": "Your merge game's event minigame lasts 20 minutes with complex controls. What would Rogers say?",
+      "a": "Keep minigames simple and short: 5–10 minutes max, few controls.",
+      "type": "apply"
+    },
+    {
+      "id": "L12-f70",
+      "q": "Your ad shows a pull-the-pin puzzle that isn't in the game. What's the problem?",
+      "a": "Misleading creative: the minigame should actually exist in the game (regulators have ruled against such ads).",
+      "type": "apply"
+    },
+    {
+      "id": "L12-f71",
+      "q": "Your level's opening asks players to 'find 5 gears' without saying why. Which motto fixes it?",
+      "a": "Show 'em the door, then send 'em after the key: reveal the goal and reward first.",
+      "type": "apply"
+    },
+    {
+      "id": "L12-f72",
+      "q": "Players say your blade-trap arena is just annoying. What design twist from the book could make it fun?",
+      "a": "Let the trap kill enemies too, so players can lure them in and feel clever.",
+      "type": "apply"
+    },
+    {
+      "id": "L12-f73",
+      "q": "A puzzle is a ____ that has a right answer.",
+      "a": "challenge",
+      "type": "cloze"
+    },
+    {
+      "id": "L12-f74",
+      "q": "Rogers' footnote insists: walking is not ____.",
+      "a": "gameplay",
+      "type": "cloze"
+    },
+    {
+      "id": "L12-f75",
+      "q": "In the Peter and the Wolf analogy, when does the wolf (enemies) enter, and what happens to the music afterwards?",
+      "a": "Only after every other instrument is already playing (movement, treasure, mechanics, hazards are familiar). Then the music keeps intensifying through the fight until the hunters' drums rescue everyone: a rising fight with a big payoff.",
+      "type": "basic"
+    },
+    {
+      "id": "L12-f76",
+      "q": "According to Rogers, what is the goal of good level design, and what does reaching it feel like?",
+      "a": "Helping the player reach flow (Csíkszentmihályi). It feels like making music: a natural rhythm of moving and acting emerges as the player crosses the level.",
+      "type": "basic"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "L12-q01",
+      "q": "What distinguishes a hazard from an enemy?",
+      "options": [
+        "Hazards lack intelligence and/or mobility and follow predictable patterns",
+        "Hazards deal more damage",
+        "Hazards can't be destroyed",
+        "Hazards only appear in boss rooms"
+      ],
+      "answer": 0,
+      "why": "Rogers: the key difference is intelligence and/or mobility. Damage, destructibility and location vary for both."
+    },
+    {
+      "id": "L12-q02",
+      "q": "Which pairing matches Rogers' definitions?",
+      "options": [
+        "Difficulty = skill and improvement; Challenge = pain and loss",
+        "Challenge = randomness; Difficulty = patterns",
+        "Difficulty and challenge are synonyms",
+        "Difficulty = pain and loss; Challenge = skill and improvement"
+      ],
+      "answer": 3,
+      "why": "Difficulty punishes; challenge can be overcome with skill and knowledge. Watch for the option that swaps the two definitions."
+    },
+    {
+      "id": "L12-q03",
+      "q": "Which is NOT one of Rogers' four timing-puzzle rules?",
+      "options": [
+        "Predictable timing",
+        "A readable movement pattern",
+        "Randomized timing to keep players guessing",
+        "World tells showing safe spots"
+      ],
+      "answer": 2,
+      "why": "Random timing is explicitly called unfair. The other three are rules, plus a tight-but-possible window."
+    },
+    {
+      "id": "L12-q04",
+      "q": "In the Peter and the Wolf analogy, what game element does the oboe (duck) represent?",
+      "options": [
+        "Basic movement",
+        "Treasure and collectibles",
+        "More complex movement and mechanics",
+        "Enemies"
+      ],
+      "answer": 2,
+      "why": "Strings = movement, flute = collectibles, oboe = complex mechanics, clarinet = hazards, wolf = enemies."
+    },
+    {
+      "id": "L12-q05",
+      "q": "In the 7-step orchestration, what comes right after introducing enemies?",
+      "options": [
+        "Add a second mechanic",
+        "Introduce the first hazard",
+        "Add a checkpoint",
+        "Combine enemies with hazards"
+      ],
+      "answer": 3,
+      "why": "Order: movement → mechanic 1 → mechanic 2 + combine → hazard → enemies → enemies + hazards → twist."
+    },
+    {
+      "id": "L12-q06",
+      "q": "Your F2P runner shows a 'Save me' continue that respawns players mid-air, facing backward, beside the obstacle that killed them. How many checkpoint rules does this break?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "None, because continues aren't checkpoints"
+      ],
+      "answer": 2,
+      "why": "Facing direction, next to a hazard, and not on the ground: three rules. A continue is effectively a checkpoint, so the rules apply."
+    },
+    {
+      "id": "L12-q07",
+      "q": "What did Rogers change in Scott Kim's puzzle definition?",
+      "options": [
+        "He replaced 'fun' with 'challenge'",
+        "He added 'must have multiple answers'",
+        "He removed 'has a right answer'",
+        "He added 'must be skippable'"
+      ],
+      "answer": 0,
+      "why": "Fun is subjective; challenge is the puzzle's (and game's) job. The right answer stays."
+    },
+    {
+      "id": "L12-q08",
+      "q": "Your word game's players churn on a hard puzzle. Which response best follows Rogers?",
+      "options": [
+        "Remove all hints so the solution feels earned",
+        "Lock the puzzle for 24 hours after three wrong guesses",
+        "Make a wrong guess cost a life",
+        "Offer an optional hint costing a few coins or a rewarded ad"
+      ],
+      "answer": 3,
+      "why": "Hints should cost something mild and be the player's choice; never something severe like a life. Progression is a right."
+    },
+    {
+      "id": "L12-q09",
+      "q": "Resident Evil 2's chess-piece puzzle illustrates which mistake?",
+      "options": [
+        "Arbitrary pieces unrelated to the story or setting",
+        "Too few puzzle pieces",
+        "Random timing",
+        "No checkpoint before the puzzle"
+      ],
+      "answer": 0,
+      "why": "Chess pieces in a police station control panel make no sense; tie puzzles to the story (e.g., officers' ID cards)."
+    },
+    {
+      "id": "L12-q10",
+      "q": "Which is one of Rogers' four ways to solve a puzzle?",
+      "options": [
+        "Paying",
+        "Grinding",
+        "Asking a friend",
+        "Dumb luck"
+      ],
+      "answer": 3,
+      "why": "Reason, knowledge, skill and dumb luck. The best puzzles allow all four in some capacity."
+    },
+    {
+      "id": "L12-q11",
+      "q": "Why does Rogers place enemies far enough from the far edge of a pit?",
+      "options": [
+        "To save memory",
+        "So they don't engage until the player has landed safely",
+        "So the player can't see them",
+        "So they fall into the pit"
+      ],
+      "answer": 1,
+      "why": "The pit and the enemy should be two sequential challenges, not a cheap combined ambush mid-jump."
+    },
+    {
+      "id": "L12-q12",
+      "q": "What is Old Man Murray's 'start to crate'?",
+      "options": [
+        "A satirical metric of how quickly a game shows its first crate",
+        "A crate-breaking speedrun",
+        "A level-design tool",
+        "An achievement in Lego games"
+      ],
+      "answer": 0,
+      "why": "It's a satirical review measure, used by Rogers as a gauge of creativity."
+    },
+    {
+      "id": "L12-q13",
+      "q": "Which is NOT one of Rogers' minigame rules?",
+      "options": [
+        "Keep sessions to 5–10 minutes",
+        "Use many buttons for depth",
+        "Ramp difficulty gently",
+        "Make the victory condition clear"
+      ],
+      "answer": 1,
+      "why": "He says limit controls to a few buttons, one action each. The others are rules."
+    },
+    {
+      "id": "L12-q14",
+      "q": "Your hyper-casual prototype: random targets, tap-only, speeds up forever, no choices. Rogers would call it…",
+      "options": [
+        "A microgame done right",
+        "A just-for-fun mechanic",
+        "A timing puzzle",
+        "Whack-a-Mole: the last stop on the creativity train"
+      ],
+      "answer": 3,
+      "why": "Reaction-only, random, repetitive, minimal input, endless: all five Whack-a-Mole sins."
+    },
+    {
+      "id": "L12-q15",
+      "q": "A Clash of Clans-style build timer is best described as…",
+      "options": [
+        "A meta timer that paces sessions and creates appointments",
+        "A timing-puzzle hazard",
+        "A checkpoint",
+        "A just-for-fun prop"
+      ],
+      "answer": 0,
+      "why": "In-level timers are hazards for tension; meta timers pace play, create return appointments and can be monetized as skips."
+    },
+    {
+      "id": "L12-q16",
+      "q": "Which visible-checkpoint advantage does Rogers list?",
+      "options": [
+        "Never breaks immersion",
+        "Requires no explanation",
+        "Gives a target, security and a sense of accomplishment",
+        "Invisible to enemies"
+      ],
+      "answer": 2,
+      "why": "Visible checkpoints give targets, security, fun activation and accomplishment, but can look gamey and need explaining."
+    },
+    {
+      "id": "L12-q17",
+      "q": "A designer wants a ship-chasing level where players who hesitate get crushed by a rock. Rogers' response?",
+      "options": [
+        "Fine, as long as it's telegraphed once",
+        "Cut it: no dropping rocks on the player's head",
+        "Add a checkpoint before the rock",
+        "Make the rock optional on Easy"
+      ],
+      "answer": 1,
+      "why": "Rogers cut that exact level. Instant, designer-decreed death is cheap; players should only die from their own mistakes."
+    },
+    {
+      "id": "L12-q18",
+      "q": "Why should a resetting switch show a timer graphic?",
+      "options": [
+        "To look cool",
+        "So the player knows how long until it reverts",
+        "To hide loading",
+        "To mark a checkpoint"
+      ],
+      "answer": 1,
+      "why": "Players need to see the switch's state and remaining time; the ticking sound and graphic communicate both."
+    }
+  ],
+  "sideQuests": [
+    {
+      "id": "L12-s01",
+      "title": "Platform Primer remix",
+      "task": "Pick 6 platform types from Rogers' primer and turn each into a match-3 blocker or merge obstacle with the same behavior.",
+      "minutes": 10,
+      "xp": 40
+    },
+    {
+      "id": "L12-s02",
+      "title": "The crate ban",
+      "task": "Write 15 breakable objects for a cozy farming F2P game. No crates, barrels or chests allowed.",
+      "minutes": 5,
+      "xp": 20
+    },
+    {
+      "id": "L12-s03",
+      "title": "Tell me when",
+      "task": "Invent one timing hazard for a runner and list three tells (visual, audio, environmental) that warn the player.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L12-s04",
+      "title": "Prop storm",
+      "task": "Brainstorm props for a bakery (easy), a pirate cove (medium) and a space-station laundromat (hard). Stop when it gets silly.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L12-s05",
+      "title": "Checkpoint audit",
+      "task": "Fail a level in any mobile game and grade its respawn/continue against FACE · SAFE · GROUND · FLAT · SAVED.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L12-s06",
+      "title": "Microgame anything",
+      "task": "Turn an everyday chore (watering plants, parallel parking, folding laundry) into a 30-second microgame using Rogers' minigame rules.",
+      "minutes": 15,
+      "xp": 50
+    },
+    {
+      "id": "L12-s07",
+      "title": "Rock-on-the-head hunt",
+      "task": "List three unfair deaths or fails you've suffered in mobile games and redesign each to be fair.",
+      "minutes": 5,
+      "xp": 20
+    }
+  ],
+  "mainQuests": [
+    {
+      "id": "L12-m01",
+      "title": "Orchestrate a 10-level episode",
+      "task": "Design a 10-level match-3 or merge episode using the 7-step orchestration. Invent 2 new mechanics (one helpful, one blocker) and 1 'enemy' (spreading blocker or countdown bomb). For each level write the goal, elements, what's new and the intended feeling. Mark spikes, relief levels and the final twist, and justify your hardest level against 'no rocks on the head'.",
+      "deliverable": "A one-page level table (spreadsheet or markdown) plus a sketch of one board.",
+      "doneWhen": "All 7 orchestration steps map to at least one level, no level introduces two new things at once, the hardest level has a written fairness check, and you've posted it publicly asking for one piece of feedback.",
+      "minutes": 90,
+      "xp": 220
+    },
+    {
+      "id": "L12-m02",
+      "title": "Timer teardown",
+      "task": "Pick one timer-heavy F2P game (Clash of Clans, Hay Day or Township). Catalog every timer: its length, whether it's in-level or meta, what it paces, whether it can be skipped and for how much. Then rate each on clarity (shows time left?) and fairness (would it exist without paid skips?).",
+      "deliverable": "A timer spreadsheet with a 5-sentence verdict on where the game sits between 'pacing' and 'toll booth'.",
+      "doneWhen": "At least 8 timers are cataloged with clarity and fairness ratings, and your verdict cites at least two of Rogers' rules.",
+      "minutes": 60,
+      "xp": 150
+    }
+  ],
+  "playLabs": [
+    {
+      "id": "L12-p01",
+      "game": "Royal Match or Candy Crush Saga",
+      "minutes": 10,
+      "lookFor": "How a new blocker is introduced: alone first? tutorial hand? repeated? combined later?",
+      "question": "Which of Rogers' 7 orchestration steps can you spot across those levels?"
+    },
+    {
+      "id": "L12-p02",
+      "game": "Subway Surfers",
+      "minutes": 10,
+      "lookFor": "Obstacle tells, timing windows, and what happens after a crash (the continue offer).",
+      "question": "Does the respawn follow Rogers' checkpoint rules? Did any crash feel like a rock on the head?"
+    },
+    {
+      "id": "L12-p03",
+      "game": "Clash of Clans or Hay Day",
+      "minutes": 10,
+      "lookFor": "Every timer on screen: building, production, boosts, events.",
+      "question": "Which timers pace your session, which create appointments, which are pushed as skips, and do all show remaining time clearly?"
+    },
+    {
+      "id": "L12-p04",
+      "game": "Block Blast! or a word puzzle game",
+      "minutes": 10,
+      "lookFor": "Goal clarity, hint systems, feedback and how failure is handled.",
+      "question": "Does it show the door first, give hot/cold feedback, and keep hint costs mild and optional?"
+    }
+  ],
+  "retrieval": [
+    {
+      "q": "Name the four types of level stuff.",
+      "a": "Mechanics, hazards, props, puzzles."
+    },
+    {
+      "q": "How do board-game and video-game designers define mechanics differently?",
+      "a": "Board games: rule systems (turns, action points, resource management, bidding, dice). Video games: interactive objects that create gameplay."
+    },
+    {
+      "q": "What separates hazards from enemies?",
+      "a": "Intelligence and/or mobility: hazards are predictable and limited in movement."
+    },
+    {
+      "q": "Difficulty vs. challenge?",
+      "a": "Difficulty promotes pain and loss (punishes); challenge promotes skill and improvement (beatable through skill and knowledge)."
+    },
+    {
+      "q": "Four rules of a fair timing puzzle?",
+      "a": "Readable pattern, predictable timing, tight-but-possible window with leeway, world tells."
+    },
+    {
+      "q": "The 7-step orchestration order?",
+      "a": "Movement/collecting → one mechanic → second mechanic and combine → hazard → enemies → enemies + hazards → twist."
+    },
+    {
+      "q": "Why let hazards kill enemies?",
+      "a": "Players feel clever turning traps against their makers; it adds strategy to the combo."
+    },
+    {
+      "q": "Five checkpoint rules?",
+      "a": "Face direction of travel; not near hazards or enemy detection; respawn on the ground with no long animation; flat ground; auto-save."
+    },
+    {
+      "q": "Rogers' puzzle definition and why?",
+      "a": "A challenge that has a right answer; 'fun' is subjective, challenge is the job."
+    },
+    {
+      "q": "Four ways to solve a puzzle?",
+      "a": "Reason, knowledge, skill, dumb luck."
+    },
+    {
+      "q": "How should failure on a puzzle be handled?",
+      "a": "No big deal: hints or the answer at a mild, optional cost (Layton's diminishing rewards), never a life. Progression is a right, not a reward."
+    },
+    {
+      "q": "What is 'no cat mustaches'?",
+      "a": "Don't make overclever, nonsensical solutions; it's player vs. puzzle, not designer vs. player."
+    },
+    {
+      "q": "Three trivia answer formats?",
+      "a": "Multiple choice, find the object/image, fill in the answer, each with its own rules."
+    },
+    {
+      "q": "Minigame design rules?",
+      "a": "Simple controls, short sessions, gentle ramp, something new each progression, few buttons, customization, clear ending, a brain-shift moment when mixed with core play."
+    },
+    {
+      "q": "Why is Whack-a-Mole a last resort?",
+      "a": "Reaction-only, random, repetitive, minimal input, endless."
+    }
+  ],
+  "feynman": "Explain to a 12-year-old in 60 seconds why game traps should be 'challenging, not difficult', using the rock-on-the-head story and the 'wait for it… go for it!' flame jet.",
+  "links": [
+    "L08",
+    "L09",
+    "L10",
+    "L11",
+    "L13",
+    "F2P"
+  ]
+}

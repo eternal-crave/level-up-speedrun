@@ -1,0 +1,1598 @@
+{
+  "id": "BX",
+  "order": 19,
+  "kind": "book",
+  "label": "Bonus Levels",
+  "title": "The Designer's Toolkit — Bonus Levels 1–9",
+  "bookPages": "431–479",
+  "emoji": "🧰",
+  "tagline": "Steal the pros' paperwork: real samples, fill-in templates and idea lists, upgraded for F2P.",
+  "f2pRelevance": 4,
+  "f2pWhy": "These are the documents you will actually write as a designer (one-sheets, GDDs, enemy sheets, pitch decks); the F2P versions add core loop, economy, monetization, LiveOps, analytics and KPIs.",
+  "minutes": 120,
+  "tldr": [
+    "The back of the book is a toolbox: 2 worked samples (one-sheet, ten-pager for a game called Farm Wars), 4 templates (GDD, enemy, boss, pitch) and 3 idea lists (story themes, environments, mechanics & hazards).",
+    "The docs form a ladder: one-sheet (sells the idea) → ten-pager (broad strokes) → pitch deck (wins approval) → GDD (everything, living).",
+    "Golden rules: information beats styling, keep it short and exciting, repeat the one-sheet until the team quotes it back, and a TBD beats a blank.",
+    "Enemy and boss templates are production checklists: every animation, effect, sound, HUD element and reward, plus a boss arena page.",
+    "The lists are idea generators: theme + environment + mechanic = a level concept in 30 seconds.",
+    "For F2P mobile, add what 2010 docs lacked: core loop, meta, economy, monetization, FTUE, LiveOps, analytics events, target KPIs and a UA/ad-creative hook."
+  ],
+  "sections": [
+    {
+      "title": "0. The document ladder",
+      "bites": [
+        {
+          "id": "BX-b01",
+          "hook": "Nine tools, one game, four zoom levels",
+          "body": "The Bonus Levels hold 2 samples (one-sheet, ten-pager), 4 templates (GDD, enemy, boss, pitch) and 3 idea lists (themes, environments, mechanics/hazards). They are zoom levels of the same game: one-sheet → ten-pager → pitch → GDD, each reusing the one below.",
+          "example": "Farm Wars appears as a one-sheet, a ten-pager and a pitch deck, so you can watch one idea climb the ladder.",
+          "f2p": "Modern F2P studios run: concept one-pager → pitch with KPI targets → prototype → wiki GDD with feature one-pagers → soft launch.",
+          "memory": "Satellite photo → city map → guided tour → street view.",
+          "tag": "concept"
+        },
+        {
+          "id": "BX-b02",
+          "hook": "Every document has a different reader",
+          "body": "One-sheet: team plus marketing, sales, licensors. Ten-pager: team and decision makers. Pitch: publishers and execs who hold the money. GDD: the whole dev team. Enemy/boss sheets: artists, animators, audio, programmers. Idea lists: you, while brainstorming.",
+          "example": "Nobody hands a 200-page GDD to a marketing VP, or a one-sheet to the animator who needs the death-animation list.",
+          "f2p": "F2P adds readers: the UA team (needs the hook), analysts (need the event dictionary), the LiveOps team (needs the calendar).",
+          "memory": "Right doc, right reader.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "1. Bonus Level 1 — The One-Sheet Sample",
+      "bites": [
+        {
+          "id": "BX-b03",
+          "hook": "The one-sheet serves two masters",
+          "body": "A one-sheet (concept overview) keeps the team and managers on the same page about priorities and objectives, and it is a tool to hand to management, marketing, sales and licensors to get them excited about your game.",
+          "example": "The Farm Wars one-sheet fits platform, target age, rating, summary, outline, USPs and comps on a single page.",
+          "f2p": "An F2P one-sheet also briefs UA and publishing: genre, audience, core loop, monetization model, comps, ad hook.",
+          "memory": "One page, two jobs: glue and hype.",
+          "tag": "concept"
+        },
+        {
+          "id": "BX-b04",
+          "hook": "Content beats formatting, every time",
+          "body": "How the one-sheet looks matters less than what it says. The book shows one text-only version and one with images on purpose. Whatever the format, keep it short and informative.",
+          "example": "Farm Wars is plain text with bold instructions; Maximo vs. Army of Zin is a landscape poster with art beside every claim. Both are valid.",
+          "f2p": "A Figma board or a doc both work; reviewers check that hook, loop, monetization and comps are there.",
+          "memory": "Lipstick on an empty page is still an empty page.",
+          "tag": "rule"
+        },
+        {
+          "id": "BX-b05",
+          "hook": "Repeat it until they quote it back",
+          "body": "Restate the one-sheet's points every time you talk about the game. You know it has sunk in when a teammate rejects a feature idea because it contradicts the one-sheet, and they're right. Count it as a victory.",
+          "example": "You pitch a crafting system mid-project; the artist says it's not on the one-sheet. Annoying? No: design win.",
+          "f2p": "Pin your pillars in the team channel and use them to kill scope creep in LiveOps feature requests.",
+          "memory": "When the team quotes your one-sheet at you, you've won.",
+          "tag": "rule"
+        },
+        {
+          "id": "BX-b06",
+          "hook": "The summary: story, verb, goal in one breath",
+          "body": "The game summary gives the story's beginning, middle and end, a hint of play style, the player's objectives and elements, short and sweet. Farm Wars: fed-up farm animals attack in cybernetic armor; the farmer fights them and sells crops to upgrade the farm and buy weapons.",
+          "example": "The pun about farming as well as you fight or you'll buy the farm sells the tone in one line.",
+          "f2p": "Mobile equivalent: the first lines of your store description, visible before the reader taps for more.",
+          "memory": "Story + verb + goal.",
+          "tag": "example"
+        },
+        {
+          "id": "BX-b07",
+          "hook": "The game outline is your loop, stated",
+          "body": "The outline goes deeper than the summary without great detail. Farm Wars: Farming, Battle, Selling and Buying rounds; a Season is 4 sets of 4 rounds, then a boss unlocks the next Season; later Seasons add weather that changes farming, selling and battle.",
+          "example": "A reader can picture a session: plant, fight, sell, shop, repeat, then a boss gate.",
+          "f2p": "That's core loop (rounds) + meta (seasons) + gates (bosses) + modifiers (weather = event rules).",
+          "memory": "Outline = loop + gate + twist.",
+          "tag": "example"
+        },
+        {
+          "id": "BX-b08",
+          "hook": "USPs: five to seven, no more",
+          "body": "Unique selling points highlight play style, game modes, single or multiplayer, technology innovations and cool features. The book caps them at 5–7. Farm Wars lists six: RTS meets farming sim, hundreds of combinations, 50+ weapons, hordes and bosses, multiple endings, a multiplayer brawl mode.",
+          "example": "The weapon range runs from a humble hoe to an absurd super-weapon: concrete and funny.",
+          "f2p": "USPs become store screenshot captions. If a top-10 competitor could claim it too, it isn't unique.",
+          "memory": "Seven is the ceiling; five is the sweet spot.",
+          "tag": "rule"
+        },
+        {
+          "id": "BX-b09",
+          "hook": "Comps: successful, recent, famous",
+          "body": "Choose competitive products that are successful, recent or very well known, preferably all three. Farm Wars cites tower-defense games, the Harvest Moon series and Lock's Quest.",
+          "example": "Farming sim plus tower defense: two references and an exec instantly gets it.",
+          "f2p": "Pull F2P comps from current top-grossing and top-download charts (market tools like Sensor Tower or AppMagic), not from your childhood favorites.",
+          "memory": "Famous, fresh, profitable.",
+          "tag": "rule"
+        },
+        {
+          "id": "BX-b10",
+          "hook": "Maximo's one-sheet sells with pictures",
+          "body": "The illustrated one-sheet for Maximo vs. Army of Zin pairs every image with a selling claim: hero art with feature bullets, villain art with a famous-artist credit and enemy variety, collectible art with unlock hooks, location thumbnails with gameplay promises.",
+          "example": "Hero block: more heroic, more combo moves that stay simple, an experience system, responsive feel, customization.",
+          "f2p": "Store screenshots and key art work the same way: each image carries one benefit caption.",
+          "memory": "Every picture earns its spot with a promise.",
+          "tag": "example"
+        },
+        {
+          "id": "BX-b11",
+          "hook": "A world strip = levels + features + story",
+          "body": "Maximo's right column shows five locations, each with a gameplay-promise headline (stylish smashing, creepy atmosphere, obstacle courses and puzzles, reactive environments) and a story sentence. One glance gives level list, feature list and plot.",
+          "example": "Haunted Forest: creepy-atmosphere promise, plus you meet Tinker the Gearmaster before Lord Bane kidnaps her.",
+          "f2p": "Do this for a chapter or event map: each area = a new mechanic promise + a story beat.",
+          "memory": "Location + verb + twist.",
+          "tag": "example"
+        },
+        {
+          "id": "BX-b12",
+          "hook": "The best character trait is merch-ready",
+          "body": "Maximo's one-sheet lists telling traits: he always holds a sword, keeps fighting in his underwear, and has Death as his companion. Specific, visual traits beat generic adjectives like brave or heroic.",
+          "example": "\"Brave and heroic\" is forgettable; \"fights in his boxers\" is a T-shirt.",
+          "f2p": "Mobile mascots need one silly, visible trait that reads in a one-second ad.",
+          "memory": "Underwear beats adjectives.",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "2. Bonus Level 2 — The Ten-Page Design Document Sample",
+      "bites": [
+        {
+          "id": "BX-b13",
+          "hook": "The ten-pager is a pirate's code",
+          "body": "Unlike the strict one-page rule, ten pages is a guideline. Think \"ten-pointer\": cover every broad stroke, give a topic its own page if you like, and keep it accessible and exciting. Its foundation becomes your pitch and your GDD.",
+          "example": "The book's own Farm Wars ten-pager is seven pages because topics are merged.",
+          "f2p": "F2P ten topics: title, fantasy/story, core loop, meta, controls, content, economy, monetization, retention/LiveOps, market + UA hook.",
+          "memory": "Guidelines, not rules. Arr.",
+          "tag": "rule"
+        },
+        {
+          "id": "BX-b14",
+          "hook": "Pages 1–3: title, story & gameplay, game flow",
+          "body": "Title page: graphic, logo title, contact info, platform, audience, rating, ship date. Story & gameplay: short story with beginning, middle and end (or a cliffhanger), setting, characters, conflict, plus gameplay flow. Game flow: how the player grows as challenges rise, tied to story, via XP, money, score or collectibles, gaining abilities, weapons, moves, unlockables.",
+          "example": "Farm Wars' cover: XBLA, PSN and WiiWare, rated E10+, ship date TBD.",
+          "f2p": "Game flow = your progression and reward cadence (what a player gets at minute 1, day 1, day 7).",
+          "memory": "Who, what, how you grow.",
+          "tag": "list"
+        },
+        {
+          "id": "BX-b15",
+          "hook": "Pages 4–5: character, controls, gameplay, hardware",
+          "body": "Character & controls: who you control, their story, unique abilities, activity types, character switching, and a control map of special moves on the controller. Main gameplay concepts & platform features: genres, how play is split up, minigames, cool scenarios, USPs, diagrams, and hardware hooks (hard drive, touch screen, multiple screens, memory card).",
+          "example": "Farm Wars annotates an Xbox 360 pad: move/run, camera/zoom, swing/use, drop/plant, target lock, map, two special attacks.",
+          "f2p": "Swap the controller for a gesture map: tap, swipe, drag, hold, thumb reach, haptics.",
+          "memory": "Who you are, what you press, what you play.",
+          "tag": "list"
+        },
+        {
+          "id": "BX-b16",
+          "hook": "Pages 6–8: world, interface, mechanics",
+          "body": "Game world: environments with descriptions, story ties, mood, linear or hub structure, a navigation flow diagram. Interface: how the shell is navigated, its mood, its music, an interface flow diagram. Mechanics & power-ups: unique mechanics tied to player actions and the environment; power-up benefits and whether they buy things.",
+          "example": "Farm Wars' world cites Harvest Moon, The Far Side and MechWarrior as mood references; six maps and six weather types.",
+          "f2p": "The interface page matters more on mobile: home screen, store, event entry points, red-dot badges.",
+          "memory": "Where, how you navigate, what you use.",
+          "tag": "list"
+        },
+        {
+          "id": "BX-b17",
+          "hook": "Pages 9–10: enemies, bosses, extras, comps",
+          "body": "Enemies: types, cool attacks, AI, uniqueness. Bosses: types, where they appear, how they're beaten, rewards. Cutscenes: how and when shown, in what format (CG, Flash, puppet show). Bonus material and replay incentive. Competition at release.",
+          "example": "Farm Wars cutscenes are cheap puppet shows built from in-game assets, plus a six-month DLC plan.",
+          "f2p": "Bonus material + replay incentive = LiveOps; competition = market analysis.",
+          "memory": "Bad guys, extras, rivals.",
+          "tag": "list"
+        },
+        {
+          "id": "BX-b18",
+          "hook": "Farm Wars: five phases per round",
+          "body": "Buying (mail-order catalog: seeds, gear, fences, weapons, eventually your own death-mech that doubles as a tractor), Planting (isometric farm: till, water, place defenses; seasons affect crops), Defending (start with a hoe), Boss (every four rounds), Selling (roadside stand where customers drop tips).",
+          "example": "Win: survive and defeat all animal bosses. Lose: go broke, have the farm devastated, or get killed.",
+          "f2p": "Hay Day-style farming plus Plants vs. Zombies-style defense in 3-minute chunks is a believable mobile loop.",
+          "memory": "Buy, plant, defend, boss, sell.",
+          "tag": "example"
+        },
+        {
+          "id": "BX-b19",
+          "hook": "Scope sells when it has numbers",
+          "body": "Farm Wars rounds last 15–30 minutes; six maps × six weather conditions × six boss rounds promise 10+ hours. Concrete numbers make scope credible and let producers estimate. The elevator pitch triangulates FarmVille × tower defense × MechWarrior.",
+          "example": "The weather list (four seasons plus tornado and rain) turns one map into many.",
+          "f2p": "⚠️ 15–30 minute rounds are far too long for mobile. State session length, level count at launch and content per update instead.",
+          "memory": "6 × 6 × 6 = believable.",
+          "tag": "example"
+        },
+        {
+          "id": "BX-b20",
+          "hook": "Tech that adds instead of replacing",
+          "body": "Every Farm Wars item has several upgrade levels, each with its own look and effect. New tech adds to your arsenal instead of replacing the old; your limits are your choices and your money. Every advance has trade-offs (heavier armor protects more but slows you).",
+          "example": "Fence < barbed wire < electric fence < force field < laser system.",
+          "f2p": "It's a soft-currency sink ladder; trade-offs keep low tiers useful and slow power creep.",
+          "memory": "Fence to laser in five steps.",
+          "tag": "example"
+        },
+        {
+          "id": "BX-b21",
+          "hook": "Enemies that attack your economy",
+          "body": "Each Farm Wars boss animal brings a minion and a signature attack. Some hit you (stun, gore), some hit defenses (battering ram, armor shatter, electronics overload), and some hit the farm itself (sour milk wilts crops, a mud machine ruins land).",
+          "example": "The pig's mud machine turns fertile land useless, so combat damages the farming loop directly.",
+          "f2p": "Threats that touch the meta (resource raids in base-builders) make combat matter beyond one fight.",
+          "memory": "Hit the farmer, the fence and the field.",
+          "tag": "example"
+        },
+        {
+          "id": "BX-b22",
+          "hook": "Documents drift, so version them",
+          "body": "Across the three Farm Wars docs, details change: four rounds become five phases with a boss phase; target age 15–21 becomes 8–15; E10 and E10+ swap; platforms change; chickens become ducks in the story.",
+          "example": "Normal: designs evolve. The fix is version numbers, revision history and re-syncing older docs.",
+          "f2p": "In F2P, values change weekly via remote config, so changelogs and one source of truth are essential.",
+          "memory": "Old docs lie: date and version everything.",
+          "tag": "warning"
+        },
+        {
+          "id": "BX-b23",
+          "hook": "The pork-chop gag sells tone",
+          "body": "The Farm Wars ten-pager ends on a drawing of the farmer's produce stand offering to trade for ammunition, with pork chops as today's special. A joke in a design doc communicates tone faster than a paragraph.",
+          "example": "Every page footer repeats the logo, contact info and date: tone plus professionalism.",
+          "f2p": "A funny frame in your pitch can become tomorrow's ad creative.",
+          "memory": "If they laugh, they remember.",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "3. Bonus Level 3 — Game Design Document Template",
+      "bites": [
+        {
+          "id": "BX-b24",
+          "hook": "GDD rule 1: built for action, bendable for anything",
+          "body": "The template leans toward action, adventure, platform, RPG and shooter games, but most of its elements adapt to any style of game.",
+          "example": "A puzzle game skips vehicles and melee combat but keeps progression, economy, HUD and music sections.",
+          "f2p": "For F2P, add what the template lacks: economy, monetization, FTUE, LiveOps, analytics.",
+          "memory": "Bend it, don't break it.",
+          "tag": "rule"
+        },
+        {
+          "id": "BX-b25",
+          "hook": "A TBD beats a blank",
+          "body": "You don't have to fill every detail, but a roughed-out section is better than a missing one. Rogers tells developers that a TBD is better than nothing at all.",
+          "example": "Writing \"Monetization: TBD (hybrid IAP + rewarded ads?)\" tells the team the question exists.",
+          "f2p": "Tag sections TBD / draft / final and review the TBDs before each milestone.",
+          "memory": "An honest hole beats a hidden one.",
+          "tag": "rule"
+        },
+        {
+          "id": "BX-b26",
+          "hook": "The GDD is alive (and liquid)",
+          "body": "Anything in a GDD can change because of technology limits or production-time realities. Keep the table of contents and version number current, and log dates and authors in a revision history.",
+          "example": "Cover: image, title, version, team, point of contact with phone, publishing date. Footer: copyright/company/date, page number, current date.",
+          "f2p": "Wiki pages with changelogs, linked to remote-config versions.",
+          "memory": "A GDD is a sourdough starter: feed it.",
+          "tag": "rule"
+        },
+        {
+          "id": "BX-b27",
+          "hook": "Make the template yours",
+          "body": "Use the template in whatever way works best for you and your team: draw more pictures if needed, or break the data into one-pagers like Bonus Level 1.",
+          "example": "A team might keep one page per feature: shop, daily quests, boss rush.",
+          "f2p": "Feature one-pagers are the norm in mobile studios.",
+          "memory": "Toolbox, not cage.",
+          "tag": "rule"
+        },
+        {
+          "id": "BX-b28",
+          "hook": "GDD opening: goals, story, controls, tech",
+          "body": "Game goals: high concept, back-of-box new features, all Internet/wireless features. Story overview, short and gameplay-framed: set-up, locations and how you travel between them, finale. Controls: move overview, scheme, controller image per platform. Tech requirements kept brief (the TDD has more): tools, who builds camera/physics/bosses, level and scripting tools, cheat tools.",
+          "example": "Cheats listed: level, invulnerability, camera, full health/armor/money.",
+          "f2p": "Cheats live on as a QA debug panel: grant currency, skip levels, change the clock.",
+          "memory": "Why, what story, which buttons, which tools.",
+          "tag": "list"
+        },
+        {
+          "id": "BX-b29",
+          "hook": "The shell: from boot to game over",
+          "body": "Front end: boot credit screens (publisher, studio, licensors, third-party, legal), cutscene and attract-mode descriptions, title screen (image, options, navigation, save/load, file naming, save details, cross-save), player options (video, audio, music, subtitles, contrast, alternate controls), other screens (credits, bonus material, cheats, galleries, special features), a game flowchart, and the loading screen.",
+          "example": "Loading screens can show hints, trivia or even a minigame.",
+          "f2p": "Mobile: fast splash, automatic cloud save with account linking; attract mode became store videos and ads.",
+          "memory": "Boot, title, options, extras, flowchart, loading.",
+          "tag": "list"
+        },
+        {
+          "id": "BX-b30",
+          "hook": "Camera and HUD sections",
+          "body": "Camera: an image of each point of view used (first person, third person, three-quarter, 2.5-D, forced scroll, spline, locked), the camera logic, special situations, a troubleshooting guide and the cheat/screenshot camera. HUD: health, lives, money/score, power/fuel, ammo, abilities, timer, map, option links, plings, reticule, speedometer; or how a HUD-less game conveys them.",
+          "example": "Plings are context-sensitive info pop-ups.",
+          "f2p": "Mobile HUDs add currency bars, energy/lives, event timers, offer buttons and red-dot badges.",
+          "memory": "What you see and how you see it.",
+          "tag": "list"
+        },
+        {
+          "id": "BX-b31",
+          "hook": "Player character: from metrics to death",
+          "body": "Name, art, motivation. Metrics: size vs. world, movement, navigation, hoist/hang, context moves, reactions/death, idles. Skills and upgrades. Inventory tools and screen. Melee (moves, block/dodge/parry/grab, effects, combos, combat gauge). Weapons (tech tree, damage, lock-on, ammo, range, breakable/degrading). Power-ups. Health, alternate states, lives, death, checkpoints.",
+          "example": "Alternate states include stunned, poisoned, or turned into a baby.",
+          "f2p": "For mobile action games, metrics include hitbox and touch-target sizes.",
+          "memory": "How big, how fast, how strong, how dead.",
+          "tag": "list"
+        },
+        {
+          "id": "BX-b32",
+          "hook": "Scoring, economy, vehicles, cast",
+          "body": "Scoring: point values, bonuses, leaderboard setup, achievements. Rewards and economy: the shopping interface, what money buys, costs. Vehicles: enter/exit, interactions, description, controls, metrics, attributes. Major characters: allies, love interests, rivals, with their relationship to the hero and where they appear.",
+          "example": "In 2010 the whole economy got one sub-section: the monetary system.",
+          "f2p": "In F2P the economy is its own document: currencies, sources and sinks, pricing, inflation control.",
+          "memory": "2010 economy = a shop. 2026 economy = the bloodstream.",
+          "tag": "f2p"
+        },
+        {
+          "id": "BX-b33",
+          "hook": "Progression and levels sections",
+          "body": "Progression outline via a beat chart (story beats, cutscene vs. in-game, where rewards are earned), gameplay classifications, world overview/level select, universal mechanics (platforms, doors, teleportals, checkpoints, breakables with yield %, chests, puzzle objects, switches, climbables), each level (objective, reward, gameplay, enemies, style guide, music), hub, training level, level-specific hazards and contextual mechanics.",
+          "example": "Breakables need: how they break, what drops at what percentage, extra effects.",
+          "f2p": "Becomes your chapter map, difficulty curve, reward-cadence chart and blocker catalogue.",
+          "memory": "Map it, mechanic it, level it.",
+          "tag": "list"
+        },
+        {
+          "id": "BX-b34",
+          "hook": "Enemies, NPCs, minigames, audio, appendix",
+          "body": "General enemy rules (behavior types, AI/detection, spawn, defeat, reward rules), level-specific enemies, bosses (scale, weak points, patterns, warnings, rounds, arena, defeat, reward), NPCs (types, list, dialogue, rewards), collectibles, minigames, cutscenes, music and SFX, licensor concerns, appendixes (animation, SFX, music, scripts, VO, in-game text).",
+          "example": "Music list reminder: don't forget title, pause, options and end credits.",
+          "f2p": "Licensor concerns = IP collab events; add localization string tables and an analytics event dictionary.",
+          "memory": "Everyone else, every sound, every word.",
+          "tag": "list"
+        },
+        {
+          "id": "BX-b35",
+          "hook": "What an F2P GDD adds",
+          "body": "The 2010 template has no sections for core loop, meta, economy sources and sinks, monetization, FTUE, retention systems, a LiveOps calendar, analytics events, KPIs, A/B tests or compliance. On mobile those are the heaviest parts of the GDD.",
+          "example": "An F2P Economy section lists each currency with its sources, sinks and daily amounts.",
+          "f2p": "Start from the adapted template in the notes and fill it for your own concept.",
+          "memory": "Let's Earn Money Live Daily: Loop, Economy, Monetization, LiveOps, Data.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "4. Bonus Level 4 — The Medium-Sized List of Story Themes",
+      "bites": [
+        {
+          "id": "BX-b36",
+          "hook": "A cocktail menu of story genres",
+          "body": "About 48 story themes, alphabetical, in a \"Family: flavor\" pattern: Adventure, Comedy, Fantasy, Horror, Sci-fi (the biggest, seven flavors), Sports and War, plus standalones such as heist, noir, western, superhero, game show and nurture/tamagotchi.",
+          "example": "Sci-fi flavors include cyberpunk, steampunk, space opera, giant robots and undersea.",
+          "f2p": "Re-skin a proven mobile loop with a fresh theme: a heist merge game, a gothic match-3.",
+          "memory": "Pick a family, then a flavor.",
+          "tag": "list"
+        },
+        {
+          "id": "BX-b37",
+          "hook": "Mash themes to find fresh concepts",
+          "body": "Combine two or three themes for a twist: Farm Wars is basically cartoon animals + war + steampunk/giant-robot sci-fi. The list also includes adult themes so you can consciously rule them in or out for your rating; the war entry even apologizes for its American bias.",
+          "example": "War is split by era, from the World Wars to modern conflicts.",
+          "f2p": "Mobile-proven themes: renovation (Homescapes), royal (Royal Match), cozy farm (Hay Day), frozen survival (Whiteout Survival), candy (Candy Crush Saga).",
+          "memory": "Theme A + Theme B = pitch.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "5. Bonus Level 5 — The Big List of Environments",
+      "bites": [
+        {
+          "id": "BX-b38",
+          "hook": "150 places to set a level",
+          "body": "An alphabetical list of about 150 environments: natural biomes, elemental worlds, urban spots, interiors, industrial sites, historical places, sci-fi, fantasy and whimsy, vehicles as levels, entertainment venues. The author rebuilt it about half a dozen times over his career.",
+          "example": "Oddballs include a sock-puppet world, a Tron-style cyberspace and the surface of the sun.",
+          "f2p": "Start your own list and add mobile-proven settings: cozy rooms, cafés, island resorts, frozen settlements.",
+          "memory": "A travel brochure for level designers.",
+          "tag": "list"
+        },
+        {
+          "id": "BX-b39",
+          "hook": "The scale-flip trick",
+          "body": "Some entries are modifiers, not places: a giant-sized world (applies to any theme), a \"little\" world where the player is shrunk, and inside or on top of a giant creature. Apply them to anything for instant novelty.",
+          "example": "A kitchen becomes a jungle of pots when the hero is ant-sized.",
+          "f2p": "Event idea: shrink your usual board or map into a mini world for a weekend.",
+          "memory": "The shrink ray works on every destination.",
+          "tag": "concept"
+        },
+        {
+          "id": "BX-b40",
+          "hook": "On mobile, environments are often meta backdrops",
+          "body": "In many mobile games the environment isn't the level: puzzle games use rooms and gardens as the renovation meta, 4X games use biomes on the world map, runners rotate track skins with the seasons.",
+          "example": "Homescapes-style loop: beat a level, earn stars, renovate a room.",
+          "f2p": "Cheapest LiveOps content: a known mode + new environment + new music + themed currency.",
+          "memory": "Set dressing that sells progress.",
+          "tag": "f2p"
+        },
+        {
+          "id": "BX-b55",
+          "hook": "The places people forget to list",
+          "body": "Beyond biomes and cities, the environments list also hides whole families of settings: military and conflict zones (battlefields, bases, missile silos), faith and the spooky (churches, temples, graveyards, haunted houses, heaven and hell), water and coast (marinas, desert islands, undersea bases), commerce, food and nightlife, rural and green spaces, transport hubs and cultural districts or landmarks.",
+          "example": "A war zone and a funeral home sit on the same list: the same menu can serve a shooter or a comedy.",
+          "f2p": "Audit your world list by family: if five levels come from one family (all forests, say), swap one for a different mood, colour and hazard set.",
+          "memory": "Count the families, not the entries.",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "6. Bonus Level 6 — Mechanics and Hazards",
+      "bites": [
+        {
+          "id": "BX-b41",
+          "hook": "The level designer's parts bin",
+          "body": "About 35 items in a few families: movers (moving or collapsing platforms, ladders, zip lines, conveyors, ice, springs, catapults), timing hazards (pendulums, spinners, smashers, flame or cannon blasts), area hazards (slowing surfaces, poison gas, grabbers, stealth spotlights), gates (teleportals, doors, keys) and props (push blocks, pressure plates, levers, throwables, breakables, light controls, chests).",
+          "example": "A two-stage breakable needs two hits or steps to open.",
+          "f2p": "Same parts, mobile names: multi-layer blockers, conveyors and portals on match-3 boards.",
+          "memory": "A LEGO bin: about 35 pieces, infinite castles.",
+          "tag": "list"
+        },
+        {
+          "id": "BX-b42",
+          "hook": "Console hazards live on puzzle boards",
+          "body": "Conveyor belts and teleportals literally exist on match-3 boards; two-stage breakables are multi-layer blockers; spreading poison gas is a spreading blocker; a locked door needing a key is a locked tile cleared by a nearby match.",
+          "example": "Candy Crush Saga uses spreading chocolate, conveyor belts and portals.",
+          "f2p": "Introduce each new blocker alone, then combine it with known ones (→ L12).",
+          "memory": "Same hazard, new costume.",
+          "tag": "f2p"
+        },
+        {
+          "id": "BX-b43",
+          "hook": "Mobile's own mechanics menu",
+          "body": "Add these to Bonus Level 6: match-3 swap, tap-to-blast, connect-the-dots, triple tile-match, block placement, merge-2, lane-swipe runner, slice, slingshot, rope-cutting physics, one-tap timing, gas/brake physics, auto-attack, auto-battle, card deploy, dice-roll board, idle upgrading.",
+          "example": "Archero: move to dodge, stand still to auto-shoot. Clash Royale: drag cards onto the arena, paid with elixir.",
+          "f2p": "Pick one input verb your players' thumbs will enjoy for hundreds of hours.",
+          "memory": "Tap, swipe, drag, hold: the four mobile buttons.",
+          "tag": "f2p"
+        },
+        {
+          "id": "BX-b56",
+          "hook": "Hazards act on you, tools you act on",
+          "body": "The mechanics list mixes two kinds of parts. Hazards act on the player (spinners, smashers, flame jets, sticky floors, grabbers, spotlights). Tools are things the player operates (levers, cranks and pumps, pressure plates, push blocks, shootable targets, carryable objects). Leftover entries such as the accelerator, rotating platform and balance beam are movement challenges.",
+          "example": "A shootable target that opens a door turns a shooting skill into a puzzle without adding a new hazard.",
+          "f2p": "On a phone, tools become tappable boosters and switches; hazards become blockers. Keep a ratio so levels are not only punishment.",
+          "memory": "Hazards come at you; tools you reach for.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "7. Bonus Level 7 — Enemy Design Template",
+      "bites": [
+        {
+          "id": "BX-b44",
+          "hook": "One sheet per enemy",
+          "body": "Fields: name, image, description (personality and motivation), animation list, movement patterns, attack descriptions (melee, projectile, special), how it's defeated, how damage is communicated, particle effects, projectiles, extra HUD elements (like QTE icons), SFX list, voice list, special needs for the player character, and the player's reward.",
+          "example": "Animation list: stand, idle, taunts, melee, projectile, hit reactions, deaths, victory animations.",
+          "f2p": "Mobile adds role, stats, scaling, telegraph timing, spawn caps, a drop table and analytics events.",
+          "memory": "A casting call sheet for a bad guy.",
+          "tag": "list"
+        },
+        {
+          "id": "BX-b45",
+          "hook": "Match sounds to animations",
+          "body": "The sound-effects list and the voice list are both matched against the animation list. If an animation has no sound line, something was forgotten.",
+          "example": "A victory-taunt animation needs a laugh line and a stomp sound.",
+          "f2p": "Many mobile players play muted, so pair sounds with strong visual and haptic feedback too.",
+          "memory": "Every move makes a noise.",
+          "tag": "rule"
+        },
+        {
+          "id": "BX-b46",
+          "hook": "Your enemy creates work for the hero",
+          "body": "The \"special requirements for player character\" field lists animations or effects the player needs because of this enemy's attacks. It exposes cross-team dependencies early.",
+          "example": "A grab attack means the hero needs grabbed and break-free animations.",
+          "f2p": "Also list UI needs: warning icons, off-screen indicators.",
+          "memory": "Every enemy hands the hero homework.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "8. Bonus Level 8 — Boss Design Template",
+      "bites": [
+        {
+          "id": "BX-b47",
+          "hook": "Boss = enemy template + upgrades",
+          "body": "Same skeleton as the enemy sheet, plus: weak spots or vulnerable states in the defeat field, what the boss health bar looks like in the damage field, and a reward that always exists (the enemy sheet's \"if anything\" is gone).",
+          "example": "A segmented health bar shows players they're making progress.",
+          "f2p": "Mobile adds phases, telegraph timings, a target win rate, continue-offer rules and analytics.",
+          "memory": "Boss goes W.H.A.R.: Weak spots, Health bar, Arena, Reward.",
+          "tag": "list"
+        },
+        {
+          "id": "BX-b48",
+          "hook": "Every boss needs an arena page",
+          "body": "The Boss Fight Arena section: an arena image (concept or map), a description of the place and the action in it, level elements (mechanics, hazards, props), and boss fight music tracks with notes on contextual music.",
+          "example": "Music that shifts when the boss enters a new phase is contextual music.",
+          "f2p": "Portrait arenas must keep weak points visible without camera moves; guild bosses add shared HP and damage leaderboards.",
+          "memory": "No stage, no show.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "9. Bonus Level 9 — High Concept Pitch Presentation",
+      "bites": [
+        {
+          "id": "BX-b49",
+          "hook": "Nine slides to a green light",
+          "body": "Cover, company profile, target specs, game story, game goals, gameplay summary, gameplay details, download strategy, production specs. The order follows a publisher's questions: who, what, why care, how it plays, how long it lasts, what it costs.",
+          "example": "Farm Wars target specs: action/strategy, E10 (ages 8–15), XBLA and PSN, 10+ hours.",
+          "f2p": "F2P decks add market, audience, core loop, monetization, LiveOps, a UA hook, target KPIs and the ask.",
+          "memory": "Who, what, why, how, how long, how much.",
+          "tag": "list"
+        },
+        {
+          "id": "BX-b50",
+          "hook": "Cover slide rules",
+          "body": "Open with a compelling image and logo. Put the presentation date on it so they remember the meeting. Credit the studio, because no one makes a game alone. Add contact info. Skip the company-profile slide when pitching your own peers.",
+          "example": "Farm Wars cover: logo, cow-mech art, pitch credit, date, contact line.",
+          "f2p": "Show a short gameplay clip early; publishers judge F2P concepts by feel.",
+          "memory": "Art, date, team, phone.",
+          "tag": "rule"
+        },
+        {
+          "id": "BX-b51",
+          "hook": "Five back-of-the-box goals",
+          "body": "The game goals slide names your most kick-ass features and why anyone should care. Aim for five.",
+          "example": "Farm Wars: farm and fight, fast action with massive bosses, customize everything, a gigantic tech tree, multiplayer to defend, raid and trade together.",
+          "f2p": "On mobile these become store screenshot captions and ad angles.",
+          "memory": "Five fingers, five goals.",
+          "tag": "rule"
+        },
+        {
+          "id": "BX-b52",
+          "hook": "Gameplay slides: summary, then detail",
+          "body": "The summary covers basics of play, camera view, how challenge grows, environments and the unique hooks. The details slide shows what playing feels like, and any element important enough gets its own slide.",
+          "example": "Farm Wars gives its technology trees a whole slide: six trees and the drawn fence-to-laser progression.",
+          "f2p": "F2P: give the core loop and the meta one slide each, with diagrams.",
+          "memory": "Zoom out, then zoom in.",
+          "tag": "list"
+        },
+        {
+          "id": "BX-b53",
+          "hook": "Download strategy became LiveOps",
+          "body": "Slide 8 plans download support to extend the game's life past release. Farm Wars planned six months of DLC: maps, crops, crop trading, new tech, a dog companion, holiday costumes, co-op and competitive multiplayer.",
+          "example": "Holiday costumes → limited-time cosmetics; dog → pet system; crop trading → social economy.",
+          "f2p": "In F2P, LiveOps is the business model, so it moves to the center of the pitch.",
+          "memory": "DLC grew up and got a calendar.",
+          "tag": "f2p"
+        },
+        {
+          "id": "BX-b54",
+          "hook": "Production slide: can you deliver?",
+          "body": "Team size (programmers, artists, designers), a timeline with schedule and milestones, and the estimated cost.",
+          "example": "Without it, a publisher can't compare your game with the other projects competing for the same budget.",
+          "f2p": "F2P adds stage gates: prototype → vertical slice → soft launch → global, with KPI kill/go criteria.",
+          "memory": "People, time, money.",
+          "tag": "rule"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "The one-sheet serves two masters: team alignment on priorities and objectives, and excitement for management, marketing, sales and licensors.",
+    "Information beats styling: text-only or illustrated, a one-sheet just has to be short and informative.",
+    "Repeat the one-sheet's points every time you talk about the game; you've won when teammates correctly quote it back at you.",
+    "List no more than 5–7 USPs, covering play style, modes, single/multiplayer, technology and cool features.",
+    "Pick comps that are successful, recent and very well known, ideally all three.",
+    "The ten-pager is a guideline, not policy: a \"ten-pointer\" that is accessible, exciting, and seeds the pitch and the GDD.",
+    "In a GDD, a TBD is better than a blank.",
+    "The GDD is a living, liquid document; technology limits and production realities will change it, so version it and track revisions.",
+    "Use templates in whatever way serves you and your team: add pictures, or split into one-pagers.",
+    "Always include images of mechanics, screens, controls and HUD elements.",
+    "Match the sound-effects and voice lists to the animation list so nothing ships silent.",
+    "A boss needs weak spots or vulnerable states, a readable health bar, an arena, music and a guaranteed reward.",
+    "No one makes a game by themselves: credit the studio on the pitch cover.",
+    "Date your pitch so the audience remembers when the meeting happened.",
+    "Aim for five \"back of the box\" goals in a pitch.",
+    "Plan post-release content to extend a game's life; in F2P that plan is LiveOps, and it is the business.",
+    "Idea lists are generators: combine theme + environment + mechanic, and flip scale (giant world, shrunken hero) on anything."
+  ],
+  "mnemonics": [
+    {
+      "name": "Document ladder zoom",
+      "device": "Satellite → City map → Guided tour → Street view",
+      "unpacks": "One-sheet (whole game at a glance) → ten-pager (broad strokes) → pitch deck (the persuasive walkthrough) → GDD (every detail)."
+    },
+    {
+      "name": "Ten-pager pages",
+      "device": "Ten Silly Goats Chew Mangoes While Inspecting Muddy Electric Corn",
+      "unpacks": "Title, Story & gameplay, Game flow, Character & controls, Main gameplay & platform features, World, Interface, Mechanics & power-ups, Enemies & bosses, Cutscenes/bonus/comps."
+    },
+    {
+      "name": "Pitch order",
+      "device": "WHO, WHAT, WHY, HOW, HOW LONG, HOW MUCH",
+      "unpacks": "Cover + company (who) → specs + story (what) → goals (why care) → gameplay summary + details (how it plays) → download strategy (how long it lasts) → production specs (how much it costs)."
+    },
+    {
+      "name": "Comps triangle",
+      "device": "Famous, Fresh, Profitable",
+      "unpacks": "Good comps are very well known, recent and successful, ideally all three."
+    },
+    {
+      "name": "Boss goes W.H.A.R.",
+      "device": "Weak spots, Health bar, Arena, Reward",
+      "unpacks": "What the boss template adds beyond the enemy template: weak spots/vulnerable states, the health bar's look, the Boss Fight Arena page, and a guaranteed reward."
+    },
+    {
+      "name": "F2P add-ons",
+      "device": "Let's Earn Money Live Daily",
+      "unpacks": "Loop, Economy, Monetization, LiveOps, Data: the sections a 2026 F2P GDD or pitch adds to the 2010 templates."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "BX-f01",
+      "q": "What are the two jobs of a one-sheet?",
+      "a": "Keep the team and managers aligned on priorities and objectives, and excite outside readers about the game.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f02",
+      "q": "Which outside readers is a one-sheet meant to be handed to?",
+      "a": "Management, marketing, sales and licensors.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f03",
+      "q": "On a one-sheet, the ____ matters more than the style.",
+      "a": "information",
+      "type": "cloze"
+    },
+    {
+      "id": "BX-f04",
+      "q": "Which two one-sheet formats does Bonus Level 1 show?",
+      "a": "A text-only version and a version with images.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f05",
+      "q": "What's the \"victory\" sign that your one-sheet has sunk in?",
+      "a": "A teammate pushes back on a feature because it contradicts the one-sheet, and they're right.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f06",
+      "q": "Maximum number of USPs on a one-sheet?",
+      "a": "5–7.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f07",
+      "q": "Which three qualities make a good comp?",
+      "a": "Successful, recent, very well known (ideally all three).",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f08",
+      "q": "Which comps does the Farm Wars one-sheet cite?",
+      "a": "Tower-defense games, the Harvest Moon series and Lock's Quest.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f09",
+      "q": "Why should a one-sheet summary include beginning/middle/end, play style and objectives?",
+      "a": "So one short paragraph shows the hook, what the player does and why, enough to judge the concept.",
+      "type": "why"
+    },
+    {
+      "id": "BX-f10",
+      "q": "How detailed should the one-sheet's game outline be?",
+      "a": "Deeper than the summary, but not in great detail.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f11",
+      "q": "Your one-pager lists 11 USPs. What's the fix?",
+      "a": "Cut to the 5–7 strongest that show play style, modes, multiplayer, tech or cool features.",
+      "type": "apply"
+    },
+    {
+      "id": "BX-f12",
+      "q": "Why does the Maximo one-sheet put a gameplay-promise headline above each location?",
+      "a": "So each place sells a verb or feature, making the strip a level list, feature list and story outline at once.",
+      "type": "why"
+    },
+    {
+      "id": "BX-f13",
+      "q": "Why are Maximo's \"telling traits\" (sword, underwear, Death sidekick) valuable on a one-sheet?",
+      "a": "They're specific, visual and marketable hooks, far more memorable than generic adjectives.",
+      "type": "why"
+    },
+    {
+      "id": "BX-f14",
+      "q": "The ten-pager is a set of ____ rather than strict policy.",
+      "a": "guidelines",
+      "type": "cloze"
+    },
+    {
+      "id": "BX-f15",
+      "q": "What does the ten-pager's foundation later turn into?",
+      "a": "The pitch and the GDD.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f16",
+      "q": "What goes on ten-pager page 1 (title page)?",
+      "a": "Graphic, title (ideally a logo), contact info, target platform, audience, rating, expected ship date.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f17",
+      "q": "What does ten-pager page 3, Game flow, answer?",
+      "a": "How the player grows as challenges increase, how it ties to story, the growth systems (XP, money, score, collectibles) and what's gained.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f18",
+      "q": "Which hardware features does the ten-pager's page 5 use as examples?",
+      "a": "Hard drive, touch screen, multiple screens, memory card.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f19",
+      "q": "Your ten-pager describes screens but never says how players move between menus or what music plays there. Which page is missing?",
+      "a": "The Interface page: shell navigation, mood of the screens, music, and an interface flow diagram.",
+      "type": "apply"
+    },
+    {
+      "id": "BX-f20",
+      "q": "What does ten-pager page 10 cover?",
+      "a": "Cutscenes (presentation, timing, format), unlockables and replay incentive, and the competition at release.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f21",
+      "q": "The five phases of a Farm Wars round (ten-pager)?",
+      "a": "Buying, planting, defending, boss, selling.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f22",
+      "q": "Farm Wars win and lose conditions?",
+      "a": "Win: survive and defeat all animal bosses. Lose: go broke, farm devastated, or get killed.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f23",
+      "q": "Which three references make up Farm Wars' elevator pitch?",
+      "a": "FarmVille, tower defense, MechWarrior (an X meets Y meets Z formula).",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f24",
+      "q": "Farm Wars' sample defensive tech progression?",
+      "a": "Fence < barbed wire < electric fence < force field < laser system.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f25",
+      "q": "Why do Farm Wars enemies attack crops and structures, not just the player?",
+      "a": "It ties combat to the farming/economy loop, so every enemy matters to both.",
+      "type": "why"
+    },
+    {
+      "id": "BX-f26",
+      "q": "Why do details differ between the Farm Wars one-sheet, ten-pager and pitch?",
+      "a": "Designs evolve; documents are living, which is why version numbers and revision history matter.",
+      "type": "why"
+    },
+    {
+      "id": "BX-f27",
+      "q": "Why does the Farm Wars ten-pager plan cutscenes as puppet-show sequences built from in-game assets?",
+      "a": "Reusing in-game assets keeps cutscenes short, cheap to make and consistent with the game's look.",
+      "type": "why"
+    },
+    {
+      "id": "BX-f28",
+      "q": "Which genres is the GDD template skewed toward?",
+      "a": "Action, adventure, platform, RPG and shooter (adaptable to any style).",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f29",
+      "q": "In a GDD, a \"____\" is better than nothing at all.",
+      "a": "TBD",
+      "type": "cloze"
+    },
+    {
+      "id": "BX-f30",
+      "q": "What two forces make GDD content change, per Bonus Level 3?",
+      "a": "Technology limitations and production-time realities.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f31",
+      "q": "What goes on the GDD cover?",
+      "a": "Cover image, title, document version, written by (team), point of contact with phone, publishing date, version number.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f32",
+      "q": "What must every GDD footer show?",
+      "a": "Copyright/company/date, page number, current date.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f33",
+      "q": "What does the GDD's Game goals section include?",
+      "a": "The high concept, back-of-box new/novel features, and all Internet and wireless features.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f34",
+      "q": "Three parts of the GDD story overview?",
+      "a": "Set-up, locations and how the player gets between them, finale.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f35",
+      "q": "Your GDD's tech section has grown to 30 pages of engine detail. What does Bonus Level 3 advise?",
+      "a": "Keep it brief in the GDD and move the detail into the technical design document (TDD).",
+      "type": "apply"
+    },
+    {
+      "id": "BX-f36",
+      "q": "Which cheat tools does the GDD template propose?",
+      "a": "Level, invulnerability, camera, and others like full health/armor/money.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f37",
+      "q": "Which boot credit screens does the GDD front end list?",
+      "a": "Publisher, studio logo, licensors, third-party software makers, legal screen.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f38",
+      "q": "What is attract mode?",
+      "a": "In-game material that plays if the game is left idle on the start screen.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f39",
+      "q": "Which camera types does the GDD template list?",
+      "a": "First person, third person, three-quarters, 2.5-D, forced scroll, spline, locked.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f40",
+      "q": "Name six HUD elements from the GDD template.",
+      "a": "Any six: health/status, lives/continues, money/score/rank, power/fuel, ammo, abilities, timer, map, option links, plings, reticule, speedometer.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f41",
+      "q": "Your game has no HUD. What does the GDD template still require?",
+      "a": "A description of how health, ammo, map and similar info will be conveyed to the player.",
+      "type": "apply"
+    },
+    {
+      "id": "BX-f42",
+      "q": "The four melee combat reactions in the GDD?",
+      "a": "Block, dodge, parry, grab.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f43",
+      "q": "Why does the GDD ask for the yield percentage of breakable objects?",
+      "a": "Drop rates shape the reward flow, so designers and programmers need exact, tunable numbers.",
+      "type": "why"
+    },
+    {
+      "id": "BX-f44",
+      "q": "What do the GDD's general enemy rules cover?",
+      "a": "Behavior types (patroller, hunter, flyer), how the AI senses the player (detection numbers), where and when enemies spawn, what counts as defeating them, and the rules for loot payouts.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f45",
+      "q": "Your music list covers every level. Which tracks does the GDD template remind you might still be missing?",
+      "a": "Title, pause, options and end-credits music.",
+      "type": "apply"
+    },
+    {
+      "id": "BX-f46",
+      "q": "You're writing a GDD for a mobile match-3. Which major sections must you add to the 2010 template?",
+      "a": "Economy, monetization, FTUE, retention/LiveOps, analytics/KPIs (and compliance).",
+      "type": "apply"
+    },
+    {
+      "id": "BX-f47",
+      "q": "How is the story-themes list organized?",
+      "a": "Alphabetically, with \"Family: flavor\" sub-genres (Adventure, Comedy, Fantasy, Horror, Sci-fi, Sports, War) plus standalone genres.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f48",
+      "q": "Which theme family is biggest in Bonus Level 4?",
+      "a": "Sci-fi, with seven flavors.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f49",
+      "q": "Which scale modifiers appear in the environments list?",
+      "a": "Giant-sized world, a shrunken \"little\" world, inside/on top of a giant creature.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f50",
+      "q": "The event team needs a cheap new event. How can Bonus Level 5 help?",
+      "a": "Re-skin a known mode in a new environment (plus music and a themed currency), or apply a scale flip.",
+      "type": "apply"
+    },
+    {
+      "id": "BX-f51",
+      "q": "Name the main families of Bonus Level 6 objects.",
+      "a": "Movers/traversal, timing hazards, area hazards, gates, interactive puzzle props, and rewards like chests and dispensers.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f52",
+      "q": "A match-3 blocker needs two matches to clear. Which Bonus Level 6 item is its ancestor?",
+      "a": "The two-stage openable/breakable object.",
+      "type": "apply"
+    },
+    {
+      "id": "BX-f53",
+      "q": "What's in the enemy template's animation list?",
+      "a": "Stand, idle, taunts, melee attacks, projectile attacks, hit reactions, death animations, victory animations.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f54",
+      "q": "Why match the SFX and voice lists to the animation list?",
+      "a": "Every animation gets its sounds, and any gap reveals a forgotten asset.",
+      "type": "why"
+    },
+    {
+      "id": "BX-f55",
+      "q": "An enemy's attack freezes the hero in ice. Which enemy-template field captures the extra work this creates?",
+      "a": "Special requirements for player character (the hero needs a frozen animation/VFX).",
+      "type": "apply"
+    },
+    {
+      "id": "BX-f56",
+      "q": "What does the boss template add to the enemy template's fields?",
+      "a": "Weak spots/vulnerable states, the health bar's look, a guaranteed reward, and the arena page.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f57",
+      "q": "The four Boss Fight Arena fields?",
+      "a": "Arena image, arena description, level elements, boss fight music tracks (incl. contextual music).",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f58",
+      "q": "The nine high-concept pitch slides, in order?",
+      "a": "Cover, company profile, target specs, game story, game goals, gameplay summary, gameplay details, download strategy, production specs.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f59",
+      "q": "Why put the presentation date on the pitch cover?",
+      "a": "So the people you present to remember when the meeting took place.",
+      "type": "why"
+    },
+    {
+      "id": "BX-f60",
+      "q": "Why credit the studio rather than yourself on the pitch?",
+      "a": "No one makes a game by themselves.",
+      "type": "why"
+    },
+    {
+      "id": "BX-f61",
+      "q": "You're pitching to your own studio's leadership. Which slide can you skip?",
+      "a": "The company profile slide.",
+      "type": "apply"
+    },
+    {
+      "id": "BX-f62",
+      "q": "What four questions does the target specs slide answer?",
+      "a": "What kind of game, its rating, its audience, how long it takes to play.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f63",
+      "q": "Aim for ____ \"back of the box\" goals on the pitch.",
+      "a": "five",
+      "type": "cloze"
+    },
+    {
+      "id": "BX-f64",
+      "q": "What three things does the production specs slide answer?",
+      "a": "Team size, development time, cost.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f65",
+      "q": "Your F2P pitch has no slide on events or seasons. What's missing?",
+      "a": "The modern download strategy: a retention and LiveOps plan.",
+      "type": "apply"
+    },
+    {
+      "id": "BX-f66",
+      "q": "An exec asks how you'll acquire players. Which F2P pitch slides answer it?",
+      "a": "The UA & marketing hook (ad creatives, CPI target, ASO) plus target KPIs (LTV vs. CPI).",
+      "type": "apply"
+    },
+    {
+      "id": "BX-f67",
+      "q": "Why does the boss template insist on weak spots or vulnerable states?",
+      "a": "They define the boss puzzle: how the player learns and exploits openings.",
+      "type": "why"
+    },
+    {
+      "id": "BX-f68",
+      "q": "Why does a GDD need a game flowchart?",
+      "a": "It shows how every screen from title to game over connects, so nothing is a dead end.",
+      "type": "why"
+    },
+    {
+      "id": "BX-f69",
+      "q": "Your ten-pager is 14 pages but covers every topic clearly and is fun to read. Problem?",
+      "a": "Not really: ten pages is a guideline; coverage and readability matter. Trim only if it bores readers.",
+      "type": "apply"
+    },
+    {
+      "id": "BX-f70",
+      "q": "Teammates keep proposing features that drift off-vision. Which Bonus Level 1 habit helps?",
+      "a": "Reiterate the one-sheet's points every time you discuss the game.",
+      "type": "apply"
+    },
+    {
+      "id": "BX-f71",
+      "q": "Why put concrete numbers (6 maps, 15–30 min rounds, 10+ hours) into a ten-pager?",
+      "a": "They make scope believable and let producers estimate.",
+      "type": "why"
+    },
+    {
+      "id": "BX-f72",
+      "q": "You're designing an F2P event boss with a continue offer. What's the guardrail?",
+      "a": "It must be beatable without paying; continues via soft currency or rewarded ad, never cash-only.",
+      "type": "apply"
+    },
+    {
+      "id": "BX-f73",
+      "q": "Why do mobile docs replace controller maps with gesture maps?",
+      "a": "There are no buttons; touch gestures, thumb reach and haptics define control.",
+      "type": "why"
+    },
+    {
+      "id": "BX-f74",
+      "q": "You need a fresh level concept in one minute. How do Bonus Levels 4–6 help?",
+      "a": "Combine a story theme + an environment + a mechanic (optionally flip the scale).",
+      "type": "apply"
+    },
+    {
+      "id": "BX-f75",
+      "q": "Boss arena music notes should include ____ music.",
+      "a": "contextual",
+      "type": "cloze"
+    },
+    {
+      "id": "BX-f76",
+      "q": "Farm Wars' defensive tech progression ends with the ____ system.",
+      "a": "laser",
+      "type": "cloze"
+    },
+    {
+      "id": "BX-f77",
+      "q": "Which ten-pager page did the Farm Wars sample leave out entirely?",
+      "a": "The Interface page (comps lived on the one-sheet instead).",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f78",
+      "q": "Name four families of environment on the Big List beyond natural biomes and city streets.",
+      "a": "Any four of: military and conflict zones, faith/death/spooky places, water and coast, commerce/food/nightlife, rural and green spaces, transport hubs, cultural districts and landmarks.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f79",
+      "q": "Which items on the Mechanics and Hazards list are tools the player operates rather than hazards that act on the player?",
+      "a": "Levers, cranks/pumps, pressure plates, push blocks, shootable targets and carryable/throwable objects (plus keys and doors they unlock).",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f80",
+      "q": "Roughly how many entries do the three Bonus Level idea lists hold: themes, environments, mechanics/hazards?",
+      "a": "About 48 story themes, about 150 environments and about 35 mechanics and hazards.",
+      "type": "basic"
+    },
+    {
+      "id": "BX-f81",
+      "q": "Your world list is forest, jungle, swamp, then another forest. What does the environments-list advice suggest?",
+      "a": "Audit it by family and mood: vary colour, mood and hazards, and use scale or theme flips (giant world, shrunken player) to break up the greens.",
+      "type": "apply"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "BX-q01",
+      "q": "You must pick three comps for your one-sheet. Which set best follows the book?",
+      "options": [
+        "Your three favorite indie games from a decade ago",
+        "Three successful, recent, widely known hits in your genre",
+        "The three most mechanically similar games, regardless of sales",
+        "Any games your audience might have heard of"
+      ],
+      "answer": 1,
+      "why": "The book asks for comps that are successful, recent and very well known, ideally all three. Personal favorites or obscure look-alikes don't help an exec \"get it.\""
+    },
+    {
+      "id": "BX-q02",
+      "q": "How many USPs should a one-sheet list?",
+      "options": [
+        "1–2, so each one stands out",
+        "Exactly 3 (Rule of Threes)",
+        "No more than 5–7",
+        "As many as possible to show depth"
+      ],
+      "answer": 2,
+      "why": "The sample's embedded instruction caps USPs at 5–7. Too many dilute the hooks; too few undersell."
+    },
+    {
+      "id": "BX-q03",
+      "q": "Which statement about one-sheet format is closest to the book?",
+      "options": [
+        "It must include images or marketing will ignore it",
+        "Text-only is always more professional",
+        "Style matters less than information; keep it short and informative",
+        "Use the publisher's official template only"
+      ],
+      "answer": 2,
+      "why": "The book shows a text-only and an illustrated example precisely to show either works; the information is what counts."
+    },
+    {
+      "id": "BX-q04",
+      "q": "A teammate says your new feature isn't on the one-sheet, and they're right. What's the book's view?",
+      "options": [
+        "A victory: the one-sheet has sunk in",
+        "A communication failure you should fix",
+        "Rewrite the one-sheet to include the feature",
+        "Escalate to the producer"
+      ],
+      "answer": 0,
+      "why": "Rogers calls this a win: the team is using the one-sheet as the shared vision."
+    },
+    {
+      "id": "BX-q05",
+      "q": "The ten-pager is best described as…",
+      "options": [
+        "A strict ten-page format",
+        "A shorter GDD for programmers only",
+        "A marketing brochure",
+        "A guideline (\"ten-pointer\") covering all broad strokes, accessible and exciting"
+      ],
+      "answer": 3,
+      "why": "Ten pages is a guideline, not policy; the Farm Wars sample is only seven pages. What matters is coverage and readability."
+    },
+    {
+      "id": "BX-q06",
+      "q": "Which ten-pager page asks how the player grows as challenges increase?",
+      "options": [
+        "Game world",
+        "Game flow",
+        "Interface",
+        "Title page"
+      ],
+      "answer": 1,
+      "why": "Game flow (page 3) covers growth systems (XP, money, score, collectibles) and what the player gains."
+    },
+    {
+      "id": "BX-q07",
+      "q": "In 2026 mobile terms, the ten-pager's \"platform-specific features\" (hard drive, memory card) mostly become…",
+      "options": [
+        "Touch gestures, haptics, push notifications, cloud save, short sessions",
+        "Disc capacity and install size only",
+        "Controller rumble settings",
+        "Split-screen multiplayer"
+      ],
+      "answer": 0,
+      "why": "The principle (exploit the hardware) holds; on phones the hardware hooks are touch, haptics, notifications, cloud save and session design."
+    },
+    {
+      "id": "BX-q08",
+      "q": "Farm Wars enemies wilt crops and turn land to mud. What's the main design benefit?",
+      "options": [
+        "They're cheaper to animate",
+        "It makes the game harder for experts",
+        "It ties combat to the farming/economy loop so every enemy matters to both",
+        "It satisfies the age rating"
+      ],
+      "answer": 2,
+      "why": "Attacks that hit the farm and defenses connect the combat loop to the economy loop, so losing a fight has meta consequences."
+    },
+    {
+      "id": "BX-q09",
+      "q": "What does the GDD template say about unfinished sections?",
+      "options": [
+        "Leave them out until they're final",
+        "Fill everything before production starts",
+        "Only the lead designer may mark TBDs",
+        "A TBD is better than nothing"
+      ],
+      "answer": 3,
+      "why": "Roughed-out areas beat missing ones; a TBD flags the open question for the team."
+    },
+    {
+      "id": "BX-q10",
+      "q": "Mid-production, the engine can't handle a planned physics puzzle system. Per Bonus Level 3, the GDD should…",
+      "options": [
+        "Stay locked; the design is approved",
+        "Be updated, since it's a living document that changes with tech limits and production reality, with the revision logged",
+        "Be replaced by a brand-new GDD",
+        "Keep the text but remove it from the table of contents"
+      ],
+      "answer": 1,
+      "why": "The GDD is liquid by design; update it and record the change in the revision history."
+    },
+    {
+      "id": "BX-q11",
+      "q": "Which belongs mainly in the TDD rather than the GDD?",
+      "options": [
+        "Detailed technology requirements",
+        "The story finale",
+        "HUD images",
+        "Enemy reward yields"
+      ],
+      "answer": 0,
+      "why": "The GDD keeps tech requirements brief because most of them live in the technical design document."
+    },
+    {
+      "id": "BX-q12",
+      "q": "\"Attract mode\" in the GDD template means…",
+      "options": [
+        "The tutorial level",
+        "A marketing email campaign",
+        "In-game footage shown when the game sits idle on the start screen",
+        "The boss's intro cutscene"
+      ],
+      "answer": 2,
+      "why": "Attract mode plays if the game is left idle on the start screen; on mobile, store videos and ads do this job."
+    },
+    {
+      "id": "BX-q13",
+      "q": "Your game is HUD-less. Per the GDD template, you should…",
+      "options": [
+        "Delete the HUD section",
+        "Add a minimal HUD anyway",
+        "Use audio cues only",
+        "Describe how health, ammo, map and similar info will be conveyed instead"
+      ],
+      "answer": 3,
+      "why": "The template explicitly asks HUD-less games to explain how that information reaches the player."
+    },
+    {
+      "id": "BX-q14",
+      "q": "Which is NOT a field of the book's enemy design template?",
+      "options": [
+        "Movement patterns",
+        "Voice effects list",
+        "Target retention rate",
+        "Special requirements for player character"
+      ],
+      "answer": 2,
+      "why": "Retention targets are an F2P analytics concept; the 2010 enemy template covers art, animation, attacks, effects, audio, player needs and reward."
+    },
+    {
+      "id": "BX-q15",
+      "q": "Why match the SFX and voice lists to the animation list?",
+      "options": [
+        "So every animation has its sounds and gaps reveal forgotten assets",
+        "For legal clearance",
+        "To reduce file sizes",
+        "For localization"
+      ],
+      "answer": 0,
+      "why": "Cross-checking lists is a production safeguard against silent animations."
+    },
+    {
+      "id": "BX-q16",
+      "q": "Which fields appear in the boss template but not the enemy template?",
+      "options": [
+        "Particle effects",
+        "Health bar appearance and weak spots/vulnerable states",
+        "Projectiles",
+        "Animation list"
+      ],
+      "answer": 1,
+      "why": "The boss template adds weak spots/vulnerable states, the health bar's look, a guaranteed reward and the arena page; the others are shared."
+    },
+    {
+      "id": "BX-q17",
+      "q": "The Boss Fight Arena section includes all of these EXCEPT…",
+      "options": [
+        "Arena image or map",
+        "Level elements (mechanics, hazards, props)",
+        "Boss fight music, including contextual music",
+        "The boss voice actor's contract terms"
+      ],
+      "answer": 3,
+      "why": "The arena page covers image, description, level elements and music tracks; contracts aren't part of it."
+    },
+    {
+      "id": "BX-q18",
+      "q": "Which is the correct order of the first five pitch slides?",
+      "options": [
+        "Cover, target specs, story, company, goals",
+        "Company, cover, goals, story, specs",
+        "Cover, company profile, target specs, game story, game goals",
+        "Cover, story, goals, specs, company"
+      ],
+      "answer": 2,
+      "why": "Who you are (cover, company) comes before what it is (specs, story) and why care (goals)."
+    },
+    {
+      "id": "BX-q19",
+      "q": "Why use the studio's name as the author on the pitch cover?",
+      "options": [
+        "No one makes a game alone",
+        "To avoid legal liability",
+        "Publishers ignore individuals",
+        "Platform holders require it"
+      ],
+      "answer": 0,
+      "why": "The book's reason is credit: games are team efforts."
+    },
+    {
+      "id": "BX-q20",
+      "q": "Your F2P pitch has great art and story but no plan for events or seasons. Which book slide's modern version is missing?",
+      "options": [
+        "Target specs",
+        "Company profile",
+        "Gameplay details",
+        "Download strategy → LiveOps plan"
+      ],
+      "answer": 3,
+      "why": "Slide 8 (download strategy) extends a game's life after release; in F2P that's the LiveOps plan, central to the business."
+    },
+    {
+      "id": "BX-q21",
+      "q": "You need a quick fresh concept for a weekend event. Using Bonus Levels 4–6, the best move is…",
+      "options": [
+        "Copy a competitor's event",
+        "Combine a theme + environment + mechanic, or apply a scale flip",
+        "Re-read the GDD appendix",
+        "Simply raise the difficulty"
+      ],
+      "answer": 1,
+      "why": "The lists are idea generators; mashing entries (or shrinking/growing the world) produces novelty cheaply."
+    },
+    {
+      "id": "BX-q22",
+      "q": "A match-3 obstacle grows each turn unless cleared. Which Bonus Level 6 console hazard is its closest ancestor?",
+      "options": [
+        "Deadly surface / poison gas that hampers the player",
+        "Zip line",
+        "Treasure chest",
+        "Ladder"
+      ],
+      "answer": 0,
+      "why": "It's an area hazard that limits the player's freedom; the \"spreading\" behavior is the mobile twist."
+    },
+    {
+      "id": "BX-q23",
+      "q": "D1 retention is fine, but many players quit at the chapter-3 boss. Which boss-template fields would you inspect first?",
+      "options": [
+        "Victory animations",
+        "Boss fight music tracks",
+        "Weak-spot readability, telegraphs and the target win rate/attempts",
+        "The boss's personality and motivation"
+      ],
+      "answer": 2,
+      "why": "A difficulty wall shows up in readability of weak spots and attacks and in win-rate data; music and taunts rarely cause churn."
+    },
+    {
+      "id": "BX-q24",
+      "q": "Which F2P GDD section has NO real counterpart in the 2010 template?",
+      "options": [
+        "HUD system",
+        "Analytics event dictionary and KPI targets",
+        "Music and SFX",
+        "Game progression outline"
+      ],
+      "answer": 1,
+      "why": "The 2010 template covers HUD, audio and progression; analytics events and KPIs are F2P additions."
+    }
+  ],
+  "sideQuests": [
+    {
+      "id": "BX-s01",
+      "title": "Speed one-sheet",
+      "task": "Fill the F2P one-sheet template for a game idea in 15 minutes. One screen max, no paragraph over 3 lines, 5–7 USPs, 3 comps that are successful + recent + famous.",
+      "minutes": 15,
+      "xp": 40
+    },
+    {
+      "id": "BX-s02",
+      "title": "Triple-roll generator",
+      "task": "Pick a random story-theme family, a random environment and a random mobile mechanic. Write a one-line hook for three combos and circle the best.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "BX-s03",
+      "title": "Back of the store page",
+      "task": "Write exactly five \"game goals\" for your concept. Cross out any that a top-10 game in your genre could also claim, and rewrite them.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "BX-s04",
+      "title": "Blocker sheet",
+      "task": "Pick one obstacle from a match-3 game you know and fill the puzzle \"blocker template\": layers, behavior, how cleared, first level, tutorial text, VFX/SFX, analytics.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "BX-s05",
+      "title": "Farm Wars goes mobile",
+      "task": "Draw the Farm Wars core loop as a 4-box diagram sized for 3-minute sessions, then mark which of its six DLC items become LiveOps events.",
+      "minutes": 15,
+      "xp": 40
+    },
+    {
+      "id": "BX-s06",
+      "title": "Event dictionary",
+      "task": "Write 10 analytics events for your game's first session: event name, trigger, parameters (e.g., tutorial_step, level_complete, currency_earned).",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "BX-s07",
+      "title": "Three-second hook",
+      "task": "Storyboard an ad creative in three frames (seconds 0–1, 1–2, 2–3) that would stop a scroller and honestly show your core loop.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "BX-s08",
+      "title": "Doc-drift detective",
+      "task": "List three differences between the Farm Wars one-sheet, ten-pager and pitch, then write the version note you'd add to each document.",
+      "minutes": 5,
+      "xp": 20
+    }
+  ],
+  "mainQuests": [
+    {
+      "id": "BX-m01",
+      "title": "The F2P paper trail",
+      "task": "For your own F2P mobile concept, produce the F2P one-sheet, the F2P ten-pager (all ten topics), one filled enemy template and one filled boss template (or a blocker sheet plus a chapter-boss level for a puzzle game).",
+      "deliverable": "One-sheet + ten-pager + enemy sheet + boss sheet (doc, wiki page or slides).",
+      "doneWhen": "The one-sheet fits one page; every ten-pager topic has content or an honest TBD; the core loop is a diagram; each currency has at least 2 sources and 2 sinks; both templates include telegraphs, rewards and analytics events; you've posted the one-sheet publicly and asked one feedback question.",
+      "minutes": 180,
+      "xp": 250
+    },
+    {
+      "id": "BX-m02",
+      "title": "The 15-slide F2P pitch",
+      "task": "Build the adapted F2P pitch deck (cover, team, hook, market, audience, specs, core loop, meta, goals, monetization, LiveOps, UA hook, target KPIs, comps, production plan, roadmap, ask) for the same concept.",
+      "deliverable": "A 12–17 slide deck plus a 10-minute rehearsal.",
+      "doneWhen": "Every slide has a visual; the hook slide works without you talking; KPI targets are labeled as targets; the production slide has a timeline with at least two kill/go gates; you rehearsed it aloud in under 10 minutes and changed at least one slide after a friend's reaction.",
+      "minutes": 210,
+      "xp": 300
+    }
+  ],
+  "playLabs": [
+    {
+      "id": "BX-p01",
+      "game": "Royal Match or Candy Crush Saga",
+      "minutes": 10,
+      "lookFor": "Every obstacle/blocker you meet and the level where it first appears, plus how it's introduced.",
+      "question": "Which of the book's console mechanics (conveyor, teleportal, two-stage breakable, slowing poison gas, locked door) does each blocker echo?"
+    },
+    {
+      "id": "BX-p02",
+      "game": "Archero or Survivor.io",
+      "minutes": 10,
+      "lookFor": "One enemy type: its movement, attack telegraph, damage feedback and reward.",
+      "question": "Fill the mobile enemy template from memory. How long is the telegraph, and how is it made readable on a small screen?"
+    },
+    {
+      "id": "BX-p03",
+      "game": "Any top-grossing game's store page",
+      "minutes": 10,
+      "lookFor": "Title, subtitle, screenshots and captions, description opening, genre tags.",
+      "question": "Reverse-engineer its one-sheet: which 5 \"back of the box\" goals does it sell, and in what order?"
+    },
+    {
+      "id": "BX-p04",
+      "game": "Monopoly GO! or Hay Day",
+      "minutes": 10,
+      "lookFor": "Every live event, timer, limited offer and seasonal element visible from the home screen.",
+      "question": "What would this game's 2026 \"download strategy\" slide (pitch slide 8) look like?"
+    }
+  ],
+  "retrieval": [
+    {
+      "q": "What are the two jobs of a one-sheet, and who are its outside readers?",
+      "a": "Align the team and managers on priorities and objectives, and excite management, marketing, sales and licensors."
+    },
+    {
+      "q": "What's the \"victory\" sign that the one-sheet has sunk in?",
+      "a": "A teammate pushes back on a feature because it contradicts the one-sheet, and they're right."
+    },
+    {
+      "q": "Which three qualities should a competitive product have to be a good comp?",
+      "a": "Successful, recent and very well known, ideally all three."
+    },
+    {
+      "q": "How many USPs should a one-sheet list, and what should they highlight?",
+      "a": "No more than 5–7; play style, game modes, single/multiplayer, technology innovations and cool features."
+    },
+    {
+      "q": "Name the ten topics of the ten-pager.",
+      "a": "Title page; story & gameplay; game flow; character(s) & controls; main gameplay concepts & platform features; game world; interface; mechanics & power-ups; enemies & bosses; cutscenes, bonus material & comps."
+    },
+    {
+      "q": "Why is the Farm Wars ten-pager only seven pages, and why is that OK?",
+      "a": "Topics were merged and the interface/comps pages folded away; ten pages is a guideline, so coverage and readability matter more than page count."
+    },
+    {
+      "q": "What were the five phases of a Farm Wars round, and the win/lose conditions?",
+      "a": "Buying, planting, defending, boss, selling. Win by surviving and beating all animal bosses; lose by going broke, having the farm devastated, or dying."
+    },
+    {
+      "q": "What did the Farm Wars enemies threaten besides the player's health, and why is that smart?",
+      "a": "Defenses, structures, electronics and the economy (crops, land). It ties combat to the farming loop so every enemy matters to both."
+    },
+    {
+      "q": "Give the four ground rules from the GDD template's introduction.",
+      "a": "Skewed to action/adventure/platform/RPG/shooter but adaptable; a TBD beats a blank; it's a living, liquid document; use it however suits you and your team (more pictures, one-pagers)."
+    },
+    {
+      "q": "What goes on a GDD cover and in its footer?",
+      "a": "Cover: evocative image, title, doc version, written by, point of contact with phone, publishing date, version number. Footer: copyright/company/date, page number, current date."
+    },
+    {
+      "q": "List at least six fields of the enemy design template.",
+      "a": "Name, image, description, animation list, movement patterns, attack descriptions, defeated by, damage description, particle effects, projectiles, HUD elements, SFX list, voice list, special player-character requirements, player reward."
+    },
+    {
+      "q": "What does the boss template add beyond the enemy template?",
+      "a": "Weak spots/vulnerable states, the health bar's look, a guaranteed reward, and the Boss Fight Arena page (image, description, level elements, music incl. contextual music)."
+    },
+    {
+      "q": "Name the nine slides of the high-concept pitch in order.",
+      "a": "Cover, company profile, target specs, game story, game goals, gameplay summary, gameplay details, download strategy, production specs."
+    },
+    {
+      "q": "Why should the pitch cover credit the studio and show the date?",
+      "a": "No one makes a game alone, and the date helps the audience remember when the meeting happened."
+    },
+    {
+      "q": "Name four things a 2026 F2P pitch adds that the 2010 deck didn't have.",
+      "a": "Any four: market data, target audience/geos, core loop and meta, monetization, LiveOps plan, UA/ad-creative hook, target KPIs, kill/go gates, the ask."
+    }
+  ],
+  "feynman": "Explain to a producer in 60 seconds: what's the difference between a one-sheet, a ten-pager, a pitch deck and a GDD, who reads each one, and what would you add to all of them for a free-to-play mobile game?",
+  "links": [
+    "L02",
+    "L03",
+    "L04",
+    "L05",
+    "L06",
+    "L07",
+    "L08",
+    "L09",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "L14",
+    "L15",
+    "L16",
+    "L17",
+    "F2P1",
+    "F2P2",
+    "F2P"
+  ]
+}

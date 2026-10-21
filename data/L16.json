@@ -1,0 +1,1132 @@
+{
+  "id": "L16",
+  "order": 17,
+  "kind": "book",
+  "label": "Level 16",
+  "title": "Cutscenes, or No One's Gonna Watch 'Em Anyway",
+  "bookPages": "407–416",
+  "emoji": "🎬",
+  "tagline": "Assume nobody watches. Make the story playable, short and skippable.",
+  "f2pRelevance": 3,
+  "f2pWhy": "Mobile players skip almost everything, but tiny story beats, dialogue bubbles in narrative casual games, story-driven events, FTUE staging and cinematic ads all use this chapter's craft.",
+  "minutes": 35,
+  "tldr": [
+    "Cutscenes look great but have a bad reputation (long, pointless, boring), so players skip them. First ask: can it be done in the game?",
+    "Six types: FMV, animated, Flash-animated, prerendered, puppet show, scripted event. Pick by style, budget and schedule.",
+    "Stage scripted events so players see them: trigger on gaze, frame with geometry, show the space, start from the player's view, show cause and effect.",
+    "Eight screenplay steps: outline, scene breakdown, cutscene vs gameplay, brief dialogue, standard format, read aloud, simmer + feedback, line-by-line VO spreadsheet with file names.",
+    "It's always better to have the player do than watch; save cutscenes for kissing and explosions.",
+    "Temp track for timing only, pro actors via a voice director, bring the session kit, keep the writer in the room, welcome improv."
+  ],
+  "sections": [
+    {
+      "title": "What a cutscene is",
+      "bites": [
+        {
+          "id": "L16-b01",
+          "hook": "Cutscenes: six jobs, zero player control",
+          "body": "A cutscene is an animated or live-action sequence that advances the story, creates spectacle, provides atmosphere, delivers dialogue, develops characters and reveals clues the player might miss in gameplay. The player usually has no control while it plays.",
+          "example": "",
+          "f2p": "On mobile, every job except spectacle can often be done with a one-line bubble or a character reacting on the game board.",
+          "memory": "Story, Spectacle, Atmosphere, Dialogue, Character, Clues.",
+          "tag": "concept"
+        },
+        {
+          "id": "L16-b02",
+          "hook": "Gorgeous, and skipped by everyone",
+          "body": "Cutscenes are a double-edged sword. They usually look fantastic, showing your world in ways the engine can't. But they carry a stigma: many have been too long, unnecessary to the story or a chore to watch. So many players skip them, if allowed, to get to the game.",
+          "example": "",
+          "f2p": "Mobile players opened the app to play. Unskippable cinema in the FTUE costs players before they reach the fun.",
+          "memory": "No one's gonna watch 'em anyway.",
+          "tag": "warning"
+        },
+        {
+          "id": "L16-b03",
+          "hook": "The first question: could this be gameplay?",
+          "body": "Before making any cutscene, Rogers' very important question is whether it can be done in the game. If the moment can be played instead of watched, play wins.",
+          "example": "",
+          "f2p": "Can the beat become a level goal, a meta task like 'fix the staircase', a character reacting on the board, or a single bubble over gameplay?",
+          "memory": "",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "Six kinds of cutscenes",
+      "bites": [
+        {
+          "id": "L16-b04",
+          "hook": "FMV: Hollywood actors in your game",
+          "body": "Full motion video cutscenes are live-action film, popular when games first shipped on CD. Titles like Wing Commander III, Command & Conquer and The Horde used Hollywood actors and production values. FMV is usually made by an outside production company because it needs all the resources of a movie shoot.",
+          "example": "Wing Commander III: Heart of the Tiger (1994), Command & Conquer (1995), The Horde (1994).",
+          "f2p": "Live-action lives in mobile marketing now, like Clash of Clans' 2015 Super Bowl ad with Liam Neeson.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L16-b05",
+          "hook": "The interactive movie boom and bust",
+          "body": "In the mid-1990s FMV was so popular that systems like the 3DO, Philips CD-i and Sega Mega CD (plus PCs) specialized in FMV-heavy or playable-video games. By 2010, although DVDs could hold the video easily, FMV was considered too expensive for something players might not even watch.",
+          "example": "Night Trap (1992), Sewer Shark (1992), Phantasmagoria (1995), Psychic Detective (1995).",
+          "f2p": "Same math today: expensive cinema for players who skip is a bad trade, and video also bloats the download.",
+          "memory": "",
+          "tag": "example"
+        },
+        {
+          "id": "L16-b06",
+          "hook": "Animated cutscenes: beautiful, slow and pricey",
+          "body": "Full-motion animation uses cel or stop-motion animation converted to video the engine plays during title and story sequences, with no player control. Because production is involved and shooting is long and costly, they're rare, but there are gorgeous examples.",
+          "example": "The Neverhood (1996), The Curse of Monkey Island (1997), Professor Layton series (2007).",
+          "f2p": "2D animated shorts and trailers are common in mobile marketing (Supercell's animated Clash shorts).",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L16-b07",
+          "hook": "Flash cutscenes: still images with style",
+          "body": "Flash-animated sequences were made in Adobe Flash. Still images and simple movement give them a distinctive look. Flash was often used for animatics, and some games used it for final cutscenes.",
+          "example": "Sly Cooper series (2002) and the first God of War.",
+          "f2p": "Flash is gone (support ended in 2020), but 2D skeletal animation like Spine or Live2D and comic-panel story beats fill the same cheap-but-stylish role.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L16-b08",
+          "hook": "Prerendered: spectacular if you can pay for it",
+          "body": "Prerendered cutscenes use high-resolution versions of the game's models and environments with cinematic cameras for dramatic choreography and storytelling. No player control. With enough money, time and manpower they look spectacular. Rogers heard Tekken 3's cinematics were made by just two animators, who both ended up hospitalized from exhaustion.",
+          "example": "Blizzard titles, the Final Fantasy series, Namco fighting games.",
+          "f2p": "Mobile CG mostly lives in launch and season trailers, not in the install.",
+          "memory": "Spectacle costs money or animators' health. Budget the money.",
+          "tag": "list"
+        },
+        {
+          "id": "L16-b09",
+          "hook": "Puppet shows: in-game assets plus a movie camera",
+          "body": "Puppet shows use in-game characters and environments. The name comes from early versions where characters moved stiffly, like marionettes. Visually only the cinematic camera sets them apart from gameplay. They can be non-interactive or allow limited movement, like looking around with the hero's head.",
+          "example": "Assassin's Creed (2007), Call of Duty: Modern Warfare series.",
+          "f2p": "In-engine story beats on the meta screen, like Homescapes' butler Austin reacting to your renovation.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L16-b10",
+          "hook": "Scripted events: story without stopping play",
+          "body": "Scripted events also use in-game assets, but the player keeps limited to full control during the sequence. Since Half-Life, No One Lives Forever and Call of Duty, they've become the preferred way to tell story without upsetting gameplay pace, especially in FPS and action games.",
+          "example": "Half-Life (1998), The Operative: No One Lives Forever (2000), Call of Duty series.",
+          "f2p": "A mobile FTUE's guided first battle or level is a scripted event staged around the player's actions.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L16-b11",
+          "hook": "The Groundhog Day problem",
+          "body": "Scripted events have two risks: badly choreographed ones get missed, and they get repetitive when players must replay them after dying before finishing the objective. Rogers calls the second the Groundhog Day phenomenon: the player feels stuck in a time loop.",
+          "example": "",
+          "f2p": "If a level or boss intro replays on every retry, players rage. Show it once, then auto-skip on retries.",
+          "memory": "",
+          "tag": "warning"
+        },
+        {
+          "id": "L16-b12",
+          "hook": "Six types, from Hollywood to playable",
+          "body": "FMV (live-action), animated (cel or stop-motion), Flash (still images and simple motion), prerendered (hi-res CG), puppet show (in-game assets, cinematic camera), scripted event (in-game assets, player keeps control). Pick by your game's style, budget and schedule.",
+          "example": "",
+          "f2p": "In-game: bubbles, puppet-show beats, scripted FTUE. Marketing: CG, animation, live action.",
+          "memory": "Film, Frames, Flash, Fancy render, Puppets, Play.",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "Making sure players see scripted events",
+      "bites": [
+        {
+          "id": "L16-b13",
+          "hook": "Trigger on gaze, frame with geometry",
+          "body": "Two ways to make sure the player sees a scripted event: start it only when the player character is actually looking at or facing it, and build the level geometry to frame the scene so the player has a clear view of the action.",
+          "example": "",
+          "f2p": "The mobile version of gaze-triggering: a focus overlay that dims everything except the element to tap.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L16-b14",
+          "hook": "Show the space, and start from the player",
+          "body": "Move the camera around the environment to show its layout and space. If the camera moves, start the event from the player's point of view or position. This matters most for in-game-camera moments showing geometry changing, puzzle hints or enemy reveals.",
+          "example": "",
+          "f2p": "Pan from the player's tap to the newly unlocked area of the meta map, then back.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L16-b15",
+          "hook": "Pull lever, door opens: always show cause and effect",
+          "body": "Use the camera to show clear cause and effect, like pulling a lever and then seeing which door opens. Players should never wonder what their action did.",
+          "example": "Pull this lever, that door opens.",
+          "f2p": "This is the FTUE's main job: tap the booster, watch the row clear; build the barracks, see troops appear.",
+          "memory": "If a tree falls while the player stares at the minimap, it didn't happen.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "How to write a screenplay in eight easy steps",
+      "bites": [
+        {
+          "id": "L16-b16",
+          "hook": "Three screenwriting books for later",
+          "body": "Rogers' guide is a quick and dirty one, so your script works for storyboard artists, cutscene animators and voice actors. For depth he recommends Syd Field's Screenplay, Robert McKee's Story, and Lew Hunter's Screenwriting 434, but read them after finishing his book.",
+          "example": "",
+          "f2p": "",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L16-b17",
+          "hook": "Step 1: know your beginning, middle and end",
+          "body": "Outline your story first. If you don't know its beginning, middle and end, you won't know what you're writing. Rogers points back to his story chapter (Level 3).",
+          "example": "",
+          "f2p": "Even a 5-day event needs a mini arc: setup, rising trouble, finale on the last day.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L16-b18",
+          "hook": "Step 2: break it down, scene by scene",
+          "body": "List which characters appear in each scene and where it takes place. This drives staging and asset creation: you may not be able to show 10,000 orcs charging over a hill in a puppet-show cutscene.",
+          "example": "No orc armies in a puppet show.",
+          "f2p": "Every pose, background and animation adds art cost and download size on mobile. Count assets per scene.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L16-b19",
+          "hook": "Start at the end if the end has the action",
+          "body": "Also in Step 2, play with scene order. A flashback opening can work when a later scene has more action. SpongeBob SquarePants: Atlantis SquarePantis started at the end of its story because that scene had the most action. Rogers prefers starting with a bang to grab attention.",
+          "example": "SpongeBob: Atlantis SquarePantis (THQ, 2007) opened with its finale.",
+          "f2p": "Start with a bang = the first 30 seconds of the FTUE and the first 3 seconds of every ad.",
+          "memory": "Bang first, explain later.",
+          "tag": "example"
+        },
+        {
+          "id": "L16-b20",
+          "hook": "Step 3: always better to do than watch",
+          "body": "Decide which scenes are cutscenes and which are told through gameplay. Tell as much as possible through gameplay, since playing is what players do most. Don't make players watch something they should be doing. Rogers' very important thing: it's always better to have the player do than watch.",
+          "example": "",
+          "f2p": "Turn exposition into taps: open the letter, place the first sofa, fire the first cannon.",
+          "memory": "Do > Watch.",
+          "tag": "truth"
+        },
+        {
+          "id": "L16-b21",
+          "hook": "Cutscenes are for kissing and explosions",
+          "body": "Save cutscenes for big moments, the kissing and the blowing things up, that the game engine can't support. In other words: big spectacular moments and intimate ones. Do everything else in gameplay.",
+          "example": "",
+          "f2p": "Milestones only: new area unlocked, villain reveal, season finale.",
+          "memory": "Kiss or boom, otherwise play.",
+          "tag": "rule"
+        },
+        {
+          "id": "L16-b22",
+          "hook": "Step 4: write it short, funny and active",
+          "body": "Decide what must happen and what must be said. Communicate with action as much as words. Write to entertain; humor helps. Above all be brief, as Shakespeare said of wit. Skip the yapping and psycho or technobabble (Rogers' footnote pokes Metal Gear Solid).",
+          "example": "",
+          "f2p": "A mobile bubble should fit one breath; three bubbles max before the player taps something.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L16-b23",
+          "hook": "Play 'Name That Tune' with your dialogue",
+          "body": "Rogers treated dialogue like the game show Name That Tune, where contestants bid ever fewer notes. His imagined exchange: one writer says he can write the dialogue in 12 lines, the other says eight lines or less, and it ends with a frustrated 'Write. That. Dialogue!' Challenge yourself to get the point across in fewer and fewer words.",
+          "example": "",
+          "f2p": "Cut every event bubble in half, then check the joke still lands.",
+          "memory": "",
+          "tag": "fun"
+        },
+        {
+          "id": "L16-b24",
+          "hook": "Step 5: use the format the pros use",
+          "body": "Writing a game makes you a writing professional, so use standard screenplay format. Scene heading: scene number, INT. or EXT., location, time of day. Then camera angle; description with CHARACTERS and ACTION in caps; character name; actor direction in parentheses; brief dialogue. Final Draft or Movie Magic handle formatting.",
+          "example": "SCENE 3. INT. — MANOR KITCHEN — MORNING / WIDE SHOT / NANA ROSE BLOWS dust off a cup.",
+          "f2p": "Even bubble-only games benefit: artists and translators read standard scripts instantly.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L16-b25",
+          "hook": "Step 6: read it out loud",
+          "body": "Dialogue that sounds great in your head often sounds strange or clunky spoken. Read every line aloud and expect to rewrite again and again. Rogers recalls Harrison Ford telling George Lucas that Star Wars lines could be typed but not said.",
+          "example": "",
+          "f2p": "Read text bubbles aloud too: clunky to say is clunky to read.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L16-b26",
+          "hook": "Step 7: let it simmer, then get a reader",
+          "body": "Leave the script for a day or two; you'll think of better scenes and lines. Have someone else read it and give feedback, and don't hover over them while they do.",
+          "example": "",
+          "f2p": "Playtest the story: watch 5 testers and note who taps skip, and when.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L16-b27",
+          "hook": "Step 8: one line per row, one file name per line",
+          "body": "Prepare a spreadsheet for voice actors: each character's dialogue broken out line by line, as actors record that way. Isolated lines save paging through a long script. Keep scene numbers. Give every line a file name: the sound engineer names the cut audio with it, and the programmer uses the same file in the game.",
+          "example": "",
+          "f2p": "The file name becomes the localization string ID, so translators, VO studios and engineers work from one sheet.",
+          "memory": "",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "The VO script and writing grunts",
+      "bites": [
+        {
+          "id": "L16-b28",
+          "hook": "Anatomy of a VO sheet: file name, dialogue, notes",
+          "body": "The book's sample sheet for its hero Jake Steele has three columns. File Name: structured IDs for opening-cinematic and cutscene lines plus in-game barks grouped by type (climbing, collecting, health, charge yells, victory, hits, deaths). Dialogue: the exact line. Notes: context, emphasis and alternate takes.",
+          "example": "Notes like 'place emphasis on this word', 'hurt but not defeated', 'alternate death take'.",
+          "f2p": "Group IDs by character, context and variant (hero_ember_attack_02) so new skins and voices slot in cleanly.",
+          "memory": "",
+          "tag": "example"
+        },
+        {
+          "id": "L16-b29",
+          "hook": "Arg is a pirate, Aaaargh is a death rattle",
+          "body": "VO (voice over) scripts are full of screams and grunts. Voice actors read them literally, so write each one exactly how you want it to sound. A short 'Arg!' and a long 'Aaaargh!' are completely different performances.",
+          "example": "",
+          "f2p": "Mobile games lean on short barks; spelling them precisely is most of the direction.",
+          "memory": "Spell your screams on purpose.",
+          "tag": "rule"
+        },
+        {
+          "id": "L16-b30",
+          "hook": "Can't spell a grunt? Read comic books",
+          "body": "Comic books are packed with onomatopoeia, words spelled the way they sound, like POW, CRASH and AIIEEE. Use them as a dictionary for grunts, hit reactions and death cries.",
+          "example": "",
+          "f2p": "",
+          "memory": "",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "Temp tracks, actors and the voice session",
+      "bites": [
+        {
+          "id": "L16-b31",
+          "hook": "Temp tracks: amateurs reading lines to measure timing",
+          "body": "After breaking out the script, record a temp track: team members and moderately talented amateurs read the lines to determine audio file size and length. You need the script, a willing actor, a decent mic, recording software and a quiet room with no echo. Read lines the way you want them performed.",
+          "example": "",
+          "f2p": "Today temp VO is often text-to-speech or AI voice. Same rule: timing only, and check rights before shipping anything.",
+          "memory": "",
+          "tag": "concept"
+        },
+        {
+          "id": "L16-b32",
+          "hook": "Never lip-sync to a temp track",
+          "body": "Don't animate a character's lip sync to the temp recording: the professional actor's performance will be very different. Use temp audio only for timing and blocking.",
+          "example": "",
+          "f2p": "",
+          "memory": "Temp = tape measure, not the final tailoring.",
+          "tag": "warning"
+        },
+        {
+          "id": "L16-b33",
+          "hook": "Hire pros: the gap is huge",
+          "body": "You could voice the hero yourself, but hire a professional actor for the final game. Rogers has worked with dozens of VO actors: the difference between an actor and an amateur is huge. Hire one, or a dozen. But first hire a voice director.",
+          "example": "",
+          "f2p": "Gacha hero voice lines are part of what players collect; a pro performance makes a character feel worth pulling.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L16-b34",
+          "hook": "Voice directors cast, book, schedule and direct",
+          "body": "A voice director casts characters from your descriptions (be accurate, not vague; naming a dream actor helps), books the studio and gets the best rate, schedules to maximize recording time, directs the actors and works with sound technicians for quality. Send them the script early, even unfinished, and warn them changes are coming.",
+          "example": "Tim Schafer thought he could never get Jack Black for Brütal Legend, and did.",
+          "f2p": "For localized games, every language studio needs the same descriptions, images and context notes.",
+          "memory": "",
+          "tag": "list"
+        },
+        {
+          "id": "L16-b35",
+          "hook": "The voice session survival kit",
+          "body": "Bring extra printed scripts, a highlighter to mark lines, a pen or pencil for notes and changes (there will be changes), images of every character (even drooling alien no. 2, since actors play several parts), a book or handheld game for the waiting, and drinks and snacks for long, tiring sessions.",
+          "example": "",
+          "f2p": "",
+          "memory": "Copies, Colors, Pen, Pictures, Pastime, Provisions.",
+          "tag": "list"
+        },
+        {
+          "id": "L16-b36",
+          "hook": "Keep the writer in the room, and let actors play",
+          "body": "If you aren't the writer, make sure the writer or designer attends: rewrites happen and the actors and director don't always know a line's context. Don't leave specific needs to others. Welcome improvisation: alternate takes give you more material, actors enjoy it, and happy actors want to work with you again.",
+          "example": "",
+          "f2p": "Improvised alternates become free bark variants, so players don't hear the same victory line 500 times.",
+          "memory": "",
+          "tag": "rule"
+        },
+        {
+          "id": "L16-b37",
+          "hook": "You get paid to hear actors say your words",
+          "body": "Rogers' last tip: have fun. You're being paid to sit in a room listening to professional actors perform lines you wrote. It doesn't get much better than that.",
+          "example": "",
+          "f2p": "",
+          "memory": "",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "F2P deep dive — cutscenes on a phone",
+      "bites": [
+        {
+          "id": "L16-b38",
+          "hook": "Skip from frame one, never replay on retry",
+          "body": "Make every story beat skippable from the start, remember what each player has seen, and never replay it on retries. Offer a recap or story log so skippers can catch up. Track skip rate per beat and drop-off right after cutscenes.",
+          "example": "",
+          "f2p": "A spike in churn right after a story beat means that beat is hurting you.",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "L16-b39",
+          "hook": "Keep story beats under ten seconds",
+          "body": "A useful rule of thumb (a guideline, not a law): keep in-game story beats under about 10 seconds or 2 to 3 bubbles before control returns. Short saves player time and your money, just as the book says.",
+          "example": "",
+          "f2p": "Shorter beats also mean smaller downloads and faster sessions.",
+          "memory": "Snack-size story, feast-size trailer.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L16-b40",
+          "hook": "Dialogue bubbles: the mobile puppet show",
+          "body": "Narrative casual games deliver story through short character bubbles between levels and tasks. Home-renovation match-3 games like Homescapes and merge mysteries like Merge Mansion work this way. Interactive-story apps like Choices make dialogue and choices the core loop.",
+          "example": "Austin the butler commenting on your renovation in Homescapes.",
+          "f2p": "Apply Step 4 double: short, funny, action over words, one idea per bubble.",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "L16-b41",
+          "hook": "Story gives this week's event a reason",
+          "body": "Give LiveOps events a mini-story: a villain arrives, a festival needs saving, a new mystery chapter opens. Season arcs work like TV: teaser, weekly beats, finale. Open each event with its most dramatic moment.",
+          "example": "Gacha RPGs often ship new story chapters with version updates.",
+          "f2p": "Story turns 'collect 500 snowflakes' into 'save the winter festival'.",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "L16-b42",
+          "hook": "Trailers and ads: where mobile cinema lives",
+          "body": "CG trailers, animated shorts and character teasers build brand outside the install. Ad creatives are tiny cutscenes: start with a bang in the first seconds, show clear cause and effect, and stay readable muted. Show real gameplay; regulators have ruled against misleading game ads.",
+          "example": "Supercell's animated Clash trailers and shorts.",
+          "f2p": "Ask of every ad: would I skip this?",
+          "memory": "",
+          "tag": "f2p"
+        },
+        {
+          "id": "L16-b43",
+          "hook": "Your tutorial is a scripted event",
+          "body": "The guided first level or battle is a scripted event: staged around the player, gaze-locked with focus overlays, showing obvious cause and effect, and never longer than needed.",
+          "example": "",
+          "f2p": "Apply all four staging tricks to the first 60 seconds of your FTUE.",
+          "memory": "",
+          "tag": "f2p"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "Let your game's style, budget and schedule decide which kind of cutscene you make.",
+    "Learn the standard screenplay layout and write your script in it.",
+    "Open your game with a bang to draw the audience in.",
+    "Doing beats watching: tell your story through play wherever you can.",
+    "Always let players skip cutscenes, and never force the same one on them again and again.",
+    "Keep cutscenes short: it respects the player's time and saves your budget.",
+    "Cutscenes are for kissing and explosions, meaning grand spectacle and intimate moments; handle everything else through gameplay.",
+    "Hire professional actors when you can; they transform the result.",
+    "Give each actor their own isolated line sheet before voice sessions."
+  ],
+  "mnemonics": [
+    {
+      "name": "Six cutscene types",
+      "device": "Film, Frames, Flash, Fancy render, Puppets, Play",
+      "unpacks": "FMV, animated (cel/stop-motion), Flash-animated, prerendered, puppet show, scripted event (playable)."
+    },
+    {
+      "name": "Eight screenplay steps",
+      "device": "Only Brave Cats Write Fast, Read Really Slowly",
+      "unpacks": "Outline, Break down scenes, Choose cutscene vs gameplay, Write brief dialogue, Format professionally, Read aloud, Rest/simmer + feedback, Spreadsheet for VO."
+    },
+    {
+      "name": "Voice session kit",
+      "device": "Copies, Colors, Pen, Pictures, Pastime, Provisions",
+      "unpacks": "Extra scripts, highlighter, pen/pencil, character images, book or handheld game, drinks and snacks."
+    },
+    {
+      "name": "Cutscene budget rule",
+      "device": "Kiss or boom, otherwise play",
+      "unpacks": "Use cutscenes only for intimate or spectacular moments the engine can't do; everything else in gameplay."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L16-f01",
+      "q": "What is a cutscene?",
+      "a": "An animated or live-action sequence, usually without player control, used for story, spectacle, atmosphere, dialogue, character development and clues.",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f02",
+      "q": "Why are cutscenes a double-edged sword?",
+      "a": "They look fantastic, but many are too long, unnecessary or a chore, so players skip them.",
+      "type": "why"
+    },
+    {
+      "id": "L16-f03",
+      "q": "What question should you ask before making a cutscene?",
+      "a": "Can it be done in the game?",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f04",
+      "q": "Name the six types of cutscenes.",
+      "a": "FMV, animated, Flash-animated, prerendered, puppet show, scripted event.",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f05",
+      "q": "Who usually produces FMV cutscenes, and why?",
+      "a": "An outside production company, because FMV needs all the resources of a movie production.",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f06",
+      "q": "Why did FMV become less popular?",
+      "a": "Too expensive to produce for something the audience may not even watch.",
+      "type": "why"
+    },
+    {
+      "id": "L16-f07",
+      "q": "Name two mid-90s systems built around FMV games.",
+      "a": "Any two of: 3DO, Philips CD-i, Sega Mega CD (plus PCs).",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f08",
+      "q": "Why are animated (cel/stop-motion) cutscenes rare?",
+      "a": "Involved production, long shooting time and high cost.",
+      "type": "why"
+    },
+    {
+      "id": "L16-f09",
+      "q": "What gives Flash-animated cutscenes their distinctive style?",
+      "a": "Still images and simple movement.",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f10",
+      "q": "What are prerendered cutscenes made from?",
+      "a": "High-resolution versions of the game's models and environments, with cinematic cameras.",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f11",
+      "q": "Why are they called puppet shows?",
+      "a": "Early in-engine cutscene characters moved unnaturally, like marionettes.",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f12",
+      "q": "What visually separates a puppet show from gameplay?",
+      "a": "Only the use of a cinematic camera.",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f13",
+      "q": "How do scripted events differ from puppet shows?",
+      "a": "The player keeps limited to full interaction during the sequence.",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f14",
+      "q": "Why are scripted events the preferred storytelling method in FPS/action games?",
+      "a": "They convey story without upsetting the pace of gameplay.",
+      "type": "why"
+    },
+    {
+      "id": "L16-f15",
+      "q": "What is the Groundhog Day phenomenon?",
+      "a": "Replaying the same scripted event after dying, feeling stuck in a time loop.",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f16",
+      "q": "Name the four techniques to make sure players see a scripted event.",
+      "a": "Trigger when the player faces it; frame with level geometry; move the camera to show the space; start camera moves from the player's POV.",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f17",
+      "q": "What should the camera always show in an event?",
+      "a": "Clear cause and effect (pull this lever, that door opens).",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f18",
+      "q": "Step 1 of writing a screenplay?",
+      "a": "Outline the story: beginning, middle and end.",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f19",
+      "q": "What do you list for each scene in Step 2, and why?",
+      "a": "Characters and locations, for staging and asset creation.",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f20",
+      "q": "Why did SpongeBob: Atlantis SquarePantis start at the end of its story?",
+      "a": "It was the most action-packed scene; start with a bang.",
+      "type": "why"
+    },
+    {
+      "id": "L16-f21",
+      "q": "It's always better to have the player ____ than ____.",
+      "a": "do; watch",
+      "type": "cloze"
+    },
+    {
+      "id": "L16-f22",
+      "q": "Save cutscenes for ____ and ____ (big intimate and spectacular moments).",
+      "a": "kissing; explosions (blowing things up)",
+      "type": "cloze"
+    },
+    {
+      "id": "L16-f23",
+      "q": "What's the most important quality of game dialogue, per Step 4?",
+      "a": "Brevity: get the point across in as few words as possible.",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f24",
+      "q": "Screenplay scene heading: SCENE #. ____ / ____ — LOCATION — TIME OF DAY.",
+      "a": "INT. / EXT.",
+      "type": "cloze"
+    },
+    {
+      "id": "L16-f25",
+      "q": "In screenplay format, what goes in ALL CAPS in the description?",
+      "a": "Characters (when introduced) and action.",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f26",
+      "q": "Where does actor direction go in screenplay format?",
+      "a": "In parentheses under the character's name.",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f27",
+      "q": "Why read your dialogue out loud?",
+      "a": "Lines that sound fine in your head often sound strange or clunky spoken.",
+      "type": "why"
+    },
+    {
+      "id": "L16-f28",
+      "q": "What does Step 7 ask you to do?",
+      "a": "Let the script simmer a day or two and have someone else read it (without hovering).",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f29",
+      "q": "Why does every VO line need a file name?",
+      "a": "The sound engineer names the cut audio files with it, and the programmer uses the same file in the game.",
+      "type": "why"
+    },
+    {
+      "id": "L16-f30",
+      "q": "Voice actors read grunts ____, so write them how you want them to sound.",
+      "a": "literally",
+      "type": "cloze"
+    },
+    {
+      "id": "L16-f31",
+      "q": "Where can you learn to spell grunts and sound words?",
+      "a": "Comic books (onomatopoeia like POW, CRASH, AIIEEE).",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f32",
+      "q": "What is a temp track used for?",
+      "a": "Determining audio file size and length (timing and blocking).",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f33",
+      "q": "Never animate ____ to a temp track.",
+      "a": "lip sync",
+      "type": "cloze"
+    },
+    {
+      "id": "L16-f34",
+      "q": "Who should you hire before hiring voice actors?",
+      "a": "A voice director.",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f35",
+      "q": "Name four things a voice director does.",
+      "a": "Casts from your descriptions, books the studio/gets rates, schedules sessions, directs actors and works with sound techs.",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f36",
+      "q": "Why should the writer attend the voice session?",
+      "a": "Rewrites happen, and actors and the director don't always know a line's context.",
+      "type": "why"
+    },
+    {
+      "id": "L16-f37",
+      "q": "Your mobile game's 45-second intro cinematic can't be skipped, and many installs quit during it. Which truths apply?",
+      "a": "Allow skipping, keep cutscenes short, and tell the story through gameplay (do > watch).",
+      "type": "apply"
+    },
+    {
+      "id": "L16-f38",
+      "q": "Players retrying a hard boss level must sit through its intro every time. Which problem?",
+      "a": "The Groundhog Day phenomenon: show it once, then skip on retries.",
+      "type": "apply"
+    },
+    {
+      "id": "L16-f39",
+      "q": "Your tutorial explains boosters with a text popup, and players don't get it. Which staging principle helps?",
+      "a": "Show clear cause and effect: make them tap the booster and watch it clear the row (do, don't watch).",
+      "type": "apply"
+    },
+    {
+      "id": "L16-f40",
+      "q": "Your animator synced a hero's lip movement to your own scratch recording; the pro actor's take doesn't match. Which rule was broken?",
+      "a": "Never lip-sync to a temp track; use it only for timing and blocking.",
+      "type": "apply"
+    },
+    {
+      "id": "L16-f41",
+      "q": "An event story beat needs a castle collapsing, beyond what your meta screen can animate. What does the book suggest?",
+      "a": "That's a 'kissing and explosions' moment: one of the few beats worth a short cutscene.",
+      "type": "apply"
+    },
+    {
+      "id": "L16-f42",
+      "q": "Your localization team keeps mixing up which line goes where. Which step fixes it?",
+      "a": "Step 8: a line-by-line spreadsheet with scene numbers and a unique file name/ID per line.",
+      "type": "apply"
+    },
+    {
+      "id": "L16-f43",
+      "q": "Name three books Rogers recommends for deeper screenwriting study.",
+      "a": "Syd Field's Screenplay, Robert McKee's Story, Lew Hunter's Screenwriting 434.",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f44",
+      "q": "Why bring character images to a voice session?",
+      "a": "They help actors (who often play several parts) bring each character to life; send them early to aid casting.",
+      "type": "why"
+    },
+    {
+      "id": "L16-f45",
+      "q": "Why encourage actor improvisation?",
+      "a": "More material and alternate takes, actors enjoy it, and they'll want to work with you again.",
+      "type": "why"
+    },
+    {
+      "id": "L16-f46",
+      "q": "Your team wants a 10,000-troop siege as an in-engine (puppet show) beat on the meta screen. Which step warns you?",
+      "a": "Step 2: break scenes down by characters and locations for staging and asset creation; puppet shows can't show huge armies.",
+      "type": "apply"
+    },
+    {
+      "id": "L16-f47",
+      "q": "In your event beat, the player taps a lever and a door opens off-screen; players are confused. Fix?",
+      "a": "Show clear cause and effect: start the camera from the player's position and pan to the door as it opens.",
+      "type": "apply"
+    },
+    {
+      "id": "L16-f48",
+      "q": "When was FMV popular, and which game systems were built around it?",
+      "a": "It boomed when games first moved to CD media, and in the mid-1990s systems like the 3DO, Philips CD-i and Sega Mega CD specialized in FMV-heavy interactive movies.",
+      "type": "basic"
+    },
+    {
+      "id": "L16-f49",
+      "q": "What does Rogers' Tekken 3 anecdote warn about prerendered cutscenes?",
+      "a": "Spectacular cinematics were made by just two animators who both ended up hospitalized from exhaustion: cinematic quality costs money, time and manpower, so don't pay for it with crunch.",
+      "type": "why"
+    },
+    {
+      "id": "L16-f50",
+      "q": "Complete: Rogers played 'Name That Tune' with dialogue by bidding '12 lines' versus '____ lines or less'.",
+      "a": "Eight. The point is to keep trimming the dialogue.",
+      "type": "cloze"
+    },
+    {
+      "id": "L16-f51",
+      "q": "Rogers says there are many ways to make cutscenes, just like movies. Name all six.",
+      "a": "The six are FMV, animated, Flash-animated, prerendered, puppet show and scripted event.",
+      "type": "basic"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "L16-q01",
+      "q": "Which question does Rogers say to ask before making a cutscene?",
+      "options": [
+        "Can we afford Hollywood actors?",
+        "Can it be done in the game?",
+        "How long can we make it?",
+        "Which engine renders it best?"
+      ],
+      "answer": 1,
+      "why": "If the moment can be played, play wins: it's always better to do than watch."
+    },
+    {
+      "id": "L16-q02",
+      "q": "Characters move stiffly like marionettes, the scene uses in-game assets, and only a cinematic camera separates it from gameplay. Which type?",
+      "options": [
+        "Prerendered",
+        "FMV",
+        "Flash-animated",
+        "Puppet show"
+      ],
+      "answer": 3,
+      "why": "Puppet shows use in-game assets; prerendered uses hi-res versions, FMV is live action, Flash uses still images."
+    },
+    {
+      "id": "L16-q03",
+      "q": "What sets scripted events apart from puppet shows?",
+      "options": [
+        "The player keeps limited to full interaction during the sequence",
+        "They use live actors",
+        "They are prerendered",
+        "They have no camera"
+      ],
+      "answer": 0,
+      "why": "Both use in-game assets, but scripted events let the player keep control, preserving pacing."
+    },
+    {
+      "id": "L16-q04",
+      "q": "Why did FMV fall out of favor even though DVDs could store it easily?",
+      "options": [
+        "Players hated actors",
+        "Consoles couldn't play video",
+        "Too expensive for something players might not watch",
+        "It was illegal"
+      ],
+      "answer": 2,
+      "why": "Storage wasn't the problem anymore; cost versus likely viewing was."
+    },
+    {
+      "id": "L16-q05",
+      "q": "Which is NOT one of the book's techniques for making sure players see a scripted event?",
+      "options": [
+        "Trigger it when the player is facing it",
+        "Make it last longer so players eventually notice",
+        "Frame the scene with level geometry",
+        "Start a moving camera from the player's POV"
+      ],
+      "answer": 1,
+      "why": "Longer events aren't the fix; the book uses gaze triggers, framing, camera tours and player-POV starts."
+    },
+    {
+      "id": "L16-q06",
+      "q": "Players dying in a level must rewatch the same scripted sequence each attempt. What does the book call this?",
+      "options": [
+        "Rubberbanding",
+        "Spawn camping",
+        "Puppet syndrome",
+        "The Groundhog Day phenomenon"
+      ],
+      "answer": 3,
+      "why": "It feels like being stuck in a time loop; the fix is not forcing repeats."
+    },
+    {
+      "id": "L16-q07",
+      "q": "In Step 3, what should cutscenes be reserved for?",
+      "options": [
+        "Big moments the engine can't support, like kissing and explosions",
+        "All dialogue",
+        "Tutorials",
+        "Menus"
+      ],
+      "answer": 0,
+      "why": "Everything else should be told through gameplay."
+    },
+    {
+      "id": "L16-q08",
+      "q": "SpongeBob: Atlantis SquarePantis began at the end of its story because:",
+      "options": [
+        "The ending was cheapest to animate",
+        "Players requested it",
+        "It was the most action-packed scene, so the game started with a bang",
+        "It was a bug"
+      ],
+      "answer": 2,
+      "why": "Step 2 encourages rearranging scenes, even with a flashback structure, to open strong."
+    },
+    {
+      "id": "L16-q09",
+      "q": "In standard screenplay format, where does actor direction go?",
+      "options": [
+        "In ALL CAPS in the scene heading",
+        "In parentheses under the character name",
+        "In the camera angle line",
+        "In a separate document"
+      ],
+      "answer": 1,
+      "why": "Parentheticals carry direction; caps are for characters and action in descriptions."
+    },
+    {
+      "id": "L16-q10",
+      "q": "Why does each line in the VO spreadsheet get a file name?",
+      "options": [
+        "For copyright registration",
+        "To count words for payment",
+        "Actors require it",
+        "So the sound engineer can name each cut audio file and the programmer can hook the same file into the game"
+      ],
+      "answer": 3,
+      "why": "One name follows the line from recording to implementation."
+    },
+    {
+      "id": "L16-q11",
+      "q": "What's the correct use of a temp VO track?",
+      "options": [
+        "Timing and blocking only",
+        "Final lip sync",
+        "Shipping if actors are late",
+        "Marketing trailers"
+      ],
+      "answer": 0,
+      "why": "The professional performance will differ, so never lip-sync animation to temp audio."
+    },
+    {
+      "id": "L16-q12",
+      "q": "Your F2P game opens with an unskippable 40-second story video, and FTUE drop-off spikes there. Best fix per the chapter?",
+      "options": [
+        "Add music to the video",
+        "Add more dialogue to explain the story",
+        "Make it skippable, cut it short, and move the story into the first playable moments",
+        "Replace it with FMV"
+      ],
+      "answer": 2,
+      "why": "Allow skipping, keep it short, and do > watch. Extra explanation makes it longer."
+    },
+    {
+      "id": "L16-q13",
+      "q": "A voice actor delivers a scream as a short 'Arg!' when you wanted a long death cry. What's the likely root cause?",
+      "options": [
+        "The actor is untalented",
+        "The script spelled it 'Arg!'; actors read grunts literally",
+        "No voice director",
+        "The temp track was too good"
+      ],
+      "answer": 1,
+      "why": "Write grunts exactly how you want them to sound; 'Arg!' and 'Aaaargh!' are different performances."
+    },
+    {
+      "id": "L16-q14",
+      "q": "Which item is NOT on the book's list of things to bring to a voice session?",
+      "options": [
+        "A highlighter",
+        "Character images",
+        "Snacks and drinks",
+        "The final animation files"
+      ],
+      "answer": 3,
+      "why": "The list: extra scripts, highlighter, pen/pencil, character images, a book or handheld game, drinks and snacks."
+    },
+    {
+      "id": "L16-q15",
+      "q": "Your narrative match-3 event has 8 dialogue bubbles before each level. Which Step 4 principle is being violated?",
+      "options": [
+        "Be brief: get the point across in as few words as possible",
+        "Use standard format",
+        "Read it out loud",
+        "Outline your story"
+      ],
+      "answer": 0,
+      "why": "Brevity is the core of Step 4; on mobile, aim for 2–3 bubbles per beat."
+    }
+  ],
+  "sideQuests": [
+    {
+      "id": "L16-s01",
+      "title": "Skip-o-meter",
+      "task": "Time every story beat in the first 10 minutes of 2 F2P games. How many are skippable, and which ran over 10 seconds?",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L16-s02",
+      "title": "Do, don't watch",
+      "task": "Redesign one cutscene idea ('the dragon burns the village') as 3 different playable beats on a phone.",
+      "minutes": 10,
+      "xp": 35
+    },
+    {
+      "id": "L16-s03",
+      "title": "Format drill",
+      "task": "Write a 1-page mobile event intro scene in standard screenplay format (heading, camera, caps, parenthetical, brief dialogue).",
+      "minutes": 15,
+      "xp": 40
+    },
+    {
+      "id": "L16-s04",
+      "title": "Name That Tune",
+      "task": "Write a 10-line dialogue exchange, cut it to 6 lines, then to 3 bubbles, without losing the point.",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L16-s05",
+      "title": "Grunt dictionary",
+      "task": "Spell 10 reactions (light hit, heavy hit, fall, victory...) so an actor would perform each correctly.",
+      "minutes": 5,
+      "xp": 20
+    },
+    {
+      "id": "L16-s06",
+      "title": "VO sheet",
+      "task": "Build a 15-line VO spreadsheet (File Name / Dialogue / Notes) for one gacha hero: summon, attack, skill, hit, KO, victory, with alternates.",
+      "minutes": 15,
+      "xp": 40
+    },
+    {
+      "id": "L16-s07",
+      "title": "Stage the tutorial",
+      "task": "Sketch a tutorial moment on a phone screen and annotate how you'd guarantee the player sees it (focus overlay, camera pan, cause and effect).",
+      "minutes": 10,
+      "xp": 30
+    }
+  ],
+  "mainQuests": [
+    {
+      "id": "L16-m01",
+      "title": "Story package for one LiveOps event",
+      "task": "For a narrative casual game, write: a 5-beat event outline (start with a bang, finale on the last day); a beat sheet marking gameplay vs bubble vs short animated beat (each under ~10 seconds); one key scene in screenplay format; a text/VO spreadsheet with IDs, dialogue and notes; a 6-panel, 15-second ad storyboard that works muted.",
+      "deliverable": "An event story doc with outline, beat sheet, script page, line spreadsheet and ad storyboard.",
+      "doneWhen": "Every beat answers 'could this be gameplay?'; no in-game beat exceeds ~10 seconds or 3 bubbles; every line has an ID and notes; dialogue was read aloud and revised; the storyboard is posted publicly asking 'would you skip this?'",
+      "minutes": 120,
+      "xp": 220
+    }
+  ],
+  "playLabs": [
+    {
+      "id": "L16-p01",
+      "game": "Homescapes or Gardenscapes",
+      "minutes": 10,
+      "lookFor": "Story beats around your first tasks: length, bubbles vs animation.",
+      "question": "How does the story give meaning to the next task, and how long does each beat take?"
+    },
+    {
+      "id": "L16-p02",
+      "game": "Genshin Impact, Honkai: Star Rail or AFK Journey",
+      "minutes": 10,
+      "lookFor": "Skip, auto-play and story log options; which moments get full cinematics.",
+      "question": "Which scenes are 'kissing and explosions' cinematics, and which are plain dialogue?"
+    },
+    {
+      "id": "L16-p03",
+      "game": "Clash of Clans or Clash Royale (plus a Supercell trailer)",
+      "minutes": 10,
+      "lookFor": "How the tutorial stages cause and effect; what the trailer shows.",
+      "question": "What does the trailer do that the game itself never does?"
+    },
+    {
+      "id": "L16-p04",
+      "game": "Any F2P game's ads",
+      "minutes": 10,
+      "lookFor": "Watch 5 ads muted: openings, real gameplay vs fake, captions.",
+      "question": "Which ads start with a bang, which show real gameplay, and which would you skip?"
+    }
+  ],
+  "retrieval": [
+    {
+      "q": "Define a cutscene and its uses.",
+      "a": "An animated or live-action sequence, usually uncontrollable, for story, spectacle, atmosphere, dialogue, character development and clues."
+    },
+    {
+      "q": "Why are cutscenes a double-edged sword?",
+      "a": "Beautiful beyond the engine, but often long, unnecessary or boring, so players skip."
+    },
+    {
+      "q": "What should you ask first?",
+      "a": "Can it be done in the game?"
+    },
+    {
+      "q": "Name the six types with an example each.",
+      "a": "FMV (Wing Commander III), animated (Curse of Monkey Island), Flash (Sly Cooper), prerendered (Final Fantasy), puppet show (Assassin's Creed), scripted event (Half-Life)."
+    },
+    {
+      "q": "Why did FMV decline?",
+      "a": "Too expensive for something players may not watch."
+    },
+    {
+      "q": "Puppet show vs scripted event?",
+      "a": "Both use in-game assets; scripted events keep player interaction."
+    },
+    {
+      "q": "Two risks of scripted events?",
+      "a": "Being missed if badly staged; repetition after dying (Groundhog Day)."
+    },
+    {
+      "q": "Four ways to ensure players see a scripted event?",
+      "a": "Gaze trigger, geometry framing, camera tour of the space, start from the player's POV, plus clear cause and effect."
+    },
+    {
+      "q": "List the eight screenplay steps.",
+      "a": "Outline; scene breakdown; cutscene vs gameplay; write brief dialogue; standard format; read aloud; simmer + feedback; VO spreadsheet with file names."
+    },
+    {
+      "q": "Why did SpongeBob: Atlantis SquarePantis start at the end?",
+      "a": "Most action; start with a bang."
+    },
+    {
+      "q": "What are cutscenes for?",
+      "a": "Kissing and explosions: big spectacular or intimate moments the engine can't do."
+    },
+    {
+      "q": "Elements of screenplay format?",
+      "a": "Scene heading (number, INT./EXT., location, time), camera angle, description with caps for characters and action, character name, parenthetical direction, brief dialogue."
+    },
+    {
+      "q": "What's in a VO spreadsheet?",
+      "a": "Lines one per row, scene numbers, dialogue, notes, and a file name per line used by the sound engineer and programmer."
+    },
+    {
+      "q": "What is a temp track for, and what's forbidden?",
+      "a": "Timing and file size/length; never lip-sync animation to it."
+    },
+    {
+      "q": "What does a voice director do and what's in the session kit?",
+      "a": "Casts, books studio and rates, schedules, directs, works with techs. Kit: scripts, highlighter, pen, character images, book or game, snacks."
+    }
+  ],
+  "feynman": "Explain to a producer in 60 seconds why your mobile game should spend less on cutscenes and more on playable story beats and trailers, and what you'd lose by cutting story entirely.",
+  "links": [
+    "L03",
+    "L06",
+    "L09",
+    "L15",
+    "L17",
+    "F2P1",
+    "F2P"
+  ]
+}

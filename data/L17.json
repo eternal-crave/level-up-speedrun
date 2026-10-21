@@ -1,0 +1,1705 @@
+{
+  "id": "L17",
+  "order": 18,
+  "kind": "book",
+  "label": "Level 17",
+  "title": "And Now the Hard Part",
+  "bookPages": "417–430, 481–482",
+  "emoji": "🏁",
+  "tagline": "You wrote the GDD. Cute. Now pitch it, ship it without burning out, and decide what comes next.",
+  "f2pRelevance": 4,
+  "f2pWhy": "Pitching, production style, cutting, crunch and sequels map directly onto F2P greenlights, soft-launch kill gates and LiveOps-as-encore, plus how to break in as a designer.",
+  "minutes": 60,
+  "tldr": [
+    "A pitch is your GDD minus the twiddley bits: title, company, high concept, a few details, proof it'll win. Nobody cares about your lore yet.",
+    "Pitch equation: demo > GDD > presentation > pitch. In F2P: live metrics > prototype > deck.",
+    "Video games are made by people: most failed games were badly planned. Plan for sickness, hardware, scope, blinders and cuts.",
+    "Pick vertical slice (~80% quality chunk) or horizontal layer (whole game in gray box) and go; don't hide behind emergent gameplay.",
+    "Sequels: keep the spine, 30/70 new vs. proven, don't betray fans, add fresh stuff but not too much. In F2P, the encore is usually LiveOps.",
+    "Book's last words: rest, be fair and generous, keep playing, enjoy it, and remember game-making is exactly like making chili."
+  ],
+  "sections": [
+    {
+      "title": "And Now the Hard Part — what a pitch is",
+      "bites": [
+        {
+          "id": "L17-b01",
+          "hook": "You finished the GDD. Congrats, that was the tutorial.",
+          "body": "A great idea plus a 200-page design doc is not a game. Before anyone makes it, someone must fund and publish it, and to find that publisher you need a pitch. Rogers' point: your work is only just beginning.",
+          "example": "Order of operations in the book: pitch → find a publisher → get funded → actually make the game.",
+          "f2p": "In F2P the \"publisher\" may be a greenlight committee, an external mobile publisher, investors, or a product lead deciding the roadmap.",
+          "memory": "Design doc done = level 1 cleared, not the final boss.",
+          "tag": "concept"
+        },
+        {
+          "id": "L17-b02",
+          "hook": "A pitch is your GDD minus the twiddley bits",
+          "body": "A pitch is a streamlined, easy-to-digest version of the game design document. It keeps everything great and original and drops the \"twiddley bits\": industry slang for details you worked hard on that matter for making the game but not for selling it.",
+          "example": "Your 47 chest types and every hero's backstory stay in the GDD; the hook and the core loop go on the slides.",
+          "f2p": "Put the core loop diagram and the monetization hypothesis on the slide, not the drop-rate table.",
+          "memory": "The GDD is the whole cow; the pitch is the steak on a plate.",
+          "tag": "concept"
+        },
+        {
+          "id": "L17-b03",
+          "hook": "The five-part pitch skeleton",
+          "body": "Rogers recommends presentation software, because pitches happen in boardrooms in front of groups. The basics: 1) title screen with logo, 2) company profile, 3) high concept, 4) a few pages of details, 5) proof the game will be awesome and/or make everyone lots of money. The full outline is in Bonus Level 9.",
+          "example": "Title → who we are → one-breath concept → a few detail slides → why it wins.",
+          "f2p": "F2P \"proof\" = market fit, a monetization hypothesis and KPI targets, not just enthusiasm.",
+          "memory": "Logo, Lineup, Line, Look, Loot: title, company, high concept, details, proof.",
+          "tag": "list"
+        },
+        {
+          "id": "L17-b04",
+          "hook": "Three slide rules people still break",
+          "body": "When building pitch slides: choose a font you can actually read, don't cram too much information onto one slide, and use pictures, because everyone loves pictures.",
+          "example": "A slide with six bullets and a gameplay GIF beats a slide with a 200-word paragraph every time.",
+          "f2p": "Remote pitches get viewed on small laptop windows, so readable fonts matter even more.",
+          "memory": "Readable, roomy, and full of pictures.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "No One Cares About Your Stupid Little World",
+      "bites": [
+        {
+          "id": "L17-b05",
+          "hook": "Pitch like an artist's portfolio: best work only",
+          "body": "A pitch is like a portfolio: show off your best work, but don't include so many pieces that you overwhelm the audience. Curate ruthlessly.",
+          "example": "Three killer gameplay moments beat fifteen decent ones.",
+          "f2p": "One killer core-loop GIF beats ten feature slides.",
+          "memory": "Curate, don't dump.",
+          "tag": "concept"
+        },
+        {
+          "id": "L17-b06",
+          "hook": "The Nebulon lore dump that put a publisher to sleep",
+          "body": "Rogers sat through a story pitch where the writer explained his fantasy world's politics in detail. He tuned out almost at once: too much to process. He didn't care who the Nebulons were or what a Galactic Imperium meant; he just wanted to know how the game played.",
+          "example": "Book cartoon: a storyteller recites a galactic history lesson while the listener slumps, eyes glazed.",
+          "f2p": "F2P greenlight rooms ask: who is it for, what do players do every 30 seconds, why do they return, why do they pay?",
+          "memory": "Every proper noun fills the publisher's lore meter 10%.",
+          "tag": "example"
+        },
+        {
+          "id": "L17-b07",
+          "hook": "World details matter later. Keep them secret for now.",
+          "body": "Worldbuilding is fun and details make a world feel real, but at the pitch stage nobody else cares. Don't overburden the audience with story. Keep it simple and keep those details to yourself for now.",
+          "example": "",
+          "f2p": "Even story-heavy gacha games are pitched on their gameplay hook, not on a fictional nation's history. Narrative is pitched as a feature with a purpose, like weekly chapters driving D7.",
+          "memory": "Lore is a dessert, not the appetizer.",
+          "tag": "rule"
+        }
+      ]
+    },
+    {
+      "title": "The six rules of thumb for pitching",
+      "bites": [
+        {
+          "id": "L17-b08",
+          "hook": "Rule 1: research who you're pitching to",
+          "body": "Pitch to the right people. Too many pitches end with \"great pitch, but we'd never publish that kind of game,\" which some research would have prevented. Some publishers only do certain genres: don't pitch a family game to a hardcore-action publisher. Many publishers do publish widely, though, and their objectives change.",
+          "example": "Family game → hardcore action publisher = wasted meeting for both sides.",
+          "f2p": "Study a publisher's portfolio and business model: a hyper-casual shop and a midcore strategy house want very different games.",
+          "memory": "Know the buyer before you sell the pie.",
+          "tag": "rule"
+        },
+        {
+          "id": "L17-b09",
+          "hook": "Timing is everything (farm-animal death mechs edition)",
+          "body": "Luck plays a role: you might walk in the very week a publisher decides it wants an RTS about cybernetic death mechs piloted by farm animals. Or, more likely, not. Objectives shift, so timing can make or break a pitch.",
+          "example": "Rogers' joke pitch: cybernetic death mecha piloted by farm animals.",
+          "f2p": "Market trends move fast in mobile: a genre that's hot this year (say, a new hybrid-casual format) may be saturated next year.",
+          "memory": "Cows in mechs: sometimes the timing is just right.",
+          "tag": "fun"
+        },
+        {
+          "id": "L17-b10",
+          "hook": "Rule 2: pitch where all eyes are on you",
+          "body": "Pitch in a controlled environment, where the audience's attention is on you and your presentation. You can't always choose the place, but aim for quiet and private.",
+          "example": "Show floor of E3 = bad. Private meeting room at E3 = much better.",
+          "f2p": "Today many pitches are video calls: control that room too, with a stable connection, quiet space and a tested screen share.",
+          "memory": "No pitching next to the explosion booth.",
+          "tag": "rule"
+        },
+        {
+          "id": "L17-b11",
+          "hook": "Rule 3: rehearse it like a performance",
+          "body": "Be prepared. A pitch is a performance, so practice in front of peers and ask for feedback on content and delivery. Tap your inner actor and get them as excited as you are. If a teammate presents better, let them do it, under your supervision, while you attend to answer questions. You get one chance.",
+          "example": "The book's pitch-kit figure: eye contact, enthusiasm and a smile, dress for the room.",
+          "f2p": "Record yourself pitching your F2P concept on video; watch it once. Painful, effective.",
+          "memory": "Rehearse until boring, then rehearse once more.",
+          "tag": "rule"
+        },
+        {
+          "id": "L17-b12",
+          "hook": "Could you still pitch if the power died?",
+          "body": "Prepare for tech failure: make sure your computer works with any setup, bring backup data (a thumb drive or disc in 2010), bring plenty of printed copies even though attendee numbers are unpredictable. Rogers has seen pitches stop dead because the sound failed. Like the Boy Scouts say: be prepared.",
+          "example": "Ultimate test from the book: could you make your pitch if the power went out?",
+          "f2p": "Modern kit: build on the device, a cloud link, and an offline gameplay video.",
+          "memory": "Backups for your backups.",
+          "tag": "list"
+        },
+        {
+          "id": "L17-b13",
+          "hook": "The pitch kit: what to bring into the room",
+          "body": "The book's illustrated pitch kit: make eye contact, be enthusiastic and smile, dress accordingly, bring business cards, take-away documentation, a playable demo, a laptop, a flash/backup drive, and a projectable PowerPoint or video.",
+          "example": "Shown with a \"Dude With Sword\" pitch slide behind the presenter.",
+          "f2p": "Add for mobile: test device charged, screen-mirroring adapter, and a short capture video in case the build crashes.",
+          "memory": "Eyes, smile, suit, cards, docs, demo, laptop, backup, slides.",
+          "tag": "list"
+        },
+        {
+          "id": "L17-b14",
+          "hook": "Rule 4: know your game better than anyone",
+          "body": "Know your project inside and out, even before it exists. Publishers ask questions to poke holes in the design, not out of malice but to find what could cause trouble in production. Go deep when asked, but don't ramble. If you don't know an answer, invite their thoughts on it.",
+          "example": "Turning an unknown into a conversation is honest and buys you time.",
+          "f2p": "Expect F2P questions like \"What's your D1 target?\" and \"How does a non-spender progress?\"",
+          "memory": "They poke holes; you've already patched them.",
+          "tag": "rule"
+        },
+        {
+          "id": "L17-b15",
+          "hook": "Rule 5: one meeting, one game",
+          "body": "Keep the focus. Bringing several pitches makes the meeting longer, gives each game less time, and may prevent consensus on which is best. One idea always stands out, so let attendees concentrate on it and come back another day with others. If you do bring several, make them all the same quality.",
+          "example": "",
+          "f2p": "Send a short concept slate later if a studio wants options, at equal polish.",
+          "memory": "Two pitches, half the attention each.",
+          "tag": "list"
+        },
+        {
+          "id": "L17-b16",
+          "hook": "Rule 6: no great idea? Pitch your tech anyway",
+          "body": "Pitch to represent. Even without a great or original idea, a great piece of technology or a prototype mechanic may be worth showing. Publishers sometimes hold a license with no studio picked to make it. Timing and luck matter as much as the idea and presentation.",
+          "example": "A publisher with a license but no developer may hire the studio with the right tech.",
+          "f2p": "A strong mechanic prototype can win co-development, work-for-hire, or a licensed-IP mobile project.",
+          "memory": "Show the engine even if you don't have the car yet.",
+          "tag": "concept"
+        }
+      ]
+    },
+    {
+      "title": "The pitch equation & the demo dilemma",
+      "bites": [
+        {
+          "id": "L17-b17",
+          "hook": "Demo beats doc beats slides beats talk",
+          "body": "From 5+ years at a publisher hearing scores of pitches, Rogers built the pitch equation: GAME DEMO > GAME DESIGN DOCUMENT > PRESENTATION > PITCH. Something playable sells better than any document, which beats slides, which beats talking.",
+          "example": "Letting a publisher get hands on code is sometimes the best way to sell a game.",
+          "f2p": "F2P version: live metrics > playable prototype > GDD > deck > idea.",
+          "memory": "Demos Get Publishers Paying (D > G > P > P).",
+          "tag": "rule"
+        },
+        {
+          "id": "L17-b18",
+          "hook": "Demos sell games but can wreck schedules",
+          "body": "Demos are a lot of work. If not planned for, they steal time from the main production, disrupt its flow and can cause crunch: long hours cramming content into the game. But they prove you're serious and let publishers play real code. So plan the demo into the schedule.",
+          "example": "",
+          "f2p": "A shiny pitch build or vertical slice can stall core-loop iteration; budget it.",
+          "memory": "A demo is a free sample: great sales tool, but someone has to cook it.",
+          "tag": "warning"
+        },
+        {
+          "id": "L17-b19",
+          "hook": "In F2P, retention numbers are the ultimate demo",
+          "body": "The pitch equation gets steeper in F2P: a build with real player data from a small test or soft launch outranks any document. Hyper-casual publishers even test marketability, the cost per install of a short gameplay video or minimal build, before much is built.",
+          "example": "A prototype with good early retention data walks into the meeting ahead of a 60-page GDD.",
+          "f2p": "Lead with your test results, then explain the design.",
+          "memory": "Numbers > nouns.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "Video Games Is a Haaaard Business",
+      "bites": [
+        {
+          "id": "L17-b20",
+          "hook": "Great games can still flop. Plan for it.",
+          "body": "Games take huge effort, and even \"sure hits\" can get poor reviews or mediocre sales. Well-made, well-reviewed games have sold badly. Publishers may not fund the promotion you think the game deserves, or may set sales projections it can't reach. And it's not only the publisher: team members may slack, or be distracted by family and health issues.",
+          "example": "",
+          "f2p": "F2P's version: a fun game whose CPI exceeds its LTV is commercially dead, however good the reviews.",
+          "memory": "Quality is the entry ticket, not the trophy.",
+          "tag": "concept"
+        },
+        {
+          "id": "L17-b21",
+          "hook": "VIDEO GAMES ARE MADE BY PEOPLE",
+          "body": "Rogers' bolded \"very important thing.\" People get sick, go on vacation, have family crises, and in the worst case a lead designer or key member can fall seriously ill or die mid-production. These things happen, and most games that go badly are the result of bad planning, so schedule for people issues.",
+          "example": "",
+          "f2p": "LiveOps never ships \"once\": a plan where the same three people must make a new event every week forever is broken.",
+          "memory": "Every bar on your Gantt chart has a human inside who sometimes gets the flu.",
+          "tag": "truth"
+        }
+      ]
+    },
+    {
+      "title": "The production troubleshooting list",
+      "bites": [
+        {
+          "id": "L17-b22",
+          "hook": "Plan for flu season and blackouts",
+          "body": "Plan ahead: prepare for team illnesses and vacations, plus hardware failure, brown-outs and other technical issues. Don't wait for disaster to discover there's no buffer.",
+          "example": "",
+          "f2p": "F2P teams bank finished events weeks ahead so one sick artist doesn't cancel next week's event.",
+          "memory": "P in PLANNER: plan for people and power.",
+          "tag": "rule"
+        },
+        {
+          "id": "L17-b23",
+          "hook": "Don't overpromise, and lock the design early",
+          "body": "Be smart with your design: don't overpromise content or bite off more than the team can chew. Lock down design and content as soon as possible; constantly changing things in pursuit of perfection wears the team down and can even kill the game.",
+          "example": "Classic overpromise: a pitch with ten modes for a team that can finish two.",
+          "f2p": "Lock the core loop and economy structure before mass-producing levels or events.",
+          "memory": "Perfection chasing is a slow-motion game killer.",
+          "tag": "rule"
+        },
+        {
+          "id": "L17-b24",
+          "hook": "Play it wrong on purpose until it breaks",
+          "body": "Players will always find ways to break your game, so play like they do. Skip the intended path: try odd inputs and hammer on the game until it breaks, then repair it and press on.",
+          "example": "",
+          "f2p": "F2P players hunt exploits: device-clock tricks to skip timers, duplicate rewards, refund abuse. They spread in hours online. QA the economy, not just the levels.",
+          "memory": "Be the gremlin before the players are.",
+          "tag": "rule"
+        },
+        {
+          "id": "L17-b25",
+          "hook": "Fat Princess got a fifth finger for Japan",
+          "body": "When making international versions, account for cultural sensitivities. Titan Studios had to redesign the cartoony four-fingered characters of Fat Princess (SCE, 2009) with five fingers for the game's Japanese release.",
+          "example": "Fat Princess (SCE, 2009): four fingers → five for Japan.",
+          "f2p": "Global launch means checking symbols, gestures, colors, holidays and local rules, not just translating text.",
+          "memory": "Localization is more than translation: count the fingers.",
+          "tag": "example"
+        },
+        {
+          "id": "L17-b26",
+          "hook": "Three reasons four fingers are taboo in Japan",
+          "body": "Rogers' footnote gives at least three: yubitsume, the Yakuza practice of cutting off part of the little finger as atonement, leaving a four-fingered look; the number four (shi) also means death; and a four-finger sign was a slur against the Burakumin, a discriminated social class, with activists suing over its use in media.",
+          "example": "",
+          "f2p": "",
+          "memory": "Yakuza, death, discrimination: three strikes for four fingers.",
+          "tag": "example"
+        },
+        {
+          "id": "L17-b27",
+          "hook": "Design blinders: too close to see the flaws",
+          "body": "Design blinders happen when you're too close to your game: you think it's too easy, or that half-baked parts are \"good enough.\" Remove them by recruiting outside players, using focus groups when applicable, and iterating at every stage. Publishers excel at this \"10,000 foot view\": an objective look that finds weak spots and strengthens the good parts.",
+          "example": "",
+          "f2p": "Modern blinder removers: remote playtests with fresh players, FTUE funnels and A/B tests.",
+          "memory": "You can't proofread your own face. Ask someone else.",
+          "tag": "concept"
+        },
+        {
+          "id": "L17-b28",
+          "hook": "If it doesn't work, throw it out (with a plan)",
+          "body": "Don't be precious with ideas; they're a dime a dozen. When you cut something, have a backup plan. But don't make discarding work a habit: planning ahead beats wasted effort. Tossing good ideas means you have too many. Save them for the sequel: \"S.I.F.S.\" was a common studio saying.",
+          "example": "S.I.F.S. = save it for the sequel.",
+          "f2p": "In F2P, S.I.F.S. becomes \"save it for a LiveOps update\": a cut mode can return as a limited-time event.",
+          "memory": "Bin it, back it up, bank it for later.",
+          "tag": "rule"
+        },
+        {
+          "id": "L17-b29",
+          "hook": "Global F2P launches have rules, not just cultures",
+          "body": "Cultural sensitivity in modern F2P includes regulation: Japan banned \"kompu gacha\" in 2012, China and South Korea require published loot-box odds, and Belgium treats paid loot boxes as gambling. Some markets require content changes for approval.",
+          "example": "A gacha game launching globally may need odds disclosures and region-specific shop changes.",
+          "f2p": "Check regulations per market before soft launch, not after.",
+          "memory": "Count fingers, and count laws.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L17-b30",
+          "hook": "Be a PLANNER, not a firefighter",
+          "body": "The troubleshooting list as one word: Plan for people and hardware, Lock design early, Avoid overpromising, Nuke-test like a player, Nations differ (culture check), Eyes from outside (remove blinders), Remove what doesn't work.",
+          "example": "",
+          "f2p": "",
+          "memory": "PLANNER: Plan, Lock, Avoid, Nuke, Nations, Eyes, Remove.",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "Cutting content the smart way",
+      "bites": [
+        {
+          "id": "L17-b31",
+          "hook": "Every game cuts. Cut early and for good reasons.",
+          "body": "Cutting content happens on every game. The more you cut during preproduction, the less you'll have to cut in production, when cuts are costly. Make sure you're cutting for the right reasons.",
+          "example": "",
+          "f2p": "Cut features that don't move retention or monetization goals, ideally before content production scales.",
+          "memory": "Trim on paper, not in the oven.",
+          "tag": "rule"
+        },
+        {
+          "id": "L17-b32",
+          "hook": "Never yank the block six systems rest on",
+          "body": "Don't cut or change content that connects to and affects multiple game systems, or you're asking for trouble: cascading bugs and design holes.",
+          "example": "",
+          "f2p": "Risky F2P cuts touch the economy: removing a sink inflates currency; removing a source starves progression. Cosmetics and single event modes are safer.",
+          "memory": "Cutting content is Jenga: loose blocks early, never the load-bearing one late.",
+          "tag": "warning"
+        }
+      ]
+    },
+    {
+      "title": "Vertical slice vs. horizontal layer",
+      "bites": [
+        {
+          "id": "L17-b33",
+          "hook": "Vertical slice: one piece of the game, nearly finished",
+          "body": "A vertical slice is a level or sequence designed, built and polished to the highest playability possible, with the best controls, camera, visuals, gameplay, code, effects and audio the final game will have. It serves as a demo for publishers and a template for the rest of the game.",
+          "example": "Book cartoon: a woman holding a pie, asking for another vertical slice.",
+          "f2p": "In F2P, the FTUE and first sessions often get the vertical-slice treatment, since they drive D1 retention.",
+          "memory": "One slice of pie shows every layer.",
+          "tag": "concept"
+        },
+        {
+          "id": "L17-b34",
+          "hook": "Slices aim for 80% quality and can cause crunch",
+          "body": "A vertical slice usually targets about 80% of final game quality. Experienced teams can make one in a few months, but it's very time-consuming and can lead to crunch: long, stressful hours rushing to create, insert and test content.",
+          "example": "",
+          "f2p": "Schedule the slice explicitly; don't let it become a surprise crunch before a publisher or soft-launch milestone.",
+          "memory": "80% polish, 100% effort.",
+          "tag": "warning"
+        },
+        {
+          "id": "L17-b35",
+          "hook": "Horizontal layer: the whole game, start to end, in gray box",
+          "body": "A horizontal layer brings all elements of the game, beginning to end, up at the same time in gray box: rough geometry, mostly placeholder animation, generally no texturing, effects or sound. Once everything is playtested and approved, the team \"prettifies\" and polishes.",
+          "example": "Book cartoon: two figures in an empty block room; imagine stone walls, skull torches, a spike pit and goblins.",
+          "f2p": "F2P prototypes gray-box the core loop and economy first, then add art once retention looks promising.",
+          "memory": "The whole pie tin, filled with plain dough.",
+          "tag": "concept"
+        },
+        {
+          "id": "L17-b36",
+          "hook": "Gray box needs imagination, and imagination is rare",
+          "body": "The hardest part of showing gray box to teammates, publishers or marketing is that they must use their imagination, a rarer skill than you'd think even in a creative industry. Don't let them get the wrong idea: keep concept art on hand to communicate the intended look.",
+          "example": "",
+          "f2p": "Players never imagine: ad creatives and store screenshots must look final from the first second.",
+          "memory": "Bring the concept art or they'll think your game is about gray cubes.",
+          "tag": "warning"
+        },
+        {
+          "id": "L17-b37",
+          "hook": "Gray box lets you find the real fun early",
+          "body": "The upside of gray box iteration: the team can play and discover what's great. If bouncing off enemies' heads turns out to be more fun than fighting them, it's not too late to adjust the design around it.",
+          "example": "Book example: head-bouncing proves more fun than fighting → redesign toward it.",
+          "f2p": "Cheap prototypes let F2P teams pivot the core loop before expensive art and content.",
+          "memory": "Find the fun while it's still cheap to move.",
+          "tag": "example"
+        },
+        {
+          "id": "L17-b38",
+          "hook": "Pick one production style and go",
+          "body": "Rogers' Universal Truth: build with either horizontal-layer or vertical-slice production. Pick one and commit, instead of half-doing both.",
+          "example": "",
+          "f2p": "Many F2P studios sequence them: gray box the loop, then vertical-slice the first session for testing.",
+          "memory": "Slice or layer: choose, then commit.",
+          "tag": "truth"
+        },
+        {
+          "id": "L17-b39",
+          "hook": "The F2P road: prototype → soft launch → global → LiveOps",
+          "body": "Typical F2P stages: concept and market research, gray-box prototype of the core loop, vertical slice of the first sessions, soft launch in a few test countries to measure retention, monetization and CPI, global launch if KPIs clear the bar, then LiveOps for years.",
+          "example": "A game can be killed at any gate if the numbers don't work.",
+          "f2p": "Each gate is a new pitch, judged by data.",
+          "memory": "Prototype, Soft, Global, Live: the four floors of the F2P tower.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "\"Emergent, eschmergent!\" — no accidental design",
+      "bites": [
+        {
+          "id": "L17-b40",
+          "hook": "\"The fun is emergent\" usually means \"I have no idea\"",
+          "body": "Emergent gameplay is play that \"just happens\" when players get a set of tools and freedom to use them. The problem: designers use it as an excuse to underdesign, hoping the player will \"find the fun.\"",
+          "example": "Book cartoon: \"Is it fun now?\" \"The fun is emergent.\" \"So you have no idea?\" \"I have no idea.\"",
+          "f2p": "",
+          "memory": "Emergence is dessert, not the recipe.",
+          "tag": "concept"
+        },
+        {
+          "id": "L17-b41",
+          "hook": "There's no such thing as accidental design",
+          "body": "Knowing how all gameplay elements interact is part of design. Plan how they relate and the outcomes become predictable. Odd interactions can come from bugs, but never design around them. If a surprise appears and doesn't break the game: \"it's not a bug, it's a feature!\" Planning ahead is the secret to successful production.",
+          "example": "",
+          "f2p": "A harmless quirk players love can become an official event; a quirk that duplicates hard currency gets hotfixed.",
+          "memory": "Plan the interactions; enjoy the happy accidents.",
+          "tag": "rule"
+        },
+        {
+          "id": "L17-b42",
+          "hook": "Never let an F2P economy \"emerge\"",
+          "body": "Unplanned interactions in F2P economies create exploits, inflation or pay-to-win spirals. Model sources, sinks and progression in a spreadsheet or simulation before launch, and keep monitoring after.",
+          "example": "A reward loop accidentally stacking with a sale can flood the economy with hard currency overnight.",
+          "f2p": "Economy design is the least emergent thing you'll ever do.",
+          "memory": "Spreadsheet first, surprise never.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "What to Do for an Encore? — sequels",
+      "bites": [
+        {
+          "id": "L17-b43",
+          "hook": "Why publishers love sequels",
+          "body": "If your game reviews or sells well, or the publisher can afford to pay again, you may get a sequel. Like Hollywood sequels, they're safe(r) bets: proven intellectual property that doesn't need explaining. Loved the first? You'll love the second.",
+          "example": "Rogers has worked both developer-side and publisher-side, so he sees both angles.",
+          "f2p": "F2P studios also prefer proven formulas: spin-offs and successors reuse a known IP or loop.",
+          "memory": "Sequels are low-risk for the money people.",
+          "tag": "concept"
+        },
+        {
+          "id": "L17-b44",
+          "hook": "A sequel is your chance to get it right",
+          "body": "Sequels are often wasted: teams phone it in or rush, making retreads. But the first game was limited: build a team, build an engine, figure out the character and gameplay, make it work and be fun, then hope people buy it. With that done, start sequel preproduction aiming for perfection.",
+          "example": "Footnote: perfection is unreachable, and chasing it didn't help Duke Nukem Forever.",
+          "f2p": "Your F2P \"sequel\" is often a big update or relaunch fixing the original's pain points.",
+          "memory": "The sequel is New Game+: everything unlocked, no excuses.",
+          "tag": "concept"
+        },
+        {
+          "id": "L17-b45",
+          "hook": "Maximo's 40-item fix list (39 got fixed)",
+          "body": "After the first Maximo, Rogers gave his producer a list of 40 broken things to fix in the sequel and got 39. The first game sold better, but he believes the second is the better game, and it only existed because there was a sequel.",
+          "example": "Maximo → Maximo vs. Army of Zin.",
+          "f2p": "Keep a running \"fix list\" from reviews, support tickets and data; it becomes your update roadmap.",
+          "memory": "40 asks, 39 yeses.",
+          "tag": "example"
+        },
+        {
+          "id": "L17-b46",
+          "hook": "No sequels, no GTA3 or Resident Evil 4",
+          "body": "Rogers' evidence that sequels can be great: no Grand Theft Auto 3, no Call of Duty: Modern Warfare, no Burnout Paradise, no Curse of Monkey Island, no Resident Evil 2 or 4, no Lego Star Wars original-trilogy game without sequels.",
+          "example": "All sequels, many all-time greats.",
+          "f2p": "",
+          "memory": "Some of the best games ever are number 2s and 3s.",
+          "tag": "example"
+        },
+        {
+          "id": "L17-b47",
+          "hook": "F2P's encore is LiveOps, not a sequel",
+          "body": "F2P games are services: new levels, events, seasons and heroes keep the same app alive for years. A new app means rebuilding the install base and paying for acquisition again, risks cannibalizing the original, and asks players to abandon their progress and purchases.",
+          "example": "Candy Crush Saga and Clash of Clans have been updated for over a decade instead of being replaced by numbered sequels.",
+          "f2p": "Your 40-item fix list becomes the LiveOps roadmap.",
+          "memory": "Don't build a new restaurant; change the menu.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "The sequel rulebook — spine & 30/70",
+      "bites": [
+        {
+          "id": "L17-b48",
+          "hook": "Keep the spine, cut the bad bits",
+          "body": "Use the original game's spine as the sequel's basis: keep what was good and improve it, throw away what was bad. Teams often \"justify\" a lousy camera, controls or mechanics just because they were in the first game. That doesn't make them good. If the result is better, nobody complains.",
+          "example": "",
+          "f2p": "Big F2P updates keep the core loop sacred and fix the pain points players complain about.",
+          "memory": "Legacy is not a design reason.",
+          "tag": "rule"
+        },
+        {
+          "id": "L17-b49",
+          "hook": "The 30/70 rule: 30% new, 70% proven",
+          "body": "Project manager George Collins, Rogers' friend, recommends every sequel be 30% new material and ideas and 70% based on the original game. Rogers calls it a solid formula.",
+          "example": "",
+          "f2p": "A healthy season or update is mostly familiar systems plus a fresh layer: a new event mechanic, heroes or map.",
+          "memory": "Mostly comfort food, plus one new spice.",
+          "tag": "rule"
+        },
+        {
+          "id": "L17-b50",
+          "hook": "Don't take away the wall-running",
+          "body": "Don't let the player down. Fans expect certain things in a sequel; if they loved your wall-running mechanic, keep wall-running.",
+          "example": "",
+          "f2p": "Never nerf or remove what players paid for or loved without care and compensation; trust breaks show up in churn and reviews.",
+          "memory": "What fans love is a promise. Keep it.",
+          "tag": "rule"
+        },
+        {
+          "id": "L17-b51",
+          "hook": "Don't call it \"GameName 2\"",
+          "body": "Names matter. Rogers prefers titles like the Batman films (Batman Returns, Batman Begins) and \"Indiana Jones and the...\" films: mysterious, and they extend the fiction instead of reducing it to a number.",
+          "example": "Funny detail: the book's own sample sequel art says \"Dude With Sword 2.\"",
+          "f2p": "Name seasons and events by theme (\"Pirate Season\"), and give successor apps distinct names, which also helps store search (ASO).",
+          "memory": "A subtitle tells a story; a number tells a count.",
+          "tag": "rule"
+        },
+        {
+          "id": "L17-b52",
+          "hook": "Five new back-of-box features, plus a hero and a villain",
+          "body": "Always introduce something new: make sure there are five new things for the back of the box, preferably new gameplay concepts, and at least one new hero and one new villain. Remind players it's a new experience, not a rehash.",
+          "example": "",
+          "f2p": "Every season needs a \"what's new\" list for patch notes, store page and ad creatives.",
+          "memory": "Five features, one hero, one villain.",
+          "tag": "list"
+        },
+        {
+          "id": "L17-b53",
+          "hook": "But not too new: the clockwork mistake",
+          "body": "In Maximo vs. Army of Zin, the team didn't realize players wanted more supernatural enemies and gave them clockwork creatures instead. Fans were unhappy because the sequel strayed from what they liked about the first game.",
+          "example": "Maximo vs. Army of Zin: supernatural → clockwork foes = fan backlash.",
+          "f2p": "Changing genre or art style mid-life can alienate your spenders; test big changes with A/B tests or a separate mode.",
+          "memory": "Fans ordered ghosts and got gears.",
+          "tag": "warning"
+        },
+        {
+          "id": "L17-b54",
+          "hook": "Old franchises can dare to reinvent",
+          "body": "The further along a franchise is, the more room for change, so why not try something wildly different? It needs publisher and marketing buy-in. Rogers worked on franchises in their 5th, 8th and even 16th versions; sometimes a new direction is exactly what they needed. It worked for Grand Theft Auto and Wolfenstein, but nothing is guaranteed.",
+          "example": "",
+          "f2p": "Aging F2P games sometimes get major meta overhauls or relaunches: high risk, needs leadership buy-in.",
+          "memory": "Late game = time for a bold build.",
+          "tag": "concept"
+        },
+        {
+          "id": "L17-b55",
+          "hook": "F2P successors follow the 30/70 idea",
+          "body": "When F2P studios launch a new app from a hit, it's usually a successor or spin-off that keeps a proven core and adds a twist and a new name, rather than \"Game 2.\"",
+          "example": "Homescapes moved the Gardenscapes match-3 + renovation formula indoors; Royal Kingdom followed Royal Match; Clash Royale took the Clash universe into real-time card battles.",
+          "f2p": "Angry Birds 2 shows numbered sequels exist, just less often.",
+          "memory": "Same spine, new skin.",
+          "tag": "f2p"
+        }
+      ]
+    },
+    {
+      "title": "Continue? Time to Level Up!",
+      "bites": [
+        {
+          "id": "L17-b56",
+          "hook": "You leveled up. Now the real game starts.",
+          "body": "The book's sign-off recaps the journey (game designs, design docs, chili, a pitch) and declares you've leveled up. Like in games, that means you're just getting started, and about to learn firsthand that making games is the best job in the world. Keep the book in your back pocket for when you get stuck.",
+          "example": "",
+          "f2p": "",
+          "memory": "Level up ≠ game over.",
+          "tag": "concept"
+        },
+        {
+          "id": "L17-b57",
+          "hook": "The \"three\" rules for a long career (there are four)",
+          "body": "1) Take a break now and then: you're human, making games, not doing heart surgery; nobody dies if it waits until tomorrow. 2) Always be fair and generous: it's a tiny industry and word travels fast. 3) Keep playing games, even bad ones. 4) Enjoy it: few people make games for a living; you could be flipping burgers.",
+          "example": "",
+          "f2p": "LiveOps never stops, so rest is a skill. The F2P world is small, so reputation follows you.",
+          "memory": "4 Rs: Rest, Respect, Research, Rejoice.",
+          "tag": "list"
+        },
+        {
+          "id": "L17-b58",
+          "hook": "\"OK, I lied, there were four things\"",
+          "body": "Rogers promises three parting rules, lists four, then cheerfully admits he lied. The last cartoon: a designer at a drafting table, surprised you're still reading. The book is over, go design your own video game!",
+          "example": "",
+          "f2p": "",
+          "memory": "The final boss of the book is closing the book.",
+          "tag": "fun"
+        }
+      ]
+    },
+    {
+      "title": "Achievement Unlocked: Exactly Like Making Chili",
+      "bites": [
+        {
+          "id": "L17-b59",
+          "hook": "The book's final page is an actual chili recipe",
+          "body": "After all that design wisdom, the very last chapter is a real chili recipe, with no commentary: beef brisket browned with garlic, an ancho chili and broth purée, crushed tomatoes and spices, a long covered simmer, shredded meat with peppers and onion, then toppings of cheese, sour cream and scallions. It pays off the Level 4 joke.",
+          "example": "Serves 6–8; simmers about 2 to 2½ hours.",
+          "f2p": "",
+          "memory": "Achievement unlocked: dinner.",
+          "tag": "fun"
+        },
+        {
+          "id": "L17-b60",
+          "hook": "Game dev = chili: recipe, ingredients, tools",
+          "body": "Rogers' Level 4 analogy: the recipe is your documentation, saying what goes in and how to make it; follow it but expect changes. Ingredients and equipment are people and tools; sometimes you improvise, like cowboys cooking with a campfire and a tin can. Season to taste: make the \"meatier\" parts stand out.",
+          "example": "Born from Rogers rejecting a visiting director's claim that making games is like fishing.",
+          "f2p": "F2P chili never leaves the stove: LiveOps keeps adding ingredients and re-seasoning.",
+          "memory": "Recipe = docs, ingredients = people, pots = tools.",
+          "tag": "concept"
+        },
+        {
+          "id": "L17-b61",
+          "hook": "Boil = crunch. Simmer = polish.",
+          "body": "Bringing chili to a boil is like crunch: a frantic burst to get everything in. Boil too long and you ruin it, burn the pot and set the stove on fire; too much crunch has destroyed games and studios. Simmering is polish and bug fixing: chili isn't ready the moment it's assembled. It even tastes better the next day.",
+          "example": "",
+          "f2p": "In LiveOps the danger is a boil that never ends; design a sustainable event cadence.",
+          "memory": "Don't leave the pot on full boil.",
+          "tag": "truth"
+        },
+        {
+          "id": "L17-b62",
+          "hook": "Brown the meat first, and ugly can still taste great",
+          "body": "Chili forgives careful or messy prep, like methodical or mad-dash productions, but order matters: always brown the meat first (Rogers learned the hard way). Troubled chili, like troubled games, can sometimes be saved at the last minute, but don't count on it. And chili can look awful yet taste delicious, like a plain game with great gameplay.",
+          "example": "",
+          "f2p": "Ship the core loop before the decorations; a plain-looking game with a great loop can still win.",
+          "memory": "Order matters; looks don't (as much).",
+          "tag": "concept"
+        },
+        {
+          "id": "L17-b67",
+          "hook": "The chili, measured",
+          "body": "The recipe feeds 6 to 8 and has 16 ingredient lines: 1/4 cup olive oil, 2 garlic cloves, 3 lb trimmed brisket, 2 large cans crushed tomatoes, 2 small cans beef broth, 2 ancho chilis, 1/2 tbsp chili powder, 1 tbsp cayenne, 1/2 tbsp crushed red chili, 1 tbsp Lowry's garlic salt, 2 green peppers, 1 red pepper, 1 yellow onion, plus 1/4 cup scallions, 1/2 cup sour cream and 1/2 cup shredded Monterey Jack to serve. Only two timings matter: 7 to 10 minutes browning, then 2 to 2.5 hours covered simmer.",
+          "example": "Order: brown garlic and meat, purée chilis with broth, pour off oil and add purée and tomatoes, season, boil then simmer, chunk the veg, shred the meat and return it, boil off liquid, serve.",
+          "f2p": "Long covered simmer = patient soft-launch iteration before you serve the world.",
+          "memory": "Brown 7–10, simmer 2–2½, feeds 6–8.",
+          "tag": "list"
+        }
+      ]
+    },
+    {
+      "title": "F2P bonus: greenlight, kill gates & breaking in",
+      "bites": [
+        {
+          "id": "L17-b63",
+          "hook": "The F2P pitch deck must-haves",
+          "body": "Upgrade Rogers' five basics: hook, team, high concept and audience, market fit with comparables, core loop diagram, meta, retention hypothesis, monetization hypothesis with ethical guardrails, LiveOps plan, marketability, KPI targets with kill criteria, production specs, and proof.",
+          "example": "Proof could be a prototype video, playtest results or a CPI test.",
+          "f2p": "Bonus Level 9's \"download strategy\" slide is the ancestor of the LiveOps plan.",
+          "memory": "Hook, Market, Loop, Money, Live, Numbers, Proof.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L17-b64",
+          "hook": "Write your kill criteria before you fall in love",
+          "body": "Healthy F2P studios decide in advance which numbers mean \"scale\" and which mean \"kill\" at each gate. Supercell is famous for ending games in soft launch or beta (Rush Wars, Clash Quest, Clash Mini) rather than shipping games it didn't believe in.",
+          "example": "Rogers' truth \"throw out what doesn't work, but plan ahead\" is a kill gate.",
+          "f2p": "Kill criteria in the pitch are insurance against design blinders.",
+          "memory": "Install the fire exit before the fire.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L17-b65",
+          "hook": "In LiveOps, the deadline comes back every week",
+          "body": "Boxed games crunched before ship; LiveOps can turn crunch into a lifestyle. Fight it with reusable event templates, a buffer of finished content, calendars planned months ahead with slack for sickness and holidays, and a cadence scoped to the team you actually have.",
+          "example": "",
+          "f2p": "Rogers' \"avoid crunch with responsible goals and planning\" matters more than ever.",
+          "memory": "Scope the cadence to the team, not the team to the cadence.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L17-b66",
+          "hook": "Getting hired is a pitch where you are the game",
+          "body": "The pitch equation applies to your career: small playable prototypes > written designs (feature specs, economy sheets) > teardowns > talk. Teardowns should cover core loop, meta, FTUE, economy, monetization, retention, LiveOps and \"what I'd change and which KPI it moves.\" Design tests reward focus: one idea, fully developed.",
+          "example": "Common take-home: \"Design a new event for our game\" or \"Our D7 dropped; diagnose it.\"",
+          "f2p": "Be fair and generous: the F2P world is small.",
+          "memory": "Your portfolio is a vertical slice of you.",
+          "tag": "f2p"
+        },
+        {
+          "id": "L17-b68",
+          "hook": "Slide 9: team, time, cost",
+          "body": "The last slide of the book's pitch outline is Production Specs: how big is the team dedicated to the game, how long will it take to make, and how much will it cost. The slide before it covers download support, because most games now need it to stay alive after release.",
+          "example": "Team size, schedule, budget: three numbers a publisher will test your honesty on.",
+          "f2p": "Add dates for prototype, soft launch and global launch, and tie the budget to your UA plan and kill gates.",
+          "memory": "Who, how long, how much.",
+          "tag": "list"
+        }
+      ]
+    }
+  ],
+  "truths": [
+    "Demo > GDD > pitch presentation > pitch outline: playable beats written beats slides beats talk.",
+    "Tailor your pitch to the right audience.",
+    "Be ready for any technical problem during a pitch.",
+    "Know your game completely so you can answer any question the audience asks.",
+    "Rehearse your pitch on a live audience before the real thing.",
+    "Games are built by humans, so budget schedule time for life events, good and bad.",
+    "Shed your designer blinders: step back to see the whole game, and run focus tests.",
+    "Choose one production approach, horizontal layer or vertical slice, and commit to it.",
+    "Cut what isn't working, but plan well enough that you seldom have to.",
+    "Keep crunch away through realistic design goals and thorough production planning.",
+    "Emergent gameplay is not a plan for fun; good design is worked out ahead of time.",
+    "Sequels follow 30/70: reuse what was great in the original, drop what failed.",
+    "Don't let the original's baggage drag the sequel down; audit honestly what could be better.",
+    "Don't let the player down."
+  ],
+  "mnemonics": [
+    {
+      "name": "The 6 Rs of pitching",
+      "device": "Right people · Right room · Rehearse · Rock-solid answers · Restrict to one idea · Represent",
+      "unpacks": "Pitch to the right people; pitch in a controlled environment; be prepared; know your project inside and out; keep the focus; pitch to represent (even with just tech or a prototype mechanic)."
+    },
+    {
+      "name": "Pitch equation",
+      "device": "Demos Get Publishers Paying",
+      "unpacks": "Game Demo > Game design document > Presentation > Pitch."
+    },
+    {
+      "name": "Production troubleshooting",
+      "device": "Be a PLANNER",
+      "unpacks": "Plan for people & hardware; Lock design early; Avoid overpromising; Nuke-test like a player; Nations differ (culture); Eyes from outside (remove blinders); Remove what doesn't work (S.I.F.S.)."
+    },
+    {
+      "name": "Sequel rulebook",
+      "device": "Every sequel needs a SPINE",
+      "unpacks": "Spine kept (30/70: good stays, bad goes); Player expectations honored; Identity in the name (not GameName 2); New stuff (5 back-of-box features + new hero & villain); Easy on novelty (Army of Zin clockwork lesson). Late franchise: dare to go wildly different."
+    },
+    {
+      "name": "Slice vs. layer",
+      "device": "Vertical = one finished slice of pie; Horizontal = the whole pie tin in plain dough",
+      "unpacks": "Vertical slice: one level at ~80% final quality as demo + template. Horizontal layer: the whole game in gray box, then polished."
+    },
+    {
+      "name": "The 4 Rs of a long career",
+      "device": "Rest · Respect · Research · Rejoice",
+      "unpacks": "Take breaks; be fair and generous; keep playing games, even bad ones; enjoy it (you could be flipping burgers)."
+    }
+  ],
+  "flashcards": [
+    {
+      "id": "L17-f01",
+      "q": "What is a pitch, according to Level 17?",
+      "a": "A streamlined, easily digestible version of your GDD containing everything great and original about the game.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f02",
+      "q": "What are \"twiddley bits\"?",
+      "a": "Industry slang for hard-won details that matter for making the game but not for selling it; leave them out of the pitch.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f03",
+      "q": "What must you find before you can make the game, and what do you need to find it?",
+      "a": "A publisher, and to find one you need a pitch.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f04",
+      "q": "What software does Rogers recommend for pitches, and why?",
+      "a": "Presentation software like PowerPoint, because most pitches are presented to groups in boardrooms.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f05",
+      "q": "List the five basics of a pitch presentation.",
+      "a": "Opening slide with logo; company profile; high concept; a handful of detail pages; proof it will be awesome and profitable.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f06",
+      "q": "Which Bonus Level holds the full pitch presentation outline?",
+      "a": "Bonus Level 9.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f07",
+      "q": "Name the three slide-design basics Rogers reminds you of.",
+      "a": "Readable font; don't put too much info on one slide; everyone loves pictures.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f08",
+      "q": "Pitching is like putting together an artist's ____.",
+      "a": "portfolio (best work only, not so many pieces that you overwhelm)",
+      "type": "cloze"
+    },
+    {
+      "id": "L17-f09",
+      "q": "Why did Rogers tune out the Nebulon/Galactic Imperium story pitch?",
+      "a": "Too much lore to process at once; he only wanted to know how the game played.",
+      "type": "why"
+    },
+    {
+      "id": "L17-f10",
+      "q": "What should you do with your world's story details at pitch stage?",
+      "a": "Keep it simple and keep them to yourself for now.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f11",
+      "q": "Name the six rules of thumb for pitching.",
+      "a": "Pitch to the right people; controlled environment; be prepared; know your project inside and out; keep the focus; pitch to represent.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f12",
+      "q": "Why research a publisher before pitching?",
+      "a": "Some publishers only publish certain genres; otherwise you hear \"great pitch, but we'd never publish that\" and waste everyone's time.",
+      "type": "why"
+    },
+    {
+      "id": "L17-f13",
+      "q": "Controlled environment: pitching on the E3 show floor = bad; pitching in a private ____ at E3 = much better.",
+      "a": "meeting room",
+      "type": "cloze"
+    },
+    {
+      "id": "L17-f14",
+      "q": "If a teammate is a better speaker, what does Rogers advise?",
+      "a": "Let them present under your supervision, and still attend to answer questions and fill in details.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f15",
+      "q": "What is Rogers' ultimate preparedness test for a pitch?",
+      "a": "Could you still make your pitch if the power went out?",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f16",
+      "q": "Name four items from the book's pitch-kit illustration.",
+      "a": "Any four: eye contact, enthusiasm/smile, dress accordingly, business cards, take-away documentation, playable demo, laptop, flash/backup drive, projectable PowerPoint or video.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f17",
+      "q": "Why do publishers ask hole-poking questions in pitches?",
+      "a": "Not malice: they're looking for issues that could cause trouble once production starts.",
+      "type": "why"
+    },
+    {
+      "id": "L17-f18",
+      "q": "What can you say when you don't know the answer to a publisher's question?",
+      "a": "Invite their thoughts on it (turn it into a conversation).",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f19",
+      "q": "Name the three problems with bringing several pitches to one meeting.",
+      "a": "Longer meeting; less time per game; possibly no consensus on the best idea.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f20",
+      "q": "If you present several ideas anyway, what's the rule?",
+      "a": "All presentations must be at the same level of quality.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f21",
+      "q": "Why might you pitch with only great tech or a prototype mechanic?",
+      "a": "A publisher may hold a license with no studio chosen; timing and luck matter as much as the idea.",
+      "type": "why"
+    },
+    {
+      "id": "L17-f22",
+      "q": "Write Rogers' pitch equation.",
+      "a": "Game demo > game design document > presentation > pitch.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f23",
+      "q": "GAME DEMO > ____ > PRESENTATION > PITCH",
+      "a": "GAME DESIGN DOCUMENT",
+      "type": "cloze"
+    },
+    {
+      "id": "L17-f24",
+      "q": "Why are demos risky for production?",
+      "a": "They're a lot of work, take time from the main game, disrupt flow and can cause crunch.",
+      "type": "why"
+    },
+    {
+      "id": "L17-f25",
+      "q": "Why are demos still worth it?",
+      "a": "They show you're serious and let publishers get hands on code, sometimes the best way to sell a game.",
+      "type": "why"
+    },
+    {
+      "id": "L17-f26",
+      "q": "Rogers' bolded very important thing: video games are made by ____.",
+      "a": "people",
+      "type": "cloze"
+    },
+    {
+      "id": "L17-f27",
+      "q": "According to Rogers, what causes most games that go badly?",
+      "a": "Bad planning.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f28",
+      "q": "Name two publisher-side reasons a good game can sell poorly.",
+      "a": "Publisher can't fund enough promotion; sales projections set at unreachable levels.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f29",
+      "q": "What should \"plan ahead\" cover, per the troubleshooting list?",
+      "a": "Team illnesses and vacations; hardware failure, brown-outs and other technical issues.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f30",
+      "q": "Why lock down design and content as early as possible?",
+      "a": "Constant changes chasing perfection wear the team down and can kill the game.",
+      "type": "why"
+    },
+    {
+      "id": "L17-f31",
+      "q": "How should you playtest to find breakage?",
+      "a": "Play like players: do unusual things, bang on it until it breaks, then fix it.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f32",
+      "q": "What did Fat Princess change for its Japanese release?",
+      "a": "Its four-fingered characters were redesigned with five fingers.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f33",
+      "q": "Give the three explanations for the four-finger taboo in Japan.",
+      "a": "Yubitsume (Yakuza finger-cutting); four (shi) also means death; a four-finger sign was a slur against the Burakumin.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f34",
+      "q": "What are design blinders?",
+      "a": "Being too close to your game, so you think it's too easy or half-baked elements are \"good enough.\"",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f35",
+      "q": "What is the \"10,000 foot view\"?",
+      "a": "An objective outside look at your game (publishers excel at it) that spots weak spots and strengthens good parts.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f36",
+      "q": "S.I.F.S. stands for: save it for the ____.",
+      "a": "sequel",
+      "type": "cloze"
+    },
+    {
+      "id": "L17-f37",
+      "q": "Why shouldn't throwing out work become a habit?",
+      "a": "Planning ahead to anticipate problems is better than wasting work.",
+      "type": "why"
+    },
+    {
+      "id": "L17-f38",
+      "q": "The more you cut in ____, the less you'll cut in production.",
+      "a": "preproduction",
+      "type": "cloze"
+    },
+    {
+      "id": "L17-f39",
+      "q": "What kind of content should you NOT cut or change?",
+      "a": "Content connected to and affecting multiple game systems.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f40",
+      "q": "Define a vertical slice.",
+      "a": "A level or sequence designed, built and polished to the highest playability and quality of every discipline; a publisher demo and template for the game.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f41",
+      "q": "A vertical slice usually targets about ____% of final game quality.",
+      "a": "80",
+      "type": "cloze"
+    },
+    {
+      "id": "L17-f42",
+      "q": "Define a horizontal layer.",
+      "a": "Bringing all elements of the game, beginning to end, up at once in gray box, then polishing after playtesting and approval.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f43",
+      "q": "What's usually missing in a gray box level?",
+      "a": "Texturing, effects and sound; geometry is rough and animation mostly placeholder.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f44",
+      "q": "Why keep concept art on hand when showing gray box?",
+      "a": "Viewers must use their imagination, which is rare, so concept art stops them getting the wrong idea.",
+      "type": "why"
+    },
+    {
+      "id": "L17-f45",
+      "q": "What's the book's example of a gray-box discovery?",
+      "a": "Bouncing off enemies' heads turns out more fun than fighting them, so the design adjusts.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f46",
+      "q": "Rogers' complaint: designers use emergent gameplay as an excuse to underdesign, hoping the player will \"____.\"",
+      "a": "find the fun",
+      "type": "cloze"
+    },
+    {
+      "id": "L17-f47",
+      "q": "Define emergent gameplay.",
+      "a": "Gameplay that \"just happens\" when players get a set of tools and a chance to play with them.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f48",
+      "q": "What's Rogers' problem with emergent gameplay?",
+      "a": "Designers use it as an excuse to underdesign, hoping players will \"find the fun.\"",
+      "type": "why"
+    },
+    {
+      "id": "L17-f49",
+      "q": "What does Rogers call the secret to successful game production?",
+      "a": "Planning ahead.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f50",
+      "q": "Why do publishers like sequels?",
+      "a": "They're safe(r) bets: proven IP that doesn't need explaining, like Hollywood sequels.",
+      "type": "why"
+    },
+    {
+      "id": "L17-f51",
+      "q": "What limits does a team face on a first game that a sequel removes?",
+      "a": "Building a team and engine, figuring out the character and gameplay, making it work and be fun, hoping people buy it.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f52",
+      "q": "What happened with Rogers' Maximo sequel fix list?",
+      "a": "He listed 40 broken things and got 39 fixed; the first sold better, but the sequel was the better game.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f53",
+      "q": "What is George Collins' 30/70 rule?",
+      "a": "A sequel should be 30% new material and ideas, 70% based on the original game.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f54",
+      "q": "What sequel naming does Rogers recommend?",
+      "a": "Not \"GameName 2\": titles like Batman Returns or \"Indiana Jones and the...\" that are mysterious and extend the fiction.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f55",
+      "q": "What new content should every sequel have?",
+      "a": "Five new back-of-box features (preferably gameplay) and at least one new hero and villain.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f56",
+      "q": "What went wrong in Maximo vs. Army of Zin?",
+      "a": "Players wanted supernatural enemies but got clockwork creatures; fans were unhappy.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f57",
+      "q": "Which franchises does Rogers cite as successful late reinventions?",
+      "a": "Grand Theft Auto and Wolfenstein.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f58",
+      "q": "What are the four closing rules of the book?",
+      "a": "Take breaks; be fair and generous; keep playing games, even bad ones; enjoy it (you could be flipping burgers).",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f59",
+      "q": "Why be fair and generous in games, per Rogers?",
+      "a": "It's a very small industry and word gets around fast.",
+      "type": "why"
+    },
+    {
+      "id": "L17-f60",
+      "q": "In the chili analogy, what does the boil represent, and its danger?",
+      "a": "Crunch time; boil too long and you burn the pot, i.e., too much crunch can destroy games and studios.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f61",
+      "q": "In the chili analogy, what is the recipe and what is the simmer?",
+      "a": "Recipe = documentation; simmer = polish, iteration and bug fixing.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f62",
+      "q": "Why should a sequel be a better game than the original?",
+      "a": "The hard part is done: team, engine, character and gameplay are figured out, so you can focus on fixing and perfecting.",
+      "type": "why"
+    },
+    {
+      "id": "L17-f63",
+      "q": "Why is a vertical slice also called a template?",
+      "a": "It sets the quality bar and approach the rest of the game should match.",
+      "type": "why"
+    },
+    {
+      "id": "L17-f64",
+      "q": "Your lead designer mumbles in meetings; your producer is a natural showman. Who should give the pitch?",
+      "a": "The producer, under the designer's supervision, with the designer present to answer questions (be prepared).",
+      "type": "apply"
+    },
+    {
+      "id": "L17-f65",
+      "q": "Your studio has no original concept but has built impressive mobile physics tech. Should you pitch?",
+      "a": "Yes: pitch to represent; a publisher may have a license and need a studio with your tech.",
+      "type": "apply"
+    },
+    {
+      "id": "L17-f66",
+      "q": "Your F2P pitch deck spends six slides on your world's history before showing gameplay. Which section title warns you?",
+      "a": "No One Cares About Your Stupid Little World: keep lore to yourself and show how it plays.",
+      "type": "apply"
+    },
+    {
+      "id": "L17-f67",
+      "q": "After launch, players skip timers by changing their device clock. Which troubleshooting item should have caught it?",
+      "a": "Play the game like players and bang on it until it breaks (in F2P: QA the economy).",
+      "type": "apply"
+    },
+    {
+      "id": "L17-f68",
+      "q": "Six months before soft launch, your team is still reworking level 1 every week chasing perfection. Which rule applies?",
+      "a": "Lock down design and content as early as possible; constant changes wear the team down and can kill the game.",
+      "type": "apply"
+    },
+    {
+      "id": "L17-f69",
+      "q": "A season update removes the mode your most loyal players love. Which sequel rule is broken?",
+      "a": "Don't let the player down: keep what fans loved (the wall-running rule).",
+      "type": "apply"
+    },
+    {
+      "id": "L17-f70",
+      "q": "Your F2P team wants to bring three concepts to one publisher meeting \"to see what sticks.\" Which Rogers rule applies?",
+      "a": "Keep the focus: one standout idea; extra pitches lengthen the meeting, dilute attention and block consensus.",
+      "type": "apply"
+    },
+    {
+      "id": "L17-f71",
+      "q": "A designer insists on keeping a clunky camera in the sequel \"because it was in the first game.\" Which principle?",
+      "a": "Use the spine of the original: keep the good, cut the bad; legacy isn't a justification.",
+      "type": "apply"
+    },
+    {
+      "id": "L17-f72",
+      "q": "Playtesters say your FTUE is confusing, but your team thinks it's obvious. Which concept explains the gap?",
+      "a": "Design blinders; fix with outside playtests and the \"10,000 foot view\" (in F2P, funnels and A/B tests).",
+      "type": "apply"
+    },
+    {
+      "id": "L17-f73",
+      "q": "Your economy designer says \"players will find the fun in how the currencies interact.\" Which Rogers warning?",
+      "a": "Emergent, eschmergent: don't rely on emergence; plan and model the interactions (sources and sinks).",
+      "type": "apply"
+    },
+    {
+      "id": "L17-f74",
+      "q": "You're launching a gacha game in Japan, China and Belgium. Which troubleshooting item applies?",
+      "a": "Account for cultural (and regulatory) differences in international versions, like Fat Princess's five fingers.",
+      "type": "apply"
+    },
+    {
+      "id": "L17-f75",
+      "q": "Late in production you want to cut a currency sink that feeds three systems. What does Rogers warn?",
+      "a": "Don't cut content connected to multiple systems; cut early, in preproduction, for the right reasons.",
+      "type": "apply"
+    },
+    {
+      "id": "L17-f76",
+      "q": "Your LiveOps plan needs a new event every week from a 3-person team with no buffer. Which truth is being violated?",
+      "a": "Video games are made by people: schedule for people issues and avoid crunch with responsible goals and planning.",
+      "type": "apply"
+    },
+    {
+      "id": "L17-f77",
+      "q": "Your F2P successor game changes the art style, genre and characters all at once. Which sequel rule warns you?",
+      "a": "Don't make it too new (Army of Zin); follow 30/70 and keep what fans loved.",
+      "type": "apply"
+    },
+    {
+      "id": "L17-f78",
+      "q": "A publisher asks for proof your F2P concept will retain players. Per the pitch equation, what's strongest to bring?",
+      "a": "A playable build with real test metrics (demo beats doc beats slides beats talk).",
+      "type": "apply"
+    },
+    {
+      "id": "L17-f79",
+      "q": "How many people does the book's chili recipe feed, and what are its two timings?",
+      "a": "Feeds 6 to 8; brown the brisket about 7–10 minutes, then simmer covered about 2–2½ hours.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f80",
+      "q": "Give the nine steps of the chili method in short form.",
+      "a": "1 Brown garlic, then brisket. 2 Purée anchos with broth. 3 Meat to a plate, pour off oil, add purée and tomatoes. 4 Stir in dry spices. 5 Boil, then simmer covered. 6 Chunk peppers and onion. 7 Shred meat with forks, return with veg, adjust seasoning. 8 Boil off most of the liquid. 9 Serve topped with cheese, sour cream, scallions.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f81",
+      "q": "Which chili spices get a full tablespoon, and what are the topping amounts?",
+      "a": "Cayenne and garlic salt (Lowry's) get 1 tbsp each; chili powder and crushed red chili get ½ tbsp. Toppings: ¼ cup scallions, ½ cup sour cream, ½ cup shredded Monterey Jack. The oil is ¼ cup.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f82",
+      "q": "What three questions does the book's Slide 9 (Production Specs) in the pitch outline answer?",
+      "a": "How big the dedicated team is, how long the game will take to make, and how much it will cost.",
+      "type": "basic"
+    },
+    {
+      "id": "L17-f83",
+      "q": "An investor asks \"how many people, how long, how much?\" Which pitch slide answers that, and what do you add for F2P?",
+      "a": "Production Specs (Bonus Level 9, Slide 9); in F2P add milestone dates for prototype, soft launch and global launch.",
+      "type": "apply"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "L17-q01",
+      "q": "According to Rogers, what is a pitch?",
+      "options": [
+        "A streamlined, digestible version of the GDD with the twiddley bits removed",
+        "A trailer video of the finished game",
+        "A legal contract with a publisher",
+        "A full copy of the GDD for the publisher"
+      ],
+      "answer": 0,
+      "why": "A pitch keeps everything great and original and drops details that matter for making, not selling. It is not the whole GDD."
+    },
+    {
+      "id": "L17-q02",
+      "q": "Which is NOT one of Rogers' five pitch basics?",
+      "options": [
+        "High concept",
+        "A complete lore bible",
+        "Proof why the game will be awesome or make money",
+        "Company profile"
+      ],
+      "answer": 1,
+      "why": "The basics are title/logo, company profile, high concept, a few pages of details, and proof. Lore bibles are exactly what Rogers says to keep to yourself."
+    },
+    {
+      "id": "L17-q03",
+      "q": "What is Rogers' pitch equation?",
+      "options": [
+        "Pitch > Presentation > GDD > Demo",
+        "GDD > Demo > Pitch > Presentation",
+        "Game demo > GDD > Presentation > Pitch",
+        "Presentation > Demo > GDD > Pitch"
+      ],
+      "answer": 2,
+      "why": "Something playable beats a document, which beats slides, which beats talk."
+    },
+    {
+      "id": "L17-q04",
+      "q": "Why did Rogers lose interest in the fantasy-world story pitch?",
+      "options": [
+        "The pitch was too short",
+        "The game was in the wrong genre",
+        "The art was low quality",
+        "The writer drowned him in lore when he wanted to know how the game played"
+      ],
+      "answer": 3,
+      "why": "Nobody cares about your world's details at pitch stage; show how the game plays."
+    },
+    {
+      "id": "L17-q05",
+      "q": "Your team plans to pitch at a crowded convention booth. Which rule does this break?",
+      "options": [
+        "Pitch in a controlled environment",
+        "Pitch to represent",
+        "Know your project inside and out",
+        "Keep the focus"
+      ],
+      "answer": 0,
+      "why": "The E3 show floor is bad; a private meeting room is better. Attention must be on you."
+    },
+    {
+      "id": "L17-q06",
+      "q": "A publisher asks a question you can't answer. What does Rogers suggest?",
+      "options": [
+        "Promise to email the answer and move on",
+        "Invite them to share their thoughts on it",
+        "Change the subject to your strongest feature",
+        "Bluff confidently"
+      ],
+      "answer": 1,
+      "why": "Turning it into a conversation is honest and collaborative. Bluffing is how hole-poking questions sink a pitch."
+    },
+    {
+      "id": "L17-q07",
+      "q": "Which is one of the three problems Rogers lists with bringing several pitches to one meeting?",
+      "options": [
+        "It forces you to show demos for all",
+        "Publishers legally can't evaluate more than one",
+        "You may not get consensus on which idea is best",
+        "It makes your studio look too big"
+      ],
+      "answer": 2,
+      "why": "The three problems: longer meeting, less time per game, and no consensus."
+    },
+    {
+      "id": "L17-q08",
+      "q": "Why might Rogers recommend pitching great tech even without a strong game idea?",
+      "options": [
+        "Tech pitches never need a demo",
+        "It avoids competition from other studios",
+        "Publishers only buy technology",
+        "A publisher may own a license but have no studio to develop it"
+      ],
+      "answer": 3,
+      "why": "Pitch to represent: a license holder might pick you because of your tech. Timing and luck matter."
+    },
+    {
+      "id": "L17-q09",
+      "q": "What's the main downside of making a game demo for a publisher?",
+      "options": [
+        "It can steal time from production, disrupt flow and cause crunch",
+        "Demos reveal too many secrets",
+        "It replaces the need for a GDD",
+        "Publishers dislike playing builds"
+      ],
+      "answer": 0,
+      "why": "Demos are powerful sellers but costly if not planned into the schedule."
+    },
+    {
+      "id": "L17-q10",
+      "q": "What does \"video games are made by people\" imply for planning?",
+      "options": [
+        "Hire only senior developers",
+        "Schedule for people issues like illness, vacations and life events",
+        "Avoid outsourcing",
+        "Use more automation"
+      ],
+      "answer": 1,
+      "why": "People get sick, take vacations and face life events; most failed games were badly planned."
+    },
+    {
+      "id": "L17-q11",
+      "q": "Fat Princess redesigned its characters for Japan because...",
+      "options": [
+        "The characters resembled a famous mascot",
+        "Japanese players preferred realistic art",
+        "Four-fingered hands carry taboo meanings in Japan",
+        "Console hardware limits required simpler models"
+      ],
+      "answer": 2,
+      "why": "Reasons include yubitsume, four sounding like death, and a slur against the Burakumin."
+    },
+    {
+      "id": "L17-q12",
+      "q": "What are design blinders?",
+      "options": [
+        "A publisher's refusal to fund marketing",
+        "Locking the design too early",
+        "Cutting features too early",
+        "Being too close to your game to see it's too easy or half-baked"
+      ],
+      "answer": 3,
+      "why": "Remove them with outside players, focus tests, iteration and the publisher's 10,000 foot view."
+    },
+    {
+      "id": "L17-q13",
+      "q": "Late in production, you want to cut a feature that feeds the economy, progression and social systems. What does Rogers advise?",
+      "options": [
+        "Avoid cutting or changing content connected to multiple systems",
+        "Replace it with emergent gameplay",
+        "Save it for a demo",
+        "Cut it immediately to save time"
+      ],
+      "answer": 0,
+      "why": "Cutting interconnected content invites trouble. Cut early, in preproduction, for the right reasons."
+    },
+    {
+      "id": "L17-q14",
+      "q": "A vertical slice is best described as...",
+      "options": [
+        "The whole game in gray box",
+        "One level or sequence polished to around 80% of final quality",
+        "A marketing trailer",
+        "A design document chapter"
+      ],
+      "answer": 1,
+      "why": "It shows the highest quality across controls, camera, visuals, gameplay, code, effects and audio, as demo and template."
+    },
+    {
+      "id": "L17-q15",
+      "q": "What's the biggest challenge when showing gray-box (horizontal layer) builds?",
+      "options": [
+        "They require final audio",
+        "They run too slowly",
+        "Viewers must use imagination, which is rarer than you'd think",
+        "They can't be playtested"
+      ],
+      "answer": 2,
+      "why": "Keep concept art on hand so people don't get the wrong idea."
+    },
+    {
+      "id": "L17-q16",
+      "q": "Rogers' view on emergent gameplay is that...",
+      "options": [
+        "It only works in multiplayer games",
+        "It's the best way to find the fun",
+        "It should never happen",
+        "It shouldn't excuse underdesign; good design is preplanned"
+      ],
+      "answer": 3,
+      "why": "Plan how elements interact so outcomes are predictable; don't design around bugs."
+    },
+    {
+      "id": "L17-q17",
+      "q": "George Collins' 30/70 sequel rule means...",
+      "options": [
+        "30% new material, 70% based on the original",
+        "30% new levels, 70% remastered levels",
+        "Release within 30 months with 70% of the team",
+        "30% of budget on marketing, 70% on development"
+      ],
+      "answer": 0,
+      "why": "Keep the proven core and add a meaningful fresh layer."
+    },
+    {
+      "id": "L17-q18",
+      "q": "What lesson does Maximo vs. Army of Zin teach?",
+      "options": [
+        "Always use numbered titles",
+        "Don't make the sequel too new: fans wanted supernatural foes, not clockwork ones",
+        "Sequels should copy the original exactly",
+        "Sequels need bigger budgets"
+      ],
+      "answer": 1,
+      "why": "Novelty in the wrong place betrays what fans loved."
+    },
+    {
+      "id": "L17-q19",
+      "q": "Which sequel naming approach does Rogers prefer?",
+      "options": [
+        "GameName 2",
+        "GameName: Remastered",
+        "Mysterious subtitles that extend the fiction, like Indiana Jones and the...",
+        "The year of release"
+      ],
+      "answer": 2,
+      "why": "He praises Batman and Indiana Jones film titles over numbered outings."
+    },
+    {
+      "id": "L17-q20",
+      "q": "Your F2P hit is 5 years old. Leadership asks: sequel app or keep updating? What's the strongest F2P argument for LiveOps?",
+      "options": [
+        "LiveOps never requires new content",
+        "Sequels can't use the same IP",
+        "Sequels are illegal on app stores",
+        "A new app must rebuild its install base, may cannibalize players, and asks fans to abandon progress and purchases"
+      ],
+      "answer": 3,
+      "why": "F2P games are services: updating the same app keeps progress, spenders and installs."
+    },
+    {
+      "id": "L17-q21",
+      "q": "Your F2P prototype's retention looks weak in soft launch and the team wants to \"add more modes until it works.\" Which Rogers idea, translated to F2P, fits best?",
+      "options": [
+        "If something doesn't work, throw it out, with kill criteria planned in advance",
+        "Name it something other than Game 2",
+        "Keep wall-running",
+        "Pitch to represent"
+      ],
+      "answer": 0,
+      "why": "Planned kill gates beat endless scope creep; design blinders make teams cling to failing projects."
+    },
+    {
+      "id": "L17-q22",
+      "q": "Which is NOT one of the book's closing \"three\" (four) rules?",
+      "options": [
+        "Always be fair and generous",
+        "Always crunch before launch",
+        "Keep playing games, even the bad ones",
+        "Take a break once in a while"
+      ],
+      "answer": 1,
+      "why": "The four: take breaks, be fair and generous, keep playing games, enjoy it. Crunch is what Rogers warns against."
+    },
+    {
+      "id": "L17-q23",
+      "q": "In Rogers' chili analogy, crunch time is like...",
+      "options": [
+        "Shopping for ingredients",
+        "Choosing the recipe",
+        "Bringing the chili to a boil: necessary briefly, ruinous if too long",
+        "Adding toppings"
+      ],
+      "answer": 2,
+      "why": "Boil = frantic burst; too long burns the pot. Simmer = polish and bug fixing."
+    }
+  ],
+  "sideQuests": [
+    {
+      "id": "L17-s01",
+      "title": "Twiddley-bit liposuction",
+      "task": "Write everything about a game idea for 3 minutes, then cross out every twiddley bit until only 5 bullets remain, one per pitch basic (title, company, high concept, details, proof).",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L17-s02",
+      "title": "Lore detox",
+      "task": "Describe your favorite F2P game's pitch in two sentences without a single proper noun.",
+      "minutes": 5,
+      "xp": 20
+    },
+    {
+      "id": "L17-s03",
+      "title": "Right-people research",
+      "task": "Pick one mobile publisher or studio, list its last 5 games and genres, and finish: \"They'd say yes to ____ and never to ____.\"",
+      "minutes": 15,
+      "xp": 40
+    },
+    {
+      "id": "L17-s04",
+      "title": "Pitch disaster drill",
+      "task": "List 6 things that could go wrong in a video-call pitch and a backup for each. Then answer: could you pitch if the power went out?",
+      "minutes": 10,
+      "xp": 30
+    },
+    {
+      "id": "L17-s05",
+      "title": "Jenga audit",
+      "task": "Pick one F2P feature (e.g., daily login rewards), draw every system it touches, and decide whether cutting it is safe or dangerous.",
+      "minutes": 10,
+      "xp": 35
+    },
+    {
+      "id": "L17-s06",
+      "title": "30/70 sorter",
+      "task": "Compare a successor pair (Gardenscapes → Homescapes or Royal Match → Royal Kingdom) via store pages and videos. List what carried over (the 70) and what's new (the 30).",
+      "minutes": 10,
+      "xp": 35
+    },
+    {
+      "id": "L17-s07",
+      "title": "Chili recall",
+      "task": "Closed-book: write the 7 chili ↔ game-dev mappings (recipe, ingredients, brown first, boil, simmer, next-day taste, ugly-but-tasty).",
+      "minutes": 5,
+      "xp": 20
+    }
+  ],
+  "mainQuests": [
+    {
+      "id": "L17-m01",
+      "title": "The 10-slide F2P pitch",
+      "task": "Build a 10–13 slide pitch deck for an original F2P concept: hook, audience, market fit with 3 comparables, core loop diagram, monetization and retention hypotheses, LiveOps plan, KPI targets with kill criteria, production specs. Rehearse it aloud twice, once on camera or to a friend.",
+      "deliverable": "A pitch deck plus a 1-line answer to the 3 hardest questions you expect.",
+      "doneWhen": "Fits in 10 spoken minutes; no lore paragraphs; every slide has a visual; you can state your D7 target and what happens if you miss it without hesitating. Bonus: post one slide publicly for feedback.",
+      "minutes": 90,
+      "xp": 250
+    },
+    {
+      "id": "L17-m02",
+      "title": "Teardown + sequel-or-LiveOps memo",
+      "task": "Write a 2-page teardown of a live F2P game (core loop, meta, FTUE, economy, monetization, LiveOps) ending with a memo: successor app or big LiveOps overhaul? Apply SPINE: the spine, the 30% you'd change, what must never be taken away, the name, the 5 new things.",
+      "deliverable": "A portfolio-ready 2-page teardown + memo with one diagram.",
+      "doneWhen": "Each section has at least one concrete observation; the memo makes a clear call with 3 reasons and names the \"too new\" risk.",
+      "minutes": 90,
+      "xp": 220
+    }
+  ],
+  "playLabs": [
+    {
+      "id": "L17-p01",
+      "game": "Clash Royale or Brawl Stars",
+      "minutes": 10,
+      "lookFor": "What's new this season or event vs. what's unchanged.",
+      "question": "Roughly what new-to-old ratio do you see, does it match 30/70, and what's the season's \"back of the box\" list?"
+    },
+    {
+      "id": "L17-p02",
+      "game": "Royal Match (then Royal Kingdom if available)",
+      "minutes": 10,
+      "lookFor": "What the successor keeps (spine) and what it adds (characters, meta, hooks).",
+      "question": "Which 3 things carried over unchanged, and what's the single biggest new hook?"
+    },
+    {
+      "id": "L17-p03",
+      "game": "Any top-10 grossing F2P game",
+      "minutes": 10,
+      "lookFor": "The game's pitch hidden in its FTUE: the hook it shows first.",
+      "question": "Write its one-line high concept. Did it lead with gameplay or lore?"
+    },
+    {
+      "id": "L17-p04",
+      "game": "A new or low-ranked F2P game",
+      "minutes": 10,
+      "lookFor": "Signs of design blinders: elements the devs probably thought were \"good enough.\"",
+      "question": "Name 2 half-baked elements and the playtest you'd run to prove it."
+    }
+  ],
+  "retrieval": [
+    {
+      "q": "What is a pitch, and what are twiddley bits?",
+      "a": "A streamlined, digestible version of the GDD keeping everything great and original. Twiddley bits are details that matter for making the game but not for selling it."
+    },
+    {
+      "q": "List the five basic parts of a pitch presentation.",
+      "a": "Opening slide with logo; company profile; high concept; a handful of detail pages; evidence it will be awesome and profitable."
+    },
+    {
+      "q": "What three slide-design basics does Rogers mention?",
+      "a": "Readable font; don't overload a slide; use pictures."
+    },
+    {
+      "q": "Why did Rogers tune out the fantasy-world pitch, and what's the lesson?",
+      "a": "Too much lore at once; he wanted to know how the game played. Keep world details to yourself at pitch stage."
+    },
+    {
+      "q": "Name the six rules of thumb for pitching.",
+      "a": "Pitch to the right people; controlled environment; be prepared; know your project inside and out; keep the focus; pitch to represent."
+    },
+    {
+      "q": "What problems come from bringing several pitches to one meeting?",
+      "a": "Longer meeting, less time per game, possibly no consensus. If you must, keep all at equal quality."
+    },
+    {
+      "q": "State the pitch equation and the pros and cons of demos.",
+      "a": "Demo > GDD > presentation > pitch. Demos take time, disrupt production and can cause crunch, but prove seriousness and let publishers play code."
+    },
+    {
+      "q": "What's the very important thing, and what does it mean for scheduling?",
+      "a": "Video games are made by people: plan for illness, vacations, life events and other people issues."
+    },
+    {
+      "q": "List the production troubleshooting items.",
+      "a": "Plan ahead (people, hardware, brown-outs); don't overpromise; lock design early; play like players and break it; account for cultural differences; remove design blinders; throw out what doesn't work (with backup plan, not as a habit; S.I.F.S.)."
+    },
+    {
+      "q": "Why did Fat Princess change for Japan, and what are the footnote's three explanations?",
+      "a": "Four-fingered hands are taboo: yubitsume (Yakuza finger cutting), four (shi) also means death, and a four-finger sign as a slur against the Burakumin."
+    },
+    {
+      "q": "What are design blinders and the 10,000 foot view?",
+      "a": "Blinders: being too close to see the game is too easy or half-baked. 10,000 foot view: an objective outside look that finds weak spots and strengthens strengths."
+    },
+    {
+      "q": "What are the rules for cutting content?",
+      "a": "Every game cuts; cut more in preproduction; cut for the right reasons; don't cut content tied to multiple systems."
+    },
+    {
+      "q": "Compare vertical slice and horizontal layer.",
+      "a": "Vertical: one level at ~80% final quality, demo + template, risk of crunch. Horizontal: whole game in gray box first, then polish; viewers need imagination (bring concept art), but you can find the fun early. Pick one and go."
+    },
+    {
+      "q": "What's Rogers' stance on emergent gameplay?",
+      "a": "Don't use it as an excuse to underdesign. No accidental design: plan interactions so outcomes are predictable; never design around bugs."
+    },
+    {
+      "q": "Summarize the sequel rulebook and the book's closing rules.",
+      "a": "Keep the spine and cut the bad (30/70); don't let fans down; don't name it GameName 2; five new features plus new hero and villain; not too new (Army of Zin); late franchises can reinvent (GTA, Wolfenstein). Closing: take breaks, be fair and generous, keep playing games, enjoy it."
+    }
+  ],
+  "feynman": "Explain to a producer in 60 seconds why your team should write its kill criteria into the pitch before building the prototype, and how that's the same lesson as Rogers' \"pick one production style and go\" and \"don't rely on emergent fun.\"",
+  "links": [
+    "L00",
+    "L02",
+    "L04",
+    "L09",
+    "L12",
+    "L13",
+    "L16",
+    "F2P"
+  ]
+}
