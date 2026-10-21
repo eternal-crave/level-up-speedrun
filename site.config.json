@@ -1,0 +1,9 @@
+{
+  "firebase": {
+    "apiKey": "AIzaSyApH7Axiyu9rcAf7O1yJl06kWiEUsZ3KJk",
+    "authDomain": "level-up-speedrun.firebaseapp.com",
+    "projectId": "level-up-speedrun",
+    "messagingSenderId": "346099429156",
+    "appId": "1:346099429156:web:da5a890ef646020eeecdb1"
+  }
+}
