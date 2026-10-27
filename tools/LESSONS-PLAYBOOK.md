@@ -81,3 +81,5 @@ L00, L01, L02, L04, F2P1, L13, L12, L09, L08, L07, L05, L06, L10, L11, L14, F2P2
 - [x] L15 Music & sound · 12 lessons
 - [x] L17 Pitching, production & sequels · 10 lessons
 - [x] BX Designer toolkit · 10 lessons
+- [x] All 21 modules done · 307 lessons, 1402 cards, 143 glossary words
+- [x] Fix: lesson check options are shuffled per visit (every file stores the right answer at index 0, so unshuffled checks could be passed without reading)

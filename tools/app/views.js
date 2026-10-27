@@ -490,12 +490,12 @@ function fmtLesson(t) {
   const parts = String(t).split("\n- ");
   return `<p>${rich(parts[0])}</p>${parts.length > 1 ? `<ul>${parts.slice(1).map((x) => `<li>${rich(x)}</li>`).join("")}</ul>` : ""}`;
 }
-let lsn = null; // { mod, i, card, picked, done }
+let lsn = null; // { mod, i, card, picked, done, order }
 let deepTarget = null; // notes heading to open after the next render
 function viewLesson(mod, n) {
   const ls = lessonsOf(mod), i = n - 1, L = ls[i], m = BY[mod];
   if (!L) return `<section class="card"><p>That lesson doesn't exist.</p><a class="btn" href="#${mod}">Back to ${esc(m.label)}</a></section>`;
-  if (!lsn || lsn.mod !== mod || lsn.i !== i) lsn = { mod, i, card: 0, picked: null, done: false };
+  if (!lsn || lsn.mod !== mod || lsn.i !== i) lsn = { mod, i, card: 0, picked: null, done: false, order: shuffle(L.check.options.map((_, k) => k)) };
   if (!P.started[mod]) { P.started[mod] = 1; saveP(); }
   const total = L.cards.length + 1, at = lsn.done ? total : lsn.card;
   const dots = Array.from({ length: total }, (_, k) => `<i class="${k < at ? "on" : k === at ? "cur" : ""}"></i>`).join("");
@@ -513,7 +513,7 @@ function viewLesson(mod, n) {
   } else {
     const ck = L.check, picked = lsn.picked;
     body = `<div class="lcard lcheck"><div class="lcard-lab">🎯 Quick check</div><p class="lq">${rich(ck.q)}</p>
-      <div class="opts">${ck.options.map((o, k) => `<button class="opt ${picked == null ? "" : k === ck.answer ? "right" : k === picked ? "wrong" : ""}" data-act="lcheck" data-k="${k}" ${picked == null ? "" : "disabled"}>${rich(o)}</button>`).join("")}</div>
+      <div class="opts">${lsn.order.map((k) => [ck.options[k], k]).map(([o, k]) => `<button class="opt ${picked == null ? "" : k === ck.answer ? "right" : k === picked ? "wrong" : ""}" data-act="lcheck" data-k="${k}" ${picked == null ? "" : "disabled"}>${rich(o)}</button>`).join("")}</div>
       ${picked == null ? "" : `<p class="why ${picked === ck.answer ? "" : "bad"}">${picked === ck.answer ? "✅ " : "❌ "}${rich(ck.why)}</p>`}</div>
       <div class="lnav row"><button class="btn ghost" data-act="lback">←</button>${picked == null ? "" : `<button class="btn primary lgo" data-act="ldone">Finish lesson ✓</button>`}</div>`;
   }
