@@ -67,3 +67,4 @@ L00, L01, L02, L04, F2P1, L13, L12, L09, L08, L07, L05, L06, L10, L11, L14, F2P2
 - [x] F2P1 Core loops & economy · 24 lessons
 - [x] L13 Power-ups & rewards · 16 lessons
 - [x] L12 Mechanics & hazards · 12 lessons
+- [x] L09 Level design · 16 lessons

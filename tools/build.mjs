@@ -119,7 +119,7 @@ for (const m of modules) {
     for (const c of cards) {
       const n = wordsOf(c.text);
       if (n > 60) lessonWarn.push(`${where} [${c.t}]: ${n} words (max 60)`);
-      for (const sent of String(c.text).replace(/\*\*/g, "").replace(/\n- /g, ". ").split(/(?<=[.!?])\s+/)) { const k = wordsOf(sent); if (k > 25) lessonWarn.push(`${where} [${c.t}]: ${k}-word sentence: "${sent.slice(0, 60)}…"`); }
+      for (const sent of String(c.text).replace(/\*\*/g, "").replace(/\n- /g, ". ").replace(/\n/g, ". ").split(/(?<=[.!?:]["”']?)\s+/)) { const k = wordsOf(sent); if (k > 25) lessonWarn.push(`${where} [${c.t}]: ${k}-word sentence: "${sent.slice(0, 60)}…"`); }
       if (/\be\.g\.|\bi\.e\.|\band\/or\b/i.test(c.text)) lessonWarn.push(`${where} [${c.t}]: avoid e.g./i.e./and-or`);
     }
     m.lessons.push({ id: String(x.id), title: String(x.title || ""), min: +x.min || 3, deep: deepHeads, cards: cards.map((c) => ({ t: c.t, text: String(c.text) })), check: { q: String(ck.q || ""), options: (ck.options || []).map(String), answer: ck.answer | 0, why: String(ck.why || "") } });

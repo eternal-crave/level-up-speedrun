@@ -1,0 +1,228 @@
+{
+  "mod": "L09",
+  "words": [
+    { "w": "level", "d": "a word with four meanings: a place, a chunk of the game, a progress number and a power rank" },
+    { "w": "weenie", "d": "a big landmark that draws the player toward it, like a castle on the horizon" },
+    { "w": "alley / island", "d": "two level shapes: a guided path to a goal, or an open space to explore in any order" },
+    { "w": "graybox", "d": "a rough version of a level made of plain grey shapes, built to test play before any art" },
+    { "w": "critical path", "d": "the main route the player must take to finish the level" },
+    { "w": "saw-tooth difficulty", "d": "difficulty that rises, peaks at a hard level, then drops to an easy one before rising again" }
+  ],
+  "lessons": [
+    {
+      "id": "L09-l01",
+      "title": "One word, four meanings: \"level\"",
+      "min": 2,
+      "deep": "What even IS",
+      "cards": [
+        { "t": "idea", "text": "\"Level\" is one of the most overloaded words in games. **It can mean a place, a chunk of the game, a progress number or a power rank.** Always say which one you mean." },
+        { "t": "how", "text": "A Candy Crush player is \"on level 4,000\": that's a counter. Each of those levels is a hand-built board: that's a place. In a strategy game, \"level 10\" may mean your town hall. In a gacha game, it's a character's power." },
+        { "t": "f2p", "text": "Write a short glossary on day one of every project. Mixing up \"player level\", \"building level\" and \"board level\" in a design document causes real bugs." },
+        { "t": "hook", "text": "\"Level\" is a Swiss Army knife. Make sure everyone is holding the same blade." }
+      ],
+      "check": { "q": "Why write a glossary at the start of a project?", "options": ["Words like \"level\" mean different things to different people", "It's required by publishers", "To make the document longer"], "answer": 0, "why": "Shared words prevent confusion and bugs in specs." }
+    },
+    {
+      "id": "L09-l02",
+      "title": "Clichéd themes, and how to twist them",
+      "min": 3,
+      "deep": "Cliché",
+      "cards": [
+        { "t": "idea", "text": "Some level themes are used so often they're clichés: ice world, lava world, haunted house. **They became clichés for good reasons.** You can still use them if you add a twist." },
+        { "t": "how", "text": "Clichés work because they're readable: ice is slippery and blue, lava is deadly and orange. Hazards and colours come built in. The twist: **mash together two things that don't seem to belong together.** Rogers calls this the Mexican Pizza Technique." },
+        { "t": "see", "text": "Mobile hits pitched this way:\n- match-3 plus home makeover (Homescapes)\n- merge plus a mystery mansion (Merge Mansion)\n- Pokémon plus walking around your real city (Pokémon GO)" },
+        { "t": "f2p", "text": "LiveOps uses clichés all the time: winter snow, Halloween, summer beach. Seasonal reskins are fast, cheap and instantly readable on a small screen." }
+      ],
+      "check": { "q": "What's the Mexican Pizza Technique?", "options": ["Combine two things that don't seem to belong together", "Copy a theme exactly", "Avoid all clichés"], "answer": 0, "why": "Unexpected combinations turn a tired theme into something fresh." }
+    },
+    {
+      "id": "L09-l03",
+      "title": "Every level has two names",
+      "min": 2,
+      "deep": "Name Game",
+      "cards": [
+        { "t": "idea", "text": "Each level has **two names**: a short, precise **file name** for the team, and an exciting **player-facing name** that gives a first impression." },
+        { "t": "how", "text": "File names should be short and consistent, with no confusing abbreviations, like \"fac01s01\" for factory 1, section 1. Player names should match the level's feeling, like \"Death from Above\"." },
+        { "t": "f2p", "text": "In puzzle games, the plain number works as a name: \"Level 2,500\" becomes a bragging badge. Careful with puns: many F2P games launch in many languages, and a pun usually doesn't translate. Add versions to level IDs for A/B tests." },
+        { "t": "hook", "text": "Don't print the hospital barcode on the birthday cake." }
+      ],
+      "check": { "q": "Why avoid puns in important F2P names?", "options": ["They often don't translate into other languages", "Players hate jokes", "Stores don't allow them"], "answer": 0, "why": "Games launch in many languages at once, and puns rarely survive translation." }
+    },
+    {
+      "id": "L09-l04",
+      "title": "Design top-down, like Disneyland",
+      "min": 3,
+      "deep": "Disneyland",
+      "cards": [
+        { "t": "idea", "text": "Theme parks are masters at telling stories with space. **Design top-down: the world, then each land, then each ride, then each scene.** Start with a map of the whole world." },
+        { "t": "how", "text": "Disneyland is built around a railway, with themed \"lands\" inside it. Each land has rides, and each ride is a series of scenes. Working top-down shows you the world's edges and what lives inside it." },
+        { "t": "see", "text": "Your map can be a simple flowchart. It only needs to show where the player goes and what they find there. It helps the team see how levels connect, and helps players know where they are." },
+        { "t": "f2p", "text": "A saga map in Candy Crush or Royal Match is this map made into the game's main screen. Players always see where they've been and what's next." },
+        { "t": "hook", "text": "World, Land, Ride, Scene." }
+      ],
+      "check": { "q": "In what order does Rogers suggest designing?", "options": ["World, then areas, then levels, then moments", "Moments first, world last", "Any order"], "answer": 0, "why": "Top-down design sets boundaries first, so the details fit together." }
+    },
+    {
+      "id": "L09-l05",
+      "title": "Give every level a goal, and build anticipation",
+      "min": 3,
+      "deep": "Disneyland",
+      "cards": [
+        { "t": "idea", "text": "Ask two questions about every level: **What story does it tell?** And **what is the player trying to achieve here?** Then build excitement before you deliver." },
+        { "t": "how", "text": "**Foreshadowing** makes later moments hit harder. Use lighting, sound and shapes to make a place look dangerous. Show \"posters\" of things to come, like BioShock's ads for superpowers before you get them." },
+        { "t": "see", "text": "In a haunted house, a scare lands harder when you know it's coming. The waiting is half the thrill. And, Rogers says, you can never have too many skeletons." },
+        { "t": "f2p", "text": "Show what's coming in mobile games: the next area greyed out on the map, an event teaser before it starts, the next hero's silhouette. Anticipation brings players back." }
+      ],
+      "check": { "q": "Why foreshadow a big moment?", "options": ["Anticipation makes it hit harder", "It saves money", "It hides the level goal"], "answer": 0, "why": "Building expectation is as important as delivering the moment." }
+    },
+    {
+      "id": "L09-l06",
+      "title": "Plan levels with a beat chart",
+      "min": 3,
+      "deep": "Beat Chart",
+      "cards": [
+        { "t": "idea", "text": "A **beat chart** puts your whole game on one grid: one column per level, one row per element. **In a few hours it exposes problems before anyone builds anything.**" },
+        { "t": "how", "text": "Look for clumps of new things, gaps with nothing new, and repetition, like three night levels in a row. Then move elements around so the game feels natural." },
+        { "t": "see", "text": "Match-3 teams live in beat-chart spreadsheets: level number, goal type, move count, new blocker, difficulty. Good practice: one intro level where a new blocker is the star, then a few mixed levels, then combinations." },
+        { "t": "f2p", "text": "Plan **saw-tooth difficulty**: a few levels climb, one hard level peaks, then an easy relief level. Hard levels are where players run out of moves just short of winning, so offers convert there. Keep that honest." },
+        { "t": "hook", "text": "A beat chart is an X-ray of your game." }
+      ],
+      "check": { "q": "What comes right after a hard level in a saw-tooth curve?", "options": ["An easier relief level", "An even harder level", "The end of the game"], "answer": 0, "why": "A breather after a peak keeps players motivated." }
+    },
+    {
+      "id": "L09-l07",
+      "title": "Build fewer systems and reuse them hard",
+      "min": 3,
+      "deep": "Re-using",
+      "cards": [
+        { "t": "idea", "text": "Each gameplay system (driving, shooting, stealth) is expensive to build. **Build fewer systems and use them a lot.** Rogers' rule: **if a system is used fewer than three times, it isn't worth having.**" },
+        { "t": "how", "text": "Reuse doesn't mean copy-paste. One vehicle system can drive a jeep, a hatchback and a sedan with new art. But it can't become a hovercraft: know each system's limits. And never put the same system in two levels in a row." },
+        { "t": "see", "text": "A match-3 game can ship thousands of levels from a small set of blockers and boosters. Every new level is a new combination, not a new system." },
+        { "t": "f2p", "text": "Build an event system once, then reskin and retune it many times a year. But don't pitch a real-time co-op raid as \"just reusing\" a collect-items event. That's the hovercraft." },
+        { "t": "hook", "text": "Three or flee." }
+      ],
+      "check": { "q": "A system appears only twice in your whole game. What does Rogers suggest?", "options": ["Cut it: it isn't worth the cost", "Add it to every level", "Keep it exactly as is"], "answer": 0, "why": "A system used fewer than three times costs more than it gives." }
+    },
+    {
+      "id": "L09-l08",
+      "title": "Alleys and islands",
+      "min": 3,
+      "deep": "Alleys, Islands",
+      "cards": [
+        { "t": "idea", "text": "3D levels come in two basic shapes. An **alley** guides the player along a path to a goal. An **island** is an open space the player explores in any order." },
+        { "t": "how", "text": "Alleys are easier to pace, light and build. They can be narrow (Portal) or wide enough to feel free (Call of Duty). Islands are harder to design but give freedom. They grew into sandbox games like GTA." },
+        { "t": "see", "text": "Super Mario 64 was an early island: climb the mountain, explore the hills or swim underwater, in any order." },
+        { "t": "f2p", "text": "Most mobile games are alleys: a saga map, a linear run, a fixed level. Base builders and open-world games are islands. Pick the shape that fits short mobile sessions." },
+        { "t": "hook", "text": "Alley: a bowling lane with bumpers. Island: a playground with no fences." }
+      ],
+      "check": { "q": "Which shape gives players freedom to explore in any order?", "options": ["Island", "Alley", "Corridor"], "answer": 0, "why": "Islands are open spaces. Alleys guide you along a path." }
+    },
+    {
+      "id": "L09-l09",
+      "title": "Weenies: landmarks that pull players forward",
+      "min": 3,
+      "deep": "Alleys, Islands",
+      "cards": [
+        { "t": "idea", "text": "Disney's designers placed big landmarks, like Sleeping Beauty's Castle, to pull visitors forward. Walt called them **\"weenies\"**, after the hot dog animal trainers wave to lead a dog. **Use them to guide players.**" },
+        { "t": "how", "text": "A weenie can be a statue, a bridge, a tower or a strange tree. String them along the path so the player moves from one to the next. In open areas, give each zone its own look, like Disneyland's different lands." },
+        { "t": "see", "text": "Rogers' universal truth: **players will always find a way to break your game**, on purpose or by accident. So guide them clearly to play the way you intend." },
+        { "t": "f2p", "text": "On mobile, weenies are the glowing next node on the map, the big event banner, the chest at the end of a path. Something exciting should always sit in view." }
+      ],
+      "check": { "q": "What is a weenie in level design?", "options": ["A landmark that draws players toward it", "A weak enemy", "A hidden shortcut"], "answer": 0, "why": "Weenies attract the eye and pull players along the intended path." }
+    },
+    {
+      "id": "L09-l10",
+      "title": "Draw levels to scale",
+      "min": 3,
+      "deep": "Scale, Paths",
+      "cards": [
+        { "t": "idea", "text": "Draw your level on paper first, at the right **scale**. **The player is usually one square** on the grid, and everything else is drawn relative to them." },
+        { "t": "how", "text": "For 3D levels, make paths about **five squares wide**: the player plus two player-widths on each side. That leaves room to move, fight and turn the camera. Use icons and a legend so others can read the map." },
+        { "t": "see", "text": "Your first levels will almost certainly be too small and cramped. Be generous with space." },
+        { "t": "f2p", "text": "Puzzle level designers work in a level editor. They set the grid size, where pieces fall from, and blocker layers, like a box on top of jelly. It's the same idea: a precise map at the player's scale." }
+      ],
+      "check": { "q": "How wide should a 3D path be, as a starting rule?", "options": ["About five player-widths", "Exactly one player-width", "As wide as possible"], "answer": 0, "why": "Room to move, fight and turn the camera keeps the level playable." }
+    },
+    {
+      "id": "L09-l11",
+      "title": "Steer players with light and shape",
+      "min": 3,
+      "deep": "Scale, Paths",
+      "cards": [
+        { "t": "idea", "text": "Guide players with the space itself, not with signs. **Players move toward light** and miss dark areas. **Diagonal lines** pull the eye in a direction." },
+        { "t": "how", "text": "The **squint test**, learned from Naughty Dog (makers of Uncharted): squint at the screen until your eyes are almost shut. The brightest thing should be the main path. Do the same with sounds." },
+        { "t": "see", "text": "**Bread crumbs** guide players too: a line of coins or glowing items that leads the way. Never get the player lost on purpose." },
+        { "t": "f2p", "text": "Bread crumbs are everywhere in mobile:\n- XP gems in Survivor.io\n- coin lines in Subway Surfers that show the safe lane\n- the pointing hand in tutorials" }
+      ],
+      "check": { "q": "What should be brightest when you do the squint test?", "options": ["The main path", "The background", "The enemies"], "answer": 0, "why": "Players follow light, so the main path should stand out most." }
+    },
+    {
+      "id": "L09-l12",
+      "title": "Walking is never gameplay",
+      "min": 3,
+      "deep": "Scale, Paths",
+      "cards": [
+        { "t": "idea", "text": "Rogers' rule: **walking is never gameplay.** Never waste the player's time with empty wandering. Give an active character active things to do." },
+        { "t": "how", "text": "The **talk-through test:** describe your level out loud to someone. If you hear yourself say \"…and then the player walks over to here\", cut that part." },
+        { "t": "see", "text": "To make a linear level feel explorable, add **fingers**: short side paths off the main route, each ending in a reward. Picture a hand: the arm is the main path, and every fingertip holds treasure." },
+        { "t": "f2p", "text": "On mobile, \"walking\" is any dead time: long loading, slow animations you can't skip, menus to click through. Cut it all. Every second should be play or a reward." },
+        { "t": "hook", "text": "Every fingertip holds a trash can full of gold." }
+      ],
+      "check": { "q": "While describing your level, you say \"then the player walks over here\". What should you do?", "options": ["Cut or replace that section", "Make the walk longer", "Add more walking"], "answer": 0, "why": "Walking alone isn't gameplay. Replace it with something to do, or remove it." }
+    },
+    {
+      "id": "L09-l13",
+      "title": "Show before and after, let the brain fill in the middle",
+      "min": 3,
+      "deep": "Illusional Narrative",
+      "cards": [
+        { "t": "idea", "text": "**Illusional narrative:** show the player the **before** and the **after**, and their brain fills in the **during**. It's cheap, flexible storytelling." },
+        { "t": "how", "text": "In Disneyland's Peter Pan ride, you see Peter fighting Captain Hook. Your ship turns a corner hidden behind a sail. On the other side, Hook is beaten. You never saw the fight end, but you \"know\" what happened." },
+        { "t": "see", "text": "It's like the gap between comic panels or a cut between film shots. Animated events are expensive and must be redone when levels change. Before-and-after scenes are not." },
+        { "t": "f2p", "text": "Renovation games run on this. In Homescapes, you see a wrecked room, finish a task, and now it's beautiful. The work is never shown. Ads use it too: before, fail, after, in five seconds." },
+        { "t": "hook", "text": "The magic happens behind the sail." }
+      ],
+      "check": { "q": "How does Homescapes use illusional narrative?", "options": ["It shows the room before and after, not the work in between", "It shows every step of the repair", "It has no story"], "answer": 0, "why": "The player's mind fills the gap, which is cheap and still satisfying." }
+    },
+    {
+      "id": "L09-l14",
+      "title": "Graybox first, then pace it out",
+      "min": 3,
+      "deep": "Gray Matters",
+      "cards": [
+        { "t": "idea", "text": "Before any art, **build the level from plain grey boxes and play it.** Fix scale, camera and pacing while changes are still cheap." },
+        { "t": "how", "text": "Test new mechanics in a **playground** first: a simple test area. Then **pace out** the graybox: walk from start to end, ignoring enemies and hazards. That walk takes about **half** the time of the finished level." },
+        { "t": "see", "text": "For a 30-minute level, the pace-out should take about 15 minutes. Much longer, and the level will drag." },
+        { "t": "f2p", "text": "Mobile teams prototype the same way: grey boards and blocks to test if the core is fun. If it's fun when it's ugly, it'll be fun when it's pretty. The golden rule: **if it looks reachable, it must be reachable.**" }
+      ],
+      "check": { "q": "Your graybox pace-out takes 20 minutes. About how long will the finished level take?", "options": ["About 40 minutes", "About 20 minutes", "About 5 minutes"], "answer": 0, "why": "The pace-out takes roughly half the finished level's time." }
+    },
+    {
+      "id": "L09-l15",
+      "title": "Vary the feeling: big moments, small moments",
+      "min": 3,
+      "deep": "Gray Matters",
+      "cards": [
+        { "t": "idea", "text": "**Change the player's emotion every 15 to 20 minutes.** Geometry alone can take them from mystery to fear to panic to wonder." },
+        { "t": "how", "text": "- Don't stack big moments back to back, or you'll exhaust the player.\n- Large spaces feel safe. Tight spaces feel dangerous.\n- Going up feels like progress.\n- Weather must affect everything, or the effect breaks." },
+        { "t": "see", "text": "Big open areas suit fights with groups of enemies. Narrow spaces suit one-on-one fights. High places give \"wow\" views of the world ahead." },
+        { "t": "f2p", "text": "On mobile, vary within short sessions: a calm level after a hard one, a new theme every few chapters, a different event type each week." }
+      ],
+      "check": { "q": "How does a tight, narrow space usually feel to players?", "options": ["Mysterious and dangerous", "Safe and calm", "Boring"], "answer": 0, "why": "Tight spaces raise tension. Large spaces feel safer." }
+    },
+    {
+      "id": "L09-l16",
+      "title": "The training level: build it first",
+      "min": 3,
+      "deep": "Training Level",
+      "cards": [
+        { "t": "idea", "text": "The training level is the player's **first impression** and arguably the most important level. Yet it's usually built last and rushed. **Build it first, or make the whole game teach.**" },
+        { "t": "how", "text": "If you build it first, you learn the basics alongside the player, before your own expertise blinds you. In the best games, players never stop learning new abilities, items and situations. The whole game is the training level." },
+        { "t": "see", "text": "Teams usually say \"we'll build the tutorial once the game is finished.\" Then the schedule gets tight, and the most important level gets the least love." },
+        { "t": "f2p", "text": "In F2P, the first session decides D1 retention, and a weak one wastes all your ad spend. Build it early and keep improving it with A/B tests. Test it on people who have never seen the game." },
+        { "t": "hook", "text": "The training level is your game's first date. Don't plan it the night before." }
+      ],
+      "check": { "q": "Why build the training level early?", "options": ["You learn the basics before your own expertise blinds you", "It's the easiest level", "Players skip it anyway"], "answer": 0, "why": "Building it early lets you see the game like a beginner, which is who it's for." }
+    }
+  ]
+}
