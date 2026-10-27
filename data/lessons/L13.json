@@ -1,0 +1,223 @@
+{
+  "mod": "L13",
+  "words": [
+    { "w": "power-up", "d": "an item that instantly makes you stronger, faster or safer, usually for a short time" },
+    { "w": "booster", "d": "the F2P name for a power-up you can earn, be given or buy, like a hammer in match-3" },
+    { "w": "DDB", "d": "dynamic difficulty balancing: the game quietly adjusts challenge and rewards to how you're doing" },
+    { "w": "rubberbanding", "d": "opponents slow down when you fall far behind, so you can catch up" },
+    { "w": "gacha", "d": "a lottery for characters or items, paid with currency" },
+    { "w": "pity system", "d": "a guaranteed top reward after a set number of unlucky pulls" },
+    { "w": "battle pass", "d": "a season-long track of rewards, with a free and a paid row" }
+  ],
+  "lessons": [
+    {
+      "id": "L13-l01",
+      "title": "Power-ups: instant joy, with a catch",
+      "min": 3,
+      "deep": "Playing with Power",
+      "cards": [
+        { "t": "idea", "text": "A **power-up** is concentrated action. Touch it and you're instantly faster, stronger or tougher. **The effect is immediate** (the joy) and **usually temporary** (the catch)." },
+        { "t": "how", "text": "Answer these before you build one:\n- What does it do, and how does it look and sound?\n- Can several stack together?\n- What's the trade-off?\n- If it's temporary, how does the player see it's running out?" },
+        { "t": "see", "text": "Four ways to pick one up:\n- walk over it\n- reach out and grab it\n- it flies to you when you're close\n- it triggers just by being near\nIn Survivor.io, a magnet pulls every XP gem on screen to you." },
+        { "t": "f2p", "text": "Show clearly when a boost is about to end: a countdown ring, a flashing icon, a warning sound. Losing a paid boost without warning feels like being robbed." }
+      ],
+      "check": { "q": "What's the \"catch\" with most power-ups?", "options": ["They're usually temporary", "They're always expensive", "They make the game harder"], "answer": 0, "why": "The effect is instant but short, which is what makes timing it fun." }
+    },
+    {
+      "id": "L13-l02",
+      "title": "The four families of power-ups",
+      "min": 3,
+      "deep": "Playing with Power",
+      "cards": [
+        { "t": "idea", "text": "Every power-up fits one of four families: **defensive, offensive, movement and game changers.**" },
+        { "t": "how", "text": "- **Defensive:** keep you alive. Health, shields, extra lives, invincibility.\n- **Offensive:** fight better. Stronger weapons, fire or ice damage, helpers.\n- **Movement:** move better or in new ways. Speed, flying, gliding.\n- **Game changers:** change the rules. Score multipliers, magnets, \"now you hunt them\"." },
+        { "t": "see", "text": "Subway Surfers uses three families:\n- the hoverboard saves you from one crash (defensive)\n- the jetpack and super sneakers (movement)\n- the coin magnet and 2x multiplier (game changers)" },
+        { "t": "f2p", "text": "Movement power-ups can break your level design. If a jetpack exists, your obstacle spacing must work with it too." },
+        { "t": "hook", "text": "D-O-M-G: Defensive, Offensive, Movement, Game changer." }
+      ],
+      "check": { "q": "A coin magnet that pulls in all nearby coins is which family?", "options": ["Game changer", "Defensive", "Offensive"], "answer": 0, "why": "It changes the rules of collecting, without protecting you or helping you attack." }
+    },
+    {
+      "id": "L13-l03",
+      "title": "Boosters: help, not ransom",
+      "min": 3,
+      "deep": "Playing with Power",
+      "cards": [
+        { "t": "idea", "text": "In casual F2P, power-ups became **boosters**: the biggest kind of item players use up and buy again. **The line: boosters should feel like help, never like a ransom.**" },
+        { "t": "how", "text": "Match-3 has three kinds:\n- **special pieces**, earned by skill (striped candies, rockets)\n- **in-level boosters** that break a stuck board (a hammer)\n- **pre-level boosters** that start the board with special pieces" },
+        { "t": "see", "text": "Healthy games give boosters for free regularly: as level rewards, in events and for login streaks. Then a bought booster is a shortcut, not a requirement." },
+        { "t": "f2p", "text": "A level that can only be beaten by buying a booster is a paywall dressed as a power-up. Also avoid \"anti-power-ups\" (fake gifts that hurt you) in F2P. When players may have paid, a harmful gift feels like theft." }
+      ],
+      "check": { "q": "A level is tuned so it can only be beaten with a bought booster. What is that?", "options": ["A paywall dressed as a power-up", "Good difficulty design", "A fair challenge"], "answer": 0, "why": "If paying is required to win, the booster is a ransom, not help." }
+    },
+    {
+      "id": "L13-l04",
+      "title": "Love the player",
+      "min": 3,
+      "deep": "Love Thy Player",
+      "cards": [
+        { "t": "idea", "text": "A Japanese director told Rogers every designer's motto should be **\"love the player\"**. Rogers' version: **the designer is a gentle hand always pushing the player upward.**" },
+        { "t": "how", "text": "**Dynamic difficulty balancing (DDB)** adjusts challenge and rewards to how the player is doing. Keep dying to one enemy? It gets a little weaker. Low on health when you open a chest? You get health instead of coins." },
+        { "t": "see", "text": "Other helpers: checkpoints, aim assist, offering an easier mode, and **rubberbanding**. In a race, opponents slow down when you fall far behind, so you're never alone on an empty track." },
+        { "t": "f2p", "text": "Good DDB in F2P: easier help after several losses, need-based drops, fair matchmaking with bots at low ranks. Bad DDB: secretly making it harder for players likely to pay." },
+        { "t": "hook", "text": "The gentle hand, not the boot." }
+      ],
+      "check": { "q": "Which is a good use of dynamic difficulty?", "options": ["Giving a struggling player a bit more help", "Making it harder for players who often pay", "Hiding the difficulty setting"], "answer": 0, "why": "DDB should help players succeed, never squeeze spenders." }
+    },
+    {
+      "id": "L13-l05",
+      "title": "If it feels too long or too hard, it is",
+      "min": 3,
+      "deep": "Love Thy Player",
+      "cards": [
+        { "t": "idea", "text": "Rogers' rule: **if a level or fight feels too long, too hard or boring to you, it probably is.** Trust that feeling and cut." },
+        { "t": "how", "text": "Length is a hidden difficulty setting. A 10-minute fight with decent health is fine. Stretch it to 30 minutes and tiredness sets in, and the player probably dies." },
+        { "t": "see", "text": "**Designer blinders:** after playing your levels hundreds of times, you're much better than real players. You need far harder content to feel challenged, so your game drifts too hard." },
+        { "t": "f2p", "text": "Live teams drift toward too-hard content too. Check each level's win rate and where players quit, and test with fresh players. Offer help instead of silently making things easier, and never make players feel stupid." }
+      ],
+      "check": { "q": "Why do designers often make levels too hard?", "options": ["They've played them so much that they're far better than real players", "Players ask for harder levels", "Hard levels are cheaper"], "answer": 0, "why": "Practice makes designers experts, so they misjudge what normal players can do." }
+    },
+    {
+      "id": "L13-l06",
+      "title": "Never design for player deaths",
+      "min": 3,
+      "deep": "Love Thy Player",
+      "cards": [
+        { "t": "idea", "text": "**Never measure a design by how often players die.** \"Rewarding\" players with damage or death teaches them to stop playing." },
+        { "t": "how", "text": "A director once asked Rogers for an encounter where players must die three times before they can pass. He refused. Death is never a design goal." },
+        { "t": "see", "text": "In Maximo, some treasure chests were monsters that bit you. Soon players dreaded every chest. Fun for the designer, not the player. Fix: give a clue, like a colour change, so players can spot the trap." },
+        { "t": "f2p", "text": "The F2P version of \"die three times\" is a level designed to fail so players buy boosters. Same bad idea, with a price tag. Also: always save automatically and support cloud save. Lost progress is the fastest way to lose a player." }
+      ],
+      "check": { "q": "Players start fearing every treasure chest. What went wrong?", "options": ["Too many trap chests with no warning signs", "Chests were too rare", "Chests gave too much gold"], "answer": 0, "why": "Rewards that often hurt you stop feeling like rewards. Give clues so players can learn." }
+    },
+    {
+      "id": "L13-l07",
+      "title": "Greed: the strongest motivator",
+      "min": 3,
+      "deep": "More Wealth",
+      "cards": [
+        { "t": "idea", "text": "**Greed and reward** are the two strongest tools for keeping players playing. Rogers' rule: **never underestimate the player's greed**, but use it for good." },
+        { "t": "how", "text": "Good uses of greed:\n- promise treasure to motivate a hard fight\n- give a trophy shelf to fill\n- the \"me too\" feeling: others have it, I want it\n- hide treasure by rules players can learn\n- lay coins in a trail that guides the player" },
+        { "t": "see", "text": "Once trophy shelves start filling up, players want to complete them. Monopoly GO! sticker albums and Pokémon GO's Pokédex are trophy shelves." },
+        { "t": "f2p", "text": "Bad use of greed: luring players into traps just to prove you're cleverer than them. Good use: making a risky shortcut pay off with bonus coins." }
+      ],
+      "check": { "q": "Which is a good use of player greed?", "options": ["A trail of coins that guides the player", "A coin that leads straight into a hidden death trap", "Hiding all rewards"], "answer": 0, "why": "Greed should guide and motivate, not punish players for being curious." }
+    },
+    {
+      "id": "L13-l08",
+      "title": "The four rules of rewards",
+      "min": 3,
+      "deep": "More Wealth",
+      "cards": [
+        { "t": "idea", "text": "A **reward** is what the player is working toward. **No victory should come without one.** Rogers gives four rules." },
+        { "t": "how", "text": "1. **Show rewards early**, so players know what each goal earns.\n2. **Reward soon and often**, with variety and surprise.\n3. **Celebrate success.** There's no such thing as too much fanfare.\n4. **Make the reward matter**: help in the next level, or fix a pain from the last one." },
+        { "t": "see", "text": "The best reward is something players only realise they needed once they have it. A double jump right after a level full of jumps you just barely made." },
+        { "t": "f2p", "text": "Ten kinds of reward: score, achievements, treasure, loot, power-ups, souvenirs, bonus content, praise, surprise and progression. Most F2P games use all ten." }
+      ],
+      "check": { "q": "Which reward rule does a season pass that shows every prize on day one follow?", "options": ["Show rewards early", "Never celebrate", "Hide the best rewards"], "answer": 0, "why": "Showing the whole track gives players a to-do list and a reason to keep going." }
+    },
+    {
+      "id": "L13-l09",
+      "title": "Praise and celebration",
+      "min": 3,
+      "deep": "More Wealth",
+      "cards": [
+        { "t": "idea", "text": "Games are great at making players feel bad and bad at praise. **Nothing makes people cooperate like praise**, so make the player feel like the best person in the world." },
+        { "t": "how", "text": "In Zak & Wiki, one correct action triggers a music sting, a happy animation, sparkles and a cheering sidekick. Solving a puzzle adds a golden screen, a longer tune, a show-off animation and the item's name. Eight layers of praise." },
+        { "t": "see", "text": "Candy Crush's booming \"Sweet!\", \"Tasty!\" and \"Divine!\" and Royal Match's win sequences are the phone version of those eight layers." },
+        { "t": "f2p", "text": "Watch for praise inflation. If every tap triggers fireworks, nothing feels special. Scale it: a small sound for a match, full fanfare for a level clear." }
+      ],
+      "check": { "q": "What's the risk of fireworks on every single tap?", "options": ["Praise stops meaning anything", "The game gets too easy", "Players buy more"], "answer": 0, "why": "Praise only feels good when it's tied to a real achievement." }
+    },
+    {
+      "id": "L13-l10",
+      "title": "Scores, achievements and surprises",
+      "min": 3,
+      "deep": "More Wealth",
+      "cards": [
+        { "t": "idea", "text": "Some rewards are about **pride**, not power. A high score, an achievement or a surprise moment keeps players playing for bragging rights and joy." },
+        { "t": "how", "text": "**Achievements** are high scores with personality: do something X times, beat a boss, collect everything, or finish the game. Mix easy and hard ones, and use funny names." },
+        { "t": "see", "text": "At Disneyland's Pirate's Lair, turning a wheel lifts a treasure chest from the water. Keep turning and a skeleton appears, still holding on. A surprise for the player who keeps going." },
+        { "t": "f2p", "text": "Surprises are cheap to build and great for sharing: easter eggs, rare idle animations, silly seasonal touches. Always reward the player who keeps cranking the wheel." }
+      ],
+      "check": { "q": "What is an achievement, in Rogers' words?", "options": ["A high score with personality", "A paid item", "A level-select screen"], "answer": 0, "why": "Achievements let players show off specific skills and goals." }
+    },
+    {
+      "id": "L13-l11",
+      "title": "Treasure needs an economy",
+      "min": 3,
+      "deep": "More Wealth",
+      "cards": [
+        { "t": "idea", "text": "Collecting treasure feels great, but **treasure means nothing without things to spend it on.** Plan the economy across the whole game." },
+        { "t": "how", "text": "- Use values that grow (1, 5, 10, 50, 100), but not so far apart that small coins feel worthless.\n- Give players **enough money for real choices**.\n- Sort items as common, uncommon, rare or unique.\n- Keep some quick buys, and some just out of reach." },
+        { "t": "see", "text": "If players should afford 300 dollars of items in a level, put at least 300 dollars of treasure in it. Decide whether treasure comes back on replay: if it does, players can \"farm\" it and break your economy." },
+        { "t": "f2p", "text": "Make value readable with colour (copper, silver, gold) or shape (coins, bags, gems). Show everything players can buy early, so they can plan." }
+      ],
+      "check": { "q": "Treasure respawns every time you replay a level. What's the risk?", "options": ["Players farm it and the economy breaks", "Players get bored of shopping", "Prices drop to zero"], "answer": 0, "why": "Unlimited treasure means unlimited money. Farmable sources need caps or costs." }
+    },
+    {
+      "id": "L13-l12",
+      "title": "The ten aisles of a game shop",
+      "min": 3,
+      "deep": "More Wealth",
+      "cards": [
+        { "t": "idea", "text": "Make the shop fit your game: a garage in a racing game, a vending machine in a shooter. Rogers lists **ten kinds of things a game can sell.**" },
+        { "t": "how", "text": "- **offence** and **defence**: weapons, armour, shields\n- **repairs** and **skills**\n- **refills**: ammo, energy, lives, extra moves\n- **access**: keys, event tickets, premium tracks\n- **looks** and **fun extras**: skins, silly hats\n- **information**: hints\n- **saves**: continues and revives" },
+        { "t": "see", "text": "Rogers joked that only a cruel designer would charge players to keep playing. In F2P, \"+5 moves\" and \"Save me\" became top sellers." },
+        { "t": "f2p", "text": "**Skins and cosmetics are the biggest fair way to make money**, because they don't change who wins. Continues are fine after a real mistake. They're not fine when levels are tuned to fail by one move to sell them." }
+      ],
+      "check": { "q": "Which shop item is the fairest kind to sell?", "options": ["Cosmetic skins", "Power that wins PvP", "A key to an otherwise impossible level"], "answer": 0, "why": "Cosmetics let players express themselves without buying victory." }
+    },
+    {
+      "id": "L13-l13",
+      "title": "Progression is a reward too",
+      "min": 2,
+      "deep": "More Wealth",
+      "cards": [
+        { "t": "idea", "text": "Simply moving forward is a reward. Players have many other things to do with their free time. **A gripping story, great levels, cool bosses and satisfying upgrades** make them choose your game." },
+        { "t": "how", "text": "**Bonus content** (costumes, extra modes, commentary) used to be the extra at the end of a game. In F2P it became the engine: new levels, skins and events every week or month." },
+        { "t": "f2p", "text": "F2P games have no ending, so progress itself is the reward:\n- a map that grows\n- rooms you renovate\n- a base that levels up\n- a rank that rises\nAlways show the next step." }
+      ],
+      "check": { "q": "In F2P, what did \"bonus content\" become?", "options": ["LiveOps: regular new levels, skins and events", "Nothing: it was removed", "A one-time ending"], "answer": 0, "why": "Live games keep adding content, which turns bonus material into the weekly engine." }
+    },
+    {
+      "id": "L13-l14",
+      "title": "Reward schedules: fixed and surprise",
+      "min": 3,
+      "deep": "Reward & Economy Toolkit",
+      "cards": [
+        { "t": "idea", "text": "*When* you give rewards matters as much as *what* you give. **Fixed schedules build trust and habits. Variable ones create excitement.** Mix them." },
+        { "t": "how", "text": "- **Fixed ratio:** a reward every N actions (a chest every 10 levels).\n- **Variable ratio:** after an unknown number (random drops, gacha).\n- **Fixed interval:** after set time (daily login reward).\n- **Variable interval:** at surprise times (flash events)." },
+        { "t": "see", "text": "Variable-ratio rewards are the most compelling of all. That's also how slot machines work." },
+        { "t": "f2p", "text": "Relying mainly on random rewards **for money** is where delight turns into a slot machine. Use random rewards for fun, and keep paid ones transparent." }
+      ],
+      "check": { "q": "A daily login calendar is which schedule?", "options": ["Fixed interval", "Variable ratio", "Variable interval"], "answer": 0, "why": "It rewards you after a fixed amount of time: one day." }
+    },
+    {
+      "id": "L13-l15",
+      "title": "Chests, gacha and the season pass",
+      "min": 3,
+      "deep": "Reward & Economy Toolkit",
+      "cards": [
+        { "t": "idea", "text": "Chests, gacha and season passes are the F2P versions of Rogers' treasure. **They can delight or they can exploit. The difference is honesty.**" },
+        { "t": "how", "text": "Fair gacha has:\n- **published drop rates** (app stores require them for paid random items)\n- a **pity system**, like Genshin Impact's guaranteed top character within 90 pulls\n- value in duplicates, which become upgrade shards" },
+        { "t": "see", "text": "A **season pass** is a visible reward track with a free row and a paid row, like Brawl Pass or Pass Royale. It turns \"reward often\" into a progress bar with a deadline." },
+        { "t": "f2p", "text": "Keep passes finishable with normal play. If finishing needs heavy grinding or paid skips, it creates stress, not fun. Some countries, like Belgium, treat paid loot boxes as gambling." }
+      ],
+      "check": { "q": "What does a pity system do?", "options": ["Guarantees a top reward after a set number of unlucky pulls", "Removes all randomness", "Makes pulls more expensive"], "answer": 0, "why": "It caps how unlucky a player can be, which is DDB for luck." }
+    },
+    {
+      "id": "L13-l16",
+      "title": "Delight or manipulation?",
+      "min": 3,
+      "deep": "Reward & Economy Toolkit",
+      "cards": [
+        { "t": "idea", "text": "Rogers' compass: love the player, never underestimate their greed, but **use it for good.** If a mechanic only works because players don't understand it, it's on the wrong side." },
+        { "t": "how", "text": "Delight:\n- rewards shown early\n- continues after real mistakes\n- boosters gifted as help\n- best items earnable by playing\n- fair timers with optional skips" },
+        { "t": "see", "text": "Manipulation:\n- hidden odds and confusing currency rates\n- levels tuned to fail by one move\n- harder difficulty for likely spenders\n- fake urgency like \"only 2 left!\"\n- spending prompts aimed at kids" },
+        { "t": "f2p", "text": "Use this list as a checklist in every feature review. Ethical design is also good business: players who trust you stay longer and spend again." }
+      ],
+      "check": { "q": "Which of these is manipulation?", "options": ["\"Only 2 left!\" pressure on a digital item", "A free booster after three losses", "Showing all season pass rewards"], "answer": 0, "why": "Digital items don't run out. Fake urgency pressures players instead of informing them." }
+    }
+  ]
+}
