@@ -1,0 +1,177 @@
+{
+  "mod": "L15",
+  "words": [
+    { "w": "SFX", "d": "sound effects: short sounds for actions, like a coin pickup" },
+    { "w": "score", "d": "the music written for a game or film" },
+    { "w": "loop", "d": "music that repeats smoothly with no gap" },
+    { "w": "leitmotif", "d": "a short tune linked to one character or situation" },
+    { "w": "sting", "d": "a short burst of music for a moment, like level complete" },
+    { "w": "haptics", "d": "phone vibrations you can feel as feedback" },
+    { "w": "temp track", "d": "borrowed reference music used only during development" }
+  ],
+  "lessons": [
+    {
+      "id": "L15-l01",
+      "title": "Sound can't wait until the end",
+      "min": 3,
+      "deep": "Why music can't wait",
+      "cards": [
+        { "t": "idea", "text": "Music and sound change how an experience feels. Teams often leave them until the end because they need lots of coordination. **That's a mistake: plan audio early.**" },
+        { "t": "how", "text": "Disney first made the Star Tours ride \"realistic\", with only engine sounds and the pilot's voice. In testing, it didn't feel like Star Wars. Adding the famous music fixed it." },
+        { "t": "see", "text": "Even early arcade beeps created memorable themes: Pac-Man, Donkey Kong, The Legend of Zelda." },
+        { "t": "f2p", "text": "A recognizable sound becomes a brand. Candy Crush's deep-voiced \"Sweet!\" and \"Delicious!\" are famous. Plan sound for the tutorial, rewards and ads from the start." },
+        { "t": "hook", "text": "No theme, no dream." }
+      ],
+      "check": { "q": "What did Star Tours teach Disney?", "options": ["Music made the ride feel like Star Wars", "Realistic sound is always best", "Rides don't need sound"], "answer": 0, "why": "Without the music, the experience felt flat." }
+    },
+    {
+      "id": "L15-l02",
+      "title": "Rent the hit or own the score",
+      "min": 3,
+      "deep": "Licensed vs original",
+      "cards": [
+        { "t": "idea", "text": "Music is either **licensed** (existing songs you pay to use) or **original** (written for your game). **Never ship music you don't have the rights to.**" },
+        { "t": "how", "text": "In 2010, a licensed song cost about $2,500 to over $30,000, paid once. Original music usually means hiring a **music director**, who composes, records and prepares it." },
+        { "t": "see", "text": "You don't need to play an instrument. You need opinions and examples. Rogers gave his Maximo composer a mix tape of film scores that fit each level." },
+        { "t": "f2p", "text": "Live games run for years, so a song license that expires mid-life is a problem. Most F2P music is original or from royalty-free libraries. Check that every license covers ads and trailers too." }
+      ],
+      "check": { "q": "Why are licensed hits rare in F2P games?", "options": ["Live games run for years, and licenses can expire", "Players dislike famous songs", "Phones can't play them"], "answer": 0, "why": "An expired license can force you to remove music from a running game." }
+    },
+    {
+      "id": "L15-l03",
+      "title": "Speak musician",
+      "min": 3,
+      "deep": "Speak musician",
+      "cards": [
+        { "t": "idea", "text": "To direct music, you need **the words** to say what you want, plus **reference tracks** to show it." },
+        { "t": "how", "text": "Four groups of music words:\n- **Time:** beat, tempo, rhythm\n- **Height:** pitch, octave, chord\n- **Colour:** instrument, tone, mood, theme\n- **Loudness:** volume" },
+        { "t": "see", "text": "Build a **temp soundtrack**: existing tracks that show the feel you want. Pick a style that fits your genre, or break the rules: sci-fi with polka?" },
+        { "t": "f2p", "text": "Soft launch puts real builds in real countries. A forgotten temp track there is a real copyright problem. Label every temp file clearly, like TEMP_." },
+        { "t": "hook", "text": "Time, Height, Colour, Loud." }
+      ],
+      "check": { "q": "What is a temp soundtrack for?", "options": ["Showing the composer the feel you want", "Shipping in the final game", "Testing speakers"], "answer": 0, "why": "Examples remove guesswork, but temp music must never ship." }
+    },
+    {
+      "id": "L15-l04",
+      "title": "Best song first",
+      "min": 3,
+      "deep": "music needs list",
+      "cards": [
+        { "t": "idea", "text": "List **every place that needs music**, then decide what you can afford. **Put your best piece on the start screen.**" },
+        { "t": "how", "text": "Each level usually needs background music that **loops** without a gap. To save money, reuse tracks: in Maximo vs. Army of Zin, each world alternated two songs, so you never heard one twice in a row." },
+        { "t": "see", "text": "Don't forget the extras: title screen, pause menu, game over and minigames." },
+        { "t": "f2p", "text": "The home screen is your title screen, and players hear it thousands of times. Make it great but not tiring. Remix the main theme for holidays: cheap freshness for events." }
+      ],
+      "check": { "q": "Where should your best music go?", "options": ["The start screen", "The pause menu", "The credits"], "answer": 0, "why": "It's the first music players hear, so it sets the mood." }
+    },
+    {
+      "id": "L15-l05",
+      "title": "Music that reacts",
+      "min": 3,
+      "deep": "Dynamic scoring",
+      "cards": [
+        { "t": "idea", "text": "A **dynamic score** changes with the action: mystery, warning, combat, chase, victory. A **leitmotif** gives a character or situation its own tune." },
+        { "t": "how", "text": "Star Wars gives Darth Vader, Luke and Yoda each a theme. Hear the tune and you know who's coming." },
+        { "t": "see", "text": "Rogers' key rule: **make the music more exciting than the action on screen.** In Peggle, hitting the last peg plays Ode to Joy with fireworks. A tiny ball becomes a stadium moment." },
+        { "t": "f2p", "text": "The cheap mobile version: add instrument layers as a combo grows or time runs out. Gacha games give heroes a signature tune in their reveal trailer." },
+        { "t": "hook", "text": "Music is the hype man. A good hype man is a little louder than the rapper." }
+      ],
+      "check": { "q": "What is a leitmotif?", "options": ["A tune linked to a character or situation", "A sound effect for buttons", "A silent moment"], "answer": 0, "why": "Like Darth Vader's theme, it tells you who or what is coming." }
+    },
+    {
+      "id": "L15-l06",
+      "title": "The pause before the drop",
+      "min": 3,
+      "deep": "power of silence",
+      "cards": [
+        { "t": "idea", "text": "Sometimes the best \"music\" is the world itself, and sometimes it's **silence**." },
+        { "t": "how", "text": "Every place has its own sounds: a graveyard at night, a city at lunch. Maximo used world sounds in hub areas to set the mood, and normal music in the action levels." },
+        { "t": "see", "text": "Silence or a drumroll right before a chest opens makes the reveal explode. Then a different sound for each rarity tells players what they got before they read it." },
+        { "t": "f2p", "text": "Farm and village screens feel alive with birds, wind and chatter, without music fatigue. A quiet, gentle sound on failure keeps frustrated players from rage-quitting." },
+        { "t": "hook", "text": "The drop is only epic because of the pause before it." }
+      ],
+      "check": { "q": "Why add silence before a reward reveal?", "options": ["It makes the payoff feel bigger", "It saves memory", "It hides bugs"], "answer": 0, "why": "Contrast makes the reveal sound land harder." }
+    },
+    {
+      "id": "L15-l07",
+      "title": "Every tap deserves a thump",
+      "min": 3,
+      "deep": "Sounds Like a Game",
+      "cards": [
+        { "t": "idea", "text": "Sound effects are **feedback**. Build the sound list together with the characters' moves, and make every action audible." },
+        { "t": "how", "text": "Sounds that go **up** in pitch feel good: extra life, task complete. Sounds that go **down** feel bad: failure, damage. Players feel it without thinking." },
+        { "t": "see", "text": "Realistic sounds ground the world but can be too quiet. Cartoony sounds are great for pickups and extra lives, but can break the mood." },
+        { "t": "f2p", "text": "Mobile sound lists are full of interface sounds: taps, swipes, matches, merges, coins, chest opens, errors. Vary the pitch slightly so the 10,000th coin doesn't drive players mad." }
+      ],
+      "check": { "q": "Which direction should pitch go for a good moment?", "options": ["Up", "Down", "It doesn't matter"], "answer": 0, "why": "Rising pitch feels positive. Falling pitch feels like failure." }
+    },
+    {
+      "id": "L15-l08",
+      "title": "Real isn't always right",
+      "min": 3,
+      "deep": "Sounds Like a Game",
+      "cards": [
+        { "t": "idea", "text": "Real recordings often sound wrong in a game. **Sweeten** them: mix sounds until they feel right." },
+        { "t": "how", "text": "Rogers found that breaking bones sound like dry twigs. His team added a bowling ball smashing into pins." },
+        { "t": "see", "text": "Lock the animation timing first, then fit the sound to it. A sound shouldn't end before the move, or keep going after it." },
+        { "t": "f2p", "text": "Sound can warn and guide. A falling bomb whistles so you can dive for cover. A crackle makes players pause before a magic door. Always check the copyright on any sound you use." },
+        { "t": "hook", "text": "Remember the bowling-ball bone: right beats real." }
+      ],
+      "check": { "q": "What does \"sweetening\" a sound mean?", "options": ["Mixing sounds so it feels right", "Making it quieter", "Adding music behind it"], "answer": 0, "why": "Real recordings can sound weak, so designers layer sounds." }
+    },
+    {
+      "id": "L15-l09",
+      "title": "Whisper, shout, whistle",
+      "min": 3,
+      "deep": "Sound priority",
+      "cards": [
+        { "t": "idea", "text": "Too many sounds at once becomes noise. Sort every sound into **local, distant or priority**, so important sounds always cut through." },
+        { "t": "how", "text": "- **Local:** heard up close, fades with distance, like a ticking clock\n- **Distant:** heard from far away, like explosions\n- **Priority:** always plays, because it's gameplay feedback, like losing health" },
+        { "t": "see", "text": "Name files so anyone can find them: a pattern like sfx_ui_button_tap_01 or mus_event_winter_loop." },
+        { "t": "f2p", "text": "Phones can play only a few sounds at once on tiny speakers. Limit repeats (for example, three coin sounds at a time) and lower the music under important feedback." },
+        { "t": "hook", "text": "Local whispers, distant shouts, priority is the referee's whistle." }
+      ],
+      "check": { "q": "Which sounds should always play?", "options": ["Priority sounds, like losing health", "Distant sounds", "Background music"], "answer": 0, "why": "Priority sounds are gameplay feedback the player must hear." }
+    },
+    {
+      "id": "L15-l10",
+      "title": "If it only beeps, it's a secret",
+      "min": 3,
+      "deep": "Sound and music AS gameplay",
+      "cards": [
+        { "t": "idea", "text": "Whole genres are built on music, from Dance Dance Revolution to Band Hero. But **never rely on sound alone: echo every audio cue with visuals.**" },
+        { "t": "how", "text": "Visual echoes give extra clues, and they make the game playable for players who can't hear." },
+        { "t": "see", "text": "Mobile rhythm games like Beatstar and Piano Tiles-style games need sound on, so they say so on the first screen." },
+        { "t": "f2p", "text": "Many mobile players are muted. Every sound cue, like a timer ending or a rare drop, needs a visual or vibration twin." }
+      ],
+      "check": { "q": "Why echo audio cues with visuals?", "options": ["Muted and hearing-impaired players still get the information", "Visuals are cheaper", "Sound is too slow"], "answer": 0, "why": "A cue that only beeps is invisible to anyone who can't hear it." }
+    },
+    {
+      "id": "L15-l11",
+      "title": "Design for the mute switch",
+      "min": 3,
+      "deep": "designing audio for phones",
+      "cards": [
+        { "t": "idea", "text": "On phones, design **sound-off first**, then make sound-on delightful. Many players play muted: on the bus, in bed, in class." },
+        { "t": "how", "text": "- Every important event needs a clear visual signal.\n- Let players keep their own music or podcast playing.\n- Offer separate music and sound toggles, and remember the choice.\n- Add captions for voice lines that matter." },
+        { "t": "see", "text": "Vibration is \"sound you feel\", and it works on mute. Light taps for buttons, medium for matches, heavy for big rewards." },
+        { "t": "f2p", "text": "Don't overdo vibration: it drains the battery and annoys. Always include an on and off switch." },
+        { "t": "hook", "text": "Mute-proof, then make it sing." }
+      ],
+      "check": { "q": "What should mobile audio design assume first?", "options": ["Many players have sound off", "Everyone wears headphones", "Players want loud music"], "answer": 0, "why": "If the game works muted, sound becomes a bonus instead of a requirement." }
+    },
+    {
+      "id": "L15-l12",
+      "title": "Reward sounds and small files",
+      "min": 3,
+      "deep": "designing audio for phones",
+      "cards": [
+        { "t": "idea", "text": "Reward moments are where sound pays off most. **Bigger rewards get bigger, longer, higher sounds**, with particles and vibration." },
+        { "t": "how", "text": "Give level complete, chest open, rare reveal and rank-up each its own short sting. Each rarity tier gets a signature sound." },
+        { "t": "see", "text": "Ethics check: casino-style ringing on purchase or gacha screens can feel manipulative. Celebrate achievement, not spending." },
+        { "t": "f2p", "text": "Big downloads lose installs. Compress music, use mono for most effects, stream long tracks, and download extra audio after install." }
+      ],
+      "check": { "q": "What should reward sounds celebrate?", "options": ["Achievement, not spending", "Every purchase", "Only losses"], "answer": 0, "why": "Casino-like sounds on spending screens feel manipulative." }
+    }
+  ]
+}
