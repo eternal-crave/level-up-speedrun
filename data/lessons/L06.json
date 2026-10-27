@@ -1,0 +1,237 @@
+{
+  "mod": "L06",
+  "words": [
+    { "w": "static camera", "d": "a camera that never moves and shows one fixed view, like a match-3 board" },
+    { "w": "parallax", "d": "background layers moving at different speeds to create depth" },
+    { "w": "isometric", "d": "an angled top-down view that makes the world look like a toy box" },
+    { "w": "follow cam", "d": "a camera that follows behind the player's character" },
+    { "w": "rail camera", "d": "a camera that moves along a fixed path set by the designer" },
+    { "w": "motion sickness", "d": "nausea when your eyes see movement your body doesn't feel" },
+    { "w": "rule of thirds", "d": "placing the main subject where lines dividing the screen into thirds cross" }
+  ],
+  "lessons": [
+    {
+      "id": "L06-l01",
+      "title": "Choose one main camera first",
+      "min": 3,
+      "deep": "Camera Views",
+      "cards": [
+        { "t": "idea", "text": "A bad camera is the fastest way to make players quit. **Pick one main camera style for most of the game.** Use other views only for special moments." },
+        { "t": "how", "text": "Your camera choice decides four things at once:\n- how the camera is programmed\n- how levels are designed\n- how controls are mapped\n- how art is made" },
+        { "t": "see", "text": "Mobile RPGs use a stable battle camera for normal play. A cinematic camera swoops in only for ultimate attacks or gacha pulls, usually with a skip button." },
+        { "t": "f2p", "text": "On mobile, the camera is tied to **screen orientation**. Portrait means one hand, short sessions and casual audiences (match-3, Archero). Landscape means two thumbs and longer, deeper play (Brawl Stars, PUBG Mobile)." },
+        { "t": "hook", "text": "The camera is the foundation. Pour it crooked and every wall leans." }
+      ],
+      "check": { "q": "What does a portrait screen usually suggest for a mobile game?", "options": ["One-handed, short, casual play", "Two thumbs and long sessions", "First-person shooting"], "answer": 0, "why": "Portrait fits one hand and quick sessions, which suits casual genres." }
+    },
+    {
+      "id": "L06-l02",
+      "title": "Static cameras need juice",
+      "min": 3,
+      "deep": "Static camera",
+      "cards": [
+        { "t": "idea", "text": "A **static camera** never moves. You control exactly what the player sees. It's old-school, but **it's still the king of puzzle and board games.**" },
+        { "t": "how", "text": "It's great for mood (each room framed perfectly, like early Resident Evil) and for staging events: the player can't be looking the wrong way. The danger: it can feel lifeless. Add plenty of animation and effects." },
+        { "t": "see", "text": "Candy Crush, Royal Match and Block Blast! show the whole board at once, so players can plan. Clash Royale and Marvel Snap show the whole battlefield, so both sides are always readable." },
+        { "t": "f2p", "text": "A static board needs **juice** to feel alive: pieces that wiggle while idle, bursts on matches, combo text, screen shake on big boosters, characters reacting at the edges." },
+        { "t": "hook", "text": "A static camera is a puppet stage. The stage never moves, so the puppets had better dance." }
+      ],
+      "check": { "q": "What's the main risk of a static camera?", "options": ["The screen can feel lifeless without animation", "Players get motion sick", "It's too hard to program"], "answer": 0, "why": "With no camera movement, life must come from animation and effects." }
+    },
+    {
+      "id": "L06-l03",
+      "title": "Scrolling: a window over a bigger world",
+      "min": 3,
+      "deep": "Scrollable camera",
+      "cards": [
+        { "t": "idea", "text": "A **scrollable camera** is a window you slide over a bigger world. You keep the clarity of a fixed screen and add the fun of exploring." },
+        { "t": "how", "text": "Keep the scrolling controls simple. Tune the camera's speed-up and slow-down with your programmer. Too twitchy and players shoot past things; too sluggish and the game feels stuck. Offer several scroll speeds." },
+        { "t": "see", "text": "Clash of Clans and Hay Day let you drag to move around your base and pinch to zoom. Candy Crush's saga map scrolls up through the levels." },
+        { "t": "f2p", "text": "Scrolling can tease. Saga maps show the next world blurred or locked just above you. Base builders put a locked zone at the edge of your land. The scroll itself shows what's coming next." },
+        { "t": "hook", "text": "A scrolling camera is a flashlight on a dark map." }
+      ],
+      "check": { "q": "How do saga maps use scrolling to keep players going?", "options": ["They show the next area just ahead, locked or blurred", "They hide all future areas", "They scroll automatically to the end"], "answer": 0, "why": "Seeing what's next creates anticipation." }
+    },
+    {
+      "id": "L06-l04",
+      "title": "Parallax and the forced scroll",
+      "min": 3,
+      "deep": "Parallax",
+      "cards": [
+        { "t": "idea", "text": "**Parallax scrolling** slides background layers at different speeds, making a flat world feel deep. **Forced scrolling** keeps moving whether the player wants it or not." },
+        { "t": "how", "text": "Plain parallax: the world moves with you, like scenery past a treadmill. Forced scroll: the screen pushes you forward and you must keep up. Rogers says use forced scrolling sparingly, unless the whole game is built on it." },
+        { "t": "see", "text": "Endless runners like Subway Surfers and Temple Run are forced scroll: you never stop. Side-view games like Hill Climb Racing use layered parallax for depth that costs almost nothing." },
+        { "t": "f2p", "text": "Test fast runners on your cheapest supported phone. Weak devices can load the next chunk of world too slowly. A forced-scroll bonus round inside a calm game adds a spike of excitement." },
+        { "t": "hook", "text": "Plain scroll: you're on a treadmill. Forced scroll: the treadmill is chasing you, and it has teeth." }
+      ],
+      "check": { "q": "Which game is built entirely on forced scrolling?", "options": ["Subway Surfers", "Candy Crush", "Clash of Clans"], "answer": 0, "why": "Runners push you forward constantly. That's forced scrolling." }
+    },
+    {
+      "id": "L06-l05",
+      "title": "First person, and motion sickness",
+      "min": 3,
+      "deep": "First person camera",
+      "cards": [
+        { "t": "idea", "text": "**First person** gives the most immersion and precise aiming. But you lose awareness of your surroundings, you don't see your hero, and some players feel sick." },
+        { "t": "how", "text": "**Motion sickness** happens when your eyes see movement your body doesn't feel. Reduce it:\n- keep the frame rate high\n- limit weapon and head bob\n- move the camera gently\n- avoid frequent height changes" },
+        { "t": "see", "text": "When a player is nearly dead, never cover the whole screen with effects. That's exactly when they most need to see. Use edges and direction indicators instead." },
+        { "t": "f2p", "text": "Mobile shooters like Call of Duty: Mobile offer first- and third-person modes. Add \"reduce camera shake\" and field-of-view settings. High frame rates drain battery, so keep camera motion smooth even at 30 fps." },
+        { "t": "hook", "text": "FRAMES: Frame rate, Rein in bob, Anchor points, Move gently, Elevation rare, Smooth floors." }
+      ],
+      "check": { "q": "What causes motion sickness in games?", "options": ["Eyes see movement the body doesn't feel", "Bright colours", "Loud sound"], "answer": 0, "why": "The mismatch between sight and balance causes the sick feeling." }
+    },
+    {
+      "id": "L06-l06",
+      "title": "Third person, and four camera traps",
+      "min": 3,
+      "deep": "Third person camera",
+      "cards": [
+        { "t": "idea", "text": "A camera behind the hero shows both the hero and the world. But a good **follow cam** may be the hardest thing a team builds. Treat it like a person who needs a spotter." },
+        { "t": "how", "text": "Four traps:\n- **passing through walls:** the illusion breaks\n- **controls:** pushing up should never look down, unless it's a plane\n- **corners:** the camera flips between objects\n- **position:** losing the best view" },
+        { "t": "see", "text": "Fixes: make objects between camera and hero see-through (never make them vanish completely). Keep gameplay away from corners with visible barriers like walls and shrubs, not invisible walls." },
+        { "t": "f2p", "text": "In top-down mobile action like Archero, the camera is fixed and keeps the hero centred, because one thumb can't manage a camera. A slight look-ahead in the movement direction helps players see danger coming." },
+        { "t": "hook", "text": "Some Cameras Can't Park: Sorting, Controls, Corners, Position." }
+      ],
+      "check": { "q": "What's the number one cause of a flipping camera?", "options": ["Corners", "Bright lights", "Fast music"], "answer": 0, "why": "In corners the camera bounces between objects looking for a spot. Keep players out of them." }
+    },
+    {
+      "id": "L06-l07",
+      "title": "Let, lock or lend the camera",
+      "min": 3,
+      "deep": "Giving Up Control",
+      "cards": [
+        { "t": "idea", "text": "Players who control the camera point it into walls and miss your best moments. You have three choices: **let** them control it, **lock** it yourself, or **lend** it only when needed." },
+        { "t": "how", "text": "Locking the camera means one less thing for players to worry about, better-looking shots, and no \"what did I miss?\". You can build the world like a theatre set, because nobody sees the back." },
+        { "t": "see", "text": "Disneyland's Haunted Mansion is a designer-controlled camera: the ride carts always point guests at the best scene. God of War built environments like theatre sets for the same reason." },
+        { "t": "f2p", "text": "The most important rule when you take control away: **make it clear the player doesn't have it.** Once they know, they stop fighting the camera and focus on playing." },
+        { "t": "hook", "text": "Let, Lock, Lend. Whichever door you open, put a sign on it." }
+      ],
+      "check": { "q": "What must you do if players can't control the camera?", "options": ["Make it clear that they don't have control", "Hide that fact", "Change it randomly"], "answer": 0, "why": "When players know, they stop trying and focus on the game." }
+    },
+    {
+      "id": "L06-l08",
+      "title": "2.5D, isometric and God view",
+      "min": 3,
+      "deep": ["Two and a Half D", "Isometric camera"],
+      "cards": [
+        { "t": "idea", "text": "**2.5D** puts 3D models under 2D camera rules: modern looks with old-school readability. **Isometric** is the \"toy box\" view, angled from above, so layouts read instantly." },
+        { "t": "how", "text": "Isometric works great for building and strategy games. Its weakness is height: something higher and closer can land on the same spot as something lower and farther away. Pull far back and you get **God view**, for ruling empires." },
+        { "t": "see", "text": "Clash of Clans, Boom Beach, Hay Day and Township use the isometric toy-box angle. Strategy games like Rise of Kingdoms zoom out from your city to a God-view world map with icons." },
+        { "t": "f2p", "text": "Isometric units get tiny on phones. Exaggerate their silhouettes, use team colours, and add health bars or icons above them. Keep the playfield mostly flat to avoid height confusion." },
+        { "t": "hook", "text": "Isometric: toys on the bedroom floor. God view: the bedroom seen from the ceiling fan." }
+      ],
+      "check": { "q": "What's the main weakness of an isometric view?", "options": ["It's hard to tell heights apart", "It can't show buildings", "It causes motion sickness"], "answer": 0, "why": "Higher-but-closer and lower-but-farther things can look like they're in the same place." }
+    },
+    {
+      "id": "L06-l09",
+      "title": "Top-down, flying, swimming and tunnels",
+      "min": 3,
+      "deep": ["Top-down camera", "Special case", "Tunnel vision"],
+      "cards": [
+        { "t": "idea", "text": "Looking straight **down** is old-fashioned but still great for arcade action, if you don't need depth or a close look at the hero. Special movement, like flying, swimming and tunnels, needs its own camera plan." },
+        { "t": "how", "text": "- Top-down: great for seeing where everyone is, bad for seeing faces.\n- Swimming: the camera should stay with you, smoothly, under the surface.\n- Tight tunnels: put the camera on a **rail**, a fixed path." },
+        { "t": "see", "text": "Caves, sewers and dungeons wreck free cameras. A rail camera fixes the problem and adds a feeling of tight, closed-in space for free." },
+        { "t": "f2p", "text": "Survivor.io and many mobile shooters are top-down: easy to read, easy to control with one thumb. Give characters big heads or clear shapes, so they read from above." },
+        { "t": "hook", "text": "In a tunnel, put the camera on train tracks. Trains don't get lost in caves." }
+      ],
+      "check": { "q": "What's the best camera for a tight tunnel?", "options": ["A rail camera on a fixed path", "A free camera the player controls", "First person only"], "answer": 0, "why": "Free cameras get stuck in tight spaces. A rail camera stays clean." }
+    },
+    {
+      "id": "L06-l10",
+      "title": "Shot sizes: the 5-second film school",
+      "min": 3,
+      "deep": "Camera shot guide",
+      "cards": [
+        { "t": "idea", "text": "Film has shared names for how much of a subject fills the frame. **Use shot sizes to control emotion, information and drama**, in cutscenes and in play." },
+        { "t": "how", "text": "From far to near:\n- **extreme wide:** the whole world, the place\n- **wide:** the full character in their setting\n- **medium:** waist up, for conversation\n- **close-up:** the face, for emotion\n- **extreme close-up:** one detail, for drama" },
+        { "t": "see", "text": "Open a new area with a wide shot so players see where they are. Cut to a close-up when a character makes an important decision." },
+        { "t": "f2p", "text": "On a phone screen, wide shots make characters tiny. Use closer shots for character moments, and wide shots for showing off a new area, a finished room or a big reward." },
+        { "t": "hook", "text": "Every Very Wide Movie Makes Close Encounters." }
+      ],
+      "check": { "q": "Which shot best shows a character's emotion?", "options": ["Close-up", "Extreme wide shot", "Wide shot"], "answer": 0, "why": "Close-ups fill the frame with the face, where emotion shows." }
+    },
+    {
+      "id": "L06-l11",
+      "title": "Camera angles change how things feel",
+      "min": 2,
+      "deep": "Camera angle guide",
+      "cards": [
+        { "t": "idea", "text": "Where the camera sits compared with the subject changes how it feels. **Low angles make things powerful. High angles make them small and weak.**" },
+        { "t": "how", "text": "- **Low angle** (looking up): bosses look huge and scary.\n- **High angle** (looking down): characters look weak or trapped.\n- **Eye level:** neutral and clear.\n- **Dutch tilt** (camera tilted sideways): the world feels wrong, creepy or crazy." },
+        { "t": "see", "text": "A boss introduction usually starts with a low-angle shot. The player feels small before the fight begins." },
+        { "t": "f2p", "text": "Use a low angle in a gacha reveal or a new-hero showcase to make the character feel powerful and worth having." },
+        { "t": "hook", "text": "Low angle: the boss is a skyscraper. High angle: the boss is a chess piece." }
+      ],
+      "check": { "q": "Which angle makes a boss look most powerful?", "options": ["A low angle, looking up", "A high angle, looking down", "A Dutch tilt"], "answer": 0, "why": "Looking up at something makes it feel big and dominant." }
+    },
+    {
+      "id": "L06-l12",
+      "title": "Camera moves",
+      "min": 2,
+      "deep": "Camera movement guide",
+      "cards": [
+        { "t": "idea", "text": "How the camera moves is an art in itself. **Borrow film's standard moves** to make cameras and cutscenes feel cinematic." },
+        { "t": "how", "text": "- **pan and tilt:** turn the camera sideways or up and down\n- **dolly:** move the whole camera forward or back\n- **zoom:** change the lens to get closer\n- **follow and arc:** track a subject, or circle around it" },
+        { "t": "see", "text": "The **dolly zoom** moves the camera back while zooming in. The background seems to stretch while the subject stays the same size. It's the classic \"something just went very wrong\" shot." },
+        { "t": "f2p", "text": "Short, smooth camera moves make rewards feel bigger: a quick push-in on a chest opening, a slow arc around a newly built building. Keep them skippable." },
+        { "t": "hook", "text": "A Dizzy Fox Pedals Past Ten Donut Zones: Arc, Dolly zoom, Follow, Pedestal, Pan, Tilt, Dolly, Zoom." }
+      ],
+      "check": { "q": "What does a dolly move do?", "options": ["Moves the whole camera forward or back", "Turns the camera sideways", "Tilts it up and down"], "answer": 0, "why": "A dolly physically moves the camera. Pan and tilt only rotate it." }
+    },
+    {
+      "id": "L06-l13",
+      "title": "Composition: thirds and the line",
+      "min": 3,
+      "deep": "composition",
+      "cards": [
+        { "t": "idea", "text": "You're the director now. **Good composition** and **keeping screen direction consistent** make shots look intentional and keep players oriented." },
+        { "t": "how", "text": "**Rule of thirds:** draw two lines across and two down, like tic-tac-toe. Put the most important subject where lines cross, not dead centre. **Don't cross the line:** keep the camera on one side of the action, so left stays left." },
+        { "t": "see", "text": "If one shot shows the hero running left and the next shot is from the other side, he suddenly seems to run right. Players get confused about where they're going." },
+        { "t": "f2p", "text": "Use thirds in store screenshots and ad frames: the hero on one third, the action or reward on another. It instantly looks more professional." },
+        { "t": "hook", "text": "Tic-tac-toe your shot, and treat the line like a velvet rope." }
+      ],
+      "check": { "q": "Where does the rule of thirds put the main subject?", "options": ["Where the third-lines cross", "Exactly in the centre", "At the very edge"], "answer": 0, "why": "Off-centre placement on the thirds looks balanced and intentional." }
+    },
+    {
+      "id": "L06-l14",
+      "title": "Point the camera at the objective",
+      "min": 3,
+      "deep": "objective",
+      "cards": [
+        { "t": "idea", "text": "The camera's job is to tell the player **what to look at**: the puzzle, the enemy, the exit, the best view. **Show everything they need, and don't make them guess.**" },
+        { "t": "how", "text": "When a player enters a new area, frame the goal. When a door opens somewhere else, show it. A camera that points the wrong way makes players wander." },
+        { "t": "see", "text": "Many games briefly swing the camera to show a gate opening after you pull a lever. One second of camera time saves minutes of searching." },
+        { "t": "f2p", "text": "On mobile, the \"camera\" is often the screen layout: the next goal glows, the map scrolls to the next node, the event button pulses. Always point at the next thing." },
+        { "t": "hook", "text": "The camera is a tour guide with a red umbrella." }
+      ],
+      "check": { "q": "A lever opens a gate far away. What should the camera do?", "options": ["Briefly show the gate opening", "Stay still", "Shake"], "answer": 0, "why": "Showing the result tells players where to go next." }
+    },
+    {
+      "id": "L06-l15",
+      "title": "Never lose sight of the hero",
+      "min": 2,
+      "deep": "Never let the character",
+      "cards": [
+        { "t": "idea", "text": "Players must **always know where their character is.** If walls or objects hide the hero, use tricks to show them anyway." },
+        { "t": "how", "text": "Tricks:\n- show an outline or silhouette through walls\n- make the blocking object see-through\n- leave gaps in the scenery\n- point an arrow at the hero\nNever make the camera act differently while the hero is hidden." },
+        { "t": "see", "text": "Many games show a glowing outline of your character when they walk behind a building. You always know where you are." },
+        { "t": "f2p", "text": "In top-down mobile games, walls and bushes that hide the player get see-through or outlined. Brawl Stars shows your brawler even inside bushes, while enemies can't see you." },
+        { "t": "hook", "text": "A ghost in X-ray glasses, holding a neon arrow pointing at your hero." }
+      ],
+      "check": { "q": "Your hero walks behind a tall building. What's a good fix?", "options": ["Show the hero's outline through the building", "Let the hero disappear", "Move the building"], "answer": 0, "why": "Players must always see where their character is." }
+    },
+    {
+      "id": "L06-l16",
+      "title": "Cameras for several players",
+      "min": 2,
+      "deep": "Multiple player cameras",
+      "cards": [
+        { "t": "idea", "text": "One camera for several players needs a plan: **split the screen, zoom out to fit everyone, or show small extra views.**" },
+        { "t": "how", "text": "- **Split screen:** each player gets part of the screen.\n- **Zoom to fit:** the camera widens when players spread out.\n- **Picture in picture:** small windows show other players, which works well in sports games." },
+        { "t": "see", "text": "LittleBigPlanet zooms out when players spread apart and shows arrows pointing to anyone off screen." },
+        { "t": "f2p", "text": "Mobile multiplayer is usually one player per phone, so split screen is mostly gone. The new challenge is tracking others on a small screen: mini-maps, arrows at the screen edge and teammate markers." }
+      ],
+      "check": { "q": "What's the main camera challenge in mobile multiplayer?", "options": ["Tracking other players on one small screen", "Splitting the screen four ways", "Sharing one phone"], "answer": 0, "why": "Each player has their own phone, so the job is showing where others are." }
+    }
+  ]
+}
