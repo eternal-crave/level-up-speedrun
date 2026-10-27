@@ -1,0 +1,179 @@
+{
+  "mod": "L12",
+  "words": [
+    { "w": "mechanic", "d": "an object in a level that does something when you interact with it: a door, a switch, a moving platform" },
+    { "w": "hazard", "d": "a mechanic that hurts you, like spikes or a flame jet" },
+    { "w": "prop", "d": "an object that sits still until you interact with it, like a crate or a statue" },
+    { "w": "blocker", "d": "the match-3 word for an obstacle on the board, like ice or a crate" },
+    { "w": "flow", "d": "the absorbed feeling between boredom and frustration, where time disappears" },
+    { "w": "checkpoint", "d": "a saved spot where you restart after failing" },
+    { "w": "minigame", "d": "a small, simple game inside a bigger one" }
+  ],
+  "lessons": [
+    {
+      "id": "L12-l01",
+      "title": "Four kinds of stuff fill a level",
+      "min": 3,
+      "deep": "Intro",
+      "cards": [
+        { "t": "idea", "text": "An empty level is just a hallway. **Walking is not gameplay.** Fill levels with four kinds of stuff: **mechanics, hazards, props and puzzles.**" },
+        { "t": "how", "text": "- **Mechanics:** objects that do something when you use them (doors, switches, moving platforms).\n- **Hazards:** mechanics that hurt you.\n- **Props:** objects that sit still until you touch them.\n- **Puzzles:** challenges with a right answer." },
+        { "t": "see", "text": "A match-3 board is mostly mechanics and hazards (the blockers) plus a puzzle (the level goal). A merge board adds props: decorations you place and enjoy." },
+        { "t": "f2p", "text": "Note: \"mechanics\" means different things to different designers. Board-game designers mean rule systems, like turns or dice. In this chapter, a mechanic is an object you interact with." }
+      ],
+      "check": { "q": "A block of ice on a match-3 board that you must clear is a…", "options": ["Hazard (a blocker)", "Prop", "Checkpoint"], "answer": 0, "why": "It's an obstacle that gets in your way, which is the hazard role in match-3." }
+    },
+    {
+      "id": "L12-l02",
+      "title": "Doors, switches and levers",
+      "min": 3,
+      "deep": "Intro",
+      "cards": [
+        { "t": "idea", "text": "Even a door is a design decision. **How the player opens it should match the character**, and the method should **stay the same for the whole game.**" },
+        { "t": "how", "text": "A brute kicks doors open. A spy opens them carefully. A soldier blows them up. A locked door must show instantly **why** you can't pass: a huge lock, solid metal, immovable rubble." },
+        { "t": "see", "text": "A lone lever in an empty room screams \"video game\". When did you last pull a lever? Keep switches simple and realistic, so cause and effect are easy to read." },
+        { "t": "f2p", "text": "In mobile games, locked doors become \"unlocks at level X\" or a key you collect. The rule is the same: the player must instantly see why it's locked and what opens it." },
+        { "t": "hook", "text": "Doors, levers, cranks: three ways a level says \"not yet\"." }
+      ],
+      "check": { "q": "What must a locked door make clear?", "options": ["Why you can't pass right now", "Nothing: let players guess", "That it will never open"], "answer": 0, "why": "An unclear lock just frustrates. A clear one gives the player a goal." }
+    },
+    {
+      "id": "L12-l03",
+      "title": "Hazards must look dangerous and be fair",
+      "min": 3,
+      "deep": "Death Trap",
+      "cards": [
+        { "t": "idea", "text": "A **hazard** is a mechanic that hurts. Unlike enemies, hazards aren't smart. So they **must move in predictable patterns** and **must clearly look dangerous.**" },
+        { "t": "how", "text": "Make danger obvious with every tool: spiky or flaming shapes, warning colours, sounds and particles. Match hazards to the level's theme, like lava in a volcano and falling icicles on a mountain." },
+        { "t": "see", "text": "**Instant death that comes out of nowhere is cheap.** If a player dies, it should be because they weren't paying attention or mistimed it. Rogers calls the unfair kind \"dropping rocks on the player's head\"." },
+        { "t": "f2p", "text": "Rocks on the head in F2P:\n- a match-3 board you can't win, however you play\n- a runner obstacle you can't see in time\n- a surprise that fails the level with no warning\nEvery unfair loss is a reason to quit." },
+        { "t": "hook", "text": "If players die, they should blame their thumbs, not your name in the credits." }
+      ],
+      "check": { "q": "When is a hazard death fair?", "options": ["When the player could see it coming and mistimed it", "When it's a surprise with no warning", "When it's random"], "answer": 0, "why": "Fair deaths come from the player's own mistake, so they want to try again." }
+    },
+    {
+      "id": "L12-l04",
+      "title": "Challenge, not difficulty",
+      "min": 3,
+      "deep": "Death Trap",
+      "cards": [
+        { "t": "idea", "text": "**Challenge** builds skill: it puts obstacles in front of you that skill can beat. **Difficulty** just punishes. **Aim for challenge.**" },
+        { "t": "how", "text": "Very hard games make a proud few finish. Challenging games let most players finish and feel smart. Rogers talks about a \"fun curve\": the point where challenge tips into frustration. Never cross it." },
+        { "t": "see", "text": "The fix is **ramping**: teach one move, let the player master it, then combine and intensify slowly. Each system builds on the one before." },
+        { "t": "f2p", "text": "In F2P, \"challenging, not difficult\" is a business rule: unfair deaths cost players. And the ethics line: a near-miss from real skill is challenge. A near-miss **engineered** to sell +5 moves is manipulation." }
+      ],
+      "check": { "q": "What's the difference between challenge and difficulty?", "options": ["Challenge can be beaten with skill; difficulty just punishes", "There is none", "Difficulty is more fun"], "answer": 0, "why": "Challenge rewards learning. Difficulty frustrates, and most players quit." }
+    },
+    {
+      "id": "L12-l05",
+      "title": "Timing puzzles: wait for it… go!",
+      "min": 3,
+      "deep": "Time to Die",
+      "cards": [
+        { "t": "idea", "text": "A **timing puzzle** is a hazard that moves, like spinning blades or a flame jet. It creates tension: wait… wait… now! **It only feels fair if the player can read the pattern.**" },
+        { "t": "how", "text": "Four rules:\n- a movement pattern the eye can follow\n- predictable timing, never random\n- a tight but possible safe window, with some extra time at both edges\n- **tells**: signs that show when and where it's safe" },
+        { "t": "see", "text": "A flame jet first flickers (warning), then blasts (danger), then smokes (go!). The flicker is the tell. Players learn it after one look." },
+        { "t": "f2p", "text": "In runners and hyper-casual games, every obstacle needs a readable tell at phone size. If players can't see the warning on a small screen, the hazard is unfair." },
+        { "t": "hook", "text": "Wait for it… wait for it… go for it!" }
+      ],
+      "check": { "q": "Why is random timing bad for a timing puzzle?", "options": ["Players can't learn the pattern", "It's too easy", "It costs more to build"], "answer": 0, "why": "Timing puzzles reward learning. Random timing makes success luck, not skill." }
+    },
+    {
+      "id": "L12-l06",
+      "title": "Props, breakables and the crate problem",
+      "min": 3,
+      "deep": "Time to Die",
+      "cards": [
+        { "t": "idea", "text": "**Props** make a level feel like a real place: desks, cars, statues, trees. **Let players interact with them**, and breakable props can drop treasure or open new paths." },
+        { "t": "how", "text": "To brainstorm props, start with the obvious items for the setting, then branch out. When your list turns silly, you've emptied the well. Rest a day, or research with books, games and films." },
+        { "t": "see", "text": "In the Lego games, almost everything smashes into studs (the game's money). Smashing junk for loot feels great. But crates are the lazy default. Try a vase, a mailbox, a fish tank or a tiki idol instead." },
+        { "t": "f2p", "text": "On mobile, \"breakables\" are piñatas, gift boxes, gumball machines and mystery eggs. Make each one look different, so opening it feels special." },
+        { "t": "hook", "text": "A crate is the placeholder text of level design." }
+      ],
+      "check": { "q": "Why does Rogers dislike crates?", "options": ["They're a boring, lazy default for breakables", "They're hard to build", "Players can't break them"], "answer": 0, "why": "Crates are everywhere. A themed breakable makes the world feel original." }
+    },
+    {
+      "id": "L12-l07",
+      "title": "Compose your level like music",
+      "min": 3,
+      "deep": "Music of Mechanics",
+      "cards": [
+        { "t": "idea", "text": "Placing mechanics, hazards and enemies is like **composing music.** Bring in each instrument one at a time, let it be learned, then layer them toward a big finish. Done well, this creates **flow**." },
+        { "t": "how", "text": "The 7-step recipe:\n1. simple movement\n2. one mechanic, repeated\n3. a second mechanic, then both together\n4. a hazard\n5. enemies, with room to learn them\n6. enemies and hazards together\n7. a twist: flip one element to keep players alert" },
+        { "t": "see", "text": "**Flow** is the sweet spot between boredom and frustration. Players get absorbed and lose track of time. It's the goal of good level design." },
+        { "t": "f2p", "text": "This is exactly how match-3 levels are built. A new blocker gets a showcase level where it appears almost alone. It shows up a few more times, then combines with older blockers." },
+        { "t": "hook", "text": "Strings, flute, oboe, wolf, drums: move, collect, mechanics, enemies, finale." }
+      ],
+      "check": { "q": "A new blocker first appears in a match-3. What's the best first level for it?", "options": ["A level where it appears almost alone", "A level with five other new blockers", "The hardest level of the chapter"], "answer": 0, "why": "Introduce one new thing at a time. Combine it with others only after it's learned." }
+    },
+    {
+      "id": "L12-l08",
+      "title": "A few mechanics, many combinations",
+      "min": 3,
+      "deep": "Music of Mechanics",
+      "cards": [
+        { "t": "idea", "text": "You don't need many mechanics. **Three good ones can make dozens of combinations.** The magic is in how you combine them." },
+        { "t": "how", "text": "Design enemies and hazards to work together, like peanut butter and chocolate. Then rotate mechanics like baseball pitchers: use one for a while, rest it, bring it back. Overuse kills a mechanic." },
+        { "t": "see", "text": "A fire pit, a moving obstacle and a spinning blade. On their own they're simple. Combined, they give tense jumps, timing runs and enemy traps." },
+        { "t": "f2p", "text": "Good match-3 games don't put every blocker in every level. They rotate a few, so each level has its own personality. Runners rotate obstacle sets by zone." },
+        { "t": "hook", "text": "Rotate mechanics like pitchers. Even your best one gets tired if it plays every inning." }
+      ],
+      "check": { "q": "Why rotate mechanics instead of using all of them everywhere?", "options": ["Each one stays fresh and effective", "It saves memory", "Players prefer fewer levels"], "answer": 0, "why": "Overuse makes any mechanic boring. Rotation keeps levels distinct." }
+    },
+    {
+      "id": "L12-l09",
+      "title": "Checkpoints: a calm spot to restart",
+      "min": 3,
+      "deep": "Calm Spot",
+      "cards": [
+        { "t": "idea", "text": "**Checkpoints** let players save progress, catch their breath and rethink. They can be visible or invisible, but they must be **safe and automatic.**" },
+        { "t": "how", "text": "Five rules:\n- face the player in the direction they're travelling\n- never next to a hazard or inside an enemy's range\n- restart on the ground, with no long animation\n- on flat, even ground\n- save automatically, never through a menu" },
+        { "t": "see", "text": "Respawning next to a flame jet and burning before you can move feels cheap. Respawning facing a wall, so you must turn the camera, feels clumsy." },
+        { "t": "f2p", "text": "On mobile, the whole app is a checkpoint machine. Calls and notifications interrupt constantly, so save on every action and resume exactly where the player left off. Continues (\"Save me\") should restart you somewhere safe." }
+      ],
+      "check": { "q": "Where should you never put a checkpoint?", "options": ["Next to a hazard or an enemy", "On flat ground", "Facing the way forward"], "answer": 0, "why": "Taking damage right as you respawn is unfair and annoying." }
+    },
+    {
+      "id": "L12-l10",
+      "title": "Puzzles: show the door, then the key",
+      "min": 3,
+      "deep": "Riddle Me This",
+      "cards": [
+        { "t": "idea", "text": "Rogers' definition: **a puzzle is a challenge with a right answer.** The player must know what they're trying to do and what they'll get. **Show them the door, then send them after the key.**" },
+        { "t": "how", "text": "- Keep pieces simple and few.\n- When a piece changes, the player must see it change.\n- Always give a clear way to reset.\n- One simple action should give a visible result, so the player feels closer." },
+        { "t": "see", "text": "Avoid weird logic. In Resident Evil 2, you place chess pieces in a panel to open a door in a police station. Why would a police station need chess pieces? Strange logic makes players feel stupid." },
+        { "t": "f2p", "text": "The level goal in a puzzle game is the \"door\": show it before the first move (\"Collect 20 red gems\"). The player then hunts for the \"key\": the moves that reach it." },
+        { "t": "hook", "text": "Door first, then key." }
+      ],
+      "check": { "q": "What should a player know before solving a puzzle?", "options": ["The goal and the reward", "Nothing: discovery is the fun", "Only the reward"], "answer": 0, "why": "Players need to know what they're trying to do, or they're just guessing." }
+    },
+    {
+      "id": "L12-l11",
+      "title": "Four ways to solve, and fair hints",
+      "min": 3,
+      "deep": "Riddle Me This",
+      "cards": [
+        { "t": "idea", "text": "Players solve puzzles by **reason, knowledge, skill or luck.** The best puzzles allow all four. And **moving forward is something the player is owed, not a prize they earn.**" },
+        { "t": "how", "text": "Aim for the **\"aha!\" moment**: the instant the player sees how it fits. After that, doing the solution should be quick. If a player is stuck, keep the stakes low: offer hints, or even the full answer." },
+        { "t": "see", "text": "In Professor Layton games, hints cost a little: you score fewer points the more hints you use. A small price, never a severe one like losing a life." },
+        { "t": "f2p", "text": "Paid hints and skips are fine in F2P if they're the player's choice and the price is mild. Hiding the only way forward behind a big payment is not." },
+        { "t": "hook", "text": "Reason, Knowledge, Skill, Luck: \"RKSL\", say it like \"rascal\"." }
+      ],
+      "check": { "q": "A player is stuck on a puzzle. What should the game do?", "options": ["Offer hints or the answer at a small price", "Take away a life", "Lock the game until it's solved"], "answer": 0, "why": "Progress is owed to the player. Help should cost a little, never a lot." }
+    },
+    {
+      "id": "L12-l12",
+      "title": "Minigames and microgames",
+      "min": 3,
+      "deep": "Minigames",
+      "cards": [
+        { "t": "idea", "text": "A **minigame** is a small, simple game for variety or to represent an activity. A **microgame** lasts only seconds. Rogers believes almost any activity can become a minigame." },
+        { "t": "how", "text": "Rules:\n- simple controls, one action per button\n- short: 5 to 10 minutes, or seconds for a microgame\n- gentle difficulty: variety, not torture\n- something new at each step, even just new art or music\n- a clear way to win" },
+        { "t": "see", "text": "Whack-a-Mole is the last resort. It's reaction only, random, repetitive, needs almost no input, and never ends. Players quit from boredom, not victory." },
+        { "t": "f2p", "text": "Minigames are everywhere in mobile:\n- ads built on pull-the-pin and pick-a-path puzzles\n- event minigames like dice boards and digging\n- hyper-casual games are often one microgame stretched into a product" },
+        { "t": "hook", "text": "Whack-a-Mole's five sins: reflex-only, random, repetitive, one input, endless." }
+      ],
+      "check": { "q": "Why is Whack-a-Mole a weak design?", "options": ["No decisions, no strategy, and no real end", "It's too hard", "It needs too many buttons"], "answer": 0, "why": "It relies only on reflexes and randomness, so it gets boring fast." }
+    }
+  ]
+}
