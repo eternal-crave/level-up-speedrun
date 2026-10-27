@@ -1,0 +1,392 @@
+{
+  "mod": "F2P2",
+  "words": [
+    { "w": "IAP", "d": "in-app purchase: anything bought with real money inside the game" },
+    { "w": "gacha", "d": "paying for a random reward, like a capsule-toy machine" },
+    { "w": "pity", "d": "a guarantee that you get the top prize after a set number of tries" },
+    { "w": "battle pass", "d": "a reward track you climb by playing; paying unlocks a better track" },
+    { "w": "rewarded ad", "d": "an ad the player chooses to watch in exchange for a reward" },
+    { "w": "LiveOps", "d": "running a game after launch: events, offers, seasons and fixes" },
+    { "w": "A/B test", "d": "showing two versions to two random groups and comparing results" },
+    { "w": "dark pattern", "d": "a design that tricks players into acting against their own interest" }
+  ],
+  "lessons": [
+    {
+      "id": "F2P2-l01",
+      "title": "Players buy feelings, not gems",
+      "min": 3,
+      "deep": "Monetization design",
+      "cards": [
+        { "t": "idea", "text": "Nobody wants gems. Players pay for **an outcome or a feeling**: progress, power, saved time, self-expression, status or belonging. Sell that outcome **at the moment they want it**, at a fair price." },
+        { "t": "how", "text": "The main things you can sell:\n- **consumables:** used up (extra moves, revives)\n- **durables:** kept forever (a hero, \"Remove Ads\")\n- **cosmetics:** looks only (skins, emotes)\n- **subscriptions and passes:** steady value over time" },
+        { "t": "see", "text": "Consumables pay the bills. Durables and cosmetics build attachment. Passes and subscriptions build a daily habit and predictable money." },
+        { "t": "f2p", "text": "Have something at every depth: free (daily gift, ads), tiny ($1–3), medium ($5–20) and big ($50–100). Nothing small means nobody starts. Nothing big means your biggest fans can't support you." },
+        { "t": "hook", "text": "A store is a vending machine in a dungeon: put it where people get hungry." }
+      ],
+      "check": { "q": "Why are cosmetics called the ethical gold standard?", "options": ["They change looks, not power", "They are the cheapest item", "They are always random"], "answer": 0, "why": "Cosmetics let players express themselves without making the game pay-to-win." }
+    },
+    {
+      "id": "F2P2-l02",
+      "title": "The store is a level too",
+      "min": 3,
+      "deep": "Monetization design",
+      "cards": [
+        { "t": "idea", "text": "Design the store like a level: it has a layout, a flow, a **first thing you see** and a reason to come back." },
+        { "t": "how", "text": "A typical store, top to bottom:\n- featured offer (most attention)\n- daily deals with a **free daily gift**\n- passes and bundles\n- a ladder of currency packs, where bigger packs give a bigger bonus\n- cosmetics and a free ad corner" },
+        { "t": "see", "text": "The free daily gift trains players to visit the store every day. They see the offers without being nagged." },
+        { "t": "f2p", "text": "Offers also appear in context: out of moves, before a boss, after a big win. Limit pop-ups to one or two per session. Ten pop-ups before the player can play is how you lose them." }
+      ],
+      "check": { "q": "What does a free daily gift in the store do?", "options": ["Brings players to the store daily without nagging", "Replaces all paid items", "Removes ads"], "answer": 0, "why": "A daily visit means players see the offers naturally." }
+    },
+    {
+      "id": "F2P2-l03",
+      "title": "Prices that feel fair",
+      "min": 3,
+      "deep": "Monetization design",
+      "cards": [
+        { "t": "idea", "text": "The price a player sees first becomes their reference. **Anchoring** and **value framing** are powerful, so use them honestly." },
+        { "t": "how", "text": "- **Anchor:** a $99.99 pack next to a $19.99 pack makes $19.99 feel reasonable.\n- **Decoy:** a third, worse-value option makes another option look smart.\n- **Concrete value:** \"enough for 10 pulls\" beats \"1,200 gems\"." },
+        { "t": "see", "text": "A $1.99 offer for 5 more moves feels cheap on a level you've failed 8 times. The same offer in the menu feels pointless. Price fits the moment." },
+        { "t": "f2p", "text": "Traps to avoid: fake \"was $20\" prices that never existed, confusing exchange rates, and packs that always leave you 20 gems short. Set prices per region too: an impulse buy in the US can be a day's wage elsewhere." }
+      ],
+      "check": { "q": "Why is \"was $20, now $5\" risky?", "options": ["If the $20 price never existed, it's deceptive", "Players hate discounts", "Stores don't allow sales"], "answer": 0, "why": "Fake reference prices are a dark pattern, and some countries' laws restrict them." }
+    },
+    {
+      "id": "F2P2-l04",
+      "title": "The first purchase is the hardest",
+      "min": 3,
+      "deep": "Monetization design",
+      "cards": [
+        { "t": "idea", "text": "**The hardest purchase is the first one.** After it, the card is saved and the mental barrier is gone. Repeat purchases become much more likely." },
+        { "t": "how", "text": "A good starter pack:\n- high value, low price ($1–5)\n- one time only, clearly labelled\n- shown after the player understands what the items do\n- usable right away, so the next session visibly changes" },
+        { "t": "see", "text": "Don't show the starter pack in the first 30 seconds. The player doesn't know what a \"Mythic Hero Shard\" is yet. Show it right after the first real challenge." },
+        { "t": "f2p", "text": "Don't punish non-payers. Most players never pay, and they still matter: they fill matches and clans, watch ads, tell friends, and some pay later." }
+      ],
+      "check": { "q": "When should a starter pack usually appear?", "options": ["After the player understands the items, often after the first real challenge", "On the first screen", "Only after a month"], "answer": 0, "why": "Players need to understand the value before they'll pay for it." }
+    },
+    {
+      "id": "F2P2-l05",
+      "title": "The right offer at the right moment",
+      "min": 3,
+      "deep": "Monetization design",
+      "cards": [
+        { "t": "idea", "text": "Group players by behaviour (**segments**) and show offers when a need appears (**triggered offers**). Match the offer to a real need." },
+        { "t": "how", "text": "Triggered offer examples:\n- out of moves → moves and booster bundle\n- new hero unlocked → upgrade bundle for that hero\n- back after 14 days away → welcome-back gift\nAdd cooldowns, daily caps and a priority rule." },
+        { "t": "see", "text": "Different prices for the same item for different people is risky. Players compare on Reddit and Discord. Personalize the **content and moment**, not the price." },
+        { "t": "f2p", "text": "Ethical line: never chase people who show compulsive patterns, like sending bigger offers to someone who spends at 3 a.m. every night." }
+      ],
+      "check": { "q": "What is the safer way to personalize offers?", "options": ["Change the content and timing, keep prices consistent", "Charge loyal players more", "Show every offer to everyone at once"], "answer": 0, "why": "Different prices for the same thing break trust when players find out." }
+    },
+    {
+      "id": "F2P2-l06",
+      "title": "Gacha: selling chance",
+      "min": 3,
+      "deep": "Gacha",
+      "cards": [
+        { "t": "idea", "text": "**Gacha** and loot boxes sell a **random** reward. Random rewards are very motivating, which also makes them close to gambling. Design them with math, honesty and guardrails." },
+        { "t": "how", "text": "Key words:\n- **pull:** one random draw\n- **banner:** a time-limited pool with featured items\n- **pity:** a guaranteed top prize after a set number of pulls\n- **spark:** pulls earn points you can trade for an item you choose" },
+        { "t": "see", "text": "Genshin Impact shows its pity rules and a history of your pulls. Players can plan and save instead of gambling blindly." },
+        { "t": "f2p", "text": "Ask first: does this game need gacha at all? Direct purchase, rotating shops, passes and crafting also work. Many hit games sell cosmetics directly." }
+      ],
+      "check": { "q": "What does a pity system do?", "options": ["Guarantees the top prize after a set number of pulls", "Lowers prices for poor players", "Removes duplicates"], "answer": 0, "why": "Pity puts a limit on how unlucky a player can be." }
+    },
+    {
+      "id": "F2P2-l07",
+      "title": "Averages lie, tails rage",
+      "min": 3,
+      "deep": "Gacha",
+      "cards": [
+        { "t": "idea", "text": "The average cost of a random prize hides the real problem: **the unlucky players**. They're the angry ones." },
+        { "t": "how", "text": "Say an item has a 1% chance per pull. On average it takes 100 pulls. But about **37%** of players still don't have it after 100 pulls. One in ten players needs **230 pulls or more**." },
+        { "t": "see", "text": "With pity at 80 pulls, **nobody** goes past 80. The worst case becomes known and plannable." },
+        { "t": "f2p", "text": "Economy designers calculate how many free pulls a non-payer earns per banner. A patient free player should be able to get some featured items by saving, or they feel locked out and leave." },
+        { "t": "hook", "text": "A gacha without pity is a slot machine wearing a cute hat." }
+      ],
+      "check": { "q": "With a 1% chance and no pity, how many players still miss the item after 100 pulls?", "options": ["About 37%", "0%", "About 1%"], "answer": 0, "why": "0.99 to the power of 100 is about 0.37. Averages hide the unlucky tail." }
+    },
+    {
+      "id": "F2P2-l08",
+      "title": "Fair gacha: PODS",
+      "min": 3,
+      "deep": "Gacha",
+      "cards": [
+        { "t": "idea", "text": "If you use gacha, follow **PODS**: **P**ity, **O**dds shown, **D**uplicates useful, **S**park or selector, so luck always turns into progress." },
+        { "t": "how", "text": "Duplicates are a hidden lever. A copy can add power, turn into crafting currency, or unlock an alternate look. Hearthstone turns duplicate cards into dust, so you can craft the card you want." },
+        { "t": "see", "text": "Laws differ by country and change often. Apple and Google require showing the odds. Belgium treated paid loot boxes as gambling. South Korea made odds disclosure law in 2024. Always check current rules." },
+        { "t": "f2p", "text": "Red lines: no fake near-misses, no cashing out items for real money, no loot boxes in games for kids, and real-money prices always visible." }
+      ],
+      "check": { "q": "What does the S in PODS stand for?", "options": ["Spark or selector", "Sales", "Skins"], "answer": 0, "why": "A spark lets players trade pulls for a chosen item, so bad luck still pays off." }
+    },
+    {
+      "id": "F2P2-l09",
+      "title": "The battle pass: buy the right to earn",
+      "min": 3,
+      "deep": "season pass",
+      "cards": [
+        { "t": "idea", "text": "A **battle pass** is a reward track you climb by playing during a season. Everyone gets a free track. Paying unlocks a premium track. **Players buy the chance to earn**, which feels fair." },
+        { "t": "how", "text": "- Seasons usually last about 4 weeks on mobile.\n- You earn pass XP from playing and from daily and weekly missions.\n- Buy late, and you instantly get every premium reward you already passed." },
+        { "t": "see", "text": "Clash of Clans has the Gold Pass, Clash Royale has Pass Royale, Brawl Stars has the Brawl Pass. Fortnite's pass returns enough currency to buy the next one if you finish it." },
+        { "t": "f2p", "text": "Why it works: a clear goal, a visible progress bar, a daily reason to log in and great value per dollar. It's often the best first purchase in a game." },
+        { "t": "hook", "text": "A battle pass is a gym membership that actually makes you go." }
+      ],
+      "check": { "q": "What do players actually buy with a battle pass?", "options": ["The chance to earn better rewards by playing", "A random item", "Removal of all timers"], "answer": 0, "why": "Rewards still have to be earned, which feels fairer than buying them outright." }
+    },
+    {
+      "id": "F2P2-l10",
+      "title": "Pacing the pass",
+      "min": 3,
+      "deep": "season pass",
+      "cards": [
+        { "t": "idea", "text": "Decide **who should finish the pass, and when.** A common target: a regular player (about 5 days a week) finishes a few days before the season ends." },
+        { "t": "how", "text": "Example: 50 tiers × 1,000 XP = 50,000 XP. A regular player plays 21 of 30 days, so they need about 2,400 XP per day. Split it between daily missions, play and weekly missions." },
+        { "t": "see", "text": "Reward rhythm: small, small, medium, small, small, **BIG**. Every tier gives something. The best reward sits at the end, and the first premium tier pays off right away." },
+        { "t": "f2p", "text": "Pitfalls: too grindy (a second job), too easy (no value), power rewards in PvP (feels required), and too many passes at once. Help late joiners with weekly missions and XP boosts." }
+      ],
+      "check": { "q": "What should the first premium tier give?", "options": ["Something great right away", "Nothing, to build tension", "Only small coins"], "answer": 0, "why": "The purchase should visibly pay off immediately." }
+    },
+    {
+      "id": "F2P2-l11",
+      "title": "Ads: attention as currency",
+      "min": 3,
+      "deep": "Ads in F2P",
+      "cards": [
+        { "t": "idea", "text": "Ads let **non-payers** support the game. The best ads let players **choose** to trade attention for a reward. Bad ads steal attention." },
+        { "t": "how", "text": "- **Rewarded video:** \"watch an ad, get a reward\". The player chooses. Usually earns the most.\n- **Interstitial:** a full-screen ad between levels. The main cause of ad-related quitting.\n- **Banner:** a small strip. Low money, clutters the screen." },
+        { "t": "see", "text": "Good rewarded spots: double coins after a level, a revive after failing, a free chest, skipping a timer. Cap daily views, and never give what a $5 pack gives." },
+        { "t": "f2p", "text": "Interstitial rules: none during the tutorial, only at natural breaks, not after every loss, and none for anyone who has paid. Sell \"Remove Ads\" as a one-time purchase." },
+        { "t": "hook", "text": "Rewarded ads are a tip jar. Interstitials are a toll booth in your living room." }
+      ],
+      "check": { "q": "Which ad type does the player choose to watch?", "options": ["Rewarded video", "Interstitial", "App-open ad"], "answer": 0, "why": "Rewarded video is opt-in, so it feels fair and earns well." }
+    },
+    {
+      "id": "F2P2-l12",
+      "title": "Ads plus purchases: hybrid games",
+      "min": 3,
+      "deep": "Ads in F2P",
+      "cards": [
+        { "t": "idea", "text": "**Hybrid monetization:** ads earn from the many who never pay, purchases earn from the few who do. One game, two income streams." },
+        { "t": "how", "text": "Pure ad-funded hyper-casual games got squeezed when ads became expensive and Apple limited tracking in 2021. Many studios moved to **hybrid-casual**: a simple core, deeper progression, plus ads and purchases." },
+        { "t": "see", "text": "Archero and Survivor.io have simple controls and a deep upgrade system. They offer rewarded ads for chests and revives next to purchases and passes." },
+        { "t": "f2p", "text": "Hidden cost: forced ads earn a little today but can lower retention, which loses future money. Test ad changes against day-7 and day-30 retention, not just ad income." }
+      ],
+      "check": { "q": "What should you check when adding more forced ads?", "options": ["The effect on retention and lifetime value", "Only ad income", "Only download numbers"], "answer": 0, "why": "More ads can earn more today but drive players away." }
+    },
+    {
+      "id": "F2P2-l13",
+      "title": "LiveOps: the game's heartbeat",
+      "min": 3,
+      "deep": "LiveOps",
+      "cards": [
+        { "t": "idea", "text": "In a live game, **launch is the beginning**. LiveOps means running events, offers, seasons and fixes for years. Players return because something new is happening." },
+        { "t": "how", "text": "Events have goals: a reason to come back, bringing back lost players, new offers, novelty without building new systems, shared moments, and balancing the economy." },
+        { "t": "see", "text": "Common event types: collection events, races against a small group, team events, limited-time modes, boss raids, holiday events and sticker albums." },
+        { "t": "f2p", "text": "Pokémon GO's monthly Community Days, Hay Day's weekly Derby and Monopoly GO!'s sticker albums all reuse the core game with a new twist." }
+      ],
+      "check": { "q": "What is LiveOps?", "options": ["Running events, offers and updates after launch", "Testing before launch", "Making the trailer"], "answer": 0, "why": "Live games keep changing for years after release." }
+    },
+    {
+      "id": "F2P2-l14",
+      "title": "The event calendar",
+      "min": 3,
+      "deep": "LiveOps",
+      "cards": [
+        { "t": "idea", "text": "LiveOps is **layered rhythm**: daily, weekly, every two weeks, monthly, quarterly and yearly beats." },
+        { "t": "how", "text": "- **Daily:** missions, login reward, daily deals\n- **Weekly:** weekend events, leaderboards\n- **Monthly:** new season and pass\n- **Quarterly:** big updates\n- **Yearly:** the anniversary" },
+        { "t": "see", "text": "At any moment: one main event, one or two side events, plus always-on systems. The player should understand \"what's happening now\" in one glance." },
+        { "t": "f2p", "text": "Avoid event soup: ten timers stress players. Alternate the mood (competitive, then co-op, then relaxing) and leave quiet weeks so big events feel bigger." },
+        { "t": "hook", "text": "Tick-Tock-Drum-Gong-Boom-Cake: daily, weekly, rotation, monthly, quarterly, yearly." }
+      ],
+      "check": { "q": "What is \"event soup\"?", "options": ["Too many events at once, overwhelming players", "A cooking event", "An event with no rewards"], "answer": 0, "why": "Clarity beats quantity. Players should see what matters in one glance." }
+    },
+    {
+      "id": "F2P2-l15",
+      "title": "Build the oven once",
+      "min": 3,
+      "deep": "LiveOps",
+      "cards": [
+        { "t": "idea", "text": "Don't build every event from scratch. Engineers build **event templates** once. Designers then create new events by **changing settings**, not code." },
+        { "t": "how", "text": "**Remote config** lets the team change drop rates, prices, difficulty and schedules from the server, with no app update. App store reviews make updates slow." },
+        { "t": "see", "text": "Match-3 teams watch each level's stats daily (attempts per win, where players quit) and retune hard levels through config." },
+        { "t": "f2p", "text": "If you weaken something people paid for, compensate them and explain why. If a bug breaks an event, fix it fast and send an apology gift. Have a switch to pause any event." },
+        { "t": "hook", "text": "Build the oven once, bake a hundred cakes." }
+      ],
+      "check": { "q": "Why use remote config?", "options": ["To change numbers without an app update", "To make the app smaller", "To add new art"], "answer": 0, "why": "Server-side changes are much faster than app store updates." }
+    },
+    {
+      "id": "F2P2-l16",
+      "title": "Why people stay for people",
+      "min": 3,
+      "deep": "people are the glue",
+      "cards": [
+        { "t": "idea", "text": "The strongest reason to keep playing isn't a reward. It's **other people**. When friends, clanmates and rivals are in the game, quitting means leaving them." },
+        { "t": "how", "text": "What social systems create:\n- **switching cost:** your clan and rank don't move to another game\n- **reciprocity:** a friend sent you a life, so you send one back\n- **status:** ranks and rare skins others can see\n- **belonging:** \"I'm one of the Night Owls\"" },
+        { "t": "see", "text": "Even single-player games like match-3 wrap a social layer around the core: gifting lives, team events, sticker trading. Monopoly GO! and Hay Day do this well." },
+        { "t": "f2p", "text": "Clanmates also teach strategy. A confused new player in a good clan learns instead of quitting." },
+        { "t": "hook", "text": "The 3 Gs of social glue: Gift, Guild, Grind together." }
+      ],
+      "check": { "q": "Why does gifting a life bring players back?", "options": ["Reciprocity: people want to return the favour", "Gifts cost money", "It removes ads"], "answer": 0, "why": "Receiving a gift makes people want to give one back, so they log in." }
+    },
+    {
+      "id": "F2P2-l17",
+      "title": "Small leagues beat global boards",
+      "min": 3,
+      "deep": "people are the glue",
+      "cards": [
+        { "t": "idea", "text": "A global leaderboard motivates the top 0.1% and discourages everyone else. **Small groups give everyone a goal they can actually reach.**" },
+        { "t": "how", "text": "**Leagues:** put players in groups of about 30–50. The top players move up, the bottom players move down, and it resets every week. Duolingo's leagues are the famous example." },
+        { "t": "see", "text": "Show the nearest goal: \"3 spots from promotion\". Never just \"rank #2,483,991\"." },
+        { "t": "f2p", "text": "Social design rules:\n- unlock clans after the tutorial\n- recommend active clans so members don't drift off\n- allow a \"vacation\" mode so obligation doesn't become guilt\n- keep PvP fair: pay for speed or looks, not wins" }
+      ],
+      "check": { "q": "Why do small leagues motivate more than a global board?", "options": ["Players have a real chance to win", "They have better rewards", "They hide all rankings"], "answer": 0, "why": "A reachable goal motivates. A rank in the millions doesn't." }
+    },
+    {
+      "id": "F2P2-l18",
+      "title": "Data shows what, not why",
+      "min": 3,
+      "deep": "Data-driven design",
+      "cards": [
+        { "t": "idea", "text": "Live games log almost every tap. But **data shows what happened, not why**. Combine numbers with playtests, surveys and player comments." },
+        { "t": "how", "text": "- **Funnel:** steps and the % who finish each one. Find the biggest drop.\n- **Cohort:** players who started at the same time. Compare them across versions.\n- **Segment:** a group by behaviour, like payers or clan members." },
+        { "t": "see", "text": "A puzzle game's level funnel shows a sudden cliff at level 37. That's a problem level. Now watch a playtest to learn why players quit there." },
+        { "t": "f2p", "text": "Correlation isn't cause. Clan members stay longer, but maybe engaged players just join clans. Only an experiment tells you if pushing clans helps." },
+        { "t": "hook", "text": "Data is the speedometer, not the steering wheel." }
+      ],
+      "check": { "q": "Clan members stay longer. What can you conclude?", "options": ["Nothing about cause yet: test it", "Clans definitely cause retention", "Clans should be removed"], "answer": 0, "why": "Engaged players may simply join clans. An experiment shows the cause." }
+    },
+    {
+      "id": "F2P2-l19",
+      "title": "A/B tests that don't lie",
+      "min": 3,
+      "deep": "Data-driven design",
+      "cards": [
+        { "t": "idea", "text": "An **A/B test** splits players randomly: A keeps the current version, B gets the change. Then you compare. **Plan it before you start.**" },
+        { "t": "how", "text": "The checklist:\n- **Hypothesis:** if we change X, metric Y goes up, because Z\n- **Metrics:** one main metric plus guardrails that must not get worse\n- **Sample size:** enough players\n- **Duration:** full weeks\n- **Decision rule:** set in advance" },
+        { "t": "see", "text": "Small changes need many players. Spotting a rise in day-1 retention from 40% to 42% needs about 9,600 players per group. Spotting a small rise in buyers needs far more." },
+        { "t": "f2p", "text": "Example hypothesis: \"If we move the starter pack to after the first boss, more players will buy, because they'll understand the items.\"" },
+        { "t": "hook", "text": "Have Many Smart Dogs Decided? Hypothesis, Metrics, Sample, Duration, Decision." }
+      ],
+      "check": { "q": "What is a guardrail metric?", "options": ["Something that must not get worse during the test", "The metric you want to rise", "The number of players"], "answer": 0, "why": "Guardrails catch damage, like lower retention from a pushy offer." }
+    },
+    {
+      "id": "F2P2-l20",
+      "title": "How A/B tests fool you",
+      "min": 3,
+      "deep": "Data-driven design",
+      "cards": [
+        { "t": "idea", "text": "A/B tests are easy to misread. **Know the classic traps**, and remember that data advises while designers decide." },
+        { "t": "how", "text": "- **Peeking:** stopping the moment it looks good\n- **Tiny samples:** \"B won by 0.3%\" on 500 players is noise\n- **Novelty:** new things get attention, then fade\n- **Short-term wins:** a pushy offer lifts revenue this week and hurts next month" },
+        { "t": "see", "text": "In social games, clanmates in different groups compare offers. Split the test by clan instead of by player." },
+        { "t": "f2p", "text": "A/B testing climbs the hill you're standing on. It won't find a better mountain. Big leaps come from design vision." }
+      ],
+      "check": { "q": "Why is stopping a test as soon as B looks better a mistake?", "options": ["Early results are often random noise", "Tests must run for a year", "B always wins"], "answer": 0, "why": "Peeking and stopping early creates false wins." }
+    },
+    {
+      "id": "F2P2-l21",
+      "title": "Soft launch: test in small markets",
+      "min": 3,
+      "deep": "Production pipeline",
+      "cards": [
+        { "t": "idea", "text": "Mobile games are **tested in the real market** before the world launch. Each stage asks: is this worth more money? Most prototypes and many soft-launched games are killed, and that's healthy." },
+        { "t": "how", "text": "**Soft launch** means releasing in a few countries first. Typical phases:\n- **Tech:** crashes, devices, servers\n- **Retention:** do players come back?\n- **Monetization:** do they pay?\n- **Scale:** can you buy players profitably?" },
+        { "t": "see", "text": "Canada, Australia and New Zealand behave like the US but cost less. The Philippines and similar markets give cheap installs on low-end phones." },
+        { "t": "f2p", "text": "Soft launch is when big changes still happen. Brawl Stars spent over a year there and switched from portrait to landscape before its global launch." },
+        { "t": "hook", "text": "The Rocket Must Scale: Tech, Retention, Monetization, Scale." }
+      ],
+      "check": { "q": "Why soft launch in Canada or Australia?", "options": ["Players behave like the US, but it's smaller and cheaper", "Games are free there", "There's no competition there"], "answer": 0, "why": "They're good stand-ins for the US without spending the big market." }
+    },
+    {
+      "id": "F2P2-l22",
+      "title": "Kill or scale",
+      "min": 3,
+      "deep": "Production pipeline",
+      "cards": [
+        { "t": "idea", "text": "A game can grow with paid ads when **a player earns more than they cost to get**. Lifetime value (LTV) must beat cost per install (CPI), with a margin." },
+        { "t": "how", "text": "**Retention is the ceiling.** You can tune money systems a lot. Weak core retention is very hard to fix later." },
+        { "t": "see", "text": "Supercell is famous for killing many games in soft launch, like Clash Quest and Clash Mini. They celebrate each kill as a lesson." },
+        { "t": "f2p", "text": "Four options: scale, iterate, pivot or kill. \"We've spent two years on it\" is not a reason to continue. That's the sunk-cost trap." }
+      ],
+      "check": { "q": "When can a game grow with paid ads?", "options": ["When lifetime value is higher than the cost per install", "When it has the most downloads", "When the trailer is finished"], "answer": 0, "why": "If each player earns more than they cost, buying players is profitable." }
+    },
+    {
+      "id": "F2P2-l23",
+      "title": "An ad is a promise",
+      "min": 3,
+      "deep": "Production pipeline",
+      "cards": [
+        { "t": "idea", "text": "Studios buy players with ads. **The ad's video often matters more than targeting.** Teams test many new ad videos every week." },
+        { "t": "how", "text": "Popular ad styles: gameplay clips, \"fail\" ads (viewers think \"I could do better\"), playable mini-demos and influencer-style clips. Some studios design features that look great in 15 seconds." },
+        { "t": "see", "text": "In 2020 the UK ad regulator ruled some Homescapes and Gardenscapes ads misleading. They showed puzzles that weren't in the game. Playrix later added those puzzles to its games." },
+        { "t": "f2p", "text": "Misleading ads bring players who expected something else. They quit fast and leave angry reviews. Honest ads plus a tutorial that delivers the promise keep players." },
+        { "t": "hook", "text": "An ad is a promise. Your tutorial is the delivery truck." }
+      ],
+      "check": { "q": "Why do misleading ads backfire?", "options": ["Players who expected something else quit fast", "They cost more to make", "Stores ban all ads"], "answer": 0, "why": "The wrong audience churns and leaves bad reviews." }
+    },
+    {
+      "id": "F2P2-l24",
+      "title": "The store page sells the game",
+      "min": 3,
+      "deep": "Production pipeline",
+      "cards": [
+        { "t": "idea", "text": "**App Store Optimization (ASO)** makes your store page easy to **find** and convincing enough to **install**." },
+        { "t": "how", "text": "- **Icon:** readable at tiny sizes\n- **First 2–3 screenshots:** do most of the work, so show the core fantasy\n- **Video:** the first seconds matter, often with no sound\n- **Title and keywords:** help search" },
+        { "t": "see", "text": "Ask for a rating at a happy moment, like after a big win. Never after a loss." },
+        { "t": "f2p", "text": "Apple and Google let you A/B test store pages. You can also make custom pages that match each ad's promise." }
+      ],
+      "check": { "q": "When should a game ask for a rating?", "options": ["At a happy moment, like after a win", "Right after a loss", "On the first screen"], "answer": 0, "why": "Happy players give better ratings." }
+    },
+    {
+      "id": "F2P2-l25",
+      "title": "Dark patterns borrow from your future",
+      "min": 3,
+      "deep": "player trust",
+      "cards": [
+        { "t": "idea", "text": "**Dark patterns** trick or pressure players against their own interest. They lift money for a while, then destroy **trust**, and trust is what makes players pay again and stay." },
+        { "t": "how", "text": "Common dark patterns:\n- fake timers on offers that return tomorrow\n- confusing currencies\n- annoying waits made only to sell the fix\n- \"No thanks, I like losing\" buttons\n- losing a long streak for missing one day" },
+        { "t": "see", "text": "In 2022 Epic Games agreed to pay hundreds of millions of dollars to settle US claims. Part of it was over purchase flows that tricked players into buying." },
+        { "t": "f2p", "text": "Players who feel tricked stop trusting **every** offer, so sales drop across the whole store. Use honest timers, neutral buttons and streak freezes instead." },
+        { "t": "hook", "text": "The 5 Fs: Fake scarcity, Fogged prices, Friction for sale, FOMO overload, Fooling kids." }
+      ],
+      "check": { "q": "What is a healthy alternative to streak guilt?", "options": ["Streak freezes and catch-up days", "Bigger streak penalties", "Removing all rewards"], "answer": 0, "why": "Players keep the habit without feeling punished for one missed day." }
+    },
+    {
+      "id": "F2P2-l26",
+      "title": "Duty of care",
+      "min": 3,
+      "deep": "player trust",
+      "cards": [
+        { "t": "idea", "text": "Some of your biggest spenders are rich fans. Some may be struggling. **Design for both.** Say \"spender tiers\", not \"whales\": words shape how teams treat people." },
+        { "t": "how", "text": "Care tools:\n- spending history in the game\n- optional spending limits players set themselves\n- no bigger offers right after a big purchase\n- play-time reminders" },
+        { "t": "see", "text": "Assume kids are playing anything colourful. No loot boxes for kids, no pressure offers, parent checks before purchases, and safe chat or none." },
+        { "t": "f2p", "text": "Quick tests:\n- **Newspaper:** would you be fine if a news story explained it?\n- **Parent:** could you explain it to a parent with a straight face?\n- **State:** does it only work on tired, angry or impulsive players?" }
+      ],
+      "check": { "q": "What does the \"state test\" ask?", "options": ["Does the design only work when players are tired or impulsive?", "Is the game legal in every state?", "Does the game save state?"], "answer": 0, "why": "If a design needs players at their weakest, redesign it." }
+    },
+    {
+      "id": "F2P2-l27",
+      "title": "What studios hire for",
+      "min": 3,
+      "deep": "Getting hired",
+      "cards": [
+        { "t": "idea", "text": "Studios hire designers who **show their thinking**: game breakdowns, clear specs, economy models and reasoning with data. You don't need a shipped game to start." },
+        { "t": "how", "text": "Specialist roles are the fast lanes in mobile: economy designer, LiveOps designer, monetization designer, and puzzle level designer. Puzzle studios hire level designers in large numbers." },
+        { "t": "see", "text": "A strong portfolio has **3–5 pieces**, best one first:\n- a deep breakdown of a hit F2P game\n- a feature spec aimed at one KPI\n- an economy spreadsheet\n- a piece for your target role" },
+        { "t": "f2p", "text": "Write each piece as a case study: problem, goal, limits, solution, expected impact, how you'd test it, what you learned. Then post your work publicly every week." },
+        { "t": "hook", "text": "Your portfolio is your store page: the first piece is the icon." }
+      ],
+      "check": { "q": "Which piece should come first in your portfolio?", "options": ["Your best one", "Your oldest one", "The longest one"], "answer": 0, "why": "Reviewers may spend only a few minutes, so lead with your strongest work." }
+    },
+    {
+      "id": "F2P2-l28",
+      "title": "Ace the design test",
+      "min": 3,
+      "deep": "Getting hired",
+      "cards": [
+        { "t": "idea", "text": "Most F2P studios give a take-home **design test**, like \"design a feature to improve day-7 retention\". Use the **GAMES** checklist." },
+        { "t": "how", "text": "- **G**oal: restate the problem and target KPI at the top\n- **A**ssumptions: list them\n- **M**ockups: flows and sketches\n- **E**dge cases and ethics\n- **S**uccess metrics and scope" },
+        { "t": "see", "text": "Give numbers with reasons: \"50 gems is about 2 days of free income, so it feels meaningful without breaking the economy.\"" },
+        { "t": "f2p", "text": "Play their game deeply first. Improve their game, don't replace it. Start with a one-page summary, respect the time limit, and show what you'd cut." }
+      ],
+      "check": { "q": "What should go at the very top of a design test?", "options": ["The goal and the KPI you're targeting", "Your life story", "A list of every idea"], "answer": 0, "why": "Reviewers are busy. Show you understood the problem immediately." }
+    }
+  ]
+}
