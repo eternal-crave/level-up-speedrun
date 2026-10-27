@@ -1,0 +1,243 @@
+{
+  "mod": "L11",
+  "words": [
+    { "w": "archetype", "d": "a basic enemy type defined by its behaviour, like a chaser or a shooter" },
+    { "w": "telegraph", "d": "a visible or audible warning before an attack, so the player can react" },
+    { "w": "spawn", "d": "when an enemy appears in the world" },
+    { "w": "boss", "d": "a big, special enemy that blocks progress and tests what the player has learned" },
+    { "w": "pattern", "d": "a repeating set of moves a boss uses, which players can learn" },
+    { "w": "arena", "d": "the place where a boss fight happens" }
+  ],
+  "lessons": [
+    {
+      "id": "L11-l01",
+      "title": "Decide what an enemy does before how it looks",
+      "min": 3,
+      "deep": "Form Follows Function",
+      "cards": [
+        { "t": "idea", "text": "The golden rule again: **form follows function.** Decide what an enemy **does** before anyone draws it. Code, animation and art all depend on that decision." },
+        { "t": "how", "text": "Define seven things first:\n- size and behaviour\n- speed and movement style\n- attacks\n- aggression\n- health\nTogether with the level's theme, they tell you who the enemies are and how they work together." },
+        { "t": "see", "text": "An artist sculpts beautiful wings on a monster, then the design says it burrows underground. Wings wasted, team frustrated. Redoing enemies again and again kills morale." },
+        { "t": "f2p", "text": "In tower defense and survivor-likes, an enemy is a row in a spreadsheet: health, speed, armour, target rule, special trait. Write that row before any concept art." },
+        { "t": "hook", "text": "Claws come last." }
+      ],
+      "check": { "q": "What should you define before drawing an enemy?", "options": ["Its behaviour, size, speed, attacks and health", "Its colour palette", "Its name"], "answer": 0, "why": "Function decides form. The art should serve what the enemy does." }
+    },
+    {
+      "id": "L11-l02",
+      "title": "Size changes everything",
+      "min": 2,
+      "deep": "Size",
+      "cards": [
+        { "t": "idea", "text": "An enemy's size decides **how you fight it, how much damage it takes, how it reacts to hits** and how proud you feel beating it." },
+        { "t": "how", "text": "Size tiers: short, average, large, huge and gigantic. Small enemies fly back when hit. Giant ones barely notice. Huge enemies often need special tactics, like hitting a weak spot." },
+        { "t": "f2p", "text": "On small screens, size tiers must jump clearly: small fodder, bigger elites, a huge boss. Players should know the threat level at a glance." },
+        { "t": "hook", "text": "Hit a gnome, he flies. Hit a giant, he yawns." }
+      ],
+      "check": { "q": "How should a giant enemy usually react to a normal hit?", "options": ["Barely react at all", "Fly across the screen", "Die instantly"], "answer": 0, "why": "Size sets the reaction. Big enemies shrug off small hits." }
+    },
+    {
+      "id": "L11-l03",
+      "title": "Ten enemy behaviours",
+      "min": 3,
+      "deep": "Behavior",
+      "cards": [
+        { "t": "idea", "text": "Behaviour is the soul of an enemy. **Don't repeat behaviours. Combine ones that complement each other**, so groups of enemies become combat puzzles." },
+        { "t": "how", "text": "Ten classic behaviours:\n- **patroller**, **chaser**, **shooter**, **guard**\n- **flyer**, **bomber**, **burrower**\n- **teleporter**, **blocker**, and a **doppelganger** that copies you" },
+        { "t": "see", "text": "A shooter hiding behind a blocker forces the player to think: break the shield first, or go around? Mixed behaviours make players do quick threat analysis." },
+        { "t": "f2p", "text": "Survivor-likes rely on this: chasers swarm you, shooters keep their distance, bombers punish standing still. Each wave mixes them so every run feels different." }
+      ],
+      "check": { "q": "Why combine different enemy behaviours in one fight?", "options": ["It turns the fight into a puzzle", "It's cheaper to build", "It makes enemies weaker"], "answer": 0, "why": "Complementary behaviours force players to think about which threat to handle first." }
+    },
+    {
+      "id": "L11-l04",
+      "title": "Speed, size and strength trade off",
+      "min": 3,
+      "deep": ["Speed", "Movement Style"],
+      "cards": [
+        { "t": "idea", "text": "Speed makes enemies scarier and harder to hit. But **speed, size and strength trade off.** An enemy with all three feels cheap." },
+        { "t": "how", "text": "How an enemy moves defines its personality too. Aim between random and predictable. Borrow from nature: crabs move sideways, wolves circle, bugs zigzag." },
+        { "t": "see", "text": "In many action games, henchmen attack one at a time while the others wait. It looks a bit silly up close, but it keeps fights fair and readable." },
+        { "t": "f2p", "text": "Fast enemies need very clear tells on mobile, because touch reactions are slower than buttons. If a fast enemy is also tough, give it a clear weak spot." },
+        { "t": "hook", "text": "Small and speedy, or big and beefy. Never both, or it's cheesy." }
+      ],
+      "check": { "q": "An enemy is huge, very fast and very strong. What's the problem?", "options": ["It feels cheap and unfair", "Nothing: it's a great challenge", "It's too easy"], "answer": 0, "why": "Each strength should come with a weakness. All three at once feels unfair." }
+    },
+    {
+      "id": "L11-l05",
+      "title": "How enemies think and get around",
+      "min": 2,
+      "deep": "Pathing AI",
+      "cards": [
+        { "t": "idea", "text": "Sit down with your programmer and decide **how enemies move around the level and how they think.** **Waypoints**, set points they travel between, are the usual tool." },
+        { "t": "how", "text": "Five questions: Can it move around? Is it aggressive? Does it work with other enemies? Does it defend something? Can it adapt to different situations?" },
+        { "t": "f2p", "text": "In tower defense, enemy paths are the level design. Players place towers along the path, so the route must be clear, readable and fair." },
+        { "t": "hook", "text": "My Angry Troops Defend Valiantly: Mobile, Aggressive, Team player, Defensive, Versatile." }
+      ],
+      "check": { "q": "What are waypoints?", "options": ["Set points an enemy moves between", "Health pickups", "Save points"], "answer": 0, "why": "Waypoints give enemies a planned route through the level." }
+    },
+    {
+      "id": "L11-l06",
+      "title": "Great entrances and juicy deaths",
+      "min": 3,
+      "deep": "Bring on the Bad Guys",
+      "cards": [
+        { "t": "idea", "text": "How an enemy **enters** and **leaves** matters as much as how it fights. A great entrance says \"new, exciting, dangerous!\" A fair spawn and a juicy death make fighting fun." },
+        { "t": "how", "text": "Introduce each new enemy with a moment: it bursts from the ground, crashes through a wall, or stands in a spotlight. Never spawn enemies right behind the player where they can't be seen." },
+        { "t": "see", "text": "A skeleton that just stands there is a mannequin. A skeleton that explodes out of its grave is a memory." },
+        { "t": "f2p", "text": "Show a \"new enemy\" card the first time players meet one: its name and a one-line tip on how to beat it. And make deaths fade fast, so cheap phones don't lag." },
+        { "t": "hook", "text": "Entrances are trailers; deaths are confetti." }
+      ],
+      "check": { "q": "Where should enemies never spawn?", "options": ["Right behind the player, out of sight", "In front of the player", "From a visible doorway"], "answer": 0, "why": "Hidden spawns cause unfair hits. Players should see threats arrive." }
+    },
+    {
+      "id": "L11-l07",
+      "title": "Give players reasons to fight",
+      "min": 3,
+      "deep": "Fought, Not Avoided",
+      "cards": [
+        { "t": "idea", "text": "If players **avoid** an enemy because it's too hard, too cheap or too annoying, the design failed. **Give players reasons to want the fight.**" },
+        { "t": "how", "text": "Six reasons to fight:\n- **loot:** it drops rewards\n- **path:** it blocks the way\n- **key:** it carries something you need\n- **power:** beating it makes you stronger\n- **taunts:** it makes you angry\n- **looking badass:** the fight is just cool" },
+        { "t": "see", "text": "An enemy that drops nothing, blocks nothing and takes forever to kill will be skipped every time." },
+        { "t": "f2p", "text": "In F2P, rewards and progress drive most fights. Make sure every enemy type drops something or moves the player forward." },
+        { "t": "hook", "text": "Loot, Path, Key, Power, Taunts, Badass." }
+      ],
+      "check": { "q": "Players keep running past an enemy. What's the likely problem?", "options": ["There's no good reason to fight it", "It's too easy", "It's too small"], "answer": 0, "why": "Without loot, progress or fun, fighting isn't worth the risk." }
+    },
+    {
+      "id": "L11-l08",
+      "title": "Every attack needs a warning",
+      "min": 3,
+      "deep": "Telegraphing",
+      "cards": [
+        { "t": "idea", "text": "Let enemies have cool, varied attacks. But **every attack must be telegraphed** with a readable warning, so observant players can respond." },
+        { "t": "how", "text": "A tell can be a wind-up animation, a glow, a sound, a flash, or a marker on the ground. Players learn the tell, then react. That's what makes them feel skilful." },
+        { "t": "see", "text": "An attack with no warning isn't hard. It's a coin flip, and players hate losing to luck." },
+        { "t": "f2p", "text": "On mobile, every damaging attack needs a wind-up plus a ground marker or aim line that stays visible under the thumb. Players glance at small screens quickly." },
+        { "t": "hook", "text": "No tell, no hell." }
+      ],
+      "check": { "q": "Why must enemy attacks be telegraphed?", "options": ["So players can learn and react", "To make enemies weaker", "To show off animation"], "answer": 0, "why": "Without warnings, success is luck, not skill." }
+    },
+    {
+      "id": "L11-l09",
+      "title": "Annoy without damage, and balance health",
+      "min": 3,
+      "deep": "Grief Without Damage",
+      "cards": [
+        { "t": "idea", "text": "Not every enemy attack has to take health. **\"Grief\" attacks** disrupt, delay or annoy instead, adding variety. And every enemy must be killable, with health balanced against the player's attacks." },
+        { "t": "how", "text": "Ten grief tools: block, knock back, stun, freeze, heal other enemies, buff other enemies, steal, drain, surprise, and make the player vulnerable." },
+        { "t": "see", "text": "A thief enemy that grabs your coins and runs is more memorable than one that just hits you. You chase it with real anger." },
+        { "t": "f2p", "text": "Match-3 blockers are grief tools: ice that blocks a tile, chocolate that spreads, a bomb that counts down. They create tension without a health bar." }
+      ],
+      "check": { "q": "Which is a \"grief\" attack, not damage?", "options": ["Stealing the player's coins", "A sword hit", "A fireball"], "answer": 0, "why": "Grief attacks disrupt the player without simply draining health." }
+    },
+    {
+      "id": "L11-l10",
+      "title": "Building your own enemies",
+      "min": 3,
+      "deep": "Bestiary",
+      "cards": [
+        { "t": "idea", "text": "In games, **anything can be an enemy.** Pick from the classics, or invent foes from your theme and story. Tie them together visually, reuse smartly, and make sure they belong in your world." },
+        { "t": "how", "text": "Reusing an enemy with a new colour is fine, if it keeps the same behaviour. **If the behaviour changes, the look must change too.** Otherwise players are tricked." },
+        { "t": "see", "text": "A red ninja and a blue ninja that fight the same way: fine. A blue ninja that suddenly throws bombs while looking like the red one: unfair." },
+        { "t": "f2p", "text": "Live games add new enemy variants every season. Keep a clear visual rule, like elites always glow, so players read new variants instantly." },
+        { "t": "hook", "text": "Same ninja, new paint, new trick? Never." }
+      ],
+      "check": { "q": "You reuse an enemy model but give it new attacks. What must change?", "options": ["Its look, so players notice the difference", "Nothing", "Only its name"], "answer": 0, "why": "New behaviour needs a new look, or players feel tricked." }
+    },
+    {
+      "id": "L11-l11",
+      "title": "Make the player hate the villain",
+      "min": 3,
+      "deep": "I Hate You",
+      "cards": [
+        { "t": "idea", "text": "Introduce your main villain memorably, and **make the player hate them** in ways that hurt the player's gameplay. Keep the villain alive to return." },
+        { "t": "how", "text": "The best villains take something from the player: steal a power, kidnap a helper, destroy the base. Taunts and idle animations make them seem smart and alive. Sometimes, let the villain win a round." },
+        { "t": "see", "text": "A villain who kidnaps the character who heals you is hated far more than one who only gives speeches. It hits your gameplay, not just the story." },
+        { "t": "f2p", "text": "In LiveOps, a recurring villain can run across a whole event, with a final fight at the end, and return next season. Players love a rival who keeps coming back." },
+        { "t": "hook", "text": "Steal the healer, not just the heart." }
+      ],
+      "check": { "q": "What makes players truly hate a villain?", "options": ["The villain takes something they use in gameplay", "A long evil speech", "A scary name"], "answer": 0, "why": "Losing something you rely on makes the anger personal." }
+    },
+    {
+      "id": "L11-l12",
+      "title": "Enemies that aren't monsters",
+      "min": 2,
+      "deep": "Non-Enemy Enemies",
+      "cards": [
+        { "t": "idea", "text": "You can push and punish players without anything to fight. Four \"enemies\" that aren't monsters: **gremlins, tormentors, time and other humans.**" },
+        { "t": "how", "text": "- **Gremlin:** something that messes with you, like a creature stealing items.\n- **Tormentor:** an unbeatable threat you must escape.\n- **Time:** a countdown.\n- **Humans:** real opponents, or even the friend next to you on the couch." },
+        { "t": "f2p", "text": "Time is the most common enemy in mobile games: move limits, event countdowns and timed bonus rounds create pressure with no monster at all." }
+      ],
+      "check": { "q": "Which \"non-enemy enemy\" is most common in mobile games?", "options": ["Time: countdowns and move limits", "Dragons", "Ghosts"], "answer": 0, "why": "Timers and limited moves create pressure without any monster." }
+    },
+    {
+      "id": "L11-l13",
+      "title": "What makes a great boss",
+      "min": 3,
+      "deep": ["World's Greatest Boss Battle", "Who's the Boss"],
+      "cards": [
+        { "t": "idea", "text": "A boss is not just a big monster with lots of health. **It's a carefully built machine that tests what the player has learned**, and it must be built on a **finished** player moveset." },
+        { "t": "how", "text": "Choose one approach: **test** moves the player already knows, **or** teach a new ability and then test it. Don't do both at full strength. Also ask what the boss **means**: what it wants, what it represents, what fans expect." },
+        { "t": "see", "text": "Three kinds of boss: physical (muscle), mental (a puzzle or trick), and global (a disaster or huge threat)." },
+        { "t": "f2p", "text": "In puzzle games, chapter-end \"Hard\" and \"Super Hard\" levels are the bosses. They block progress and end a chapter with a climax." },
+        { "t": "hook", "text": "Boss = blocker + climax." }
+      ],
+      "check": { "q": "Why build a boss only after the player's moves are finished?", "options": ["The boss tests those moves", "Bosses are cheap", "Players skip bosses"], "answer": 0, "why": "If the player's moves change, the boss fight breaks." }
+    },
+    {
+      "id": "L11-l14",
+      "title": "Boss patterns: the dance",
+      "min": 3,
+      "deep": "Size Matters",
+      "cards": [
+        { "t": "idea", "text": "Build the boss fight from **learnable patterns** with four parts, and make it escalate like a dance. **Always let the player land the final blow.**" },
+        { "t": "how", "text": "- **Primary attack:** its main move.\n- **Invulnerable attack:** a move you must avoid, not fight.\n- **Vulnerable state:** a moment it's open to damage.\n- **Opportunity:** what the player does in that moment.\nEach round, the pattern gets faster or adds a move." },
+        { "t": "see", "text": "Big bosses cause camera headaches: keep the boss and the player both in view. And never let the boss die from a cutscene or a random hit. The player swings last." },
+        { "t": "f2p", "text": "On mobile, pin the boss health bar at the top with phase markers. Make weak points glow, and make vulnerable windows obvious." },
+        { "t": "hook", "text": "PIVO: Primary, Invulnerable, Vulnerable, Opportunity. The player swings last. Always." }
+      ],
+      "check": { "q": "Who should land the final blow in a boss fight?", "options": ["The player", "A cutscene", "An ally character"], "answer": 0, "why": "The win must feel earned. Taking the last hit away steals the reward." }
+    },
+    {
+      "id": "L11-l15",
+      "title": "The arena is half the boss",
+      "min": 2,
+      "deep": "Location, Location",
+      "cards": [
+        { "t": "idea", "text": "Where a boss fight happens is as important as the fight. **The arena is part of the battle**, and sometimes the level itself is the boss." },
+        { "t": "how", "text": "Use the arena: platforms that collapse, pillars to hide behind, hazards the boss can be tricked into. Changing the arena between phases keeps a long fight fresh." },
+        { "t": "f2p", "text": "Repeated weekly bosses get stale. Changing arena elements each week keeps the same boss interesting without building a new one." },
+        { "t": "hook", "text": "Real estate is half the boss." }
+      ],
+      "check": { "q": "How can you keep a long boss fight fresh?", "options": ["Change the arena between phases", "Add more health", "Make it slower"], "answer": 0, "why": "A changing arena gives new challenges without a new boss." }
+    },
+    {
+      "id": "L11-l16",
+      "title": "Drama beats scale",
+      "min": 2,
+      "deep": "Why Not to Create",
+      "cards": [
+        { "t": "idea", "text": "Bosses have real downsides: they're expensive, they can break pacing, and they can become walls that stop players. One fix: **replace a big creature with big drama.**" },
+        { "t": "how", "text": "A personal, story-driven confrontation can hit harder than a giant monster: a tense standoff, a betrayal, a choice under pressure." },
+        { "t": "see", "text": "A dagger an inch from your eye is scarier than a robot the size of Tokyo." },
+        { "t": "f2p", "text": "Watch the fail rate and quitting on every boss level. Soften true walls, and offer a fair free path, like an earned booster or an ad. Never make a boss beatable only by paying." },
+        { "t": "hook", "text": "Drama beats scale." }
+      ],
+      "check": { "q": "What's a risk of a very hard boss in F2P?", "options": ["Players hit a wall and quit", "Players spend less time", "Nothing"], "answer": 0, "why": "Skill walls cause churn. Watch fail rates and keep a fair path forward." }
+    },
+    {
+      "id": "L11-l17",
+      "title": "Boss events in live games",
+      "min": 3,
+      "deep": "F2P Deep Dive",
+      "cards": [
+        { "t": "idea", "text": "Bosses are a favourite **LiveOps event** format. They bring players together, create a shared goal, and give a big climax." },
+        { "t": "how", "text": "- **Clan boss:** a giant boss your whole clan hits over days. Rewards grow with total damage.\n- **Raid boss:** appears for a limited time, and players group up (Pokémon GO raids).\n- **Weekly boss:** repeatable, with capped rewards (Genshin Impact)." },
+        { "t": "see", "text": "Readability checklist:\n- a clear silhouette for each enemy type\n- size tiers that jump clearly\n- a glow for elite enemies\n- a warning for every attack\n- a \"new enemy\" card on first meeting" },
+        { "t": "f2p", "text": "Tension is fine. **Engineered** failure, hidden odds, or a boss that only payers can beat is not. Celebrate the win after a hard boss level more than anything else in the chapter." }
+      ],
+      "check": { "q": "What makes a clan boss event engaging?", "options": ["A shared goal the whole clan works on together", "Each player fights alone", "It's only for payers"], "answer": 0, "why": "Shared goals create teamwork and social obligation." }
+    }
+  ]
+}

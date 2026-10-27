@@ -73,3 +73,4 @@ L00, L01, L02, L04, F2P1, L13, L12, L09, L08, L07, L05, L06, L10, L11, L14, F2P2
 - [x] L05 Character · 20 lessons
 - [x] L06 Camera · 16 lessons
 - [x] L10 Combat · 15 lessons
+- [x] L11 Enemies & bosses · 17 lessons
