@@ -79,3 +79,4 @@ L00, L01, L02, L04, F2P1, L13, L12, L09, L08, L07, L05, L06, L10, L11, L14, F2P2
 - [x] L03 Writing the story · 16 lessons
 - [x] L16 Cutscenes · 10 lessons
 - [x] L15 Music & sound · 12 lessons
+- [x] L17 Pitching, production & sequels · 10 lessons

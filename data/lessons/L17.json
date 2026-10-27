@@ -1,0 +1,154 @@
+{
+  "mod": "L17",
+  "words": [
+    { "w": "pitch", "d": "a short presentation to convince someone to fund or publish your game" },
+    { "w": "publisher", "d": "the company that pays for, markets and releases a game" },
+    { "w": "GDD", "d": "game design document: the full written plan of the game" },
+    { "w": "vertical slice", "d": "one small part of the game built to near-final quality" },
+    { "w": "gray box", "d": "rough levels made of plain blocks, with no final art" },
+    { "w": "crunch", "d": "long, stressful overtime near a deadline" },
+    { "w": "sequel", "d": "a follow-up game to an earlier one" }
+  ],
+  "lessons": [
+    {
+      "id": "L17-l01",
+      "title": "The pitch: steak, not the whole cow",
+      "min": 3,
+      "deep": "what a pitch is",
+      "cards": [
+        { "t": "idea", "text": "A finished design isn't a finished game. Someone must fund it first. **A pitch is a short, tasty version of your design document**, without the small details." },
+        { "t": "how", "text": "The basic pitch:\n- title screen with logo\n- who you are and why you can do it\n- the game in one sentence\n- a few pages of details, not 40\n- proof it will be great or make money" },
+        { "t": "see", "text": "Slide basics: a readable font, not too much per slide, and lots of pictures. Show, don't paragraph." },
+        { "t": "f2p", "text": "In F2P, the \"publisher\" may be a studio's internal approval group or investors. Proof means similar games earning, a clear idea of what players will buy and why, and retention targets." },
+        { "t": "hook", "text": "Your design document is the whole cow. The pitch is the steak on a nice plate." }
+      ],
+      "check": { "q": "What is a pitch?", "options": ["A short version of your design that keeps only the best parts", "The full design document", "The game's trailer"], "answer": 0, "why": "It drops the small details so the audience sees what's great." }
+    },
+    {
+      "id": "L17-l02",
+      "title": "Nobody cares about your lore yet",
+      "min": 3,
+      "deep": "Stupid Little World",
+      "cards": [
+        { "t": "idea", "text": "Treat a pitch like an artist's portfolio: **show your best, and don't bury people.** Above all, don't drown them in story details." },
+        { "t": "how", "text": "Rogers once sat through a pitch where the writer explained his fantasy universe's politics. Rogers tuned out almost immediately. World details matter later, in production." },
+        { "t": "see", "text": "F2P approval rooms ask: Who is it for? What do players do every 30 seconds, every session and every week? Why do they come back? Why do they pay?" },
+        { "t": "f2p", "text": "Even huge story games are pitched on their hook, like \"open-world action RPG with elemental reactions\", not on a nation's 400-year history." },
+        { "t": "hook", "text": "Every made-up name fills the listener's lore meter by 10%. At 100%, their head becomes a loading spinner." }
+      ],
+      "check": { "q": "What should a pitch avoid?", "options": ["Long explanations of the game world's history", "Pictures of gameplay", "The core loop"], "answer": 0, "why": "At pitch stage, people want the hook, not the lore." }
+    },
+    {
+      "id": "L17-l03",
+      "title": "Six rules for pitching",
+      "min": 3,
+      "deep": "six rules of thumb",
+      "cards": [
+        { "t": "idea", "text": "Rogers' rules: **pitch to the right people, in the right room, well rehearsed, knowing your game deeply, with one idea.** Even great tech alone can be worth pitching." },
+        { "t": "how", "text": "- Research the publisher: don't pitch a family game to a hardcore action publisher.\n- Pick a quiet room, not a noisy show floor.\n- Rehearse. Let your best speaker present.\n- Expect hard questions. They're looking for future problems." },
+        { "t": "see", "text": "Bringing many pitches makes the meeting longer and blurs the best idea. Bring the one that stands out." },
+        { "t": "f2p", "text": "A publisher may own a license but have no studio for it. Your tech or prototype could make you that studio. Timing and luck matter as much as the idea." },
+        { "t": "hook", "text": "Six Rs: Right people, Right room, Rehearse, Rock-solid answers, Restrict to one idea, Represent." }
+      ],
+      "check": { "q": "Why bring only one pitch to a meeting?", "options": ["So the audience focuses on your best idea", "Publishers only allow one", "It saves printing"], "answer": 0, "why": "Multiple pitches dilute attention and make agreement harder." }
+    },
+    {
+      "id": "L17-l04",
+      "title": "Playable beats slides",
+      "min": 3,
+      "deep": "pitch equation",
+      "cards": [
+        { "t": "idea", "text": "What sells a game best, in order: **a playable demo, then a design document, then a presentation, then just talking.**" },
+        { "t": "how", "text": "Demos are a lot of work. If you don't plan for them, they steal time from the real game and cause crunch. But they prove you're serious." },
+        { "t": "see", "text": "So put the demo in your schedule from the start, not as a surprise side quest." },
+        { "t": "f2p", "text": "In F2P the ladder is even steeper: live metrics beat a playable prototype, which beats a document, which beats a slide deck." },
+        { "t": "hook", "text": "Talking is a trailer. Slides are a poster. A demo is a free sample at the food court." }
+      ],
+      "check": { "q": "In F2P, what convinces a publisher most?", "options": ["Live metrics from real players", "A slide deck", "A long design document"], "answer": 0, "why": "Real player data is the strongest proof a game works." }
+    },
+    {
+      "id": "L17-l05",
+      "title": "Games are made by people",
+      "min": 3,
+      "deep": "Haaaard Business",
+      "cards": [
+        { "t": "idea", "text": "Making games is hard, and even great games can flop. **Most games that go badly were badly planned.** Plan for real humans." },
+        { "t": "how", "text": "Rogers' key line: **\"Video games are made by people.\"** People get sick, burn out, have babies, take vacations and have bad weeks." },
+        { "t": "see", "text": "Well-reviewed games still sell badly sometimes. A publisher may cut marketing money or set targets too high." },
+        { "t": "f2p", "text": "In F2P, a fun game is still dead if getting a player costs more than that player ever spends. And a plan that needs the same three people to make an event every week forever is broken." },
+        { "t": "hook", "text": "Your schedule is not a list of robots. Every bar has a human inside who sometimes gets the flu." }
+      ],
+      "check": { "q": "What does Rogers say most failed games suffer from?", "options": ["Bad planning", "Bad music", "Too many players"], "answer": 0, "why": "You can't control everything, but you can plan for problems." }
+    },
+    {
+      "id": "L17-l06",
+      "title": "Be a PLANNER",
+      "min": 3,
+      "deep": "troubleshooting list",
+      "cards": [
+        { "t": "idea", "text": "Rogers' checklist for keeping production alive: **plan for problems, lock the design early, don't overpromise, break your own game, and respect cultures.**" },
+        { "t": "how", "text": "- Plan for sick people and broken hardware.\n- Lock the design and content early.\n- Don't promise more than you can build.\n- Test it like players will: try to break it.\n- Check cultural differences." },
+        { "t": "see", "text": "Fat Princess had four-fingered characters redrawn with five fingers for Japan. Adapting a game is more than translating it." },
+        { "t": "f2p", "text": "Lock the core loop and economy before making 300 levels. Players hunt exploits like changing the phone clock, and tricks spread on Reddit within hours. Test your economy, not just your levels." },
+        { "t": "hook", "text": "PLANNER: Plan, Lock, Avoid overpromising, Nuke-test it, Nations differ." }
+      ],
+      "check": { "q": "Why lock the core loop and economy early?", "options": ["Changing them after content is built is a nightmare", "Stores require it", "It makes the game shorter"], "answer": 0, "why": "Everything is built on top of them, so late changes break a lot." }
+    },
+    {
+      "id": "L17-l07",
+      "title": "Cut early, cut carefully",
+      "min": 3,
+      "deep": "Cutting content",
+      "cards": [
+        { "t": "idea", "text": "Every game cuts content. That's normal. **Cut as much as possible early, for the right reasons, and never pull out something many systems depend on.**" },
+        { "t": "how", "text": "Cuts in planning are cheap. Cuts in production are expensive and painful. Good reasons: it doesn't work, it isn't fun, or it's too big." },
+        { "t": "see", "text": "Risky F2P cuts touch the economy: a currency, a way to spend, a reward source. Removing a way to spend can inflate the whole economy. A cosmetic set or one event mode is safer." },
+        { "t": "f2p", "text": "Before cutting, map what depends on it: which loops, rewards and screens use it? A cut minigame can come back later as an event." },
+        { "t": "hook", "text": "Cutting is Jenga. Pull loose blocks early, never the one six others rest on." }
+      ],
+      "check": { "q": "Which cut is riskiest?", "options": ["Something connected to many systems, like a currency", "A single cosmetic set", "One side minigame"], "answer": 0, "why": "Connected features cause chains of bugs and design holes." }
+    },
+    {
+      "id": "L17-l08",
+      "title": "Slice or layer",
+      "min": 3,
+      "deep": "Vertical slice",
+      "cards": [
+        { "t": "idea", "text": "Two ways to build: a **vertical slice** (one piece near-final) or a **horizontal layer** (the whole game rough, then polished). Pick one and go." },
+        { "t": "how", "text": "- **Vertical slice:** one level at about 80% of final quality. It's a demo and a model for the rest.\n- **Horizontal layer:** every level in rough gray boxes, then polish once it plays well." },
+        { "t": "see", "text": "A slice can take months and cause crunch. Gray boxes need imagination to judge, and Rogers says that's rarer than you'd think." },
+        { "t": "f2p", "text": "Don't hide behind \"the fun will emerge\". Unplanned economies create exploits and inflation. Plan the rules, then test how they interact." },
+        { "t": "hook", "text": "A slice shows how the pie tastes. A layer shows if it fits the table." }
+      ],
+      "check": { "q": "What is a vertical slice?", "options": ["One part of the game built to near-final quality", "The whole game in rough form", "A marketing poster"], "answer": 0, "why": "It shows the final quality and serves as a model for the rest." }
+    },
+    {
+      "id": "L17-l09",
+      "title": "Sequels: your chance to fix it",
+      "min": 3,
+      "deep": "sequel rulebook",
+      "cards": [
+        { "t": "idea", "text": "Publishers like sequels because they're safer bets. **A sequel is your chance to get it right**, not a lazy repeat." },
+        { "t": "how", "text": "The **30/70 rule:** about 30% new ideas, 70% based on the original. Keep everything good, throw away everything bad, and keep what fans loved." },
+        { "t": "see", "text": "After Maximo, Rogers listed 40 problems to fix and got 39 fixed. But adding too much novelty in the wrong place, like clockwork enemies, can disappoint fans." },
+        { "t": "f2p", "text": "In F2P, the encore is usually not a sequel. It's **LiveOps**: new levels, events, seasons and heroes keep the same app alive for years." },
+        { "t": "hook", "text": "A sequel is New Game+: everything's unlocked, so don't play it on easy mode." }
+      ],
+      "check": { "q": "What does the 30/70 rule say?", "options": ["About 30% new and 70% from the original", "30% story and 70% gameplay", "30 levels and 70 enemies"], "answer": 0, "why": "Fans want what they loved, plus enough new to feel fresh." }
+    },
+    {
+      "id": "L17-l10",
+      "title": "Four rules for a long career",
+      "min": 3,
+      "deep": "Continue?",
+      "cards": [
+        { "t": "idea", "text": "Rogers ends the book with \"three\" rules. There are actually four: **rest, be fair, keep playing games, and enjoy it.**" },
+        { "t": "how", "text": "- **Take breaks.** It's games, not heart surgery.\n- **Be fair and generous.** The industry is small, and word travels fast.\n- **Keep playing games, even bad ones.** They teach what not to do.\n- **Enjoy it.** The alternative could be flipping burgers." },
+        { "t": "see", "text": "Making games is exactly like making chili: a recipe, good ingredients, a long simmer and constant tasting." },
+        { "t": "f2p", "text": "LiveOps never stops, so burnout is the biggest career risk. Play the top-grossing chart and the failures too: flops teach which mistakes to avoid." },
+        { "t": "hook", "text": "The 4 Rs: Rest, Respect, Research, Rejoice." }
+      ],
+      "check": { "q": "Why play bad games too?", "options": ["They teach what not to do", "They're cheaper", "To give bad reviews"], "answer": 0, "why": "Mistakes are easier to spot in games that failed." }
+    }
+  ]
+}
