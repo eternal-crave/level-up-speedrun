@@ -1,0 +1,231 @@
+{
+  "mod": "L03",
+  "words": [
+    { "w": "story", "d": "what the writer plans to tell" },
+    { "w": "narrative", "d": "the order of events the player actually experiences" },
+    { "w": "cutscene", "d": "a short movie inside a game where the player doesn't control anything" },
+    { "w": "suspense", "d": "tension from knowing danger is coming" },
+    { "w": "meta layer", "d": "a progress system around the core game, like decorating a house with stars won in levels" },
+    { "w": "license / IP", "d": "permission to use someone else's characters or world, like Marvel or Pokémon" },
+    { "w": "FTUE", "d": "first-time user experience: the player's first minutes in the game" }
+  ],
+  "lessons": [
+    {
+      "id": "L03-l01",
+      "title": "Story is salt, gameplay is meat",
+      "min": 3,
+      "deep": "Beginning, Middle, End",
+      "cards": [
+        { "t": "idea", "text": "Designers argue about story versus gameplay forever. Rogers' answer: **a game doesn't need a story, yet it always has one.** Use story to season the play, not to drown it." },
+        { "t": "how", "text": "If gameplay is the **meat**, story is the **salt**. A little adds flavour. Too much ruins the dish. Tetris and Bejeweled have no story and are still great." },
+        { "t": "see", "text": "Salt levels by genre:\n- block puzzles like Block Blast!: almost none\n- match-3 like Homescapes: a pinch between levels\n- gacha RPGs like Genshin Impact: a lot" },
+        { "t": "f2p", "text": "Borrow structure from other media. A **TV series** (episodes with cliffhangers) is a natural model for event stories. A **sitcom** (same cast, new small problem each time) fits casual games." },
+        { "t": "hook", "text": "Nobody orders a plate of salt with a side of steak." }
+      ],
+      "check": { "q": "In Rogers' metaphor, what is story?", "options": ["Salt: it seasons the gameplay", "Meat: the main dish", "The plate"], "answer": 0, "why": "Gameplay is the meat. Story adds flavour in small amounts." }
+    },
+    {
+      "id": "L03-l02",
+      "title": "Nine beats of a classic story",
+      "min": 3,
+      "deep": "Classic Story Structure",
+      "cards": [
+        { "t": "idea", "text": "The most basic story: **a hero wants something, problems keep getting worse, and a final win earns the prize.** Every story has a beginning, a middle and an end." },
+        { "t": "how", "text": "Rogers' stick-figure comic: a hero loves a princess in a tower. Lightning splits the ground. He tries to jump and falls in. Rain floods the pit. A dragon rises. He leaps off the dragon's head and wins the kiss." },
+        { "t": "see", "text": "Risk keeps rising until the last problem, then it's released. That's the same shape as a good difficulty curve, with the boss at step seven." },
+        { "t": "f2p", "text": "A 7-day event can follow this arc. Day 1 sets the goal. Day 2 a storm wrecks it. Day 3 the first fix fails. It builds to a boss stage and the big reward." },
+        { "t": "hook", "text": "Desire, Disaster, Try, Fail, Flip, Worse, Worst, Win, Prize." }
+      ],
+      "check": { "q": "What happens to risk across the nine beats?", "options": ["It rises until the final problem, then it's released", "It stays flat", "It drops from the start"], "answer": 0, "why": "Problems escalate until the hero resolves the biggest one." }
+    },
+    {
+      "id": "L03-l03",
+      "title": "The player writes the diary",
+      "min": 3,
+      "deep": "Story vs Narrative",
+      "cards": [
+        { "t": "idea", "text": "A **story** is what the writer tells. A **narrative** is what the player actually experiences, in order. **Every play session creates a narrative**, so make the likely ones fun." },
+        { "t": "how", "text": "In a narrative, the player is the hero. Plan the order of experiences so emotions rise, then build systems that create those moments. Left 4 Dead's \"Director\" AI adjusts enemies to control tension." },
+        { "t": "see", "text": "Players retell their narratives: \"I was one move away, used my last booster, and the cascade won it!\" That's the story they screenshot and share." },
+        { "t": "f2p", "text": "A good 5-minute session has an arc too: an easy warm-up win, rising challenge, a tense \"almost lost it\", a big reward, and a reason to come back." },
+        { "t": "hook", "text": "The writer writes the script. The player writes the diary. Players only retell the diary." }
+      ],
+      "check": { "q": "What is a narrative in Rogers' terms?", "options": ["The order of events the player experiences", "The script the writer prepares", "The game's manual"], "answer": 0, "why": "Even Tetris creates narratives, because players experience events in order." }
+    },
+    {
+      "id": "L03-l04",
+      "title": "Almost anything can be a game",
+      "min": 3,
+      "deep": "Almost Anything",
+      "cards": [
+        { "t": "idea", "text": "Don't let the topic limit you. **Almost any subject can become gameplay**, even a children's fairy tale." },
+        { "t": "how", "text": "Rogers turns Little Red Riding Hood into a game: collect items for the basket, sneak through the forest, and fight the wolf as a boss. Why watch the woodcutter in a cutscene when you could have a boss fight?" },
+        { "t": "see", "text": "Mobile proves it daily: cooking, cleaning, sorting items, parking cars, even being a hole that swallows a city (Hole.io)." },
+        { "t": "f2p", "text": "Any story can become an event: one day of collecting, one day of obstacle levels, a gate that unlocks the next area, and a boss stage at the end." }
+      ],
+      "check": { "q": "What is Rogers' point with Little Red Riding Hood?", "options": ["Almost any subject can become gameplay", "Fairy tales are only for kids", "Stories should be cutscenes"], "answer": 0, "why": "Even a picnic-basket fairy tale can have levels and a boss fight." }
+    },
+    {
+      "id": "L03-l05",
+      "title": "Only one weird corner",
+      "min": 3,
+      "deep": "Triangle of Weirdness",
+      "cards": [
+        { "t": "idea", "text": "The **Triangle of Weirdness** has three corners: **characters, activities and world.** Make only **one** of them weird, or players won't get it." },
+        { "t": "how", "text": "A normal person in a weird world works. A weird creature doing normal things in a normal world works. Weird characters doing weird things in a weird world confuses everyone." },
+        { "t": "see", "text": "Rogers points to very creative films and games that audiences didn't \"get\", like the 1984 film Dune. They broke the triangle." },
+        { "t": "f2p", "text": "An ad has about 3 seconds to be understood. One weird corner is a hook. Three weird corners is noise, and the viewer scrolls past." },
+        { "t": "hook", "text": "CAW: Characters, Activities, World. Only one crow gets to be weird." }
+      ],
+      "check": { "q": "How many corners of the triangle should be weird?", "options": ["One", "Two", "All three"], "answer": 0, "why": "More than one weird corner alienates the audience." }
+    },
+    {
+      "id": "L03-l06",
+      "title": "Three kinds of story fans",
+      "min": 3,
+      "deep": "Three Kinds of Story Audience",
+      "cards": [
+        { "t": "idea", "text": "Players split by how much they care about story. **Serve all three types**, and keep the story working for the gameplay." },
+        { "t": "how", "text": "- **Skippers:** tap past everything. They need the story shown through play and visuals.\n- **Ride-alongs:** enjoy short lines between levels.\n- **Divers:** want deep lore, so give them optional extras." },
+        { "t": "see", "text": "Bioshock hides deeper lore in optional audio tapes. Divers find it, and everyone else keeps playing." },
+        { "t": "f2p", "text": "In casual games, skippers are the majority. Every dialog needs a skip button. In Homescapes you understand \"this room was broken, now it's beautiful\" without reading a word." },
+        { "t": "hook", "text": "Surfers ride the wave, divers go deep, skippers tap tap tap." }
+      ],
+      "check": { "q": "How do you serve players who skip all dialog?", "options": ["Show the story through gameplay and visuals", "Force them to read", "Remove the skip button"], "answer": 0, "why": "Skippers still need to understand what's happening." }
+    },
+    {
+      "id": "L03-l07",
+      "title": "Start late, keep moving",
+      "min": 3,
+      "deep": "Three Kinds of Story Audience",
+      "cards": [
+        { "t": "idea", "text": "**Start the story as late in the action as you can**, and keep it moving. Screenwriters change the plot or action about every 15 minutes." },
+        { "t": "how", "text": "Open mid-boss fight, during a chase, or at the end of a level. Explain the setup later, once the player is hooked." },
+        { "t": "see", "text": "Rogers noticed in 2010 that play sessions were becoming bite-sized. That basically predicted mobile." },
+        { "t": "f2p", "text": "On mobile, the player should be playing within seconds. Save the story setup for after the first win. Then bring something new every session: a new blocker, area, character line or event beat." }
+      ],
+      "check": { "q": "Where should a mobile game's story setup go?", "options": ["After the first win", "Before the first level", "In a long opening video"], "answer": 0, "why": "Players should be playing within seconds. Story can wait." }
+    },
+    {
+      "id": "L03-l08",
+      "title": "Suspense beats surprise",
+      "min": 3,
+      "deep": "Surprise, Suspense",
+      "cards": [
+        { "t": "idea", "text": "**Surprise** gives a quick shock. **Suspense** keeps players tense for much longer. Show the danger coming." },
+        { "t": "how", "text": "Hitchcock's example: two men chat, and a bomb explodes. That's 15 seconds of shock. Show the audience the bomb under the table first, and five minutes of chatting becomes agony." },
+        { "t": "see", "text": "Candy Crush candy bombs show a countdown number. You see the danger ticking down. That's Hitchcock's bomb as a puzzle piece." },
+        { "t": "f2p", "text": "Event timers, a final-hour leaderboard race and a chest that's 90% full all create suspense. End a story chapter with a visible threat to pull players back next session." },
+        { "t": "hook", "text": "Surprise is a firecracker. Suspense is a lit fuse you can see." }
+      ],
+      "check": { "q": "Why does suspense beat surprise?", "options": ["Players know the danger, so tension lasts longer", "It's cheaper to make", "Players prefer shocks"], "answer": 0, "why": "Knowing about the bomb makes every moment tense." }
+    },
+    {
+      "id": "L03-l09",
+      "title": "Predictable can be great",
+      "min": 3,
+      "deep": "Surprise, Suspense",
+      "cards": [
+        { "t": "idea", "text": "You don't need clever twists. **People enjoy predictable stories when the \"how\" is fun.** Guessing right makes players feel smart." },
+        { "t": "how", "text": "Everyone knew James Bond would get a gadget, foil the villain and save the world. People went anyway, for how he did it." },
+        { "t": "see", "text": "Rogers calls **amnesia** the number one game story cliché. It hides information from the player just to set up a shock, which isn't fair." },
+        { "t": "f2p", "text": "Mobile games cast the player as the newcomer instead: the new mayor or new manager. That explains why you don't know things, without hiding anything. And the stakes can be small: fixing a house, not saving the galaxy." }
+      ],
+      "check": { "q": "What does Rogers call the number one game story cliché?", "options": ["Amnesia", "Dragons", "Talking animals"], "answer": 0, "why": "Amnesia hides information unfairly to set up a shock ending." }
+    },
+    {
+      "id": "L03-l10",
+      "title": "End when players feel satisfied",
+      "min": 3,
+      "deep": "Wrap It Up",
+      "cards": [
+        { "t": "idea", "text": "**End the game when the player feels satisfied** and has done what they came to do. Then give them reasons to stay in a world they love." },
+        { "t": "how", "text": "Early arcade games had no ending. They ran until the code broke. Dragon's Lair made people want to know if the hero saved the princess. That's where game storytelling began." },
+        { "t": "see", "text": "After the story, extras like minigames and unlockables let players keep playing without repeating the story." },
+        { "t": "f2p", "text": "F2P games are built not to end, but **every chapter still needs an ending**. Each event, season or story chapter should close its loop: the room is finished, the season boss is beaten." }
+      ],
+      "check": { "q": "What should every F2P event or chapter have?", "options": ["A satisfying ending, even if the saga continues", "No ending at all", "A twist ending"], "answer": 0, "why": "Closure feels rewarding, even in a game that never ends." }
+    },
+    {
+      "id": "L03-l11",
+      "title": "A short name sticks",
+      "min": 3,
+      "deep": "Naming Your Game",
+      "cards": [
+        { "t": "idea", "text": "The title is part of your story and your marketing. **Keep it short, choose its type on purpose, and name the game early.**" },
+        { "t": "how", "text": "Title types:\n- **literal:** says what it is\n- **action or cool**\n- **punny**\n- **purple cow:** odd and memorable\nShort titles are easier to remember and make better logos." },
+        { "t": "see", "text": "Defender is one word that sums up the whole game. Rogers likes two or three syllables: Pac-Man, Halo, Star Wars." },
+        { "t": "f2p", "text": "Store names are limited to about 30 characters, and home screens cut long names. Many games add a keyword after a colon to help search. Check for clashes and odd meanings in other languages." },
+        { "t": "hook", "text": "A great title fits on an arcade sign, or today, under an app icon." }
+      ],
+      "check": { "q": "Why name the game early?", "options": ["Otherwise marketing may name it for you", "Stores require it on day one", "Long names cost more"], "answer": 0, "why": "Rogers warns that if you wait, someone else picks a name you won't like." }
+    },
+    {
+      "id": "L03-l12",
+      "title": "Give characters a first act",
+      "min": 3,
+      "deep": "Creating Characters",
+      "cards": [
+        { "t": "idea", "text": "Players need time to **bond with a character before anything bad happens** to them. Otherwise a death means nothing." },
+        { "t": "how", "text": "In the film Robocop, we spend time with officer Murphy before he's killed, so it hurts. The games skipped that and started with the cyborg. Rogers' fix: let level 1 be Murphy the human cop." },
+        { "t": "see", "text": "Killing off a relative in the opening cutscene isn't a shortcut. You can't care about someone you met 30 seconds ago." },
+        { "t": "f2p", "text": "The tutorial is act 1. Use it to make players like your mascot: a few warm lines, a funny animation, a small shared win. Think of Homescapes' butler Austin or Royal Match's King Robert." }
+      ],
+      "check": { "q": "Why give a character a first act?", "options": ["Players need to care before anything bad happens", "To make the game longer", "To show off the graphics"], "answer": 0, "why": "Emotional moments only work if players already care." }
+    },
+    {
+      "id": "L03-l13",
+      "title": "Personality drives play",
+      "min": 3,
+      "deep": "Creating Characters",
+      "cards": [
+        { "t": "idea", "text": "**A character's job and personality should drive what they do.** Humor and gameplay both come from who the character is." },
+        { "t": "how", "text": "Team Fortress 2 is very funny without slapstick jokes. The humor comes from each character's personality. Know your characters' motivations too, like success, revenge, love or escape." },
+        { "t": "see", "text": "In Brawl Stars, Dynamike is a miner who throws dynamite. Barley is a bartender robot who throws bottles. You read the character instantly." },
+        { "t": "f2p", "text": "Names matter: a barbarian called Mortimer only works in a comedy. Mobile names must read at tiny size and work in many languages. And never pick a name that gives away the ending." }
+      ],
+      "check": { "q": "What makes Brawl Stars characters easy to read?", "options": ["Their attacks match their job and personality", "Their long backstories", "Their price in the shop"], "answer": 0, "why": "When identity and moves match, players understand a character at a glance." }
+    },
+    {
+      "id": "L03-l14",
+      "title": "Kids deserve real stories",
+      "min": 3,
+      "deep": "Writing for Kids",
+      "cards": [
+        { "t": "idea", "text": "Writing for kids doesn't mean writing badly. **The common mistake is making the story too simple.**" },
+        { "t": "how", "text": "Where the Wild Things Are and The Chronicles of Narnia handle big feelings and complex themes. Kids' games can carry that weight too." },
+        { "t": "see", "text": "Teach without them noticing. Pokémon GO gets people walking. Duolingo shows how much learning people accept when it's wrapped in streaks and rewards." },
+        { "t": "f2p", "text": "Many casual players are adults who like cartoon art. Simple presentation is fine, but don't make the themes or puzzles dumb. Games for children also face extra privacy and ad rules." }
+      ],
+      "check": { "q": "What is the most common mistake when writing for kids?", "options": ["Making the story too simple", "Making it too long", "Using animals"], "answer": 0, "why": "Kids can handle complex themes. Classic children's books prove it." }
+    },
+    {
+      "id": "L03-l15",
+      "title": "Cooking in someone else's kitchen",
+      "min": 3,
+      "deep": "Writing for Licenses",
+      "cards": [
+        { "t": "idea", "text": "A **licensed game** uses someone else's characters or world. **Respect the owner's rules, but a good partnership still leaves room to create.**" },
+        { "t": "how", "text": "Know the property deeply. Find the owner's deal-breakers early. Get every document they have, like a TV show's \"bible\" of characters and world." },
+        { "t": "see", "text": "A game used hamburgers as a power-up. One character was a vegetarian, so the show's creators objected. Ask about these \"allergies\" first." },
+        { "t": "f2p", "text": "Licensed F2P is big: Marvel Snap, Pokémon GO, Monopoly GO!. Owners may have rules about gacha, ads and how characters appear in offers. Check before designing the economy." },
+        { "t": "hook", "text": "Use their recipes, ask about allergies, then add your own spice with permission." }
+      ],
+      "check": { "q": "When should you learn the license owner's deal-breakers?", "options": ["Early, before designing", "After launch", "Never, just build"], "answer": 0, "why": "Late surprises, like the vegetarian burger, force costly changes." }
+    },
+    {
+      "id": "L03-l16",
+      "title": "Story in F2P: the renovation model",
+      "min": 3,
+      "deep": "Narrative in F2P",
+      "cards": [
+        { "t": "idea", "text": "In F2P, story rarely sits in front of gameplay. It gives the core loop **meaning**, creates **characters people love**, and fuels **events**." },
+        { "t": "how", "text": "The renovation loop:\n- win a match-3 level and earn a star\n- spend it on a story task, like fixing the stairs\n- a short dialog moves the plot\n- a new task opens" },
+        { "t": "see", "text": "Homescapes, Gardenscapes and Royal Match all use this model. In gacha games like Genshin Impact, good writing makes players want a character before its banner opens." },
+        { "t": "f2p", "text": "Checklist: Can a skipper still follow it? Is every story beat tied to play or a reward? Are dialogs one to three short lines? Does each chapter end with closure?" },
+        { "t": "hook", "text": "Story is the frosting, characters are the sprinkles, and the core loop is still the cake." }
+      ],
+      "check": { "q": "In the renovation model, what does story give the core loop?", "options": ["A visible purpose for each win", "Harder levels", "More ads"], "answer": 0, "why": "Each win becomes a fixed room, so players see their progress." }
+    }
+  ]
+}
