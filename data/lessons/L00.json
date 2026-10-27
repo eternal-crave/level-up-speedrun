@@ -114,7 +114,7 @@
         { "t": "f2p", "text": "Start a **swipe file**: one note for every game you play. Write what it does well, what it does badly, and one thing you'd steal." },
         { "t": "hook", "text": "If you didn't recall it or use it, you only visited the idea. You didn't learn it." }
       ],
-      "check": { "q": "Which study habit makes ideas stick best?", "options": ["Recalling the answer from memory, then using it", "Rereading the notes several times", "Highlighting everything"], "answer": 0, "why": "Pulling answers out of memory strengthens it far more than rereading." }
+      "check": { "q": "Which study habit makes ideas stick best?", "options": ["Recalling the answer from memory, then using it", "Rereading the notes several times before a test", "Highlighting the key lines in a bright colour"], "answer": 0, "why": "Pulling answers out of memory strengthens it far more than rereading." }
     }
   ]
 }

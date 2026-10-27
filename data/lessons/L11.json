@@ -47,7 +47,7 @@
         { "t": "see", "text": "A shooter hiding behind a blocker forces the player to think: break the shield first, or go around? Mixed behaviours make players do quick threat analysis." },
         { "t": "f2p", "text": "Survivor-likes rely on this: chasers swarm you, shooters keep their distance, bombers punish standing still. Each wave mixes them so every run feels different." }
       ],
-      "check": { "q": "Why combine different enemy behaviours in one fight?", "options": ["It turns the fight into a puzzle", "It's cheaper to build", "It makes enemies weaker"], "answer": 0, "why": "Complementary behaviours force players to think about which threat to handle first." }
+      "check": { "q": "Why combine different enemy behaviours in one fight?", "options": ["It turns the fight into a puzzle", "It's cheaper to build each enemy", "It makes every enemy weaker"], "answer": 0, "why": "Complementary behaviours force players to think about which threat to handle first." }
     },
     {
       "id": "L11-l04",
@@ -116,7 +116,7 @@
         { "t": "f2p", "text": "On mobile, every damaging attack needs a wind-up plus a ground marker or aim line that stays visible under the thumb. Players glance at small screens quickly." },
         { "t": "hook", "text": "No tell, no hell." }
       ],
-      "check": { "q": "Why must enemy attacks be telegraphed?", "options": ["So players can learn and react", "To make enemies weaker", "To show off animation"], "answer": 0, "why": "Without warnings, success is luck, not skill." }
+      "check": { "q": "Why must enemy attacks be telegraphed?", "options": ["So players can learn and react", "To make the enemies weaker", "To show off the animation work"], "answer": 0, "why": "Without warnings, success is luck, not skill." }
     },
     {
       "id": "L11-l09",
@@ -183,7 +183,7 @@
         { "t": "f2p", "text": "In puzzle games, chapter-end \"Hard\" and \"Super Hard\" levels are the bosses. They block progress and end a chapter with a climax." },
         { "t": "hook", "text": "Boss = blocker + climax." }
       ],
-      "check": { "q": "Why build a boss only after the player's moves are finished?", "options": ["The boss tests those moves", "Bosses are cheap", "Players skip bosses"], "answer": 0, "why": "If the player's moves change, the boss fight breaks." }
+      "check": { "q": "Why build a boss only after the player's moves are finished?", "options": ["The boss tests those moves", "Bosses are cheap to rebuild", "Players often skip bosses"], "answer": 0, "why": "If the player's moves change, the boss fight breaks." }
     },
     {
       "id": "L11-l14",

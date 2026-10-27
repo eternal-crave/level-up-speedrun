@@ -35,7 +35,7 @@
         { "t": "f2p", "text": "Keep combat buttons in an arc around the right thumb's resting spot. Put rare actions, like settings and mail, in the top corners. A common rule: tapping the world means \"act\", and edge buttons mean \"menus\"." },
         { "t": "hook", "text": "The 4 Ms: Muscle, Meaning, Mirror, Majority." }
       ],
-      "check": { "q": "In a landscape action game, what does the left thumb usually do?", "options": ["Move the character", "Open the shop", "Attack"], "answer": 0, "why": "Left thumb moves, right thumb acts. It's the near-universal mobile convention." }
+      "check": { "q": "In a landscape action game, what does the left thumb usually do?", "options": ["Move the character", "Open the shop menu", "Attack the enemies"], "answer": 0, "why": "Left thumb moves, right thumb acts. It's the near-universal mobile convention." }
     },
     {
       "id": "L07-l03",
@@ -90,7 +90,7 @@
         { "t": "f2p", "text": "Genre conventions are law on mobile: swipe to swap in match-3, drag to merge in merge games, drag a card onto the field in card battlers. Players expect them. Use them unless you have a strong reason not to." },
         { "t": "hook", "text": "If your gesture doesn't mime the action, ask why not." }
       ],
-      "check": { "q": "Which control best mirrors its action?", "options": ["Pull back and release to launch a bird", "Tap a button labelled \"launch\"", "Shake the phone to jump"], "answer": 0, "why": "Pulling back like a slingshot copies the real motion, so it feels natural." }
+      "check": { "q": "Which control best mirrors its action?", "options": ["Pull back and release to launch a bird", "Tap a button labelled \"Launch\" to fire", "Shake the phone to make the bird jump"], "answer": 0, "why": "Pulling back like a slingshot copies the real motion, so it feels natural." }
     },
     {
       "id": "L07-l07",
@@ -104,7 +104,7 @@
         { "t": "f2p", "text": "Keep **danger buttons** (spend gems, sell, delete) away from quick-tap areas, or add a confirm step. A fast thumb should never spend premium currency by accident. That's good design and good ethics." },
         { "t": "hook", "text": "Big and close for panic, small and far for patience." }
       ],
-      "check": { "q": "Where should a \"Buy for 500 gems\" button NOT be?", "options": ["Right next to the quick \"Collect\" button", "Behind a clear confirm step", "Away from the busiest thumb zone"], "answer": 0, "why": "Placing spending next to fast taps causes accidental purchases." }
+      "check": { "q": "Where should a \"Buy for 500 gems\" button NOT be?", "options": ["Right next to the quick \"Collect\" button", "Behind a clear confirm step before paying", "Away from the busiest part of the thumb zone"], "answer": 0, "why": "Placing spending next to fast taps causes accidental purchases." }
     },
     {
       "id": "L07-l08",

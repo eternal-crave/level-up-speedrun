@@ -35,7 +35,7 @@
         { "t": "f2p", "text": "In hero-collecting games, each hero's weapon and personality must read instantly in their attack: a Brawl Stars brawler's shot shape tells you their role before you read any stats." },
         { "t": "hook", "text": "Show me your weapon and I'll tell you who you are." }
       ],
-      "check": { "q": "What should shape a character's fighting style?", "options": ["Their personality and signature weapon", "Whatever animation is cheapest", "The enemy's style"], "answer": 0, "why": "Combat is character. The weapon and personality decide how they fight." }
+      "check": { "q": "What should shape a character's fighting style?", "options": ["Their personality and signature weapon", "Whatever animation is cheapest to make", "The fighting style of the enemies"], "answer": 0, "why": "Combat is character. The weapon and personality decide how they fight." }
     },
     {
       "id": "L10-l03",
@@ -77,7 +77,7 @@
         { "t": "f2p", "text": "Auto-aim in Brawl Stars and auto-attack in Archero are mobile lock-on. Upgrades should change how the weapon looks, because players can't see numbers." },
         { "t": "hook", "text": "+3 is invisible. Flames are forever." }
       ],
-      "check": { "q": "How should a weapon upgrade be shown?", "options": ["Visibly: it glows or changes look", "Only as a number in a menu", "Not at all"], "answer": 0, "why": "Players feel upgrades they can see, not hidden numbers." }
+      "check": { "q": "How should a weapon upgrade be shown?", "options": ["Visibly: it glows or changes look", "Only as a number in a menu", "Not at all, to keep it subtle"], "answer": 0, "why": "Players feel upgrades they can see, not hidden numbers." }
     },
     {
       "id": "L10-l06",
@@ -146,7 +146,7 @@
         { "t": "f2p", "text": "In hero shooters and card games, each unit fills one role: tank, damage dealer, healer or controller. If two units do the same job, one is a clone wearing a fake moustache." },
         { "t": "hook", "text": "One gun, one job." }
       ],
-      "check": { "q": "Two weapons do exactly the same job. What's wrong?", "options": ["One is redundant and adds no real choice", "Nothing: more is better", "They need different colours"], "answer": 0, "why": "Each weapon should have its own niche or a clear trade-off." }
+      "check": { "q": "Two weapons do exactly the same job. What's wrong?", "options": ["One is redundant and adds no real choice", "Nothing: more weapons are always better", "They just need more different colours"], "answer": 0, "why": "Each weapon should have its own niche or a clear trade-off." }
     },
     {
       "id": "L10-l11",
@@ -201,7 +201,7 @@
         { "t": "f2p", "text": "F2P death often sells continues: \"+5 moves\" or \"revive\". That's fine after a real mistake. It turns predatory when levels are tuned so you almost always need one." },
         { "t": "hook", "text": "Death is a door, not a wall." }
       ],
-      "check": { "q": "What should a good death screen do?", "options": ["Show why you died and get you back fast", "Make you watch a long animation", "Send you back to the start"], "answer": 0, "why": "Death should teach and motivate, not waste time." }
+      "check": { "q": "What should a good death screen do?", "options": ["Show why you died and get you back fast", "Play a long, dramatic death animation", "Send you back to the start of the level"], "answer": 0, "why": "Death should teach and motivate, not waste time." }
     },
     {
       "id": "L10-l15",

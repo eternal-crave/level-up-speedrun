@@ -64,7 +64,7 @@
         { "t": "f2p", "text": "In F2P the ladder is even steeper: live metrics beat a playable prototype, which beats a document, which beats a slide deck." },
         { "t": "hook", "text": "Talking is a trailer. Slides are a poster. A demo is a free sample at the food court." }
       ],
-      "check": { "q": "In F2P, what convinces a publisher most?", "options": ["Live metrics from real players", "A slide deck", "A long design document"], "answer": 0, "why": "Real player data is the strongest proof a game works." }
+      "check": { "q": "In F2P, what convinces a publisher most?", "options": ["Live metrics from real players", "A polished, beautiful slide deck", "A long, detailed design document"], "answer": 0, "why": "Real player data is the strongest proof a game works." }
     },
     {
       "id": "L17-l05",
@@ -134,7 +134,7 @@
         { "t": "f2p", "text": "In F2P, the encore is usually not a sequel. It's **LiveOps**: new levels, events, seasons and heroes keep the same app alive for years." },
         { "t": "hook", "text": "A sequel is New Game+: everything's unlocked, so don't play it on easy mode." }
       ],
-      "check": { "q": "What does the 30/70 rule say?", "options": ["About 30% new and 70% from the original", "30% story and 70% gameplay", "30 levels and 70 enemies"], "answer": 0, "why": "Fans want what they loved, plus enough new to feel fresh." }
+      "check": { "q": "What does the 30/70 rule say?", "options": ["About 30% new and 70% from the original", "About 30% story and 70% gameplay", "About 30 new levels and 70 new enemies"], "answer": 0, "why": "Fans want what they loved, plus enough new to feel fresh." }
     },
     {
       "id": "L17-l10",
@@ -148,7 +148,7 @@
         { "t": "f2p", "text": "LiveOps never stops, so burnout is the biggest career risk. Play the top-grossing chart and the failures too: flops teach which mistakes to avoid." },
         { "t": "hook", "text": "The 4 Rs: Rest, Respect, Research, Rejoice." }
       ],
-      "check": { "q": "Why play bad games too?", "options": ["They teach what not to do", "They're cheaper", "To give bad reviews"], "answer": 0, "why": "Mistakes are easier to spot in games that failed." }
+      "check": { "q": "Why play bad games too?", "options": ["They teach what not to do", "They're cheaper to buy", "So you can review them"], "answer": 0, "why": "Mistakes are easier to spot in games that failed." }
     }
   ]
 }

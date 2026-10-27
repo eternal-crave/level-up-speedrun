@@ -35,7 +35,7 @@
         { "t": "f2p", "text": "Movement power-ups can break your level design. If a jetpack exists, your obstacle spacing must work with it too." },
         { "t": "hook", "text": "D-O-M-G: Defensive, Offensive, Movement, Game changer." }
       ],
-      "check": { "q": "A coin magnet that pulls in all nearby coins is which family?", "options": ["Game changer", "Defensive", "Offensive"], "answer": 0, "why": "It changes the rules of collecting, without protecting you or helping you attack." }
+      "check": { "q": "A coin magnet that pulls in all nearby coins is which family?", "options": ["Game changer", "Defensive power-up", "Offensive power-up"], "answer": 0, "why": "It changes the rules of collecting, without protecting you or helping you attack." }
     },
     {
       "id": "L13-l03",
@@ -48,7 +48,7 @@
         { "t": "see", "text": "Healthy games give boosters for free regularly: as level rewards, in events and for login streaks. Then a bought booster is a shortcut, not a requirement." },
         { "t": "f2p", "text": "A level that can only be beaten by buying a booster is a paywall dressed as a power-up. Also avoid \"anti-power-ups\" (fake gifts that hurt you) in F2P. When players may have paid, a harmful gift feels like theft." }
       ],
-      "check": { "q": "A level is tuned so it can only be beaten with a bought booster. What is that?", "options": ["A paywall dressed as a power-up", "Good difficulty design", "A fair challenge"], "answer": 0, "why": "If paying is required to win, the booster is a ransom, not help." }
+      "check": { "q": "A level is tuned so it can only be beaten with a bought booster. What is that?", "options": ["A paywall dressed as a power-up", "Good, challenging difficulty design", "A fair challenge for skilled players"], "answer": 0, "why": "If paying is required to win, the booster is a ransom, not help." }
     },
     {
       "id": "L13-l04",
@@ -127,7 +127,7 @@
         { "t": "see", "text": "Candy Crush's booming \"Sweet!\", \"Tasty!\" and \"Divine!\" and Royal Match's win sequences are the phone version of those eight layers." },
         { "t": "f2p", "text": "Watch for praise inflation. If every tap triggers fireworks, nothing feels special. Scale it: a small sound for a match, full fanfare for a level clear." }
       ],
-      "check": { "q": "What's the risk of fireworks on every single tap?", "options": ["Praise stops meaning anything", "The game gets too easy", "Players buy more"], "answer": 0, "why": "Praise only feels good when it's tied to a real achievement." }
+      "check": { "q": "What's the risk of fireworks on every single tap?", "options": ["Praise stops meaning anything", "The game becomes far too easy", "Players start buying more boosters"], "answer": 0, "why": "Praise only feels good when it's tied to a real achievement." }
     },
     {
       "id": "L13-l10",
@@ -140,7 +140,7 @@
         { "t": "see", "text": "At Disneyland's Pirate's Lair, turning a wheel lifts a treasure chest from the water. Keep turning and a skeleton appears, still holding on. A surprise for the player who keeps going." },
         { "t": "f2p", "text": "Surprises are cheap to build and great for sharing: easter eggs, rare idle animations, silly seasonal touches. Always reward the player who keeps cranking the wheel." }
       ],
-      "check": { "q": "What is an achievement, in Rogers' words?", "options": ["A high score with personality", "A paid item", "A level-select screen"], "answer": 0, "why": "Achievements let players show off specific skills and goals." }
+      "check": { "q": "What is an achievement, in Rogers' words?", "options": ["A high score with personality", "A paid item that shows off status", "A level-select screen with stars"], "answer": 0, "why": "Achievements let players show off specific skills and goals." }
     },
     {
       "id": "L13-l11",
@@ -153,7 +153,7 @@
         { "t": "see", "text": "If players should afford 300 dollars of items in a level, put at least 300 dollars of treasure in it. Decide whether treasure comes back on replay: if it does, players can \"farm\" it and break your economy." },
         { "t": "f2p", "text": "Make value readable with colour (copper, silver, gold) or shape (coins, bags, gems). Show everything players can buy early, so they can plan." }
       ],
-      "check": { "q": "Treasure respawns every time you replay a level. What's the risk?", "options": ["Players farm it and the economy breaks", "Players get bored of shopping", "Prices drop to zero"], "answer": 0, "why": "Unlimited treasure means unlimited money. Farmable sources need caps or costs." }
+      "check": { "q": "Treasure respawns every time you replay a level. What's the risk?", "options": ["Players farm it and the economy breaks", "Players get bored of buying in the shop", "Shop prices slowly drop down to zero"], "answer": 0, "why": "Unlimited treasure means unlimited money. Farmable sources need caps or costs." }
     },
     {
       "id": "L13-l12",
@@ -204,7 +204,7 @@
         { "t": "see", "text": "A **season pass** is a visible reward track with a free row and a paid row, like Brawl Pass or Pass Royale. It turns \"reward often\" into a progress bar with a deadline." },
         { "t": "f2p", "text": "Keep passes finishable with normal play. If finishing needs heavy grinding or paid skips, it creates stress, not fun. Some countries, like Belgium, treat paid loot boxes as gambling." }
       ],
-      "check": { "q": "What does a pity system do?", "options": ["Guarantees a top reward after many unlucky pulls", "Removes all randomness from every pull", "Makes each pull a little more expensive"], "answer": 0, "why": "It caps how unlucky a player can be, which is DDB for luck." }
+      "check": { "q": "What does a pity system do?", "options": ["Guarantees a top reward after many unlucky pulls", "Removes all randomness from every single pull", "Makes each new pull a little more expensive"], "answer": 0, "why": "It caps how unlucky a player can be, which is DDB for luck." }
     },
     {
       "id": "L13-l16",
@@ -217,7 +217,7 @@
         { "t": "see", "text": "Manipulation:\n- hidden odds and confusing currency rates\n- levels tuned to fail by one move\n- harder difficulty for likely spenders\n- fake urgency like \"only 2 left!\"\n- spending prompts aimed at kids" },
         { "t": "f2p", "text": "Use this list as a checklist in every feature review. Ethical design is also good business: players who trust you stay longer and spend again." }
       ],
-      "check": { "q": "Which of these is manipulation?", "options": ["\"Only 2 left!\" pressure on a digital item", "A free booster after three losses", "Showing all season pass rewards"], "answer": 0, "why": "Digital items don't run out. Fake urgency pressures players instead of informing them." }
+      "check": { "q": "Which of these is manipulation?", "options": ["\"Only 2 left!\" pressure on a digital item", "A free booster after three losses in a row", "Showing every reward in the season pass"], "answer": 0, "why": "Digital items don't run out. Fake urgency pressures players instead of informing them." }
     }
   ]
 }

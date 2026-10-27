@@ -73,7 +73,7 @@
         { "t": "see", "text": "In a haunted house, a scare lands harder when you know it's coming. The waiting is half the thrill. And, Rogers says, you can never have too many skeletons." },
         { "t": "f2p", "text": "Show what's coming in mobile games: the next area greyed out on the map, an event teaser before it starts, the next hero's silhouette. Anticipation brings players back." }
       ],
-      "check": { "q": "Why foreshadow a big moment?", "options": ["Anticipation makes it hit harder", "It saves money", "It hides the level goal"], "answer": 0, "why": "Building expectation is as important as delivering the moment." }
+      "check": { "q": "Why foreshadow a big moment?", "options": ["Anticipation makes it hit harder", "It saves money on the big scene", "It hides the level's real goal"], "answer": 0, "why": "Building expectation is as important as delivering the moment." }
     },
     {
       "id": "L09-l06",
@@ -101,7 +101,7 @@
         { "t": "f2p", "text": "Build an event system once, then reskin and retune it many times a year. But don't pitch a real-time co-op raid as \"just reusing\" a collect-items event. That's the hovercraft." },
         { "t": "hook", "text": "Three or flee." }
       ],
-      "check": { "q": "A system appears only twice in your whole game. What does Rogers suggest?", "options": ["Cut it: it isn't worth the cost", "Add it to every level", "Keep it exactly as is"], "answer": 0, "why": "A system used fewer than three times costs more than it gives." }
+      "check": { "q": "A system appears only twice in your whole game. What does Rogers suggest?", "options": ["Cut it: it isn't worth the cost", "Add it to every level in the game", "Keep it exactly as it is now"], "answer": 0, "why": "A system used fewer than three times costs more than it gives." }
     },
     {
       "id": "L09-l08",
@@ -168,7 +168,7 @@
         { "t": "f2p", "text": "On mobile, \"walking\" is any dead time: long loading, slow animations you can't skip, menus to click through. Cut it all. Every second should be play or a reward." },
         { "t": "hook", "text": "Every fingertip holds a trash can full of gold." }
       ],
-      "check": { "q": "While describing your level, you say \"then the player walks over here\". What should you do?", "options": ["Cut or replace that section", "Make the walk longer", "Add more walking"], "answer": 0, "why": "Walking alone isn't gameplay. Replace it with something to do, or remove it." }
+      "check": { "q": "While describing your level, you say \"then the player walks over here\". What should you do?", "options": ["Cut or replace that section", "Make the walk longer and calmer", "Add a cutscene during the walk"], "answer": 0, "why": "Walking alone isn't gameplay. Replace it with something to do, or remove it." }
     },
     {
       "id": "L09-l13",
@@ -208,7 +208,7 @@
         { "t": "see", "text": "Big open areas suit fights with groups of enemies. Narrow spaces suit one-on-one fights. High places give \"wow\" views of the world ahead." },
         { "t": "f2p", "text": "On mobile, vary within short sessions: a calm level after a hard one, a new theme every few chapters, a different event type each week." }
       ],
-      "check": { "q": "How does a tight, narrow space usually feel to players?", "options": ["Mysterious and dangerous", "Safe, calm and cosy", "Boring and empty"], "answer": 0, "why": "Tight spaces raise tension. Large spaces feel safer." }
+      "check": { "q": "How does a tight, narrow space usually feel to players?", "options": ["Mysterious and dangerous", "Safe, calm and cosy", "Open, bright and free"], "answer": 0, "why": "Tight spaces raise tension. Large spaces feel safer." }
     },
     {
       "id": "L09-l16",

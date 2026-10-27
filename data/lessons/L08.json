@@ -22,7 +22,7 @@
         { "t": "f2p", "text": "Before you add any HUD element, ask: what does the player need to know right now, and what can wait? Everything else is clutter." },
         { "t": "hook", "text": "The HUD talks without words. If players need subtitles for it, it isn't fluent yet." }
       ],
-      "check": { "q": "By Rogers' definition, is a mobile home screen with currency bars part of the HUD?", "options": ["Yes: any visual element giving information is HUD", "No: only in-game health bars count", "Only if it's animated"], "answer": 0, "why": "Rogers defines HUD as anything visual that informs the player." }
+      "check": { "q": "By Rogers' definition, is a mobile home screen with currency bars part of the HUD?", "options": ["Yes: any visual element giving information is HUD", "No: only the health bars during play count as HUD", "Only if the bars are animated and change in play"], "answer": 0, "why": "Rogers defines HUD as anything visual that informs the player." }
     },
     {
       "id": "L08-l02",
@@ -35,7 +35,7 @@
         { "t": "see", "text": "In mobile action games, health sits above each character, where your eyes already are. Brawl Stars does this. In match-3, the **moves left** counter is the level's health bar." },
         { "t": "f2p", "text": "\"Lives\" that refill on a timer are health stretched over real hours. They pace sessions and earn money. The fail screen (\"Out of moves! Continue?\") is a business moment: keep it fast, honest and skippable." }
       ],
-      "check": { "q": "In a match-3 level, what works like a health bar?", "options": ["The moves-left counter", "The score", "The level number"], "answer": 0, "why": "Running out of moves ends the level, just like running out of health." }
+      "check": { "q": "In a match-3 level, what works like a health bar?", "options": ["The moves-left counter", "The score at the top", "The level number shown"], "answer": 0, "why": "Running out of moves ends the level, just like running out of health." }
     },
     {
       "id": "L08-l03",
@@ -76,7 +76,7 @@
         { "t": "f2p", "text": "Two caveats. Routine rewards (your 400th chest) need tap-to-skip or batch opening. And many players play muted, so every celebration must also work visually and with vibration." },
         { "t": "hook", "text": "For every reward, ask: where are my back-flipping bunnies?" }
       ],
-      "check": { "q": "Why should coins fly into the currency counter?", "options": ["It shows players where their money lives", "It slows the game down for drama", "It hides the score during rewards"], "answer": 0, "why": "Cause and effect: the animation teaches where rewards go." }
+      "check": { "q": "Why should coins fly into the currency counter?", "options": ["It shows players where their money lives", "It slows the game down for extra drama", "It hides the score while rewards appear"], "answer": 0, "why": "Cause and effect: the animation teaches where rewards go." }
     },
     {
       "id": "L08-l06",
@@ -102,7 +102,7 @@
         { "t": "see", "text": "The King Kong game (2005) showed a few prompts at the start, then told the player nearly everything through sound and animation. Picture two planets: \"No Interface\" and \"Lots of Interface\". Know which one your game lives on." },
         { "t": "f2p", "text": "Hyper-casual games live on Planet No Interface: just a score and a pause button. Mid-core games live on Planet Lots of Interface. Fade what you can: hide the joystick until the thumb lands, collapse event buttons during battle." }
       ],
-      "check": { "q": "What must a fading HUD do?", "options": ["Return when relevant, easy to call back", "Disappear for good once it fades", "Fade in over the action when hit"], "answer": 0, "why": "Hiding the HUD is fine only if players never lose information they need." }
+      "check": { "q": "What must a fading HUD do?", "options": ["Return when relevant, easy to call back", "Disappear for good once it fades out", "Fade back in over the action when hit"], "answer": 0, "why": "Hiding the HUD is fine only if players never lose information they need." }
     },
     {
       "id": "L08-l08",
@@ -143,7 +143,7 @@
         { "t": "f2p", "text": "Prefer \"bonus for success\" over \"death for failure\". A required QTE that costs a life feels like a cash grab. Cheap phones and Bluetooth lag make tight timing unfair, so keep windows generous." },
         { "t": "hook", "text": "A beat to see, a beat to press: ba-DUM." }
       ],
-      "check": { "q": "Which QTE design is better for F2P?", "options": ["Success gives a bonus; failure just continues", "Failure costs the player a life", "The timing is random every time"], "answer": 0, "why": "Optional bonuses reward skill without punishing players unfairly." }
+      "check": { "q": "Which QTE design is better for F2P?", "options": ["Success gives a bonus; failure just continues", "Failure costs the player one of their lives", "The timing is random every single time"], "answer": 0, "why": "Optional bonuses reward skill without punishing players unfairly." }
     },
     {
       "id": "L08-l11",
@@ -156,7 +156,7 @@
         { "t": "see", "text": "Rogers has seen strategy games so packed with panels that playing felt like looking through a mail slot." },
         { "t": "f2p", "text": "On phones:\n- keep all buttons inside the **safe area**, away from notches and rounded corners\n- put frequent actions in the **thumb zone**\n- never put key information where the thumbs rest\n- bracketing is the number one disease of F2P home screens" }
       ],
-      "check": { "q": "What is \"bracketing\"?", "options": ["HUD on many edges, so the view feels small", "A tournament format with brackets", "Putting all of the HUD top-left"], "answer": 0, "why": "Filling the edges shrinks the visible world into a mail slot." }
+      "check": { "q": "What is \"bracketing\"?", "options": ["HUD on many edges, so the view feels small", "A tournament format with knockout brackets", "Putting all of the HUD in the top-left corner"], "answer": 0, "why": "Filling the edges shrinks the visible world into a mail slot." }
     },
     {
       "id": "L08-l12",
@@ -169,7 +169,7 @@
         { "t": "see", "text": "On mobile, your real title screen is the **app store page**: icon, screenshots and video. They decide whether people install." },
         { "t": "f2p", "text": "Every screen at launch costs players: system splash, logos, legal text, downloads. Combine and shorten them. New players should be playing within seconds. A frozen-looking loading image reads as a crashed app, so add motion." }
       ],
-      "check": { "q": "What does the Three-Press Rule say?", "options": ["No screen should be more than three presses away", "Every button needs three colours", "Show three ads per session"], "answer": 0, "why": "Deep menus hide features and frustrate players." }
+      "check": { "q": "What does the Three-Press Rule say?", "options": ["No screen more than three presses away", "Every button needs at least three colours", "Show no more than three ads per session"], "answer": 0, "why": "Deep menus hide features and frustrate players." }
     },
     {
       "id": "L08-l13",
@@ -209,7 +209,7 @@
         { "t": "see", "text": "**Red dots** rules:\n- only for things the player can act on\n- tapping must clear the dot\n- a dot on a sub-tab shows on its parent too\n- keep them few, or they all lose meaning" },
         { "t": "f2p", "text": "Never fake a red dot to drive players to the shop. It's a dark pattern, and players learn to ignore all your dots." }
       ],
-      "check": { "q": "A red dot never goes away, even after tapping. What's the problem?", "options": ["Players learn to ignore all dots", "Nothing, it looks busy", "It increases sales"], "answer": 0, "why": "Dots must clear when handled, or they stop working as signals." }
+      "check": { "q": "A red dot never goes away, even after tapping. What's the problem?", "options": ["Players learn to ignore all the dots", "Nothing: it just makes the screen busy", "It increases sales, so it's working"], "answer": 0, "why": "Dots must clear when handled, or they stop working as signals." }
     }
   ]
 }

@@ -36,7 +36,7 @@
         { "t": "f2p", "text": "Write the three traits at the top of every character brief. Artists, animators and writers can then check every choice against them." },
         { "t": "hook", "text": "Function first, fashion second." }
       ],
-      "check": { "q": "Where should a character's look come from?", "options": ["Their personality and what they do", "Whatever is trendy", "The artist's favourite style"], "answer": 0, "why": "Form follows function: the design should express the character's traits and actions." }
+      "check": { "q": "Where should a character's look come from?", "options": ["Their personality and what they do", "Whatever style is trendy this year", "The artist's own favourite style"], "answer": 0, "why": "Form follows function: the design should express the character's traits and actions." }
     },
     {
       "id": "L05-l03",
@@ -63,7 +63,7 @@
         { "t": "see", "text": "Among Us gives every crewmate the same shape, so colour carries identity: \"Red is sus\". Hats and pets break up the shared silhouette." },
         { "t": "f2p", "text": "Many top-down PvP games mark allies in blue and enemies in red with outlines or rings. Remember colour-blind players: back colour up with shape or icons." }
       ],
-      "check": { "q": "How does Among Us tell identical crewmates apart?", "options": ["By colour, plus hats and pets", "By size and body shape", "By voice and name tags"], "answer": 0, "why": "When shapes match, colour and accessories carry the identity." }
+      "check": { "q": "How does Among Us tell identical crewmates apart?", "options": ["By colour, plus hats and pets", "By their size and body shape", "By their voice and name tags"], "answer": 0, "why": "When shapes match, colour and accessories carry the identity." }
     },
     {
       "id": "L05-l05",
@@ -76,7 +76,7 @@
         { "t": "see", "text": "Specialties: Lara Croft finds treasure, Sonic runs, Simon Belmont uses a whip. The best flaw becomes gameplay, not just a story detail." },
         { "t": "f2p", "text": "Mascots are a mobile superpower: Duolingo's pushy owl, Royal Match's helpless King Robert. A strong personality makes ads, events and social posts easy to write." }
       ],
-      "check": { "q": "What does a good heroic character need, besides heroic deeds?", "options": ["One specialty and a relatable flaw", "Perfection in everything", "No personality"], "answer": 0, "why": "A specialty makes them special. A flaw makes them human and relatable." }
+      "check": { "q": "What does a good heroic character need, besides heroic deeds?", "options": ["One specialty and a relatable flaw", "Perfection in every single skill", "No personality, so anyone fits in"], "answer": 0, "why": "A specialty makes them special. A flaw makes them human and relatable." }
     },
     {
       "id": "L05-l06",
@@ -90,7 +90,7 @@
         { "t": "f2p", "text": "Use the same idea for community: reward helping clanmates, gifting and fair play. A small reward for kindness shapes a friendlier community than any rules page." },
         { "t": "hook", "text": "Give the player a puppy to save and a coin for saving it. They'll call themselves a hero." }
       ],
-      "check": { "q": "How did Maximo encourage saving villagers?", "options": ["Rescued villagers rewarded and thanked the player", "A pop-up told players to be good", "Players lost lives if they didn't"], "answer": 0, "why": "Rewarding good behaviour works better than lecturing about it." }
+      "check": { "q": "How did Maximo encourage saving villagers?", "options": ["Rescued villagers rewarded and thanked players", "A pop-up told players to be good to villagers", "Players lost a life for every villager missed"], "answer": 0, "why": "Rewarding good behaviour works better than lecturing about it." }
     },
     {
       "id": "L05-l07",
@@ -104,7 +104,7 @@
         { "t": "f2p", "text": "**Cosmetics are the cleanest way to earn in F2P**: skins, outfits, emotes and decorations sell without being pay-to-win. Sell self-expression, not anxiety." },
         { "t": "hook", "text": "The moment you name a soldier Bob, Bob's death becomes a tragedy." }
       ],
-      "check": { "q": "Why does naming a character increase attachment?", "options": ["It creates a sense of ownership", "It makes them stronger", "It unlocks new levels"], "answer": 0, "why": "Players protect and care about what they've personalised." }
+      "check": { "q": "Why does naming a character increase attachment?", "options": ["It creates a sense of ownership", "It makes the character stronger", "It unlocks new levels to play"], "answer": 0, "why": "Players protect and care about what they've personalised." }
     },
     {
       "id": "L05-l08",
@@ -173,7 +173,7 @@
         { "t": "f2p", "text": "On mobile, idles live in lobbies and home screens. A hero who bounces, yawns or waves in the lobby makes a 2 cm character feel alive. It's also a great place to show off a new skin." },
         { "t": "hook", "text": "Idles are a snack, never a buffet." }
       ],
-      "check": { "q": "What's the most important rule for idle animations?", "options": ["Stop instantly when the player acts", "Make them as long as possible", "Only play them in cutscenes"], "answer": 0, "why": "Control must never wait for an idle to finish." }
+      "check": { "q": "What's the most important rule for idle animations?", "options": ["Stop instantly when the player acts", "Make them as long as possible", "Play them only during cutscenes"], "answer": 0, "why": "Control must never wait for an idle to finish." }
     },
     {
       "id": "L05-l13",
@@ -215,7 +215,7 @@
         { "t": "f2p", "text": "On mobile, a clear shadow under jumping characters is essential: on a small screen, it's often the only way to judge depth. Add it early, not as polish." },
         { "t": "hook", "text": "No shadow, no soul, no clue where you'll land." }
       ],
-      "check": { "q": "Why does a character need a shadow in 3D?", "options": ["It shows where they'll land", "It's only decoration", "It hides bugs"], "answer": 0, "why": "Shadows are a positioning tool, especially on small screens." }
+      "check": { "q": "Why does a character need a shadow in 3D?", "options": ["It shows where they'll land", "It's there only for decoration", "It hides gaps in the animation"], "answer": 0, "why": "Shadows are a positioning tool, especially on small screens." }
     },
     {
       "id": "L05-l16",
@@ -270,7 +270,7 @@
         { "t": "f2p", "text": "In mobile games, NPCs are often event hosts, shopkeepers and tutorial guides. Keep their lines short, and make every appearance lead to an action the player can take." },
         { "t": "hook", "text": "Every NPC wears a name tag: \"Hi, I exist so you can win.\"" }
       ],
-      "check": { "q": "What question must every NPC answer?", "options": ["What does the player need to succeed?", "What's the NPC's life story?", "How many lines can they say?"], "answer": 0, "why": "NPCs exist for the player. No gameplay job, no reason to exist." }
+      "check": { "q": "What question must every NPC answer?", "options": ["What does the player need to succeed?", "What is the NPC's full life story?", "How many lines can the NPC say?"], "answer": 0, "why": "NPCs exist for the player. No gameplay job, no reason to exist." }
     },
     {
       "id": "L05-l20",
@@ -284,7 +284,7 @@
         { "t": "f2p", "text": "Test every new hero at thumbnail size, in a silhouette, and in a 3-second ad clip. If it fails any of the four jobs at that size, go back to the sketchbook." },
         { "t": "hook", "text": "Collectible, cash register, brand and billboard." }
       ],
-      "check": { "q": "Which of these is NOT one of the four jobs of an F2P hero?", "options": ["Running the game's servers", "Being a collectible", "Starring in ads"], "answer": 0, "why": "The four jobs are collectible, product, brand and ad star." }
+      "check": { "q": "Which of these is NOT one of the four jobs of an F2P hero?", "options": ["Running the game's servers", "Being a collectible to chase", "Starring in the game's ads"], "answer": 0, "why": "The four jobs are collectible, product, brand and ad star." }
     }
   ]
 }

@@ -113,7 +113,7 @@ for (const m of modules) {
     const ck = x.check || {};
     if (!ck.q || !Array.isArray(ck.options) || ck.options.length < 2 || !Number.isInteger(ck.answer) || ck.answer < 0 || ck.answer >= ck.options.length) problems.push(`${where}: malformed check question`);
     // multiple-choice rule: options of similar length, so "pick the longest" never works
-    if (Array.isArray(ck.options) && ck.options.length > 1) { const len = ck.options.map((o) => String(o).length), rest = Math.max(...len.filter((_, k) => k !== ck.answer)); if (len[ck.answer] > rest * 1.5) lessonWarn.push(`${where}: right answer is much longer than the others (${len[ck.answer]} vs ${rest} chars)`); }
+    if (Array.isArray(ck.options) && ck.options.length > 1) { const len = ck.options.map((o) => String(o).length), rest = Math.max(...len.filter((_, k) => k !== ck.answer)); if (len[ck.answer] > rest * 1.2) lessonWarn.push(`${where}: right answer is much longer than the others (${len[ck.answer]} vs ${rest} chars)`); }
     const deep = [].concat(x.deep || []).map(String);
     // stored as the heading's plain text, the way the rendered notes show it
     const deepHeads = deep.map((d) => heads.find((h) => h.toLowerCase().includes(d.toLowerCase()))).filter(Boolean).map((h) => h.replace(/[*_`]/g, "").replace(/\s+/g, " ").trim());

@@ -49,7 +49,7 @@
         { "t": "f2p", "text": "On mobile, dim the screen except the thing to tap, so the player can't miss it. When a new area unlocks, pan the camera across it." },
         { "t": "hook", "text": "If a tree falls in a scripted event and the player was looking at the minimap, it didn't happen." }
       ],
-      "check": { "q": "Why start a scripted event only when the player faces it?", "options": ["So they actually see it", "To save memory", "To make it longer"], "answer": 0, "why": "An event nobody sees is wasted work." }
+      "check": { "q": "Why start a scripted event only when the player faces it?", "options": ["So they actually see it", "To save memory on phones", "To make the scene longer"], "answer": 0, "why": "An event nobody sees is wasted work." }
     },
     {
       "id": "L16-l04",
@@ -116,7 +116,7 @@
         { "t": "see", "text": "A rough guideline: keep story beats **under about 10 seconds** or **2–3 bubbles** before the player gets control back." },
         { "t": "f2p", "text": "Turn explanation into a tap: the player opens the letter, places the first sofa, fires the first cannon. Watch skip rates and drop-off right after each story beat." }
       ],
-      "check": { "q": "How long should a mobile story beat usually be?", "options": ["Under about 10 seconds or 2–3 bubbles", "Two minutes", "As long as the writer wants"], "answer": 0, "why": "Players came to play. Short beats keep the story without losing them." }
+      "check": { "q": "How long should a mobile story beat usually be?", "options": ["Under about 10 seconds or 2–3 bubbles", "About two minutes, like a short film", "As long as the writer feels it needs"], "answer": 0, "why": "Players came to play. Short beats keep the story without losing them." }
     },
     {
       "id": "L16-l09",

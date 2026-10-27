@@ -60,7 +60,7 @@
         { "t": "how", "text": "Rogers is torn. Sales let you keep making games. But many original games were once called \"too weird\". If everyone had listened, they would never exist." },
         { "t": "f2p", "text": "In F2P, the question is: will it attract players cheaply, and will it earn? Don't give up on a strange idea. **Test it cheaply first** with a fake ad or a quick prototype, and let the numbers decide." }
       ],
-      "check": { "q": "Marketing thinks your idea is too weird. What's the best F2P move?", "options": ["Test it cheaply with an ad or prototype", "Build the full game anyway", "Drop it without testing"], "answer": 0, "why": "A cheap test gives real data before you spend months building." }
+      "check": { "q": "Marketing thinks your idea is too weird. What's the best F2P move?", "options": ["Test it cheaply with an ad or prototype", "Build the full game anyway and see", "Drop it without testing, to be safe"], "answer": 0, "why": "A cheap test gives real data before you spend months building." }
     },
     {
       "id": "L02-l05",
@@ -99,7 +99,7 @@
         { "t": "see", "text": "You can improve your chances by copying proven gameplay. But that often gives you a **clone**: one more average shooter in a crowded store." },
         { "t": "f2p", "text": "Because the team can't judge its own game any more, get fresh eyes often: new testers, soft-launch players, and the numbers." }
       ],
-      "check": { "q": "Why do developers lose the ability to judge if their game is fun?", "options": ["They replay the same content constantly", "They don't actually like games", "They only test on fast computers"], "answer": 0, "why": "Fun fades with repetition, so the team needs fresh players to judge it." }
+      "check": { "q": "Why do developers lose the ability to judge if their game is fun?", "options": ["They replay the same content constantly", "They don't actually enjoy playing games", "They only test it on fast computers"], "answer": 0, "why": "Fun fades with repetition, so the team needs fresh players to judge it." }
     },
     {
       "id": "L02-l08",
@@ -141,7 +141,7 @@
         { "t": "f2p", "text": "Everyone in the room should know how games are made, or you'll lose time on ideas the team can't build. A big whiteboard or sticky notes both work. The tool doesn't matter." },
         { "t": "hook", "text": "Squeeze the idea until it's ridiculous, then squeeze once more." }
       ],
-      "check": { "q": "What's the main rule during a brainstorm?", "options": ["Write everything down and judge later", "Reject weak ideas immediately", "Only designers may speak"], "answer": 0, "why": "Judging too early stops ideas from flowing. Cull later." }
+      "check": { "q": "What's the main rule during a brainstorm?", "options": ["Write everything down and judge later", "Reject the weak ideas immediately", "Let only the designers suggest ideas"], "answer": 0, "why": "Judging too early stops ideas from flowing. Cull later." }
     },
     {
       "id": "L02-l11",
@@ -166,7 +166,7 @@
         { "t": "see", "text": "Miyamoto showed his ideas to his wife. If she didn't like them, they were cut. Rogers asked office assistants. People who don't care about your idea give the most honest feedback." },
         { "t": "f2p", "text": "Mobile versions of that honest outsider:\n- a stranger playtesting the game\n- a fake ad tested for clicks\n- a small soft launch\nDesign one loop at a time: the next 30 seconds, then 30 minutes, then 30 days." }
       ],
-      "check": { "q": "Who gives the most honest feedback on your idea?", "options": ["Someone with no personal stake in it", "The person who invented it", "Your closest teammate"], "answer": 0, "why": "People with no creative investment have no reason to protect the idea." }
+      "check": { "q": "Who gives the most honest feedback on your idea?", "options": ["Someone with no personal stake in it", "The person who came up with the idea", "Your closest teammate on the project"], "answer": 0, "why": "People with no creative investment have no reason to protect the idea." }
     },
     {
       "id": "L02-l13",

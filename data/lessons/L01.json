@@ -51,7 +51,7 @@
         { "t": "f2p", "text": "When a game moves to phones, it must change its controls. Shooters like Call of Duty: Mobile added on-screen sticks, auto-fire and aim help, because precise aiming is hard with a thumb." },
         { "t": "hook", "text": "Lab, bar, arcade, couch, pocket." }
       ],
-      "check": { "q": "Why are match-3 and swipe games so common on phones?", "options": ["The touchscreen makes those actions natural", "Phones can't show 3D graphics", "They are cheaper to make"], "answer": 0, "why": "The input device shapes the genre. Touch makes swiping, tapping and dragging feel natural." }
+      "check": { "q": "Why are match-3 and swipe games so common on phones?", "options": ["The touchscreen makes those actions natural", "Phones can't show detailed 3D graphics well", "They are much cheaper than other genres to make"], "answer": 0, "why": "The input device shapes the genre. Touch makes swiping, tapping and dragging feel natural." }
     },
     {
       "id": "L01-l04",
@@ -91,7 +91,7 @@
         { "t": "f2p", "text": "When you study the market, look for empty spots: two genres nobody has combined well yet. That's often where the next hit comes from." },
         { "t": "hook", "text": "Genres are LEGO bricks, not museum labels." }
       ],
-      "check": { "q": "Royal Match adds decorating to match-3. What is that?", "options": ["A hybrid of two genres", "A brand new genre", "A sequel"], "answer": 0, "why": "It combines puzzle levels with a decorating goal. That's a hybrid." }
+      "check": { "q": "Royal Match adds decorating to match-3. What is that?", "options": ["A hybrid of two genres", "A brand new genre", "A sequel to an older game"], "answer": 0, "why": "It combines puzzle levels with a decorating goal. That's a hybrid." }
     },
     {
       "id": "L01-l07",
@@ -145,7 +145,7 @@
         { "t": "f2p", "text": "Learn each role's main number. LiveOps watches event joins, economy watches currency balance, data watches retention, and UA watches the cost of each new player. Speaking their language makes you easier to work with." },
         { "t": "hook", "text": "Think of a theme park: designers build the rides, LiveOps runs the weekend parade, and the economy designer runs the ticket booth." }
       ],
-      "check": { "q": "Who plans the weekly events in a live mobile game?", "options": ["The LiveOps designer", "The UA manager", "The composer"], "answer": 0, "why": "LiveOps owns the event calendar. UA buys ads to bring new players in." }
+      "check": { "q": "Who plans the weekly events in a live mobile game?", "options": ["The LiveOps designer", "The user acquisition manager", "The composer and sound team"], "answer": 0, "why": "LiveOps owns the event calendar. UA buys ads to bring new players in." }
     },
     {
       "id": "L01-l11",

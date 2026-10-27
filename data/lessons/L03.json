@@ -50,7 +50,7 @@
         { "t": "f2p", "text": "A good 5-minute session has an arc too: an easy warm-up win, rising challenge, a tense \"almost lost it\", a big reward, and a reason to come back." },
         { "t": "hook", "text": "The writer writes the script. The player writes the diary. Players only retell the diary." }
       ],
-      "check": { "q": "What is a narrative in Rogers' terms?", "options": ["The order of events the player experiences", "The script the writer prepares", "The game's manual"], "answer": 0, "why": "Even Tetris creates narratives, because players experience events in order." }
+      "check": { "q": "What is a narrative in Rogers' terms?", "options": ["The order of events the player experiences", "The script the writer prepares in advance", "The printed manual that comes with the game"], "answer": 0, "why": "Even Tetris creates narratives, because players experience events in order." }
     },
     {
       "id": "L03-l04",
@@ -63,7 +63,7 @@
         { "t": "see", "text": "Mobile proves it daily: cooking, cleaning, sorting items, parking cars, even being a hole that swallows a city (Hole.io)." },
         { "t": "f2p", "text": "Any story can become an event: one day of collecting, one day of obstacle levels, a gate that unlocks the next area, and a boss stage at the end." }
       ],
-      "check": { "q": "What is Rogers' point with Little Red Riding Hood?", "options": ["Almost any subject can become gameplay", "Fairy tales are only for kids", "Stories should be cutscenes"], "answer": 0, "why": "Even a picnic-basket fairy tale can have levels and a boss fight." }
+      "check": { "q": "What is Rogers' point with Little Red Riding Hood?", "options": ["Almost any subject can become gameplay", "Fairy tales only work in games for kids", "Old stories are best told in cutscenes"], "answer": 0, "why": "Even a picnic-basket fairy tale can have levels and a boss fight." }
     },
     {
       "id": "L03-l05",
@@ -158,7 +158,7 @@
         { "t": "f2p", "text": "Store names are limited to about 30 characters, and home screens cut long names. Many games add a keyword after a colon to help search. Check for clashes and odd meanings in other languages." },
         { "t": "hook", "text": "A great title fits on an arcade sign, or today, under an app icon." }
       ],
-      "check": { "q": "Why name the game early?", "options": ["Otherwise marketing may name it for you", "Stores require it on day one", "Long names cost more"], "answer": 0, "why": "Rogers warns that if you wait, someone else picks a name you won't like." }
+      "check": { "q": "Why name the game early?", "options": ["Otherwise marketing may name it for you", "App stores require a name on day one", "Long names cost more to put in stores"], "answer": 0, "why": "Rogers warns that if you wait, someone else picks a name you won't like." }
     },
     {
       "id": "L03-l12",
@@ -197,7 +197,7 @@
         { "t": "see", "text": "Teach without them noticing. Pokémon GO gets people walking. Duolingo shows how much learning people accept when it's wrapped in streaks and rewards." },
         { "t": "f2p", "text": "Many casual players are adults who like cartoon art. Simple presentation is fine, but don't make the themes or puzzles dumb. Games for children also face extra privacy and ad rules." }
       ],
-      "check": { "q": "What is the most common mistake when writing for kids?", "options": ["Making the story too simple", "Making it too long", "Using animals"], "answer": 0, "why": "Kids can handle complex themes. Classic children's books prove it." }
+      "check": { "q": "What is the most common mistake when writing for kids?", "options": ["Making the story too simple", "Making the story too long", "Using animals as heroes"], "answer": 0, "why": "Kids can handle complex themes. Classic children's books prove it." }
     },
     {
       "id": "L03-l15",
@@ -211,7 +211,7 @@
         { "t": "f2p", "text": "Licensed F2P is big: Marvel Snap, Pokémon GO, Monopoly GO!. Owners may have rules about gacha, ads and how characters appear in offers. Check before designing the economy." },
         { "t": "hook", "text": "Use their recipes, ask about allergies, then add your own spice with permission." }
       ],
-      "check": { "q": "When should you learn the license owner's deal-breakers?", "options": ["Early, before designing", "After launch", "Never, just build"], "answer": 0, "why": "Late surprises, like the vegetarian burger, force costly changes." }
+      "check": { "q": "When should you learn the license owner's deal-breakers?", "options": ["Early, before designing", "Right after the launch", "Never: just build it"], "answer": 0, "why": "Late surprises, like the vegetarian burger, force costly changes." }
     },
     {
       "id": "L03-l16",

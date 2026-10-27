@@ -75,7 +75,7 @@
         { "t": "see", "text": "Different prices for the same item for different people is risky. Players compare on Reddit and Discord. Personalize the **content and moment**, not the price." },
         { "t": "f2p", "text": "Ethical line: never chase people who show compulsive patterns, like sending bigger offers to someone who spends at 3 a.m. every night." }
       ],
-      "check": { "q": "What is the safer way to personalize offers?", "options": ["Change the content and timing, keep prices consistent", "Charge loyal players more", "Show every offer to everyone at once"], "answer": 0, "why": "Different prices for the same thing break trust when players find out." }
+      "check": { "q": "What is the safer way to personalize offers?", "options": ["Change content and timing, keep prices the same", "Charge loyal players a little more each time", "Show every offer to every player at once"], "answer": 0, "why": "Different prices for the same thing break trust when players find out." }
     },
     {
       "id": "F2P2-l06",
@@ -129,7 +129,7 @@
         { "t": "f2p", "text": "Why it works: a clear goal, a visible progress bar, a daily reason to log in and great value per dollar. It's often the best first purchase in a game." },
         { "t": "hook", "text": "A battle pass is a gym membership that actually makes you go." }
       ],
-      "check": { "q": "What do players actually buy with a battle pass?", "options": ["The chance to earn better rewards by playing", "One random item from a premium chest", "Removal of all timers for the season"], "answer": 0, "why": "Rewards still have to be earned, which feels fairer than buying them outright." }
+      "check": { "q": "What do players actually buy with a battle pass?", "options": ["The chance to earn better rewards by playing", "One random item from a premium chest", "Removal of all the timers for the season"], "answer": 0, "why": "Rewards still have to be earned, which feels fairer than buying them outright." }
     },
     {
       "id": "F2P2-l10",
@@ -237,7 +237,7 @@
         { "t": "see", "text": "Show the nearest goal: \"3 spots from promotion\". Never just \"rank #2,483,991\"." },
         { "t": "f2p", "text": "Social design rules:\n- unlock clans after the tutorial\n- recommend active clans so members don't drift off\n- allow a \"vacation\" mode so obligation doesn't become guilt\n- keep PvP fair: pay for speed or looks, not wins" }
       ],
-      "check": { "q": "Why do small leagues motivate more than a global board?", "options": ["Players have a real chance to win", "They have better rewards", "They hide all rankings"], "answer": 0, "why": "A reachable goal motivates. A rank in the millions doesn't." }
+      "check": { "q": "Why do small leagues motivate more than a global board?", "options": ["Players have a real chance to win", "Small leagues give better rewards", "They hide every player's ranking"], "answer": 0, "why": "A reachable goal motivates. A rank in the millions doesn't." }
     },
     {
       "id": "F2P2-l18",
@@ -278,7 +278,7 @@
         { "t": "see", "text": "In social games, clanmates in different groups compare offers. Split the test by clan instead of by player." },
         { "t": "f2p", "text": "A/B testing climbs the hill you're standing on. It won't find a better mountain. Big leaps come from design vision." }
       ],
-      "check": { "q": "Why is stopping a test as soon as B looks better a mistake?", "options": ["Early results are often random noise", "Tests must run for a year", "B always wins"], "answer": 0, "why": "Peeking and stopping early creates false wins." }
+      "check": { "q": "Why is stopping a test as soon as B looks better a mistake?", "options": ["Early results are often random noise", "Tests must always run for a full year", "Version B always wins in the end"], "answer": 0, "why": "Peeking and stopping early creates false wins." }
     },
     {
       "id": "F2P2-l21",
@@ -346,7 +346,7 @@
         { "t": "f2p", "text": "Players who feel tricked stop trusting **every** offer, so sales drop across the whole store. Use honest timers, neutral buttons and streak freezes instead." },
         { "t": "hook", "text": "The 5 Fs: Fake scarcity, Fogged prices, Friction for sale, FOMO overload, Fooling kids." }
       ],
-      "check": { "q": "What is a healthy alternative to streak guilt?", "options": ["Streak freezes and catch-up days", "Bigger streak penalties", "Removing all rewards"], "answer": 0, "why": "Players keep the habit without feeling punished for one missed day." }
+      "check": { "q": "What is a healthy alternative to streak guilt?", "options": ["Streak freezes and catch-up days", "Bigger penalties for broken streaks", "Removing all the streak rewards"], "answer": 0, "why": "Players keep the habit without feeling punished for one missed day." }
     },
     {
       "id": "F2P2-l26",

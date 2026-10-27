@@ -129,7 +129,7 @@
         { "t": "see", "text": "Clash of Clans has Clan Wars and Clan Games. Clash Royale has card donations. Monopoly GO! has partner events, where you build toward a shared goal with friends." },
         { "t": "f2p", "text": "Unlock clans after the player understands the basics, then push them gently to join one. A player in an active clan is far less likely to quit." }
       ],
-      "check": { "q": "Why do clans improve retention so much?", "options": ["Players feel responsible to teammates", "Clans hand out the most gems", "Clan members never see ads"], "answer": 0, "why": "Obligation and friendship keep people coming back." }
+      "check": { "q": "Why do clans improve retention so much?", "options": ["Players feel responsible to teammates", "Clans hand out the most gems each day", "Clan members never have to see ads"], "answer": 0, "why": "Obligation and friendship keep people coming back." }
     },
     {
       "id": "L14-l10",

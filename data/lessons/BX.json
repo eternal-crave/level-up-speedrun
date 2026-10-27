@@ -105,7 +105,7 @@
         { "t": "f2p", "text": "Mobile adds: warning time before attacks, readability at thumb size, a limit on enemies on screen for cheap phones, drop tables and analytics. Puzzle games use a \"blocker\" version." },
         { "t": "hook", "text": "The enemy sheet is a casting call: headshot, personality, scenes, costume, lines and paycheck." }
       ],
-      "check": { "q": "Why match the sound list to the animation list?", "options": ["So no animation is missing its sound", "To save memory", "Because sounds come first"], "answer": 0, "why": "The cross-check reveals forgotten work early." }
+      "check": { "q": "Why match the sound list to the animation list?", "options": ["So no animation is missing its sound", "To save memory in the final build", "Because sounds must be made first"], "answer": 0, "why": "The cross-check reveals forgotten work early." }
     },
     {
       "id": "BX-l08",

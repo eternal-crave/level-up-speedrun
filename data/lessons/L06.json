@@ -36,7 +36,7 @@
         { "t": "f2p", "text": "A static board needs **juice** to feel alive: pieces that wiggle while idle, bursts on matches, combo text, screen shake on big boosters, characters reacting at the edges." },
         { "t": "hook", "text": "A static camera is a puppet stage. The stage never moves, so the puppets had better dance." }
       ],
-      "check": { "q": "What's the main risk of a static camera?", "options": ["The screen can feel lifeless without animation", "Players often get motion sick from it", "It's very hard to program correctly"], "answer": 0, "why": "With no camera movement, life must come from animation and effects." }
+      "check": { "q": "What's the main risk of a static camera?", "options": ["The screen can feel lifeless without animation", "Players often get motion sick when it stays still", "It's very hard for programmers to get it right"], "answer": 0, "why": "With no camera movement, life must come from animation and effects." }
     },
     {
       "id": "L06-l03",
@@ -50,7 +50,7 @@
         { "t": "f2p", "text": "Scrolling can tease. Saga maps show the next world blurred or locked just above you. Base builders put a locked zone at the edge of your land. The scroll itself shows what's coming next." },
         { "t": "hook", "text": "A scrolling camera is a flashlight on a dark map." }
       ],
-      "check": { "q": "How do saga maps use scrolling to keep players going?", "options": ["They show the next area just ahead, locked or blurred", "They hide all future areas", "They scroll automatically to the end"], "answer": 0, "why": "Seeing what's next creates anticipation." }
+      "check": { "q": "How do saga maps use scrolling to keep players going?", "options": ["They show the next area just ahead, locked or blurred", "They hide all future areas until you reach them", "They scroll automatically all the way to the end"], "answer": 0, "why": "Seeing what's next creates anticipation." }
     },
     {
       "id": "L06-l04",
@@ -78,7 +78,7 @@
         { "t": "f2p", "text": "Mobile shooters like Call of Duty: Mobile offer first- and third-person modes. Add \"reduce camera shake\" and field-of-view settings. High frame rates drain battery, so keep camera motion smooth even at 30 fps." },
         { "t": "hook", "text": "FRAMES: Frame rate, Rein in bob, Anchor points, Move gently, Elevation rare, Smooth floors." }
       ],
-      "check": { "q": "What causes motion sickness in games?", "options": ["Eyes see motion the body doesn't feel", "Very bright, saturated colours", "Loud sound effects and music"], "answer": 0, "why": "The mismatch between sight and balance causes the sick feeling." }
+      "check": { "q": "What causes motion sickness in games?", "options": ["Eyes see motion the body doesn't feel", "Very bright, saturated colours on screen", "Loud sound effects and music in battle"], "answer": 0, "why": "The mismatch between sight and balance causes the sick feeling." }
     },
     {
       "id": "L06-l06",
@@ -120,7 +120,7 @@
         { "t": "f2p", "text": "Isometric units get tiny on phones. Exaggerate their silhouettes, use team colours, and add health bars or icons above them. Keep the playfield mostly flat to avoid height confusion." },
         { "t": "hook", "text": "Isometric: toys on the bedroom floor. God view: the bedroom seen from the ceiling fan." }
       ],
-      "check": { "q": "What's the main weakness of an isometric view?", "options": ["It's hard to tell heights apart", "It can't show buildings", "It causes motion sickness"], "answer": 0, "why": "Higher-but-closer and lower-but-farther things can look like they're in the same place." }
+      "check": { "q": "What's the main weakness of an isometric view?", "options": ["It's hard to tell heights apart", "It can't show tall buildings well", "It often causes motion sickness"], "answer": 0, "why": "Higher-but-closer and lower-but-farther things can look like they're in the same place." }
     },
     {
       "id": "L06-l09",
@@ -190,7 +190,7 @@
         { "t": "f2p", "text": "Use thirds in store screenshots and ad frames: the hero on one third, the action or reward on another. It instantly looks more professional." },
         { "t": "hook", "text": "Tic-tac-toe your shot, and treat the line like a velvet rope." }
       ],
-      "check": { "q": "Where does the rule of thirds put the main subject?", "options": ["Where the third-lines cross", "Exactly in the centre", "At the very edge"], "answer": 0, "why": "Off-centre placement on the thirds looks balanced and intentional." }
+      "check": { "q": "Where does the rule of thirds put the main subject?", "options": ["Where the third-lines cross", "Exactly in the very centre", "Right at the frame's edge"], "answer": 0, "why": "Off-centre placement on the thirds looks balanced and intentional." }
     },
     {
       "id": "L06-l14",
@@ -231,7 +231,7 @@
         { "t": "see", "text": "LittleBigPlanet zooms out when players spread apart and shows arrows pointing to anyone off screen." },
         { "t": "f2p", "text": "Mobile multiplayer is usually one player per phone, so split screen is mostly gone. The new challenge is tracking others on a small screen: mini-maps, arrows at the screen edge and teammate markers." }
       ],
-      "check": { "q": "What's the main camera challenge in mobile multiplayer?", "options": ["Tracking other players on one small screen", "Splitting the screen four ways", "Sharing one phone"], "answer": 0, "why": "Each player has their own phone, so the job is showing where others are." }
+      "check": { "q": "What's the main camera challenge in mobile multiplayer?", "options": ["Tracking other players on one small screen", "Splitting the small screen four ways", "Sharing one phone between two players"], "answer": 0, "why": "Each player has their own phone, so the job is showing where others are." }
     }
   ]
 }

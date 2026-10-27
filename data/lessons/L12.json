@@ -49,7 +49,7 @@
         { "t": "f2p", "text": "Rocks on the head in F2P:\n- a match-3 board you can't win, however you play\n- a runner obstacle you can't see in time\n- a surprise that fails the level with no warning\nEvery unfair loss is a reason to quit." },
         { "t": "hook", "text": "If players die, they should blame their thumbs, not your name in the credits." }
       ],
-      "check": { "q": "When is a hazard death fair?", "options": ["When the player could see it coming and mistimed it", "When it's a surprise with no warning", "When it's random"], "answer": 0, "why": "Fair deaths come from the player's own mistake, so they want to try again." }
+      "check": { "q": "When is a hazard death fair?", "options": ["When the player saw it coming and mistimed it", "When it's a surprise with no warning at all", "When it happens at random, like real life"], "answer": 0, "why": "Fair deaths come from the player's own mistake, so they want to try again." }
     },
     {
       "id": "L12-l04",
@@ -76,7 +76,7 @@
         { "t": "f2p", "text": "In runners and hyper-casual games, every obstacle needs a readable tell at phone size. If players can't see the warning on a small screen, the hazard is unfair." },
         { "t": "hook", "text": "Wait for it… wait for it… go for it!" }
       ],
-      "check": { "q": "Why is random timing bad for a timing puzzle?", "options": ["Players can't learn the pattern", "It's too easy", "It costs more to build"], "answer": 0, "why": "Timing puzzles reward learning. Random timing makes success luck, not skill." }
+      "check": { "q": "Why is random timing bad for a timing puzzle?", "options": ["Players can't learn the pattern", "It makes the puzzle far too easy", "It costs more to build and test"], "answer": 0, "why": "Timing puzzles reward learning. Random timing makes success luck, not skill." }
     },
     {
       "id": "L12-l06",
@@ -118,7 +118,7 @@
         { "t": "f2p", "text": "Good match-3 games don't put every blocker in every level. They rotate a few, so each level has its own personality. Runners rotate obstacle sets by zone." },
         { "t": "hook", "text": "Rotate mechanics like pitchers. Even your best one gets tired if it plays every inning." }
       ],
-      "check": { "q": "Why rotate mechanics instead of using all of them everywhere?", "options": ["Each one stays fresh and effective", "It saves memory", "Players prefer fewer levels"], "answer": 0, "why": "Overuse makes any mechanic boring. Rotation keeps levels distinct." }
+      "check": { "q": "Why rotate mechanics instead of using all of them everywhere?", "options": ["Each one stays fresh and effective", "It saves memory on older phones", "Players prefer fewer, shorter levels"], "answer": 0, "why": "Overuse makes any mechanic boring. Rotation keeps levels distinct." }
     },
     {
       "id": "L12-l09",
@@ -131,7 +131,7 @@
         { "t": "see", "text": "Respawning next to a flame jet and burning before you can move feels cheap. Respawning facing a wall, so you must turn the camera, feels clumsy." },
         { "t": "f2p", "text": "On mobile, the whole app is a checkpoint machine. Calls and notifications interrupt constantly, so save on every action and resume exactly where the player left off. Continues (\"Save me\") should restart you somewhere safe." }
       ],
-      "check": { "q": "Where should you never put a checkpoint?", "options": ["Next to a hazard or an enemy", "On flat ground", "Facing the way forward"], "answer": 0, "why": "Taking damage right as you respawn is unfair and annoying." }
+      "check": { "q": "Where should you never put a checkpoint?", "options": ["Next to a hazard or an enemy", "On flat, open, quiet ground", "Facing the way the player goes"], "answer": 0, "why": "Taking damage right as you respawn is unfair and annoying." }
     },
     {
       "id": "L12-l10",
@@ -159,7 +159,7 @@
         { "t": "f2p", "text": "Paid hints and skips are fine in F2P if they're the player's choice and the price is mild. Hiding the only way forward behind a big payment is not." },
         { "t": "hook", "text": "Reason, Knowledge, Skill, Luck: \"RKSL\", say it like \"rascal\"." }
       ],
-      "check": { "q": "A player is stuck on a puzzle. What should the game do?", "options": ["Offer hints or the answer at a small price", "Take away a life", "Lock the game until it's solved"], "answer": 0, "why": "Progress is owed to the player. Help should cost a little, never a lot." }
+      "check": { "q": "A player is stuck on a puzzle. What should the game do?", "options": ["Offer hints or the answer at a small price", "Take away one of the player's lives", "Lock the game until the puzzle is solved"], "answer": 0, "why": "Progress is owed to the player. Help should cost a little, never a lot." }
     },
     {
       "id": "L12-l12",

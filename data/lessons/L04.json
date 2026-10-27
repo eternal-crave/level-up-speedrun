@@ -23,7 +23,7 @@
         { "t": "f2p", "text": "In mobile F2P:\n- the long simmer is **soft launch**: months of tuning in a few test countries\n- grey, ugly prototypes come first: if the core is fun ugly, it'll be fun pretty\n- avoid crunching every update, because live games run for years" },
         { "t": "hook", "text": "Recipe, ingredients, right order, short boil, long simmer, serve." }
       ],
-      "check": { "q": "In the chili comparison, what is the long simmer?", "options": ["Polishing and improving the game over time", "Writing down the very first idea", "Hiring the team and buying tools"], "answer": 0, "why": "The simmer is slow polish and iteration. That's where quality comes from." }
+      "check": { "q": "In the chili comparison, what is the long simmer?", "options": ["Polishing and improving the game over time", "Writing down the very first rough idea", "Hiring the team and buying all the tools"], "answer": 0, "why": "The simmer is slow polish and iteration. That's where quality comes from." }
     },
     {
       "id": "L04-l02",
@@ -37,7 +37,7 @@
         { "t": "f2p", "text": "Mobile teams rarely write one giant GDD. They keep a main page that links to many short feature pages, each owned by a designer and kept up to date." },
         { "t": "hook", "text": "One, ten, beat, then the full book." }
       ],
-      "check": { "q": "How long should a GDD be, according to Rogers?", "options": ["Just long enough to describe it accurately", "At least 300 pages, always", "One page, no matter the game"], "answer": 0, "why": "Length follows the game's size. The goal is accurate communication, not a page count." }
+      "check": { "q": "How long should a GDD be, according to Rogers?", "options": ["Just long enough to describe it accurately", "At least 300 pages for every single game", "One page only, no matter how big the game"], "answer": 0, "why": "Length follows the game's size. The goal is accurate communication, not a page count." }
     },
     {
       "id": "L04-l03",
@@ -64,7 +64,7 @@
         { "t": "see", "text": "In The Punisher (2005), some violent scenes were too extreme for the rating. The team showed them in black and white and changed the camera angle to get the rating they needed." },
         { "t": "f2p", "text": "On mobile, ratings come through **IARC** on Google Play and Apple's own system. Labels for in-game purchases and random paid items matter a lot. App stores require you to show the odds of paid random rewards, and some countries regulate them further." }
       ],
-      "check": { "q": "When should you decide your game's age rating?", "options": ["At the start, then design toward it", "After launch", "Only if a store complains"], "answer": 0, "why": "The rating shapes content, marketing and where you can sell. Fixing it late is expensive." }
+      "check": { "q": "When should you decide your game's age rating?", "options": ["At the start, then design toward it", "After launch, once players review it", "Only if an app store complains"], "answer": 0, "why": "The rating shapes content, marketing and where you can sell. Fixing it late is expensive." }
     },
     {
       "id": "L04-l05",
@@ -92,7 +92,7 @@
         { "t": "f2p", "text": "In F2P, the ten-pager becomes a **pitch deck**. Put the business slide early: target players, comps with numbers, how it earns, the LiveOps plan, and retention targets (D1, D7, D30)." },
         { "t": "hook", "text": "A ten-pager is a movie trailer, not the movie." }
       ],
-      "check": { "q": "Who reads a ten-pager besides your team?", "options": ["People who might fund the game", "Only programmers", "Players in the store"], "answer": 0, "why": "Executives and publishers decide whether to pay for the game, so it must be readable and visual." }
+      "check": { "q": "Who reads a ten-pager besides your team?", "options": ["People who might fund the game", "Only the programmers on the team", "Players browsing the app store"], "answer": 0, "why": "Executives and publishers decide whether to pay for the game, so it must be readable and visual." }
     },
     {
       "id": "L04-l07",
@@ -119,7 +119,7 @@
         { "t": "see", "text": "Even the title page tells a story. The right font for the logo shows the genre instantly: rounded and colourful for a puzzle game, hard and metallic for strategy." },
         { "t": "f2p", "text": "On mobile, replace the story arc with **loops over time**. What does the player do in 30 seconds? In one session? In a day, a season, and over months?" }
       ],
-      "check": { "q": "What does a mobile ten-pager describe instead of a classic story arc?", "options": ["What the player does over seconds to months", "Only how the story ends", "Which programming language is used"], "answer": 0, "why": "F2P games run for years, so loops over time matter more than a single story arc." }
+      "check": { "q": "What does a mobile ten-pager describe instead of a classic story arc?", "options": ["What the player does over seconds to months", "Only how the story ends in the last chapter", "Which programming language the team will use"], "answer": 0, "why": "F2P games run for years, so loops over time matter more than a single story arc." }
     },
     {
       "id": "L04-l09",
@@ -160,7 +160,7 @@
         { "t": "f2p", "text": "F2P games often never end. So plan your **content runway** (how much content exists compared with how fast players finish it) and an **endgame** (PvP ladders, guild raids, collections)." },
         { "t": "hook", "text": "Zero, Locked, Learn, Robbed, Rewind. And never start with amnesia: it's the oldest cliché in games." }
       ],
-      "check": { "q": "Home-screen buttons greyed out with \"Unlocks at level 10\" use which start?", "options": ["Shown but locked", "Ground zero", "Flashback"], "answer": 0, "why": "The player sees the feature early, and it opens up as they progress." }
+      "check": { "q": "Home-screen buttons greyed out with \"Unlocks at level 10\" use which start?", "options": ["Shown but locked", "Ground zero start", "Flashback opening"], "answer": 0, "why": "The player sees the feature early, and it opens up as they progress." }
     },
     {
       "id": "L04-l12",
@@ -200,7 +200,7 @@
         { "t": "see", "text": "A feature one-pager has:\n- the goal and the number it should move, at the top\n- the player fantasy\n- a flow sketch of 4 to 6 steps\n- three key numbers and the open questions" },
         { "t": "f2p", "text": "Practise now: pick a feature from a game you play, like a weekend event. Write its one-pager in under an hour. That's exactly what a design test looks like." }
       ],
-      "check": { "q": "What goes at the top of a feature one-pager?", "options": ["The goal and the number it should improve", "The art credits", "The full history of the game"], "answer": 0, "why": "Readers first need to know why the feature exists and how success is measured." }
+      "check": { "q": "What goes at the top of a feature one-pager?", "options": ["The goal and the number it should improve", "The art credits and who drew each screen", "The full history of the game so far"], "answer": 0, "why": "Readers first need to know why the feature exists and how success is measured." }
     }
   ]
 }

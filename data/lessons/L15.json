@@ -22,7 +22,7 @@
         { "t": "f2p", "text": "A recognizable sound becomes a brand. Candy Crush's deep-voiced \"Sweet!\" and \"Delicious!\" are famous. Plan sound for the tutorial, rewards and ads from the start." },
         { "t": "hook", "text": "No theme, no dream." }
       ],
-      "check": { "q": "What did Star Tours teach Disney?", "options": ["Music made the ride feel like Star Wars", "Realistic sound is always best", "Rides don't need sound"], "answer": 0, "why": "Without the music, the experience felt flat." }
+      "check": { "q": "What did Star Tours teach Disney?", "options": ["Music made the ride feel like Star Wars", "Realistic sound is always the best choice", "Rides work fine without any sound at all"], "answer": 0, "why": "Without the music, the experience felt flat." }
     },
     {
       "id": "L15-l02",
@@ -49,7 +49,7 @@
         { "t": "f2p", "text": "Soft launch puts real builds in real countries. A forgotten temp track there is a real copyright problem. Label every temp file clearly, like TEMP_." },
         { "t": "hook", "text": "Time, Height, Colour, Loud." }
       ],
-      "check": { "q": "What is a temp soundtrack for?", "options": ["Showing the composer the feel you want", "Shipping in the final game", "Testing speakers"], "answer": 0, "why": "Examples remove guesswork, but temp music must never ship." }
+      "check": { "q": "What is a temp soundtrack for?", "options": ["Showing the composer the feel you want", "Shipping as the music in the final game", "Testing the speakers on different phones"], "answer": 0, "why": "Examples remove guesswork, but temp music must never ship." }
     },
     {
       "id": "L15-l04",
@@ -117,7 +117,7 @@
         { "t": "f2p", "text": "Sound can warn and guide. A falling bomb whistles so you can dive for cover. A crackle makes players pause before a magic door. Always check the copyright on any sound you use." },
         { "t": "hook", "text": "Remember the bowling-ball bone: right beats real." }
       ],
-      "check": { "q": "What does \"sweetening\" a sound mean?", "options": ["Mixing sounds so it feels right", "Making it quieter", "Adding music behind it"], "answer": 0, "why": "Real recordings can sound weak, so designers layer sounds." }
+      "check": { "q": "What does \"sweetening\" a sound mean?", "options": ["Mixing sounds so it feels right", "Making the sound much quieter", "Adding soft music behind it"], "answer": 0, "why": "Real recordings can sound weak, so designers layer sounds." }
     },
     {
       "id": "L15-l09",

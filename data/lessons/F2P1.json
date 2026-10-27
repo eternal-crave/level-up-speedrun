@@ -157,7 +157,7 @@
         { "t": "see", "text": "A classic mistake: five popups at launch (news, an offer, a daily reward, an event, another offer). Each one delays the fun and costs you players." },
         { "t": "f2p", "text": "Put ads and offers at natural stopping points: the end of a level or match, when energy is used up, when all timers are running. That respects the player's flow." }
       ],
-      "check": { "q": "Where should an interstitial ad appear?", "options": ["At a natural stop, like the end of a level", "In the middle of a tense match", "Before the game has even loaded"], "answer": 0, "why": "Stopping points don't break the player's flow, so ads there hurt less." }
+      "check": { "q": "Where should an interstitial ad appear?", "options": ["At a natural stop, like the end of a level", "In the middle of a tense, close match", "Before the game has even finished loading"], "answer": 0, "why": "Stopping points don't break the player's flow, so ads there hurt less." }
     },
     {
       "id": "F2P1-l12",
@@ -171,7 +171,7 @@
         { "t": "f2p", "text": "Show, don't tell. A pointing hand and a highlighted tile beat a paragraph of text. A few words per screen at most." },
         { "t": "hook", "text": "Fun in 1 minute, one full loop in 5, a hook by 15." }
       ],
-      "check": { "q": "What's the best way to teach a new mechanic?", "options": ["A pointing hand and a highlighted tile", "A long text explanation", "A video before the game starts"], "answer": 0, "why": "Players learn by doing. Show, don't tell." }
+      "check": { "q": "What's the best way to teach a new mechanic?", "options": ["A pointing hand and a highlighted tile", "A long text explanation on one screen", "A video shown before the game starts"], "answer": 0, "why": "Players learn by doing. Show, don't tell." }
     },
     {
       "id": "F2P1-l13",
@@ -210,7 +210,7 @@
         { "t": "see", "text": "Difficulty should look like a **saw tooth**: harder, harder, a spike, then an easier breather, then harder again. Like a gym session, not max weight on every lift." },
         { "t": "f2p", "text": "What players feel is **time**, not XP. Plan time-to-level directly: \"level 5 in the first session, level 10 by day 3\". Fast-growing XP curves look gentle early and explode later." }
       ],
-      "check": { "q": "What shape should difficulty follow?", "options": ["A saw tooth: rising, a spike, then a breather", "Flat all the way", "Always getting harder with no breaks"], "answer": 0, "why": "Breathers after spikes keep players motivated without burning them out." }
+      "check": { "q": "What shape should difficulty follow?", "options": ["A saw tooth: rising, a spike, a breather", "Flat all the way, so nobody gets stuck", "Always harder, with no breaks at all"], "answer": 0, "why": "Breathers after spikes keep players motivated without burning them out." }
     },
     {
       "id": "F2P1-l16",
@@ -224,7 +224,7 @@
         { "t": "f2p", "text": "**Every faucet needs a sink players actually want.** A currency with nothing worth buying is just noise in the corner of the screen. Also show real prices clearly: \"Is 280 gems a lot?\" shouldn't be a puzzle." },
         { "t": "hook", "text": "Your economy is a bathtub: faucets fill it, drains empty it." }
       ],
-      "check": { "q": "A currency piles up with nothing good to buy. What's missing?", "options": ["A sink players want", "Another faucet", "A new currency"], "answer": 0, "why": "Without wanted sinks, rewards lose their value." }
+      "check": { "q": "A currency piles up with nothing good to buy. What's missing?", "options": ["A sink players actually want", "Another faucet that pays out more", "A brand new second currency"], "answer": 0, "why": "Without wanted sinks, rewards lose their value." }
     },
     {
       "id": "F2P1-l17",
@@ -250,7 +250,7 @@
         { "t": "see", "text": "Many shops show three offer sizes, with the middle one marked \"best value\". Most people pick the middle." },
         { "t": "f2p", "text": "Use these tools to show honest value, not to trick players. Clear prices build trust, and trust is what turns a first purchase into a second one." }
       ],
-      "check": { "q": "What is anchoring?", "options": ["A big price shown first makes others feel cheap", "Locking prices so they never change", "Giving free currency to new players"], "answer": 0, "why": "The first or biggest price becomes the reference for judging the others." }
+      "check": { "q": "What is anchoring?", "options": ["A big price shown first makes others feel cheap", "Locking prices so they never change over time", "Giving free currency to every new player"], "answer": 0, "why": "The first or biggest price becomes the reference for judging the others." }
     },
     {
       "id": "F2P1-l19",
@@ -264,7 +264,7 @@
         { "t": "f2p", "text": "Daily and weekly quests (\"win 3 battles\") guide players to different features each day. They often feed a season pass." },
         { "t": "hook", "text": "Retention mechanics are seasoning: a pinch makes the dish, a whole shaker ruins it." }
       ],
-      "check": { "q": "Why give a streak freeze?", "options": ["So one missed day doesn't wipe out the streak", "To make the daily challenge harder", "To sell more streak-saving offers"], "answer": 0, "why": "A safety option keeps the streak motivating instead of stressful." }
+      "check": { "q": "Why give a streak freeze?", "options": ["So one missed day doesn't wipe the streak", "To make the daily challenge a bit harder", "To sell more offers that save the streak"], "answer": 0, "why": "A safety option keeps the streak motivating instead of stressful." }
     },
     {
       "id": "F2P1-l20",
@@ -277,7 +277,7 @@
         { "t": "see", "text": "**Goal gradient:** motivation rises as a goal gets closer, so show progress bars. Starting a card with 2 of 10 stamps already filled makes people more likely to finish it." },
         { "t": "f2p", "text": "**Variable rewards** (chests, surprise drops) are very powerful, and close to gambling psychology. Use them with care and show the odds clearly." }
       ],
-      "check": { "q": "Why do clans keep players for a long time?", "options": ["Teammates depend on each other", "Clans give free gems", "Clans hide the shop"], "answer": 0, "why": "People stay for people. Leaving a clan feels like letting friends down." }
+      "check": { "q": "Why do clans keep players for a long time?", "options": ["Teammates depend on each other", "Clans hand out free gems daily", "Clan members never see the shop"], "answer": 0, "why": "People stay for people. Leaving a clan feels like letting friends down." }
     },
     {
       "id": "F2P1-l21",
@@ -331,7 +331,7 @@
         { "t": "f2p", "text": "Watch your biases: you're probably not the target player, live games test different versions on different players, and revenue numbers from tools are estimates. Your teardowns become your portfolio." },
         { "t": "hook", "text": "Be a mechanic, not a driver: open the hood and label every part." }
       ],
-      "check": { "q": "What turns a teardown from a description into learning?", "options": ["Writing hypotheses about why choices were made", "Listing every feature the game has", "Spending money to see every offer"], "answer": 0, "why": "Observations are cheap. The \"why\" is where you learn design." }
+      "check": { "q": "What turns a teardown from a description into learning?", "options": ["Writing hypotheses about why choices were made", "Listing every single feature the game has", "Spending money to see every offer in the shop"], "answer": 0, "why": "Observations are cheap. The \"why\" is where you learn design." }
     }
   ]
 }
