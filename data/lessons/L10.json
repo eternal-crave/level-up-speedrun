@@ -1,0 +1,221 @@
+{
+  "mod": "L10",
+  "words": [
+    { "w": "melee", "d": "close-range combat, like punches and sword swings" },
+    { "w": "wind-up", "d": "the short movement before an attack lands" },
+    { "w": "lock-on", "d": "a system that keeps the camera and attacks aimed at one enemy" },
+    { "w": "hitbox", "d": "the invisible area the game uses to decide if an attack connects" },
+    { "w": "smart bomb", "d": "an attack that hits everything on screen" },
+    { "w": "auto-battle", "d": "the game fights for you, while you choose the team, timing and upgrades" }
+  ],
+  "lessons": [
+    {
+      "id": "L10-l01",
+      "title": "Combat has three verbs: hit, move, guard",
+      "min": 3,
+      "deep": "Elements of Combat",
+      "cards": [
+        { "t": "idea", "text": "A military thinker said every fighting action is one of three things: **hitting, moving or guarding.** Design all three, not just attacks." },
+        { "t": "how", "text": "Violence is popular in games because it's the fastest loop of action, result and reward: press, enemy reacts, reward. How violent you make it (who does it, how often, how graphic) decides your age rating." },
+        { "t": "see", "text": "Clash Royale, Brawl Stars and Squad Busters use cartoon violence: enemies pop and vanish instead of bleeding. That keeps ratings low and widens the audience." },
+        { "t": "f2p", "text": "The \"tap, enemy pops, coins fly\" loop is the F2P core loop in miniature. Survivor.io runs it dozens of times a second. Non-violent conflict is huge too: match-3 levels are battles against a board." },
+        { "t": "hook", "text": "H-M-G: Hit, Move, Guard." }
+      ],
+      "check": { "q": "What are the three elements of combat?", "options": ["Hit, move and guard", "Attack, reward and level up", "Aim, shoot and reload"], "answer": 0, "why": "Every fighting action falls into hitting, moving or guarding." }
+    },
+    {
+      "id": "L10-l02",
+      "title": "Fighting style comes from personality",
+      "min": 3,
+      "deep": "400 Quatloos",
+      "cards": [
+        { "t": "idea", "text": "Combat style should express **who the character is**, and **the weapon decides how they fight.**" },
+        { "t": "how", "text": "A sneaky character fights from shadows with quick strikes. A brute swings slow, heavy blows. A signature weapon, like a giant sword or a whip, shapes every move." },
+        { "t": "see", "text": "Cloud's huge sword in Final Fantasy VII defines his whole fighting style. Without it, he'd just be a guy with spiky hair." },
+        { "t": "f2p", "text": "In hero-collecting games, each hero's weapon and personality must read instantly in their attack: a Brawl Stars brawler's shot shape tells you their role before you read any stats." },
+        { "t": "hook", "text": "Show me your weapon and I'll tell you who you are." }
+      ],
+      "check": { "q": "What should shape a character's fighting style?", "options": ["Their personality and signature weapon", "Whatever animation is cheapest", "The enemy's style"], "answer": 0, "why": "Combat is character. The weapon and personality decide how they fight." }
+    },
+    {
+      "id": "L10-l03",
+      "title": "Ranges, heights and the attack matrix",
+      "min": 3,
+      "deep": "400 Quatloos",
+      "cards": [
+        { "t": "idea", "text": "The right attack depends on **how far away and how high** the target is. Spread attacks across ranges and heights, and track them all in an **attack matrix.**" },
+        { "t": "how", "text": "- **Ranges:** close (punches), medium (sword swings), long (projectiles), area (hits everything around).\n- **Heights:** standing, low, high (jump attacks), aerial.\n- **Directions:** vertical and horizontal swings." },
+        { "t": "see", "text": "An attack matrix is a table of every move: range, damage, speed, height, special effect. If two moves have the same row, one of them isn't needed." },
+        { "t": "f2p", "text": "In Clash Royale, ranges and heights became card roles: air vs ground, splash vs single target, cards that only hit buildings. The attack matrix turned into the whole strategy." },
+        { "t": "hook", "text": "If two moves have the same profile, one gets cut." }
+      ],
+      "check": { "q": "What does an attack matrix help you guarantee?", "options": ["Every attack is different and useful", "Every attack does the same damage", "Fewer animations"], "answer": 0, "why": "Comparing moves side by side shows overlaps so each move earns its place." }
+    },
+    {
+      "id": "L10-l04",
+      "title": "Combat feel: timing and feedback",
+      "min": 3,
+      "deep": "400 Quatloos",
+      "cards": [
+        { "t": "idea", "text": "**Timing** is one of the biggest keys to great combat. Inputs should feel instant. And **a hit must look, sound and feel like a hit**: the feedback is the reward." },
+        { "t": "how", "text": "Quick attacks chain into a rhythm. Slow wind-ups are only for heavy, risky attacks with a huge payoff. On every hit, the enemy flinches, sparks fly, the sound punches and the screen shakes slightly." },
+        { "t": "see", "text": "Watch out for the \"moonwalking hero\" who swings three times at empty air because nobody made him step forward. Small attacks should move the character toward the enemy." },
+        { "t": "f2p", "text": "On phones, add a tiny vibration on big hits, and make sure the hit reads without sound, since many players play muted." },
+        { "t": "hook", "text": "Quick, quick, SLAM. And a hit with no reaction is a high-five to a ghost." }
+      ],
+      "check": { "q": "When is a slow wind-up attack okay?", "options": ["When it's risky but has a big payoff", "For every basic attack", "Never"], "answer": 0, "why": "Slow attacks are a bet. They need a reward worth the risk." }
+    },
+    {
+      "id": "L10-l05",
+      "title": "Make players look cool",
+      "min": 3,
+      "deep": "400 Quatloos",
+      "cards": [
+        { "t": "idea", "text": "People want games that **make them look cool.** Finishers, lock-on and smart targeting turn normal players into action heroes. Use them carefully." },
+        { "t": "how", "text": "- **Lock-on** keeps the player aimed at one enemy, so anyone looks like an expert.\n- **Finishing moves** end a fight in style.\n- **Weapon upgrades** should be visible: a sword that glows or burns, not just \"+3\".\n- **Special kills** like stealth takedowns need strict conditions." },
+        { "t": "see", "text": "In the Batman Arkham games, Batman almost never misses. The game helps the player chain attacks, and everyone feels like Batman." },
+        { "t": "f2p", "text": "Auto-aim in Brawl Stars and auto-attack in Archero are mobile lock-on. Upgrades should change how the weapon looks, because players can't see numbers." },
+        { "t": "hook", "text": "+3 is invisible. Flames are forever." }
+      ],
+      "check": { "q": "How should a weapon upgrade be shown?", "options": ["Visibly: it glows or changes look", "Only as a number in a menu", "Not at all"], "answer": 0, "why": "Players feel upgrades they can see, not hidden numbers." }
+    },
+    {
+      "id": "L10-l06",
+      "title": "Missing is fine, but help the strugglers",
+      "min": 2,
+      "deep": "Kiss Me",
+      "cards": [
+        { "t": "idea", "text": "Letting players miss builds **mastery**: improving feels earned. But players who keep failing should get **quiet help**, because the real goal is to keep them playing." },
+        { "t": "how", "text": "If a player keeps missing, the game can quietly make hitboxes a bit bigger or enemies a bit slower, without saying so." },
+        { "t": "f2p", "text": "In F2P, quiet help after several losses (a slightly easier board, a free booster) keeps players from quitting. Never do the opposite: secretly harder games for players likely to pay." },
+        { "t": "hook", "text": "Secretly widen the doorway." }
+      ],
+      "check": { "q": "A player keeps failing the same fight. What's a good response?", "options": ["Quietly give a bit of help", "Make it harder", "Show an ad"], "answer": 0, "why": "Hidden assistance keeps strugglers playing without embarrassing them." }
+    },
+    {
+      "id": "L10-l07",
+      "title": "Moving: the goal is not to get hit",
+      "min": 3,
+      "deep": "On Moving",
+      "cards": [
+        { "t": "idea", "text": "In any martial art, **moving matters as much as attacking.** The goal of a real fight is not to get hit. Give players moves that escape damage, and moves that combine with attacks." },
+        { "t": "how", "text": "- **Dodge:** gets you clear of danger.\n- **Dash:** gets you there fast, and can hurt on the way.\n- **Jump attack:** hits from above.\nMake sure a dodge actually clears an enemy's attack. A dodge one step too short is worse than none." },
+        { "t": "see", "text": "Give hitboxes a little extra room, like comfortable trousers. A dodge that \"should have\" worked but didn't feels unfair." },
+        { "t": "f2p", "text": "In survivor-like games, movement is the whole skill: you dodge and position while attacks fire automatically. Give mobile dodges a generous window, because touch is less precise." },
+        { "t": "hook", "text": "Dodge clears, dash hurts, stomp bounces." }
+      ],
+      "check": { "q": "What's the real goal of a fight, according to martial arts?", "options": ["Not getting hit", "Hitting as often as possible", "Using every weapon"], "answer": 0, "why": "Movement and avoiding damage matter as much as attacking." }
+    },
+    {
+      "id": "L10-l08",
+      "title": "Guarding: blocks, shields and armour",
+      "min": 3,
+      "deep": "On Guarding",
+      "cards": [
+        { "t": "idea", "text": "**Blocks must be instant.** How long a shield lasts decides whether players use it. Armour can protect, inform, unlock abilities and let players customise their look." },
+        { "t": "how", "text": "If a shield breaks too easily, players are scared to use it and never block. If it never breaks, fights become boring. Find the middle." },
+        { "t": "see", "text": "In World of Warcraft, a cool helmet works like a walking billboard: other players see it and think \"I could have that too\"." },
+        { "t": "f2p", "text": "Armour and gear that change your look are perfect for F2P: they show progress, create \"me too\" desire in other players, and can be sold as cosmetics without changing who wins." },
+        { "t": "hook", "text": "A shield you're scared to break is a shield you'll never use." }
+      ],
+      "check": { "q": "What happens if a shield breaks too easily?", "options": ["Players avoid using it", "Players use it more", "Fights become easier"], "answer": 0, "why": "If blocking feels risky, players stop blocking." }
+    },
+    {
+      "id": "L10-l09",
+      "title": "Shooting is rhythm: the Three As",
+      "min": 3,
+      "deep": "Bang Bang",
+      "cards": [
+        { "t": "idea", "text": "\"Aim and pull the trigger\" hides a big design space. Ranged combat is about creating a **rhythm**, and the **Three As** control it: **Action, Aiming and Ammo.**" },
+        { "t": "how", "text": "- **Action:** how firing feels: speed, recoil, sound.\n- **Aiming:** free aim, lock-on or auto-aim.\n- **Ammo:** how much you carry and how often you reload.\nLevel design and the health system shape the rhythm too." },
+        { "t": "see", "text": "A slow, powerful sniper rifle and a fast machine gun create completely different rhythms, even with the same controls." },
+        { "t": "f2p", "text": "On mobile, aiming is the hardest A, so most shooters add auto-fire, auto-aim or aim help. Be generous with ammo: running dry with no backup makes players quit." },
+        { "t": "hook", "text": "Action, Aiming, Ammo: load it, point it, feed it." }
+      ],
+      "check": { "q": "What are the Three As of ranged combat?", "options": ["Action, Aiming, Ammo", "Attack, Armour, Agility", "Aim, Alert, Assist"], "answer": 0, "why": "Together they set the rhythm of shooting." }
+    },
+    {
+      "id": "L10-l10",
+      "title": "One weapon, one job",
+      "min": 3,
+      "deep": "Best Gun for You",
+      "cards": [
+        { "t": "idea", "text": "Start from **real-world weapon roles**, then make every weapon **useful and different.** Each gets a clear job, and any overlap comes with a trade-off." },
+        { "t": "how", "text": "A shotgun is strong up close and weak far away. A sniper rifle is the opposite. A machine gun is fast but less accurate. Clear strengths and weaknesses make choices interesting." },
+        { "t": "see", "text": "Never leave the player holding an empty gun with no backup, like a knife. Feeling powerless makes players quit." },
+        { "t": "f2p", "text": "In hero shooters and card games, each unit fills one role: tank, damage dealer, healer or controller. If two units do the same job, one is a clone wearing a fake moustache." },
+        { "t": "hook", "text": "One gun, one job." }
+      ],
+      "check": { "q": "Two weapons do exactly the same job. What's wrong?", "options": ["One is redundant and adds no real choice", "Nothing: more is better", "They need different colours"], "answer": 0, "why": "Each weapon should have its own niche or a clear trade-off." }
+    },
+    {
+      "id": "L10-l11",
+      "title": "Rails, mounted guns and vehicles",
+      "min": 2,
+      "deep": "Run and Gun",
+      "cards": [
+        { "t": "idea", "text": "Many shooting moments take movement away from the player: shooting galleries, mounted guns, vehicles and rails. Then the work is **readability, fair target timing and spectacle.**" },
+        { "t": "how", "text": "When the game controls movement, targets must appear where the player can see them, with enough time to react. Scripted moments become the show." },
+        { "t": "see", "text": "A rail shooter is like a haunted house ride where you're allowed to shoot back." },
+        { "t": "f2p", "text": "Many mobile shooters and playable ads are rail-style: the game moves you, you just tap targets. Perfect for one thumb and short sessions." }
+      ],
+      "check": { "q": "In a rail shooter, what must the designer get right?", "options": ["Targets appear visibly with fair time to react", "Free movement controls", "Long reload times"], "answer": 0, "why": "When players can't move, fairness depends on target placement and timing." }
+    },
+    {
+      "id": "L10-l12",
+      "title": "Explosions, poison and disabling attacks",
+      "min": 3,
+      "deep": "Not Just Shooting",
+      "cards": [
+        { "t": "idea", "text": "**Variety is fun.** Grenades, smart bombs, fire and poison each need clear warning, feedback and limits. If you take control away from the player, do it carefully, and **always leave a way to fight back.**" },
+        { "t": "how", "text": "Disabling attacks: stun, knockback, knockdown, grabbing on, transforming, losing balance, sliding. Prefer disabling over instant killing. Poison should be rare, with a common antidote, and never hopeless." },
+        { "t": "see", "text": "A **smart bomb** clears the whole screen. It's a great relief valve when the player is overwhelmed, but it must be limited, or it makes every fight trivial." },
+        { "t": "f2p", "text": "Genshin Impact turns fire and other elements into a whole system: combine two elements for a reaction. Show weaknesses with icons before the fight, and never sell the only counter." },
+        { "t": "hook", "text": "Rare poison, common antidote, never hopeless." }
+      ],
+      "check": { "q": "What must every disabling attack leave the player?", "options": ["A way to fight back or escape", "Nothing: that's the point", "A shop offer"], "answer": 0, "why": "Total helplessness feels unfair and makes players quit." }
+    },
+    {
+      "id": "L10-l13",
+      "title": "Health: how much and how to show it",
+      "min": 3,
+      "deep": "Doesn't It Hurt",
+      "cards": [
+        { "t": "idea", "text": "Combat only matters if the player has **something to lose.** Size health with simple maths, **show it so it can't be missed**, and pick a way to regain it that fits your pace." },
+        { "t": "how", "text": "Rogers' formula: **starting health = number of hits the player should survive × average damage per hit.** For example, 20 hits × 10 damage = 200 health. Then regain it by pickups, by resting, or slowly over time." },
+        { "t": "see", "text": "In GTA, a damaged car drags its bumper and smokes. You don't need a health bar to know it's about to explode." },
+        { "t": "f2p", "text": "Show health above every unit in mobile action games, in team colours. Players glance for less than a second, so health must read instantly." },
+        { "t": "hook", "text": "Hits × Hurt = Health." }
+      ],
+      "check": { "q": "Players should survive 20 hits of 10 damage. What starting health?", "options": ["200", "30", "2,000"], "answer": 0, "why": "20 hits × 10 damage = 200 health." }
+    },
+    {
+      "id": "L10-l14",
+      "title": "Death is a door, not a wall",
+      "min": 3,
+      "deep": "Death",
+      "cards": [
+        { "t": "idea", "text": "Lives and game-over screens came from **arcades selling coin plays.** In a game the player already owns, death should **teach and motivate**, never waste time or punish twice." },
+        { "t": "how", "text": "Good death design:\n- the player sees clearly why they died\n- restarting is fast and close by\n- no long walk back or repeated cutscene\n- a reason to try once more" },
+        { "t": "see", "text": "Arcade death sold coins. Good modern death sells \"one more try\"." },
+        { "t": "f2p", "text": "F2P death often sells continues: \"+5 moves\" or \"revive\". That's fine after a real mistake. It turns predatory when levels are tuned so you almost always need one." },
+        { "t": "hook", "text": "Death is a door, not a wall." }
+      ],
+      "check": { "q": "What should a good death screen do?", "options": ["Show why you died and get you back fast", "Make you watch a long animation", "Send you back to the start"], "answer": 0, "why": "Death should teach and motivate, not waste time." }
+    },
+    {
+      "id": "L10-l15",
+      "title": "F2P combat: where does the skill live?",
+      "min": 3,
+      "deep": "F2P Combat Field Guide",
+      "cards": [
+        { "t": "idea", "text": "Taken to the extreme, \"Batman never misses\" becomes **auto-battle**: the game fights, and **you decide** the team, the timing and the upgrades. The question is **where the skill lives.**" },
+        { "t": "how", "text": "- **Full action** (Brawl Stars, Genshin Impact): skill is in aiming, dodging and timing.\n- **Turn-based with auto** (Honkai: Star Rail): skill is in team building.\n- **Auto with ultimates you trigger:** skill is in timing the big attack.\n- **Idle** (AFK Arena): skill is in the roster." },
+        { "t": "see", "text": "Counter systems make choices matter: Pokémon GO's type chart, Raid: Shadow Legends' affinity triangle, Clash Royale's air vs ground cards. Show them with clear icons before the fight." },
+        { "t": "f2p", "text": "Always offer a counter players can get by playing. If the only answer to a common threat is a paid hero, it's pay-to-win." },
+        { "t": "hook", "text": "Auto plays the fight; you play the matchup." }
+      ],
+      "check": { "q": "In an idle auto-battler, where does the player's skill mostly live?", "options": ["Choosing and building the team", "Aiming shots", "Dodging attacks"], "answer": 0, "why": "When fights run themselves, the decisions move to the roster." }
+    }
+  ]
+}
