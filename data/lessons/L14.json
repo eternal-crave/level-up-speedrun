@@ -1,0 +1,148 @@
+{
+  "mod": "L14",
+  "words": [
+    { "w": "PvP / PvE", "d": "player versus player, or players versus the game's enemies" },
+    { "w": "co-op", "d": "cooperative play: players working together toward a shared goal" },
+    { "w": "sync / async", "d": "playing at the same time in real time, or taking turns at different times" },
+    { "w": "matchmaking", "d": "the system that picks who plays against whom" },
+    { "w": "griefing", "d": "ruining other players' fun on purpose" },
+    { "w": "clan / guild", "d": "a group of players who team up long-term" },
+    { "w": "MMR", "d": "a hidden skill rating used to match players of similar skill" }
+  ],
+  "lessons": [
+    {
+      "id": "L14-l01",
+      "title": "Co-op turns competitive fast",
+      "min": 3,
+      "deep": "Intro",
+      "cards": [
+        { "t": "idea", "text": "When humans play together, even co-op games turn competitive. Before designing multiplayer, decide **how players connect** and **how they relate**: compete, cooperate, or share a space with different goals." },
+        { "t": "how", "text": "In the arcade game Gauntlet, four players were supposed to cooperate. Rogers and his friends shoved each other to grab the health food first. Scarce rewards create rivalry." },
+        { "t": "see", "text": "Put a shared chest with a \"first to claim\" rule into a co-op event, and a friendly team turns into rivals. Decide on purpose which feeling you want." },
+        { "t": "f2p", "text": "Mobile multiplayer runs through a server that decides what's true, so a hacked phone can't give itself gems. Playing on the same couch became party invites, friend codes and clanmates." },
+        { "t": "hook", "text": "Co-op is just competition that hasn't found the health potion yet." }
+      ],
+      "check": { "q": "What turned Gauntlet's co-op into competition?", "options": ["Scarce rewards, like health food", "Bad controls", "Too many enemies"], "answer": 0, "why": "When rewards are limited, teammates start competing for them." }
+    },
+    {
+      "id": "L14-l02",
+      "title": "The menu of multiplayer modes",
+      "min": 3,
+      "deep": "game-mode menu",
+      "cards": [
+        { "t": "idea", "text": "Multiplayer modes are a menu of motivations. **Each mode answers: what do players want from each other?** Combine and rotate them for variety." },
+        { "t": "how", "text": "Some classic modes:\n- deathmatch: everyone for themselves\n- team battles and capture the flag\n- survival against waves of enemies\n- territory control\n- co-op missions, racing and virtual life" },
+        { "t": "see", "text": "Brawl Stars keeps the same heroes fresh by rotating which modes and maps are live. The \"variety of modes\" rule became an event calendar." },
+        { "t": "f2p", "text": "Let players create content if you can: user-made maps and modes give free content, longer life and new ways to play. Roblox is built entirely on this." }
+      ],
+      "check": { "q": "How does Brawl Stars keep its heroes feeling fresh?", "options": ["By rotating modes and maps", "By adding new heroes daily", "By changing the controls"], "answer": 0, "why": "Rotating modes changes how the same heroes play." }
+    },
+    {
+      "id": "L14-l03",
+      "title": "Don't let the rich get richer",
+      "min": 3,
+      "deep": "game-mode menu",
+      "cards": [
+        { "t": "idea", "text": "**Systems that reward the leader** make the leader snowball, and everyone else gives up. **Systems that help those behind** keep races tense." },
+        { "t": "how", "text": "Racing games often give better items to players at the back, so the race stays close. Rewarding the leader with even more power ends the contest early." },
+        { "t": "see", "text": "In F2P, money can become the snowball. If big spenders crush free players, the free players leave. Then the spenders have no one to play against." },
+        { "t": "f2p", "text": "Use matchmaking brackets, caps and fair matching to protect free players. Games with dice, slots or gacha also need ethics: show the odds, add pity systems, and never target minors." }
+      ],
+      "check": { "q": "Why is pay-to-win dangerous even for spenders?", "options": ["Free players leave, and spenders lose their opponents", "Spenders get bored of winning", "It's illegal everywhere"], "answer": 0, "why": "Free players are the content. If they quit, the game empties for everyone." }
+    },
+    {
+      "id": "L14-l04",
+      "title": "How many players is right?",
+      "min": 3,
+      "deep": "Right Number",
+      "cards": [
+        { "t": "idea", "text": "There's no magic number. **The right player count is whatever your core gameplay needs.** Too many breaks a duel. Too few makes a world feel empty." },
+        { "t": "how", "text": "A fighting game like Street Fighter gets messy with more than two players: characters bunch up and nobody can see what's happening. World of Warcraft would feel empty with only a few hundred players." },
+        { "t": "see", "text": "Hidden mobile limit: **matchmaking liquidity**. Every extra player per match means more people must be online at the same skill level. A 100-player mode in a small game means long waits and players quitting." },
+        { "t": "f2p", "text": "Ask three questions: How many people does the fun need? How many can my audience supply at 3 a.m. in a small country? How many can a thumb track on a phone screen?" },
+        { "t": "hook", "text": "Two players in a huge world is a ghost town. Two hundred in a duel is a mosh pit." }
+      ],
+      "check": { "q": "What is matchmaking liquidity?", "options": ["Having enough players online to fill matches quickly", "Players spending money", "The speed of the server"], "answer": 0, "why": "Bigger matches need more waiting players, which small games may not have." }
+    },
+    {
+      "id": "L14-l05",
+      "title": "The social toolkit from online RPGs",
+      "min": 3,
+      "deep": "MMORPGs",
+      "cards": [
+        { "t": "idea", "text": "Big online RPGs (MMORPGs) invented a **social toolkit** that players now expect, and F2P inherited it: guilds, raids, crafting, trading, collections and player housing." },
+        { "t": "how", "text": "These systems fill out a game and keep people together for years. Without them, an online game feels thin." },
+        { "t": "see", "text": "Zynga's Facebook games like Mafia Wars pioneered asking friends for gifts to unlock content. Candy Crush asking friends for lives is a direct descendant." },
+        { "t": "f2p", "text": "Players used to sell game gold for real money, which developers hated. F2P turned that into the business model: the publisher sells the currency. Avoid upgrades that can fail and destroy expensive items. Never punish twice." }
+      ],
+      "check": { "q": "Where did Candy Crush's \"ask friends for lives\" idea come from?", "options": ["Early Facebook social games like Mafia Wars", "Arcade games", "Console sports games"], "answer": 0, "why": "Friend gifting gates were pioneered by Facebook social games." }
+    },
+    {
+      "id": "L14-l06",
+      "title": "Fence off the dark side",
+      "min": 3,
+      "deep": "MMORPGs",
+      "cards": [
+        { "t": "idea", "text": "Other people can make a game heaven or hell. **Design fences against the dark side of human nature**: griefing, spawn camping and rich-get-richer systems." },
+        { "t": "how", "text": "- **Griefing:** ruining others' fun on purpose.\n- **Spawn camping:** waiting where players reappear and attacking them instantly.\nFixes: short protection after respawn, reporting tools, and limits on harmful actions." },
+        { "t": "see", "text": "Clash of Clans gives you a shield after you're attacked, so you can't be raided again and again while you're offline." },
+        { "t": "f2p", "text": "Give clan leaders moderation tools: kick, promote, minimum requirements and written rules. Good communities need good tools." },
+        { "t": "hook", "text": "Make other people heaven most of the time, and build fences for the rest." }
+      ],
+      "check": { "q": "Why does Clash of Clans give a shield after an attack?", "options": ["So players aren't attacked over and over", "To sell more gems", "To speed up battles"], "answer": 0, "why": "It protects players from griefing while they can't defend themselves." }
+    },
+    {
+      "id": "L14-l07",
+      "title": "Players will do the last thing you expect",
+      "min": 3,
+      "deep": "last thing you expect",
+      "cards": [
+        { "t": "idea", "text": "Give players tools and other humans, and **they will invent behaviour you never designed.** Embrace the creative stuff. Shut down anything that ruins other people's fun." },
+        { "t": "how", "text": "Good surprises: self-made challenges, friendly clan tournaments, shared base layouts. Bad surprises (exploits): win-trading, multiple accounts feeding one main account, bots, and cheating rewards by changing the phone clock." },
+        { "t": "see", "text": "Before any multiplayer event launches, ask: \"How would a bored 14-year-old with three accounts abuse this?\"" },
+        { "t": "f2p", "text": "Tools: the server checks every important action, limits on gifting, alerts for strange economy numbers, and a switch to turn off a broken event instantly." },
+        { "t": "hook", "text": "Players are raccoons. They'll open every bin you thought was sealed." }
+      ],
+      "check": { "q": "Which is an exploit to stop quickly?", "options": ["Using extra accounts to feed a main account", "A clan's friendly tournament", "Sharing base layouts"], "answer": 0, "why": "Exploits ruin fairness for others. Creative play is fine." }
+    },
+    {
+      "id": "L14-l08",
+      "title": "Real time or taking turns",
+      "min": 3,
+      "deep": "F2P Deep Dive",
+      "cards": [
+        { "t": "idea", "text": "In mobile F2P, **other players are your cheapest, most renewable content.** Choose between **sync** (playing at the same time) and **async** (playing at different times)." },
+        { "t": "how", "text": "Async is the default for casual and mid-core players: you attack someone's base while they're offline. Sync is for games where the fun is real-time skill, like Brawl Stars. Many games mix both." },
+        { "t": "see", "text": "Mobile connections lag, so real-time duels moved to designs that tolerate delay: Clash Royale's elixir pace, or fighting against an AI-controlled copy of another player's team." },
+        { "t": "f2p", "text": "If your audience plays in short bursts on the bus, async multiplayer fits better. Nobody wants to wait three minutes in a queue." }
+      ],
+      "check": { "q": "Raiding someone's base while they're offline is which type?", "options": ["Async", "Sync", "Local"], "answer": 0, "why": "The players don't have to be online at the same time." }
+    },
+    {
+      "id": "L14-l09",
+      "title": "Clans: people stay for people",
+      "min": 3,
+      "deep": "F2P Deep Dive",
+      "cards": [
+        { "t": "idea", "text": "Social bonds are the **strongest predictor of long-term retention.** A player who quits a solo game quits a game. A player who quits a clan quits friends." },
+        { "t": "how", "text": "Clan features:\n- **help requests:** donate troops or cards, speed up a friend's timer\n- **clan wars:** clan against clan\n- **co-op bosses:** fight a big boss together\n- **team events:** everyone's wins fill a shared chest" },
+        { "t": "see", "text": "Clash of Clans has Clan Wars and Clan Games. Clash Royale has card donations. Monopoly GO! has partner events, where you build toward a shared goal with friends." },
+        { "t": "f2p", "text": "Unlock clans after the player understands the basics, then push them gently to join one. A player in an active clan is far less likely to quit." }
+      ],
+      "check": { "q": "Why do clans improve retention so much?", "options": ["Players feel responsible to teammates and friends", "Clans give the most gems", "Clans remove ads"], "answer": 0, "why": "Obligation and friendship keep people coming back." }
+    },
+    {
+      "id": "L14-l10",
+      "title": "Ladders, ranks and fair matches",
+      "min": 3,
+      "deep": "F2P Deep Dive",
+      "cards": [
+        { "t": "idea", "text": "Competitive games need a **visible ladder** to climb and a **hidden rating** that makes matches fair." },
+        { "t": "how", "text": "- **Trophies or ranks** show progress to the player.\n- A hidden **MMR** matches players of similar skill.\n- **Seasons** reset ranks a little, so everyone gets a fresh climb and a seasonal reward." },
+        { "t": "see", "text": "Clash Royale's trophy road climbs through arenas, and each new arena unlocks new cards. The ladder is also a progression system." },
+        { "t": "f2p", "text": "Many games fill low-rank matches with bots, so new players aren't crushed and queues stay short. Be careful: players notice obvious bots, and too many feel fake." }
+      ],
+      "check": { "q": "Why do competitive games use seasons?", "options": ["To give everyone a fresh climb and a reward", "To delete accounts", "To stop matchmaking"], "answer": 0, "why": "Seasonal resets renew motivation to climb again." }
+    }
+  ]
+}

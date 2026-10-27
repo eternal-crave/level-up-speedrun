@@ -1,6 +1,6 @@
 # Level Up! — complete study notes (F2P route order)
 
-Generated 2026-10-21. 21 modules. Original study notes based on *Level Up! The Guide to Great Video Game Design* by Scott Rogers (2010), plus two DLC modules on F2P mobile.
+Generated 2026-10-27. 21 modules. Original study notes based on *Level Up! The Guide to Great Video Game Design* by Scott Rogers (2010), plus two DLC modules on F2P mobile.
 
 1. 🕹️ **Press Start** — Press Start — Foreword, Author, Intro & Acknowledgments
 2. 🐣 **Level 1** — Welcome, N00bs!
