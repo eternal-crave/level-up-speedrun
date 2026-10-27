@@ -1,0 +1,152 @@
+{
+  "mod": "BX",
+  "words": [
+    { "w": "one-sheet", "d": "a single page that sums up the whole game" },
+    { "w": "ten-pager", "d": "a short document covering every big topic of the game" },
+    { "w": "GDD", "d": "game design document: the full, living plan the team builds from" },
+    { "w": "template", "d": "a ready-made form with fields to fill in" },
+    { "w": "TBD", "d": "to be decided: a placeholder for something not settled yet" },
+    { "w": "pitch deck", "d": "a slide presentation that sells the game to decision makers" }
+  ],
+  "lessons": [
+    {
+      "id": "BX-l01",
+      "title": "The document ladder",
+      "min": 3,
+      "deep": "document ladder",
+      "cards": [
+        { "t": "idea", "text": "The back of the book is a toolbox: samples, templates and idea lists. **Each design document is a different zoom level of the same game**, for a different reader." },
+        { "t": "how", "text": "- **One-sheet:** sells the idea in one page\n- **Ten-pager:** covers all the big topics\n- **Pitch deck:** wins approval\n- **GDD:** holds everything, and keeps changing" },
+        { "t": "see", "text": "The sample game Farm Wars appears as a one-sheet, a ten-pager and a pitch deck. You can watch one idea climb the ladder." },
+        { "t": "f2p", "text": "Mobile studios usually go: concept one-pager, pitch deck with market data and KPI targets, prototype, feature one-pagers in a wiki, then soft launch." },
+        { "t": "hook", "text": "One-sheet is a satellite photo. The GDD is street view with every lamppost labelled." }
+      ],
+      "check": { "q": "Which document is meant to win approval from decision makers?", "options": ["The pitch deck", "The GDD", "The enemy template"], "answer": 0, "why": "The pitch is built to sell. The GDD is built to build from." }
+    },
+    {
+      "id": "BX-l02",
+      "title": "The one-sheet",
+      "min": 3,
+      "deep": "One-Sheet Sample",
+      "cards": [
+        { "t": "idea", "text": "A **one-sheet** fits the whole game on one page. It keeps the team aligned and can be handed to managers, marketing and partners." },
+        { "t": "how", "text": "**Information beats styling.** The book shows a plain text version and an illustrated one. Both work if they're short and clear." },
+        { "t": "see", "text": "The Maximo vs. Army of Zin one-sheet lists each world with an action headline, like \"jump\" or \"smash\". Headlines sell verbs, not just places." },
+        { "t": "f2p", "text": "Repeat the one-sheet until the team quotes it back. The day a teammate rejects your idea because it doesn't match the one-sheet, and they're right, you've won." },
+        { "t": "hook", "text": "A one-sheet is a dating profile: one page, honest and specific." }
+      ],
+      "check": { "q": "What matters most on a one-sheet?", "options": ["Clear, short information", "Fancy styling", "Full lore"], "answer": 0, "why": "Style helps, but the page exists to inform and align." }
+    },
+    {
+      "id": "BX-l03",
+      "title": "The ten-pager",
+      "min": 3,
+      "deep": "Ten-Page",
+      "cards": [
+        { "t": "idea", "text": "The **ten-pager** covers every big topic of the game. **\"Ten\" is a checklist of topics, not a strict page count.**" },
+        { "t": "how", "text": "Give a topic its own page if it needs room. Merge two that fit together. It must cover everything important and stay exciting to read." },
+        { "t": "see", "text": "Farm Wars is pitched as **FarmVille × tower defense × MechWarrior**. Three famous names explain the game instantly. Concrete numbers make the scope believable: 6 maps, 6 weathers, 6 boss rounds." },
+        { "t": "f2p", "text": "For mobile, add what 2010 documents lacked: core loop, meta progression, economy, monetization, tutorial, LiveOps, analytics events and target KPIs." },
+        { "t": "hook", "text": "The ten-pager is a pirate's code: more like guidelines." }
+      ],
+      "check": { "q": "What does the \"X meets Y meets Z\" formula do?", "options": ["Explains a game instantly using famous references", "Lists every enemy", "Sets the price"], "answer": 0, "why": "Familiar names let readers picture the game in seconds." }
+    },
+    {
+      "id": "BX-l04",
+      "title": "The GDD is alive",
+      "min": 3,
+      "deep": "Design Document Template",
+      "cards": [
+        { "t": "idea", "text": "The **GDD** is the everything-document the team builds from. The template is a big checklist, so nothing gets forgotten. **Fill what you can, mark the rest TBD, and keep it updated.**" },
+        { "t": "how", "text": "Keep the version number, table of contents and change history current. Keep the story short and tied to gameplay. Technical details go in a separate technical document." },
+        { "t": "see", "text": "A section marked \"TBD\" is better than a blank one. It tells everyone the question exists." },
+        { "t": "f2p", "text": "A mobile GDD adds pillars, the player fantasy, session length, the economy, offers, the first-time experience, LiveOps, analytics events and compliance. It usually lives as a linked wiki, not one giant file." },
+        { "t": "hook", "text": "A GDD is a sourdough starter: alive, needs feeding, and smells bad if neglected." }
+      ],
+      "check": { "q": "Why write TBD instead of leaving a section blank?", "options": ["It shows the question exists and still needs an answer", "TBD is a required word", "It makes the document longer"], "answer": 0, "why": "A blank looks forgotten. TBD looks planned." }
+    },
+    {
+      "id": "BX-l05",
+      "title": "Idea menus",
+      "min": 3,
+      "deep": "Story Themes",
+      "cards": [
+        { "t": "idea", "text": "The book includes menus of **story themes** (about 48) and **environments** (about 150). **They're brainstorming tools, not rules.**" },
+        { "t": "how", "text": "Pick one theme, one environment and one mechanic. Together they give you a level idea in 30 seconds." },
+        { "t": "see", "text": "Remix them: gothic horror plus a cooking tycoon, served as a portrait-mode merge game." },
+        { "t": "f2p", "text": "Rogers rebuilt his environment list about half a dozen times over his career. Keep your own list, and add to it whenever a game surprises you." },
+        { "t": "hook", "text": "Theme plus place plus mechanic equals a level idea." }
+      ],
+      "check": { "q": "How do you get a quick level concept from the lists?", "options": ["Combine a theme, an environment and a mechanic", "Copy a famous game", "Pick the first item only"], "answer": 0, "why": "Combining items from different lists sparks new ideas fast." }
+    },
+    {
+      "id": "BX-l06",
+      "title": "The parts bin of mechanics",
+      "min": 3,
+      "deep": "Mechanics and Hazards",
+      "cards": [
+        { "t": "idea", "text": "The **mechanics and hazards list** (about 35 items) is the parts bin for levels: things that move you, hurt you, or that you interact with." },
+        { "t": "how", "text": "- **Movers:** moving platforms, conveyor belts, springs\n- **Timing hazards:** pendulums, smashers, flame jets\n- **Area hazards:** sticky floors, poison gas\n- **Interactives:** levers, push blocks, keys" },
+        { "t": "see", "text": "Use one new item plus two familiar ones per level. Pairs get interesting: a conveyor belt plus a smasher becomes a timing challenge." },
+        { "t": "f2p", "text": "Console hazards map onto puzzle boards. Match-3 games have real conveyor belts and portals. Multi-layer blockers are two-stage breakables. Candy Crush's spreading chocolate is the poison gas." },
+        { "t": "hook", "text": "A LEGO bin: about 35 pieces, endless castles." }
+      ],
+      "check": { "q": "What is a good mix of mechanics for one level?", "options": ["One new plus two familiar", "Five new at once", "Only familiar ones forever"], "answer": 0, "why": "New items stay learnable when mixed with ones players know." }
+    },
+    {
+      "id": "BX-l07",
+      "title": "One sheet per enemy",
+      "min": 3,
+      "deep": "Enemy Design Template",
+      "cards": [
+        { "t": "idea", "text": "The **enemy template** turns a cool sketch into something buildable: who it is, how it moves and attacks, how it dies, and **every asset it needs**." },
+        { "t": "how", "text": "Fields include: name, image, personality, animations, movement, attacks, how it's defeated, damage feedback, effects, sounds, voice and reward." },
+        { "t": "see", "text": "Cross-checks catch mistakes. Every animation needs a sound line. If the enemy can grab the hero, the hero needs a \"grabbed\" animation too." },
+        { "t": "f2p", "text": "Mobile adds: warning time before attacks, readability at thumb size, a limit on enemies on screen for cheap phones, drop tables and analytics. Puzzle games use a \"blocker\" version." },
+        { "t": "hook", "text": "The enemy sheet is a casting call: headshot, personality, scenes, costume, lines and paycheck." }
+      ],
+      "check": { "q": "Why match the sound list to the animation list?", "options": ["So no animation is missing its sound", "To save memory", "Because sounds come first"], "answer": 0, "why": "The cross-check reveals forgotten work early." }
+    },
+    {
+      "id": "BX-l08",
+      "title": "A boss needs a stage",
+      "min": 3,
+      "deep": "Boss Design Template",
+      "cards": [
+        { "t": "idea", "text": "The **boss template** is the enemy template plus **weak spots**, a **health bar**, and a second page for the **arena**. A boss fight is an enemy and a level designed together." },
+        { "t": "how", "text": "Define how players find and use weak spots. Design the health bar with segments, so players see progress. List the arena's hazards and props, and its music, including changes between phases." },
+        { "t": "see", "text": "Unlike regular enemies, a boss should **always** give a reward." },
+        { "t": "f2p", "text": "On mobile, also note the boss's role in the game: a chapter gate, a weekly event boss, or a clan co-op boss." },
+        { "t": "hook", "text": "A boss without an arena is a rock star without a stage." }
+      ],
+      "check": { "q": "What does the boss template add to the enemy template?", "options": ["Weak spots, a health bar and an arena page", "A price tag", "A longer name"], "answer": 0, "why": "Bosses are puzzles in a place, so both need planning." }
+    },
+    {
+      "id": "BX-l09",
+      "title": "The nine-slide pitch",
+      "min": 3,
+      "deep": "High Concept Pitch",
+      "cards": [
+        { "t": "idea", "text": "The **nine-slide pitch** answers a decision maker's questions in order, with big art and few words." },
+        { "t": "how", "text": "1. Cover\n2. Company\n3. Target specs\n4. Story\n5. Game goals\n6. Gameplay summary\n7. Gameplay details\n8. Download plans\n9. Production: team, time and cost" },
+        { "t": "see", "text": "The order follows their thinking: Who are you? What is it? Why care? How does it play? Will it last? Can you deliver, and for how much?" },
+        { "t": "f2p", "text": "Aim for five \"back of the box\" goals on the goals slide: the most exciting features, in a few words each." },
+        { "t": "hook", "text": "A heist briefing: crew, target, backstory, loot, plan, getaway, budget." }
+      ],
+      "check": { "q": "What question does the last slide answer?", "options": ["Can you deliver, and for how much?", "What is the story?", "Who is the hero?"], "answer": 0, "why": "Production specs show team size, time and cost." }
+    },
+    {
+      "id": "BX-l10",
+      "title": "The F2P pitch deck",
+      "min": 3,
+      "deep": "High Concept Pitch",
+      "cards": [
+        { "t": "idea", "text": "A mobile pitch keeps the book's structure but adds **market data, monetization, target KPIs and an ad plan**. The 2010 \"download plans\" slide became LiveOps, now at the centre." },
+        { "t": "how", "text": "Extra slides:\n- the hook with a short gameplay clip\n- market and audience\n- core loop and meta\n- monetization and ethics\n- LiveOps calendar\n- ad ideas and target cost per install\n- target retention numbers\n- go or kill gates" },
+        { "t": "see", "text": "Storyboard the first 3 seconds of two or three ad ideas. If the hook can't be shown that fast, it may be hard to sell." },
+        { "t": "f2p", "text": "End with **the ask**: what you need (budget, publishing, ad spend, people) and what they get back." }
+      ],
+      "check": { "q": "What did the book's \"download plans\" slide become in F2P?", "options": ["The LiveOps plan", "The credits", "The price list"], "answer": 0, "why": "Live games extend their life with ongoing events and content." }
+    }
+  ]
+}
