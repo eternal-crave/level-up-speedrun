@@ -1,0 +1,290 @@
+{
+  "mod": "L05",
+  "words": [
+    { "w": "Three Cs", "d": "Character, Camera and Control: the three basics to settle before anything else" },
+    { "w": "silhouette", "d": "a character's outline filled in black; good characters are recognisable from it alone" },
+    { "w": "shape language", "d": "using circles, squares and triangles in a design to suggest personality" },
+    { "w": "metrics", "d": "the character's sizes and distances (height, jump, speed) that the whole world is measured by" },
+    { "w": "collision", "d": "where and how the game decides the character touches the world" },
+    { "w": "idle", "d": "the animation a character plays when the player isn't doing anything" },
+    { "w": "NPC", "d": "non-player character: anyone in the game the player doesn't control" }
+  ],
+  "lessons": [
+    {
+      "id": "L05-l01",
+      "title": "Lock the Three Cs early",
+      "min": 3,
+      "deep": "Three Cs and",
+      "cards": [
+        { "t": "idea", "text": "Most of a design changes during production. Three basics must not: **Character, Camera and Control.** Settle them early, then protect them." },
+        { "t": "how", "text": "So much of the game depends on the Three Cs that changing one causes a ripple through everything: levels, enemies, animations and art. That means rework and risk." },
+        { "t": "see", "text": "In Subway Surfers, the runner, the camera behind them and swipe controls are one package. Change any one of them and it's a different game." },
+        { "t": "f2p", "text": "In F2P the Three Cs are locked even earlier, because soft launch and ads test them with real players. Mobile adds a fourth limit: **the thumb.** The hero must read at 1.5 cm tall, controlled by one thumb, on a bus." },
+        { "t": "hook", "text": "The Three Cs are the legs of a stool. Shorten one halfway through and everything falls." }
+      ],
+      "check": { "q": "Why lock Character, Camera and Control early?", "options": ["Changing one later forces rework across the whole game", "They're the cheapest parts", "Players never notice them"], "answer": 0, "why": "Levels, enemies and art are built around them, so late changes ripple everywhere." }
+    },
+    {
+      "id": "L05-l02",
+      "title": "Form follows function, and three traits",
+      "min": 3,
+      "deep": "Looks That Talk",
+      "cards": [
+        { "t": "idea", "text": "The very important rule of character design: **form follows function.** The look should come from what the character does. Start by choosing **three personality traits.**" },
+        { "t": "how", "text": "Pick three words that describe your hero, like \"brave, clumsy, loyal\". Then let every visual choice show those traits before the character does anything." },
+        { "t": "see", "text": "Batman wears a cape because it shows movement from behind, not just because capes look cool. Function first, fashion second." },
+        { "t": "f2p", "text": "Write the three traits at the top of every character brief. Artists, animators and writers can then check every choice against them." },
+        { "t": "hook", "text": "Function first, fashion second." }
+      ],
+      "check": { "q": "Where should a character's look come from?", "options": ["Their personality and what they do", "Whatever is trendy", "The artist's favourite style"], "answer": 0, "why": "Form follows function: the design should express the character's traits and actions." }
+    },
+    {
+      "id": "L05-l03",
+      "title": "Shapes and silhouettes tell the story",
+      "min": 3,
+      "deep": "Looks That Talk",
+      "cards": [
+        { "t": "idea", "text": "Shapes carry personality. **Circles feel friendly, squares feel strong, triangles feel dangerous or heroic.** And every character needs a **strong silhouette**." },
+        { "t": "how", "text": "The **blackout test**: fill your whole cast in solid black. If two characters look like twins, one needs a redesign. If several characters share the screen, design them together so their outlines differ." },
+        { "t": "see", "text": "Angry Birds is a shape lesson. Red is round, an everyday hero. Chuck is a yellow triangle, an arrowhead built for speed. Bomb is round and black. Each shape hints at its power." },
+        { "t": "f2p", "text": "A Brawl Stars hero or a Clash Royale troop may be a few millimetres tall. Shrink your hero to app-icon size and turn it into a silhouette. If you can't tell who it is, redesign." },
+        { "t": "hook", "text": "Circle hugs, square punches, triangle chest is best, triangle head is dread." }
+      ],
+      "check": { "q": "Two heroes look identical as black silhouettes. What should you do?", "options": ["Redesign one of them", "Make them the same colour", "Nothing: colour will fix it"], "answer": 0, "why": "A clear silhouette must work alone, especially at small sizes." }
+    },
+    {
+      "id": "L05-l04",
+      "title": "Colour and texture separate characters",
+      "min": 2,
+      "deep": "Looks That Talk",
+      "cards": [
+        { "t": "idea", "text": "**Colour and texture** are more ways to tell characters apart. But personality, not looks, decides whether a character feels good or evil." },
+        { "t": "how", "text": "Classic cartoon colour code: heroes in warm or primary colours, villains in green or purple. Use colour to group teams, and texture to show material: soft fur, cold metal, rough stone." },
+        { "t": "see", "text": "Among Us gives every crewmate the same shape, so colour carries identity: \"Red is sus\". Hats and pets break up the shared silhouette." },
+        { "t": "f2p", "text": "Many top-down PvP games mark allies in blue and enemies in red with outlines or rings. Remember colour-blind players: back colour up with shape or icons." }
+      ],
+      "check": { "q": "How does Among Us tell identical crewmates apart?", "options": ["By colour, plus hats and pets", "By size", "By voice"], "answer": 0, "why": "When shapes match, colour and accessories carry the identity." }
+    },
+    {
+      "id": "L05-l05",
+      "title": "Funny, heroic or badass",
+      "min": 3,
+      "deep": "Personality",
+      "cards": [
+        { "t": "idea", "text": "Rogers sees three kinds of game hero: **humorous, heroic and badass.** Each needs careful building, or you get a lame character. **Personality should drive everything the character does.**" },
+        { "t": "how", "text": "- **Funny:** comedy comes from contrast, like the 1960s Batman show played completely straight. Not from burp jokes.\n- **Heroic:** deeds that matter, one skill they're best at, and a flaw that makes them relatable.\n- **Badass:** style, confidence, few words." },
+        { "t": "see", "text": "Specialties: Lara Croft finds treasure, Sonic runs, Simon Belmont uses a whip. The best flaw becomes gameplay, not just a story detail." },
+        { "t": "f2p", "text": "Mascots are a mobile superpower: Duolingo's pushy owl, Royal Match's helpless King Robert. A strong personality makes ads, events and social posts easy to write." }
+      ],
+      "check": { "q": "What does a good heroic character need, besides heroic deeds?", "options": ["One specialty and a relatable flaw", "Perfection in everything", "No personality"], "answer": 0, "why": "A specialty makes them special. A flaw makes them human and relatable." }
+    },
+    {
+      "id": "L05-l06",
+      "title": "Guide behaviour without preaching",
+      "min": 3,
+      "deep": "Personality",
+      "cards": [
+        { "t": "idea", "text": "Preaching morality at players is bad form. **Reward the behaviour you want, and let players feel good about it themselves.**" },
+        { "t": "how", "text": "In Maximo vs. Army of Zin, rescued villagers gave the player a coin and thanked them. Players started saving villagers on purpose and felt like heroes. Nobody told them to be good." },
+        { "t": "see", "text": "In inFAMOUS, being bad is optional. Hurt enough civilians and the townspeople start shouting insults and throwing bricks. The world reacts, so choices feel real." },
+        { "t": "f2p", "text": "Use the same idea for community: reward helping clanmates, gifting and fair play. A small reward for kindness shapes a friendlier community than any rules page." },
+        { "t": "hook", "text": "Give the player a puppy to save and a coin for saving it. They'll call themselves a hero." }
+      ],
+      "check": { "q": "How did Maximo encourage saving villagers?", "options": ["Rescued villagers rewarded and thanked the player", "A pop-up told players to be good", "Players lost lives if they didn't"], "answer": 0, "why": "Rewarding good behaviour works better than lecturing about it." }
+    },
+    {
+      "id": "L05-l07",
+      "title": "Let players name and customise",
+      "min": 3,
+      "deep": "Names and Customization",
+      "cards": [
+        { "t": "idea", "text": "Letting players **name and customise** a character creates **ownership**, and ownership turns into caring." },
+        { "t": "how", "text": "In X-COM, Rogers renamed his generic soldiers after friends. Suddenly every death was a tragedy, and he played much more carefully. Customisation reaches beyond the hero too: costumes, weapons and the home base. Every player likes to play house." },
+        { "t": "see", "text": "Pokémon GO lets you nickname Pokémon. Homescapes lets you pick the style of each renovated room. Hay Day is decorating a farm forever." },
+        { "t": "f2p", "text": "**Cosmetics are the cleanest way to earn in F2P**: skins, outfits, emotes and decorations sell without being pay-to-win. Sell self-expression, not anxiety." },
+        { "t": "hook", "text": "The moment you name a soldier Bob, Bob's death becomes a tragedy." }
+      ],
+      "check": { "q": "Why does naming a character increase attachment?", "options": ["It creates a sense of ownership", "It makes them stronger", "It unlocks new levels"], "answer": 0, "why": "Players protect and care about what they've personalised." }
+    },
+    {
+      "id": "L05-l08",
+      "title": "Signature items, and realistic vs stylised",
+      "min": 3,
+      "deep": "Signature Gear",
+      "cards": [
+        { "t": "idea", "text": "Some things should **never** be customisable: the **signature item or look** that makes a character who they are. Then choose **realistic or stylised** art for your game and budget." },
+        { "t": "how", "text": "Characters are mostly seen from behind, so give them something that shows movement: a cape, a scarf, a ponytail. Almost-human realism can look creepy, the **uncanny valley**. Team Fortress 2 switched from realistic to stylised for that reason." },
+        { "t": "see", "text": "Imagine Mario without his hat or Link without his sword. Skins can change almost everything, but the signature must stay recognisable in every one." },
+        { "t": "f2p", "text": "Stylised art dominates mobile: cheaper animation, bold motion that reads on small screens, expressive faces at tiny sizes, and it ages well over years of LiveOps." },
+        { "t": "hook", "text": "Skin the cat, but never take away its whiskers." }
+      ],
+      "check": { "q": "What should every skin of a hero keep?", "options": ["The signature item or look", "The original colours", "Nothing: change everything"], "answer": 0, "why": "The signature keeps the hero recognisable across all skins." }
+    },
+    {
+      "id": "L05-l09",
+      "title": "The hero is the ruler of the world",
+      "min": 3,
+      "deep": "Character Metrics",
+      "cards": [
+        { "t": "idea", "text": "All gameplay flows from the main character. **The hero's size and abilities become the metrics**, the measuring system the whole world is built on. Players learn them by eye, so never break them." },
+        { "t": "how", "text": "Define height, walking and running speed, jump height and reach. In Maximo, every distance was measured in \"Maximo units\", based on the hero's size. A useful ladder: jump half a body height, climb up one more body, double jump to two." },
+        { "t": "see", "text": "Fencers know exactly how far a step and a lunge reach. Players learn the same about your hero. If a gap looks jumpable once and isn't the next time, the game feels broken." },
+        { "t": "f2p", "text": "Runners are pure metrics: lane width, jump height, slide height and reaction time at full speed. Keep metrics in a config file, so balance updates don't need a new app release." },
+        { "t": "hook", "text": "Measure the world in Maximos." }
+      ],
+      "check": { "q": "Why must character metrics stay consistent?", "options": ["Players learn distances by eye and expect them to hold", "Changing them is expensive", "Metrics are hidden from players"], "answer": 0, "why": "Players judge every jump from experience. Breaking metrics breaks trust." }
+    },
+    {
+      "id": "L05-l10",
+      "title": "Where the character touches the world",
+      "min": 2,
+      "deep": "Touching",
+      "cards": [
+        { "t": "idea", "text": "**Collision** is how the game decides where the character touches the world. Fewer collision points run faster. If you use one main point, **the torso** works best." },
+        { "t": "how", "text": "There are three candidates: head, feet or the middle of the body. A head point floats, a feet point catches on every step, and the torso is the reliable middle." },
+        { "t": "f2p", "text": "On mobile, make pickups generous and damage strict. A big pickup radius for coins and a small hitbox for getting hurt feel fair. Dodges that \"should have hit\" feel amazing, and unfair hits make players quit." },
+        { "t": "hook", "text": "Head floats, feet hop, torso tops." }
+      ],
+      "check": { "q": "Which collision setup feels fairest to mobile players?", "options": ["Big pickup radius, small damage hitbox", "Small pickup radius, big damage hitbox", "The same size for both"], "answer": 0, "why": "Generous rewards and forgiving damage make close calls feel great." }
+    },
+    {
+      "id": "L05-l11",
+      "title": "Walking isn't gameplay; speed is a choice",
+      "min": 3,
+      "deep": ["Walking Is NOT", "Vehicles, Weight"],
+      "cards": [
+        { "t": "idea", "text": "**Walking by itself isn't gameplay.** Decide how fast your game is, give each way of moving a **clear purpose**, and make the speed differences big." },
+        { "t": "how", "text": "Players always choose a faster move over walking. Walking is useful near edges, where players move carefully. Running, dashing and sneaking each need a reason. Nobody tiptoes in an empty hallway. Heavy characters can feel great, but weight brings skids." },
+        { "t": "see", "text": "Archero flips this: your hero only attacks while standing still. Every move becomes a decision: dodge or shoot? In Survivor.io you attack automatically, so positioning is the whole game." },
+        { "t": "f2p", "text": "Mobile sessions are 2 to 5 minutes, so dead travel time kills retention. Mobile games use tap-to-move, auto-run, fast travel and auto-pathing to cut walking." },
+        { "t": "hook", "text": "Fast game, fast verbs. And creeping needs a sleeping dragon." }
+      ],
+      "check": { "q": "How does Archero make movement into gameplay?", "options": ["You only attack while standing still, so each move is a choice", "It removes movement", "It makes walking faster"], "answer": 0, "why": "Moving or shooting becomes a constant decision, not dead time." }
+    },
+    {
+      "id": "L05-l12",
+      "title": "Idles: the art of doing nothing",
+      "min": 2,
+      "deep": "Idles",
+      "cards": [
+        { "t": "idea", "text": "When the player stops, the character shouldn't freeze. An **idle animation** shows personality. Keep it **short and easy to interrupt.**" },
+        { "t": "how", "text": "Idles can tell a little story: stretching, checking a map, getting bored. But the moment the player touches the controls, the character must respond instantly." },
+        { "t": "see", "text": "Sonic taps his foot when you leave him standing. It says: \"Hey, I'm still here. Are you?\"" },
+        { "t": "f2p", "text": "On mobile, idles live in lobbies and home screens. A hero who bounces, yawns or waves in the lobby makes a 2 cm character feel alive. It's also a great place to show off a new skin." },
+        { "t": "hook", "text": "Idles are a snack, never a buffet." }
+      ],
+      "check": { "q": "What's the most important rule for idle animations?", "options": ["Stop instantly when the player acts", "Make them as long as possible", "Only play them in cutscenes"], "answer": 0, "why": "Control must never wait for an idle to finish." }
+    },
+    {
+      "id": "L05-l13",
+      "title": "The five phases of a jump",
+      "min": 3,
+      "deep": "Five Phases",
+      "cards": [
+        { "t": "idea", "text": "The jump is the most misunderstood basic move. Get each phase right, and use **\"game physics\"**: real physics, adjusted to feel good." },
+        { "t": "how", "text": "1. **Take-off:** instant, the moment you press.\n2. **Rise:** fast.\n3. **Double jump:** allowed before the highest point.\n4. **Fall:** quicker than the rise.\n5. **Landing:** it sticks, with a solid thud." },
+        { "t": "see", "text": "Real physics feels floaty in games. Most great platformers rise fast, fall faster, and give a little extra control in the air." },
+        { "t": "f2p", "text": "Runners and hyper-casual jumpers live or die on jump feel. Tune take-off speed, fall speed and landing feedback until one tap feels satisfying." },
+        { "t": "hook", "text": "Now. Up. Again? Down. Stick." }
+      ],
+      "check": { "q": "How should the fall compare with the rise in a good game jump?", "options": ["The fall is faster than the rise", "The fall is slower", "They must match real physics exactly"], "answer": 0, "why": "A quick fall feels responsive. Real physics often feels floaty." }
+    },
+    {
+      "id": "L05-l14",
+      "title": "Design gaps for nervous humans",
+      "min": 3,
+      "deep": "Five Jump Types",
+      "cards": [
+        { "t": "idea", "text": "Players don't jump from the very edge, and they don't aim for the far edge. **They jump from a little way back and aim well inside the landing.** Design gaps for that." },
+        { "t": "how", "text": "Know your jump types (standing, running, double, and more) and how much control players have in the air. Then leave a **jump zone** before the gap and a **safe landing zone** after it." },
+        { "t": "see", "text": "A gap that's exactly as long as the maximum jump only works for perfect players. Budget one extra body length for nerves." },
+        { "t": "f2p", "text": "In runners, the same idea applies to reaction time: show obstacles early enough that a normal thumb, not a perfect one, can react." },
+        { "t": "hook", "text": "Players jump from the porch, not the cliff edge, and land in the living room, not on the doormat." }
+      ],
+      "check": { "q": "Where do most players take off for a jump?", "options": ["A little way back from the edge", "Exactly at the edge", "From the middle of the platform"], "answer": 0, "why": "Nervous players play it safe, so gaps must allow for that." }
+    },
+    {
+      "id": "L05-l15",
+      "title": "Ledges, falls and shadows",
+      "min": 3,
+      "deep": ["Hoists and Teeters", "What Goes Up", "Me and My Shadow"],
+      "cards": [
+        { "t": "idea", "text": "Help players move safely around edges. **Hoists** (grab a ledge and pull up) and **teeters** (wobbling at an edge) save lives. **Falls must be readable**, and every character needs a **shadow**." },
+        { "t": "how", "text": "- Build hoists into your metrics: they add about one body of reach.\n- Warn before falls, show the danger, and let players recover fast.\n- A shadow shows exactly where you'll land in 3D." },
+        { "t": "see", "text": "Don't let your hero stand on air for a moment before falling, like Wile E. Coyote, unless it's a deliberate joke. It makes the game feel buggy." },
+        { "t": "f2p", "text": "On mobile, a clear shadow under jumping characters is essential: on a small screen, it's often the only way to judge depth. Add it early, not as polish." },
+        { "t": "hook", "text": "No shadow, no soul, no clue where you'll land." }
+      ],
+      "check": { "q": "Why does a character need a shadow in 3D?", "options": ["It shows where they'll land", "It's only decoration", "It hides bugs"], "answer": 0, "why": "Shadows are a positioning tool, especially on small screens." }
+    },
+    {
+      "id": "L05-l16",
+      "title": "Water and four-legged heroes",
+      "min": 2,
+      "deep": ["Water's Fine", "Four-Legged"],
+      "cards": [
+        { "t": "idea", "text": "Water confuses players. **Use one clear water rule per area** and warn about danger. Non-human heroes need **their own metrics.**" },
+        { "t": "how", "text": "Decide early: can the hero swim? Is deep water deadly? Does water slow you down? Then keep that rule for the whole area. Send a shark fin before the shark." },
+        { "t": "see", "text": "A dog or spider hero turns differently, speeds up differently, and is longer than it is tall. Measure turning radius, acceleration, body length and height separately." },
+        { "t": "f2p", "text": "Hazard water in mobile games must look obviously different from safe water. Players on a small screen won't experiment for long. They'll just quit." },
+        { "t": "hook", "text": "No hidden deep end in the pool." }
+      ],
+      "check": { "q": "What's the rule for water in a level?", "options": ["One consistent water rule per area", "Change the rule often to surprise players", "Never explain it"], "answer": 0, "why": "Inconsistent water rules feel unfair and confusing." }
+    },
+    {
+      "id": "L05-l17",
+      "title": "The character is the best HUD",
+      "min": 3,
+      "deep": "Character as the HUD",
+      "cards": [
+        { "t": "idea", "text": "Players spend most of their time **looking at the character**. So use the character to show status: health, power, upgrades and gear." },
+        { "t": "how", "text": "Show damage on the body, glow when powered up, change gear as it upgrades. The information sits where the player is already looking, so no extra screen space is needed." },
+        { "t": "see", "text": "In Dead Space, the hero's health is a glowing bar along his spine. There's no separate health bar. The HUD is the hero." },
+        { "t": "f2p", "text": "In mobile action games, put a small health bar and status icons right above the hero, and change the hero's look as they power up. Players read it without looking away from the action." },
+        { "t": "hook", "text": "Wear your stats on your sleeve, and your spine." }
+      ],
+      "check": { "q": "Why show health on the character instead of in a corner?", "options": ["Players are already looking at the character", "Corners are too small", "It's cheaper"], "answer": 0, "why": "Information on the character needs no eye movement away from the action." }
+    },
+    {
+      "id": "L05-l18",
+      "title": "Companions and big casts",
+      "min": 3,
+      "deep": ["Second Playable", "Big Casts"],
+      "cards": [
+        { "t": "idea", "text": "A second character can be playable or an AI companion. **The best pairs are opposites that need each other.** With many heroes, **make sure no two play the same.**" },
+        { "t": "how", "text": "Start each hero from a recognisable type, because players judge by the cover. Then compare everyone in an **abilities matrix**: speed, strength, range, special power. If two rows match, one hero is a clone." },
+        { "t": "see", "text": "Team Fortress 2: the Heavy is slow but strong, the Scout is weak but quick, the Medic is average but heals. In Resident Evil 2, Claire shoots and little Sherry squeezes through air vents." },
+        { "t": "f2p", "text": "Hero-collecting games live on the abilities matrix. Every new Brawl Stars brawler needs a clear role nobody else fills, or it's just a skin with a new price." }
+      ],
+      "check": { "q": "What does an abilities matrix help you avoid?", "options": ["Two heroes that play the same", "Too many skins", "Long loading times"], "answer": 0, "why": "Comparing abilities side by side reveals clones before you build them." }
+    },
+    {
+      "id": "L05-l19",
+      "title": "Every NPC needs a job",
+      "min": 3,
+      "deep": "People in Your Neighborhood",
+      "cards": [
+        { "t": "idea", "text": "NPCs exist **to help or hinder the player.** Every one must answer: **\"What does the player need to succeed?\"**" },
+        { "t": "how", "text": "Make NPCs easy to find and visually distinct. Shopkeepers, quest-givers and trainers should be recognisable at a glance, with a marker like \"!\" or \"?\" over their heads." },
+        { "t": "see", "text": "An NPC who just stands there saying something vague wastes the player's time. Give every NPC a gameplay job: sell, teach, warn, reward or challenge." },
+        { "t": "f2p", "text": "In mobile games, NPCs are often event hosts, shopkeepers and tutorial guides. Keep their lines short, and make every appearance lead to an action the player can take." },
+        { "t": "hook", "text": "Every NPC wears a name tag: \"Hi, I exist so you can win.\"" }
+      ],
+      "check": { "q": "What question must every NPC answer?", "options": ["What does the player need to succeed?", "What's the NPC's life story?", "How many lines can they say?"], "answer": 0, "why": "NPCs exist for the player. No gameplay job, no reason to exist." }
+    },
+    {
+      "id": "L05-l20",
+      "title": "In F2P, a hero has four jobs",
+      "min": 3,
+      "deep": "Characters as Collectibles",
+      "cards": [
+        { "t": "idea", "text": "In mobile F2P, characters do more work than in old console games. **A hero is a collectible, a product, a brand and the star of your ads.**" },
+        { "t": "how", "text": "- **Collectible:** players want to own the whole roster.\n- **Product:** skins and new heroes earn money.\n- **Brand:** the face of the game for years.\n- **Ad star:** it must grab attention in a 3-second video." },
+        { "t": "see", "text": "Brawl Stars brawlers, Clash Royale cards and Genshin Impact characters all do all four jobs. Each new one is a product launch." },
+        { "t": "f2p", "text": "Test every new hero at thumbnail size, in a silhouette, and in a 3-second ad clip. If it fails any of the four jobs at that size, go back to the sketchbook." },
+        { "t": "hook", "text": "Collectible, cash register, brand and billboard." }
+      ],
+      "check": { "q": "Which of these is NOT one of the four jobs of an F2P hero?", "options": ["Running the game's servers", "Being a collectible", "Starring in ads"], "answer": 0, "why": "The four jobs are collectible, product, brand and ad star." }
+    }
+  ]
+}
