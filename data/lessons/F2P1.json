@@ -1,0 +1,337 @@
+{
+  "mod": "F2P1",
+  "words": [
+    { "w": "IAP", "d": "in-app purchase: buying something inside the game with real money" },
+    { "w": "KPI", "d": "key performance indicator: a number the team watches to see how the game is doing" },
+    { "w": "retention (D1, D7, D30)", "d": "the share of new players who come back 1, 7 or 30 days after installing" },
+    { "w": "LTV", "d": "lifetime value: how much money one player brings in, on average, over all their time in the game" },
+    { "w": "CPI", "d": "cost per install: how much you pay in ads to get one new player" },
+    { "w": "FTUE", "d": "first-time user experience: the first minutes a new player spends in the game" },
+    { "w": "faucet and sink", "d": "a faucet gives players currency; a sink takes it away again" },
+    { "w": "meta", "d": "the long-term layer (collection, base, rank) that gives the core action a purpose" }
+  ],
+  "lessons": [
+    {
+      "id": "F2P1-l01",
+      "title": "Fun first, money after",
+      "min": 3,
+      "deep": "How F2P works as a business",
+      "cards": [
+        { "t": "idea", "text": "In a paid game, you pay before the fun. **In a free-to-play game, the fun comes first and the money comes later.** So the design itself is the business model." },
+        { "t": "how", "text": "F2P games earn in three main ways:\n- **in-app purchases**: gems, boosters, heroes, skins\n- **passes and subscriptions**: a season pass or monthly card\n- **ads**: especially **rewarded video**, where the player chooses to watch for a reward" },
+        { "t": "see", "text": "You can't add monetization to a finished game later, any more than you can add a skeleton to a jellyfish. Where players pay must be planned inside the loops from day one." },
+        { "t": "f2p", "text": "App stores take a share of every purchase, historically 15 to 30 percent. Rewarded ads feel fair because the player chooses them. Forced full-screen ads earn well but can push players away if overused." },
+        { "t": "hook", "text": "A free restaurant with a dessert menu: everyone eats free, and a few order lots of dessert." }
+      ],
+      "check": { "q": "What makes a rewarded video ad feel fair?", "options": ["The player chooses to watch it for a reward", "It's shorter than other ads", "It only plays at night"], "answer": 0, "why": "It's opt-in. The player trades time for a reward they want." }
+    },
+    {
+      "id": "F2P1-l02",
+      "title": "Most players never pay, and that's fine",
+      "min": 3,
+      "deep": "How F2P works as a business",
+      "cards": [
+        { "t": "idea", "text": "In most F2P games, **only a small share of players ever pay**, often just a few percent. And a small group of those payers brings in a large part of the money." },
+        { "t": "how", "text": "Non-payers still matter a lot:\n- they are the opponents, clanmates and neighbours payers play with\n- they tell friends about the game, which makes new players cheaper\n- they watch ads\n- many become payers later, once they trust the game" },
+        { "t": "see", "text": "In a PvP game like Clash Royale, a payer needs someone to battle. Without the free players, matchmaking would be empty and the game would die." },
+        { "t": "f2p", "text": "High spenders are people, not wallets. Some are young or struggle with spending control. Good studios show spending clearly, offer limits and parental controls, and never design traps for compulsive spenders." },
+        { "t": "hook", "text": "If the free food is bad, nobody stays long enough to see the dessert menu." }
+      ],
+      "check": { "q": "Why are non-paying players valuable?", "options": ["They are the community that payers play with, and many pay later", "They aren't: only payers matter", "They make the game run faster"], "answer": 0, "why": "Non-payers are opponents, friends, ad viewers and future payers." }
+    },
+    {
+      "id": "F2P1-l03",
+      "title": "What players actually pay for",
+      "min": 3,
+      "deep": "How F2P works as a business",
+      "cards": [
+        { "t": "idea", "text": "Players pay for **four kinds of value: time, progress, power and looks.** Knowing which one you sell shapes your whole shop." },
+        { "t": "how", "text": "- **Time:** skip waits, refill energy (\"I'd rather pay than wait\").\n- **Progress:** more resources to move forward faster.\n- **Power:** stronger cards or heroes.\n- **Looks:** skins, emotes and decorations." },
+        { "t": "see", "text": "Power is the most controversial when it decides who wins in PvP. That's \"pay-to-win\". Cosmetics are the safest, and work best where other players can see them, like skins in Brawl Stars." },
+        { "t": "f2p", "text": "When you study a game's shop, label each offer: time, progress, power or looks. Then ask if paying players beat free players unfairly." }
+      ],
+      "check": { "q": "Which kind of purchase is usually the most ethically safe?", "options": ["Cosmetics, like skins", "Power that wins PvP battles", "Paying to remove a wall"], "answer": 0, "why": "Cosmetics don't change who wins, so they don't make the game unfair." }
+    },
+    {
+      "id": "F2P1-l04",
+      "title": "The money rule: LTV must beat CPI",
+      "min": 3,
+      "deep": "How F2P works as a business",
+      "cards": [
+        { "t": "idea", "text": "A game can grow profitably only when **each player earns more over their lifetime (LTV) than it costs to get them (CPI).**" },
+        { "t": "how", "text": "Players move through a funnel: they find the game, start playing, come back, tell friends, and some pay. **Order matters:** you can't earn from players who already left. That's why teams fix retention before monetization." },
+        { "t": "see", "text": "Say ads cost you 2 dollars per new player. The average player brings in only 1.50 dollars over their life. Then every new player loses you money." },
+        { "t": "f2p", "text": "Designers raise LTV by keeping players longer and offering fair value. They lower CPI by making a game that looks great in ads and that people share." },
+        { "t": "hook", "text": "Retention × Engagement × Monetization = LTV. If retention is zero, everything is zero." }
+      ],
+      "check": { "q": "When is growing a game with paid ads profitable?", "options": ["When LTV is higher than CPI", "When CPI is higher than LTV", "Whenever the ads look nice"], "answer": 0, "why": "Each player must bring in more than they cost to acquire." }
+    },
+    {
+      "id": "F2P1-l05",
+      "title": "KPI words, part 1: players and sessions",
+      "min": 3,
+      "deep": "KPI dictionary",
+      "cards": [
+        { "t": "idea", "text": "**KPIs** are how a team sees millions of players it will never meet. A designer who can't read them designs blind. One who only reads them designs spreadsheets. You need both." },
+        { "t": "how", "text": "- **DAU / MAU:** daily and monthly active users (different players who opened the game).\n- **Stickiness:** DAU divided by MAU. How many of this month's players show up on a given day?\n- **Session length:** minutes per visit.\n- **Sessions per day:** visits per player per day." },
+        { "t": "see", "text": "Rough guide: a hyper-casual session is a few minutes, a casual one about 5 to 15 minutes. Many mobile games get 2 to 6 sessions a day." },
+        { "t": "f2p", "text": "Design levers for sessions: energy or lives, how much content fits in one visit, timers that bring players back, and fast loading." }
+      ],
+      "check": { "q": "What is stickiness?", "options": ["Daily players divided by monthly players", "Minutes per session", "The number of purchases"], "answer": 0, "why": "DAU ÷ MAU shows how often this month's players come back." }
+    },
+    {
+      "id": "F2P1-l06",
+      "title": "KPI words, part 2: retention and churn",
+      "min": 3,
+      "deep": "KPI dictionary",
+      "cards": [
+        { "t": "idea", "text": "**Retention** is the most important number in F2P. **D1, D7 and D30** show how many players from one install day come back after 1, 7 and 30 days." },
+        { "t": "how", "text": "An old rule of thumb for a healthy casual game is **40 / 20 / 10** (D1 / D7 / D30). It varies a lot by genre. **Churn** means players who stop playing. **Churn points** are where they leave: a tutorial step, level 12, the first lost battle." },
+        { "t": "see", "text": "What each number usually points to:\n- weak D1: the first session or core fun is broken\n- weak D7 with fine D1: goals and unlock pacing\n- weak D30: the long-term meta, social play and events" },
+        { "t": "f2p", "text": "Retention drops steeply at first, then flattens into a tail. The height of that tail is where long-term revenue lives." }
+      ],
+      "check": { "q": "D1 is fine but D7 is weak. Where do you look first?", "options": ["Goals and unlock pacing in the first week", "The store icon", "The first 10 seconds"], "answer": 0, "why": "A good D1 means the start works. Weak D7 points to the mid-game goals and pacing." }
+    },
+    {
+      "id": "F2P1-l07",
+      "title": "KPI words, part 3: money numbers",
+      "min": 3,
+      "deep": "KPI dictionary",
+      "cards": [
+        { "t": "idea", "text": "Money KPIs answer two questions: **how many players pay**, and **how much the average player is worth**." },
+        { "t": "how", "text": "- **Conversion:** the share of players who ever buy something. Low single-digit percent is common.\n- **ARPU:** average revenue per user.\n- **ARPDAU:** revenue per daily active user, the favourite daily health number.\n- **ARPPU:** revenue per paying user only." },
+        { "t": "see", "text": "A game with 100,000 daily players earning 10,000 dollars a day has an ARPDAU of 10 cents." },
+        { "t": "f2p", "text": "Don't chase one number. Raising prices may lift ARPPU but cut conversion. Always watch a main number plus two \"guardrail\" numbers that must not get worse, like retention." }
+      ],
+      "check": { "q": "100,000 daily players bring in 10,000 dollars a day. What's the ARPDAU?", "options": ["10 cents", "10 dollars", "1 dollar"], "answer": 0, "why": "10,000 ÷ 100,000 = 0.10 dollars per daily active user." }
+    },
+    {
+      "id": "F2P1-l08",
+      "title": "The core loop: what your thumbs repeat",
+      "min": 3,
+      "deep": "Core loop, meta loop",
+      "cards": [
+        { "t": "idea", "text": "The **core loop** is the action players repeat again and again, every few seconds or minutes. You should be able to say it in **one sentence.**" },
+        { "t": "how", "text": "Most core loops follow the same pattern: **play, get a reward, upgrade, play better.** A good loop changes as it repeats: a stronger deck or a new area makes the next round feel different. If nothing changes, it's just a grind." },
+        { "t": "see", "text": "Clash Royale: \"Battle to earn cards, upgrade cards to battle better.\" One sentence, and you understand the whole game." },
+        { "t": "f2p", "text": "Older F2P talk called this a \"compulsion loop\". Most designers now say core loop, because \"compulsion\" suggests manipulating players. A related model, the **Hook model**, is: trigger, action, variable reward, investment." },
+        { "t": "hook", "text": "Core loop = the hamster wheel." }
+      ],
+      "check": { "q": "What makes a core loop more than a grind?", "options": ["Each round changes because of what you earned", "It never changes", "It has more ads"], "answer": 0, "why": "When upgrades change how the next round plays, repeating stays interesting." }
+    },
+    {
+      "id": "F2P1-l09",
+      "title": "The meta loop: why players keep going",
+      "min": 3,
+      "deep": "Core loop, meta loop",
+      "cards": [
+        { "t": "idea", "text": "The **meta loop** is the long-term reason to keep playing: a collection, a base, a rank or a season. **The core loop is what you do. The meta loop is why you care.**" },
+        { "t": "how", "text": "The loops feed each other. The core loop produces resources, and the meta spends them. The meta then changes how the core plays: new cards bring new strategies." },
+        { "t": "see", "text": "Candy Crush and Royal Match have the same core: match-3. Royal Match adds a castle you rebuild with the stars you win. Same action, a different \"why\"." },
+        { "t": "f2p", "text": "Which loop drives which number:\n- core loop quality: D1\n- mid-term goals: D7\n- meta, social and events: D30 and beyond" },
+        { "t": "hook", "text": "The meta loop is the reason the hamster cares about the wheel." }
+      ],
+      "check": { "q": "Which loop mostly drives D30 retention?", "options": ["The meta, social and event layers", "The tutorial", "The loading screen"], "answer": 0, "why": "Long-term goals and people to play with are what keep players for a month and more." }
+    },
+    {
+      "id": "F2P1-l10",
+      "title": "Six famous loops, explained",
+      "min": 3,
+      "deep": "Core loop, meta loop",
+      "cards": [
+        { "t": "idea", "text": "Studying famous loops trains your eye. Each one works for a clear reason you can reuse." },
+        { "t": "how", "text": "- **Clash Royale:** short matches, skill-based wins, a long card collection.\n- **Candy Crush:** instantly readable, thousands of levels, lives as a soft session limit.\n- **Royal Match:** a building meta gives puzzle wins meaning." },
+        { "t": "see", "text": "- **Hay Day:** production chains, and timers that create appointments (\"come back when the bread's done\").\n- **Survivor.io:** a fresh roguelike run each time, plus permanent upgrades between runs.\n- **Monopoly GO!:** almost no skill needed, strong social play, constant events." },
+        { "t": "f2p", "text": "For any game you play, write the core loop in one sentence, then the meta loop in one sentence. If you can't, you don't understand the game yet." }
+      ],
+      "check": { "q": "What creates appointments in Hay Day?", "options": ["Timers on production, like baking bread", "Random boss fights", "A story with chapters"], "answer": 0, "why": "When the bread will be ready in 2 hours, you plan to come back." }
+    },
+    {
+      "id": "F2P1-l11",
+      "title": "Designing a good session",
+      "min": 3,
+      "deep": "Core loop, meta loop",
+      "cards": [
+        { "t": "idea", "text": "A **session** is one visit to the game. Design its shape on purpose: **arrive, play, invest, and leave with a reason to return.**" },
+        { "t": "how", "text": "1. **Arrive and collect:** claim rewards, see what changed (10 to 30 seconds).\n2. **Play:** the main content.\n3. **Invest:** spend currency, start timers, pick the next goal.\n4. **Exit hook:** something pending, like \"chest ready in 3 hours\"." },
+        { "t": "see", "text": "A classic mistake: five popups at launch (news, an offer, a daily reward, an event, another offer). Each one delays the fun and costs you players." },
+        { "t": "f2p", "text": "Put ads and offers at natural stopping points: the end of a level or match, when energy is used up, when all timers are running. That respects the player's flow." }
+      ],
+      "check": { "q": "Where should an interstitial ad appear?", "options": ["At a natural stopping point, like the end of a level", "In the middle of a match", "Before the game even loads"], "answer": 0, "why": "Stopping points don't break the player's flow, so ads there hurt less." }
+    },
+    {
+      "id": "F2P1-l12",
+      "title": "The first session: fun in 1, loop in 5, hook by 15",
+      "min": 3,
+      "deep": "FTUE",
+      "cards": [
+        { "t": "idea", "text": "The **FTUE** is the most important few minutes of your game, because **that's where the most players leave.** Its job: fun fast, teach by doing, a first win, and a reason to come back." },
+        { "t": "how", "text": "- Play first. No account creation, no logo parade, no wall of text.\n- Make the first action feel great: big feedback and sound.\n- Complete one full loop: play, reward, spend, get stronger.\n- End with a hook: a chest ticking, a feature unlocking soon." },
+        { "t": "see", "text": "Many players arrive from an ad. If the first minute doesn't look like the ad, they leave and write angry reviews. Keep the ad's promise." },
+        { "t": "f2p", "text": "Show, don't tell. A pointing hand and a highlighted tile beat a paragraph of text. A few words per screen at most." },
+        { "t": "hook", "text": "Fun in 1 minute, one full loop in 5, a hook by 15." }
+      ],
+      "check": { "q": "What's the best way to teach a new mechanic?", "options": ["A pointing hand and a highlighted tile", "A long text explanation", "A video before the game starts"], "answer": 0, "why": "Players learn by doing. Show, don't tell." }
+    },
+    {
+      "id": "F2P1-l13",
+      "title": "After the tutorial: unlock features slowly",
+      "min": 3,
+      "deep": "FTUE",
+      "cards": [
+        { "t": "idea", "text": "Don't show every system on day one. **Unlock features across the first days**, so each one gets its own moment." },
+        { "t": "how", "text": "Teach one new thing at a time:\n1. introduce it safely\n2. let the player practise\n3. add a twist\n4. test it\nThen combine it with earlier skills." },
+        { "t": "see", "text": "Ask for notification permission after the player has seen value. Show a friendly message first, like \"Want a ping when your crops are ready?\" Asking at the very start wastes your one good chance." },
+        { "t": "f2p", "text": "Show the shop and a good-value **starter pack** after the player has had real fun and progress. Never block the tutorial behind a purchase. Tell players what they'll get if they come back tomorrow." }
+      ],
+      "check": { "q": "When should you ask for notification permission?", "options": ["After the player has seen value, with a short explanation", "On the very first screen", "Never"], "answer": 0, "why": "Players say yes when they understand the benefit. Asking too early wastes the chance." }
+    },
+    {
+      "id": "F2P1-l14",
+      "title": "Progression: many tracks, two directions",
+      "min": 3,
+      "deep": "Progression systems",
+      "cards": [
+        { "t": "idea", "text": "**Progression** answers the player's question: \"Am I getting somewhere?\" F2P games run **several progress tracks at once**, so something is almost always close to done." },
+        { "t": "how", "text": "Two directions:\n- **vertical:** more power, bigger numbers. Easy to understand and sell, but can feel pay-to-win.\n- **horizontal:** more options, like new heroes or strategies, without bigger stats. Fairer, but harder to sell as progress." },
+        { "t": "see", "text": "In Marvel Snap, upgrading a card changes its look, not its power. Upgrades raise your collection level, which unlocks new cards. Progress means more options, not stronger copies." },
+        { "t": "f2p", "text": "Watch out for **power creep**: releasing stronger and stronger content to sell it. Old content becomes useless and players stop trusting you." }
+      ],
+      "check": { "q": "New heroes that give new strategies, not bigger stats, are which kind of progression?", "options": ["Horizontal", "Vertical", "Power creep"], "answer": 0, "why": "Horizontal progression adds options instead of raw power." }
+    },
+    {
+      "id": "F2P1-l15",
+      "title": "Pacing: highlight reel, rhythm, then systems",
+      "min": 3,
+      "deep": "Progression systems",
+      "cards": [
+        { "t": "idea", "text": "Pace progression like a long TV series. **The early game is a highlight reel, the mid game has a steady rhythm, and the late game runs on systems and events.**" },
+        { "t": "how", "text": "- Early: something new almost every session.\n- Mid: a meaningful unlock every few sessions, with goals visible ahead.\n- Late: novelty comes from events, seasons and social play.\nAlways show what's next: \"unlocks at level 8\", a locked area, a hero's shadow." },
+        { "t": "see", "text": "Difficulty should look like a **saw tooth**: harder, harder, a spike, then an easier breather, then harder again. Like a gym session, not max weight on every lift." },
+        { "t": "f2p", "text": "What players feel is **time**, not XP. Plan time-to-level directly: \"level 5 in the first session, level 10 by day 3\". Fast-growing XP curves look gentle early and explode later." }
+      ],
+      "check": { "q": "What shape should difficulty follow?", "options": ["A saw tooth: rising, a spike, then a breather", "Flat all the way", "Always getting harder with no breaks"], "answer": 0, "why": "Breathers after spikes keep players motivated without burning them out." }
+    },
+    {
+      "id": "F2P1-l16",
+      "title": "Economy: faucets and sinks",
+      "min": 3,
+      "deep": "Economy design",
+      "cards": [
+        { "t": "idea", "text": "A game economy works like plumbing. Currency flows in through **faucets** (rewards) and out through **sinks** (things to spend on). **Balance them, and every reward feels valuable.**" },
+        { "t": "how", "text": "Most games have a **soft currency** (earned by playing, like coins) and a **hard currency** (mostly bought, like gems). Hard currency gives one price list for very different items, and lets free players taste premium items." },
+        { "t": "see", "text": "Kinds of sinks:\n- upgrades with rising costs\n- consumables like boosters and revives\n- speed-ups and extra builders\n- cosmetics, which never run out" },
+        { "t": "f2p", "text": "**Every faucet needs a sink players actually want.** A currency with nothing worth buying is just noise in the corner of the screen. Also show real prices clearly: \"Is 280 gems a lot?\" shouldn't be a puzzle." },
+        { "t": "hook", "text": "Your economy is a bathtub: faucets fill it, drains empty it." }
+      ],
+      "check": { "q": "A currency piles up with nothing good to buy. What's missing?", "options": ["A sink players want", "Another faucet", "A new currency"], "answer": 0, "why": "Without wanted sinks, rewards lose their value." }
+    },
+    {
+      "id": "F2P1-l17",
+      "title": "When economies break",
+      "min": 3,
+      "deep": "Economy design",
+      "cards": [
+        { "t": "idea", "text": "Economies break in two directions. **Too many faucets cause inflation:** money stops meaning anything. **Too many sinks cause starvation:** every upgrade feels impossible." },
+        { "t": "how", "text": "Warning signs of inflation: players' balances keep rising level after level, and they sit on huge piles. Warning signs of starvation: players get stuck at the same upgrade and quit." },
+        { "t": "see", "text": "Every event adds new faucets. Balance them with event-only sinks, event currencies that expire, and new late-game things to buy." },
+        { "t": "f2p", "text": "Designers model the economy in a spreadsheet: daily income, upgrade costs, and the day a player hits each wall. Then they check live data: balances by level, earn-to-spend ratios, and how many players are stuck." }
+      ],
+      "check": { "q": "Players are sitting on huge piles of coins. What's happening?", "options": ["Inflation: too many faucets", "Starvation: too many sinks", "A healthy economy"], "answer": 0, "why": "Growing stockpiles mean more is coming in than players want to spend." }
+    },
+    {
+      "id": "F2P1-l18",
+      "title": "Prices and packs",
+      "min": 2,
+      "deep": "Economy design",
+      "cards": [
+        { "t": "idea", "text": "Stores use fixed **price points**, like 0.99, 4.99, 9.99, 19.99, 49.99 and 99.99 dollars. **Bigger packs usually give more currency per dollar.**" },
+        { "t": "how", "text": "**Anchoring:** the first or biggest price you see sets your sense of value. A 99.99-dollar pack on screen makes 9.99 dollars feel small." },
+        { "t": "see", "text": "Many shops show three offer sizes, with the middle one marked \"best value\". Most people pick the middle." },
+        { "t": "f2p", "text": "Use these tools to show honest value, not to trick players. Clear prices build trust, and trust is what turns a first purchase into a second one." }
+      ],
+      "check": { "q": "What is anchoring?", "options": ["A big price shown first makes others feel cheaper", "Locking prices forever", "Giving free currency"], "answer": 0, "why": "The first or biggest price becomes the reference for judging the others." }
+    },
+    {
+      "id": "F2P1-l19",
+      "title": "Habits: daily rewards, streaks and appointments",
+      "min": 3,
+      "deep": "Retention mechanics",
+      "cards": [
+        { "t": "idea", "text": "**Retention mechanics** turn a fun game into a game you come back to. Used well, they build a daily ritual players enjoy. Overused, they become chores and anxiety." },
+        { "t": "how", "text": "- **Daily login rewards:** a 7-day or monthly calendar. Counting each login without resetting is kinder.\n- **Streaks:** a count of days or wins in a row. Always give a safety option, like a streak freeze.\n- **Appointments:** timers, daily resets and scheduled events." },
+        { "t": "see", "text": "Duolingo's daily streak is famous, and it sells streak freezes so one missed day doesn't erase months of progress. Pokémon GO's Community Days are regular, scheduled appointments." },
+        { "t": "f2p", "text": "Daily and weekly quests (\"win 3 battles\") guide players to different features each day. They often feed a season pass." },
+        { "t": "hook", "text": "Retention mechanics are seasoning: a pinch makes the dish, a whole shaker ruins it." }
+      ],
+      "check": { "q": "Why give a streak freeze?", "options": ["So one missed day doesn't wipe out the streak", "To make the game harder", "To sell more ads"], "answer": 0, "why": "A safety option keeps the streak motivating instead of stressful." }
+    },
+    {
+      "id": "F2P1-l20",
+      "title": "Collections, friends and events",
+      "min": 3,
+      "deep": "Retention mechanics",
+      "cards": [
+        { "t": "idea", "text": "The strongest long-term reason to stay is **people**. Collections, clans, gifting and events give players goals and relationships." },
+        { "t": "how", "text": "- **Collections:** sticker albums and hero rosters. The urge to complete a set is strong.\n- **Clans:** teammates depend on you, so leaving feels like letting friends down.\n- **Gifts:** receiving one makes you want to give one back.\n- **Events and passes:** limited time creates a sense of \"now\"." },
+        { "t": "see", "text": "**Goal gradient:** motivation rises as a goal gets closer, so show progress bars. Starting a card with 2 of 10 stamps already filled makes people more likely to finish it." },
+        { "t": "f2p", "text": "**Variable rewards** (chests, surprise drops) are very powerful, and close to gambling psychology. Use them with care and show the odds clearly." }
+      ],
+      "check": { "q": "Why do clans keep players for a long time?", "options": ["Teammates depend on each other", "Clans give free gems", "Clans hide the shop"], "answer": 0, "why": "People stay for people. Leaving a clan feels like letting friends down." }
+    },
+    {
+      "id": "F2P1-l21",
+      "title": "Push notifications done right",
+      "min": 2,
+      "deep": "Retention mechanics",
+      "cards": [
+        { "t": "idea", "text": "Push notifications are the only retention tool that works **while the game is closed.** Use them to inform, never to guilt-trip." },
+        { "t": "how", "text": "Rules of thumb:\n- tell players something they want to know\n- make it personal: their timers, their clan\n- keep it to a few a day\n- never at 3 a.m.\n- let players switch off each type" },
+        { "t": "see", "text": "\"Your eggs are ready\" is information. \"Your animals are sad and hungry 😢\" is manipulation. Same timer, very different message." },
+        { "t": "f2p", "text": "iPhones always need permission, and newer Android phones ask too. Ask only after the player has seen why notifications help them." }
+      ],
+      "check": { "q": "Which notification follows the rules?", "options": ["\"Your eggs are ready\"", "\"Your animals are crying because you left 😢\"", "Ten messages a day"], "answer": 0, "why": "Useful, personal information is fine. Guilt trips and spam push players away." }
+    },
+    {
+      "id": "F2P1-l22",
+      "title": "Why players play: motivation models",
+      "min": 3,
+      "deep": "Player motivation models",
+      "cards": [
+        { "t": "idea", "text": "Players play for different reasons. **Motivation models** give you words for those reasons, so you can choose who you design for. They're lenses, not laws." },
+        { "t": "how", "text": "**Bartle's four types:**\n- **achievers:** points, levels, completion\n- **explorers:** secrets and new systems\n- **socializers:** friends and community\n- **killers:** beating other players\nGreat shorthand, but based on old online worlds, not solid science." },
+        { "t": "see", "text": "**Quantic Foundry** surveyed many gamers and found 12 motivations, grouped as action, social, mastery, achievement, immersion and creativity. Competition tends to fade with age, which helps explain casual mobile audiences." },
+        { "t": "f2p", "text": "Pick one or two motivations your game is built for. A match-3 serves mastery and completion. Clash Royale serves competition and strategy. Hay Day serves creativity and completion, with a social layer." }
+      ],
+      "check": { "q": "Which Bartle type loves PvP ladders?", "options": ["Killers (competing with other players)", "Explorers", "Socializers"], "answer": 0, "why": "\"Killers\" want to beat or affect other players, which PvP delivers." }
+    },
+    {
+      "id": "F2P1-l23",
+      "title": "Three needs: autonomy, competence, relatedness",
+      "min": 3,
+      "deep": "Player motivation models",
+      "cards": [
+        { "t": "idea", "text": "Psychology research (self-determination theory) says people are most motivated when three needs are met: **autonomy, competence and relatedness.**" },
+        { "t": "how", "text": "- **Autonomy:** real choices. Feed it with deck building and choosing goals. Starve it with pressure offers.\n- **Competence:** feeling good at it. Feed it with clear feedback and fair difficulty.\n- **Relatedness:** connection. Feed it with clans, co-op and gifting." },
+        { "t": "see", "text": "**Overjustification:** big external rewards for something already fun can kill the fun. \"I only play for the chest now.\" Rewards should say \"you got better\", not \"you only did this for us\"." },
+        { "t": "f2p", "text": "Check each feature: does it feed or starve autonomy, competence and relatedness? Pay-to-win losses starve competence. Toxic chat starves relatedness." },
+        { "t": "hook", "text": "The three vitamins: A-C-R. Autonomy, Competence, Relatedness." }
+      ],
+      "check": { "q": "Losing to players who paid for power mostly starves which need?", "options": ["Competence", "Relatedness", "Autonomy"], "answer": 0, "why": "If money decides the result, players can't feel their skill matters." }
+    },
+    {
+      "id": "F2P1-l24",
+      "title": "Your weekly superpower: the teardown",
+      "min": 3,
+      "deep": "deconstruct",
+      "cards": [
+        { "t": "idea", "text": "A **teardown** is playing a game on purpose to work out **why** its designers made each choice. One serious teardown a week teaches more than a pile of articles." },
+        { "t": "how", "text": "1. Fresh install, notes open, screen recording on.\n2. Log the first session step by step.\n3. Write the core and meta loops in one sentence each.\n4. Note the economy, shop, retention features and events.\n5. End with your hypotheses: why did they do it this way?" },
+        { "t": "see", "text": "Compare, don't just describe. \"Royal Match teaches boosters faster than Candy Crush\" teaches you more than \"Royal Match has boosters\"." },
+        { "t": "f2p", "text": "Watch your biases: you're probably not the target player, live games test different versions on different players, and revenue numbers from tools are estimates. Your teardowns become your portfolio." },
+        { "t": "hook", "text": "Be a mechanic, not a driver: open the hood and label every part." }
+      ],
+      "check": { "q": "What turns a teardown from a description into learning?", "options": ["Writing hypotheses about why each choice was made", "Listing every feature", "Spending a lot of money"], "answer": 0, "why": "Observations are cheap. The \"why\" is where you learn design." }
+    }
+  ]
+}
