@@ -1,0 +1,149 @@
+{
+  "mod": "L16",
+  "words": [
+    { "w": "cutscene", "d": "a short movie in a game where the player doesn't control anything" },
+    { "w": "scripted event", "d": "a staged story moment that happens while the player keeps control" },
+    { "w": "VO", "d": "voice over: recorded lines spoken by actors" },
+    { "w": "temp track", "d": "a cheap test recording used only to check timing" },
+    { "w": "bark", "d": "a short voice reaction, like \"Got it!\" or a battle cry" },
+    { "w": "FTUE", "d": "first-time user experience: the player's first minutes in the game" }
+  ],
+  "lessons": [
+    {
+      "id": "L16-l01",
+      "title": "Could this be gameplay?",
+      "min": 3,
+      "deep": "question to ask first",
+      "cards": [
+        { "t": "idea", "text": "Cutscenes look great, but many players skip them. **Before making one, ask: could this moment happen in gameplay instead?**" },
+        { "t": "how", "text": "A cutscene moves the story, creates spectacle and shows characters. But many have been too long, pointless or boring, so players learned to skip them." },
+        { "t": "see", "text": "The chapter's title is the warning: \"No one's gonna watch 'em anyway.\" Design so the game makes sense even if nobody watches. Viewers get a bonus." },
+        { "t": "f2p", "text": "Mobile players open the app to play. Every second of unskippable movie in the first minutes loses players. Turn the beat into a level goal, a task like \"fix the stairs\", or one speech bubble." },
+        { "t": "hook", "text": "It's always better to have the player do than watch." }
+      ],
+      "check": { "q": "What should you ask before making a cutscene?", "options": ["Could this happen in gameplay instead?", "How long can it be?", "Who will voice it?"], "answer": 0, "why": "Playing beats watching. Use cutscenes only for what play can't do." }
+    },
+    {
+      "id": "L16-l02",
+      "title": "Six kinds of cutscenes",
+      "min": 3,
+      "deep": "Six kinds of cutscenes",
+      "cards": [
+        { "t": "idea", "text": "Cutscenes range from Hollywood-style film to fully playable moments. **Pick the type that fits your style, budget and schedule.**" },
+        { "t": "how", "text": "- **FMV:** live-action film with real actors\n- **Animated:** hand-drawn or stop-motion\n- **Flash:** still images with simple movement\n- **Prerendered:** high-quality CG\n- **Puppet show:** game models with a movie camera\n- **Scripted event:** the player keeps control" },
+        { "t": "see", "text": "Since Half-Life and Call of Duty, scripted events became the favourite way to tell stories, because play never stops." },
+        { "t": "f2p", "text": "**Groundhog Day problem:** a scene that replays every time you retry makes players furious. Show it once, then skip it automatically on retries." },
+        { "t": "hook", "text": "Film, Frames, Flash, Fancy render, Puppets, Play: from most Hollywood to most game." }
+      ],
+      "check": { "q": "What is the Groundhog Day problem?", "options": ["A scene replays every time the player retries", "A cutscene is too short", "The camera is too slow"], "answer": 0, "why": "Repeating the same scene after every failure frustrates players." }
+    },
+    {
+      "id": "L16-l03",
+      "title": "Make sure they see it",
+      "min": 3,
+      "deep": "actually see",
+      "cards": [
+        { "t": "idea", "text": "A scripted event the player doesn't see is wasted money. **Stage it like a theme-park ride: control where they look.**" },
+        { "t": "how", "text": "- Start the event only when the player is facing it.\n- Shape the level so walls and paths frame the view.\n- If the camera moves, start from the player's own view.\n- Always show cause and effect." },
+        { "t": "see", "text": "Pull a lever, then the camera shows which door opens. Players should never wonder what their action did." },
+        { "t": "f2p", "text": "On mobile, dim the screen except the thing to tap, so the player can't miss it. When a new area unlocks, pan the camera across it." },
+        { "t": "hook", "text": "If a tree falls in a scripted event and the player was looking at the minimap, it didn't happen." }
+      ],
+      "check": { "q": "Why start a scripted event only when the player faces it?", "options": ["So they actually see it", "To save memory", "To make it longer"], "answer": 0, "why": "An event nobody sees is wasted work." }
+    },
+    {
+      "id": "L16-l04",
+      "title": "Plan the script: outline, scenes, play",
+      "min": 3,
+      "deep": "Eight Easy Steps",
+      "cards": [
+        { "t": "idea", "text": "Game writers are writing professionals. The first steps of a script are **outline, break it into scenes, and decide what's played versus watched.**" },
+        { "t": "how", "text": "- **Outline:** know the beginning, middle and end.\n- **Scenes:** list who appears and where. This drives art and staging.\n- **Order:** start with a bang. A flashback can open on the best action." },
+        { "t": "see", "text": "Save cutscenes for big moments the engine can't play, like **kissing and explosions**. If the player could perform the moment, don't film it." },
+        { "t": "f2p", "text": "Even a 5-day event needs a mini outline: open with the most dramatic moment, and put the finale on the last day." }
+      ],
+      "check": { "q": "What does Rogers say cutscenes are best for?", "options": ["Big moments the engine can't play, like kissing and explosions", "Tutorials", "Menus"], "answer": 0, "why": "Everything else should be played, not watched." }
+    },
+    {
+      "id": "L16-l05",
+      "title": "Write short, then read it aloud",
+      "min": 3,
+      "deep": "Eight Easy Steps",
+      "cards": [
+        { "t": "idea", "text": "Be brief. Show with action more than words. **Then read every line out loud**, because lines that look fine on paper often sound clumsy." },
+        { "t": "how", "text": "- Use the standard screenplay format, like every other entertainment professional.\n- Let the script rest a day or two, then rewrite.\n- Ask someone else to read it, and don't hover while they read." },
+        { "t": "see", "text": "Harrison Ford famously told George Lucas that Star Wars dialogue could be typed but not said." },
+        { "t": "f2p", "text": "In mobile speech bubbles, the rules apply double: short, funny, one idea per bubble." },
+        { "t": "hook", "text": "Brevity is the soul of wit, and of speech bubbles." }
+      ],
+      "check": { "q": "Why read dialogue out loud?", "options": ["Lines that look fine can sound clumsy when spoken", "To memorize it", "To time the music"], "answer": 0, "why": "Spoken lines reveal problems that reading hides." }
+    },
+    {
+      "id": "L16-l06",
+      "title": "Spell your screams on purpose",
+      "min": 3,
+      "deep": "VO script spreadsheet",
+      "cards": [
+        { "t": "idea", "text": "Voice actors read **exactly what's written**. Prepare a clean spreadsheet: one line per row, a file name and notes on how to say it." },
+        { "t": "how", "text": "Write sounds the way you want them performed. A short \"Arg!\" and a long \"Aaaargh!\" are completely different. Comic books are great for sound words like POW and AIIEEE." },
+        { "t": "see", "text": "Hit and death sounds need separate takes: falling off a cliff, getting shot, getting burned, plus extra versions." },
+        { "t": "f2p", "text": "Most casual games skip full voice acting because of cost, languages and download size. They use **barks** (short reactions), gibberish voices or an announcer, like Candy Crush's \"Sweet!\"." },
+        { "t": "hook", "text": "Arg is a pirate. Aaaargh is a funeral." }
+      ],
+      "check": { "q": "Why write \"Aaaargh!\" instead of \"Arg!\"?", "options": ["Actors perform exactly what's written", "It's shorter", "It's a file name rule"], "answer": 0, "why": "The spelling tells the actor how long and how intense the sound is." }
+    },
+    {
+      "id": "L16-l07",
+      "title": "Recording real voices",
+      "min": 3,
+      "deep": "Temp tracks",
+      "cards": [
+        { "t": "idea", "text": "Record a cheap **temp track** to check timing, then hire **professional actors** through a **voice director**." },
+        { "t": "how", "text": "Team members read the lines to measure length. Never animate lip sync to a temp track: the real performance will be different." },
+        { "t": "see", "text": "The voice director casts the actors, books the studio and directs the session. Describe characters clearly. You can even name a famous actor you imagine." },
+        { "t": "f2p", "text": "The writer must be in the room, because lines change constantly. Let actors improvise: you get more material, and they'll want to work with you again." }
+      ],
+      "check": { "q": "What is a temp track for?", "options": ["Checking timing and length", "Final lip sync", "The trailer"], "answer": 0, "why": "Real actors perform differently, so temp audio is only for timing." }
+    },
+    {
+      "id": "L16-l08",
+      "title": "The skip button is not optional",
+      "min": 3,
+      "deep": "cutscenes on a phone",
+      "cards": [
+        { "t": "idea", "text": "On mobile, story is seasoning. **Every story moment must be skippable**, short, and ideally playable." },
+        { "t": "how", "text": "- Allow skipping from the first frame.\n- Remember what the player has seen, and never replay it on a retry.\n- Offer a recap or story log for people who skipped." },
+        { "t": "see", "text": "A rough guideline: keep story beats **under about 10 seconds** or **2–3 bubbles** before the player gets control back." },
+        { "t": "f2p", "text": "Turn explanation into a tap: the player opens the letter, places the first sofa, fires the first cannon. Watch skip rates and drop-off right after each story beat." }
+      ],
+      "check": { "q": "How long should a mobile story beat usually be?", "options": ["Under about 10 seconds or 2–3 bubbles", "Two minutes", "As long as the writer wants"], "answer": 0, "why": "Players came to play. Short beats keep the story without losing them." }
+    },
+    {
+      "id": "L16-l09",
+      "title": "Bubbles and story events",
+      "min": 3,
+      "deep": "cutscenes on a phone",
+      "cards": [
+        { "t": "idea", "text": "Casual games tell stories through **short character bubbles** between levels, and give **every event a mini-story**." },
+        { "t": "how", "text": "Homescapes (with Austin the butler) and Merge Mansion use quick bubbles between tasks. Choices and Episode make dialogue the core loop, with choices as the gameplay." },
+        { "t": "see", "text": "A villain arrives, a festival needs saving, a new chapter of a mystery opens. The story gives players a reason to care about this week's event goal." },
+        { "t": "f2p", "text": "Season updates work like TV seasons: a teaser, weekly beats and a finale. The guided first level is itself a scripted event: staged, focused, clear, and no longer than it must be." }
+      ],
+      "check": { "q": "Why give a LiveOps event a mini-story?", "options": ["It gives players a reason to care about the event goal", "It makes events longer", "It replaces rewards"], "answer": 0, "why": "Story turns \"collect 500 tokens\" into a goal that means something." }
+    },
+    {
+      "id": "L16-l10",
+      "title": "Trailers and ads are cutscenes too",
+      "min": 3,
+      "deep": "cutscenes on a phone",
+      "cards": [
+        { "t": "idea", "text": "On mobile, big cinematic movies mostly live in **marketing**. Snack-size story inside the game, feast-size trailers outside it." },
+        { "t": "how", "text": "Supercell is famous for animated Clash trailers and shorts that build its characters. Clash of Clans even had a 2015 Super Bowl ad starring Liam Neeson." },
+        { "t": "see", "text": "An ad is a tiny cutscene: hook in the first 1–3 seconds, clear cause and effect, and readable with the sound off." },
+        { "t": "f2p", "text": "Show what players will actually play. Regulators like the UK's ad watchdog have ruled against game ads that showed gameplay not in the game." },
+        { "t": "hook", "text": "Snack-size story, feast-size trailer." }
+      ],
+      "check": { "q": "Where does big cinematic content mostly live for mobile games?", "options": ["In trailers and ads", "In the first level", "In the store menu"], "answer": 0, "why": "Inside the game, story stays short. Big cinema builds the brand in marketing." }
+    }
+  ]
+}
