@@ -1,0 +1,215 @@
+{
+  "mod": "L08",
+  "words": [
+    { "w": "HUD", "d": "heads-up display: anything on screen that gives the player information, like health or score" },
+    { "w": "reticule", "d": "the aiming mark (crosshair) that shows where you'll hit" },
+    { "w": "QTE", "d": "quick-time event: a sudden prompt to press a button in time, or fail" },
+    { "w": "safe area", "d": "the part of a phone screen that notches, rounded corners and system bars never cover" },
+    { "w": "thumb zone", "d": "the parts of the screen a thumb can reach comfortably while holding the phone" },
+    { "w": "red dot", "d": "a small badge that says \"something here needs your attention\"" },
+    { "w": "localization", "d": "translating and adapting a game for other languages and countries" }
+  ],
+  "lessons": [
+    {
+      "id": "L08-l01",
+      "title": "The HUD: the game's sign language",
+      "min": 3,
+      "deep": "HUD zone",
+      "cards": [
+        { "t": "idea", "text": "The **HUD** is named after the display projected onto fighter-jet windows. Rogers' definition is broad: **anything visual that gives the player information is HUD.**" },
+        { "t": "how", "text": "The seven classic HUD elements:\n- health and targeting\n- ammo and inventory\n- score\n- radar or map\n- a context prompt (\"press A to open\")\nThe rule for all of them: **clear, clean, simple.**" },
+        { "t": "see", "text": "In mobile F2P, the HUD goes far beyond the play screen. The home screen counts too: currency bars, event buttons, red dots and timers." },
+        { "t": "f2p", "text": "Before you add any HUD element, ask: what does the player need to know right now, and what can wait? Everything else is clutter." },
+        { "t": "hook", "text": "The HUD talks without words. If players need subtitles for it, it isn't fluent yet." }
+      ],
+      "check": { "q": "By Rogers' definition, is a mobile home screen with currency bars part of the HUD?", "options": ["Yes: any visual element giving information is HUD", "No: only in-game health bars count", "Only if it's animated"], "answer": 0, "why": "Rogers defines HUD as anything visual that informs the player." }
+    },
+    {
+      "id": "L08-l02",
+      "title": "Health bars come in many shapes",
+      "min": 3,
+      "deep": "Health bar",
+      "cards": [
+        { "t": "idea", "text": "A **health bar** shows how close the player is to losing. It's the most flexible HUD element: a bar, hearts, an orb, a shield or even a heartbeat sound." },
+        { "t": "how", "text": "Health that slowly comes back, if you wait, keeps players in the game. A game-over screen pulls them out. If you show low health with screen effects, never cover the action. Near death is when players most need to see." },
+        { "t": "see", "text": "In mobile action games, health sits above each character, where your eyes already are. Brawl Stars does this. In match-3, the **moves left** counter is the level's health bar." },
+        { "t": "f2p", "text": "\"Lives\" that refill on a timer are health stretched over real hours. They pace sessions and earn money. The fail screen (\"Out of moves! Continue?\") is a business moment: keep it fast, honest and skippable." }
+      ],
+      "check": { "q": "In a match-3 level, what works like a health bar?", "options": ["The moves-left counter", "The score", "The level number"], "answer": 0, "why": "Running out of moves ends the level, just like running out of health." }
+    },
+    {
+      "id": "L08-l03",
+      "title": "Aiming and gauges on a touchscreen",
+      "min": 3,
+      "deep": ["Targeting", "Ammo gauge"],
+      "cards": [
+        { "t": "idea", "text": "Thumbs aren't precise, so on mobile **aim assist isn't optional.** And the scarcer a resource is, **the bigger and closer its gauge should be.**" },
+        { "t": "how", "text": "Common touch patterns:\n- tap attack to auto-target the nearest enemy\n- drag to aim manually, and show the range on the ground\n- show the aim preview away from the finger, not under it\n- give crosshairs a dark outline, so they're visible in sunlight" },
+        { "t": "see", "text": "Clash Royale's elixir bar sits right under your cards, in your thumb's line of sight, because you check it every second. Puzzle games show a small number on each booster icon." },
+        { "t": "f2p", "text": "If your design makes a resource scarce, like energy or boosters, its display must be crystal clear. Hiding a scarce resource feels like a trick." },
+        { "t": "hook", "text": "A gauge is a fuel gauge in the desert: the scarcer the fuel, the bigger the gauge." }
+      ],
+      "check": { "q": "Where should a drag-to-aim preview appear?", "options": ["Away from the finger, so it isn't covered", "Directly under the thumb", "Only after the shot"], "answer": 0, "why": "The thumb covers part of the screen, so previews must stay visible." }
+    },
+    {
+      "id": "L08-l04",
+      "title": "Inventory: never lose the player's stuff",
+      "min": 3,
+      "deep": "Inventory",
+      "cards": [
+        { "t": "idea", "text": "An **inventory** lets players see and use what they've collected. Rules: fast access, a nice place to admire loot, readable items, room to grow, and **never lose the player's stuff.**" },
+        { "t": "how", "text": "Items players use often, like boosters, belong in a tray near the thumb, not inside a menu. Use clear shapes and colour-coded rarity frames (grey, green, blue, purple, orange) so items are readable at small sizes." },
+        { "t": "see", "text": "In merge games like Merge Mansion, the board itself is the inventory. Every slot matters, which makes it a puzzle." },
+        { "t": "f2p", "text": "If the inventory is full, send extra items to a mailbox, never delete them. Bought items must never disappear silently. Bigger bags and more slots are a common thing to sell, but limits should feel fair, not like a trap." }
+      ],
+      "check": { "q": "A player's inventory is full when they win a reward. What should happen?", "options": ["Send it to a mailbox so it isn't lost", "Delete the reward", "Delete an old item"], "answer": 0, "why": "Losing a player's items breaks trust. Store the overflow safely." }
+    },
+    {
+      "id": "L08-l05",
+      "title": "Make scoring big and flashy",
+      "min": 3,
+      "deep": "Score",
+      "cards": [
+        { "t": "idea", "text": "Games make players feel clumsy in a hundred ways, but rarely make them feel brilliant. **When the player scores, make it BIG and FLASHY.** You can't overdo congratulating the player." },
+        { "t": "how", "text": "Ways to make rewards feel rewarding:\n- a voice or sound that cheers\n- coins that fly from where you earned them into the counter\n- a short freeze to enjoy the moment\n- stars stamping down one by one" },
+        { "t": "see", "text": "Candy Crush's deep voice saying \"Sweet!\" and \"Delicious!\" is this rule at huge scale. This polish is often called **juice**." },
+        { "t": "f2p", "text": "Two caveats. Routine rewards (your 400th chest) need tap-to-skip or batch opening. And many players play muted, so every celebration must also work visually and with vibration." },
+        { "t": "hook", "text": "For every reward, ask: where are my back-flipping bunnies?" }
+      ],
+      "check": { "q": "Why should coins fly into the currency counter?", "options": ["It shows players where their money lives", "It slows the game down", "It hides the score"], "answer": 0, "why": "Cause and effect: the animation teaches where rewards go." }
+    },
+    {
+      "id": "L08-l06",
+      "title": "Maps and context prompts",
+      "min": 3,
+      "deep": ["Radar/map", "Context-sensitive"],
+      "cards": [
+        { "t": "idea", "text": "A good map answers three questions at a glance: **Where am I? Which way am I facing? Where's the good stuff?** A **context prompt** appears exactly when the player is near something they can use." },
+        { "t": "how", "text": "Maps need a legend, a theme that fits the game, and must work while you move. On phones, keep the mini-map in a top corner. The bottom corners belong to the thumbs." },
+        { "t": "see", "text": "In Grand Theft Auto 3, a button icon appears when you stand next to a car you can take. On touch, the prompt is the button: an action button pops up near your thumb." },
+        { "t": "f2p", "text": "\"Can't do it\" feedback matters: a greyed button with a lock or \"Level 12\" beats a tap that does nothing, which players read as a bug. Show the tutorial hand at first, then fade it out." }
+      ],
+      "check": { "q": "Where should a mobile mini-map usually go?", "options": ["A top corner, away from the thumbs", "Bottom center", "Under the joystick"], "answer": 0, "why": "Thumbs cover the bottom corners, so information goes up top." }
+    },
+    {
+      "id": "L08-l07",
+      "title": "The clean screen",
+      "min": 3,
+      "deep": "clean screen",
+      "cards": [
+        { "t": "idea", "text": "Games want to look like movies but still need to inform. Two strategies: **fade the HUD when it isn't needed**, or **remove it and let the world itself communicate.**" },
+        { "t": "how", "text": "A fading HUD must come back when it matters, like when you take damage, and the player needs an easy way to call it back. Without a HUD, use sound, animation, light and effects to show what's important." },
+        { "t": "see", "text": "The King Kong game (2005) showed a few prompts at the start, then told the player nearly everything through sound and animation. Picture two planets: \"No Interface\" and \"Lots of Interface\". Know which one your game lives on." },
+        { "t": "f2p", "text": "Hyper-casual games live on Planet No Interface: just a score and a pause button. Mid-core games live on Planet Lots of Interface. Fade what you can: hide the joystick until the thumb lands, collapse event buttons during battle." }
+      ],
+      "check": { "q": "What must a fading HUD do?", "options": ["Come back when it's relevant, and be easy to call back", "Disappear forever", "Cover the action"], "answer": 0, "why": "Hiding the HUD is fine only if players never lose information they need." }
+    },
+    {
+      "id": "L08-l08",
+      "title": "Icon design: keep your symbols simple",
+      "min": 3,
+      "deep": "Icon Has",
+      "cards": [
+        { "t": "idea", "text": "Every icon must be **instantly readable.** Rogers' master rule: **KYSS, Keep Your Symbols Simple.**" },
+        { "t": "how", "text": "- Pick the right image: if it builds tanks, show a tank.\n- Use current images. Young testers didn't recognise a postage stamp icon.\n- Code with colour, and also with shape.\n- No text inside icons: it must be translated and is often too small." },
+        { "t": "see", "text": "More rules:\n- one idea per icon, no mixes of text, character and logo\n- a strong dark or light outline so it pops\n- view all icons together to catch look-alikes\n- don't leave icons to programmers" },
+        { "t": "f2p", "text": "About 1 in 12 men has some colour blindness, usually red-green. So rarity, team and element colours must also differ by shape or pattern. Review icons at real size on the smallest phone you support." },
+        { "t": "hook", "text": "KYSS: Keep Your Symbols Simple." }
+      ],
+      "check": { "q": "Why use shape as well as colour in icons?", "options": ["Colour-blind players may not see the colour difference", "Shapes are cheaper", "Colours aren't allowed"], "answer": 0, "why": "About 1 in 12 men has colour-vision deficiency, so colour alone fails." }
+    },
+    {
+      "id": "L08-l09",
+      "title": "Icons and buttons on a phone",
+      "min": 3,
+      "deep": "Icon Has",
+      "cards": [
+        { "t": "idea", "text": "On phones, icons matter more than anywhere else. **The most important button should be the biggest thing on screen**, and every button needs a generous touch area." },
+        { "t": "how", "text": "Apple suggests touch targets of about 44 by 44 points. Make the tappable area bigger than the drawn icon. There's no hover on touch, so use long-press or a small \"i\" button for details." },
+        { "t": "see", "text": "Brawl Stars has a giant PLAY button. Monopoly GO! has a huge GO button. Coin Master's spin button dominates the screen. The core action is the biggest thing you see." },
+        { "t": "f2p", "text": "Your **app icon** is your most important icon: it decides whether people tap in the store. One clear subject, no text, a strong silhouette. Test it at tiny size next to competitors' icons." }
+      ],
+      "check": { "q": "Which button should be the biggest on a mobile home screen?", "options": ["The main play button", "Settings", "The news feed"], "answer": 0, "why": "The core action should be the easiest thing to find and tap." }
+    },
+    {
+      "id": "L08-l10",
+      "title": "Quick-time events, used responsibly",
+      "min": 3,
+      "deep": "QTE",
+      "cards": [
+        { "t": "idea", "text": "A **quick-time event (QTE)** suddenly asks you to press a button in time, or suffer. Players love them or hate them. **Use them only for big cinematic moments.**" },
+        { "t": "how", "text": "Rules for fair QTEs:\n- a moment to see the prompt, then a moment to press\n- predictable and short\n- the same buttons each time\n- optional where possible" },
+        { "t": "see", "text": "Pokémon GO's shrinking circle is a timing prompt: throw when the circle is small for a better catch. Success adds a bonus. Failure just means a normal throw." },
+        { "t": "f2p", "text": "Prefer \"bonus for success\" over \"death for failure\". A required QTE that costs a life feels like a cash grab. Cheap phones and Bluetooth lag make tight timing unfair, so keep windows generous." },
+        { "t": "hook", "text": "A beat to see, a beat to press: ba-DUM." }
+      ],
+      "check": { "q": "Which QTE design is better for F2P?", "options": ["Success gives a bonus; failure just continues", "Failure costs a life", "Random timing"], "answer": 0, "why": "Optional bonuses reward skill without punishing players unfairly." }
+    },
+    {
+      "id": "L08-l11",
+      "title": "Where to put things on screen",
+      "min": 3,
+      "deep": "where to stick",
+      "cards": [
+        { "t": "idea", "text": "**Keep the center of the screen for the action.** Put the most important information top-left. Don't fill all the edges." },
+        { "t": "how", "text": "- Readers' eyes move left to right, so top-left is seen first.\n- Full-screen menus can be see-through, so the player stays connected to the world.\n- HUD on the left, right and bottom edges makes the view feel tiny. Rogers calls this \"bracketing\"." },
+        { "t": "see", "text": "Rogers has seen strategy games so packed with panels that playing felt like looking through a mail slot." },
+        { "t": "f2p", "text": "On phones:\n- keep all buttons inside the **safe area**, away from notches and rounded corners\n- put frequent actions in the **thumb zone**\n- never put key information where the thumbs rest\n- bracketing is the number one disease of F2P home screens" }
+      ],
+      "check": { "q": "What is \"bracketing\"?", "options": ["HUD on many edges, making the game view feel small", "A tournament format", "Putting HUD only top-left"], "answer": 0, "why": "Filling the edges shrinks the visible world into a mail slot." }
+    },
+    {
+      "id": "L08-l12",
+      "title": "The Three-Press Rule and the first screens",
+      "min": 3,
+      "deep": ["where to stick", "other screens than the HUD"],
+      "cards": [
+        { "t": "idea", "text": "Rogers' very important rule: **no screen in the game may ever be more than three presses away.** Players want the good stuff, not a maze of menus." },
+        { "t": "how", "text": "The title screen is the first thing players see, so it should set the mood. Then get out of the way. Many title-menu options can also live in the pause menu." },
+        { "t": "see", "text": "On mobile, your real title screen is the **app store page**: icon, screenshots and video. They decide whether people install." },
+        { "t": "f2p", "text": "Every screen at launch costs players: system splash, logos, legal text, downloads. Combine and shorten them. New players should be playing within seconds. A frozen-looking loading image reads as a crashed app, so add motion." }
+      ],
+      "check": { "q": "What does the Three-Press Rule say?", "options": ["No screen should be more than three presses away", "Every button needs three colours", "Show three ads per session"], "answer": 0, "why": "Deep menus hide features and frustrate players." }
+    },
+    {
+      "id": "L08-l13",
+      "title": "Pause, save and loading screens",
+      "min": 3,
+      "deep": "pause that refreshes",
+      "cards": [
+        { "t": "idea", "text": "**Plan the pause screen as carefully as a level.** It's a hub for saving, options, map and inventory. Players should never feel they miss part of the game by pausing." },
+        { "t": "how", "text": "Saving is one of the most important parts of a game. **Automate it whenever you can.** Offer several save slots, show playtime and chapter names, and never let reloading become a cheap trick to avoid dying." },
+        { "t": "see", "text": "If you must have loading screens, make them useful: tips, art, a little game. Always show a progress bar, so players know how long to wait." },
+        { "t": "f2p", "text": "On mobile, saving is automatic and in the cloud, so players can switch phones without losing progress. The settings, mailbox and profile replace much of the classic pause menu." }
+      ],
+      "check": { "q": "What should every loading screen show?", "options": ["A progress bar or percentage", "Nothing", "An ad only"], "answer": 0, "why": "Players need to know the game hasn't frozen and how long to wait." }
+    },
+    {
+      "id": "L08-l14",
+      "title": "Fonts that people can read",
+      "min": 3,
+      "deep": "fonts",
+      "cards": [
+        { "t": "idea", "text": "Fonts follow the same rules as icons: **legible and clear first, themed second.** Avoid overly fancy fonts that are hard to read." },
+        { "t": "how", "text": "- Strong contrast: never red text on black.\n- Text over busy art needs an outline or shadow.\n- Size by real size on the smallest phone, held at arm's length.\n- Respect the player's system text-size setting." },
+        { "t": "see", "text": "Supercell's games use chunky fonts with dark outlines. They stay readable over any background, which is why so many mobile games copy the style." },
+        { "t": "f2p", "text": "Plan for translation from day one. German words are long, Arabic reads right to left, and Chinese needs different fonts. Never bake text into images: it makes translation and A/B tests painful." },
+        { "t": "hook", "text": "A fancy medieval font on a small phone is a love letter in invisible ink." }
+      ],
+      "check": { "q": "Why give text a dark outline in mobile games?", "options": ["It stays readable over busy, colourful art", "It's required by app stores", "It makes text shorter"], "answer": 0, "why": "Outlines separate text from any background behind it." }
+    },
+    {
+      "id": "L08-l15",
+      "title": "The mobile home screen and red dots",
+      "min": 3,
+      "deep": "Mobile UI Toolkit",
+      "cards": [
+        { "t": "idea", "text": "Every rule in this level applies to the mobile **home screen (lobby).** **The biggest button is PLAY**, important info sits in the corners, and every feature is one tap from home." },
+        { "t": "how", "text": "Common layout: profile and level top-left, currencies top-right, each currency with a \"+\" that opens the right shop section. Group events in one hub button instead of six separate icons." },
+        { "t": "see", "text": "**Red dots** rules:\n- only for things the player can act on\n- tapping must clear the dot\n- a dot on a sub-tab shows on its parent too\n- keep them few, or they all lose meaning" },
+        { "t": "f2p", "text": "Never fake a red dot to drive players to the shop. It's a dark pattern, and players learn to ignore all your dots." }
+      ],
+      "check": { "q": "A red dot never goes away, even after tapping. What's the problem?", "options": ["Players learn to ignore all dots", "Nothing, it looks busy", "It increases sales"], "answer": 0, "why": "Dots must clear when handled, or they stop working as signals." }
+    }
+  ]
+}
