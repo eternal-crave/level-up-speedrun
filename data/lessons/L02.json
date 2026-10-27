@@ -1,0 +1,186 @@
+{
+  "mod": "L02",
+  "words": [
+    { "w": "wish fulfillment", "d": "letting players feel like someone they can't be in real life: a hero, a millionaire, a genius" },
+    { "w": "casual / hardcore", "d": "two ends of a scale: quick, easy games for everyone vs deep, demanding games for dedicated players" },
+    { "w": "clone", "d": "a game that copies another game's gameplay almost exactly" },
+    { "w": "brainstorm", "d": "a session where a group writes down as many ideas as possible, judging nothing yet" },
+    { "w": "retention", "d": "how many players come back after 1, 7 or 30 days (D1, D7, D30)" },
+    { "w": "playtest", "d": "watching someone play your game to see what works and what confuses them" }
+  ],
+  "lessons": [
+    {
+      "id": "L02-l01",
+      "title": "Great ideas often sound stupid",
+      "min": 3,
+      "deep": ["Intro", "Where to Get Them"],
+      "cards": [
+        { "t": "idea", "text": "**Never throw away an idea just because it sounds silly.** Many of the biggest games sound ridiculous when you describe them simply." },
+        { "t": "how", "text": "A designer's raw material is ideas, and the reasons behind them. Outsiders think designers code or draw. They don't. They decide what the game is, and the team builds it." },
+        { "t": "see", "text": "Say these out loud:\n- \"A yellow circle eats dots and runs from ghosts.\" (Pac-Man)\n- \"A butler fixes a mansion by matching tiles.\" (Homescapes)\n- \"Roll dice and raid your friends' buildings.\" (Monopoly GO!)\nAll sound silly. All earned fortunes." },
+        { "t": "f2p", "text": "When you pitch an idea, also give the \"why\": which player need it serves and which number it should improve. Without the why, even a good idea gets rejected." },
+        { "t": "hook", "text": "Every good idea sits right next to a stupid one." }
+      ],
+      "check": { "q": "Your teammate says your idea \"sounds dumb\". What should you do?", "options": ["Look at it seriously: many hits sound dumb out loud", "Drop it right away", "Never share ideas again"], "answer": 0, "why": "Sounding silly says nothing about whether it's fun. Judge it by testing, not by how it sounds." }
+    },
+    {
+      "id": "L02-l02",
+      "title": "Five ways to find new ideas",
+      "min": 3,
+      "deep": "Where to Get Them",
+      "cards": [
+        { "t": "idea", "text": "If you only take ideas from the same games everyone plays, you'll make the same game everyone makes. **Feed your brain unusual inputs.**" },
+        { "t": "how", "text": "Rogers' five sources:\n- read things you'd never normally read\n- walk, drive or shower, so your mind wanders\n- go to talks and share ideas with other designers\n- play bad games and work out how to fix them\n- use your own hobbies and passions" },
+        { "t": "see", "text": "When every studio watches the same top charts, they release nearly the same game at the same time. It's like two volcano movies coming out in the same year. Same inputs, same outputs." },
+        { "t": "f2p", "text": "Mobile teams all study the same top-grossing chart, so clones flood the store. Your edge is input from outside games. Also read 1-star reviews of weak games: they're a free list of problems to solve." },
+        { "t": "hook", "text": "Read, Walk, Listen, Play bad games, follow your Passion." }
+      ],
+      "check": { "q": "Why do so many mobile games look alike?", "options": ["Teams take ideas from the same sources", "Phones can only run one kind of game", "Players ask for copies"], "answer": 0, "why": "Same inputs give the same outputs. Unusual inputs give unusual ideas." }
+    },
+    {
+      "id": "L02-l03",
+      "title": "Most great games build on older games",
+      "min": 3,
+      "deep": "Where to Get Them",
+      "cards": [
+        { "t": "idea", "text": "Truly new ideas are rare. **Most great games take an older game and add one smart step.** Rogers says if you think something is brand new, you probably haven't been looking closely." },
+        { "t": "how", "text": "Each game teaches the next one. Learn from earlier games, then change and combine what you learned. Don't photocopy a game. Understand it, then transform it." },
+        { "t": "see", "text": "Platformers grew one feature at a time. Donkey Kong added jumping. Pitfall! added swinging on vines. Super Mario Bros. added scrolling worlds and power-ups. Each hit added one thing to the last." },
+        { "t": "f2p", "text": "Remixing is normal in F2P:\n- a proven core with a new theme\n- a proven core with a new long-term goal\n- a PC game redesigned for touch\nDraw your genre's family tree: what did each hit add?" }
+      ],
+      "check": { "q": "How are most great games made, according to Rogers?", "options": ["By building on earlier games and adding something new", "By ignoring every game before them", "By copying a hit exactly"], "answer": 0, "why": "Smart iteration on predecessors is the norm. Exact copies are clones, not great games." }
+    },
+    {
+      "id": "L02-l04",
+      "title": "A fun idea vs an idea that sells",
+      "min": 2,
+      "deep": "Where to Get Them",
+      "cards": [
+        { "t": "idea", "text": "A good idea is not always a **marketable** idea. Marketing may call your concept a \"designer's idea\": fun for you, but hard to sell to the public." },
+        { "t": "how", "text": "Rogers is torn. Sales let you keep making games. But many original games were once called \"too weird\". If everyone had listened, they would never exist." },
+        { "t": "f2p", "text": "In F2P, the question is: will it attract players cheaply, and will it earn? Don't give up on a strange idea. **Test it cheaply first** with a fake ad or a quick prototype, and let the numbers decide." }
+      ],
+      "check": { "q": "Marketing thinks your idea is too weird. What's the best F2P move?", "options": ["Test it cheaply with an ad or prototype", "Build the full game anyway", "Drop it without testing"], "answer": 0, "why": "A cheap test gives real data before you spend months building." }
+    },
+    {
+      "id": "L02-l05",
+      "title": "What players want: good games and a fantasy",
+      "min": 3,
+      "deep": "What Do Gamers Want",
+      "cards": [
+        { "t": "idea", "text": "Players can't tell you what they want until they see it. Underneath, they want one simple thing: **good games**. Good games let them feel like someone they can't be in real life." },
+        { "t": "how", "text": "That feeling is **wish fulfillment**: being a hero, getting rich, being clever. Hold on to a clear vision and make it with passion. Players can sense when a team truly cares." },
+        { "t": "see", "text": "Wish fulfillment in mobile hits:\n- Survivor.io: an unstoppable one-person army\n- Monopoly GO! and Coin Master: huge jackpots, feeling rich\n- Royal Match: feeling smart\n- Hay Day: a calm, cozy life" },
+        { "t": "f2p", "text": "In F2P, \"good\" means good for months. The core action must feel great in the first 30 seconds, and there must be a reason to come back tomorrow. Your retention numbers measure this." }
+      ],
+      "check": { "q": "What fantasy does Survivor.io sell?", "options": ["Being an unstoppable one-person army", "Running a peaceful farm", "Solving clever puzzles"], "answer": 0, "why": "It's a power fantasy: one hero against huge crowds of enemies." }
+    },
+    {
+      "id": "L02-l06",
+      "title": "Choose your audience early",
+      "min": 3,
+      "deep": "What Do Gamers Want",
+      "cards": [
+        { "t": "idea", "text": "Decide early **who the game is for**: how casual or hardcore they are, and how old they are. Every later choice depends on it." },
+        { "t": "how", "text": "On mobile, casual and hardcore are a scale:\n- hyper-casual: learn in seconds, paid by ads\n- hybrid-casual: simple core plus light progress\n- casual: match-3, merge, simulation\n- mid-core: Clash Royale, Brawl Stars" },
+        { "t": "see", "text": "Kids want games that look like they're for older players. And never talk down to kids. They're smart and often better gamers than adults. Simplify the reading, not the fun." },
+        { "t": "f2p", "text": "Games for children have extra legal rules about privacy and ads, like COPPA in the US. Aggressive selling to kids is both unethical and a legal risk." }
+      ],
+      "check": { "q": "Which game sits at the most casual end of the scale?", "options": ["A hyper-casual game you learn in seconds", "Clash Royale", "A deep strategy game"], "answer": 0, "why": "Hyper-casual games take seconds to learn and are usually paid for by ads." }
+    },
+    {
+      "id": "L02-l07",
+      "title": "Nobody can promise that an idea will be fun",
+      "min": 3,
+      "deep": "I Hate",
+      "cards": [
+        { "t": "idea", "text": "\"Is it fun?\" is the hardest question in design. **Nobody can promise that an idea will turn out fun.**" },
+        { "t": "how", "text": "Two reasons:\n- Fun is personal, like humour.\n- Fun fades with repetition. What's fun the first time is rarely fun the hundredth time.\nThe team plays each level hundreds of times, so they stop being able to judge it." },
+        { "t": "see", "text": "You can improve your chances by copying proven gameplay. But that often gives you a **clone**: one more average shooter in a crowded store." },
+        { "t": "f2p", "text": "Because the team can't judge its own game any more, get fresh eyes often: new testers, soft-launch players, and the numbers." }
+      ],
+      "check": { "q": "Why do developers lose the ability to judge if their game is fun?", "options": ["They replay the same content hundreds of times", "They don't like games", "They only test on computers"], "answer": 0, "why": "Fun fades with repetition, so the team needs fresh players to judge it." }
+    },
+    {
+      "id": "L02-l08",
+      "title": "The Theory of Un-Fun",
+      "min": 3,
+      "deep": "I Hate",
+      "cards": [
+        { "t": "idea", "text": "Instead of chasing fun, **start with a fun core and remove everything that isn't fun.** Rogers calls this the Theory of Un-Fun." },
+        { "t": "how", "text": "Do it again and again during development. Stop, play, and write a list of what feels annoying, slow, ugly or confusing. Then fix or cut each item. A producer's advice to Rogers: \"Don't be too dear.\" There are always more ideas." },
+        { "t": "see", "text": "Many games ship with bad cameras or clumsy controls. Not because nobody noticed, but because the team got used to them. The un-fun became invisible." },
+        { "t": "f2p", "text": "F2P has a superpower here: data shows the un-fun for you. If many players quit at tutorial step 4 or at level 47, that's where the un-fun is." },
+        { "t": "hook", "text": "Like a sculptor, chip away what isn't the statue. But start with good stone: if the core isn't fun, nothing is left." }
+      ],
+      "check": { "q": "What must be true before the Theory of Un-Fun can work?", "options": ["The core idea is already fun", "The game has many features", "The art is finished"], "answer": 0, "why": "Removing un-fun only helps if something fun is left underneath." }
+    },
+    {
+      "id": "L02-l09",
+      "title": "Eight kinds of fun",
+      "min": 3,
+      "deep": "I Hate",
+      "cards": [
+        { "t": "idea", "text": "Designer Marc LeBlanc lists **eight kinds of fun.** Rogers finds the list interesting but hard to use day to day. It's still useful words for describing what a game offers." },
+        { "t": "how", "text": "The eight:\n- **sensation** and **fantasy**: it looks and feels great, you're someone else\n- **narrative** and **discovery**: a story, a world to explore\n- **challenge** and **expression**: overcome obstacles, show who you are\n- **fellowship** and **submission**: play with others, or relax and switch off" },
+        { "t": "see", "text": "Clash Royale is mostly challenge. Hay Day is expression and submission (calm, low pressure). Pokémon GO adds discovery and fellowship." },
+        { "t": "f2p", "text": "Pick the one or two kinds of fun your game is built around. Then check that your core action, events and shop all support them." },
+        { "t": "hook", "text": "\"Six Friendly Foxes Dance Near Every Crazy Squirrel\": Sensation, Fellowship, Fantasy, Discovery, Narrative, Expression, Challenge, Submission." }
+      ],
+      "check": { "q": "Which kind of fun does a calm farming game mostly offer?", "options": ["Submission: relaxing, low pressure", "Challenge", "Narrative"], "answer": 0, "why": "Submission is the fun of switching off and relaxing, which cozy games are built on." }
+    },
+    {
+      "id": "L02-l10",
+      "title": "How to brainstorm well",
+      "min": 3,
+      "deep": "Brainstorming",
+      "cards": [
+        { "t": "idea", "text": "A **brainstorm** creates lots of ideas fast. The rule: **no idea is bad yet.** Judging comes later." },
+        { "t": "how", "text": "- Invite people from different jobs, not only designers.\n- Write every idea down, even the strange ones.\n- Follow each idea until it gets ridiculous, then push once more.\n- Keep the list: rejected ideas can fit a future game." },
+        { "t": "see", "text": "Rogers' kart-racing brainstorm listed things a racing game might have: weapons, shortcuts, tracks, characters. They didn't need to connect yet. The goal was to collect, not to judge." },
+        { "t": "f2p", "text": "Everyone in the room should know how games are made, or you'll lose time on ideas the team can't build. A big whiteboard or sticky notes both work. The tool doesn't matter." },
+        { "t": "hook", "text": "Squeeze the idea until it's ridiculous, then squeeze once more." }
+      ],
+      "check": { "q": "What's the main rule during a brainstorm?", "options": ["Write everything down and judge later", "Reject weak ideas immediately", "Only designers may speak"], "answer": 0, "why": "Judging too early stops ideas from flowing. Cull later." }
+    },
+    {
+      "id": "L02-l11",
+      "title": "Shrink the idea to fit a box",
+      "min": 3,
+      "deep": "Brainstorming",
+      "cards": [
+        { "t": "idea", "text": "To find the heart of an idea, **pretend you must sell it on the back of a game box.** Small space forces you to keep only what matters." },
+        { "t": "how", "text": "Rogers' back-of-box template asks for a title, a short exciting description, a few key features, and pictures of the best moments. If an idea can't fill it clearly, it isn't ready." },
+        { "t": "f2p", "text": "The modern box is your **store page**:\n- icon and title\n- one-line subtitle\n- three screenshots that show the core action\n- a 15-second video\nIf you can't make it exciting, rethink the idea before you build it." }
+      ],
+      "check": { "q": "What's the mobile version of the back of the box?", "options": ["The store page", "The settings menu", "The credits"], "answer": 0, "why": "The store page is where players decide in seconds, just like a box in a shop." }
+    },
+    {
+      "id": "L02-l12",
+      "title": "Getting unstuck, then cutting hard",
+      "min": 3,
+      "deep": "Writer",
+      "cards": [
+        { "t": "idea", "text": "Everyone gets stuck. Get unstuck, then **cut your idea list without mercy** and ask someone with no stake for an honest opinion." },
+        { "t": "how", "text": "Five ways to get unstuck:\n- focus on one small part\n- move your body: walk or exercise\n- clear away distractions\n- swap your location\n- skip ahead, but only as a last resort" },
+        { "t": "see", "text": "Miyamoto showed his ideas to his wife. If she didn't like them, they were cut. Rogers asked office assistants. People who don't care about your idea give the most honest feedback." },
+        { "t": "f2p", "text": "Mobile versions of that honest outsider:\n- a stranger playtesting the game\n- a fake ad tested for clicks\n- a small soft launch\nDesign one loop at a time: the next 30 seconds, then 30 minutes, then 30 days." }
+      ],
+      "check": { "q": "Who gives the most honest feedback on your idea?", "options": ["Someone with no personal stake in it", "The person who invented it", "Your closest teammate"], "answer": 0, "why": "People with no creative investment have no reason to protect the idea." }
+    },
+    {
+      "id": "L02-l13",
+      "title": "Test mobile ideas before you build them",
+      "min": 3,
+      "deep": "Ideation Toolkit",
+      "cards": [
+        { "t": "idea", "text": "A mobile idea is a set of bets. **Who** plays? **Why** do they play? **Where does it fit in the market?** **Does it work in a 3-minute session?** Check those bets before you spend months building." },
+        { "t": "how", "text": "A good mobile game:\n- starts playing within seconds\n- has a goal you can finish in a few minutes\n- saves automatically when a call interrupts\n- always shows the next goal\n- respects players' time and money" },
+        { "t": "see", "text": "Look for gaps: a popular genre with an unused theme, or a PC hit with no good touch version. But check that similar games prove people want it. A gap can exist because nobody wants it." },
+        { "t": "f2p", "text": "Spend the least money that can prove the idea wrong. First a fake ad, then a tiny prototype, then a soft launch. Each step is a test with real numbers." },
+        { "t": "hook", "text": "F2P ideas are like startups: most should die young and cheap." }
+      ],
+      "check": { "q": "What's the smart order for testing a new mobile idea?", "options": ["Fake ad, prototype, then soft launch", "Build the whole game, then advertise", "Launch worldwide immediately"], "answer": 0, "why": "Cheap tests first. Spend more only when the numbers say the idea works." }
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "mod": "L01",
+  "words": [
+    { "w": "victory condition", "d": "how you win: the goal that ends a level or a game" },
+    { "w": "failure state", "d": "how you lose, like running out of moves or lives" },
+    { "w": "genre", "d": "a type of game, named by what you do in it (puzzle, shooter, racing)" },
+    { "w": "hybrid", "d": "a game that mixes two or more genres" },
+    { "w": "publisher", "d": "the company that pays for, markets and sells a game made by a studio" },
+    { "w": "QA", "d": "quality assurance: testers who find bugs before players do" },
+    { "w": "UA", "d": "user acquisition: buying ads to get new players" },
+    { "w": "LiveOps", "d": "running a game after launch with events, offers and updates" }
+  ],
+  "lessons": [
+    {
+      "id": "L01-l01",
+      "title": "What makes something a game?",
+      "min": 3,
+      "deep": "What is a game",
+      "cards": [
+        { "t": "idea", "text": "A game needs only three things: **at least one player, rules, and a way to win.** A video game is simply a game you play on a screen." },
+        { "t": "how", "text": "Bouncing a ball against a wall is just passing time. Add rules (\"catch with your left hand only\") and a goal (\"10 catches in a row\") and it becomes a game. A way to win also creates a way to lose: the **failure state**." },
+        { "t": "see", "text": "A Candy Crush level:\n- Player: you.\n- Rules: swap two candies next to each other, with limited moves.\n- Win: reach the level goal before the moves run out.\n- Fail: you run out of moves." },
+        { "t": "f2p", "text": "Run this test on every mode and event you design. No clear way to win means it feels like a chore. Also design the failure screen with care: that's where players decide to retry, wait, watch an ad or pay." },
+        { "t": "hook", "text": "P-R-V: Player, Rules, Victory." }
+      ],
+      "check": { "q": "Which of these is a game by Rogers' definition?", "options": ["Catching a ball 10 times in a row without dropping it", "Bouncing a ball with no goal", "Watching someone else play"], "answer": 0, "why": "It has a player, rules and a victory condition. The other two have no rules or no goal." }
+    },
+    {
+      "id": "L01-l02",
+      "title": "Say the goal in one sentence",
+      "min": 3,
+      "deep": "objective test",
+      "cards": [
+        { "t": "idea", "text": "You should be able to explain your game's **goal in one short, clear sentence.** If you can't, the design has a problem." },
+        { "t": "how", "text": "Old board games printed the goal on the front of the box. Battleship: \"Sink your opponent's ships.\" One breath, done. Mouse Trap needed a whole paragraph about its machine. Aim for Battleship." },
+        { "t": "see", "text": "Clash Royale: \"Destroy the enemy towers before they destroy yours.\" A new player gets it in three seconds." },
+        { "t": "f2p", "text": "On mobile, your goal must fit three tiny spaces:\n- the store page subtitle\n- the first 3 seconds of an ad\n- the first tutorial screen\nIf your game has many systems, give each one its own one-line goal and introduce them slowly." },
+        { "t": "hook", "text": "Battleship, not Mouse Trap." }
+      ],
+      "check": { "q": "A player watches your ad for 3 seconds and still doesn't know the goal. What's wrong?", "options": ["The objective isn't simple enough", "The ad is too short", "The player isn't paying attention"], "answer": 0, "why": "If the goal can't be understood in seconds, simplify the objective, not the viewer." }
+    },
+    {
+      "id": "L01-l03",
+      "title": "New hardware creates new kinds of games",
+      "min": 3,
+      "deep": "brief history",
+      "cards": [
+        { "t": "idea", "text": "Video game history is a race with technology. **Every new kind of hardware created new genres and new ways to earn money.** The book's lesson: adapt or get left behind." },
+        { "t": "how", "text": "Games moved from huge lab computers (1950s) to arcade machines in bars and arcades (1970s and 80s), then to home consoles, handhelds and PCs. Each step changed the screen, the controls and how people paid." },
+        { "t": "see", "text": "The controller decides the genre:\n- keyboard: text adventures\n- mouse: first-person shooters\n- touchscreen: swipe, tap and drag games like match-3, Fruit Ninja and Clash Royale" },
+        { "t": "f2p", "text": "When a game moves to phones, it must change its controls. Shooters like Call of Duty: Mobile added on-screen sticks, auto-fire and aim help, because precise aiming is hard with a thumb." },
+        { "t": "hook", "text": "Lab, bar, arcade, couch, pocket." }
+      ],
+      "check": { "q": "Why are match-3 and swipe games so common on phones?", "options": ["The touchscreen makes those actions natural", "Phones can't show 3D graphics", "They are cheaper to make"], "answer": 0, "why": "The input device shapes the genre. Touch makes swiping, tapping and dragging feel natural." }
+    },
+    {
+      "id": "L01-l04",
+      "title": "How mobile free-to-play happened",
+      "min": 3,
+      "deep": "brief history",
+      "cards": [
+        { "t": "idea", "text": "Phones combined everything before them: a screen, controls, a store and the internet in your pocket. Today **mobile is the biggest part of the games industry**, about half of all game revenue." },
+        { "t": "how", "text": "Four changes built mobile F2P:\n- touchscreens gave a new way to control games\n- app stores made it easy to download games\n- free-to-play made games free, paid for by purchases and ads\n- privacy rules changed how games find new players" },
+        { "t": "see", "text": "Consoles taught two ideas: one device plays many games, and games can be swapped. Phones went further. The game updates itself every week, with no trip to a shop." },
+        { "t": "f2p", "text": "Those live updates are what make **LiveOps** possible: new events, offers and content every week. A mobile game is never finished. It keeps changing for years." }
+      ],
+      "check": { "q": "What makes LiveOps possible on mobile?", "options": ["Games can be updated over the internet at any time", "Phones have bigger screens", "Players buy a new copy each year"], "answer": 0, "why": "Online updates let teams add events and content every week without a new release in a shop." }
+    },
+    {
+      "id": "L01-l05",
+      "title": "Genres are about what you do",
+      "min": 3,
+      "deep": "Game genres",
+      "cards": [
+        { "t": "idea", "text": "A **genre** names the style of play: what you actually do. It's not the setting. A fantasy game and a sci-fi game can be the same genre." },
+        { "t": "how", "text": "Genres split into smaller **subgenres** over time. Knowing them gives you shared words for pitches, game reviews and market research. When you say \"merge game\", everyone pictures the same core action." },
+        { "t": "see", "text": "Some genres and where they live on mobile:\n- management: build with limited resources (Hay Day, Township)\n- puzzle: logic and patterns (Candy Crush)\n- rhythm: tap to the beat (Piano Tiles)\n- party: many players, mini-games (Stumble Guys)" },
+        { "t": "f2p", "text": "Mobile has its own native genres: match-3, merge, runners, idle games and card battlers. Learn the top games in each, because publishers and teams talk about games this way every day." }
+      ],
+      "check": { "q": "What does a genre describe?", "options": ["What the player does", "Where the story takes place", "How much the game costs"], "answer": 0, "why": "Genre is the style of gameplay. The setting can change while the genre stays the same." }
+    },
+    {
+      "id": "L01-l06",
+      "title": "Hybrids: how new hits are born",
+      "min": 3,
+      "deep": "Game genres",
+      "cards": [
+        { "t": "idea", "text": "Genres keep mixing. A **hybrid** combines two or more genres, and **many mobile hits are hybrids.** Think of genres as LEGO bricks you can combine, not fixed labels." },
+        { "t": "how", "text": "To find an idea, take the core action of one genre and add the long-term goal of another. Players get something familiar to do, plus a new reason to keep playing." },
+        { "t": "see", "text": "Royal Match and Gardenscapes are match-3 puzzles with a decorating game on top. You solve levels to earn stars, then spend the stars to rebuild a castle or garden." },
+        { "t": "f2p", "text": "When you study the market, look for empty spots: two genres nobody has combined well yet. That's often where the next hit comes from." },
+        { "t": "hook", "text": "Genres are LEGO bricks, not museum labels." }
+      ],
+      "check": { "q": "Royal Match adds decorating to match-3. What is that?", "options": ["A hybrid of two genres", "A brand new genre", "A sequel"], "answer": 0, "why": "It combines puzzle levels with a decorating goal. That's a hybrid." }
+    },
+    {
+      "id": "L01-l07",
+      "title": "Who makes games: the team",
+      "min": 3,
+      "deep": "Who makes this stuff",
+      "cards": [
+        { "t": "idea", "text": "Games started as one-person projects. Today they're made by **teams of specialists**, like a film crew. Each job keeps splitting into narrower jobs as games grow." },
+        { "t": "how", "text": "The main jobs:\n- **programmers** turn the design into working code\n- **artists** create characters, worlds, effects and menus\n- **designers** create the rules and own the fun\n- **producers** keep people, money and schedule on track" },
+        { "t": "see", "text": "Also on every team:\n- **testers (QA)** find bugs before players do\n- **composers** write music that loops well\n- **sound designers** make sounds that mean \"good\", \"danger\" or \"treasure\"\n- **writers** create story, dialogue and instructions" },
+        { "t": "f2p", "text": "Early App Store hits came from tiny teams. Today's top mobile games have dozens to hundreds of people. Small hyper-casual teams still \"wear many hats\": one designer may also prototype, make ads and read the numbers." }
+      ],
+      "check": { "q": "Who owns whether a game is fun?", "options": ["The designer", "The tester", "The producer"], "answer": 0, "why": "Testers find bugs and producers keep the schedule. The designer creates the rules and owns the fun." }
+    },
+    {
+      "id": "L01-l08",
+      "title": "What a game designer really does",
+      "min": 3,
+      "deep": "Who makes this stuff",
+      "cards": [
+        { "t": "idea", "text": "Whatever the job title, a designer **creates the ideas and rules of a game.** A designer can explain **why** something works or fails, and is responsible for whether the game is **fun**." },
+        { "t": "how", "text": "Anyone can say \"this level is bad\". A designer says why and how to fix it: \"The goal is unclear, the third jump is too long, and the reward comes too late.\"" },
+        { "t": "see", "text": "Specialised design jobs include level designer, combat designer, systems designer and economy designer. They share the same core skill: turning \"it feels wrong\" into a clear reason and a fix." },
+        { "t": "f2p", "text": "Practise now: when a mobile game annoys you, write one sentence about what bothered you and one about how you'd change it. That's design feedback, not complaining." },
+        { "t": "hook", "text": "Never serve \"it sucks\" as feedback. Name the cause and the fix." }
+      ],
+      "check": { "q": "Which is useful designer feedback?", "options": ["\"The reward comes too late, so players quit before it\"", "\"This level sucks\"", "\"I don't like it\""], "answer": 0, "why": "Good feedback names the cause and suggests what to change." }
+    },
+    {
+      "id": "L01-l09",
+      "title": "Publishers: the other side of games",
+      "min": 3,
+      "deep": "publishing",
+      "cards": [
+        { "t": "idea", "text": "Many people never notice a second career path: **publishing.** Publishers pay for games, manage their production, handle legal work, and market and sell them." },
+        { "t": "how", "text": "Publishers hire designers, artists and programmers too. Their job is to check on the studios they pay for. Rogers worked as a **creative manager** at a publisher, giving teams design feedback." },
+        { "t": "see", "text": "His key value there was the **\"thousand-foot view\"**: looking at a game from far above, without the team's bias. From outside, it's easier to spot weak points the team stopped seeing." },
+        { "t": "f2p", "text": "On mobile, the publisher is like a record label. It pays the studio, helps with the store page and icon, and buys ads to bring in players (UA). Some mobile publishers review dozens of studios' games and numbers." }
+      ],
+      "check": { "q": "What is the \"thousand-foot view\"?", "options": ["Looking at a game from outside, without the team's bias", "A camera angle in strategy games", "Reading every line of code"], "answer": 0, "why": "An outside view spots weaknesses the team is too close to see." }
+    },
+    {
+      "id": "L01-l10",
+      "title": "The F2P team: running a game as a service",
+      "min": 3,
+      "deep": "modern F2P mobile team",
+      "cards": [
+        { "t": "idea", "text": "A live F2P game is a **service**, not a finished product. So its team adds jobs to **run** it, **measure** it, **earn** from it and **grow** it." },
+        { "t": "how", "text": "The extra jobs:\n- **LiveOps designer**: events and the weekly calendar\n- **economy designer**: what players earn, spend and buy\n- **data analyst**: measures what players actually do\n- **UA manager**: buys ads to bring in new players" },
+        { "t": "see", "text": "Also: the **monetization designer** decides how and when things are offered for money. The **product manager (PM)** decides what to build next and which business goal it should move." },
+        { "t": "f2p", "text": "Learn each role's main number. LiveOps watches event joins, economy watches currency balance, data watches retention, and UA watches the cost of each new player. Speaking their language makes you easier to work with." },
+        { "t": "hook", "text": "Think of a theme park: designers build the rides, LiveOps runs the weekend parade, and the economy designer runs the ticket booth." }
+      ],
+      "check": { "q": "Who plans the weekly events in a live mobile game?", "options": ["The LiveOps designer", "The UA manager", "The composer"], "answer": 0, "why": "LiveOps owns the event calendar. UA buys ads to bring new players in." }
+    },
+    {
+      "id": "L01-l11",
+      "title": "Design jobs side by side, and how to get in",
+      "min": 3,
+      "deep": "modern F2P mobile team",
+      "cards": [
+        { "t": "idea", "text": "Design jobs look similar but ask different questions. Knowing the difference helps you **pick your path** and understand your teammates." },
+        { "t": "how", "text": "- **Game designer:** what does the player do and feel?\n- **Systems designer:** how do the rules and numbers connect and stay balanced?\n- **Level designer:** permanent content, from level 1 to level 10,000.\n- **LiveOps designer:** temporary content, like this weekend's event." },
+        { "t": "see", "text": "**Economy** vs **monetization**: the economy designer keeps value healthy for all players. The monetization designer decides how value is offered for money. The designer owns the fun, and the PM owns why it's built now." },
+        { "t": "f2p", "text": "Common doors in:\n- QA tester, then level design or LiveOps\n- puzzle level designer, then systems\n- data analyst, then economy design\n- community manager, then LiveOps" }
+      ],
+      "check": { "q": "Who designs a limited-time weekend tournament?", "options": ["A LiveOps designer", "A level designer", "A systems designer"], "answer": 0, "why": "LiveOps owns temporary content and the event calendar. Level designers make permanent content." }
+    }
+  ]
+}

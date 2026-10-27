@@ -59,3 +59,8 @@ L00, L01, L02, L04, F2P1, L13, L12, L09, L08, L07, L05, L06, L10, L11, L14, F2P2
 4. Tick the module in the progress log below.
 
 ## Progress log
+- [x] 2026-10-28 · Lesson system live (player, Learn tab, notes accordion, words step, lint) · commit 3a2a24d
+- [x] L00 Press Start · 8 lessons
+- [x] L01 Welcome N00bs · 11 lessons
+- [x] L02 Ideas · 13 lessons
+- [x] L04 Paperwork · 14 lessons

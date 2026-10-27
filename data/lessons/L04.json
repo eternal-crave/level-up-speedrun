@@ -1,0 +1,206 @@
+{
+  "mod": "L04",
+  "words": [
+    { "w": "GDD", "d": "game design document: the big document that describes everything in the game" },
+    { "w": "one-sheet", "d": "a one-page summary of a game idea" },
+    { "w": "ten-pager", "d": "a short design document (about ten pages) that shows the main parts of the game" },
+    { "w": "beat chart", "d": "one table that maps every level, so you can see the whole game at once" },
+    { "w": "comps", "d": "comparable products: successful games similar to yours" },
+    { "w": "USP", "d": "unique selling point: a feature that makes your game special" },
+    { "w": "age rating", "d": "the official age label, like ESRB, PEGI or IARC, that says who a game is for" },
+    { "w": "crunch", "d": "a period of very long working hours before a deadline" }
+  ],
+  "lessons": [
+    {
+      "id": "L04-l01",
+      "title": "Making a game is like cooking chili",
+      "min": 3,
+      "deep": "chili recipe",
+      "cards": [
+        { "t": "idea", "text": "Rogers compares making a game to cooking chili. You need a **recipe** (the design documents), **ingredients and tools** (people and software), and **the right order of steps**." },
+        { "t": "how", "text": "Then comes a short, hot **boil**: the busy rush before a deadline, called **crunch**. After that, a long, slow **simmer**: testing, fixing and polishing. The simmer is where the flavour comes from." },
+        { "t": "see", "text": "Chili often tastes better the next day. Games get better with polish time too. A rushed game can be playable and still taste raw." },
+        { "t": "f2p", "text": "In mobile F2P:\n- the long simmer is **soft launch**: months of tuning in a few test countries\n- grey, ugly prototypes come first: if the core is fun ugly, it'll be fun pretty\n- avoid crunching every update, because live games run for years" },
+        { "t": "hook", "text": "Recipe, ingredients, right order, short boil, long simmer, serve." }
+      ],
+      "check": { "q": "In the chili comparison, what is the long simmer?", "options": ["Polishing and improving the game over time", "Writing the first idea", "Hiring the team"], "answer": 0, "why": "The simmer is slow polish and iteration. That's where quality comes from." }
+    },
+    {
+      "id": "L04-l02",
+      "title": "Four documents, each building on the last",
+      "min": 3,
+      "deep": "four preproduction documents",
+      "cards": [
+        { "t": "idea", "text": "You don't write a 300-page design document from nothing. You climb **four steps: one-sheet, then ten-pager, then beat chart, then the GDD.** Each grows out of the one before." },
+        { "t": "how", "text": "How long should the **GDD** be? Rogers says: **just long enough to describe the game accurately.** A huge open-world game needs far more pages than Tetris. There's no official format." },
+        { "t": "see", "text": "All four documents have one real job: **communication**. With your teammates, with your publisher, and through them with the player. Clear documents get people excited about your idea." },
+        { "t": "f2p", "text": "Mobile teams rarely write one giant GDD. They keep a main page that links to many short feature pages, each owned by a designer and kept up to date." },
+        { "t": "hook", "text": "One, ten, beat, then the full book." }
+      ],
+      "check": { "q": "How long should a GDD be, according to Rogers?", "options": ["Just long enough to describe the game accurately", "Always at least 300 pages", "One page, no matter what"], "answer": 0, "why": "Length follows the game's size. The goal is accurate communication, not a page count." }
+    },
+    {
+      "id": "L04-l03",
+      "title": "The one-sheet: your game on one page",
+      "min": 3,
+      "deep": "One-Sheet",
+      "cards": [
+        { "t": "idea", "text": "The **one-sheet** is a one-page summary that teammates and publishers will actually read. It must be interesting, informative and above all **short**." },
+        { "t": "how", "text": "It holds eight things:\n- title, platforms, target age and age rating\n- a story summary focused on what the player does\n- the game modes\n- the unique selling points (USPs)\n- comparable games (comps)" },
+        { "t": "see", "text": "A one-sheet is the first thing most design tests ask for when you apply for a job. If it spills onto a second page, cut it down." },
+        { "t": "f2p", "text": "For mobile, add:\n- iOS or Android, portrait or landscape\n- the player type, like \"relaxed puzzle fans in short breaks\"\n- the core loop in one sentence\n- how it makes money and which numbers you'll watch" },
+        { "t": "hook", "text": "If it needs a second page, it's not a one-sheet." }
+      ],
+      "check": { "q": "What's the most important rule for a one-sheet?", "options": ["Keep it to one page", "Include every feature", "Use fancy fonts"], "answer": 0, "why": "Its whole value is that busy people will read it. Short wins." }
+    },
+    {
+      "id": "L04-l04",
+      "title": "Pick your age rating first",
+      "min": 3,
+      "deep": "ESRB",
+      "cards": [
+        { "t": "idea", "text": "Your **age rating** decides who can buy the game, where it's sold and how it's marketed. **Choose your target rating early and design toward it.**" },
+        { "t": "how", "text": "Each region has its own system: **ESRB** in North America, **PEGI** in Europe, **USK** in Germany. Ratings that are too young can make teens think it's a \"baby game\". Ratings that are too old can keep you out of shops." },
+        { "t": "see", "text": "In The Punisher (2005), some violent scenes were too extreme for the rating. The team showed them in black and white and changed the camera angle to get the rating they needed." },
+        { "t": "f2p", "text": "On mobile, ratings come through **IARC** on Google Play and Apple's own system. Labels for in-game purchases and random paid items matter a lot. App stores require you to show the odds of paid random rewards, and some countries regulate them further." }
+      ],
+      "check": { "q": "When should you decide your game's age rating?", "options": ["At the start, then design toward it", "After launch", "Only if a store complains"], "answer": 0, "why": "The rating shapes content, marketing and where you can sell. Fixing it late is expensive." }
+    },
+    {
+      "id": "L04-l05",
+      "title": "Comps and USPs: \"it's like this, but special\"",
+      "min": 3,
+      "deep": "Competitive products",
+      "cards": [
+        { "t": "idea", "text": "**Comps** tell readers \"it's like these games\". **USPs** tell them \"but here's why it's special\". Choose **successful** comps, and write about **five USPs that are truly unique.**" },
+        { "t": "how", "text": "A comp that failed makes your idea look risky. A vague USP like \"great graphics\" says nothing. Be specific: name the feature only your game has." },
+        { "t": "see", "text": "Weak USP: \"Fun combat.\" Strong USP: \"Chain enemies into combos by swiping through them in one stroke.\"" },
+        { "t": "f2p", "text": "On mobile:\n- comps come with numbers: downloads, revenue rank, retention\n- give three comps: one for gameplay, one for long-term goals, one for art style\n- USPs become your store screenshot captions\n- if a USP can't be shown in a 15-second ad, it probably isn't one" },
+        { "t": "hook", "text": "Bet on winners, brag about specifics." }
+      ],
+      "check": { "q": "Which is the better USP?", "options": ["\"Swipe through enemies to chain combos\"", "\"Great graphics\"", "\"Lots of fun\""], "answer": 0, "why": "A strong USP is specific and visible in a short ad. Vague praise isn't a USP." }
+    },
+    {
+      "id": "L04-l06",
+      "title": "The ten-pager: the backbone of your game",
+      "min": 3,
+      "deep": "Ten-Pager",
+      "cards": [
+        { "t": "idea", "text": "The **ten-pager** shows the backbone of your game in broad strokes. People who might **pay for the game** will read it, so it must be **readable, visual and interesting.**" },
+        { "t": "how", "text": "- Use plenty of relevant pictures.\n- No fancy fonts or busy layouts.\n- Slide software works well: you can present it in a meeting or print it.\n- \"Ten\" is a guide, not a law. Fewer pages is better." },
+        { "t": "see", "text": "The same document has two audiences. Your team wants diagrams, rules and exact terms. Executives and marketing want images, bullet points and why it will sell. Keep both in mind as you write." },
+        { "t": "f2p", "text": "In F2P, the ten-pager becomes a **pitch deck**. Put the business slide early: target players, comps with numbers, how it earns, the LiveOps plan, and retention targets (D1, D7, D30)." },
+        { "t": "hook", "text": "A ten-pager is a movie trailer, not the movie." }
+      ],
+      "check": { "q": "Who reads a ten-pager besides your team?", "options": ["People who might fund the game", "Only programmers", "Players in the store"], "answer": 0, "why": "Executives and publishers decide whether to pay for the game, so it must be readable and visual." }
+    },
+    {
+      "id": "L04-l07",
+      "title": "The Rule of Threes",
+      "min": 2,
+      "deep": "Rule of Threes",
+      "cards": [
+        { "t": "idea", "text": "**Three is a magic number.** When you give examples, give three. People understand and remember groups of three best." },
+        { "t": "how", "text": "- One example can mislead.\n- Two examples feel like a choice between opposites.\n- Three shows a pattern.\n- Four or more starts to bore the reader." },
+        { "t": "see", "text": "Goldilocks tries three bowls of porridge: too hot, too cold, just right. With two bowls she'd be stuck. With five, the bears would be home before she finished." },
+        { "t": "f2p", "text": "Threes are everywhere in mobile:\n- three offer sizes in a shop, the middle one marked \"best value\"\n- three stars per level\n- three comps per pitch\n- three key numbers per feature" },
+        { "t": "hook", "text": "One misleads, two divides, three decides." }
+      ],
+      "check": { "q": "How many examples does the Rule of Threes suggest?", "options": ["Three", "One", "As many as possible"], "answer": 0, "why": "Three shows a pattern without boring the reader." }
+    },
+    {
+      "id": "L04-l08",
+      "title": "What each page of the ten-pager answers",
+      "min": 3,
+      "deep": "page by page",
+      "cards": [
+        { "t": "idea", "text": "Every page of the ten-pager **answers one question a reader has.** Together they show the whole game without drowning anyone in detail." },
+        { "t": "how", "text": "The ten questions:\n- What is it? What happens in it?\n- Who am I? What do I do?\n- Where am I? How does it feel?\n- What can I use? What fights me?\n- What do I watch? Why play again?" },
+        { "t": "see", "text": "Even the title page tells a story. The right font for the logo shows the genre instantly: rounded and colourful for a puzzle game, hard and metallic for strategy." },
+        { "t": "f2p", "text": "On mobile, replace the story arc with **loops over time**. What does the player do in 30 seconds? In one session? In a day, a season, and over months?" }
+      ],
+      "check": { "q": "What does a mobile ten-pager describe instead of a classic story arc?", "options": ["What the player does over seconds, days and months", "Only the ending", "The programming language"], "answer": 0, "why": "F2P games run for years, so loops over time matter more than a single story arc." }
+    },
+    {
+      "id": "L04-l09",
+      "title": "Nobody reads the GDD, but you will",
+      "min": 3,
+      "deep": "Game Design Document",
+      "cards": [
+        { "t": "idea", "text": "The **GDD** describes everything in the game. Most of the team won't read it, because it's long and scary. **Write it anyway: you'll need to read it yourself.**" },
+        { "t": "how", "text": "If you keep the game only in your head, it will overwhelm you. So write it down, but make it easy to digest. Show it in any form that's clear:\n- storyboards or stick-figure diagrams\n- short animations\n- a beat chart\n- a team wiki" },
+        { "t": "see", "text": "**Everything is liquid.** Designs change as you build and test them. A GDD is a living document, not a contract carved in stone." },
+        { "t": "f2p", "text": "Today the wiki is Confluence, Notion or Google Docs, with diagrams in Miro or FigJam. Danger: pages that nobody owns go stale within weeks. Give each page an owner, a date and a short changelog." },
+        { "t": "hook", "text": "The GDD is a cookbook nobody reads, except the chef at 2 a.m." }
+      ],
+      "check": { "q": "Why write a GDD if few teammates read it?", "options": ["You'll need it to keep track of the game yourself", "It's required by law", "So the game ships faster"], "answer": 0, "why": "A game is too big to hold in your head. The document helps you as much as the team." }
+    },
+    {
+      "id": "L04-l10",
+      "title": "Be specific: words are powerful",
+      "min": 3,
+      "deep": "Game Design Document",
+      "cards": [
+        { "t": "idea", "text": "**Communication is the most important part of a designer's job.** Use specific words, especially for characters and mechanics. If the right word doesn't exist, invent one." },
+        { "t": "how", "text": "A GDD has four main readers: the **producer**, **designers**, **artists** and **programmers**. Each cares about different details. Ask what they need, and adjust your document." },
+        { "t": "see", "text": "Write \"robot\" and one person pictures a toaster, another a Terminator, another a robot vacuum. Write \"clockwork undead\" and everyone sees the same rattling brass skeleton." },
+        { "t": "f2p", "text": "In specs, define exact terms once and reuse them. \"Coins\" and \"gold\" must not mean the same thing on one page and different things on another. Unclear words cause bugs." }
+      ],
+      "check": { "q": "Why write \"clockwork undead\" instead of \"robot\"?", "options": ["Everyone pictures the same thing", "It sounds cooler", "Robots aren't allowed in games"], "answer": 0, "why": "Specific words remove guessing, so the whole team builds the same idea." }
+    },
+    {
+      "id": "L04-l11",
+      "title": "Five ways to start a game",
+      "min": 3,
+      "deep": "Gameplay progression",
+      "cards": [
+        { "t": "idea", "text": "**Progression** is how the game unfolds for the player over time. Decide on purpose **how the player starts**, and know **how the game ends.**" },
+        { "t": "how", "text": "Five classic starts:\n- **zero:** no skills or gear at all\n- **shown but locked:** skills are visible and unlock over time\n- **has skills, learns them:** the tutorial teaches them\n- **big power, then lose it:** strong at first, then knocked back down\n- **flashback:** start strong, then \"three days earlier…\"" },
+        { "t": "see", "text": "Many mobile games use \"shown but locked\": features on the home screen are greyed out with \"Unlocks at level 10\". You can see what's coming, so you want to keep playing." },
+        { "t": "f2p", "text": "F2P games often never end. So plan your **content runway** (how much content exists compared with how fast players finish it) and an **endgame** (PvP ladders, guild raids, collections)." },
+        { "t": "hook", "text": "Zero, Locked, Learn, Robbed, Rewind. And never start with amnesia: it's the oldest cliché in games." }
+      ],
+      "check": { "q": "Home-screen buttons greyed out with \"Unlocks at level 10\" use which start?", "options": ["Shown but locked", "Ground zero", "Flashback"], "answer": 0, "why": "The player sees the feature early, and it opens up as they progress." }
+    },
+    {
+      "id": "L04-l12",
+      "title": "The beat chart: your whole game on one sheet",
+      "min": 3,
+      "deep": "Beat Chart",
+      "cards": [
+        { "t": "idea", "text": "A **beat chart** maps every level of your game on one sheet. Put the levels side by side and **problems become visible before anything is built.**" },
+        { "t": "how", "text": "For each level, list things like its theme, new enemies, new mechanics, rewards, colours and music. Then look across the columns for:\n- **clumping:** too many new things in one level\n- **sameness:** levels that look and play alike\n- rewards that run out or pile up" },
+        { "t": "see", "text": "A healthy rhythm:\n- two or three new things per level\n- colours and music change between levels\n- all the player's tools are unlocked about three quarters of the way through" },
+        { "t": "f2p", "text": "Mobile versions:\n- a puzzle level sheet with one row per level, for thousands of levels\n- the LiveOps calendar: a beat chart across weeks, so three hard events don't land on one weekend" },
+        { "t": "hook", "text": "A beat chart is your game's heartbeat monitor. A flat line is dead. A huge spike is a heart attack." }
+      ],
+      "check": { "q": "Five new enemies appear in one level. What problem is that?", "options": ["Clumping", "Sameness", "A good rhythm"], "answer": 0, "why": "Clumping means too many new things at once. Spread them across levels." }
+    },
+    {
+      "id": "L04-l13",
+      "title": "Be a designer people want to work with",
+      "min": 3,
+      "deep": "schmuck",
+      "cards": [
+        { "t": "idea", "text": "Good documents are worthless if you're hard to work with. Rogers lists **nine habits of a responsible designer.** They sound like common sense, but common sense isn't common." },
+        { "t": "how", "text": "- Good ideas can come from anyone.\n- Decide, and stick to it.\n- Tell people when things change.\n- Solve the hardest problems first.\n- Trust your instincts, but pick your fights." },
+        { "t": "see", "text": "And four more:\n- respect what each teammate is good at\n- save often and write everything down\n- stay organised, with clear file names\n- be prepared: level skips, cheat codes and demo levels for others" },
+        { "t": "f2p", "text": "In mobile studios, ideas come from support tickets, reviews, Discord and the data team. A good ad concept can even become a real feature. Keep a decision log, so changes come from tests, not opinions." }
+      ],
+      "check": { "q": "When should you tackle the hardest design problems?", "options": ["First, while there's time to change course", "Last, after the easy parts", "Never: cut them"], "answer": 0, "why": "If a hard solution fails early, you still have time to try another one." }
+    },
+    {
+      "id": "L04-l14",
+      "title": "The documents you'll write at a mobile studio",
+      "min": 3,
+      "deep": "F2P paperwork toolkit",
+      "cards": [
+        { "t": "idea", "text": "Rogers' four documents still exist in F2P, but as **smaller, living pieces**. These are also what **design tests** ask for, so learning them helps you get hired." },
+        { "t": "how", "text": "The modern set:\n- a **concept one-pager** for a new game\n- a **feature one-pager** for a new feature\n- a **feature spec** with the full rules\n- an **economy spreadsheet** with every number\n- a level or LiveOps beat chart, and an age-rating plan" },
+        { "t": "see", "text": "A feature one-pager has:\n- the goal and the number it should move, at the top\n- the player fantasy\n- a flow sketch of 4 to 6 steps\n- three key numbers and the open questions" },
+        { "t": "f2p", "text": "Practise now: pick a feature from a game you play, like a weekend event. Write its one-pager in under an hour. That's exactly what a design test looks like." }
+      ],
+      "check": { "q": "What goes at the top of a feature one-pager?", "options": ["The goal and the number it should improve", "The art credits", "The full history of the game"], "answer": 0, "why": "Readers first need to know why the feature exists and how success is measured." }
+    }
+  ]
+}
