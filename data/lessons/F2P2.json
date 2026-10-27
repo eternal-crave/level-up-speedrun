@@ -36,7 +36,7 @@
         { "t": "see", "text": "The free daily gift trains players to visit the store every day. They see the offers without being nagged." },
         { "t": "f2p", "text": "Offers also appear in context: out of moves, before a boss, after a big win. Limit pop-ups to one or two per session. Ten pop-ups before the player can play is how you lose them." }
       ],
-      "check": { "q": "What does a free daily gift in the store do?", "options": ["Brings players to the store daily without nagging", "Replaces all paid items", "Removes ads"], "answer": 0, "why": "A daily visit means players see the offers naturally." }
+      "check": { "q": "What does a free daily gift in the store do?", "options": ["Brings players to the store daily, no nagging", "Replaces all of the paid items in the store", "Removes every ad from the game for a day"], "answer": 0, "why": "A daily visit means players see the offers naturally." }
     },
     {
       "id": "F2P2-l03",
@@ -49,7 +49,7 @@
         { "t": "see", "text": "A $1.99 offer for 5 more moves feels cheap on a level you've failed 8 times. The same offer in the menu feels pointless. Price fits the moment." },
         { "t": "f2p", "text": "Traps to avoid: fake \"was $20\" prices that never existed, confusing exchange rates, and packs that always leave you 20 gems short. Set prices per region too: an impulse buy in the US can be a day's wage elsewhere." }
       ],
-      "check": { "q": "Why is \"was $20, now $5\" risky?", "options": ["If the $20 price never existed, it's deceptive", "Players hate discounts", "Stores don't allow sales"], "answer": 0, "why": "Fake reference prices are a dark pattern, and some countries' laws restrict them." }
+      "check": { "q": "Why is \"was $20, now $5\" risky?", "options": ["If $20 never existed, it's deceptive", "Players dislike seeing any discounts", "App stores don't allow sales at all"], "answer": 0, "why": "Fake reference prices are a dark pattern, and some countries' laws restrict them." }
     },
     {
       "id": "F2P2-l04",
@@ -62,7 +62,7 @@
         { "t": "see", "text": "Don't show the starter pack in the first 30 seconds. The player doesn't know what a \"Mythic Hero Shard\" is yet. Show it right after the first real challenge." },
         { "t": "f2p", "text": "Don't punish non-payers. Most players never pay, and they still matter: they fill matches and clans, watch ads, tell friends, and some pay later." }
       ],
-      "check": { "q": "When should a starter pack usually appear?", "options": ["After the player understands the items, often after the first real challenge", "On the first screen", "Only after a month"], "answer": 0, "why": "Players need to understand the value before they'll pay for it." }
+      "check": { "q": "When should a starter pack usually appear?", "options": ["After players understand the items", "On the very first screen of the game", "Only after a full month of play"], "answer": 0, "why": "Players need to understand the value before they'll pay for it." }
     },
     {
       "id": "F2P2-l05",
@@ -88,7 +88,7 @@
         { "t": "see", "text": "Genshin Impact shows its pity rules and a history of your pulls. Players can plan and save instead of gambling blindly." },
         { "t": "f2p", "text": "Ask first: does this game need gacha at all? Direct purchase, rotating shops, passes and crafting also work. Many hit games sell cosmetics directly." }
       ],
-      "check": { "q": "What does a pity system do?", "options": ["Guarantees the top prize after a set number of pulls", "Lowers prices for poor players", "Removes duplicates"], "answer": 0, "why": "Pity puts a limit on how unlucky a player can be." }
+      "check": { "q": "What does a pity system do?", "options": ["Guarantees the top prize after set pulls", "Lowers prices for players who spend less", "Removes duplicate items from every pull"], "answer": 0, "why": "Pity puts a limit on how unlucky a player can be." }
     },
     {
       "id": "F2P2-l07",
@@ -115,7 +115,7 @@
         { "t": "see", "text": "Laws differ by country and change often. Apple and Google require showing the odds. Belgium treated paid loot boxes as gambling. South Korea made odds disclosure law in 2024. Always check current rules." },
         { "t": "f2p", "text": "Red lines: no fake near-misses, no cashing out items for real money, no loot boxes in games for kids, and real-money prices always visible." }
       ],
-      "check": { "q": "What does the S in PODS stand for?", "options": ["Spark or selector", "Sales", "Skins"], "answer": 0, "why": "A spark lets players trade pulls for a chosen item, so bad luck still pays off." }
+      "check": { "q": "What does the S in PODS stand for?", "options": ["Spark or selector", "Sales and discounts", "Skins and cosmetics"], "answer": 0, "why": "A spark lets players trade pulls for a chosen item, so bad luck still pays off." }
     },
     {
       "id": "F2P2-l09",
@@ -129,7 +129,7 @@
         { "t": "f2p", "text": "Why it works: a clear goal, a visible progress bar, a daily reason to log in and great value per dollar. It's often the best first purchase in a game." },
         { "t": "hook", "text": "A battle pass is a gym membership that actually makes you go." }
       ],
-      "check": { "q": "What do players actually buy with a battle pass?", "options": ["The chance to earn better rewards by playing", "A random item", "Removal of all timers"], "answer": 0, "why": "Rewards still have to be earned, which feels fairer than buying them outright." }
+      "check": { "q": "What do players actually buy with a battle pass?", "options": ["The chance to earn better rewards by playing", "One random item from a premium chest", "Removal of all timers for the season"], "answer": 0, "why": "Rewards still have to be earned, which feels fairer than buying them outright." }
     },
     {
       "id": "F2P2-l10",
@@ -169,7 +169,7 @@
         { "t": "see", "text": "Archero and Survivor.io have simple controls and a deep upgrade system. They offer rewarded ads for chests and revives next to purchases and passes." },
         { "t": "f2p", "text": "Hidden cost: forced ads earn a little today but can lower retention, which loses future money. Test ad changes against day-7 and day-30 retention, not just ad income." }
       ],
-      "check": { "q": "What should you check when adding more forced ads?", "options": ["The effect on retention and lifetime value", "Only ad income", "Only download numbers"], "answer": 0, "why": "More ads can earn more today but drive players away." }
+      "check": { "q": "What should you check when adding more forced ads?", "options": ["Effects on retention and lifetime value", "Only how much the ads earn per day", "Only how many new downloads arrive"], "answer": 0, "why": "More ads can earn more today but drive players away." }
     },
     {
       "id": "F2P2-l13",
@@ -182,7 +182,7 @@
         { "t": "see", "text": "Common event types: collection events, races against a small group, team events, limited-time modes, boss raids, holiday events and sticker albums." },
         { "t": "f2p", "text": "Pokémon GO's monthly Community Days, Hay Day's weekly Derby and Monopoly GO!'s sticker albums all reuse the core game with a new twist." }
       ],
-      "check": { "q": "What is LiveOps?", "options": ["Running events, offers and updates after launch", "Testing before launch", "Making the trailer"], "answer": 0, "why": "Live games keep changing for years after release." }
+      "check": { "q": "What is LiveOps?", "options": ["Running events, offers and updates after launch", "Testing the game with players before launch", "Making the launch trailer and store page"], "answer": 0, "why": "Live games keep changing for years after release." }
     },
     {
       "id": "F2P2-l14",
@@ -196,7 +196,7 @@
         { "t": "f2p", "text": "Avoid event soup: ten timers stress players. Alternate the mood (competitive, then co-op, then relaxing) and leave quiet weeks so big events feel bigger." },
         { "t": "hook", "text": "Tick-Tock-Drum-Gong-Boom-Cake: daily, weekly, rotation, monthly, quarterly, yearly." }
       ],
-      "check": { "q": "What is \"event soup\"?", "options": ["Too many events at once, overwhelming players", "A cooking event", "An event with no rewards"], "answer": 0, "why": "Clarity beats quantity. Players should see what matters in one glance." }
+      "check": { "q": "What is \"event soup\"?", "options": ["Too many events at once, overwhelming players", "A cooking-themed event with soup recipes", "An event that gives out no rewards at all"], "answer": 0, "why": "Clarity beats quantity. Players should see what matters in one glance." }
     },
     {
       "id": "F2P2-l15",
@@ -210,7 +210,7 @@
         { "t": "f2p", "text": "If you weaken something people paid for, compensate them and explain why. If a bug breaks an event, fix it fast and send an apology gift. Have a switch to pause any event." },
         { "t": "hook", "text": "Build the oven once, bake a hundred cakes." }
       ],
-      "check": { "q": "Why use remote config?", "options": ["To change numbers without an app update", "To make the app smaller", "To add new art"], "answer": 0, "why": "Server-side changes are much faster than app store updates." }
+      "check": { "q": "Why use remote config?", "options": ["To change numbers without an app update", "To make the app download much smaller", "To add new art without any designers"], "answer": 0, "why": "Server-side changes are much faster than app store updates." }
     },
     {
       "id": "F2P2-l16",
@@ -224,7 +224,7 @@
         { "t": "f2p", "text": "Clanmates also teach strategy. A confused new player in a good clan learns instead of quitting." },
         { "t": "hook", "text": "The 3 Gs of social glue: Gift, Guild, Grind together." }
       ],
-      "check": { "q": "Why does gifting a life bring players back?", "options": ["Reciprocity: people want to return the favour", "Gifts cost money", "It removes ads"], "answer": 0, "why": "Receiving a gift makes people want to give one back, so they log in." }
+      "check": { "q": "Why does gifting a life bring players back?", "options": ["Reciprocity: people want to return the favour", "Gifts cost money, so players want value", "Sending a gift removes ads for a day"], "answer": 0, "why": "Receiving a gift makes people want to give one back, so they log in." }
     },
     {
       "id": "F2P2-l17",
@@ -265,7 +265,7 @@
         { "t": "f2p", "text": "Example hypothesis: \"If we move the starter pack to after the first boss, more players will buy, because they'll understand the items.\"" },
         { "t": "hook", "text": "Have Many Smart Dogs Decided? Hypothesis, Metrics, Sample, Duration, Decision." }
       ],
-      "check": { "q": "What is a guardrail metric?", "options": ["Something that must not get worse during the test", "The metric you want to rise", "The number of players"], "answer": 0, "why": "Guardrails catch damage, like lower retention from a pushy offer." }
+      "check": { "q": "What is a guardrail metric?", "options": ["A metric that must not get worse", "The main metric you want to rise", "The number of players in each group"], "answer": 0, "why": "Guardrails catch damage, like lower retention from a pushy offer." }
     },
     {
       "id": "F2P2-l20",
@@ -292,7 +292,7 @@
         { "t": "f2p", "text": "Soft launch is when big changes still happen. Brawl Stars spent over a year there and switched from portrait to landscape before its global launch." },
         { "t": "hook", "text": "The Rocket Must Scale: Tech, Retention, Monetization, Scale." }
       ],
-      "check": { "q": "Why soft launch in Canada or Australia?", "options": ["Players behave like the US, but it's smaller and cheaper", "Games are free there", "There's no competition there"], "answer": 0, "why": "They're good stand-ins for the US without spending the big market." }
+      "check": { "q": "Why soft launch in Canada or Australia?", "options": ["They behave like the US but cost less", "Games are free to publish there", "There's no competition in those stores"], "answer": 0, "why": "They're good stand-ins for the US without spending the big market." }
     },
     {
       "id": "F2P2-l22",
@@ -305,7 +305,7 @@
         { "t": "see", "text": "Supercell is famous for killing many games in soft launch, like Clash Quest and Clash Mini. They celebrate each kill as a lesson." },
         { "t": "f2p", "text": "Four options: scale, iterate, pivot or kill. \"We've spent two years on it\" is not a reason to continue. That's the sunk-cost trap." }
       ],
-      "check": { "q": "When can a game grow with paid ads?", "options": ["When lifetime value is higher than the cost per install", "When it has the most downloads", "When the trailer is finished"], "answer": 0, "why": "If each player earns more than they cost, buying players is profitable." }
+      "check": { "q": "When can a game grow with paid ads?", "options": ["When lifetime value beats cost per install", "When it has the most downloads in its genre", "When the launch trailer is finally finished"], "answer": 0, "why": "If each player earns more than they cost, buying players is profitable." }
     },
     {
       "id": "F2P2-l23",
@@ -319,7 +319,7 @@
         { "t": "f2p", "text": "Misleading ads bring players who expected something else. They quit fast and leave angry reviews. Honest ads plus a tutorial that delivers the promise keep players." },
         { "t": "hook", "text": "An ad is a promise. Your tutorial is the delivery truck." }
       ],
-      "check": { "q": "Why do misleading ads backfire?", "options": ["Players who expected something else quit fast", "They cost more to make", "Stores ban all ads"], "answer": 0, "why": "The wrong audience churns and leaves bad reviews." }
+      "check": { "q": "Why do misleading ads backfire?", "options": ["Players who expected something else quit", "They cost much more to make than honest ads", "App stores ban all ads that use video"], "answer": 0, "why": "The wrong audience churns and leaves bad reviews." }
     },
     {
       "id": "F2P2-l24",
@@ -332,7 +332,7 @@
         { "t": "see", "text": "Ask for a rating at a happy moment, like after a big win. Never after a loss." },
         { "t": "f2p", "text": "Apple and Google let you A/B test store pages. You can also make custom pages that match each ad's promise." }
       ],
-      "check": { "q": "When should a game ask for a rating?", "options": ["At a happy moment, like after a win", "Right after a loss", "On the first screen"], "answer": 0, "why": "Happy players give better ratings." }
+      "check": { "q": "When should a game ask for a rating?", "options": ["At a happy moment, like after a win", "Right after a frustrating loss", "On the very first screen"], "answer": 0, "why": "Happy players give better ratings." }
     },
     {
       "id": "F2P2-l25",
@@ -359,7 +359,7 @@
         { "t": "see", "text": "Assume kids are playing anything colourful. No loot boxes for kids, no pressure offers, parent checks before purchases, and safe chat or none." },
         { "t": "f2p", "text": "Quick tests:\n- **Newspaper:** would you be fine if a news story explained it?\n- **Parent:** could you explain it to a parent with a straight face?\n- **State:** does it only work on tired, angry or impulsive players?" }
       ],
-      "check": { "q": "What does the \"state test\" ask?", "options": ["Does the design only work when players are tired or impulsive?", "Is the game legal in every state?", "Does the game save state?"], "answer": 0, "why": "If a design needs players at their weakest, redesign it." }
+      "check": { "q": "What does the \"state test\" ask?", "options": ["Does it only work on tired or impulsive players?", "Is the game legal in every state and country?", "Does the game save its state when closed?"], "answer": 0, "why": "If a design needs players at their weakest, redesign it." }
     },
     {
       "id": "F2P2-l27",
@@ -386,7 +386,7 @@
         { "t": "see", "text": "Give numbers with reasons: \"50 gems is about 2 days of free income, so it feels meaningful without breaking the economy.\"" },
         { "t": "f2p", "text": "Play their game deeply first. Improve their game, don't replace it. Start with a one-page summary, respect the time limit, and show what you'd cut." }
       ],
-      "check": { "q": "What should go at the very top of a design test?", "options": ["The goal and the KPI you're targeting", "Your life story", "A list of every idea"], "answer": 0, "why": "Reviewers are busy. Show you understood the problem immediately." }
+      "check": { "q": "What should go at the very top of a design test?", "options": ["The goal and the KPI you're targeting", "Your background and career story", "A long list of every idea you had"], "answer": 0, "why": "Reviewers are busy. Show you understood the problem immediately." }
     }
   ]
 }

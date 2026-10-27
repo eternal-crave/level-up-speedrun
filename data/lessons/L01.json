@@ -23,7 +23,7 @@
         { "t": "f2p", "text": "Run this test on every mode and event you design. No clear way to win means it feels like a chore. Also design the failure screen with care: that's where players decide to retry, wait, watch an ad or pay." },
         { "t": "hook", "text": "P-R-V: Player, Rules, Victory." }
       ],
-      "check": { "q": "Which of these is a game by Rogers' definition?", "options": ["Catching a ball 10 times in a row without dropping it", "Bouncing a ball with no goal", "Watching someone else play"], "answer": 0, "why": "It has a player, rules and a victory condition. The other two have no rules or no goal." }
+      "check": { "q": "Which of these is a game by Rogers' definition?", "options": ["Catching a ball 10 times without a drop", "Bouncing a ball around with no aim", "Watching a friend play catch"], "answer": 0, "why": "It has a player, rules and a victory condition. The other two have no rules or no goal." }
     },
     {
       "id": "L01-l02",
@@ -64,7 +64,7 @@
         { "t": "see", "text": "Consoles taught two ideas: one device plays many games, and games can be swapped. Phones went further. The game updates itself every week, with no trip to a shop." },
         { "t": "f2p", "text": "Those live updates are what make **LiveOps** possible: new events, offers and content every week. A mobile game is never finished. It keeps changing for years." }
       ],
-      "check": { "q": "What makes LiveOps possible on mobile?", "options": ["Games can be updated over the internet at any time", "Phones have bigger screens", "Players buy a new copy each year"], "answer": 0, "why": "Online updates let teams add events and content every week without a new release in a shop." }
+      "check": { "q": "What makes LiveOps possible on mobile?", "options": ["Games can be updated online any time", "Phones have bigger, brighter screens", "Players buy a new copy every year"], "answer": 0, "why": "Online updates let teams add events and content every week without a new release in a shop." }
     },
     {
       "id": "L01-l05",
@@ -118,7 +118,7 @@
         { "t": "f2p", "text": "Practise now: when a mobile game annoys you, write one sentence about what bothered you and one about how you'd change it. That's design feedback, not complaining." },
         { "t": "hook", "text": "Never serve \"it sucks\" as feedback. Name the cause and the fix." }
       ],
-      "check": { "q": "Which is useful designer feedback?", "options": ["\"The reward comes too late, so players quit before it\"", "\"This level sucks\"", "\"I don't like it\""], "answer": 0, "why": "Good feedback names the cause and suggests what to change." }
+      "check": { "q": "Which is useful designer feedback?", "options": ["\"The reward comes too late, so players quit\"", "\"This level is bad and needs fixing, honestly\"", "\"I just don't like it, it feels wrong to me\""], "answer": 0, "why": "Good feedback names the cause and suggests what to change." }
     },
     {
       "id": "L01-l09",
@@ -131,7 +131,7 @@
         { "t": "see", "text": "His key value there was the **\"thousand-foot view\"**: looking at a game from far above, without the team's bias. From outside, it's easier to spot weak points the team stopped seeing." },
         { "t": "f2p", "text": "On mobile, the publisher is like a record label. It pays the studio, helps with the store page and icon, and buys ads to bring in players (UA). Some mobile publishers review dozens of studios' games and numbers." }
       ],
-      "check": { "q": "What is the \"thousand-foot view\"?", "options": ["Looking at a game from outside, without the team's bias", "A camera angle in strategy games", "Reading every line of code"], "answer": 0, "why": "An outside view spots weaknesses the team is too close to see." }
+      "check": { "q": "What is the \"thousand-foot view\"?", "options": ["Seeing the game from outside, without bias", "A high camera angle in strategy games", "Reading every line of the game's code"], "answer": 0, "why": "An outside view spots weaknesses the team is too close to see." }
     },
     {
       "id": "L01-l10",

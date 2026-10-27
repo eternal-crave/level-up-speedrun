@@ -22,7 +22,7 @@
         { "t": "f2p", "text": "Borrow structure from other media. A **TV series** (episodes with cliffhangers) is a natural model for event stories. A **sitcom** (same cast, new small problem each time) fits casual games." },
         { "t": "hook", "text": "Nobody orders a plate of salt with a side of steak." }
       ],
-      "check": { "q": "In Rogers' metaphor, what is story?", "options": ["Salt: it seasons the gameplay", "Meat: the main dish", "The plate"], "answer": 0, "why": "Gameplay is the meat. Story adds flavour in small amounts." }
+      "check": { "q": "In Rogers' metaphor, what is story?", "options": ["Salt: it seasons the gameplay", "Meat: the main dish itself", "The plate: it holds everything"], "answer": 0, "why": "Gameplay is the meat. Story adds flavour in small amounts." }
     },
     {
       "id": "L03-l02",
@@ -36,7 +36,7 @@
         { "t": "f2p", "text": "A 7-day event can follow this arc. Day 1 sets the goal. Day 2 a storm wrecks it. Day 3 the first fix fails. It builds to a boss stage and the big reward." },
         { "t": "hook", "text": "Desire, Disaster, Try, Fail, Flip, Worse, Worst, Win, Prize." }
       ],
-      "check": { "q": "What happens to risk across the nine beats?", "options": ["It rises until the final problem, then it's released", "It stays flat", "It drops from the start"], "answer": 0, "why": "Problems escalate until the hero resolves the biggest one." }
+      "check": { "q": "What happens to risk across the nine beats?", "options": ["It rises to the final problem, then releases", "It stays flat so the player never panics", "It drops from the start as the hero learns"], "answer": 0, "why": "Problems escalate until the hero resolves the biggest one." }
     },
     {
       "id": "L03-l03",
@@ -91,7 +91,7 @@
         { "t": "f2p", "text": "In casual games, skippers are the majority. Every dialog needs a skip button. In Homescapes you understand \"this room was broken, now it's beautiful\" without reading a word." },
         { "t": "hook", "text": "Surfers ride the wave, divers go deep, skippers tap tap tap." }
       ],
-      "check": { "q": "How do you serve players who skip all dialog?", "options": ["Show the story through gameplay and visuals", "Force them to read", "Remove the skip button"], "answer": 0, "why": "Skippers still need to understand what's happening." }
+      "check": { "q": "How do you serve players who skip all dialog?", "options": ["Show the story through play and visuals", "Force them to read before they can play", "Remove the skip button from all dialog"], "answer": 0, "why": "Skippers still need to understand what's happening." }
     },
     {
       "id": "L03-l07",
@@ -118,7 +118,7 @@
         { "t": "f2p", "text": "Event timers, a final-hour leaderboard race and a chest that's 90% full all create suspense. End a story chapter with a visible threat to pull players back next session." },
         { "t": "hook", "text": "Surprise is a firecracker. Suspense is a lit fuse you can see." }
       ],
-      "check": { "q": "Why does suspense beat surprise?", "options": ["Players know the danger, so tension lasts longer", "It's cheaper to make", "Players prefer shocks"], "answer": 0, "why": "Knowing about the bomb makes every moment tense." }
+      "check": { "q": "Why does suspense beat surprise?", "options": ["Knowing the danger makes tension last longer", "It's cheaper to animate than a big explosion", "Players always prefer a shock to a build-up"], "answer": 0, "why": "Knowing about the bomb makes every moment tense." }
     },
     {
       "id": "L03-l09",
@@ -144,7 +144,7 @@
         { "t": "see", "text": "After the story, extras like minigames and unlockables let players keep playing without repeating the story." },
         { "t": "f2p", "text": "F2P games are built not to end, but **every chapter still needs an ending**. Each event, season or story chapter should close its loop: the room is finished, the season boss is beaten." }
       ],
-      "check": { "q": "What should every F2P event or chapter have?", "options": ["A satisfying ending, even if the saga continues", "No ending at all", "A twist ending"], "answer": 0, "why": "Closure feels rewarding, even in a game that never ends." }
+      "check": { "q": "What should every F2P event or chapter have?", "options": ["A satisfying ending, even if the saga goes on", "No ending, so players never feel finished", "A twist ending that changes the whole story"], "answer": 0, "why": "Closure feels rewarding, even in a game that never ends." }
     },
     {
       "id": "L03-l11",
@@ -171,7 +171,7 @@
         { "t": "see", "text": "Killing off a relative in the opening cutscene isn't a shortcut. You can't care about someone you met 30 seconds ago." },
         { "t": "f2p", "text": "The tutorial is act 1. Use it to make players like your mascot: a few warm lines, a funny animation, a small shared win. Think of Homescapes' butler Austin or Royal Match's King Robert." }
       ],
-      "check": { "q": "Why give a character a first act?", "options": ["Players need to care before anything bad happens", "To make the game longer", "To show off the graphics"], "answer": 0, "why": "Emotional moments only work if players already care." }
+      "check": { "q": "Why give a character a first act?", "options": ["Players must care before anything bad happens", "It makes the game longer and better value", "It shows off the graphics before the action"], "answer": 0, "why": "Emotional moments only work if players already care." }
     },
     {
       "id": "L03-l13",
@@ -184,7 +184,7 @@
         { "t": "see", "text": "In Brawl Stars, Dynamike is a miner who throws dynamite. Barley is a bartender robot who throws bottles. You read the character instantly." },
         { "t": "f2p", "text": "Names matter: a barbarian called Mortimer only works in a comedy. Mobile names must read at tiny size and work in many languages. And never pick a name that gives away the ending." }
       ],
-      "check": { "q": "What makes Brawl Stars characters easy to read?", "options": ["Their attacks match their job and personality", "Their long backstories", "Their price in the shop"], "answer": 0, "why": "When identity and moves match, players understand a character at a glance." }
+      "check": { "q": "What makes Brawl Stars characters easy to read?", "options": ["Their attacks match their job and personality", "Their long backstories in the game's codex", "Their prices and rarity tiers in the shop"], "answer": 0, "why": "When identity and moves match, players understand a character at a glance." }
     },
     {
       "id": "L03-l14",
@@ -225,7 +225,7 @@
         { "t": "f2p", "text": "Checklist: Can a skipper still follow it? Is every story beat tied to play or a reward? Are dialogs one to three short lines? Does each chapter end with closure?" },
         { "t": "hook", "text": "Story is the frosting, characters are the sprinkles, and the core loop is still the cake." }
       ],
-      "check": { "q": "In the renovation model, what does story give the core loop?", "options": ["A visible purpose for each win", "Harder levels", "More ads"], "answer": 0, "why": "Each win becomes a fixed room, so players see their progress." }
+      "check": { "q": "In the renovation model, what does story give the core loop?", "options": ["A visible purpose for each win", "Harder levels with more blockers", "More places to show offers"], "answer": 0, "why": "Each win becomes a fixed room, so players see their progress." }
     }
   ]
 }

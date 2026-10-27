@@ -35,7 +35,7 @@
         { "t": "see", "text": "You don't need to play an instrument. You need opinions and examples. Rogers gave his Maximo composer a mix tape of film scores that fit each level." },
         { "t": "f2p", "text": "Live games run for years, so a song license that expires mid-life is a problem. Most F2P music is original or from royalty-free libraries. Check that every license covers ads and trailers too." }
       ],
-      "check": { "q": "Why are licensed hits rare in F2P games?", "options": ["Live games run for years, and licenses can expire", "Players dislike famous songs", "Phones can't play them"], "answer": 0, "why": "An expired license can force you to remove music from a running game." }
+      "check": { "q": "Why are licensed hits rare in F2P games?", "options": ["Live games run for years; licenses expire", "Players dislike hearing famous songs", "Phone speakers can't play them well"], "answer": 0, "why": "An expired license can force you to remove music from a running game." }
     },
     {
       "id": "L15-l03",
@@ -76,7 +76,7 @@
         { "t": "f2p", "text": "The cheap mobile version: add instrument layers as a combo grows or time runs out. Gacha games give heroes a signature tune in their reveal trailer." },
         { "t": "hook", "text": "Music is the hype man. A good hype man is a little louder than the rapper." }
       ],
-      "check": { "q": "What is a leitmotif?", "options": ["A tune linked to a character or situation", "A sound effect for buttons", "A silent moment"], "answer": 0, "why": "Like Darth Vader's theme, it tells you who or what is coming." }
+      "check": { "q": "What is a leitmotif?", "options": ["A tune tied to a character or situation", "A sound effect played on every button", "A silent moment before a big reveal"], "answer": 0, "why": "Like Darth Vader's theme, it tells you who or what is coming." }
     },
     {
       "id": "L15-l06",
@@ -90,7 +90,7 @@
         { "t": "f2p", "text": "Farm and village screens feel alive with birds, wind and chatter, without music fatigue. A quiet, gentle sound on failure keeps frustrated players from rage-quitting." },
         { "t": "hook", "text": "The drop is only epic because of the pause before it." }
       ],
-      "check": { "q": "Why add silence before a reward reveal?", "options": ["It makes the payoff feel bigger", "It saves memory", "It hides bugs"], "answer": 0, "why": "Contrast makes the reveal sound land harder." }
+      "check": { "q": "Why add silence before a reward reveal?", "options": ["It makes the payoff feel bigger", "It saves memory on older phones", "It hides loading delays and bugs"], "answer": 0, "why": "Contrast makes the reveal sound land harder." }
     },
     {
       "id": "L15-l07",
@@ -131,7 +131,7 @@
         { "t": "f2p", "text": "Phones can play only a few sounds at once on tiny speakers. Limit repeats (for example, three coin sounds at a time) and lower the music under important feedback." },
         { "t": "hook", "text": "Local whispers, distant shouts, priority is the referee's whistle." }
       ],
-      "check": { "q": "Which sounds should always play?", "options": ["Priority sounds, like losing health", "Distant sounds", "Background music"], "answer": 0, "why": "Priority sounds are gameplay feedback the player must hear." }
+      "check": { "q": "Which sounds should always play?", "options": ["Priority sounds, like losing health", "Distant sounds, like explosions", "Background music in every scene"], "answer": 0, "why": "Priority sounds are gameplay feedback the player must hear." }
     },
     {
       "id": "L15-l10",
@@ -144,7 +144,7 @@
         { "t": "see", "text": "Mobile rhythm games like Beatstar and Piano Tiles-style games need sound on, so they say so on the first screen." },
         { "t": "f2p", "text": "Many mobile players are muted. Every sound cue, like a timer ending or a rare drop, needs a visual or vibration twin." }
       ],
-      "check": { "q": "Why echo audio cues with visuals?", "options": ["Muted and hearing-impaired players still get the information", "Visuals are cheaper", "Sound is too slow"], "answer": 0, "why": "A cue that only beeps is invisible to anyone who can't hear it." }
+      "check": { "q": "Why echo audio cues with visuals?", "options": ["Muted and deaf players still get the cue", "Visuals are cheaper to make than sounds", "Sound is too slow to react to on phones"], "answer": 0, "why": "A cue that only beeps is invisible to anyone who can't hear it." }
     },
     {
       "id": "L15-l11",
@@ -171,7 +171,7 @@
         { "t": "see", "text": "Ethics check: casino-style ringing on purchase or gacha screens can feel manipulative. Celebrate achievement, not spending." },
         { "t": "f2p", "text": "Big downloads lose installs. Compress music, use mono for most effects, stream long tracks, and download extra audio after install." }
       ],
-      "check": { "q": "What should reward sounds celebrate?", "options": ["Achievement, not spending", "Every purchase", "Only losses"], "answer": 0, "why": "Casino-like sounds on spending screens feel manipulative." }
+      "check": { "q": "What should reward sounds celebrate?", "options": ["Achievement, not spending", "Every purchase, big or small", "Losses, to soften defeat"], "answer": 0, "why": "Casino-like sounds on spending screens feel manipulative." }
     }
   ]
 }

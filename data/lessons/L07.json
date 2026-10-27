@@ -62,7 +62,7 @@
         { "t": "see", "text": "Brawl Stars has only a move stick, an aim stick, a super and a gadget. Few inputs, lots of expressive variety. That's a dance. In match-3, the dance is swipe, cascade, anticipation, swipe." },
         { "t": "f2p", "text": "The touch version of mashing is frantic tapping everywhere. It happens when players don't know what's tappable or taps give no feedback. Fix it with obvious buttons and instant reactions. Don't block input during long animations." }
       ],
-      "check": { "q": "Players tap frantically all over the screen. What's the likely cause?", "options": ["They can't tell what's interactive or get no feedback", "They love the game", "The screen is too big"], "answer": 0, "why": "Mashing means confusion. Clear buttons and instant feedback fix it." }
+      "check": { "q": "Players tap frantically all over the screen. What's the likely cause?", "options": ["They can't tell what's interactive or get no feedback", "They love the game and want to play even faster", "The screen is too big for them to reach easily"], "answer": 0, "why": "Mashing means confusion. Clear buttons and instant feedback fix it." }
     },
     {
       "id": "L07-l05",
@@ -76,7 +76,7 @@
         { "t": "f2p", "text": "A locked button should show a lock and wiggle with a soft sound and a note: \"Unlocks at level 5\". A silent tap feels like a bug. In Survivor.io, simply moving makes your hero destroy enemies, so the first seconds feel great." },
         { "t": "hook", "text": "Shrug, Spotlight, Stand-in." }
       ],
-      "check": { "q": "A player taps a locked feature. What's the best response?", "options": ["A lock wiggle and \"Unlocks at level 5\"", "Nothing at all", "Open the shop"], "answer": 0, "why": "Every tap needs a response, even if the answer is \"not yet\"." }
+      "check": { "q": "A player taps a locked feature. What's the best response?", "options": ["A lock wiggle and \"Unlocks at level 5\"", "Nothing at all, so the player moves on", "Open the shop with an unlock offer"], "answer": 0, "why": "Every tap needs a response, even if the answer is \"not yet\"." }
     },
     {
       "id": "L07-l06",
@@ -104,7 +104,7 @@
         { "t": "f2p", "text": "Keep **danger buttons** (spend gems, sell, delete) away from quick-tap areas, or add a confirm step. A fast thumb should never spend premium currency by accident. That's good design and good ethics." },
         { "t": "hook", "text": "Big and close for panic, small and far for patience." }
       ],
-      "check": { "q": "Where should a \"Buy for 500 gems\" button NOT be?", "options": ["Right next to the quick \"Collect\" button", "Behind a confirm step", "Away from the thumb zone"], "answer": 0, "why": "Placing spending next to fast taps causes accidental purchases." }
+      "check": { "q": "Where should a \"Buy for 500 gems\" button NOT be?", "options": ["Right next to the quick \"Collect\" button", "Behind a clear confirm step", "Away from the busiest thumb zone"], "answer": 0, "why": "Placing spending next to fast taps causes accidental purchases." }
     },
     {
       "id": "L07-l08",
@@ -118,7 +118,7 @@
         { "t": "f2p", "text": "Touch already has more delay than buttons, so add zero extra. React visually the moment the finger touches: the button presses in, the piece lifts. Let players tap to skip long celebrations, and remember inputs pressed slightly early." },
         { "t": "hook", "text": "Animation is the bow after the performance, not a speech before it." }
       ],
-      "check": { "q": "Where should a long, pretty animation go in a jump?", "options": ["At the end, after the jump has started", "Before the jump starts", "Nowhere"], "answer": 0, "why": "The action must start instantly. Polish goes into the follow-through." }
+      "check": { "q": "Where should a long, pretty animation go in a jump?", "options": ["At the end, after the jump has started", "At the start, before the jump begins", "Nowhere: jumps should never animate"], "answer": 0, "why": "The action must start instantly. Polish goes into the follow-through." }
     },
     {
       "id": "L07-l09",
@@ -145,7 +145,7 @@
         { "t": "see", "text": "A haptic style guide:\n- a light tick for selecting\n- a medium bump for a match or a hit\n- a heavy thud for a big combo\n- a success pattern for a win\nUse them sparingly." },
         { "t": "f2p", "text": "Always add a vibration toggle, and respect the phone's settings. Some players hate it or play in quiet places. Gyro aiming in mobile shooters should be optional, with invert and sensitivity settings." }
       ],
-      "check": { "q": "What makes vibration feedback useful instead of annoying?", "options": ["A consistent meaning for each pattern, used sparingly", "Vibrating on every touch", "Random patterns"], "answer": 0, "why": "Consistent, rare vibrations carry meaning. Constant buzzing is noise." }
+      "check": { "q": "What makes vibration feedback useful instead of annoying?", "options": ["One consistent meaning per pattern, used sparingly", "Vibrating on every single touch of the screen", "Random patterns, so it never feels repetitive"], "answer": 0, "why": "Consistent, rare vibrations carry meaning. Constant buzzing is noise." }
     },
     {
       "id": "L07-l11",
@@ -158,7 +158,7 @@
         { "t": "see", "text": "A swipe in Fruit Ninja feels like slicing because the blade trail, the split, the juice and the sound all arrive instantly." },
         { "t": "f2p", "text": "Phones are played in public: on the bus, at work, in bed. Motions that make players look silly are a barrier. Keep physical moves small and optional. In real-time PvP, players blame \"bad controls\" for bad connections, so show ping clearly." }
       ],
-      "check": { "q": "Why keep motion controls small on mobile?", "options": ["People play in public and don't want to look silly", "Phones can't detect big motions", "Small motions are more precise"], "answer": 0, "why": "Mobile play happens in public places, so big gestures are awkward." }
+      "check": { "q": "Why keep motion controls small on mobile?", "options": ["People play in public and don't want to look silly", "Phones can't detect big motions very accurately", "Small motions are always more precise than big ones"], "answer": 0, "why": "Mobile play happens in public places, so big gestures are awkward." }
     },
     {
       "id": "L07-l12",
@@ -171,7 +171,7 @@
         { "t": "see", "text": "More gestures:\n- **double tap:** a special action, but it can clash with a single tap\n- **pinch:** zoom a map or base (Clash of Clans)\n- **tilt:** steer or aim. Tiring, and awkward in bed or on the bus" },
         { "t": "f2p", "text": "Prefer simple taps and swipes in four directions over complex drawn shapes. Gesture recognition often misreads tiny or complicated motions." }
       ],
-      "check": { "q": "What's the risk with a hold (long-press) gesture?", "options": ["Players may never discover it without a hint", "It's too fast", "It needs two hands"], "answer": 0, "why": "Holds are invisible until you try them, so teach them with a hint." }
+      "check": { "q": "What's the risk with a hold (long-press) gesture?", "options": ["Players may never find it without a hint", "It's too fast for most players to do", "It needs two hands to perform it"], "answer": 0, "why": "Holds are invisible until you try them, so teach them with a hint." }
     },
     {
       "id": "L07-l13",
@@ -184,7 +184,7 @@
         { "t": "see", "text": "In Brawl Stars, tapping the attack button auto-aims at the nearest enemy, while dragging it aims by hand. One control serves both beginners and experts. Among Us lets players choose joystick or tap-to-move." },
         { "t": "f2p", "text": "Hyper-casual and most casual games: one thumb, portrait. Mid-core action and strategy: two thumbs, landscape. Decide early, because it shapes the whole screen layout." }
       ],
-      "check": { "q": "In one-handed portrait play, where should the main buttons go?", "options": ["Near the bottom, in the thumb's natural zone", "Top corners", "The very center"], "answer": 0, "why": "The thumb rests low. The top of the screen is a stretch." }
+      "check": { "q": "In one-handed portrait play, where should the main buttons go?", "options": ["Near the bottom, in the thumb's natural zone", "In the top corners, out of the way of the art", "In the very centre, where the eyes look most"], "answer": 0, "why": "The thumb rests low. The top of the screen is a stretch." }
     },
     {
       "id": "L07-l14",
@@ -197,7 +197,7 @@
         { "t": "see", "text": "Forgiveness tricks:\n- a drag that ends near a slot snaps into it\n- a jump pressed a little early still happens (input buffering)\n- a jump pressed just after leaving a ledge still counts (\"coyote time\")\n- auto-aim and auto-attack" },
         { "t": "f2p", "text": "Block puzzle games like Block Blast! lift the piece above your fingertip while you drag. Without it, your own finger would hide where the piece goes." }
       ],
-      "check": { "q": "Why do block puzzle games lift the piece above your finger while dragging?", "options": ["So your finger doesn't hide where it will land", "To make it look bigger", "To slow the player down"], "answer": 0, "why": "The finger covers what it touches, so the game moves the object into view." }
+      "check": { "q": "Why do block puzzle games lift the piece above your finger while dragging?", "options": ["So your finger doesn't hide where it will land", "To make the piece look bigger and nicer", "To slow the player down and add challenge"], "answer": 0, "why": "The finger covers what it touches, so the game moves the object into view." }
     }
   ]
 }

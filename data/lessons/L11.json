@@ -21,7 +21,7 @@
         { "t": "f2p", "text": "In tower defense and survivor-likes, an enemy is a row in a spreadsheet: health, speed, armour, target rule, special trait. Write that row before any concept art." },
         { "t": "hook", "text": "Claws come last." }
       ],
-      "check": { "q": "What should you define before drawing an enemy?", "options": ["Its behaviour, size, speed, attacks and health", "Its colour palette", "Its name"], "answer": 0, "why": "Function decides form. The art should serve what the enemy does." }
+      "check": { "q": "What should you define before drawing an enemy?", "options": ["Its behaviour, size, speed, attacks and health", "Its colour palette and the style of its outfit", "Its name, its lore and its family history"], "answer": 0, "why": "Function decides form. The art should serve what the enemy does." }
     },
     {
       "id": "L11-l02",
@@ -74,7 +74,7 @@
         { "t": "f2p", "text": "In tower defense, enemy paths are the level design. Players place towers along the path, so the route must be clear, readable and fair." },
         { "t": "hook", "text": "My Angry Troops Defend Valiantly: Mobile, Aggressive, Team player, Defensive, Versatile." }
       ],
-      "check": { "q": "What are waypoints?", "options": ["Set points an enemy moves between", "Health pickups", "Save points"], "answer": 0, "why": "Waypoints give enemies a planned route through the level." }
+      "check": { "q": "What are waypoints?", "options": ["Set points an enemy moves between", "Health pickups placed along a path", "Save points the player can return to"], "answer": 0, "why": "Waypoints give enemies a planned route through the level." }
     },
     {
       "id": "L11-l06",
@@ -88,7 +88,7 @@
         { "t": "f2p", "text": "Show a \"new enemy\" card the first time players meet one: its name and a one-line tip on how to beat it. And make deaths fade fast, so cheap phones don't lag." },
         { "t": "hook", "text": "Entrances are trailers; deaths are confetti." }
       ],
-      "check": { "q": "Where should enemies never spawn?", "options": ["Right behind the player, out of sight", "In front of the player", "From a visible doorway"], "answer": 0, "why": "Hidden spawns cause unfair hits. Players should see threats arrive." }
+      "check": { "q": "Where should enemies never spawn?", "options": ["Right behind the player, out of sight", "In front of the player, in clear view", "From a doorway the player can see"], "answer": 0, "why": "Hidden spawns cause unfair hits. Players should see threats arrive." }
     },
     {
       "id": "L11-l07",
@@ -102,7 +102,7 @@
         { "t": "f2p", "text": "In F2P, rewards and progress drive most fights. Make sure every enemy type drops something or moves the player forward." },
         { "t": "hook", "text": "Loot, Path, Key, Power, Taunts, Badass." }
       ],
-      "check": { "q": "Players keep running past an enemy. What's the likely problem?", "options": ["There's no good reason to fight it", "It's too easy", "It's too small"], "answer": 0, "why": "Without loot, progress or fun, fighting isn't worth the risk." }
+      "check": { "q": "Players keep running past an enemy. What's the likely problem?", "options": ["There's no good reason to fight it", "It's too hard, so players avoid it", "It's too small for players to notice"], "answer": 0, "why": "Without loot, progress or fun, fighting isn't worth the risk." }
     },
     {
       "id": "L11-l08",
@@ -129,7 +129,7 @@
         { "t": "see", "text": "A thief enemy that grabs your coins and runs is more memorable than one that just hits you. You chase it with real anger." },
         { "t": "f2p", "text": "Match-3 blockers are grief tools: ice that blocks a tile, chocolate that spreads, a bomb that counts down. They create tension without a health bar." }
       ],
-      "check": { "q": "Which is a \"grief\" attack, not damage?", "options": ["Stealing the player's coins", "A sword hit", "A fireball"], "answer": 0, "why": "Grief attacks disrupt the player without simply draining health." }
+      "check": { "q": "Which is a \"grief\" attack, not damage?", "options": ["Stealing the player's coins", "A heavy sword hit", "A fireball from far away"], "answer": 0, "why": "Grief attacks disrupt the player without simply draining health." }
     },
     {
       "id": "L11-l10",
@@ -143,7 +143,7 @@
         { "t": "f2p", "text": "Live games add new enemy variants every season. Keep a clear visual rule, like elites always glow, so players read new variants instantly." },
         { "t": "hook", "text": "Same ninja, new paint, new trick? Never." }
       ],
-      "check": { "q": "You reuse an enemy model but give it new attacks. What must change?", "options": ["Its look, so players notice the difference", "Nothing", "Only its name"], "answer": 0, "why": "New behaviour needs a new look, or players feel tricked." }
+      "check": { "q": "You reuse an enemy model but give it new attacks. What must change?", "options": ["Its look, so players notice the difference", "Nothing: players learn the new attacks", "Only its name in the enemy list"], "answer": 0, "why": "New behaviour needs a new look, or players feel tricked." }
     },
     {
       "id": "L11-l11",
@@ -157,7 +157,7 @@
         { "t": "f2p", "text": "In LiveOps, a recurring villain can run across a whole event, with a final fight at the end, and return next season. Players love a rival who keeps coming back." },
         { "t": "hook", "text": "Steal the healer, not just the heart." }
       ],
-      "check": { "q": "What makes players truly hate a villain?", "options": ["The villain takes something they use in gameplay", "A long evil speech", "A scary name"], "answer": 0, "why": "Losing something you rely on makes the anger personal." }
+      "check": { "q": "What makes players truly hate a villain?", "options": ["It takes something the player uses in play", "It gives a long, evil speech", "It has a scary name and a dark cape"], "answer": 0, "why": "Losing something you rely on makes the anger personal." }
     },
     {
       "id": "L11-l12",
@@ -169,7 +169,7 @@
         { "t": "how", "text": "- **Gremlin:** something that messes with you, like a creature stealing items.\n- **Tormentor:** an unbeatable threat you must escape.\n- **Time:** a countdown.\n- **Humans:** real opponents, or even the friend next to you on the couch." },
         { "t": "f2p", "text": "Time is the most common enemy in mobile games: move limits, event countdowns and timed bonus rounds create pressure with no monster at all." }
       ],
-      "check": { "q": "Which \"non-enemy enemy\" is most common in mobile games?", "options": ["Time: countdowns and move limits", "Dragons", "Ghosts"], "answer": 0, "why": "Timers and limited moves create pressure without any monster." }
+      "check": { "q": "Which \"non-enemy enemy\" is most common in mobile games?", "options": ["Time: countdowns and move limits", "Dragons guarding treasure", "Ghosts that haunt the board"], "answer": 0, "why": "Timers and limited moves create pressure without any monster." }
     },
     {
       "id": "L11-l13",
@@ -210,7 +210,7 @@
         { "t": "f2p", "text": "Repeated weekly bosses get stale. Changing arena elements each week keeps the same boss interesting without building a new one." },
         { "t": "hook", "text": "Real estate is half the boss." }
       ],
-      "check": { "q": "How can you keep a long boss fight fresh?", "options": ["Change the arena between phases", "Add more health", "Make it slower"], "answer": 0, "why": "A changing arena gives new challenges without a new boss." }
+      "check": { "q": "How can you keep a long boss fight fresh?", "options": ["Change the arena between phases", "Give the boss much more health", "Make the boss move more slowly"], "answer": 0, "why": "A changing arena gives new challenges without a new boss." }
     },
     {
       "id": "L11-l16",
@@ -237,7 +237,7 @@
         { "t": "see", "text": "Readability checklist:\n- a clear silhouette for each enemy type\n- size tiers that jump clearly\n- a glow for elite enemies\n- a warning for every attack\n- a \"new enemy\" card on first meeting" },
         { "t": "f2p", "text": "Tension is fine. **Engineered** failure, hidden odds, or a boss that only payers can beat is not. Celebrate the win after a hard boss level more than anything else in the chapter." }
       ],
-      "check": { "q": "What makes a clan boss event engaging?", "options": ["A shared goal the whole clan works on together", "Each player fights alone", "It's only for payers"], "answer": 0, "why": "Shared goals create teamwork and social obligation." }
+      "check": { "q": "What makes a clan boss event engaging?", "options": ["A shared goal the whole clan works on", "Each player fights the boss alone", "Only paying players can take part"], "answer": 0, "why": "Shared goals create teamwork and social obligation." }
     }
   ]
 }

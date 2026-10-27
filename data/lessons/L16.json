@@ -21,7 +21,7 @@
         { "t": "f2p", "text": "Mobile players open the app to play. Every second of unskippable movie in the first minutes loses players. Turn the beat into a level goal, a task like \"fix the stairs\", or one speech bubble." },
         { "t": "hook", "text": "It's always better to have the player do than watch." }
       ],
-      "check": { "q": "What should you ask before making a cutscene?", "options": ["Could this happen in gameplay instead?", "How long can it be?", "Who will voice it?"], "answer": 0, "why": "Playing beats watching. Use cutscenes only for what play can't do." }
+      "check": { "q": "What should you ask before making a cutscene?", "options": ["Could this happen in gameplay instead?", "How long can the scene be before players leave?", "Which actor should voice the main character?"], "answer": 0, "why": "Playing beats watching. Use cutscenes only for what play can't do." }
     },
     {
       "id": "L16-l02",
@@ -35,7 +35,7 @@
         { "t": "f2p", "text": "**Groundhog Day problem:** a scene that replays every time you retry makes players furious. Show it once, then skip it automatically on retries." },
         { "t": "hook", "text": "Film, Frames, Flash, Fancy render, Puppets, Play: from most Hollywood to most game." }
       ],
-      "check": { "q": "What is the Groundhog Day problem?", "options": ["A scene replays every time the player retries", "A cutscene is too short", "The camera is too slow"], "answer": 0, "why": "Repeating the same scene after every failure frustrates players." }
+      "check": { "q": "What is the Groundhog Day problem?", "options": ["A scene replays each time the player retries", "A cutscene is too short to follow the story", "The camera moves too slowly during scenes"], "answer": 0, "why": "Repeating the same scene after every failure frustrates players." }
     },
     {
       "id": "L16-l03",
@@ -62,7 +62,7 @@
         { "t": "see", "text": "Save cutscenes for big moments the engine can't play, like **kissing and explosions**. If the player could perform the moment, don't film it." },
         { "t": "f2p", "text": "Even a 5-day event needs a mini outline: open with the most dramatic moment, and put the finale on the last day." }
       ],
-      "check": { "q": "What does Rogers say cutscenes are best for?", "options": ["Big moments the engine can't play, like kissing and explosions", "Tutorials", "Menus"], "answer": 0, "why": "Everything else should be played, not watched." }
+      "check": { "q": "What does Rogers say cutscenes are best for?", "options": ["Big moments the engine can't play", "Teaching the controls step by step", "Explaining menus and settings"], "answer": 0, "why": "Everything else should be played, not watched." }
     },
     {
       "id": "L16-l05",
@@ -76,7 +76,7 @@
         { "t": "f2p", "text": "In mobile speech bubbles, the rules apply double: short, funny, one idea per bubble." },
         { "t": "hook", "text": "Brevity is the soul of wit, and of speech bubbles." }
       ],
-      "check": { "q": "Why read dialogue out loud?", "options": ["Lines that look fine can sound clumsy when spoken", "To memorize it", "To time the music"], "answer": 0, "why": "Spoken lines reveal problems that reading hides." }
+      "check": { "q": "Why read dialogue out loud?", "options": ["Lines that look fine can sound clumsy", "It helps you memorize every line", "It helps time the background music"], "answer": 0, "why": "Spoken lines reveal problems that reading hides." }
     },
     {
       "id": "L16-l06",
@@ -90,7 +90,7 @@
         { "t": "f2p", "text": "Most casual games skip full voice acting because of cost, languages and download size. They use **barks** (short reactions), gibberish voices or an announcer, like Candy Crush's \"Sweet!\"." },
         { "t": "hook", "text": "Arg is a pirate. Aaaargh is a funeral." }
       ],
-      "check": { "q": "Why write \"Aaaargh!\" instead of \"Arg!\"?", "options": ["Actors perform exactly what's written", "It's shorter", "It's a file name rule"], "answer": 0, "why": "The spelling tells the actor how long and how intense the sound is." }
+      "check": { "q": "Why write \"Aaaargh!\" instead of \"Arg!\"?", "options": ["Actors perform exactly what's written", "It's the standard spelling in scripts", "It follows the file naming rules"], "answer": 0, "why": "The spelling tells the actor how long and how intense the sound is." }
     },
     {
       "id": "L16-l07",
@@ -103,7 +103,7 @@
         { "t": "see", "text": "The voice director casts the actors, books the studio and directs the session. Describe characters clearly. You can even name a famous actor you imagine." },
         { "t": "f2p", "text": "The writer must be in the room, because lines change constantly. Let actors improvise: you get more material, and they'll want to work with you again." }
       ],
-      "check": { "q": "What is a temp track for?", "options": ["Checking timing and length", "Final lip sync", "The trailer"], "answer": 0, "why": "Real actors perform differently, so temp audio is only for timing." }
+      "check": { "q": "What is a temp track for?", "options": ["Checking timing and length", "Final lip sync animation", "The music in the trailer"], "answer": 0, "why": "Real actors perform differently, so temp audio is only for timing." }
     },
     {
       "id": "L16-l08",
@@ -129,7 +129,7 @@
         { "t": "see", "text": "A villain arrives, a festival needs saving, a new chapter of a mystery opens. The story gives players a reason to care about this week's event goal." },
         { "t": "f2p", "text": "Season updates work like TV seasons: a teaser, weekly beats and a finale. The guided first level is itself a scripted event: staged, focused, clear, and no longer than it must be." }
       ],
-      "check": { "q": "Why give a LiveOps event a mini-story?", "options": ["It gives players a reason to care about the event goal", "It makes events longer", "It replaces rewards"], "answer": 0, "why": "Story turns \"collect 500 tokens\" into a goal that means something." }
+      "check": { "q": "Why give a LiveOps event a mini-story?", "options": ["It gives players a reason to care about the goal", "It makes each event last a few days longer", "It replaces the rewards with story scenes"], "answer": 0, "why": "Story turns \"collect 500 tokens\" into a goal that means something." }
     },
     {
       "id": "L16-l10",

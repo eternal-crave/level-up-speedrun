@@ -35,6 +35,7 @@
 10. Faithful to the notes: paraphrase, never copy book text.
 
 11. **Lint limits (enforced by build):** average sentence ~15 words, none over 25; each card ≤ 60 words; 3–5 cards; check has 3 options.
+12. **Check options are all believable and about the same length.** The right answer must not stand out by being longer or more specific; build warns when it is over 1.5× the longest wrong option. Store the right answer at index 0; the app shuffles the order.
 12. **Talk to the reader as "you"** (conversational style).
 13. **No idioms, few phrasal verbs, no "e.g."/"i.e." or slashes like "and/or".** Write "for example" and "or".
 
@@ -83,3 +84,4 @@ L00, L01, L02, L04, F2P1, L13, L12, L09, L08, L07, L05, L06, L10, L11, L14, F2P2
 - [x] BX Designer toolkit · 10 lessons
 - [x] All 21 modules done · 307 lessons, 1402 cards, 143 glossary words
 - [x] Fix: lesson check options are shuffled per visit (every file stores the right answer at index 0, so unshuffled checks could be passed without reading)
+- [x] Rewrote wrong answers in 157 checks so length no longer gives the answer away (lint rule added)

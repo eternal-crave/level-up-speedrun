@@ -36,7 +36,7 @@
         { "t": "f2p", "text": "A static board needs **juice** to feel alive: pieces that wiggle while idle, bursts on matches, combo text, screen shake on big boosters, characters reacting at the edges." },
         { "t": "hook", "text": "A static camera is a puppet stage. The stage never moves, so the puppets had better dance." }
       ],
-      "check": { "q": "What's the main risk of a static camera?", "options": ["The screen can feel lifeless without animation", "Players get motion sick", "It's too hard to program"], "answer": 0, "why": "With no camera movement, life must come from animation and effects." }
+      "check": { "q": "What's the main risk of a static camera?", "options": ["The screen can feel lifeless without animation", "Players often get motion sick from it", "It's very hard to program correctly"], "answer": 0, "why": "With no camera movement, life must come from animation and effects." }
     },
     {
       "id": "L06-l03",
@@ -78,7 +78,7 @@
         { "t": "f2p", "text": "Mobile shooters like Call of Duty: Mobile offer first- and third-person modes. Add \"reduce camera shake\" and field-of-view settings. High frame rates drain battery, so keep camera motion smooth even at 30 fps." },
         { "t": "hook", "text": "FRAMES: Frame rate, Rein in bob, Anchor points, Move gently, Elevation rare, Smooth floors." }
       ],
-      "check": { "q": "What causes motion sickness in games?", "options": ["Eyes see movement the body doesn't feel", "Bright colours", "Loud sound"], "answer": 0, "why": "The mismatch between sight and balance causes the sick feeling." }
+      "check": { "q": "What causes motion sickness in games?", "options": ["Eyes see motion the body doesn't feel", "Very bright, saturated colours", "Loud sound effects and music"], "answer": 0, "why": "The mismatch between sight and balance causes the sick feeling." }
     },
     {
       "id": "L06-l06",
@@ -106,7 +106,7 @@
         { "t": "f2p", "text": "The most important rule when you take control away: **make it clear the player doesn't have it.** Once they know, they stop fighting the camera and focus on playing." },
         { "t": "hook", "text": "Let, Lock, Lend. Whichever door you open, put a sign on it." }
       ],
-      "check": { "q": "What must you do if players can't control the camera?", "options": ["Make it clear that they don't have control", "Hide that fact", "Change it randomly"], "answer": 0, "why": "When players know, they stop trying and focus on the game." }
+      "check": { "q": "What must you do if players can't control the camera?", "options": ["Make it clear they don't have control", "Hide that fact so it feels free", "Change the angle at random times"], "answer": 0, "why": "When players know, they stop trying and focus on the game." }
     },
     {
       "id": "L06-l08",
@@ -176,7 +176,7 @@
         { "t": "f2p", "text": "Short, smooth camera moves make rewards feel bigger: a quick push-in on a chest opening, a slow arc around a newly built building. Keep them skippable." },
         { "t": "hook", "text": "A Dizzy Fox Pedals Past Ten Donut Zones: Arc, Dolly zoom, Follow, Pedestal, Pan, Tilt, Dolly, Zoom." }
       ],
-      "check": { "q": "What does a dolly move do?", "options": ["Moves the whole camera forward or back", "Turns the camera sideways", "Tilts it up and down"], "answer": 0, "why": "A dolly physically moves the camera. Pan and tilt only rotate it." }
+      "check": { "q": "What does a dolly move do?", "options": ["Moves the whole camera forward or back", "Turns the camera to the left or right", "Tilts the camera up and down"], "answer": 0, "why": "A dolly physically moves the camera. Pan and tilt only rotate it." }
     },
     {
       "id": "L06-l13",
@@ -204,7 +204,7 @@
         { "t": "f2p", "text": "On mobile, the \"camera\" is often the screen layout: the next goal glows, the map scrolls to the next node, the event button pulses. Always point at the next thing." },
         { "t": "hook", "text": "The camera is a tour guide with a red umbrella." }
       ],
-      "check": { "q": "A lever opens a gate far away. What should the camera do?", "options": ["Briefly show the gate opening", "Stay still", "Shake"], "answer": 0, "why": "Showing the result tells players where to go next." }
+      "check": { "q": "A lever opens a gate far away. What should the camera do?", "options": ["Briefly show the gate opening", "Stay still on the player", "Shake to signal something"], "answer": 0, "why": "Showing the result tells players where to go next." }
     },
     {
       "id": "L06-l15",
@@ -218,7 +218,7 @@
         { "t": "f2p", "text": "In top-down mobile games, walls and bushes that hide the player get see-through or outlined. Brawl Stars shows your brawler even inside bushes, while enemies can't see you." },
         { "t": "hook", "text": "A ghost in X-ray glasses, holding a neon arrow pointing at your hero." }
       ],
-      "check": { "q": "Your hero walks behind a tall building. What's a good fix?", "options": ["Show the hero's outline through the building", "Let the hero disappear", "Move the building"], "answer": 0, "why": "Players must always see where their character is." }
+      "check": { "q": "Your hero walks behind a tall building. What's a good fix?", "options": ["Show the hero's outline through it", "Let the hero vanish until they exit", "Remove the building from the level"], "answer": 0, "why": "Players must always see where their character is." }
     },
     {
       "id": "L06-l16",

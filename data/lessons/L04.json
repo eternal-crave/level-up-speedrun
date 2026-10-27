@@ -23,7 +23,7 @@
         { "t": "f2p", "text": "In mobile F2P:\n- the long simmer is **soft launch**: months of tuning in a few test countries\n- grey, ugly prototypes come first: if the core is fun ugly, it'll be fun pretty\n- avoid crunching every update, because live games run for years" },
         { "t": "hook", "text": "Recipe, ingredients, right order, short boil, long simmer, serve." }
       ],
-      "check": { "q": "In the chili comparison, what is the long simmer?", "options": ["Polishing and improving the game over time", "Writing the first idea", "Hiring the team"], "answer": 0, "why": "The simmer is slow polish and iteration. That's where quality comes from." }
+      "check": { "q": "In the chili comparison, what is the long simmer?", "options": ["Polishing and improving the game over time", "Writing down the very first idea", "Hiring the team and buying tools"], "answer": 0, "why": "The simmer is slow polish and iteration. That's where quality comes from." }
     },
     {
       "id": "L04-l02",
@@ -37,7 +37,7 @@
         { "t": "f2p", "text": "Mobile teams rarely write one giant GDD. They keep a main page that links to many short feature pages, each owned by a designer and kept up to date." },
         { "t": "hook", "text": "One, ten, beat, then the full book." }
       ],
-      "check": { "q": "How long should a GDD be, according to Rogers?", "options": ["Just long enough to describe the game accurately", "Always at least 300 pages", "One page, no matter what"], "answer": 0, "why": "Length follows the game's size. The goal is accurate communication, not a page count." }
+      "check": { "q": "How long should a GDD be, according to Rogers?", "options": ["Just long enough to describe it accurately", "At least 300 pages, always", "One page, no matter the game"], "answer": 0, "why": "Length follows the game's size. The goal is accurate communication, not a page count." }
     },
     {
       "id": "L04-l03",
@@ -78,7 +78,7 @@
         { "t": "f2p", "text": "On mobile:\n- comps come with numbers: downloads, revenue rank, retention\n- give three comps: one for gameplay, one for long-term goals, one for art style\n- USPs become your store screenshot captions\n- if a USP can't be shown in a 15-second ad, it probably isn't one" },
         { "t": "hook", "text": "Bet on winners, brag about specifics." }
       ],
-      "check": { "q": "Which is the better USP?", "options": ["\"Swipe through enemies to chain combos\"", "\"Great graphics\"", "\"Lots of fun\""], "answer": 0, "why": "A strong USP is specific and visible in a short ad. Vague praise isn't a USP." }
+      "check": { "q": "Which is the better USP?", "options": ["\"Swipe through enemies to chain combos\"", "\"Beautiful, high-quality graphics\"", "\"Lots of fun for everyone\""], "answer": 0, "why": "A strong USP is specific and visible in a short ad. Vague praise isn't a USP." }
     },
     {
       "id": "L04-l06",
@@ -119,7 +119,7 @@
         { "t": "see", "text": "Even the title page tells a story. The right font for the logo shows the genre instantly: rounded and colourful for a puzzle game, hard and metallic for strategy." },
         { "t": "f2p", "text": "On mobile, replace the story arc with **loops over time**. What does the player do in 30 seconds? In one session? In a day, a season, and over months?" }
       ],
-      "check": { "q": "What does a mobile ten-pager describe instead of a classic story arc?", "options": ["What the player does over seconds, days and months", "Only the ending", "The programming language"], "answer": 0, "why": "F2P games run for years, so loops over time matter more than a single story arc." }
+      "check": { "q": "What does a mobile ten-pager describe instead of a classic story arc?", "options": ["What the player does over seconds to months", "Only how the story ends", "Which programming language is used"], "answer": 0, "why": "F2P games run for years, so loops over time matter more than a single story arc." }
     },
     {
       "id": "L04-l09",
@@ -133,7 +133,7 @@
         { "t": "f2p", "text": "Today the wiki is Confluence, Notion or Google Docs, with diagrams in Miro or FigJam. Danger: pages that nobody owns go stale within weeks. Give each page an owner, a date and a short changelog." },
         { "t": "hook", "text": "The GDD is a cookbook nobody reads, except the chef at 2 a.m." }
       ],
-      "check": { "q": "Why write a GDD if few teammates read it?", "options": ["You'll need it to keep track of the game yourself", "It's required by law", "So the game ships faster"], "answer": 0, "why": "A game is too big to hold in your head. The document helps you as much as the team." }
+      "check": { "q": "Why write a GDD if few teammates read it?", "options": ["To keep track of the game yourself", "Because the law requires it", "Because it makes the game ship faster"], "answer": 0, "why": "A game is too big to hold in your head. The document helps you as much as the team." }
     },
     {
       "id": "L04-l10",
@@ -187,7 +187,7 @@
         { "t": "see", "text": "And four more:\n- respect what each teammate is good at\n- save often and write everything down\n- stay organised, with clear file names\n- be prepared: level skips, cheat codes and demo levels for others" },
         { "t": "f2p", "text": "In mobile studios, ideas come from support tickets, reviews, Discord and the data team. A good ad concept can even become a real feature. Keep a decision log, so changes come from tests, not opinions." }
       ],
-      "check": { "q": "When should you tackle the hardest design problems?", "options": ["First, while there's time to change course", "Last, after the easy parts", "Never: cut them"], "answer": 0, "why": "If a hard solution fails early, you still have time to try another one." }
+      "check": { "q": "When should you tackle the hardest design problems?", "options": ["First, while there's time to change course", "Last, after the easy parts are done", "Never: cut them from the plan"], "answer": 0, "why": "If a hard solution fails early, you still have time to try another one." }
     },
     {
       "id": "L04-l14",

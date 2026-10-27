@@ -49,7 +49,7 @@
         { "t": "f2p", "text": "If your design makes a resource scarce, like energy or boosters, its display must be crystal clear. Hiding a scarce resource feels like a trick." },
         { "t": "hook", "text": "A gauge is a fuel gauge in the desert: the scarcer the fuel, the bigger the gauge." }
       ],
-      "check": { "q": "Where should a drag-to-aim preview appear?", "options": ["Away from the finger, so it isn't covered", "Directly under the thumb", "Only after the shot"], "answer": 0, "why": "The thumb covers part of the screen, so previews must stay visible." }
+      "check": { "q": "Where should a drag-to-aim preview appear?", "options": ["Away from the finger, so it isn't covered", "Directly under the thumb, where it's aimed", "Only after the shot, to show the result"], "answer": 0, "why": "The thumb covers part of the screen, so previews must stay visible." }
     },
     {
       "id": "L08-l04",
@@ -62,7 +62,7 @@
         { "t": "see", "text": "In merge games like Merge Mansion, the board itself is the inventory. Every slot matters, which makes it a puzzle." },
         { "t": "f2p", "text": "If the inventory is full, send extra items to a mailbox, never delete them. Bought items must never disappear silently. Bigger bags and more slots are a common thing to sell, but limits should feel fair, not like a trap." }
       ],
-      "check": { "q": "A player's inventory is full when they win a reward. What should happen?", "options": ["Send it to a mailbox so it isn't lost", "Delete the reward", "Delete an old item"], "answer": 0, "why": "Losing a player's items breaks trust. Store the overflow safely." }
+      "check": { "q": "A player's inventory is full when they win a reward. What should happen?", "options": ["Send it to a mailbox so it isn't lost", "Delete the new reward to keep things tidy", "Delete the player's oldest item instead"], "answer": 0, "why": "Losing a player's items breaks trust. Store the overflow safely." }
     },
     {
       "id": "L08-l05",
@@ -76,7 +76,7 @@
         { "t": "f2p", "text": "Two caveats. Routine rewards (your 400th chest) need tap-to-skip or batch opening. And many players play muted, so every celebration must also work visually and with vibration." },
         { "t": "hook", "text": "For every reward, ask: where are my back-flipping bunnies?" }
       ],
-      "check": { "q": "Why should coins fly into the currency counter?", "options": ["It shows players where their money lives", "It slows the game down", "It hides the score"], "answer": 0, "why": "Cause and effect: the animation teaches where rewards go." }
+      "check": { "q": "Why should coins fly into the currency counter?", "options": ["It shows players where their money lives", "It slows the game down for drama", "It hides the score during rewards"], "answer": 0, "why": "Cause and effect: the animation teaches where rewards go." }
     },
     {
       "id": "L08-l06",
@@ -89,7 +89,7 @@
         { "t": "see", "text": "In Grand Theft Auto 3, a button icon appears when you stand next to a car you can take. On touch, the prompt is the button: an action button pops up near your thumb." },
         { "t": "f2p", "text": "\"Can't do it\" feedback matters: a greyed button with a lock or \"Level 12\" beats a tap that does nothing, which players read as a bug. Show the tutorial hand at first, then fade it out." }
       ],
-      "check": { "q": "Where should a mobile mini-map usually go?", "options": ["A top corner, away from the thumbs", "Bottom center", "Under the joystick"], "answer": 0, "why": "Thumbs cover the bottom corners, so information goes up top." }
+      "check": { "q": "Where should a mobile mini-map usually go?", "options": ["A top corner, away from the thumbs", "Bottom centre, where eyes rest", "Under the joystick, close to the hand"], "answer": 0, "why": "Thumbs cover the bottom corners, so information goes up top." }
     },
     {
       "id": "L08-l07",
@@ -102,7 +102,7 @@
         { "t": "see", "text": "The King Kong game (2005) showed a few prompts at the start, then told the player nearly everything through sound and animation. Picture two planets: \"No Interface\" and \"Lots of Interface\". Know which one your game lives on." },
         { "t": "f2p", "text": "Hyper-casual games live on Planet No Interface: just a score and a pause button. Mid-core games live on Planet Lots of Interface. Fade what you can: hide the joystick until the thumb lands, collapse event buttons during battle." }
       ],
-      "check": { "q": "What must a fading HUD do?", "options": ["Come back when it's relevant, and be easy to call back", "Disappear forever", "Cover the action"], "answer": 0, "why": "Hiding the HUD is fine only if players never lose information they need." }
+      "check": { "q": "What must a fading HUD do?", "options": ["Return when relevant, easy to call back", "Disappear for good once it fades", "Fade in over the action when hit"], "answer": 0, "why": "Hiding the HUD is fine only if players never lose information they need." }
     },
     {
       "id": "L08-l08",
@@ -116,7 +116,7 @@
         { "t": "f2p", "text": "About 1 in 12 men has some colour blindness, usually red-green. So rarity, team and element colours must also differ by shape or pattern. Review icons at real size on the smallest phone you support." },
         { "t": "hook", "text": "KYSS: Keep Your Symbols Simple." }
       ],
-      "check": { "q": "Why use shape as well as colour in icons?", "options": ["Colour-blind players may not see the colour difference", "Shapes are cheaper", "Colours aren't allowed"], "answer": 0, "why": "About 1 in 12 men has colour-vision deficiency, so colour alone fails." }
+      "check": { "q": "Why use shape as well as colour in icons?", "options": ["Colour-blind players may miss colour differences", "Shapes are cheaper for artists to draw", "App stores don't allow colour-only icons"], "answer": 0, "why": "About 1 in 12 men has colour-vision deficiency, so colour alone fails." }
     },
     {
       "id": "L08-l09",
@@ -129,7 +129,7 @@
         { "t": "see", "text": "Brawl Stars has a giant PLAY button. Monopoly GO! has a huge GO button. Coin Master's spin button dominates the screen. The core action is the biggest thing you see." },
         { "t": "f2p", "text": "Your **app icon** is your most important icon: it decides whether people tap in the store. One clear subject, no text, a strong silhouette. Test it at tiny size next to competitors' icons." }
       ],
-      "check": { "q": "Which button should be the biggest on a mobile home screen?", "options": ["The main play button", "Settings", "The news feed"], "answer": 0, "why": "The core action should be the easiest thing to find and tap." }
+      "check": { "q": "Which button should be the biggest on a mobile home screen?", "options": ["The main play button", "The settings button", "The news feed panel"], "answer": 0, "why": "The core action should be the easiest thing to find and tap." }
     },
     {
       "id": "L08-l10",
@@ -143,7 +143,7 @@
         { "t": "f2p", "text": "Prefer \"bonus for success\" over \"death for failure\". A required QTE that costs a life feels like a cash grab. Cheap phones and Bluetooth lag make tight timing unfair, so keep windows generous." },
         { "t": "hook", "text": "A beat to see, a beat to press: ba-DUM." }
       ],
-      "check": { "q": "Which QTE design is better for F2P?", "options": ["Success gives a bonus; failure just continues", "Failure costs a life", "Random timing"], "answer": 0, "why": "Optional bonuses reward skill without punishing players unfairly." }
+      "check": { "q": "Which QTE design is better for F2P?", "options": ["Success gives a bonus; failure just continues", "Failure costs the player a life", "The timing is random every time"], "answer": 0, "why": "Optional bonuses reward skill without punishing players unfairly." }
     },
     {
       "id": "L08-l11",
@@ -156,7 +156,7 @@
         { "t": "see", "text": "Rogers has seen strategy games so packed with panels that playing felt like looking through a mail slot." },
         { "t": "f2p", "text": "On phones:\n- keep all buttons inside the **safe area**, away from notches and rounded corners\n- put frequent actions in the **thumb zone**\n- never put key information where the thumbs rest\n- bracketing is the number one disease of F2P home screens" }
       ],
-      "check": { "q": "What is \"bracketing\"?", "options": ["HUD on many edges, making the game view feel small", "A tournament format", "Putting HUD only top-left"], "answer": 0, "why": "Filling the edges shrinks the visible world into a mail slot." }
+      "check": { "q": "What is \"bracketing\"?", "options": ["HUD on many edges, so the view feels small", "A tournament format with brackets", "Putting all of the HUD top-left"], "answer": 0, "why": "Filling the edges shrinks the visible world into a mail slot." }
     },
     {
       "id": "L08-l12",
@@ -182,7 +182,7 @@
         { "t": "see", "text": "If you must have loading screens, make them useful: tips, art, a little game. Always show a progress bar, so players know how long to wait." },
         { "t": "f2p", "text": "On mobile, saving is automatic and in the cloud, so players can switch phones without losing progress. The settings, mailbox and profile replace much of the classic pause menu." }
       ],
-      "check": { "q": "What should every loading screen show?", "options": ["A progress bar or percentage", "Nothing", "An ad only"], "answer": 0, "why": "Players need to know the game hasn't frozen and how long to wait." }
+      "check": { "q": "What should every loading screen show?", "options": ["A progress bar or percentage", "Nothing but the game logo", "A short ad and nothing else"], "answer": 0, "why": "Players need to know the game hasn't frozen and how long to wait." }
     },
     {
       "id": "L08-l14",
@@ -196,7 +196,7 @@
         { "t": "f2p", "text": "Plan for translation from day one. German words are long, Arabic reads right to left, and Chinese needs different fonts. Never bake text into images: it makes translation and A/B tests painful." },
         { "t": "hook", "text": "A fancy medieval font on a small phone is a love letter in invisible ink." }
       ],
-      "check": { "q": "Why give text a dark outline in mobile games?", "options": ["It stays readable over busy, colourful art", "It's required by app stores", "It makes text shorter"], "answer": 0, "why": "Outlines separate text from any background behind it." }
+      "check": { "q": "Why give text a dark outline in mobile games?", "options": ["It stays readable over busy, colourful art", "App stores require outlines on all text", "It makes the text take up less space"], "answer": 0, "why": "Outlines separate text from any background behind it." }
     },
     {
       "id": "L08-l15",

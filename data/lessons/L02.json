@@ -21,7 +21,7 @@
         { "t": "f2p", "text": "When you pitch an idea, also give the \"why\": which player need it serves and which number it should improve. Without the why, even a good idea gets rejected." },
         { "t": "hook", "text": "Every good idea sits right next to a stupid one." }
       ],
-      "check": { "q": "Your teammate says your idea \"sounds dumb\". What should you do?", "options": ["Look at it seriously: many hits sound dumb out loud", "Drop it right away", "Never share ideas again"], "answer": 0, "why": "Sounding silly says nothing about whether it's fun. Judge it by testing, not by how it sounds." }
+      "check": { "q": "Your teammate says your idea \"sounds dumb\". What should you do?", "options": ["Take it seriously: many hits sound dumb", "Drop it and look for a safer idea", "Keep it secret until it's finished"], "answer": 0, "why": "Sounding silly says nothing about whether it's fun. Judge it by testing, not by how it sounds." }
     },
     {
       "id": "L02-l02",
@@ -48,7 +48,7 @@
         { "t": "see", "text": "Platformers grew one feature at a time. Donkey Kong added jumping. Pitfall! added swinging on vines. Super Mario Bros. added scrolling worlds and power-ups. Each hit added one thing to the last." },
         { "t": "f2p", "text": "Remixing is normal in F2P:\n- a proven core with a new theme\n- a proven core with a new long-term goal\n- a PC game redesigned for touch\nDraw your genre's family tree: what did each hit add?" }
       ],
-      "check": { "q": "How are most great games made, according to Rogers?", "options": ["By building on earlier games and adding something new", "By ignoring every game before them", "By copying a hit exactly"], "answer": 0, "why": "Smart iteration on predecessors is the norm. Exact copies are clones, not great games." }
+      "check": { "q": "How are most great games made, according to Rogers?", "options": ["By building on earlier games, adding new", "By ignoring every game made before", "By copying one hit game exactly"], "answer": 0, "why": "Smart iteration on predecessors is the norm. Exact copies are clones, not great games." }
     },
     {
       "id": "L02-l04",
@@ -73,7 +73,7 @@
         { "t": "see", "text": "Wish fulfillment in mobile hits:\n- Survivor.io: an unstoppable one-person army\n- Monopoly GO! and Coin Master: huge jackpots, feeling rich\n- Royal Match: feeling smart\n- Hay Day: a calm, cozy life" },
         { "t": "f2p", "text": "In F2P, \"good\" means good for months. The core action must feel great in the first 30 seconds, and there must be a reason to come back tomorrow. Your retention numbers measure this." }
       ],
-      "check": { "q": "What fantasy does Survivor.io sell?", "options": ["Being an unstoppable one-person army", "Running a peaceful farm", "Solving clever puzzles"], "answer": 0, "why": "It's a power fantasy: one hero against huge crowds of enemies." }
+      "check": { "q": "What fantasy does Survivor.io sell?", "options": ["Being an unstoppable one-person army", "Running a calm farm at your own pace", "Solving clever puzzles step by step"], "answer": 0, "why": "It's a power fantasy: one hero against huge crowds of enemies." }
     },
     {
       "id": "L02-l06",
@@ -86,7 +86,7 @@
         { "t": "see", "text": "Kids want games that look like they're for older players. And never talk down to kids. They're smart and often better gamers than adults. Simplify the reading, not the fun." },
         { "t": "f2p", "text": "Games for children have extra legal rules about privacy and ads, like COPPA in the US. Aggressive selling to kids is both unethical and a legal risk." }
       ],
-      "check": { "q": "Which game sits at the most casual end of the scale?", "options": ["A hyper-casual game you learn in seconds", "Clash Royale", "A deep strategy game"], "answer": 0, "why": "Hyper-casual games take seconds to learn and are usually paid for by ads." }
+      "check": { "q": "Which game sits at the most casual end of the scale?", "options": ["A hyper-casual game learned in seconds", "Clash Royale, with cards and duels", "A deep strategy game with many menus"], "answer": 0, "why": "Hyper-casual games take seconds to learn and are usually paid for by ads." }
     },
     {
       "id": "L02-l07",
@@ -99,7 +99,7 @@
         { "t": "see", "text": "You can improve your chances by copying proven gameplay. But that often gives you a **clone**: one more average shooter in a crowded store." },
         { "t": "f2p", "text": "Because the team can't judge its own game any more, get fresh eyes often: new testers, soft-launch players, and the numbers." }
       ],
-      "check": { "q": "Why do developers lose the ability to judge if their game is fun?", "options": ["They replay the same content hundreds of times", "They don't like games", "They only test on computers"], "answer": 0, "why": "Fun fades with repetition, so the team needs fresh players to judge it." }
+      "check": { "q": "Why do developers lose the ability to judge if their game is fun?", "options": ["They replay the same content constantly", "They don't actually like games", "They only test on fast computers"], "answer": 0, "why": "Fun fades with repetition, so the team needs fresh players to judge it." }
     },
     {
       "id": "L02-l08",
@@ -127,7 +127,7 @@
         { "t": "f2p", "text": "Pick the one or two kinds of fun your game is built around. Then check that your core action, events and shop all support them." },
         { "t": "hook", "text": "\"Six Friendly Foxes Dance Near Every Crazy Squirrel\": Sensation, Fellowship, Fantasy, Discovery, Narrative, Expression, Challenge, Submission." }
       ],
-      "check": { "q": "Which kind of fun does a calm farming game mostly offer?", "options": ["Submission: relaxing, low pressure", "Challenge", "Narrative"], "answer": 0, "why": "Submission is the fun of switching off and relaxing, which cozy games are built on." }
+      "check": { "q": "Which kind of fun does a calm farming game mostly offer?", "options": ["Submission: relaxing, low pressure", "Challenge: beating hard obstacles", "Fellowship: playing with a team"], "answer": 0, "why": "Submission is the fun of switching off and relaxing, which cozy games are built on." }
     },
     {
       "id": "L02-l10",

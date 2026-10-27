@@ -63,7 +63,7 @@
         { "t": "f2p", "text": "On phones, add a tiny vibration on big hits, and make sure the hit reads without sound, since many players play muted." },
         { "t": "hook", "text": "Quick, quick, SLAM. And a hit with no reaction is a high-five to a ghost." }
       ],
-      "check": { "q": "When is a slow wind-up attack okay?", "options": ["When it's risky but has a big payoff", "For every basic attack", "Never"], "answer": 0, "why": "Slow attacks are a bet. They need a reward worth the risk." }
+      "check": { "q": "When is a slow wind-up attack okay?", "options": ["When it's risky but has a big payoff", "For every basic attack in the game", "Never: slow attacks always feel bad"], "answer": 0, "why": "Slow attacks are a bet. They need a reward worth the risk." }
     },
     {
       "id": "L10-l05",
@@ -90,7 +90,7 @@
         { "t": "f2p", "text": "In F2P, quiet help after several losses (a slightly easier board, a free booster) keeps players from quitting. Never do the opposite: secretly harder games for players likely to pay." },
         { "t": "hook", "text": "Secretly widen the doorway." }
       ],
-      "check": { "q": "A player keeps failing the same fight. What's a good response?", "options": ["Quietly give a bit of help", "Make it harder", "Show an ad"], "answer": 0, "why": "Hidden assistance keeps strugglers playing without embarrassing them." }
+      "check": { "q": "A player keeps failing the same fight. What's a good response?", "options": ["Quietly give a bit of help", "Make the fight even harder", "Show an ad before each retry"], "answer": 0, "why": "Hidden assistance keeps strugglers playing without embarrassing them." }
     },
     {
       "id": "L10-l07",
@@ -159,7 +159,7 @@
         { "t": "see", "text": "A rail shooter is like a haunted house ride where you're allowed to shoot back." },
         { "t": "f2p", "text": "Many mobile shooters and playable ads are rail-style: the game moves you, you just tap targets. Perfect for one thumb and short sessions." }
       ],
-      "check": { "q": "In a rail shooter, what must the designer get right?", "options": ["Targets appear visibly with fair time to react", "Free movement controls", "Long reload times"], "answer": 0, "why": "When players can't move, fairness depends on target placement and timing." }
+      "check": { "q": "In a rail shooter, what must the designer get right?", "options": ["Targets that appear clearly, with time to react", "Free movement controls in every direction", "Long reload times to add more tension"], "answer": 0, "why": "When players can't move, fairness depends on target placement and timing." }
     },
     {
       "id": "L10-l12",
@@ -215,7 +215,7 @@
         { "t": "f2p", "text": "Always offer a counter players can get by playing. If the only answer to a common threat is a paid hero, it's pay-to-win." },
         { "t": "hook", "text": "Auto plays the fight; you play the matchup." }
       ],
-      "check": { "q": "In an idle auto-battler, where does the player's skill mostly live?", "options": ["Choosing and building the team", "Aiming shots", "Dodging attacks"], "answer": 0, "why": "When fights run themselves, the decisions move to the roster." }
+      "check": { "q": "In an idle auto-battler, where does the player's skill mostly live?", "options": ["Choosing and building the team", "Aiming shots at the right moment", "Dodging attacks with quick swipes"], "answer": 0, "why": "When fights run themselves, the decisions move to the roster." }
     }
   ]
 }

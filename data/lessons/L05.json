@@ -22,7 +22,7 @@
         { "t": "f2p", "text": "In F2P the Three Cs are locked even earlier, because soft launch and ads test them with real players. Mobile adds a fourth limit: **the thumb.** The hero must read at 1.5 cm tall, controlled by one thumb, on a bus." },
         { "t": "hook", "text": "The Three Cs are the legs of a stool. Shorten one halfway through and everything falls." }
       ],
-      "check": { "q": "Why lock Character, Camera and Control early?", "options": ["Changing one later forces rework across the whole game", "They're the cheapest parts", "Players never notice them"], "answer": 0, "why": "Levels, enemies and art are built around them, so late changes ripple everywhere." }
+      "check": { "q": "Why lock Character, Camera and Control early?", "options": ["Changing one later forces rework everywhere", "They're the cheapest parts to build first", "Players never notice them once playing"], "answer": 0, "why": "Levels, enemies and art are built around them, so late changes ripple everywhere." }
     },
     {
       "id": "L05-l02",
@@ -63,7 +63,7 @@
         { "t": "see", "text": "Among Us gives every crewmate the same shape, so colour carries identity: \"Red is sus\". Hats and pets break up the shared silhouette." },
         { "t": "f2p", "text": "Many top-down PvP games mark allies in blue and enemies in red with outlines or rings. Remember colour-blind players: back colour up with shape or icons." }
       ],
-      "check": { "q": "How does Among Us tell identical crewmates apart?", "options": ["By colour, plus hats and pets", "By size", "By voice"], "answer": 0, "why": "When shapes match, colour and accessories carry the identity." }
+      "check": { "q": "How does Among Us tell identical crewmates apart?", "options": ["By colour, plus hats and pets", "By size and body shape", "By voice and name tags"], "answer": 0, "why": "When shapes match, colour and accessories carry the identity." }
     },
     {
       "id": "L05-l05",
@@ -132,7 +132,7 @@
         { "t": "f2p", "text": "Runners are pure metrics: lane width, jump height, slide height and reaction time at full speed. Keep metrics in a config file, so balance updates don't need a new app release." },
         { "t": "hook", "text": "Measure the world in Maximos." }
       ],
-      "check": { "q": "Why must character metrics stay consistent?", "options": ["Players learn distances by eye and expect them to hold", "Changing them is expensive", "Metrics are hidden from players"], "answer": 0, "why": "Players judge every jump from experience. Breaking metrics breaks trust." }
+      "check": { "q": "Why must character metrics stay consistent?", "options": ["Players learn distances by eye and expect them to hold", "Changing them later costs too much engineering time", "Metrics are hidden, so consistency helps programmers"], "answer": 0, "why": "Players judge every jump from experience. Breaking metrics breaks trust." }
     },
     {
       "id": "L05-l10",
@@ -159,7 +159,7 @@
         { "t": "f2p", "text": "Mobile sessions are 2 to 5 minutes, so dead travel time kills retention. Mobile games use tap-to-move, auto-run, fast travel and auto-pathing to cut walking." },
         { "t": "hook", "text": "Fast game, fast verbs. And creeping needs a sleeping dragon." }
       ],
-      "check": { "q": "How does Archero make movement into gameplay?", "options": ["You only attack while standing still, so each move is a choice", "It removes movement", "It makes walking faster"], "answer": 0, "why": "Moving or shooting becomes a constant decision, not dead time." }
+      "check": { "q": "How does Archero make movement into gameplay?", "options": ["You attack only while standing still, so moves are choices", "It removes movement so players can focus on aiming", "It makes walking faster the more enemies you defeat"], "answer": 0, "why": "Moving or shooting becomes a constant decision, not dead time." }
     },
     {
       "id": "L05-l12",
@@ -243,7 +243,7 @@
         { "t": "f2p", "text": "In mobile action games, put a small health bar and status icons right above the hero, and change the hero's look as they power up. Players read it without looking away from the action." },
         { "t": "hook", "text": "Wear your stats on your sleeve, and your spine." }
       ],
-      "check": { "q": "Why show health on the character instead of in a corner?", "options": ["Players are already looking at the character", "Corners are too small", "It's cheaper"], "answer": 0, "why": "Information on the character needs no eye movement away from the action." }
+      "check": { "q": "Why show health on the character instead of in a corner?", "options": ["Players are already looking at the character", "Corners are too small for a health bar", "It's cheaper than drawing a separate HUD"], "answer": 0, "why": "Information on the character needs no eye movement away from the action." }
     },
     {
       "id": "L05-l18",
@@ -256,7 +256,7 @@
         { "t": "see", "text": "Team Fortress 2: the Heavy is slow but strong, the Scout is weak but quick, the Medic is average but heals. In Resident Evil 2, Claire shoots and little Sherry squeezes through air vents." },
         { "t": "f2p", "text": "Hero-collecting games live on the abilities matrix. Every new Brawl Stars brawler needs a clear role nobody else fills, or it's just a skin with a new price." }
       ],
-      "check": { "q": "What does an abilities matrix help you avoid?", "options": ["Two heroes that play the same", "Too many skins", "Long loading times"], "answer": 0, "why": "Comparing abilities side by side reveals clones before you build them." }
+      "check": { "q": "What does an abilities matrix help you avoid?", "options": ["Two heroes that play the same", "Too many skins for one hero", "Long loading times in battle"], "answer": 0, "why": "Comparing abilities side by side reveals clones before you build them." }
     },
     {
       "id": "L05-l19",

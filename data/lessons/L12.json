@@ -21,7 +21,7 @@
         { "t": "see", "text": "A match-3 board is mostly mechanics and hazards (the blockers) plus a puzzle (the level goal). A merge board adds props: decorations you place and enjoy." },
         { "t": "f2p", "text": "Note: \"mechanics\" means different things to different designers. Board-game designers mean rule systems, like turns or dice. In this chapter, a mechanic is an object you interact with." }
       ],
-      "check": { "q": "A block of ice on a match-3 board that you must clear is a…", "options": ["Hazard (a blocker)", "Prop", "Checkpoint"], "answer": 0, "why": "It's an obstacle that gets in your way, which is the hazard role in match-3." }
+      "check": { "q": "A block of ice on a match-3 board that you must clear is a…", "options": ["Hazard (a blocker)", "Prop (decoration)", "Checkpoint (a save)"], "answer": 0, "why": "It's an obstacle that gets in your way, which is the hazard role in match-3." }
     },
     {
       "id": "L12-l02",
@@ -62,7 +62,7 @@
         { "t": "see", "text": "The fix is **ramping**: teach one move, let the player master it, then combine and intensify slowly. Each system builds on the one before." },
         { "t": "f2p", "text": "In F2P, \"challenging, not difficult\" is a business rule: unfair deaths cost players. And the ethics line: a near-miss from real skill is challenge. A near-miss **engineered** to sell +5 moves is manipulation." }
       ],
-      "check": { "q": "What's the difference between challenge and difficulty?", "options": ["Challenge can be beaten with skill; difficulty just punishes", "There is none", "Difficulty is more fun"], "answer": 0, "why": "Challenge rewards learning. Difficulty frustrates, and most players quit." }
+      "check": { "q": "What's the difference between challenge and difficulty?", "options": ["Challenge can be beaten with skill; difficulty just punishes", "There is no real difference; they're two words for one thing", "Difficulty is more fun, because players like being punished"], "answer": 0, "why": "Challenge rewards learning. Difficulty frustrates, and most players quit." }
     },
     {
       "id": "L12-l05",
@@ -90,7 +90,7 @@
         { "t": "f2p", "text": "On mobile, \"breakables\" are piñatas, gift boxes, gumball machines and mystery eggs. Make each one look different, so opening it feels special." },
         { "t": "hook", "text": "A crate is the placeholder text of level design." }
       ],
-      "check": { "q": "Why does Rogers dislike crates?", "options": ["They're a boring, lazy default for breakables", "They're hard to build", "Players can't break them"], "answer": 0, "why": "Crates are everywhere. A themed breakable makes the world feel original." }
+      "check": { "q": "Why does Rogers dislike crates?", "options": ["They're a boring, lazy default for breakables", "They take too long for artists to build", "Players can't tell how to break them"], "answer": 0, "why": "Crates are everywhere. A themed breakable makes the world feel original." }
     },
     {
       "id": "L12-l07",
@@ -173,7 +173,7 @@
         { "t": "f2p", "text": "Minigames are everywhere in mobile:\n- ads built on pull-the-pin and pick-a-path puzzles\n- event minigames like dice boards and digging\n- hyper-casual games are often one microgame stretched into a product" },
         { "t": "hook", "text": "Whack-a-Mole's five sins: reflex-only, random, repetitive, one input, endless." }
       ],
-      "check": { "q": "Why is Whack-a-Mole a weak design?", "options": ["No decisions, no strategy, and no real end", "It's too hard", "It needs too many buttons"], "answer": 0, "why": "It relies only on reflexes and randomness, so it gets boring fast." }
+      "check": { "q": "Why is Whack-a-Mole a weak design?", "options": ["No decisions, no strategy, no real end", "It's far too hard for most players", "It needs too many buttons to play"], "answer": 0, "why": "It relies only on reflexes and randomness, so it gets boring fast." }
     }
   ]
 }

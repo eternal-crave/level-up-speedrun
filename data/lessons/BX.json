@@ -35,7 +35,7 @@
         { "t": "f2p", "text": "Repeat the one-sheet until the team quotes it back. The day a teammate rejects your idea because it doesn't match the one-sheet, and they're right, you've won." },
         { "t": "hook", "text": "A one-sheet is a dating profile: one page, honest and specific." }
       ],
-      "check": { "q": "What matters most on a one-sheet?", "options": ["Clear, short information", "Fancy styling", "Full lore"], "answer": 0, "why": "Style helps, but the page exists to inform and align." }
+      "check": { "q": "What matters most on a one-sheet?", "options": ["Clear, short information", "Fancy styling and layout", "The full lore of the world"], "answer": 0, "why": "Style helps, but the page exists to inform and align." }
     },
     {
       "id": "BX-l03",
@@ -49,7 +49,7 @@
         { "t": "f2p", "text": "For mobile, add what 2010 documents lacked: core loop, meta progression, economy, monetization, tutorial, LiveOps, analytics events and target KPIs." },
         { "t": "hook", "text": "The ten-pager is a pirate's code: more like guidelines." }
       ],
-      "check": { "q": "What does the \"X meets Y meets Z\" formula do?", "options": ["Explains a game instantly using famous references", "Lists every enemy", "Sets the price"], "answer": 0, "why": "Familiar names let readers picture the game in seconds." }
+      "check": { "q": "What does the \"X meets Y meets Z\" formula do?", "options": ["Explains a game fast with famous references", "Lists every enemy and boss in the game", "Sets the price compared with rival games"], "answer": 0, "why": "Familiar names let readers picture the game in seconds." }
     },
     {
       "id": "BX-l04",
@@ -63,7 +63,7 @@
         { "t": "f2p", "text": "A mobile GDD adds pillars, the player fantasy, session length, the economy, offers, the first-time experience, LiveOps, analytics events and compliance. It usually lives as a linked wiki, not one giant file." },
         { "t": "hook", "text": "A GDD is a sourdough starter: alive, needs feeding, and smells bad if neglected." }
       ],
-      "check": { "q": "Why write TBD instead of leaving a section blank?", "options": ["It shows the question exists and still needs an answer", "TBD is a required word", "It makes the document longer"], "answer": 0, "why": "A blank looks forgotten. TBD looks planned." }
+      "check": { "q": "Why write TBD instead of leaving a section blank?", "options": ["It shows the question exists and needs an answer", "TBD is a required word in every GDD template", "It makes the document look longer and complete"], "answer": 0, "why": "A blank looks forgotten. TBD looks planned." }
     },
     {
       "id": "BX-l05",
@@ -77,7 +77,7 @@
         { "t": "f2p", "text": "Rogers rebuilt his environment list about half a dozen times over his career. Keep your own list, and add to it whenever a game surprises you." },
         { "t": "hook", "text": "Theme plus place plus mechanic equals a level idea." }
       ],
-      "check": { "q": "How do you get a quick level concept from the lists?", "options": ["Combine a theme, an environment and a mechanic", "Copy a famous game", "Pick the first item only"], "answer": 0, "why": "Combining items from different lists sparks new ideas fast." }
+      "check": { "q": "How do you get a quick level concept from the lists?", "options": ["Combine a theme, an environment and a mechanic", "Copy a famous game's first level exactly", "Pick only the first item on each list"], "answer": 0, "why": "Combining items from different lists sparks new ideas fast." }
     },
     {
       "id": "BX-l06",
@@ -119,7 +119,7 @@
         { "t": "f2p", "text": "On mobile, also note the boss's role in the game: a chapter gate, a weekly event boss, or a clan co-op boss." },
         { "t": "hook", "text": "A boss without an arena is a rock star without a stage." }
       ],
-      "check": { "q": "What does the boss template add to the enemy template?", "options": ["Weak spots, a health bar and an arena page", "A price tag", "A longer name"], "answer": 0, "why": "Bosses are puzzles in a place, so both need planning." }
+      "check": { "q": "What does the boss template add to the enemy template?", "options": ["Weak spots, a health bar and an arena page", "A price tag and a list of shop offers", "A longer name and a bigger image"], "answer": 0, "why": "Bosses are puzzles in a place, so both need planning." }
     },
     {
       "id": "BX-l09",
@@ -133,7 +133,7 @@
         { "t": "f2p", "text": "Aim for five \"back of the box\" goals on the goals slide: the most exciting features, in a few words each." },
         { "t": "hook", "text": "A heist briefing: crew, target, backstory, loot, plan, getaway, budget." }
       ],
-      "check": { "q": "What question does the last slide answer?", "options": ["Can you deliver, and for how much?", "What is the story?", "Who is the hero?"], "answer": 0, "why": "Production specs show team size, time and cost." }
+      "check": { "q": "What question does the last slide answer?", "options": ["Can you deliver, and for how much?", "What is the game's story about?", "Who is the hero and what do they want?"], "answer": 0, "why": "Production specs show team size, time and cost." }
     },
     {
       "id": "BX-l10",

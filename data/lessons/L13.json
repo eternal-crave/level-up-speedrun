@@ -75,7 +75,7 @@
         { "t": "see", "text": "**Designer blinders:** after playing your levels hundreds of times, you're much better than real players. You need far harder content to feel challenged, so your game drifts too hard." },
         { "t": "f2p", "text": "Live teams drift toward too-hard content too. Check each level's win rate and where players quit, and test with fresh players. Offer help instead of silently making things easier, and never make players feel stupid." }
       ],
-      "check": { "q": "Why do designers often make levels too hard?", "options": ["They've played them so much that they're far better than real players", "Players ask for harder levels", "Hard levels are cheaper"], "answer": 0, "why": "Practice makes designers experts, so they misjudge what normal players can do." }
+      "check": { "q": "Why do designers often make levels too hard?", "options": ["They've played them so often they're far better than players", "Players keep asking in reviews for much harder levels", "Hard levels take less time and money to build"], "answer": 0, "why": "Practice makes designers experts, so they misjudge what normal players can do." }
     },
     {
       "id": "L13-l06",
@@ -88,7 +88,7 @@
         { "t": "see", "text": "In Maximo, some treasure chests were monsters that bit you. Soon players dreaded every chest. Fun for the designer, not the player. Fix: give a clue, like a colour change, so players can spot the trap." },
         { "t": "f2p", "text": "The F2P version of \"die three times\" is a level designed to fail so players buy boosters. Same bad idea, with a price tag. Also: always save automatically and support cloud save. Lost progress is the fastest way to lose a player." }
       ],
-      "check": { "q": "Players start fearing every treasure chest. What went wrong?", "options": ["Too many trap chests with no warning signs", "Chests were too rare", "Chests gave too much gold"], "answer": 0, "why": "Rewards that often hurt you stop feeling like rewards. Give clues so players can learn." }
+      "check": { "q": "Players start fearing every treasure chest. What went wrong?", "options": ["Too many trap chests with no warning signs", "Chests appeared too rarely in levels", "Chests gave out far too much gold"], "answer": 0, "why": "Rewards that often hurt you stop feeling like rewards. Give clues so players can learn." }
     },
     {
       "id": "L13-l07",
@@ -178,7 +178,7 @@
         { "t": "how", "text": "**Bonus content** (costumes, extra modes, commentary) used to be the extra at the end of a game. In F2P it became the engine: new levels, skins and events every week or month." },
         { "t": "f2p", "text": "F2P games have no ending, so progress itself is the reward:\n- a map that grows\n- rooms you renovate\n- a base that levels up\n- a rank that rises\nAlways show the next step." }
       ],
-      "check": { "q": "In F2P, what did \"bonus content\" become?", "options": ["LiveOps: regular new levels, skins and events", "Nothing: it was removed", "A one-time ending"], "answer": 0, "why": "Live games keep adding content, which turns bonus material into the weekly engine." }
+      "check": { "q": "In F2P, what did \"bonus content\" become?", "options": ["LiveOps: regular new levels, skins and events", "Nothing: extra content was simply removed", "A single secret ending after the credits"], "answer": 0, "why": "Live games keep adding content, which turns bonus material into the weekly engine." }
     },
     {
       "id": "L13-l14",
@@ -204,7 +204,7 @@
         { "t": "see", "text": "A **season pass** is a visible reward track with a free row and a paid row, like Brawl Pass or Pass Royale. It turns \"reward often\" into a progress bar with a deadline." },
         { "t": "f2p", "text": "Keep passes finishable with normal play. If finishing needs heavy grinding or paid skips, it creates stress, not fun. Some countries, like Belgium, treat paid loot boxes as gambling." }
       ],
-      "check": { "q": "What does a pity system do?", "options": ["Guarantees a top reward after a set number of unlucky pulls", "Removes all randomness", "Makes pulls more expensive"], "answer": 0, "why": "It caps how unlucky a player can be, which is DDB for luck." }
+      "check": { "q": "What does a pity system do?", "options": ["Guarantees a top reward after many unlucky pulls", "Removes all randomness from every pull", "Makes each pull a little more expensive"], "answer": 0, "why": "It caps how unlucky a player can be, which is DDB for luck." }
     },
     {
       "id": "L13-l16",

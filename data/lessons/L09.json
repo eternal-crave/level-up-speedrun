@@ -20,7 +20,7 @@
         { "t": "f2p", "text": "Write a short glossary on day one of every project. Mixing up \"player level\", \"building level\" and \"board level\" in a design document causes real bugs." },
         { "t": "hook", "text": "\"Level\" is a Swiss Army knife. Make sure everyone is holding the same blade." }
       ],
-      "check": { "q": "Why write a glossary at the start of a project?", "options": ["Words like \"level\" mean different things to different people", "It's required by publishers", "To make the document longer"], "answer": 0, "why": "Shared words prevent confusion and bugs in specs." }
+      "check": { "q": "Why write a glossary at the start of a project?", "options": ["Words like \"level\" mean different things to people", "Publishers require one before they sign a deal", "A longer document looks more professional"], "answer": 0, "why": "Shared words prevent confusion and bugs in specs." }
     },
     {
       "id": "L09-l02",
@@ -33,7 +33,7 @@
         { "t": "see", "text": "Mobile hits pitched this way:\n- match-3 plus home makeover (Homescapes)\n- merge plus a mystery mansion (Merge Mansion)\n- Pokémon plus walking around your real city (Pokémon GO)" },
         { "t": "f2p", "text": "LiveOps uses clichés all the time: winter snow, Halloween, summer beach. Seasonal reskins are fast, cheap and instantly readable on a small screen." }
       ],
-      "check": { "q": "What's the Mexican Pizza Technique?", "options": ["Combine two things that don't seem to belong together", "Copy a theme exactly", "Avoid all clichés"], "answer": 0, "why": "Unexpected combinations turn a tired theme into something fresh." }
+      "check": { "q": "What's the Mexican Pizza Technique?", "options": ["Combine two things that don't seem to belong", "Copy one popular theme exactly as it is", "Avoid every cliché, no matter what"], "answer": 0, "why": "Unexpected combinations turn a tired theme into something fresh." }
     },
     {
       "id": "L09-l03",
@@ -46,7 +46,7 @@
         { "t": "f2p", "text": "In puzzle games, the plain number works as a name: \"Level 2,500\" becomes a bragging badge. Careful with puns: many F2P games launch in many languages, and a pun usually doesn't translate. Add versions to level IDs for A/B tests." },
         { "t": "hook", "text": "Don't print the hospital barcode on the birthday cake." }
       ],
-      "check": { "q": "Why avoid puns in important F2P names?", "options": ["They often don't translate into other languages", "Players hate jokes", "Stores don't allow them"], "answer": 0, "why": "Games launch in many languages at once, and puns rarely survive translation." }
+      "check": { "q": "Why avoid puns in important F2P names?", "options": ["They often don't translate into other languages", "Players dislike any kind of joke in games", "App stores don't allow puns in names"], "answer": 0, "why": "Games launch in many languages at once, and puns rarely survive translation." }
     },
     {
       "id": "L09-l04",
@@ -60,7 +60,7 @@
         { "t": "f2p", "text": "A saga map in Candy Crush or Royal Match is this map made into the game's main screen. Players always see where they've been and what's next." },
         { "t": "hook", "text": "World, Land, Ride, Scene." }
       ],
-      "check": { "q": "In what order does Rogers suggest designing?", "options": ["World, then areas, then levels, then moments", "Moments first, world last", "Any order"], "answer": 0, "why": "Top-down design sets boundaries first, so the details fit together." }
+      "check": { "q": "In what order does Rogers suggest designing?", "options": ["World, then areas, then levels, then moments", "Moments first, then levels, world last", "Any order works, as long as it's fun"], "answer": 0, "why": "Top-down design sets boundaries first, so the details fit together." }
     },
     {
       "id": "L09-l05",
@@ -128,7 +128,7 @@
         { "t": "see", "text": "Rogers' universal truth: **players will always find a way to break your game**, on purpose or by accident. So guide them clearly to play the way you intend." },
         { "t": "f2p", "text": "On mobile, weenies are the glowing next node on the map, the big event banner, the chest at the end of a path. Something exciting should always sit in view." }
       ],
-      "check": { "q": "What is a weenie in level design?", "options": ["A landmark that draws players toward it", "A weak enemy", "A hidden shortcut"], "answer": 0, "why": "Weenies attract the eye and pull players along the intended path." }
+      "check": { "q": "What is a weenie in level design?", "options": ["A landmark that draws players toward it", "A weak enemy placed early to build confidence", "A hidden shortcut back to the start"], "answer": 0, "why": "Weenies attract the eye and pull players along the intended path." }
     },
     {
       "id": "L09-l10",
@@ -182,7 +182,7 @@
         { "t": "f2p", "text": "Renovation games run on this. In Homescapes, you see a wrecked room, finish a task, and now it's beautiful. The work is never shown. Ads use it too: before, fail, after, in five seconds." },
         { "t": "hook", "text": "The magic happens behind the sail." }
       ],
-      "check": { "q": "How does Homescapes use illusional narrative?", "options": ["It shows the room before and after, not the work in between", "It shows every step of the repair", "It has no story"], "answer": 0, "why": "The player's mind fills the gap, which is cheap and still satisfying." }
+      "check": { "q": "How does Homescapes use illusional narrative?", "options": ["Shows the room before and after, not the work", "Shows every single step of the repair work", "Skips the room entirely and tells no story"], "answer": 0, "why": "The player's mind fills the gap, which is cheap and still satisfying." }
     },
     {
       "id": "L09-l14",
@@ -208,7 +208,7 @@
         { "t": "see", "text": "Big open areas suit fights with groups of enemies. Narrow spaces suit one-on-one fights. High places give \"wow\" views of the world ahead." },
         { "t": "f2p", "text": "On mobile, vary within short sessions: a calm level after a hard one, a new theme every few chapters, a different event type each week." }
       ],
-      "check": { "q": "How does a tight, narrow space usually feel to players?", "options": ["Mysterious and dangerous", "Safe and calm", "Boring"], "answer": 0, "why": "Tight spaces raise tension. Large spaces feel safer." }
+      "check": { "q": "How does a tight, narrow space usually feel to players?", "options": ["Mysterious and dangerous", "Safe, calm and cosy", "Boring and empty"], "answer": 0, "why": "Tight spaces raise tension. Large spaces feel safer." }
     },
     {
       "id": "L09-l16",
@@ -222,7 +222,7 @@
         { "t": "f2p", "text": "In F2P, the first session decides D1 retention, and a weak one wastes all your ad spend. Build it early and keep improving it with A/B tests. Test it on people who have never seen the game." },
         { "t": "hook", "text": "The training level is your game's first date. Don't plan it the night before." }
       ],
-      "check": { "q": "Why build the training level early?", "options": ["You learn the basics before your own expertise blinds you", "It's the easiest level", "Players skip it anyway"], "answer": 0, "why": "Building it early lets you see the game like a beginner, which is who it's for." }
+      "check": { "q": "Why build the training level early?", "options": ["You learn the basics before expertise blinds you", "It's the easiest level, so it's quick to finish", "Players skip it anyway, so it can be rough"], "answer": 0, "why": "Building it early lets you see the game like a beginner, which is who it's for." }
     }
   ]
 }

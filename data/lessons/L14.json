@@ -22,7 +22,7 @@
         { "t": "f2p", "text": "Mobile multiplayer runs through a server that decides what's true, so a hacked phone can't give itself gems. Playing on the same couch became party invites, friend codes and clanmates." },
         { "t": "hook", "text": "Co-op is just competition that hasn't found the health potion yet." }
       ],
-      "check": { "q": "What turned Gauntlet's co-op into competition?", "options": ["Scarce rewards, like health food", "Bad controls", "Too many enemies"], "answer": 0, "why": "When rewards are limited, teammates start competing for them." }
+      "check": { "q": "What turned Gauntlet's co-op into competition?", "options": ["Scarce rewards, like health food", "Clumsy, hard-to-learn controls", "Far too many enemies on screen"], "answer": 0, "why": "When rewards are limited, teammates start competing for them." }
     },
     {
       "id": "L14-l02",
@@ -48,7 +48,7 @@
         { "t": "see", "text": "In F2P, money can become the snowball. If big spenders crush free players, the free players leave. Then the spenders have no one to play against." },
         { "t": "f2p", "text": "Use matchmaking brackets, caps and fair matching to protect free players. Games with dice, slots or gacha also need ethics: show the odds, add pity systems, and never target minors." }
       ],
-      "check": { "q": "Why is pay-to-win dangerous even for spenders?", "options": ["Free players leave, and spenders lose their opponents", "Spenders get bored of winning", "It's illegal everywhere"], "answer": 0, "why": "Free players are the content. If they quit, the game empties for everyone." }
+      "check": { "q": "Why is pay-to-win dangerous even for spenders?", "options": ["Free players leave, so spenders lose opponents", "Spenders quickly get bored of always winning", "It's illegal in almost every country"], "answer": 0, "why": "Free players are the content. If they quit, the game empties for everyone." }
     },
     {
       "id": "L14-l04",
@@ -62,7 +62,7 @@
         { "t": "f2p", "text": "Ask three questions: How many people does the fun need? How many can my audience supply at 3 a.m. in a small country? How many can a thumb track on a phone screen?" },
         { "t": "hook", "text": "Two players in a huge world is a ghost town. Two hundred in a duel is a mosh pit." }
       ],
-      "check": { "q": "What is matchmaking liquidity?", "options": ["Having enough players online to fill matches quickly", "Players spending money", "The speed of the server"], "answer": 0, "why": "Bigger matches need more waiting players, which small games may not have." }
+      "check": { "q": "What is matchmaking liquidity?", "options": ["Enough players online to fill matches fast", "Enough players spending money each day", "Enough server speed to avoid any lag"], "answer": 0, "why": "Bigger matches need more waiting players, which small games may not have." }
     },
     {
       "id": "L14-l05",
@@ -75,7 +75,7 @@
         { "t": "see", "text": "Zynga's Facebook games like Mafia Wars pioneered asking friends for gifts to unlock content. Candy Crush asking friends for lives is a direct descendant." },
         { "t": "f2p", "text": "Players used to sell game gold for real money, which developers hated. F2P turned that into the business model: the publisher sells the currency. Avoid upgrades that can fail and destroy expensive items. Never punish twice." }
       ],
-      "check": { "q": "Where did Candy Crush's \"ask friends for lives\" idea come from?", "options": ["Early Facebook social games like Mafia Wars", "Arcade games", "Console sports games"], "answer": 0, "why": "Friend gifting gates were pioneered by Facebook social games." }
+      "check": { "q": "Where did Candy Crush's \"ask friends for lives\" idea come from?", "options": ["Early Facebook games like Mafia Wars", "Classic coin-operated arcade games", "Console sports games with online modes"], "answer": 0, "why": "Friend gifting gates were pioneered by Facebook social games." }
     },
     {
       "id": "L14-l06",
@@ -89,7 +89,7 @@
         { "t": "f2p", "text": "Give clan leaders moderation tools: kick, promote, minimum requirements and written rules. Good communities need good tools." },
         { "t": "hook", "text": "Make other people heaven most of the time, and build fences for the rest." }
       ],
-      "check": { "q": "Why does Clash of Clans give a shield after an attack?", "options": ["So players aren't attacked over and over", "To sell more gems", "To speed up battles"], "answer": 0, "why": "It protects players from griefing while they can't defend themselves." }
+      "check": { "q": "Why does Clash of Clans give a shield after an attack?", "options": ["So players aren't attacked over and over", "To sell more gems to attacked players", "To make the next battle go faster"], "answer": 0, "why": "It protects players from griefing while they can't defend themselves." }
     },
     {
       "id": "L14-l07",
@@ -103,7 +103,7 @@
         { "t": "f2p", "text": "Tools: the server checks every important action, limits on gifting, alerts for strange economy numbers, and a switch to turn off a broken event instantly." },
         { "t": "hook", "text": "Players are raccoons. They'll open every bin you thought was sealed." }
       ],
-      "check": { "q": "Which is an exploit to stop quickly?", "options": ["Using extra accounts to feed a main account", "A clan's friendly tournament", "Sharing base layouts"], "answer": 0, "why": "Exploits ruin fairness for others. Creative play is fine." }
+      "check": { "q": "Which is an exploit to stop quickly?", "options": ["Extra accounts feeding one main account", "A clan's friendly practice tournament", "Players sharing their base layouts"], "answer": 0, "why": "Exploits ruin fairness for others. Creative play is fine." }
     },
     {
       "id": "L14-l08",
@@ -129,7 +129,7 @@
         { "t": "see", "text": "Clash of Clans has Clan Wars and Clan Games. Clash Royale has card donations. Monopoly GO! has partner events, where you build toward a shared goal with friends." },
         { "t": "f2p", "text": "Unlock clans after the player understands the basics, then push them gently to join one. A player in an active clan is far less likely to quit." }
       ],
-      "check": { "q": "Why do clans improve retention so much?", "options": ["Players feel responsible to teammates and friends", "Clans give the most gems", "Clans remove ads"], "answer": 0, "why": "Obligation and friendship keep people coming back." }
+      "check": { "q": "Why do clans improve retention so much?", "options": ["Players feel responsible to teammates", "Clans hand out the most gems", "Clan members never see ads"], "answer": 0, "why": "Obligation and friendship keep people coming back." }
     },
     {
       "id": "L14-l10",
@@ -142,7 +142,7 @@
         { "t": "see", "text": "Clash Royale's trophy road climbs through arenas, and each new arena unlocks new cards. The ladder is also a progression system." },
         { "t": "f2p", "text": "Many games fill low-rank matches with bots, so new players aren't crushed and queues stay short. Be careful: players notice obvious bots, and too many feel fake." }
       ],
-      "check": { "q": "Why do competitive games use seasons?", "options": ["To give everyone a fresh climb and a reward", "To delete accounts", "To stop matchmaking"], "answer": 0, "why": "Seasonal resets renew motivation to climb again." }
+      "check": { "q": "Why do competitive games use seasons?", "options": ["To give everyone a fresh climb and a reward", "To delete inactive accounts each month", "To pause matchmaking for maintenance"], "answer": 0, "why": "Seasonal resets renew motivation to climb again." }
     }
   ]
 }
