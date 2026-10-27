@@ -56,6 +56,8 @@
   color-scheme: dark;
 }
 
+/* hidden always wins over layout classes like .stack or .row */
+[hidden] { display: none !important; }
 html { height: 100%; box-sizing: border-box; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 *, *::before, *::after { box-sizing: inherit; }
 body {
@@ -532,3 +534,45 @@ a, button, select, summary, .tab, [data-act] { touch-action: manipulation; -webk
 
 .card.danger { border-color: color-mix(in srgb, var(--hot) 55%, var(--line)); }
 .card.danger .eyebrow { color: var(--hot); }
+
+/* ---------- lessons ---------- */
+.lesson { display: grid; gap: 12px; }
+.ldots { display: flex; gap: 5px; }
+.ldots i { flex: 1; height: 6px; border-radius: 99px; background: var(--line); }
+.ldots i.on { background: var(--go); }
+.ldots i.cur { background: var(--accent); }
+.ltitle { font: 400 var(--step-2)/1.15 var(--f-display); }
+.lcard { background: var(--card); border: 2px solid var(--ink); border-radius: 18px; box-shadow: 4px 4px 0 var(--ink); padding: 18px 16px; display: grid; gap: 10px; min-height: 13rem; align-content: start; }
+.lcard-lab { font: 600 0.78rem/1.2 var(--f-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.lcard-idea .lcard-lab { color: var(--gold-ink); }
+.lcard-idea { background: var(--gold-soft); border-color: var(--gold-ink); box-shadow: 4px 4px 0 var(--gold-ink); }
+.lcard-f2p .lcard-lab { color: var(--accent); }
+.lcard-text { font-size: 1.05rem; line-height: 1.55; display: grid; gap: 10px; }
+.lcard-text ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
+.lcard-idea .lcard-text { font-size: 1.15rem; }
+.lq { font-size: 1.1rem; font-weight: 700; }
+.lend { justify-items: center; text-align: center; align-content: center; }
+.lnav { display: grid; gap: 10px; }
+.lnav.row { display: flex; }
+.lnav .lgo { flex: 1; min-height: 52px; font-size: var(--step-1); }
+.learn-head .lgo { min-height: 52px; }
+.llist { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.lrow { display: grid; grid-template-columns: 30px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 10px 8px; border-radius: 12px; color: inherit; text-decoration: none; border: 2px solid transparent; }
+.lrow:hover { background: var(--card-2); }
+.lrow .lnum { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font: 700 0.85rem/1 var(--f-mono); border: 2px solid var(--line); }
+.lrow.done .lnum { background: var(--go); border-color: var(--go); color: #fff; }
+.lrow.done .ltt { color: var(--ink-2); }
+.lrow.next { border-color: var(--accent); background: var(--accent-soft); }
+.lrow.next .lnum { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.ltt { font-weight: 700; }
+.wlist { margin: 10px 0 0; display: grid; gap: 10px; }
+.wlist dt { font-weight: 700; }
+.wlist dd { margin: 0; color: var(--ink-2); }
+details.card > summary { cursor: pointer; }
+.deep-sec { border-top: 2px dashed var(--line); padding: 10px 0; }
+.deep-sec > summary { cursor: pointer; font: 400 var(--step-1)/1.25 var(--f-display); list-style: none; }
+.deep-sec > summary::-webkit-details-marker { display: none; }
+.deep-sec > summary::after { content: " ▾"; color: var(--accent); font-family: var(--f-body); }
+.deep-sec[open] > summary::after { content: " ▴"; }
+.deep-sec > :not(summary) { margin-top: 0.85em; }
+.bite-more-btn { justify-self: start; }

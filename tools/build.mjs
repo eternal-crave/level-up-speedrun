@@ -90,6 +90,42 @@ for (const f of fs.readdirSync(path.join(ROOT, "data")).filter((f) => f.endsWith
   if (nf) notes[m.id] = rd(`notes/${nf}`); else problems.push(`${m.id}: no notes file`);
   modules.push(m);
 }
+// ---- lessons: plain-language layer (tools/LESSONS-PLAYBOOK.md). Structure errors are problems; style limits are warnings.
+const lessonWarn = [];
+const CARD_TYPES = new Set(["idea", "how", "see", "f2p", "hook"]);
+const wordsOf = (t) => (String(t).replace(/\*\*/g, "").match(/[A-Za-z0-9'’-]+/g) || []).length;
+for (const m of modules) {
+  const lf = path.join(ROOT, "data", "lessons", m.id + ".json");
+  m.lessons = []; m.words = [];
+  if (!fs.existsSync(lf)) continue;
+  let L;
+  try { L = JSON.parse(fs.readFileSync(lf, "utf8")); } catch (e) { problems.push(`lessons/${m.id}: JSON parse error ${e.message}`); continue; }
+  const heads = (notes[m.id] || "").split("\n").filter((l) => l.startsWith("## ")).map((l) => l.slice(3).trim());
+  m.words = (L.words || []).filter((w) => w && w.w && w.d).map((w) => ({ w: String(w.w), d: String(w.d) }));
+  const ids = new Set();
+  for (const [i, x] of (L.lessons || []).entries()) {
+    const where = `lessons/${m.id} #${i + 1} ${x.id || ""}`;
+    if (!x.id || ids.has(x.id)) { problems.push(`${where}: missing or duplicate id`); continue; }
+    ids.add(x.id);
+    const cards = (x.cards || []).filter((c) => c && CARD_TYPES.has(c.t) && c.text);
+    if (!cards.length || cards[0].t !== "idea") problems.push(`${where}: first card must be an idea card`);
+    if (cards.length < 3 || cards.length > 5) lessonWarn.push(`${where}: ${cards.length} cards (aim for 3-5)`);
+    const ck = x.check || {};
+    if (!ck.q || !Array.isArray(ck.options) || ck.options.length < 2 || !Number.isInteger(ck.answer) || ck.answer < 0 || ck.answer >= ck.options.length) problems.push(`${where}: malformed check question`);
+    const deep = [].concat(x.deep || []).map(String);
+    // stored as the heading's plain text, the way the rendered notes show it
+    const deepHeads = deep.map((d) => heads.find((h) => h.toLowerCase().includes(d.toLowerCase()))).filter(Boolean).map((h) => h.replace(/[*_`]/g, "").replace(/\s+/g, " ").trim());
+    if (deep.length && deepHeads.length !== deep.length) problems.push(`${where}: Go deeper "${deep.join(" / ")}" matches no notes heading`);
+    for (const c of cards) {
+      const n = wordsOf(c.text);
+      if (n > 60) lessonWarn.push(`${where} [${c.t}]: ${n} words (max 60)`);
+      for (const sent of String(c.text).replace(/\*\*/g, "").replace(/\n- /g, ". ").split(/(?<=[.!?])\s+/)) { const k = wordsOf(sent); if (k > 25) lessonWarn.push(`${where} [${c.t}]: ${k}-word sentence: "${sent.slice(0, 60)}…"`); }
+      if (/\be\.g\.|\bi\.e\.|\band\/or\b/i.test(c.text)) lessonWarn.push(`${where} [${c.t}]: avoid e.g./i.e./and-or`);
+    }
+    m.lessons.push({ id: String(x.id), title: String(x.title || ""), min: +x.min || 3, deep: deepHeads, cards: cards.map((c) => ({ t: c.t, text: String(c.text) })), check: { q: String(ck.q || ""), options: (ck.options || []).map(String), answer: ck.answer | 0, why: String(ck.why || "") } });
+  }
+}
+if (lessonWarn.length) console.log("lesson style warnings:\n  " + lessonWarn.join("\n  "));
 modules.sort((a, b) => a.order - b.order);
 const ids = new Set(modules.map((m) => m.id));
 const COURSE = {

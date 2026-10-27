@@ -1,0 +1,120 @@
+{
+  "mod": "L00",
+  "words": [
+    { "w": "core loop", "d": "the main action players repeat again and again, like swapping candies in Candy Crush" },
+    { "w": "F2P", "d": "free-to-play: the game is free to download and earns money from purchases and ads inside it" },
+    { "w": "cutscene", "d": "a short movie inside a game, where the player watches instead of playing" },
+    { "w": "spec", "d": "a design document that explains one feature to the team" },
+    { "w": "soft launch", "d": "an early test release in a few countries before the worldwide launch" },
+    { "w": "LiveOps", "d": "running a game after launch with events, updates and offers" }
+  ],
+  "lessons": [
+    {
+      "id": "L00-l01",
+      "title": "Fundamentals first: do one thing well",
+      "min": 3,
+      "deep": "Foreword",
+      "cards": [
+        { "t": "idea", "text": "Good games get the **fundamentals** right first. The most important one: **do one thing, and do it well.**" },
+        { "t": "how", "text": "When a team is stuck, adding more features rarely helps. Strong teams go back to basics and ask:\n- Is the main action fun?\n- Is it clear what to do?\n- Is the goal obvious?" },
+        { "t": "see", "text": "Block Blast! is mostly one action: drag a block onto the grid and clear a line. That one action feels so good that it carries the whole game." },
+        { "t": "f2p", "text": "In mobile games, the action players repeat again and again is the **core loop**. Make it feel great before you add events, shops or extra systems. If the numbers drop, check the core loop first." },
+        { "t": "hook", "text": "Fundamentals are your checkpoint. When a design fails, you restart from the basics, not from the fancy new feature." }
+      ],
+      "check": { "q": "Your game has six extra systems, but the main action feels boring. What do you fix first?", "options": ["The main action (the core loop)", "Add a seventh system", "Make the shop bigger"], "answer": 0, "why": "Do one thing well. Extra systems can't save a boring main action." }
+    },
+    {
+      "id": "L00-l02",
+      "title": "Your first page: hook players, honestly",
+      "min": 3,
+      "deep": "Anything Like Me",
+      "cards": [
+        { "t": "idea", "text": "People decide fast. A book is judged by its first page. A mobile game is judged by its **store page and its first 30 seconds**." },
+        { "t": "how", "text": "There are two classic ways to grab attention quickly:\n- **Excitement:** show something thrilling right away.\n- **Borrowed trust:** show a famous name or a big number praising it.\nRogers jokes about both at the start of his book, then simply tells the truth." },
+        { "t": "see", "text": "Many mobile games open with a huge battle where you control a very strong hero. Then the power is taken away and you start at level 1. You've seen what's possible, so you want it back." },
+        { "t": "f2p", "text": "Hook hard, but keep it honest. Ad regulators have banned mobile ads that showed gameplay that wasn't in the game. Your first minutes must deliver what your ad promised." }
+      ],
+      "check": { "q": "What is the \"first page\" of a mobile game?", "options": ["The store page and the first 30 seconds", "The credits screen", "Level 50"], "answer": 0, "why": "That's where players decide to stay or leave, like a reader with a book's first page." }
+    },
+    {
+      "id": "L00-l03",
+      "title": "If it's on the screen, it's gameplay",
+      "min": 3,
+      "deep": "Ground rules",
+      "cards": [
+        { "t": "idea", "text": "There's no separate \"gameplay part\" of a game. **Everything the player sees changes how they feel and what they do.** So everything on screen is gameplay." },
+        { "t": "how", "text": "Rogers says to think about the player all the time. That includes quiet parts, like a **cutscene** (a short movie inside the game) or the pause screen." },
+        { "t": "see", "text": "In Candy Crush, the \"out of lives\" screen decides whether you quit, wait, watch an ad or pay. It's only a popup, but it's one of the biggest design decisions in the game." },
+        { "t": "f2p", "text": "Design these with the same care as your levels:\n- the shop and offer popups\n- the daily login calendar\n- loading screens and push notifications" },
+        { "t": "hook", "text": "Yes, even the loading bar is gameplay." }
+      ],
+      "check": { "q": "A teammate says the shop popup is \"just UI\". Who should design it?", "options": ["A designer, because it changes what players do", "Nobody, it's just UI", "Only the artist"], "answer": 0, "why": "Everything on screen is gameplay. The shop decides whether players stay, wait or pay." }
+    },
+    {
+      "id": "L00-l04",
+      "title": "Use the book's lessons in your own genre",
+      "min": 2,
+      "deep": "Ground rules",
+      "cards": [
+        { "t": "idea", "text": "There are many good ways to design a game. A method is good **if it helps your team understand the idea.** Rogers' methods are one good way, not the only one." },
+        { "t": "how", "text": "Most of Rogers' games were action games for consoles, so most of his examples are too. The principles still work in other genres. Keep the principle and change the form." },
+        { "t": "see", "text": "A boss that warns you before a big attack teaches fairness. In a match-3 game, the same idea is a blocker that shows a warning one turn before it spreads." },
+        { "t": "f2p", "text": "Mobile is different from console in four ways: short sessions, touch controls, constant interruptions and a free-to-play business model. Ask how each lesson changes under those four." }
+      ],
+      "check": { "q": "Most of the book's examples are console action games. What should a mobile designer do with them?", "options": ["Keep the principle and adapt it to mobile", "Ignore them", "Copy them exactly"], "answer": 0, "why": "The principles transfer across genres. The form changes to fit short sessions and touch screens." }
+    },
+    {
+      "id": "L00-l05",
+      "title": "Nobody reads your design doc",
+      "min": 3,
+      "deep": "Have My Job",
+      "cards": [
+        { "t": "idea", "text": "One of Rogers' two most important rules: **no one on your team wants to read your design.** A design document only works if people actually understand it. So make it short and visual." },
+        { "t": "how", "text": "As a new designer, Rogers found that nobody read his long documents. So he started drawing his designs as cartoons. People finally understood them, and he kept working that way on big games like God of War." },
+        { "t": "see", "text": "A one-page sketch of a new event, with arrows and three key numbers, gets read and built. A 40-page document ends up holding a door open." },
+        { "t": "f2p", "text": "A good mobile feature spec has:\n- the goal and the number it should improve, at the top\n- mockups or a flow diagram\n- the exact numbers in a linked spreadsheet" },
+        { "t": "hook", "text": "Draw it, or it didn't happen. (His other most important rule: game designers have more fun.)" }
+      ],
+      "check": { "q": "Your teammates skip your 12-page event spec. What do you do?", "options": ["Make a one-page visual spec with the goal on top", "Add more pages so it's complete", "Send it again by email"], "answer": 0, "why": "A design doc's job is communication. Short and visual gets read." }
+    },
+    {
+      "id": "L00-l06",
+      "title": "Games are a team sport",
+      "min": 3,
+      "deep": ["About the Author", "Acknowledgments"],
+      "cards": [
+        { "t": "idea", "text": "Games are made by **big teams**, and the games industry is small. People remember how you worked with them, so **be kind and work hard.**" },
+        { "t": "how", "text": "\"I designed this game\" is never fully true. Programmers, artists, testers, producers and many others made it too. Careers also move sideways: Rogers started as a pixel artist, became a designer, then worked at a publisher." },
+        { "t": "see", "text": "Clash of Clans launched in 2012 and is still updated. Designers, data analysts, artists and marketing people have worked on it together for over ten years." },
+        { "t": "f2p", "text": "Common ways into F2P design:\n- QA tester or puzzle level designer\n- community manager, then LiveOps (running events)\n- data analyst, then economy design\n- playable-ad developer, then prototyping" }
+      ],
+      "check": { "q": "Why does Rogers say to be nice and hardworking?", "options": ["The industry is small and people remember you", "So you can work alone", "Because making games is easy"], "answer": 0, "why": "You'll work with the same people again and again, often for years on one live game." }
+    },
+    {
+      "id": "L00-l07",
+      "title": "Hard work, the best job, and loving games",
+      "min": 3,
+      "deep": ["bad news", "Who Is This Book For"],
+      "cards": [
+        { "t": "idea", "text": "Making games is **very hard work.** Rogers also calls it the best job in the world. To do it well, you have to **love games**, including ones you'd never pick for yourself." },
+        { "t": "how", "text": "In mobile F2P, launch is the start, not the finish. Many games are cancelled in **soft launch** (an early test release in a few countries) because the numbers aren't good enough. The hits then run for years." },
+        { "t": "see", "text": "Your players are often not like you. A cozy puzzle game played by 45-year-olds can earn more than your favourite shooter. Loving games means respecting what they enjoy." },
+        { "t": "f2p", "text": "Build the habit: each week, play a top-earning game you'd never choose yourself. Write down one thing it does really well." }
+      ],
+      "check": { "q": "What usually happens to many mobile games in soft launch?", "options": ["They get cancelled if the numbers are weak", "They become instant hits", "They stop being updated"], "answer": 0, "why": "Soft launch is a test. Studios cancel games whose early numbers aren't strong enough." }
+    },
+    {
+      "id": "L00-l08",
+      "title": "How to actually learn from this course",
+      "min": 2,
+      "deep": "How to use this course",
+      "cards": [
+        { "t": "idea", "text": "Reading is not learning. You learn when you **pull an idea out of your head** and **use it**: Read, then Recall, then Make." },
+        { "t": "how", "text": "After each lesson, answer the check question without looking back. Review your flashcards a few minutes every day. That beats rereading for an hour. Then do a small quest that makes something." },
+        { "t": "f2p", "text": "Start a **swipe file**: one note for every game you play. Write what it does well, what it does badly, and one thing you'd steal." },
+        { "t": "hook", "text": "If you didn't recall it or use it, you only visited the idea. You didn't learn it." }
+      ],
+      "check": { "q": "Which study habit makes ideas stick best?", "options": ["Recalling the answer from memory, then using it", "Rereading the notes several times", "Highlighting everything"], "answer": 0, "why": "Pulling answers out of memory strengthens it far more than rereading." }
+    }
+  ]
+}

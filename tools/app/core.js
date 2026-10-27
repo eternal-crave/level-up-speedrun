@@ -44,7 +44,7 @@ function freshP() {
   return {
     v: 1, updatedAt: 0, startDay: null, xp: 0, days: {},
     streak: { count: 0, last: null, freezes: 0, best: 0 },
-    seen: {}, got: {}, saved: {}, read: {}, started: {}, quiz: {}, quests: {}, recall: {}, badges: {}, cap: {},
+    seen: {}, got: {}, saved: {}, read: {}, started: {}, quiz: {}, quests: {}, recall: {}, badges: {}, cap: {}, lessons: {}, wordsOK: {},
     daily: null, n: { chests: 0, focus: 0, reviews: 0, coach: 0, revive: 0 },
     settings: { route: "f2p", pace: "speedrun", newPerDay: 15, sound: false }, onboarded: false,
   };
@@ -291,20 +291,26 @@ function routeIds() {
   const r = (C.route && C.route[P.settings.route]) || MODS.map((m) => m.id);
   return r.filter((id) => BY[id]);
 }
+const lessonsOf = (id) => (BY[id] && BY[id].lessons) || [];
+const lessonDone = (l) => !!(P.lessons && P.lessons[l.id]);
+const nextLessonIdx = (id) => lessonsOf(id).findIndex((l) => !lessonDone(l));
+// A level is learned through its lessons (or by marking the full notes read), then its boss and quests.
+// Bites are optional review in the feed, so they no longer count toward the level.
 function levelStats(id) {
   const m = BY[id];
+  const ls = lessonsOf(id), ld = ls.filter(lessonDone).length;
   const bites = bitesOf(id), seen = bites.filter((b) => P.seen[b.id]).length;
   const qs = questsOf(id), qd = qs.filter((q) => P.quests[q.id]).length;
   const qNeed = Math.max(1, Math.ceil(qs.length * 0.4));
   const best = (P.quiz[id] && P.quiz[id].best) || 0;
   const parts = {
-    read: P.read[id] ? 1 : 0,
+    read: P.read[id] ? 1 : ls.length ? ld / ls.length : 0,
     bites: bites.length ? seen / bites.length : 0,
     boss: Math.min(1, best / 0.7),
     quests: Math.min(1, qd / qNeed),
   };
-  const p = (parts.read + parts.bites + parts.boss + parts.quests) / 4;
-  return { m, parts, p, seen, bitesTotal: bites.length, qd, qTotal: qs.length, qNeed, best, won: !!(P.quiz[id] && P.quiz[id].won) };
+  const p = (parts.read + parts.boss + parts.quests) / 3;
+  return { m, parts, p, seen, bitesTotal: bites.length, lessonsTotal: ls.length, lessonsDone: ld, qd, qTotal: qs.length, qNeed, best, won: !!(P.quiz[id] && P.quiz[id].won) };
 }
 function frontier() { const r = routeIds(); return r.find((id) => levelStats(id).p < 0.999) || r[r.length - 1]; }
 // The built schedule fixes how many levels each week holds; the levels themselves follow the chosen route,
@@ -351,15 +357,17 @@ function bump(counter, n = 1) {
 // Each day freezes a short path (warm-up, main quest, lock-in) so there is always exactly one obvious next thing
 // and a clear finish line. Steps are sized in minutes, and reading is timeboxed instead of "finish the level".
 const STEP_NAMES = ["Warm-up", "Main quest", "Lock it in"];
-function nextAction(id) { // the next thing to do inside a level: bites first (easy start), then read, boss, quests
+function nextAction(id) { // the next thing to do inside a level: lessons (or bites, for a level without lessons), then read, boss, quests
   const s = levelStats(id);
-  if (s.seen < s.bitesTotal) return { kind: "bites", left: s.bitesTotal - s.seen };
+  if (s.lessonsTotal && s.parts.read < 1) return { kind: "learn", left: s.lessonsTotal - s.lessonsDone };
+  if (!s.lessonsTotal && s.seen < s.bitesTotal) return { kind: "bites", left: s.bitesTotal - s.seen };
   if (!s.parts.read) return { kind: "read" };
   if (!s.won) return { kind: "boss" };
   return { kind: "quests" };
 }
 function mainStep(id) {
   const m = BY[id], a = nextAction(id), name = `${m.emoji} ${m.label}`;
+  if (a.kind === "learn") { const n = Math.min(2, a.left); return { kind: "learn", counter: "lessons", target: n, min: n * 3, title: `Learn ${n} lesson${n > 1 ? "s" : ""} from ${name}`, why: "Small cards, one idea at a time. About 3 minutes each." }; }
   if (a.kind === "bites") { const n = Math.min(10, a.left); return { kind: "bites", counter: "bites", target: n, min: Math.ceil(n / 3) + 1, title: `Swipe ${n} bites from ${name}`, why: "Bite-size intro to the level. One card at a time." }; }
   if (a.kind === "read") return { kind: "read", counter: "focus", alt: "reads", target: 1, min: 15, title: `Read ${name} for 15 minutes`, why: "The button starts a 15-minute timer. You don't have to finish the level today." };
   if (a.kind === "boss") return { kind: "boss", counter: "quizRight", target: 5, min: 6, title: `Fight ${(C.bosses[id] && C.bosses[id].name) || "the boss"}`, why: "5 correct answers clears the step. Losing still teaches you." };
@@ -367,9 +375,12 @@ function mainStep(id) {
 }
 function buildPlan() {
   const fr = frontier(), due = srsQueue().due.length;
+  const fm = BY[fr], newWords = fm.words && fm.words.length && !(P.wordsOK && P.wordsOK[fr]);
   const warm = due > 0
     ? { id: "warm", kind: "cards", counter: "cards", target: Math.min(due, 10), min: 4, title: `Review ${Math.min(due, 10)} flashcards`, why: "These are the ones you're about to forget. Quick win first." }
-    : { id: "warm", kind: "feed", counter: "bites", target: 5, min: 2, title: "Swipe 5 bites", why: "Two minutes to get rolling. Momentum beats motivation." };
+    : newWords
+      ? { id: "warm", kind: "words", mod: fr, counter: "words", target: 1, min: 1, title: `Meet the key words of ${fm.emoji} ${fm.label}`, why: "Know the words first, and the lessons get easier." }
+      : { id: "warm", kind: "feed", counter: "bites", target: 5, min: 2, title: "Swipe 5 bites", why: "Two minutes to get rolling. Momentum beats motivation." };
   const main = { id: "main", mod: fr, ...mainStep(fr) };
   const lock = warm.kind === "cards"
     ? { id: "lock", kind: "recall", mod: fr, counter: "recall", target: 3, min: 5, title: `Recall 3 answers from ${BY[fr].emoji} ${BY[fr].label}`, why: "Pulling ideas out of your head is what makes them stick." }
@@ -398,6 +409,8 @@ function planState() {
 // or there are no cards left to review today (only once the earlier steps are done, so day one doesn't skip ahead)
 function stepGoalMet(s, prevDone) {
   const m = s.mod && BY[s.mod];
+  if (s.kind === "learn" && m) return levelStats(s.mod).parts.read >= 1;
+  if (s.kind === "words" && m) return !!(P.wordsOK && P.wordsOK[s.mod]);
   if (s.kind === "bites" && m) { const x = levelStats(s.mod); return x.bitesTotal > 0 && x.seen >= x.bitesTotal; }
   if (s.kind === "read" && m) return !!P.read[s.mod];
   if (s.kind === "boss" && m) return !!(P.quiz[s.mod] && P.quiz[s.mod].won);

@@ -172,7 +172,8 @@ const TIPS = {
   map: "This is your route, top to bottom. The glowing node is your next level.",
   cards: "Flip a card, then rate honestly how well you knew it. The app spaces reviews from that.",
   me: "Your stats, badges and settings live here. Nothing you need to do daily.",
-  level: "Each level has tabs. The one marked ▶ is your next step, and it opens first.",
+  level: "Start with Learn: short lessons, one card at a time. The tab marked ▶ is always your next step.",
+  lesson: "Tap Next to move through the cards. At the end there's one quick question.",
 };
 function tipHtml(key) {
   if (!TIPS[key] || (P.tips && P.tips[key])) return "";
@@ -214,9 +215,7 @@ function slideHtml(it, i) {
       <div class="bite-top"><span class="pill">${m.emoji} ${esc(m.label)}</span><span class="pill accent">${esc(b.tag || "concept")}</span><span class="seen-mark" data-seen="${esc(b.id)}">${P.seen[b.id] ? "✓ seen" : ""}</span></div>
       <h2 class="bite-hook">${rich(b.hook)}</h2>
       <p class="bite-body">${rich(b.body)}</p>
-      ${b.example ? `<div class="bite-box ex"><b>🎮 Example</b>${rich(b.example)}</div>` : ""}
-      ${b.f2p ? `<div class="bite-box f2p"><b>📱 F2P</b>${rich(b.f2p)}</div>` : ""}
-      ${b.memory ? `<div class="bite-box mem"><b>🪝 Make it stick</b>${rich(b.memory)}</div>` : ""}
+      ${b.example || b.f2p || b.memory ? `<button class="btn sm ghost bite-more-btn" data-act="bite-more">More: example and F2P ▾</button><div class="stack" hidden>${b.example ? `<div class="bite-box ex"><b>🎮 Example</b>${rich(b.example)}</div>` : ""}${b.f2p ? `<div class="bite-box f2p"><b>📱 F2P</b>${rich(b.f2p)}</div>` : ""}${b.memory ? `<div class="bite-box mem"><b>🪝 Make it stick</b>${rich(b.memory)}</div>` : ""}</div>` : ""}
       <div class="bite-actions">
         <button class="btn sm ${P.got[b.id] ? "go" : "primary"}" data-act="got" data-id="${esc(b.id)}">${P.got[b.id] ? "✓ Got it" : "👍 Got it"}</button>
         <button class="btn sm ghost" data-act="save" data-id="${esc(b.id)}">${P.saved[b.id] ? "★ Saved" : "☆ Save"}</button>
@@ -317,7 +316,7 @@ function viewMap() {
       <button data-act="route" data-route="f2p" aria-pressed="${P.settings.route === "f2p"}">📱 F2P route</button>
       <button data-act="route" data-route="book" aria-pressed="${P.settings.route === "book"}">📖 Book order</button>
     </div></div>
-    <p class="small muted">${P.settings.route === "f2p" ? "Reordered so the most F2P-critical levels come first. Nothing is locked: tap any node." : "The book's own chapter order, with the two DLC levels at the end."} A node fills as you read it, see its bites, beat its boss (70%+) and finish ~40% of its quests. 👑 = boss beaten.</p>
+    <p class="small muted">${P.settings.route === "f2p" ? "Reordered so the most F2P-critical levels come first. Nothing is locked: tap any node." : "The book's own chapter order, with the two DLC levels at the end."} A node fills as you finish its lessons, beat its boss (70%+) and finish about 40% of its quests. 👑 = boss beaten.</p>
   </section>
   <div class="saga" style="height:${H}px">
     <svg viewBox="0 0 100 ${H}" preserveAspectRatio="none" aria-hidden="true"><path d="${d}" vector-effect="non-scaling-stroke"></path></svg>
@@ -341,7 +340,7 @@ function viewMap() {
 
 /* ---------- LEVEL ---------- */
 const levelTab = {};
-const LTABS = [["read", "📖 Read"], ["bites", "🍪 Bites"], ["boss", "⚔️ Boss"], ["quests", "🎯 Quests"], ["cards", "🃏 Cards"], ["recall", "🧠 Recall"]];
+const LTABS = [["read", "📖 Learn"], ["bites", "🍪 Bites"], ["boss", "⚔️ Boss"], ["quests", "🎯 Quests"], ["cards", "🃏 Cards"], ["recall", "🧠 Recall"]];
 const notesCache = {};
 function notesHtml(id) {
   if (notesCache[id]) return notesCache[id];
@@ -363,13 +362,32 @@ function notesHtml(id) {
     span.innerHTML = esc(n.nodeValue).replace(/\b(L(?:0\d|1[0-7])|BX|F2P[12])\b/g, (m) => (BY[m] && m !== id ? `<a class="lv" href="#${m}" title="${esc(BY[m].title)}">${m}</a>` : m));
     n.replaceWith(...span.childNodes);
   }
+  const out = document.createElement("div");
+  let sec = null;
+  for (const node of [...box.childNodes]) {
+    if (node.nodeType === 1 && node.tagName === "H2") {
+      const head = node.textContent.trim();
+      if (/TL;DR|Chapter map/i.test(head)) { sec = "skip"; continue; }
+      sec = document.createElement("details");
+      sec.className = "deep-sec";
+      sec.dataset.head = head.replace(/\s+/g, " ");
+      const sum = document.createElement("summary");
+      sum.innerHTML = node.innerHTML;
+      sec.appendChild(sum);
+      out.appendChild(sec);
+      continue;
+    }
+    if (sec && sec !== "skip") sec.appendChild(node); // text before the first section repeats the level header, so it's dropped
+  }
+  box.innerHTML = "";
+  box.append(...out.childNodes);
   if (formatted) notesCache[id] = box.innerHTML;
   return notesCache[id];
 }
 function viewLevel(id) {
   const s = levelStats(id), m = s.m;
   if (!P.started[id]) { P.started[id] = 1; saveP(); }
-  const rec = nextAction(id).kind;
+  const rec = TAB_FOR[nextAction(id).kind] || "read";
   if (!levelTab[id]) levelTab[id] = rec;
   const tab = levelTab[id];
   return `<section class="lvl-head">
@@ -378,13 +396,14 @@ function viewLevel(id) {
       <p>${rich(m.tagline)}</p>
       <div class="small"><span class="stars" aria-label="F2P relevance ${m.f2pRelevance} of 5">${stars(m.f2pRelevance)}</span> <span class="muted">F2P relevance: ${esc(m.f2pWhy)}</span></div>
       ${meter(s.p)}
-      <div class="small muted mono">${Math.round(s.p * 100)}% · read ${s.parts.read ? "✓" : "–"} · bites ${s.seen}/${s.bitesTotal} · boss ${s.won ? "👑 " : ""}${Math.round(s.best * 100)}% · quests ${s.qd}/${s.qTotal}</div>
+      <div class="small muted mono">${Math.round(s.p * 100)}% · ${s.lessonsTotal ? `lessons ${s.lessonsDone}/${s.lessonsTotal}` : `read ${s.parts.read ? "✓" : "–"}`} · boss ${s.won ? "👑 " : ""}${Math.round(s.best * 100)}% · quests ${s.qd}/${s.qTotal}</div>
       <div class="tabs" role="tablist">${LTABS.map(([k, label]) => `<button role="tab" aria-selected="${tab === k}" class="${k === rec ? "rec" : ""}" data-act="ltab" data-id="${id}" data-tab="${k}">${k === rec ? "▶ " : ""}${label}</button>`).join("")}</div>
     </section>
     <section id="ltab-body">${levelTabHtml(id, tab)}</section>`;
 }
 function levelTabHtml(id, tab) {
   const m = BY[id];
+  if (tab === "read" && lessonsOf(id).length) return learnTabHtml(id);
   if (tab === "read") {
     return `<div class="card">
       <div class="eyebrow">⚡ TL;DR</div>
@@ -461,6 +480,80 @@ function questCard(q, kind) {
     </details>
     <button class="btn sm ${done ? "go" : "primary"}" data-act="quest" data-id="${esc(q.id)}">${done ? "✓ Done (tap to undo)" : "Mark done"}</button>
   </div>`;
+}
+
+/* ---------- LESSONS: one idea per card, learner-paced (tools/LESSONS-PLAYBOOK.md) ---------- */
+const LCARD = { idea: ["💡", "The idea"], how: ["⚙️", "How it works"], see: ["🎮", "See it in a game"], f2p: ["📱", "Use it in F2P"], hook: ["🪝", "Remember it"] };
+const TAB_FOR = { learn: "read", read: "read", bites: "bites", boss: "boss", quests: "quests" };
+// **bold** plus "\n- " bullet lists
+function fmtLesson(t) {
+  const parts = String(t).split("\n- ");
+  return `<p>${rich(parts[0])}</p>${parts.length > 1 ? `<ul>${parts.slice(1).map((x) => `<li>${rich(x)}</li>`).join("")}</ul>` : ""}`;
+}
+let lsn = null; // { mod, i, card, picked, done }
+let deepTarget = null; // notes heading to open after the next render
+function viewLesson(mod, n) {
+  const ls = lessonsOf(mod), i = n - 1, L = ls[i], m = BY[mod];
+  if (!L) return `<section class="card"><p>That lesson doesn't exist.</p><a class="btn" href="#${mod}">Back to ${esc(m.label)}</a></section>`;
+  if (!lsn || lsn.mod !== mod || lsn.i !== i) lsn = { mod, i, card: 0, picked: null, done: false };
+  if (!P.started[mod]) { P.started[mod] = 1; saveP(); }
+  const total = L.cards.length + 1, at = lsn.done ? total : lsn.card;
+  const dots = Array.from({ length: total }, (_, k) => `<i class="${k < at ? "on" : k === at ? "cur" : ""}"></i>`).join("");
+  let body;
+  if (lsn.done) {
+    const nx = i + 1 < ls.length ? i + 1 : -1;
+    body = `<div class="lcard lend pop"><div style="font-size:2.4rem">✅</div><h2 class="h2">Lesson done</h2>
+      <p class="muted">${lsn.picked === L.check.answer ? "You got the check right. That's how it sticks." : "Now you know the right answer. Recalling it next time is what makes it stick."}</p></div>
+      <div class="lnav">${nx >= 0 ? `<a class="btn primary block lgo" href="#learn/${mod}/${nx + 1}">Next lesson: ${esc(ls[nx].title)} →</a>` : `<button class="btn primary block lgo" data-act="ltab" data-id="${mod}" data-tab="boss" data-go="1">All lessons done. Fight the boss ⚔️</button>`}
+      <div class="row"><a class="btn sm ghost" href="#${mod}">Back to ${esc(m.label)}</a>${L.deep.length ? `<button class="btn sm ghost" data-act="deep" data-mod="${mod}" data-head="${esc(L.deep[0])}">📚 Go deeper</button>` : ""}</div></div>`;
+  } else if (lsn.card < L.cards.length) {
+    const c = L.cards[lsn.card], [emo, lab] = LCARD[c.t] || ["💡", ""];
+    body = `<div class="lcard lcard-${c.t}"><div class="lcard-lab">${emo} ${lab}</div><div class="lcard-text">${fmtLesson(c.text)}</div></div>
+      <div class="lnav row">${lsn.card > 0 ? `<button class="btn ghost" data-act="lback">←</button>` : ""}<button class="btn primary lgo" data-act="lnext">${lsn.card + 1 < L.cards.length ? "Next" : "Quick check"} →</button></div>`;
+  } else {
+    const ck = L.check, picked = lsn.picked;
+    body = `<div class="lcard lcheck"><div class="lcard-lab">🎯 Quick check</div><p class="lq">${rich(ck.q)}</p>
+      <div class="opts">${ck.options.map((o, k) => `<button class="opt ${picked == null ? "" : k === ck.answer ? "right" : k === picked ? "wrong" : ""}" data-act="lcheck" data-k="${k}" ${picked == null ? "" : "disabled"}>${rich(o)}</button>`).join("")}</div>
+      ${picked == null ? "" : `<p class="why ${picked === ck.answer ? "" : "bad"}">${picked === ck.answer ? "✅ " : "❌ "}${rich(ck.why)}</p>`}</div>
+      <div class="lnav row"><button class="btn ghost" data-act="lback">←</button>${picked == null ? "" : `<button class="btn primary lgo" data-act="ldone">Finish lesson ✓</button>`}</div>`;
+  }
+  return `<section class="lesson">
+    <div class="row between"><a class="btn sm ghost" href="#${mod}">← ${esc(m.emoji)} ${esc(m.label)}</a><span class="mono small muted">Lesson ${n} of ${ls.length} · ~${L.min} min</span></div>
+    <div class="ldots" aria-hidden="true">${dots}</div>
+    <h1 class="ltitle">${esc(L.title)}</h1>
+    ${body}
+  </section>`;
+}
+function learnTabHtml(id) {
+  const m = BY[id], ls = lessonsOf(id), done = ls.filter(lessonDone).length, nx = nextLessonIdx(id);
+  const left = ls.filter((l) => !lessonDone(l)).reduce((a, l) => a + l.min, 0);
+  const wordsOK = P.wordsOK && P.wordsOK[id];
+  return `<div class="card learn-head">
+      <div class="row between"><b>${done} of ${ls.length} lessons done</b><span class="small muted">${left ? `~${left} min left` : "complete"}</span></div>
+      ${meter(ls.length ? done / ls.length : 0)}
+      ${nx >= 0 ? `<a class="btn primary block lgo" href="#learn/${id}/${nx + 1}">${done ? "Continue" : "Start"}: ${esc(ls[nx].title)} →</a>` : `<p>All lessons done. Lock it in with the boss fight.</p><button class="btn primary" data-act="ltab" data-id="${id}" data-tab="boss">⚔️ Fight the boss</button>`}
+    </div>
+    ${m.words.length ? `<details class="card words" ${wordsOK ? "" : "open"}><summary><b>🔤 Words you'll meet</b> <span class="small muted">${m.words.length} words · 1 min</span></summary>
+      <dl class="wlist">${m.words.map((w) => `<div><dt>${esc(w.w)}</dt><dd>${esc(w.d)}</dd></div>`).join("")}</dl>
+      ${wordsOK ? "" : `<button class="btn sm go" data-act="wordsok" data-id="${id}">✓ Got these words</button>`}</details>` : ""}
+    <div class="card"><div class="eyebrow">Lessons</div>
+      <ol class="llist">${ls.map((l, k) => `<li><a class="lrow ${lessonDone(l) ? "done" : ""} ${k === nx ? "next" : ""}" href="#learn/${id}/${k + 1}"><span class="lnum">${lessonDone(l) ? "✓" : k + 1}</span><span class="ltt">${esc(l.title)}</span><span class="small muted">${l.min}m</span></a></li>`).join("")}</ol>
+    </div>
+    <details class="card"><summary><b>⚡ The level in 30 seconds</b></summary><ul class="stack" style="margin:8px 0 0;padding-left:1.2em">${m.tldr.map((t) => `<li>${rich(t)}</li>`).join("")}</ul></details>
+    <details class="card deep" id="deep-notes"><summary><b>📚 Full notes</b> <span class="small muted">every detail from the book, section by section</span></summary>
+      <div class="prose">${notesHtml(id)}</div>
+      ${P.read[id] ? `<p class="small"><b>✓ Marked as read.</b></p>` : `<p class="small muted">Read the full notes instead of the lessons? You can claim the level here.</p><button class="btn sm" data-act="mark-read" data-id="${id}">✓ Mark as read · +40 XP</button>`}
+    </details>`;
+}
+// Opens the notes section a lesson came from (Go deeper)
+function openDeep() {
+  if (!deepTarget) return;
+  const wrap = $("#deep-notes");
+  const sec = $$("details.deep-sec").find((d) => d.dataset.head === deepTarget);
+  deepTarget = null;
+  if (!wrap || !sec) return;
+  wrap.open = true; sec.open = true;
+  sec.scrollIntoView({ block: "start" });
 }
 
 /* ---------- BOSS FIGHT ---------- */
@@ -568,7 +661,7 @@ function endFight(dead) {
 }
 function refreshLevelTab() {
   const body = $("#ltab-body");
-  if (body && BY[current]) body.innerHTML = levelTabHtml(current, levelTab[current] || nextAction(current).kind);
+  if (body && BY[current]) body.innerHTML = levelTabHtml(current, levelTab[current] || TAB_FOR[nextAction(current).kind] || "read");
 }
 
 /* ---------- CARDS (SRS session) ---------- */
@@ -721,20 +814,22 @@ function renderGate() {
 /* ---------- router ---------- */
 function render() {
   renderGate();
-  const h = (location.hash || "#today").slice(1);
-  current = BY[h] ? h : ["today", "feed", "map", "cards", "me"].includes(h) ? h : "today";
-  const tabKey = BY[current] ? "map" : current;
+  const h = decodeURIComponent((location.hash || "#today").slice(1));
+  const lm = h.match(/^learn\/([A-Za-z0-9]+)\/(\d+)$/);
+  current = lm && BY[lm[1]] ? "lesson" : BY[h] ? h : ["today", "feed", "map", "cards", "me"].includes(h) ? h : "today";
+  const tabKey = BY[current] || current === "lesson" ? "map" : current;
   $$(".tab").forEach((t) => t.setAttribute("aria-current", t.dataset.tab === tabKey ? "page" : "false"));
   const mainEl = $("#main");
   mainEl.classList.toggle("full", current === "feed");
   if (current !== "feed" && feed.obs) { feed.obs.disconnect(); feed.obs = null; }
   if (current === "feed") { mainEl.innerHTML = viewFeed(); mountFeed(); }
   else {
-    const html = current === "today" ? viewToday() : current === "map" ? viewMap() : current === "cards" ? viewCards() : current === "me" ? viewMe() : viewLevel(current);
+    const html = current === "lesson" ? viewLesson(lm[1], +lm[2]) : current === "today" ? viewToday() : current === "map" ? viewMap() : current === "cards" ? viewCards() : current === "me" ? viewMe() : viewLevel(current);
     mainEl.innerHTML = `<div class="view" id="view">${tipHtml(BY[current] ? "level" : current)}${html}</div>`;
   }
   if (current === "feed" && !(P.tips && P.tips.feed)) { P.tips = { ...(P.tips || {}), feed: 1 }; saveP(); later(() => toast("Swipe up for the next bite. Tap 👍 when it clicks."), 400); }
   if (current === "today") { const n = $("#nudge"); if (n) n.hidden = true; }
+  if (deepTarget) later(openDeep, 30);
   renderHud();
 }
 let lastHash = location.hash;
@@ -799,7 +894,7 @@ const ACT = {
     else { P.cap[c.id] = dkey(); saveP(); gain(c.xp, "Capstone milestone"); confetti(40); }
     render();
   },
-  ltab: (t) => { levelTab[t.dataset.id] = t.dataset.tab; if (fight && t.dataset.tab !== "boss") fight = null; render(); },
+  ltab: (t) => { levelTab[t.dataset.id] = t.dataset.tab; if (fight && t.dataset.tab !== "boss") fight = null; if (t.dataset.go) location.hash = "#" + t.dataset.id; else render(); },
   "mark-read": (t) => { const id = t.dataset.id; if (P.read[id]) return; P.read[id] = dkey(); bump("reads"); gain(40, "Level read"); confetti(); render(); },
   quest: (t) => {
     const q = QUEST[t.dataset.id];
@@ -851,12 +946,35 @@ const ACT = {
     try { await Sync.fb.signIn(); } finally { if (t.isConnected) { t.disabled = false; t.textContent = "Sign in with Google"; } }
   },
   reload: () => location.reload(),
+  lnext: () => { if (!lsn) return; lsn.card++; render(); $("#main").scrollTop = 0; },
+  lback: () => { if (!lsn || lsn.card === 0) return; lsn.card--; render(); },
+  lcheck: (t) => { if (!lsn || lsn.picked != null) return; lsn.picked = +t.dataset.k; render(); },
+  ldone: () => {
+    if (!lsn) return;
+    const L = lessonsOf(lsn.mod)[lsn.i];
+    if (!L) return;
+    lsn.done = true;
+    if (!lessonDone(L)) {
+      P.lessons = { ...(P.lessons || {}), [L.id]: dkey() };
+      P.started[lsn.mod] = 1;
+      bump("lessons");
+      gain(lsn.picked === L.check.answer ? 15 : 10, "Lesson done");
+      confetti(18);
+    }
+    render();
+    $("#main").scrollTop = 0;
+  },
+  deep: (t) => { levelTab[t.dataset.mod] = "read"; deepTarget = t.dataset.head; if (location.hash === "#" + t.dataset.mod) render(); else location.hash = "#" + t.dataset.mod; },
+  wordsok: (t) => { const id = t.dataset.id; P.wordsOK = { ...(P.wordsOK || {}), [id]: dkey() }; bump("words"); gain(5, "Words learned"); render(); },
+  "bite-more": (t) => { const box = t.nextElementSibling; if (box) { box.hidden = false; t.remove(); } },
   step: (t) => {
     const st = planState(), s = st && st.steps.find((x) => x.id === t.dataset.id);
     if (!s) return;
     if (s.kind === "feed") { feed.mode = "mix"; location.hash = "#feed"; }
     else if (s.kind === "bites") { feed.mode = s.mod; location.hash = "#feed"; }
     else if (s.kind === "cards") location.hash = "#cards";
+    else if (s.kind === "learn") { const i = nextLessonIdx(s.mod); location.hash = i >= 0 ? `#learn/${s.mod}/${i + 1}` : "#" + s.mod; }
+    else if (s.kind === "words") { levelTab[s.mod] = "read"; location.hash = "#" + s.mod; }
     else { levelTab[s.mod] = s.kind; if (s.kind === "read" && !focus) startFocus(15); location.hash = "#" + s.mod; }
   },
   "tip-ok": (t) => { P.tips = { ...(P.tips || {}), [t.dataset.k]: 1 }; saveP(); t.closest(".tip")?.remove(); },
@@ -897,6 +1015,11 @@ document.addEventListener("input", (e) => {
   if (t.dataset && t.dataset.draft) { clearTimeout(draftT); draftT = setTimeout(() => LS.raw("lus.draft." + t.dataset.draft, t.value), 400); }
 });
 document.addEventListener("keydown", (e) => {
+  if (current === "lesson" && lsn && !e.target.closest("textarea,input,select")) {
+    if (e.key === "ArrowRight" && !lsn.done && lsn.card < lessonsOf(lsn.mod)[lsn.i].cards.length) { e.preventDefault(); ACT.lnext(); }
+    else if (e.key === "ArrowLeft") { e.preventDefault(); ACT.lback(); }
+    return;
+  }
   if (current !== "cards" || !sess || e.target.closest("textarea,input,select")) return;
   if ((e.key === " " || e.key === "Enter") && !sess.flipped) { e.preventDefault(); ACT.flip(); }
   else if (sess.flipped && !sess.cram && ["1", "2", "3", "4"].includes(e.key)) { e.preventDefault(); sessRate(+e.key - 1); }
