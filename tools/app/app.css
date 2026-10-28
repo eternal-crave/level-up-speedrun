@@ -560,8 +560,8 @@ a, button, select, summary, .tab, [data-act] { touch-action: manipulation; -webk
 .bookv-add { max-width: 30rem; margin: 0 auto; }
 /* lesson diagrams: original SVGs in data/figs, coloured by theme tokens */
 .lfig { margin: 4px 0 0; padding: 10px; background: var(--card-2); border: 1.5px solid var(--line); border-radius: var(--r-sm); }
-.lfig svg { display: block; width: 100%; height: auto; max-height: 17rem; font-family: var(--f-body); }
-.lfig text { fill: var(--ink-2); font-size: 12px; }
+/* defaults are inherited, not set on <text>, so a fill or font-size written in the SVG (an emoji icon, white text on a dot) still wins */
+.lfig svg { display: block; width: 100%; height: auto; max-height: 17rem; font-family: var(--f-body); fill: var(--ink-2); font-size: 12px; }
 .lfig .t-ink { fill: var(--ink); font-weight: 700; }
 .lfig .t-acc { fill: var(--accent); font-weight: 700; }
 .lfig .t-hot { fill: var(--hot); font-weight: 700; }

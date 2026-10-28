@@ -58,7 +58,7 @@ Each module has one file: `data/lessons/<MOD>.json`. The format is described in 
 
 ### Card types
 
-The app shows each type with its own label ([views.js:486](../tools/app/views.js#L486)).
+The app shows each type with its own label ([views.js:490](../tools/app/views.js#L490)).
 
 | Type | Label in the app | What it holds | Cards |
 |---|---|---|---|
@@ -77,18 +77,18 @@ The other 12 lessons have no `see` card.
 
 ### "Words you'll meet" (pre-training)
 
-Each module starts with a list of 6 to 8 key words with plain meanings. The app shows it on the Learn tab before lesson 1 ([views.js:642-644](../tools/app/views.js#L642-L644)).
+Each module starts with a list of 6 to 8 key words with plain meanings. The app shows it on the Learn tab before lesson 1 ([views.js:646-648](../tools/app/views.js#L646-L648)).
 The list stays open until you tap "✓ Got these words". On a new level, the Today plan makes this the warm-up step.
 
 There are 143 entries in total, with 126 different words. Words like "FTUE" and "GDD" are taught again in each module that needs them.
 
 ### The end-of-lesson check
 
-Every lesson ends with "🎯 Quick check" ([views.js:513-518](../tools/app/views.js#L513-L518)).
+Every lesson ends with "🎯 Quick check" ([views.js:517-522](../tools/app/views.js#L517-L522)).
 
 - You pick one of 3 options. The order is shuffled (see [QUALITY-GATES.md](QUALITY-GATES.md#fair-quizzes)).
 - The app marks your pick right or wrong and shows the `why` sentence.
-- A wrong answer still finishes the lesson. You get 15 XP if you were right and 10 XP if not ([views.js:1075](../tools/app/views.js#L1075)).
+- A wrong answer still finishes the lesson. You get 15 XP if you were right and 10 XP if not ([views.js:1079](../tools/app/views.js#L1079)).
 - The done screen says: "Now you know the right answer. Recalling it next time is what makes it stick."
 
 This makes a mistake part of learning, not a failure.
@@ -97,9 +97,9 @@ This makes a mistake part of learning, not a failure.
 
 The `deep` field holds part of a `## ` heading from the notes. The build finds the full heading ([build.mjs:117-120](../tools/build.mjs#L117-L120)).
 
-- On the done screen, "📚 Go deeper" opens the Learn tab at that notes section ([views.js:508](../tools/app/views.js#L508)).
-- The notes are split into closed sections, one per heading ([views.js:345-386](../tools/app/views.js#L345-L386)).
-- `openDeep()` opens only the section you asked for and scrolls to it ([views.js:655-663](../tools/app/views.js#L655-L663)).
+- On the done screen, "📚 Go deeper" opens the Learn tab at that notes section ([views.js:512](../tools/app/views.js#L512)).
+- The notes are split into closed sections, one per heading ([views.js:348-389](../tools/app/views.js#L348-L389)).
+- `openDeep()` opens only the section you asked for and scrolls to it ([views.js:659-667](../tools/app/views.js#L659-L667)).
 
 All 307 lessons have a `deep` link, and all of them match a heading.
 
@@ -173,12 +173,12 @@ Counted over all 21 files in `data/lessons/`:
 
 ## How it is shown in the app
 
-- Route `#learn/<MOD>/<n>` opens `viewLesson()` ([views.js:495-527](../tools/app/views.js#L495-L527)).
+- Route `#learn/<MOD>/<n>` opens `viewLesson()` ([views.js:499-531](../tools/app/views.js#L499-L531)).
 - Dots at the top show the cards plus the check, so you always see how much is left.
 - The header says "Lesson n of N · ~3 min".
 - "Next →" moves on. "←" goes back, but only after the first card. The arrow keys also work.
 - On the last card the button changes to "Quick check →".
-- `fmtLesson()` turns `**bold**` into bold text and `\n- ` into a list ([views.js:489-492](../tools/app/views.js#L489-L492)).
+- `fmtLesson()` turns `**bold**` into bold text and `\n- ` into a list ([views.js:493-496](../tools/app/views.js#L493-L496)).
 
 ## How to reuse this
 

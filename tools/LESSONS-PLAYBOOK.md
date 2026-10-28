@@ -1,8 +1,8 @@
 # Lessons playbook (plain-language layer)
 
-**Why:** 2026-10-28 the learner (ADHD, non-native English reader) opened the app four times and couldn't follow the notes. Each level was one 35–106 KB scroll of nested bullets, footnotes, citations and bold on every line. Bites were better but still showed 4–5 boxes at once and sometimes opened with trivia.
+**Why:** 2026-10-28 the learner (ADHD, non-native English reader) opened the app four times and couldn't follow the notes. Each level was one 31–111 KB scroll of nested bullets, footnotes, citations and bold on every line. Bites were better but still showed 4–5 boxes at once and sometimes opened with trivia.
 
-**Fix:** a lesson layer on top of the existing material. One lesson per book section (236 in total). The learner taps through small cards, one idea per card, in plain English. The full notes stay as "Go deeper", so no knowledge is lost.
+**Fix:** a lesson layer on top of the existing material. One lesson per book section (307 in total, including the two F2P modules). The learner taps through small cards, one idea per card, in plain English. The full notes stay as "Go deeper", so no knowledge is lost.
 
 ## Data format: `data/lessons/<MOD>.json`
 ```json
@@ -23,8 +23,8 @@
 - `**bold**` is allowed for the one key term per card. `\n- ` starts a short list (max 4 items).
 
 ## Writing rules
-1. **Plain English, B1 level.** Short sentences (about 15 words max). Common words. No idioms, no cultural references the reader must already know.
-2. **One idea per card, max ~45 words.** If it needs more, it's two cards or it goes to Go deeper.
+1. **Plain English, B1 level.** Short sentences (about 15 words on average, never over 25). Common words. No idioms, no cultural references the reader must already know.
+2. **One idea per card, aim for 45 words or less** (the build warns over 60). If it needs more, it's two cards or it goes to Go deeper.
 3. **Explain every term the first time** ("**FTUE** (first-time user experience: the first minutes of play)").
 4. **Concrete before abstract.** Use games a mobile player knows (Candy Crush, Royal Match, Clash Royale, Brawl Stars, Subway Surfers, Pokémon GO, Genshin Impact, Monopoly GO!) plus the book's own example when it helps.
 5. **Keep the knowledge, drop the trivia.** Names, years, citations, footnotes and picture descriptions live in Go deeper, unless the name itself is the lesson.
@@ -34,10 +34,10 @@
 9. Merge tiny sections (acknowledgments, short asides) into a neighbour lesson. Skip pure book housekeeping.
 10. Faithful to the notes: paraphrase, never copy book text.
 
-11. **Lint limits (enforced by build):** average sentence ~15 words, none over 25; each card ≤ 60 words; 3–5 cards; check has 3 options.
+11. **Lint limits (checked by the build):** average sentence 15 words or less per lesson, none over 25; each card ≤ 60 words; 3–5 cards; check has 3 options. Style limits are warnings; structure errors (first card not an idea, malformed check, Go deeper heading not found, missing figure, bad book page) stop the build before it writes anything.
 12. **Check options are all believable and about the same length.** The right answer must not stand out by being longer or more specific; build warns when it is over 1.2× the longest wrong option. Store the right answer at index 0; the app shuffles the order.
-12. **Talk to the reader as "you"** (conversational style).
-13. **No idioms, few phrasal verbs, no "e.g."/"i.e." or slashes like "and/or".** Write "for example" and "or".
+13. **Talk to the reader as "you"** (conversational style).
+14. **No idioms, few phrasal verbs, no "e.g."/"i.e." or slashes like "and/or".** Write "for example" and "or".
 
 ## Research behind the rules (checked 2026-10-28)
 - **Plain language:** one idea per sentence, main idea first, average 15 words and max 25 per sentence, bullets for 3+ items, short one-topic paragraphs. Sources: [Digital.gov plain language guide](https://digital.gov/guides/plain-language/writing/clear-short), [archived plainlanguage.gov sentence guidance](https://cybercemetery.unt.edu/oilspill/20121007091104mp_/http:/www.plainlanguage.gov/howto/guidelines/bigdoc/writeShortSent.cfm), [Australian Government Style Manual](https://www.stylemanual.gov.au/style-manual-resources/government-writing-handbook/editors-tips/sentence-length), [Texas TDI checklist](https://tdi.texas.gov/commissioner/plain-language-checklist.html).
@@ -87,5 +87,6 @@ L00, L01, L02, L04, F2P1, L13, L12, L09, L08, L07, L05, L06, L10, L11, L14, F2P2
 - [x] Rewrote wrong answers in 157 checks so length no longer gives the answer away (lint rule added)
 - [x] Final quality pass: tightened the length rule to 1.2× and evened out 92 more checks (lint clean)
 - [x] Diagrams (26 so far): cards can carry `"fig": "<name>"` → `data/figs/<name>.svg` (original drawings, themed by `.lfig` classes in app.css, 320px-wide viewBox, phone-checked). First 10: story-beats, weird-triangle, sawtooth, thumb-zone, liveops-rhythm, loops, pity-tail, rule-thirds, pass-rhythm, slice-layer. The book's own illustrations are NOT copied (copyright; the repo is public).
-- [x] Your-own-book viewer: lessons carry `"book": <printed page>` (PDF page = printed + 24; matched by TF-IDF against each chapter's pages, F2P-only and weak matches skipped, ~240 lessons). The user picks their PDF once per device; it stays in IndexedDB (memory fallback), PDF.js 3.11.174 from cdnjs renders one page. Never uploaded or synced; `*.pdf` is git-ignored.
+- [x] Your-own-book viewer: lessons carry `"book": <printed page>` (PDF page = printed + 24; matched by TF-IDF against each chapter's pages, F2P-only and weak matches skipped, 222 lessons; script: `tools/book-pages.mjs`). The user picks their PDF once per device; it stays in IndexedDB (memory fallback), PDF.js 3.11.174 from cdnjs renders one page. Never uploaded or synced; `*.pdf` is git-ignored.
 - [x] 16 more diagrams: retention-curve, faucets-sinks, ltv-cpi, level-funnel, ab-split, doc-ladder, power-families, telegraph, jump-phases, sound-priority, cutscene-spectrum, weenie, bracketing, eight-fun, boss-dance, leagues (overflow and label-overlap checked in light and dark)
+- [x] Gap fixes after writing `design/`: problems now stop the build before it writes anything (exit 1); new warnings for "check has N options" and "average sentence over 15"; numbers above corrected (31–111 KB, 307 lessons, 222 book pages); rules renumbered 1–14; diagram defaults moved from `.lfig text` to `.lfig svg` so sizes and colours inside an SVG win; `tools/check-figs.mjs` (label spill and overlap check, 26/26 ok) and `tools/book-pages.mjs` (TF-IDF page matcher, reproduces all 222 pages) added; dead daily-quest table removed; level tab survives a reload

@@ -8,7 +8,7 @@ The steps are in [LESSONS-PLAYBOOK.md:56-60](../tools/LESSONS-PLAYBOOK.md#L56-L6
 
 1. **Read the source.** `node tools/digest.mjs <MOD>` prints a short digest of the module's notes. It shows each section's big idea, F2P lines, memory hook and top-level bullets, then the bites.
 2. **Write the lessons.** Create `data/lessons/<MOD>.json` using the format and rules in [READABILITY.md](READABILITY.md).
-3. **Build and check.** Run `node tools/build.mjs`. Read the warnings and problems (see [QUALITY-GATES.md](QUALITY-GATES.md)).
+3. **Build and check.** Run `node tools/build.mjs`. Problems stop the build; fix them and run it again. Then read the warnings (see [QUALITY-GATES.md](QUALITY-GATES.md)).
 4. **Commit and push.** One commit per module, like "Add plain-language lessons for Level 11 (enemies and bosses)".
 5. **Log it.** Tick the module in the progress log ([LESSONS-PLAYBOOK.md:62-91](../tools/LESSONS-PLAYBOOK.md#L62-L91)).
 6. **Republish.** Every few modules, republish the claude.ai artifact.
@@ -72,6 +72,9 @@ Notes for anyone working here:
 - **Do not put documents in `docs/`.** GitHub Pages serves that folder. That is why this documentation lives in `design/`.
 - **The build rewrites files** at the repo root and in `app/`, `anki/` and `docs/`. Commit its output together with the change that caused it.
 - **Preview the site** with `node tools/serve.mjs 5178 docs`.
+- **Check diagrams** with `node tools/check-figs.mjs` (see [VISUALS-AND-BOOK.md](VISUALS-AND-BOOK.md#checks-for-overflowing-and-overlapping-labels)).
+- **Find book pages** with `node tools/book-pages.mjs <book.txt>` (see [VISUALS-AND-BOOK.md](VISUALS-AND-BOOK.md#how-a-lesson-knows-its-page)).
+- **Two sessions in one folder.** If another session edits the same files, commit only your own changes, and let one session rebuild `docs/` and `app/`.
 
 ## Publishing
 

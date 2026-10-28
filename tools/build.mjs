@@ -118,12 +118,15 @@ for (const m of modules) {
     // stored as the heading's plain text, the way the rendered notes show it
     const deepHeads = deep.map((d) => heads.find((h) => h.toLowerCase().includes(d.toLowerCase()))).filter(Boolean).map((h) => h.replace(/[*_`]/g, "").replace(/\s+/g, " ").trim());
     if (deep.length && deepHeads.length !== deep.length) problems.push(`${where}: Go deeper "${deep.join(" / ")}" matches no notes heading`);
+    if (Array.isArray(ck.options) && ck.options.length !== 3) lessonWarn.push(`${where}: check has ${ck.options.length} options (use 3)`);
+    let sw = 0, sn = 0;
     for (const c of cards) {
       const n = wordsOf(c.text);
       if (n > 60) lessonWarn.push(`${where} [${c.t}]: ${n} words (max 60)`);
-      for (const sent of String(c.text).replace(/\*\*/g, "").replace(/\n- /g, ". ").replace(/\n/g, ". ").split(/(?<=[.!?:]["”']?)\s+/)) { const k = wordsOf(sent); if (k > 25) lessonWarn.push(`${where} [${c.t}]: ${k}-word sentence: "${sent.slice(0, 60)}…"`); }
+      for (const sent of String(c.text).replace(/\*\*/g, "").replace(/\n- /g, ". ").replace(/\n/g, ". ").split(/(?<=[.!?:]["”']?)\s+/)) { const k = wordsOf(sent); if (k) { sw += k; sn++; } if (k > 25) lessonWarn.push(`${where} [${c.t}]: ${k}-word sentence: "${sent.slice(0, 60)}…"`); }
       if (/\be\.g\.|\bi\.e\.|\band\/or\b/i.test(c.text)) lessonWarn.push(`${where} [${c.t}]: avoid e.g./i.e./and-or`);
     }
+    if (sn && sw / sn > 15) lessonWarn.push(`${where}: average sentence ${(sw / sn).toFixed(1)} words (aim for 15 or less)`);
     // optional diagram: "fig": "<name>" inlines data/figs/<name>.svg (themed by app.css classes)
     const figOf = (c) => {
       if (!c.fig) return undefined;
@@ -137,6 +140,8 @@ for (const m of modules) {
   }
 }
 if (lessonWarn.length) console.log("lesson style warnings:\n  " + lessonWarn.join("\n  "));
+// structure problems stop the build before anything is written, so a broken course never reaches docs/ or the artifact
+if (problems.length) { console.error("PROBLEMS (nothing was written):\n- " + problems.join("\n- ")); process.exit(1); }
 modules.sort((a, b) => a.order - b.order);
 const ids = new Set(modules.map((m) => m.id));
 const COURSE = {
@@ -244,4 +249,3 @@ wr("ROADMAP.md", rm);
 const tot = (k) => modules.reduce((a, m) => a + (k === "bites" ? m.sections.reduce((x, s) => x + s.bites.length, 0) : m[k].length), 0);
 console.log(`modules ${modules.length} | bites ${tot("bites")} | cards ${tot("flashcards")} | quiz ${tot("quiz")} | side ${tot("sideQuests")} | main ${tot("mainQuests")} | labs ${tot("playLabs")} | truths ${tot("truths")}`);
 console.log(`app ${(fs.statSync(path.join(ROOT, "app/level-up-speedrun.html")).size / 1024).toFixed(0)} KB`);
-if (problems.length) console.log("PROBLEMS:\n- " + problems.join("\n- "));

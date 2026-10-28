@@ -339,7 +339,10 @@ function viewMap() {
 }
 
 /* ---------- LEVEL ---------- */
-const levelTab = {};
+// the open tab per level survives a reload (phones often reload a background tab), but a new visit starts at the recommended one
+const KEY_TABS = "lus.tabs";
+const levelTab = (() => { try { return JSON.parse(sessionStorage.getItem(KEY_TABS) || "{}"); } catch { return {}; } })();
+const saveTabs = () => { try { sessionStorage.setItem(KEY_TABS, JSON.stringify(levelTab)); } catch { /* storage blocked */ } };
 const LTABS = [["read", "📖 Learn"], ["bites", "🍪 Bites"], ["boss", "⚔️ Boss"], ["quests", "🎯 Quests"], ["cards", "🃏 Cards"], ["recall", "🧠 Recall"]];
 const notesCache = {};
 function notesHtml(id) {
@@ -390,6 +393,7 @@ function viewLevel(id) {
   const rec = TAB_FOR[nextAction(id).kind] || "read";
   if (!levelTab[id]) levelTab[id] = rec;
   const tab = levelTab[id];
+  saveTabs();
   return `<section class="lvl-head">
       <div class="row between"><a class="btn sm ghost" href="#map">← Map</a><span class="pill">${m.kind === "dlc" ? "🧩 DLC · not from the book" : "📖 Book pp. " + esc(m.bookPages)}</span></div>
       <div class="row" style="align-items:flex-start;flex-wrap:nowrap"><div class="lvl-emoji">${m.emoji}</div><div style="min-width:0"><div class="eyebrow">${esc(m.label)} · ⏱ ~${m.minutes} min</div><h1 class="h2">${esc(m.title)}</h1></div></div>
@@ -856,7 +860,7 @@ function viewMe() {
       <div class="badges">${BADGES.map((b) => `<div class="badge-tile ${P.badges[b.id] ? "got" : ""}"><span class="emo">${b.emo}</span><b>${esc(b.name)}</b><small>${esc(b.desc)}</small></div>`).join("")}</div></section>
     <section class="card"><div class="eyebrow">🩻 Design X-Ray: this app is a F2P game, on purpose</div>
       <p class="small">Every hook here is a real retention or monetization mechanic, pointed at learning instead of your wallet. Feel each one working on you; that's free field research.</p>
-      ${Object.entries({ streak: "🔥 Streak", daily: "📋 Daily quests", chest: "🎁 Daily chest", xp: "📈 XP & levels", map: "🗺️ Saga map", boss: "❤️ Hearts & revive", feed: "📱 Infinite feed", badges: "🏅 Badges" }).map(([k, l]) => `<details><summary><b>${l}</b></summary><p class="small" style="padding:6px 0">${esc(XRAY[k])}</p></details>`).join("")}
+      ${Object.entries({ streak: "🔥 Streak", daily: "📋 Today's run", chest: "🎁 Daily chest", xp: "📈 XP & levels", map: "🗺️ Saga map", boss: "❤️ Hearts & revive", feed: "📱 Infinite feed", badges: "🏅 Badges" }).map(([k, l]) => `<details><summary><b>${l}</b></summary><p class="small" style="padding:6px 0">${esc(XRAY[k])}</p></details>`).join("")}
     </section>
     <section class="card"><div class="eyebrow">Settings</div>
       <div class="grid2">
@@ -1100,6 +1104,7 @@ const ACT = {
     try { for (const k of Object.keys(localStorage)) if (k.startsWith("lus.draft.")) localStorage.removeItem(k); } catch { /* storage blocked */ }
     sess = null; fight = null; if (focus) stopFocus();
     for (const k of Object.keys(levelTab)) delete levelTab[k];
+    saveTabs();
     P = freshP(); R = freshR(); saveP(); saveR();
     clearTimeout(Sync.t); flushSync(); // push the empty save to the account now, not in 2.5 s
     toast("Progress deleted. New game!");

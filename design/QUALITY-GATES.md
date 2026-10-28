@@ -4,17 +4,19 @@ Rules only help if they are checked. This page explains what the build checks in
 
 ## How the checks run
 
-Run `node tools/build.mjs`. The lesson checks are in [build.mjs:93-139](../tools/build.mjs#L93-L139).
+Run `node tools/build.mjs`. The lesson checks are in [build.mjs:93-142](../tools/build.mjs#L93-L142).
 
 The build sorts what it finds into two lists:
 
-- **Warnings** are style problems. They print as `lesson style warnings:` ([build.mjs:139](../tools/build.mjs#L139)).
-- **Problems** are structure errors. They print at the end as `PROBLEMS:` ([build.mjs:247](../tools/build.mjs#L247)).
+- **Warnings** are style problems. They print as `lesson style warnings:` ([build.mjs:142](../tools/build.mjs#L142)).
+- **Problems** are structure errors. They print as `PROBLEMS (nothing was written):` and stop the build ([build.mjs:144](../tools/build.mjs#L144)).
 
 Every message starts with the module, the lesson number and the lesson id, like `lessons/L11 #8 L11-l08`.
 
-> **Important:** neither list stops the build. The build writes all its output files first and always exits with code 0.
-> So read the output after each build. A future improvement would be to exit with an error when there are problems.
+> **Problems stop the build.** The build prints the list and exits with code 1. It does this before it writes a single file ([build.mjs:144](../tools/build.mjs#L144)).
+> So a broken course never reaches `docs/` or the artifact. Warnings do not stop the build, so read them after each run.
+>
+> Before 2026-10-28 the build printed problems at the very end and still exited with code 0.
 
 ## Every check
 
@@ -24,34 +26,33 @@ Every message starts with the module, the lesson number and the lesson id, like 
 | Each lesson has an id, and no id repeats | | error (the lesson is skipped) | [108](../tools/build.mjs#L108) |
 | The first card is an `idea` card | | error | [111](../tools/build.mjs#L111) |
 | Number of cards | fewer than 3 or more than 5 | warning | [112](../tools/build.mjs#L112) |
+| Number of check options | not exactly 3 | warning | [121](../tools/build.mjs#L121) |
 | The check is well formed | a question, at least 2 options, an answer index in range | error | [114](../tools/build.mjs#L114) |
 | The right answer is not much longer | more than 1.2 times the longest wrong option, in characters | warning | [115-116](../tools/build.mjs#L115-L116) |
 | Every "Go deeper" link matches a notes heading | | error | [117-120](../tools/build.mjs#L117-L120) |
-| Card length | more than 60 words | warning | [123](../tools/build.mjs#L123) |
-| Sentence length | more than 25 words | warning | [124](../tools/build.mjs#L124) |
-| Banned forms | "e.g.", "i.e." or "and/or" | warning | [125](../tools/build.mjs#L125) |
-| The diagram file exists | `data/figs/<name>.svg` | error | [131](../tools/build.mjs#L131) |
-| The book page is a real page number | a whole number from 1 to 499 | error | [135](../tools/build.mjs#L135) |
+| Card length | more than 60 words | warning | [125](../tools/build.mjs#L125) |
+| Sentence length | more than 25 words | warning | [126](../tools/build.mjs#L126) |
+| Banned forms | "e.g.", "i.e." or "and/or" | warning | [127](../tools/build.mjs#L127) |
+| Average sentence length in a lesson | more than 15 words | warning | [129](../tools/build.mjs#L129) |
+| The diagram file exists | `data/figs/<name>.svg` | error | [134](../tools/build.mjs#L134) |
+| The book page is a real page number | a whole number from 1 to 499 | error | [138](../tools/build.mjs#L138) |
 
 ### How words and sentences are counted
 
 - **Words** ([build.mjs:96](../tools/build.mjs#L96)): bold marks are removed, then the build counts runs of letters, numbers, apostrophes and hyphens.
-- **Sentences** ([build.mjs:124](../tools/build.mjs#L124)): each list item counts as its own sentence. A colon also ends a sentence. So "How it works:" followed by a list never counts as one long sentence.
+- **Sentences** ([build.mjs:126](../tools/build.mjs#L126)): each list item counts as its own sentence. A colon also ends a sentence. So "How it works:" followed by a list never counts as one long sentence.
 
 Cards with an unknown type are dropped without a message ([build.mjs:110](../tools/build.mjs#L110)). Check your spelling of `idea`, `how`, `see`, `f2p` and `hook`.
 
 ### What the build does not check
 
-The playbook promises a little more than the build does ([LESSONS-PLAYBOOK.md:37](../tools/LESSONS-PLAYBOOK.md#L37)):
-
-- **Average sentence length** of about 15 words: not checked. (The real average is 10, so this passes anyway.)
-- **Exactly 3 options**: not checked. The build only needs 2 or more. (All 307 checks have 3.)
-- **Idioms and phrasal verbs**: not checked. A script cannot judge these well.
-- **Check questions, options and "why" text**: none of the style limits apply to them. Only card text is checked.
+- **Idioms and phrasal verbs**: not checked. A script cannot judge these well, so a person has to.
+- **Check questions, options and "why" text**: the style limits apply only to card text.
 
 ### The state today
 
-A read-only rerun of the checks on 2026-10-28 found **0 warnings and 0 problems** in 307 lessons and 1,402 cards.
+A build on 2026-10-28 found **0 warnings and 0 problems** in 307 lessons and 1,402 cards.
+The highest average sentence length in any lesson is 12.9 words, so the new 15-word check passes everywhere.
 
 ### `tools/check.mjs` is something else
 
@@ -73,9 +74,9 @@ A quiz you can beat this way does not make you recall anything. That breaks retr
 
 The data always stores the right answer at index 0, with `"answer": 0`. The app shuffles the order on screen.
 
-- When you open a lesson, the app makes a random order of option numbers, like `[2, 0, 1]` ([views.js:498](../tools/app/views.js#L498)). It uses a Fisher-Yates shuffle ([core.js:33](../tools/app/core.js#L33)).
-- The buttons appear in that order, but each one keeps its original number in `data-k` ([views.js:516](../tools/app/views.js#L516)).
-- When you tap one, the app compares that original number with `answer` ([views.js:1065](../tools/app/views.js#L1065)). The screen position never matters for grading.
+- When you open a lesson, the app makes a random order of option numbers, like `[2, 0, 1]` ([views.js:502](../tools/app/views.js#L502)). It uses a Fisher-Yates shuffle ([core.js:33](../tools/app/core.js#L33)).
+- The buttons appear in that order, but each one keeps its original number in `data-k` ([views.js:520](../tools/app/views.js#L520)).
+- When you tap one, the app compares that original number with `answer` ([views.js:1069](../tools/app/views.js#L1069)). The screen position never matters for grading.
 
 **Why store the answer at index 0?** Writers never have to track where the answer is. They cannot accidentally put it in the same place every time either.
 
@@ -148,6 +149,6 @@ The 1.2 rule removed the big gaps, but a small length hint is left. A stricter p
 
 1. Turn each writing rule you can measure into a lint check.
 2. Split errors (broken structure) from warnings (style).
-3. Make errors stop the build, unlike here.
+3. Make errors stop the build before it writes anything.
 4. Store the right answer in a fixed place and shuffle on screen.
 5. Check option lengths with a ratio. Then measure how often "pick the longest" would still win.

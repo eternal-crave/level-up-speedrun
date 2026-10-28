@@ -7,14 +7,14 @@ The same sources are in [LESSONS-PLAYBOOK.md:42-48](../tools/LESSONS-PLAYBOOK.md
 
 | Finding | Design choice | Where |
 |---|---|---|
-| Plain language: short sentences, main idea first | 25-word sentence limit, idea card first | [build.mjs:111](../tools/build.mjs#L111), [build.mjs:124](../tools/build.mjs#L124) |
-| Non-native readers: no idioms, no abbreviations | No "e.g.", "i.e." or "and/or" | [build.mjs:125](../tools/build.mjs#L125) |
-| Mayer: segmenting | One card per screen, you control the pace | [views.js:509-512](../tools/app/views.js#L509-L512) |
+| Plain language: short sentences, main idea first | 25-word sentence limit, idea card first | [build.mjs:111](../tools/build.mjs#L111), [build.mjs:126](../tools/build.mjs#L126) |
+| Non-native readers: no idioms, no abbreviations | No "e.g.", "i.e." or "and/or" | [build.mjs:127](../tools/build.mjs#L127) |
+| Mayer: segmenting | One card per screen, you control the pace | [views.js:513-516](../tools/app/views.js#L513-L516) |
 | Mayer: signaling | One bold key term per card | `**bold**` in the card text |
-| Mayer: coherence | Trivia moves to "Go deeper" | [views.js:508](../tools/app/views.js#L508) |
-| Mayer: pre-training | "Words you'll meet" before lesson 1 | [views.js:642-644](../tools/app/views.js#L642-L644) |
+| Mayer: coherence | Trivia moves to "Go deeper" | [views.js:512](../tools/app/views.js#L512) |
+| Mayer: pre-training | "Words you'll meet" before lesson 1 | [views.js:646-648](../tools/app/views.js#L646-L648) |
 | Mayer: personalization | Talk to "you" | Writing rule in the playbook |
-| Dunlosky: retrieval practice | A check at the end of every lesson | [views.js:513-518](../tools/app/views.js#L513-L518) |
+| Dunlosky: retrieval practice | A check at the end of every lesson | [views.js:517-522](../tools/app/views.js#L517-L522) |
 | Dunlosky: spacing | Spaced flashcards | [core.js:249-270](../tools/app/core.js#L249-L270) |
 | Mobile reading is harder for difficult text | Short, simple cards; phone-sized type | [app.css:428-469](../tools/app/app.css#L428-L469) |
 | ADHD: comprehension is linked to sustained attention | Short segments, about 3 minutes each | `min` in the lesson data |
@@ -25,7 +25,7 @@ The same sources are in [LESSONS-PLAYBOOK.md:42-48](../tools/LESSONS-PLAYBOOK.md
 
 **What we did.**
 
-- The build warns about any sentence over 25 words.
+- The build warns about any sentence over 25 words, and about any lesson whose sentences average more than 15.
 - The first card of each lesson must be the idea card, so the main point comes first.
 - Lists are written with `\n- ` and shown as bullets.
 
@@ -82,7 +82,7 @@ Rereading and highlighting rated low.
 **What we did.**
 
 - **Retrieval after every lesson.** Every one of the 307 lessons ends with a one-question check. The answer comes with a short "why".
-- **Retrieval for each level.** The boss fight is a quiz on the whole level ([views.js:665-771](../tools/app/views.js#L665-L771)).
+- **Retrieval for each level.** The boss fight is a quiz on the whole level ([views.js:669-775](../tools/app/views.js#L669-L775)).
 - **Spacing.** Flashcards use a spaced schedule ([core.js:249-270](../tools/app/core.js#L249-L270)). Each card stores its due day, interval and ease. "Again" resets the card. "Easy" makes the next gap longer.
 - **Spacing in the daily plan.** The Today warm-up shows due flashcards first. If cards were the warm-up, the last step asks you to recall answers. See [ATTENTION-AND-ADHD-UX.md](ATTENTION-AND-ADHD-UX.md).
 - **No rereading loop.** The notes are still there, but the app never asks you to reread them as a study step.

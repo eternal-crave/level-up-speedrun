@@ -53,23 +53,30 @@ All numbers were counted from `data/lessons/*.json` and git history on 2026-10-2
 | Lesson data | `data/lessons/<MOD>.json` (one file per module) |
 | Full notes ("Go deeper") | `notes/<MOD>-*.md` |
 | Writing rules and research | [tools/LESSONS-PLAYBOOK.md](../tools/LESSONS-PLAYBOOK.md) |
-| Lesson checks (lint) | [tools/build.mjs:93-139](../tools/build.mjs#L93-L139) |
+| Lesson checks (lint) | [tools/build.mjs:93-142](../tools/build.mjs#L93-L142) |
 | App logic (progress, plan, XP) | [tools/app/core.js](../tools/app/core.js) |
 | Screens (lesson, Today, map, book) | [tools/app/views.js](../tools/app/views.js) |
 | Styles (phone sizes, diagrams) | [tools/app/app.css](../tools/app/app.css) |
 | Diagrams | `data/figs/*.svg` |
 
-## Gaps found while writing these docs
+## Gaps found, and how they were fixed
 
-These are places where the code, the data and the playbook do not agree. Nothing was changed. They are listed so you can decide later.
+Writing these docs showed places where the code, the data and the playbook did not agree. They were fixed on 2026-10-28.
 
-- The playbook says the build checks the **average** sentence length and "3 options". The build checks neither. See [QUALITY-GATES.md](QUALITY-GATES.md#what-the-build-does-not-check).
-- Lint errors **do not stop the build**. The build always exits with code 0.
-- The playbook says about 240 lessons have a book page. The real number is **222**.
-- The playbook says notes were 35 KB to 106 KB. The real range is about **31 KB to 111 KB**.
-- The playbook has two rules numbered 12 ([LESSONS-PLAYBOOK.md:38-39](../tools/LESSONS-PLAYBOOK.md#L38-L39)).
-- The script that checked diagram labels for overlap is **not in the repo**. Only the note that it was done is.
-- The script that matched lessons to book pages (TF-IDF) is **not in the repo** either.
-- The CSS rule `.lfig text { font-size: 12px }` probably overrides the `font-size` set inside some diagrams. See [VISUALS-AND-BOOK.md](VISUALS-AND-BOOK.md#known-limits).
-- The daily quest table still exists in code, but the three-step run replaced it. See [ATTENTION-AND-ADHD-UX.md](ATTENTION-AND-ADHD-UX.md#honest-notes).
-- The chosen level tab is kept only until the page reloads.
+| Gap | Fix |
+|---|---|
+| The playbook promised checks for average sentence length and "3 options", but the build had neither. | The build now warns about both. See [QUALITY-GATES.md](QUALITY-GATES.md#every-check). |
+| Structure errors did not stop the build. | The build now stops with exit code 1 before it writes any file. |
+| The playbook said about 240 lessons had a book page, and notes were 35 KB to 106 KB. | Corrected to 222 lessons and 31 KB to 111 KB. |
+| The playbook had two rules numbered 12. | Renumbered 1 to 14. |
+| The diagram label check was not saved. | New tool: `tools/check-figs.mjs`. See [VISUALS-AND-BOOK.md](VISUALS-AND-BOOK.md#checks-for-overflowing-and-overlapping-labels). |
+| The book page matcher (TF-IDF) was not saved. | New tool: `tools/book-pages.mjs`. It reproduces all 222 pages. |
+| The diagram CSS overrode sizes and colours set inside the SVGs, so emoji icons showed at 12 px. | The defaults now come from the `<svg>`, so the SVG's own values win. Checked in a browser. |
+| The old daily quest table was dead code, and the X-Ray still described it. | Removed. The X-Ray now describes "Today's run". |
+| The chosen level tab was lost on reload. | It is now kept for the browser tab session. |
+
+### Still open
+
+- "Pick the longest" still wins 51% of quiz checks, against 33% for a random guess. See [QUALITY-GATES.md](QUALITY-GATES.md#the-numbers-over-time).
+- The book viewer can step below printed page 1, and "Start over" does not remove the saved PDF. See [VISUALS-AND-BOOK.md](VISUALS-AND-BOOK.md#known-limits).
+- The site has no offline mode (no service worker).

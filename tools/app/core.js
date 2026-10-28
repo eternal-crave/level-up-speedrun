@@ -1,4 +1,4 @@
-/* Level Up Speedrun — core: data indexes, state, sync, XP, streaks, SRS, daily quests, badges, fx. */
+/* Level Up Speedrun — core: data indexes, state, sync, XP, streaks, SRS, daily run, badges, fx. */
 "use strict";
 const C = window.COURSE || { modules: [], notes: {}, route: {}, schedule: {}, capstone: [], bosses: {} };
 const MODS = C.modules.slice().sort((a, b) => a.order - b.order);
@@ -325,26 +325,12 @@ function weekPlan() {
   return { week: Math.min(w, plan.length - 1), total: plan.length, ids: plan[Math.min(w, plan.length - 1)].filter((id) => BY[id]), overtime: w >= plan.length };
 }
 
-/* ---------- daily quests & chest ---------- */
-const DAILY = [
-  { id: "bites", label: "See 15 bites in the feed", target: 15, xp: 30, go: "#feed" },
-  { id: "cards", label: "Review 20 flashcards", target: 20, xp: 30, go: "#cards" },
-  { id: "quizRight", label: "Land 8 correct quiz answers", target: 8, xp: 30, go: "#map" },
-  { id: "quests", label: "Finish 1 quest or Play Lab", target: 1, xp: 40, go: "#map" },
-  { id: "reads", label: "Read a whole level and mark it read", target: 1, xp: 40, go: "#map" },
-  { id: "recall", label: "Answer 5 recall questions closed-book", target: 5, xp: 30, go: "#map" },
-  { id: "focus", label: "Finish one focus sprint", target: 1, xp: 30, go: "#today" },
-  { id: "got", label: "Tap “Got it” on 10 bites", target: 10, xp: 25, go: "#feed" },
-];
-const DQ = Object.fromEntries(DAILY.map((q) => [q.id, q]));
+/* ---------- daily counters & chest ---------- */
+// One record per day: action counters (they drive the three-step run below), the run plan and the chest.
 function ensureDaily() {
   const d = dkey();
   if (P.daily && P.daily.day === d) return;
-  const r = seeded("daily" + d);
-  const core = ["bites", "cards"]; // always one "light" quest so the day is winnable in 5 minutes
-  const first = pick(core, r);
-  const rest = shuffle(DAILY.map((q) => q.id).filter((id) => id !== first), r).slice(0, 2);
-  P.daily = { day: d, picks: [first, ...rest], c: {}, claimed: {}, chest: false };
+  P.daily = { day: d, c: {}, chest: false };
 }
 function bump(counter, n = 1) {
   ensureDaily();
@@ -501,12 +487,12 @@ function checkBadges() {
 /* ---------- design x-ray: every hook in this app is a real F2P mechanic ---------- */
 const XRAY = {
   streak: "Streak = loss aversion + a habit loop. You don't want to lose the number, so you show up. The freeze is a mercy mechanic so one bad day doesn't make you quit (the Duolingo trick). → F2P1 retention, L13 rewards.",
-  daily: "Daily quests = appointment mechanic. Three small, winnable goals give you a reason to come back today and steer you toward what the designer wants you to do (here: actually learning). → F2P1, F2P2 LiveOps.",
+  daily: "Today's run = appointment mechanic. Three short, winnable steps and a clear finish line give you a reason to come back today and steer you toward what the designer wants you to do (here: actually learning). → F2P1, F2P2 LiveOps.",
   chest: "The chest is a variable-ratio reward: not knowing what's inside makes opening it feel better than a fixed prize. Same psychology as gacha and loot boxes. Strong stuff; use it to delight, not to drain wallets. → L13, F2P2.",
   xp: "XP bar + player level = progress feedback. Being visibly close to the next level (the goal-gradient effect) pulls you into one more action. → L13.",
   map: "The saga map is the meta layer, Candy Crush style: long-term progress made visible, with the next node glowing like Disneyland's 'weenie' that draws you forward. → L09, F2P1.",
   boss: "Hearts are lives. Losing feels worse than winning feels good, and the revive offer appears exactly when you're closest to winning: the classic F2P continue offer. → L10 death, F2P2 monetization & ethics.",
-  feed: "The feed is infinite, swipeable short-form: tiny effort per item, lots of variety, a surprise every few swipes. That's why it's hard to put down. Here it's pointed at your brain's long-term memory instead of your attention span.",
+  feed: "The feed is swipeable short-form that feels endless: tiny effort per item, lots of variety, a surprise every few swipes. That's why it's hard to put down. This one stops after a run, and it's pointed at your brain's long-term memory instead of your attention span.",
   badges: "Badges = achievements & collections. Empty slots create a completion itch (the Zeigarnik effect), and each one is a mini-goal. → L13.",
 };
 
