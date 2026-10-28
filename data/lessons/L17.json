@@ -83,7 +83,7 @@
     {
       "id": "L17-l06",
       "title": "Be a PLANNER",
-      "min": 3, "book": 422,
+      "min": 3, "book": 421,
       "deep": "troubleshooting list",
       "cards": [
         { "t": "idea", "text": "Rogers' checklist for keeping production alive: **plan for problems, lock the design early, don't overpromise, break your own game, and respect cultures.**" },

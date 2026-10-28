@@ -13,7 +13,7 @@
     {
       "id": "L13-l01",
       "title": "Power-ups: instant joy, with a catch",
-      "min": 3, "book": 356,
+      "min": 3, "book": 355,
       "deep": "Playing with Power",
       "cards": [
         { "t": "idea", "text": "A **power-up** is concentrated action. Touch it and you're instantly faster, stronger or tougher. **The effect is immediate** (the joy) and **usually temporary** (the catch)." },
@@ -40,7 +40,7 @@
     {
       "id": "L13-l03",
       "title": "Boosters: help, not ransom",
-      "min": 3, "book": 368,
+      "min": 3, "book": 361,
       "deep": "Playing with Power",
       "cards": [
         { "t": "idea", "text": "In casual F2P, power-ups became **boosters**: the biggest kind of item players use up and buy again. **The line: boosters should feel like help, never like a ransom.**" },
@@ -183,7 +183,7 @@
     {
       "id": "L13-l14",
       "title": "Reward schedules: fixed and surprise",
-      "min": 3, "book": 368,
+      "min": 3, "book": 367,
       "deep": "Reward & Economy Toolkit",
       "cards": [
         { "t": "idea", "text": "*When* you give rewards matters as much as *what* you give. **Fixed schedules build trust and habits. Variable ones create excitement.** Mix them." },

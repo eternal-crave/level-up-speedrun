@@ -13,7 +13,7 @@
     {
       "id": "L08-l01",
       "title": "The HUD: the game's sign language",
-      "min": 3, "book": 172,
+      "min": 3, "book": 171,
       "deep": "HUD zone",
       "cards": [
         { "t": "idea", "text": "The **HUD** is named after the display projected onto fighter-jet windows. Rogers' definition is broad: **anything visual that gives the player information is HUD.**" },
@@ -54,7 +54,7 @@
     {
       "id": "L08-l04",
       "title": "Inventory: never lose the player's stuff",
-      "min": 3, "book": 181,
+      "min": 3, "book": 174,
       "deep": "Inventory",
       "cards": [
         { "t": "idea", "text": "An **inventory** lets players see and use what they've collected. Rules: fast access, a nice place to admire loot, readable items, room to grow, and **never lose the player's stuff.**" },
@@ -148,7 +148,7 @@
     {
       "id": "L08-l11",
       "title": "Where to put things on screen",
-      "min": 3, "book": 186,
+      "min": 3, "book": 185,
       "deep": "where to stick",
       "cards": [
         { "t": "idea", "text": "**Keep the center of the screen for the action.** Put the most important information top-left. Don't fill all the edges." },
@@ -161,7 +161,7 @@
     {
       "id": "L08-l12",
       "title": "The Three-Press Rule and the first screens",
-      "min": 3, "book": 189,
+      "min": 3, "book": 187,
       "deep": ["where to stick", "other screens than the HUD"],
       "cards": [
         { "t": "idea", "text": "Rogers' very important rule: **no screen in the game may ever be more than three presses away.** Players want the good stuff, not a maze of menus." },
@@ -174,7 +174,7 @@
     {
       "id": "L08-l13",
       "title": "Pause, save and loading screens",
-      "min": 3, "book": 191,
+      "min": 3, "book": 190,
       "deep": "pause that refreshes",
       "cards": [
         { "t": "idea", "text": "**Plan the pause screen as carefully as a level.** It's a hub for saving, options, map and inventory. Players should never feel they miss part of the game by pausing." },

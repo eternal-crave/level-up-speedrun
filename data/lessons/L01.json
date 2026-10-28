@@ -69,7 +69,7 @@
     {
       "id": "L01-l05",
       "title": "Genres are about what you do",
-      "min": 3, "book": 10,
+      "min": 3, "book": 9,
       "deep": "Game genres",
       "cards": [
         { "t": "idea", "text": "A **genre** names the style of play: what you actually do. It's not the setting. A fantasy game and a sci-fi game can be the same genre." },
@@ -82,7 +82,7 @@
     {
       "id": "L01-l06",
       "title": "Hybrids: how new hits are born",
-      "min": 3, "book": 5,
+      "min": 3, "book": 11,
       "deep": "Game genres",
       "cards": [
         { "t": "idea", "text": "Genres keep mixing. A **hybrid** combines two or more genres, and **many mobile hits are hybrids.** Think of genres as LEGO bricks you can combine, not fixed labels." },
@@ -96,7 +96,7 @@
     {
       "id": "L01-l07",
       "title": "Who makes games: the team",
-      "min": 3, "book": 15,
+      "min": 3, "book": 12,
       "deep": "Who makes this stuff",
       "cards": [
         { "t": "idea", "text": "Games started as one-person projects. Today they're made by **teams of specialists**, like a film crew. Each job keeps splitting into narrower jobs as games grow." },

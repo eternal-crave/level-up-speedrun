@@ -54,7 +54,7 @@
     {
       "id": "BX-l04",
       "title": "The GDD is alive",
-      "min": 3, "book": 447,
+      "min": 3, "book": 445,
       "deep": "Design Document Template",
       "cards": [
         { "t": "idea", "text": "The **GDD** is the everything-document the team builds from. The template is a big checklist, so nothing gets forgotten. **Fill what you can, mark the rest TBD, and keep it updated.**" },
@@ -124,7 +124,7 @@
     {
       "id": "BX-l09",
       "title": "The nine-slide pitch",
-      "min": 3, "book": 479,
+      "min": 3, "book": 471,
       "deep": "High Concept Pitch",
       "cards": [
         { "t": "idea", "text": "The **nine-slide pitch** answers a decision maker's questions in order, with big art and few words." },

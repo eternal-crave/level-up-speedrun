@@ -112,6 +112,7 @@ The script is [tools/book-pages.mjs](../tools/book-pages.mjs):
 - Run `node tools/book-pages.mjs <book.txt>` to compare. Add `--apply` to fill in lessons that have no page yet. It never overwrites a page.
 
 On 2026-10-28 it gave the same page for all 222 lessons that have one. It skipped the same 25 lessons.
+Later that day, a review of every lesson against the book text and its drawings corrected 40 of those pages; see [Which lesson shows which drawing](#which-lesson-shows-which-drawing). So `book-pages.mjs` now disagrees with those 40 on purpose, because word overlap picked the wrong page there.
 
 The data stores the printed page. The PDF has 24 extra pages at the front, so the app adds 24 ([views.js:535](../tools/app/views.js#L535)).
 
@@ -152,12 +153,34 @@ Each row is `[pdf page, left, top, width, height]`, as fractions of the page. It
 
 ### Which lesson shows which drawing
 
-The build does the matching ([build.mjs](../tools/build.mjs), "book illustrations"):
+Each drawing is shown in the lesson whose idea it shows, not just the lesson with the nearest page.
 
-1. Each drawing goes to the chapter whose printed pages hold it. The ranges come from each module's `bookPages`. Pages between two chapters go to the chapter before. The front pages go to L00.
-2. In that chapter, it goes to every lesson whose `book` page is the nearest one to the drawing. That page must be 3 pages away or less.
+**First version: page only (replaced).** At first a drawing went to the lesson whose `book` page was nearest to it, 3 pages away at most. That gave 415 drawings in 173 lessons. Then a check scored each drawing's caption and nearby text against every lesson in its chapter. Only about half the drawings were in the lesson that fit them best. For example, the nine story-beat drawings (pp. 37–41) showed in "Story is salt, gameplay is meat" instead of "Nine beats of a classic story".
 
-The result: 415 of the 462 drawings appear in 173 lessons. All 462 are in the gallery.
+**Now: chosen by meaning, then reviewed.** On 2026-10-28, five reviewers worked in parallel, one per group of chapters, about 90 drawings each. They were subagents. Each reviewer looked at:
+
+- every drawing, cut out of the PDF locally (the cut-outs were never saved in the repo);
+- its caption and nearby text;
+- what each lesson of the chapter teaches;
+- a word-overlap score as a hint only, because captions that are really footnotes fool it.
+
+Each reviewer chose:
+
+- 1 lesson for each drawing, sometimes 2;
+- or `[]` (gallery only) when no lesson teaches what it shows, such as the cover, the author photo, or a gag with no lesson point.
+
+The choices are in [data/book/art-lessons.json](../data/book/art-lessons.json). Each key is `<pdf page>-<nth image on that page>`, and the build reads them ([build.mjs](../tools/build.mjs), "book illustrations"). A drawing that isn't listed falls back to the nearest-page rule.
+
+Each drawing still belongs to its chapter in the gallery. The chapter is the one whose printed pages hold it, from each module's `bookPages`. Pages between two chapters go to the chapter before, and the front pages go to L00.
+
+The result:
+
+- 428 of the 462 drawings now appear in 158 lessons.
+- 228 drawings changed lessons, and 3 went to a lesson in another chapter. For example, the two chili drawings from the back of the book went to "Making a game is like cooking chili".
+- All 462 are in the gallery.
+- With the same word-overlap check, the share of drawings in their best-scoring lesson went from 46% to 59%. Clear misses dropped from 96 to 39. The reviewers overruled the remaining ones on purpose, after looking at the drawing. One example is a teleporting enemy, which went to "Ten enemy behaviours".
+
+**Lesson pages fixed too.** The same reviewers checked every lesson's `book` page against the book text. They corrected 40 pages where another page in the chapter clearly covered the lesson better. For example, "Nine beats of a classic story" went from p. 48 to p. 37, where the beats start. These were edited in `data/lessons/*.json`, so the 📖 buttons open the better page as well.
 
 ### How it works
 

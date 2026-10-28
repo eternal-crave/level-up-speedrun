@@ -133,7 +133,7 @@
     {
       "id": "L09-l10",
       "title": "Draw levels to scale",
-      "min": 3, "book": 226,
+      "min": 3, "book": 223,
       "deep": "Scale, Paths",
       "cards": [
         { "t": "idea", "text": "Draw your level on paper first, at the right **scale**. **The player is usually one square** on the grid, and everything else is drawn relative to them." },
@@ -159,7 +159,7 @@
     {
       "id": "L09-l12",
       "title": "Walking is never gameplay",
-      "min": 3, "book": 226,
+      "min": 3, "book": 227,
       "deep": "Scale, Paths",
       "cards": [
         { "t": "idea", "text": "Rogers' rule: **walking is never gameplay.** Never waste the player's time with empty wandering. Give an active character active things to do." },
@@ -187,7 +187,7 @@
     {
       "id": "L09-l14",
       "title": "Graybox first, then pace it out",
-      "min": 3, "book": 238,
+      "min": 3, "book": 233,
       "deep": "Gray Matters",
       "cards": [
         { "t": "idea", "text": "Before any art, **build the level from plain grey boxes and play it.** Fix scale, camera and pacing while changes are still cheap." },

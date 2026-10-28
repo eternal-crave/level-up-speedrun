@@ -68,7 +68,7 @@
     {
       "id": "L10-l05",
       "title": "Make players look cool",
-      "min": 3, "book": 253,
+      "min": 3, "book": 251,
       "deep": "400 Quatloos",
       "cards": [
         { "t": "idea", "text": "People want games that **make them look cool.** Finishers, lock-on and smart targeting turn normal players into action heroes. Use them carefully." },

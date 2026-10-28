@@ -26,7 +26,7 @@
     {
       "id": "L12-l02",
       "title": "Doors, switches and levers",
-      "min": 3, "book": 334,
+      "min": 3, "book": 333,
       "deep": "Intro",
       "cards": [
         { "t": "idea", "text": "Even a door is a design decision. **How the player opens it should match the character**, and the method should **stay the same for the whole game.**" },
@@ -136,7 +136,7 @@
     {
       "id": "L12-l10",
       "title": "Puzzles: show the door, then the key",
-      "min": 3, "book": 348,
+      "min": 3, "book": 347,
       "deep": "Riddle Me This",
       "cards": [
         { "t": "idea", "text": "Rogers' definition: **a puzzle is a challenge with a right answer.** The player must know what they're trying to do and what they'll get. **Show them the door, then send them after the key.**" },

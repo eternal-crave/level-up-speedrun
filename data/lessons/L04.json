@@ -124,7 +124,7 @@
     {
       "id": "L04-l09",
       "title": "Nobody reads the GDD, but you will",
-      "min": 3, "book": 74,
+      "min": 3, "book": 72,
       "deep": "Game Design Document",
       "cards": [
         { "t": "idea", "text": "The **GDD** describes everything in the game. Most of the team won't read it, because it's long and scary. **Write it anyway: you'll need to read it yourself.**" },
@@ -179,7 +179,7 @@
     {
       "id": "L04-l13",
       "title": "Be a designer people want to work with",
-      "min": 3, "book": 81,
+      "min": 3, "book": 80,
       "deep": "schmuck",
       "cards": [
         { "t": "idea", "text": "Good documents are worthless if you're hard to work with. Rogers lists **nine habits of a responsible designer.** They sound like common sense, but common sense isn't common." },

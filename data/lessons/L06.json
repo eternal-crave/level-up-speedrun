@@ -125,7 +125,7 @@
     {
       "id": "L06-l09",
       "title": "Top-down, flying, swimming and tunnels",
-      "min": 3, "book": 141,
+      "min": 3, "book": 140,
       "deep": ["Top-down camera", "Special case", "Tunnel vision"],
       "cards": [
         { "t": "idea", "text": "Looking straight **down** is old-fashioned but still great for arcade action, if you don't need depth or a close look at the hero. Special movement, like flying, swimming and tunnels, needs its own camera plan." },
@@ -153,7 +153,7 @@
     {
       "id": "L06-l11",
       "title": "Camera angles change how things feel",
-      "min": 2, "book": 146,
+      "min": 2, "book": 145,
       "deep": "Camera angle guide",
       "cards": [
         { "t": "idea", "text": "Where the camera sits compared with the subject changes how it feels. **Low angles make things powerful. High angles make them small and weak.**" },

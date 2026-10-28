@@ -140,12 +140,21 @@ for (const m of modules) {
   }
 }
 // ---- book illustrations: positions only (data/book/art.json); the app crops them from the reader's own PDF.
-// Each one belongs to the chapter whose printed pages hold it, and shows in the lessons whose book page is
-// the nearest one to it in that chapter (3 pages at most). Every one is also in the gallery.
+// Each one belongs to the chapter whose printed pages hold it (its gallery group). The lessons that show it come
+// from data/book/art-lessons.json, chosen by what the drawing shows (key "<pdf page>-<nth image on that page>";
+// [] = gallery only). A drawing not listed there falls back to the lessons whose book page is the nearest one
+// to it in that chapter (3 pages at most).
 let ART = null;
 const artFile = path.join(ROOT, "data", "book", "art.json");
 if (fs.existsSync(artFile)) {
   const A = JSON.parse(rd("data/book/art.json")), OFF = 24, NEAR = 3;
+  const picked = fs.existsSync(path.join(ROOT, "data", "book", "art-lessons.json")) ? JSON.parse(rd("data/book/art-lessons.json")).art || {} : {};
+  const lessonById = new Map(modules.flatMap((m) => m.lessons.map((l) => [l.id, l])));
+  const nth = {}, keys = (A.art || []).map(([n]) => { nth[n] = (nth[n] || 0) + 1; return n + "-" + nth[n]; });
+  for (const [key, ids] of Object.entries(picked)) {
+    if (!keys.includes(key)) problems.push(`book/art-lessons.json: "${key}" is not a drawing in book/art.json`);
+    for (const id of [].concat(ids)) if (!lessonById.has(id)) problems.push(`book/art-lessons.json: "${key}" names unknown lesson "${id}"`);
+  }
   const items = (A.art || []).filter((r) => Array.isArray(r) && r.length === 5 && r.every((v) => typeof v === "number"));
   if (items.length !== (A.art || []).length) problems.push("book/art.json: every row must be [pdf page, left, top, width, height]");
   const spans = modules.filter((m) => m.kind === "book").map((m) => ({ m, r: String(m.bookPages).split(",").map((s) => s.split(/[–-]/).map((v) => parseInt(v, 10))).filter(([a, b]) => a > 0 && b >= a) }));
@@ -160,7 +169,9 @@ if (fs.existsSync(artFile)) {
   };
   const mods = items.map(([n], k) => {
     const p = n - OFF, m = modOf(p);
+    if (picked[keys[k]]) for (const id of [].concat(picked[keys[k]])) { const l = lessonById.get(id); if (l) (l.art = l.art || []).push(k); }
     if (!m) return "";
+    if (picked[keys[k]]) return m.id;
     const pages = [...new Set(m.lessons.filter((l) => l.book).map((l) => l.book))];
     let near = null;
     for (const b of pages) if (near == null || Math.abs(b - p) < Math.abs(near - p) || (Math.abs(b - p) === Math.abs(near - p) && b < near)) near = b;

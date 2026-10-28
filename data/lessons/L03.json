@@ -27,7 +27,7 @@
     {
       "id": "L03-l02",
       "title": "Nine beats of a classic story",
-      "min": 3, "book": 48,
+      "min": 3, "book": 37,
       "deep": "Classic Story Structure",
       "cards": [
         { "t": "idea", "text": "The most basic story: **a hero wants something, problems keep getting worse, and a final win earns the prize.** Every story has a beginning, a middle and an end." },
@@ -68,7 +68,7 @@
     {
       "id": "L03-l05",
       "title": "Only one weird corner",
-      "min": 3, "book": 45,
+      "min": 3, "book": 44,
       "deep": "Triangle of Weirdness",
       "cards": [
         { "t": "idea", "fig": "weird-triangle", "text": "The **Triangle of Weirdness** has three corners: **characters, activities and world.** Make only **one** of them weird, or players won't get it." },

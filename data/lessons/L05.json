@@ -27,7 +27,7 @@
     {
       "id": "L05-l02",
       "title": "Form follows function, and three traits",
-      "min": 3, "book": 90,
+      "min": 3, "book": 84,
       "deep": "Looks That Talk",
       "cards": [
         { "t": "idea", "text": "The very important rule of character design: **form follows function.** The look should come from what the character does. Start by choosing **three personality traits.**" },
@@ -95,7 +95,7 @@
     {
       "id": "L05-l07",
       "title": "Let players name and customise",
-      "min": 3, "book": 90,
+      "min": 3, "book": 89,
       "deep": "Names and Customization",
       "cards": [
         { "t": "idea", "text": "Letting players **name and customise** a character creates **ownership**, and ownership turns into caring." },
@@ -150,7 +150,7 @@
     {
       "id": "L05-l11",
       "title": "Walking isn't gameplay; speed is a choice",
-      "min": 3, "book": 97,
+      "min": 3, "book": 96,
       "deep": ["Walking Is NOT", "Vehicles, Weight"],
       "cards": [
         { "t": "idea", "text": "**Walking by itself isn't gameplay.** Decide how fast your game is, give each way of moving a **clear purpose**, and make the speed differences big." },
@@ -192,7 +192,7 @@
     {
       "id": "L05-l14",
       "title": "Design gaps for nervous humans",
-      "min": 3, "book": 101,
+      "min": 3, "book": 102,
       "deep": "Five Jump Types",
       "cards": [
         { "t": "idea", "text": "Players don't jump from the very edge, and they don't aim for the far edge. **They jump from a little way back and aim well inside the landing.** Design gaps for that." },
@@ -220,7 +220,7 @@
     {
       "id": "L05-l16",
       "title": "Water and four-legged heroes",
-      "min": 2, "book": 109,
+      "min": 2, "book": 108,
       "deep": ["Water's Fine", "Four-Legged"],
       "cards": [
         { "t": "idea", "text": "Water confuses players. **Use one clear water rule per area** and warn about danger. Non-human heroes need **their own metrics.**" },

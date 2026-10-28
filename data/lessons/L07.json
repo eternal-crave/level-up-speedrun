@@ -150,7 +150,7 @@
     {
       "id": "L07-l11",
       "title": "Motion controls: make them feel real",
-      "min": 3, "book": 168,
+      "min": 3, "book": 167,
       "deep": "Motion controls",
       "cards": [
         { "t": "idea", "text": "Motion controls work best when they **copy real actions and feel physically right.** Timing, speed and resistance make a virtual sword feel like a sword instead of \"floaty\"." },
@@ -189,7 +189,7 @@
     {
       "id": "L07-l14",
       "title": "Fat fingers and forgiving input",
-      "min": 3, "book": 158,
+      "min": 3, "book": 156,
       "deep": "Touch Controls Field Guide",
       "cards": [
         { "t": "idea", "text": "Fingers are big and imprecise. **Make touch targets large, and make the game read the player's intent, not exact pixels.**" },

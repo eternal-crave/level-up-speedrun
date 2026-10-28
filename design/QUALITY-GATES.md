@@ -4,16 +4,16 @@ Rules only help if they are checked. This page explains what the build checks in
 
 ## How the checks run
 
-Run `node tools/build.mjs`. The lesson checks are in [build.mjs:93-172](../tools/build.mjs#L93-L172).
+Run `node tools/build.mjs`. The lesson checks are in [build.mjs:93-183](../tools/build.mjs#L93-L183).
 
 The build sorts what it finds into two lists:
 
-- **Warnings** are style problems. They print as `lesson style warnings:` ([build.mjs:172](../tools/build.mjs#L172)).
-- **Problems** are structure errors. They print as `PROBLEMS (nothing was written):` and stop the build ([build.mjs:174](../tools/build.mjs#L174)).
+- **Warnings** are style problems. They print as `lesson style warnings:` ([build.mjs:183](../tools/build.mjs#L183)).
+- **Problems** are structure errors. They print as `PROBLEMS (nothing was written):` and stop the build ([build.mjs:185](../tools/build.mjs#L185)).
 
 Every message starts with the module, the lesson number and the lesson id, like `lessons/L11 #8 L11-l08`.
 
-> **Problems stop the build.** The build prints the list and exits with code 1. It does this before it writes a single file ([build.mjs:174](../tools/build.mjs#L174)).
+> **Problems stop the build.** The build prints the list and exits with code 1. It does this before it writes a single file ([build.mjs:185](../tools/build.mjs#L185)).
 > So a broken course never reaches `docs/` or the artifact. Warnings do not stop the build, so read them after each run.
 >
 > Before 2026-10-28 the build printed problems at the very end and still exited with code 0.

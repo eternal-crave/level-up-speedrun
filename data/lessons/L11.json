@@ -26,7 +26,7 @@
     {
       "id": "L11-l02",
       "title": "Size changes everything",
-      "min": 2, "book": 284,
+      "min": 2, "book": 283,
       "deep": "Size",
       "cards": [
         { "t": "idea", "text": "An enemy's size decides **how you fight it, how much damage it takes, how it reacts to hits** and how proud you feel beating it." },
@@ -93,7 +93,7 @@
     {
       "id": "L11-l07",
       "title": "Give players reasons to fight",
-      "min": 3, "book": 299,
+      "min": 3, "book": 297,
       "deep": "Fought, Not Avoided",
       "cards": [
         { "t": "idea", "text": "If players **avoid** an enemy because it's too hard, too cheap or too annoying, the design failed. **Give players reasons to want the fight.**" },
@@ -107,7 +107,7 @@
     {
       "id": "L11-l08",
       "title": "Every attack needs a warning",
-      "min": 3, "book": 291,
+      "min": 3, "book": 300,
       "deep": "Telegraphing",
       "cards": [
         { "t": "idea", "text": "Let enemies have cool, varied attacks. But **every attack must be telegraphed** with a readable warning, so observant players can respond." },
@@ -121,7 +121,7 @@
     {
       "id": "L11-l09",
       "title": "Annoy without damage, and balance health",
-      "min": 3, "book": 317,
+      "min": 3, "book": 300,
       "deep": "Grief Without Damage",
       "cards": [
         { "t": "idea", "text": "Not every enemy attack has to take health. **\"Grief\" attacks** disrupt, delay or annoy instead, adding variety. And every enemy must be killable, with health balanced against the player's attacks." },
