@@ -155,7 +155,7 @@ Each row is `[pdf page, left, top, width, height]`, as fractions of the page. It
 The build does the matching ([build.mjs](../tools/build.mjs), "book illustrations"):
 
 1. Each drawing goes to the chapter whose printed pages hold it. The ranges come from each module's `bookPages`. Pages between two chapters go to the chapter before. The front pages go to L00.
-2. In that chapter, it goes to every lesson whose `book` page is the nearest one to the drawing, if that page is 3 pages away or less.
+2. In that chapter, it goes to every lesson whose `book` page is the nearest one to the drawing. That page must be 3 pages away or less.
 
 The result: 415 of the 462 drawings appear in 173 lessons. All 462 are in the gallery.
 
