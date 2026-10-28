@@ -1,0 +1,11 @@
+<svg viewBox="0 0 320 186" role="img" aria-label="Level funnel: the share of players reaching each level falls gently, then drops sharply at level 37, a problem level"><title>A funnel finds the cliff</title>
+<text x="10" y="16" class="t-ink">Players reaching each level</text>
+<line class="s-line" x1="20" y1="150" x2="305" y2="150"/>
+<g class="f-acc"><rect x="24" y="30" width="22" height="120"/><rect x="52" y="38" width="22" height="112"/><rect x="80" y="45" width="22" height="105"/><rect x="108" y="51" width="22" height="99"/><rect x="136" y="56" width="22" height="94"/></g>
+<rect x="164" y="60" width="22" height="90" class="f-hot"/>
+<g class="f-acc"><rect x="192" y="110" width="22" height="40"/><rect x="220" y="113" width="22" height="37"/><rect x="248" y="116" width="22" height="34"/><rect x="276" y="118" width="22" height="32"/></g>
+<path class="s-hot" d="M186,64 L200,104"/>
+<text x="196" y="80" class="t-hot t-sm">cliff!</text>
+<g class="t-sm" text-anchor="middle"><text x="35" y="164">32</text><text x="175" y="164" class="t-hot">37</text><text x="287" y="164">41</text></g>
+<text x="160" y="182" text-anchor="middle" class="t-sm">the data says WHERE; a playtest says WHY</text>
+</svg>

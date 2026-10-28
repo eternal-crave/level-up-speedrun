@@ -1,0 +1,10 @@
+<svg viewBox="-10 0 330 196" role="img" aria-label="Retention curve: 100 percent on install day, about 40 on day 1, 20 on day 7, 10 on day 30; it drops steeply then flattens into a tail"><title>Retention: steep drop, then a tail</title>
+<line class="s-line" x1="34" y1="150" x2="305" y2="150"/><line class="s-line" x1="34" y1="18" x2="34" y2="150"/>
+<g class="t-sm" text-anchor="end"><text x="30" y="24">100%</text><text x="30" y="100">40%</text><text x="30" y="126">20%</text><text x="30" y="141">10%</text></g>
+<path class="s-acc" d="M38,20 C46,80 54,96 62,98 S110,122 140,124 S240,138 300,140"/>
+<rect x="38" y="140" width="262" height="10" class="f-gold-soft"/>
+<circle cx="62" cy="98" r="5" class="f-acc"/><circle cx="140" cy="124" r="5" class="f-acc"/><circle cx="300" cy="140" r="5" class="f-acc"/>
+<g class="t-ink t-sm"><text x="68" y="92">D1</text><text x="140" y="116">D7</text><text x="282" y="132">D30</text></g>
+<text x="150" y="168" class="t-sm" text-anchor="middle">days since install →</text>
+<text x="96" y="186" class="t-gold t-sm">the long tail: where long-term revenue lives</text>
+</svg>

@@ -30,7 +30,7 @@
       "deep": "Playing with Power",
       "cards": [
         { "t": "idea", "text": "Every power-up fits one of four families: **defensive, offensive, movement and game changers.**" },
-        { "t": "how", "text": "- **Defensive:** keep you alive. Health, shields, extra lives, invincibility.\n- **Offensive:** fight better. Stronger weapons, fire or ice damage, helpers.\n- **Movement:** move better or in new ways. Speed, flying, gliding.\n- **Game changers:** change the rules. Score multipliers, magnets, \"now you hunt them\"." },
+        { "t": "how", "fig": "power-families", "text": "- **Defensive:** keep you alive. Health, shields, extra lives, invincibility.\n- **Offensive:** fight better. Stronger weapons, fire or ice damage, helpers.\n- **Movement:** move better or in new ways. Speed, flying, gliding.\n- **Game changers:** change the rules. Score multipliers, magnets, \"now you hunt them\"." },
         { "t": "see", "text": "Subway Surfers uses three families:\n- the hoverboard saves you from one crash (defensive)\n- the jetpack and super sneakers (movement)\n- the coin magnet and 2x multiplier (game changers)" },
         { "t": "f2p", "text": "Movement power-ups can break your level design. If a jetpack exists, your obstacle spacing must work with it too." },
         { "t": "hook", "text": "D-O-M-G: Defensive, Offensive, Movement, Game changer." }

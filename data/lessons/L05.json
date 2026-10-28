@@ -182,7 +182,7 @@
       "deep": "Five Phases",
       "cards": [
         { "t": "idea", "text": "The jump is the most misunderstood basic move. Get each phase right, and use **\"game physics\"**: real physics, adjusted to feel good." },
-        { "t": "how", "text": "1. **Take-off:** instant, the moment you press.\n2. **Rise:** fast.\n3. **Double jump:** allowed before the highest point.\n4. **Fall:** quicker than the rise.\n5. **Landing:** it sticks, with a solid thud." },
+        { "t": "how", "fig": "jump-phases", "text": "1. **Take-off:** instant, the moment you press.\n2. **Rise:** fast.\n3. **Double jump:** allowed before the highest point.\n4. **Fall:** quicker than the rise.\n5. **Landing:** it sticks, with a solid thud." },
         { "t": "see", "text": "Real physics feels floaty in games. Most great platformers rise fast, fall faster, and give a little extra control in the air." },
         { "t": "f2p", "text": "Runners and hyper-casual jumpers live or die on jump feel. Tune take-off speed, fall speed and landing feedback until one tap feels satisfying." },
         { "t": "hook", "text": "Now. Up. Again? Down. Stick." }

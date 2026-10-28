@@ -1,0 +1,7 @@
+<svg viewBox="0 0 320 186" role="img" aria-label="Three kinds of sound: local sounds fade with distance, distant sounds carry far, priority sounds always play because they are gameplay feedback"><title>Local, distant, priority</title>
+<circle cx="70" cy="80" r="24" class="f-acc-soft"/><circle cx="70" cy="80" r="40" fill="none" stroke="var(--accent)" stroke-width="1" stroke-dasharray="3 4"/><text x="70" y="85" text-anchor="middle" font-size="16">⏰</text>
+<circle cx="160" cy="80" r="24" class="f-gold-soft"/><circle cx="160" cy="80" r="40" fill="none" stroke="var(--gold)" stroke-width="1.5"/><circle cx="160" cy="80" r="56" fill="none" stroke="var(--gold)" stroke-width="1" stroke-dasharray="3 4"/><text x="160" y="85" text-anchor="middle" font-size="16">💥</text>
+<rect x="216" y="44" width="92" height="72" rx="10" class="f-hot-soft"/><text x="262" y="78" text-anchor="middle" font-size="18">❤️</text><text x="262" y="102" text-anchor="middle" class="t-hot t-sm">always heard</text>
+<g text-anchor="middle"><text x="70" y="150" class="t-acc">Local</text><text x="160" y="150" class="t-gold">Distant</text><text x="262" y="150" class="t-hot">Priority</text></g>
+<g class="t-sm" text-anchor="middle"><text x="70" y="166">whisper: fades</text><text x="160" y="166">shout: carries</text><text x="262" y="166">referee's whistle</text></g>
+</svg>

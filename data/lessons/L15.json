@@ -126,7 +126,7 @@
       "deep": "Sound priority",
       "cards": [
         { "t": "idea", "text": "Too many sounds at once becomes noise. Sort every sound into **local, distant or priority**, so important sounds always cut through." },
-        { "t": "how", "text": "- **Local:** heard up close, fades with distance, like a ticking clock\n- **Distant:** heard from far away, like explosions\n- **Priority:** always plays, because it's gameplay feedback, like losing health" },
+        { "t": "how", "fig": "sound-priority", "text": "- **Local:** heard up close, fades with distance, like a ticking clock\n- **Distant:** heard from far away, like explosions\n- **Priority:** always plays, because it's gameplay feedback, like losing health" },
         { "t": "see", "text": "Name files so anyone can find them: a pattern like sfx_ui_button_tap_01 or mus_event_winter_loop." },
         { "t": "f2p", "text": "Phones can play only a few sounds at once on tiny speakers. Limit repeats (for example, three coin sounds at a time) and lower the music under important feedback." },
         { "t": "hook", "text": "Local whispers, distant shouts, priority is the referee's whistle." }

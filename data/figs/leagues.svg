@@ -1,0 +1,8 @@
+<svg viewBox="0 0 320 196" role="img" aria-label="A weekly league of about 30 players: the top places move up, the bottom places move down; you are three spots from promotion"><title>Small leagues</title>
+<rect x="20" y="10" width="190" height="176" rx="10" class="f-card" stroke="var(--ink)" stroke-width="1.5"/>
+<rect x="26" y="16" width="178" height="44" rx="6" class="f-go-soft"/><rect x="26" y="136" width="178" height="44" rx="6" class="f-hot-soft"/>
+<g class="t-sm"><text x="34" y="32">1  ·  Mira</text><text x="34" y="46">2  ·  Kenji</text><text x="34" y="78">…</text><text x="34" y="96">5  ·  Ola</text><text x="34" y="152">28 · Tom</text><text x="34" y="168">30 · Ana</text></g>
+<rect x="26" y="102" width="178" height="18" rx="4" class="f-acc"/><text x="34" y="115" font-weight="700" fill="var(--accent-ink)" font-size="11">8  ·  YOU</text>
+<path class="s-acc" d="M196,100 V64"/><path d="M190,70 l6,-8 l6,8" class="s-acc"/>
+<g class="t-sm"><text x="220" y="40" class="t-go">move up ↑</text><text x="220" y="160" class="t-hot">move down ↓</text><text x="220" y="100" class="t-acc">3 spots from</text><text x="220" y="114" class="t-acc">promotion</text><text x="220" y="184">resets weekly</text></g>
+</svg>

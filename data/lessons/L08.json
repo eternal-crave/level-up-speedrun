@@ -152,7 +152,7 @@
       "deep": "where to stick",
       "cards": [
         { "t": "idea", "text": "**Keep the center of the screen for the action.** Put the most important information top-left. Don't fill all the edges." },
-        { "t": "how", "text": "- Readers' eyes move left to right, so top-left is seen first.\n- Full-screen menus can be see-through, so the player stays connected to the world.\n- HUD on the left, right and bottom edges makes the view feel tiny. Rogers calls this \"bracketing\"." },
+        { "t": "how", "fig": "bracketing", "text": "- Readers' eyes move left to right, so top-left is seen first.\n- Full-screen menus can be see-through, so the player stays connected to the world.\n- HUD on the left, right and bottom edges makes the view feel tiny. Rogers calls this \"bracketing\"." },
         { "t": "see", "text": "Rogers has seen strategy games so packed with panels that playing felt like looking through a mail slot." },
         { "t": "f2p", "text": "On phones:\n- keep all buttons inside the **safe area**, away from notches and rounded corners\n- put frequent actions in the **thumb zone**\n- never put key information where the thumbs rest\n- bracketing is the number one disease of F2P home screens" }
       ],

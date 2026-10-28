@@ -122,7 +122,7 @@
       "deep": "I Hate",
       "cards": [
         { "t": "idea", "text": "Designer Marc LeBlanc lists **eight kinds of fun.** Rogers finds the list interesting but hard to use day to day. It's still useful words for describing what a game offers." },
-        { "t": "how", "text": "The eight:\n- **sensation** and **fantasy**: it looks and feels great, you're someone else\n- **narrative** and **discovery**: a story, a world to explore\n- **challenge** and **expression**: overcome obstacles, show who you are\n- **fellowship** and **submission**: play with others, or relax and switch off" },
+        { "t": "how", "fig": "eight-fun", "text": "The eight:\n- **sensation** and **fantasy**: it looks and feels great, you're someone else\n- **narrative** and **discovery**: a story, a world to explore\n- **challenge** and **expression**: overcome obstacles, show who you are\n- **fellowship** and **submission**: play with others, or relax and switch off" },
         { "t": "see", "text": "Clash Royale is mostly challenge. Hay Day is expression and submission (calm, low pressure). Pokémon GO adds discovery and fellowship." },
         { "t": "f2p", "text": "Pick the one or two kinds of fun your game is built around. Then check that your core action, events and shop all support them." },
         { "t": "hook", "text": "\"Six Friendly Foxes Dance Near Every Crazy Squirrel\": Sensation, Fellowship, Fantasy, Discovery, Narrative, Expression, Challenge, Submission." }

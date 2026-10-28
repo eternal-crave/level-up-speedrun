@@ -233,7 +233,7 @@
       "deep": "people are the glue",
       "cards": [
         { "t": "idea", "text": "A global leaderboard motivates the top 0.1% and discourages everyone else. **Small groups give everyone a goal they can actually reach.**" },
-        { "t": "how", "text": "**Leagues:** put players in groups of about 30–50. The top players move up, the bottom players move down, and it resets every week. Duolingo's leagues are the famous example." },
+        { "t": "how", "fig": "leagues", "text": "**Leagues:** put players in groups of about 30–50. The top players move up, the bottom players move down, and it resets every week. Duolingo's leagues are the famous example." },
         { "t": "see", "text": "Show the nearest goal: \"3 spots from promotion\". Never just \"rank #2,483,991\"." },
         { "t": "f2p", "text": "Social design rules:\n- unlock clans after the tutorial\n- recommend active clans so members don't drift off\n- allow a \"vacation\" mode so obligation doesn't become guilt\n- keep PvP fair: pay for speed or looks, not wins" }
       ],
@@ -247,7 +247,7 @@
       "cards": [
         { "t": "idea", "text": "Live games log almost every tap. But **data shows what happened, not why**. Combine numbers with playtests, surveys and player comments." },
         { "t": "how", "text": "- **Funnel:** steps and the % who finish each one. Find the biggest drop.\n- **Cohort:** players who started at the same time. Compare them across versions.\n- **Segment:** a group by behaviour, like payers or clan members." },
-        { "t": "see", "text": "A puzzle game's level funnel shows a sudden cliff at level 37. That's a problem level. Now watch a playtest to learn why players quit there." },
+        { "t": "see", "fig": "level-funnel", "text": "A puzzle game's level funnel shows a sudden cliff at level 37. That's a problem level. Now watch a playtest to learn why players quit there." },
         { "t": "f2p", "text": "Correlation isn't cause. Clan members stay longer, but maybe engaged players just join clans. Only an experiment tells you if pushing clans helps." },
         { "t": "hook", "text": "Data is the speedometer, not the steering wheel." }
       ],
@@ -259,7 +259,7 @@
       "min": 3,
       "deep": "Data-driven design",
       "cards": [
-        { "t": "idea", "text": "An **A/B test** splits players randomly: A keeps the current version, B gets the change. Then you compare. **Plan it before you start.**" },
+        { "t": "idea", "fig": "ab-split", "text": "An **A/B test** splits players randomly: A keeps the current version, B gets the change. Then you compare. **Plan it before you start.**" },
         { "t": "how", "text": "The checklist:\n- **Hypothesis:** if we change X, metric Y goes up, because Z\n- **Metrics:** one main metric plus guardrails that must not get worse\n- **Sample size:** enough players\n- **Duration:** full weeks\n- **Decision rule:** set in advance" },
         { "t": "see", "text": "Small changes need many players. Spotting a rise in day-1 retention from 40% to 42% needs about 9,600 players per group. Spotting a small rise in buyers needs far more." },
         { "t": "f2p", "text": "Example hypothesis: \"If we move the starter pack to after the first boss, more players will buy, because they'll understand the items.\"" },

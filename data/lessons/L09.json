@@ -124,7 +124,7 @@
       "deep": "Alleys, Islands",
       "cards": [
         { "t": "idea", "text": "Disney's designers placed big landmarks, like Sleeping Beauty's Castle, to pull visitors forward. Walt called them **\"weenies\"**, after the hot dog animal trainers wave to lead a dog. **Use them to guide players.**" },
-        { "t": "how", "text": "A weenie can be a statue, a bridge, a tower or a strange tree. String them along the path so the player moves from one to the next. In open areas, give each zone its own look, like Disneyland's different lands." },
+        { "t": "how", "fig": "weenie", "text": "A weenie can be a statue, a bridge, a tower or a strange tree. String them along the path so the player moves from one to the next. In open areas, give each zone its own look, like Disneyland's different lands." },
         { "t": "see", "text": "Rogers' universal truth: **players will always find a way to break your game**, on purpose or by accident. So guide them clearly to play the way you intend." },
         { "t": "f2p", "text": "On mobile, weenies are the glowing next node on the map, the big event banner, the chest at the end of a path. Something exciting should always sit in view." }
       ],

@@ -1,0 +1,11 @@
+<svg viewBox="0 0 320 196" role="img" aria-label="The economy as a bathtub: faucets like level rewards, daily gifts and events fill it; sinks like upgrades, boosters and cosmetics drain it"><title>Faucets and sinks</title>
+<text x="10" y="20" class="t-go">FAUCETS (in)</text>
+<g class="t-sm"><text x="10" y="36">level rewards</text><text x="10" y="50">daily gifts</text><text x="10" y="64">events</text></g>
+<path class="s-ink" d="M110,30 h36 v12"/><path d="M146,48 v40" stroke="var(--go)" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 8"/>
+<path class="s-ink" d="M60,90 v58 q0,16 16,16 h132 q16,0 16,-16 v-58"/>
+<rect x="62" y="116" width="160" height="46" rx="8" class="f-gold-soft"/>
+<text x="142" y="144" text-anchor="middle" class="t-gold">coins in the tub</text>
+<path d="M190,166 v24" stroke="var(--hot)" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 8"/>
+<text x="236" y="110" class="t-hot">SINKS (out)</text>
+<g class="t-sm"><text x="236" y="126">upgrades</text><text x="236" y="140">boosters</text><text x="236" y="154">speed-ups</text><text x="236" y="168">cosmetics</text></g>
+</svg>

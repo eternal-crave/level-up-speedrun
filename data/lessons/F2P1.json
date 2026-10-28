@@ -60,7 +60,7 @@
       "cards": [
         { "t": "idea", "text": "A game can grow profitably only when **each player earns more over their lifetime (LTV) than it costs to get them (CPI).**" },
         { "t": "how", "text": "Players move through a funnel: they find the game, start playing, come back, tell friends, and some pay. **Order matters:** you can't earn from players who already left. That's why teams fix retention before monetization." },
-        { "t": "see", "text": "Say ads cost you 2 dollars per new player. The average player brings in only 1.50 dollars over their life. Then every new player loses you money." },
+        { "t": "see", "fig": "ltv-cpi", "text": "Say ads cost you 2 dollars per new player. The average player brings in only 1.50 dollars over their life. Then every new player loses you money." },
         { "t": "f2p", "text": "Designers raise LTV by keeping players longer and offering fair value. They lower CPI by making a game that looks great in ads and that people share." },
         { "t": "hook", "text": "Retention × Engagement × Monetization = LTV. If retention is zero, everything is zero." }
       ],
@@ -88,7 +88,7 @@
         { "t": "idea", "text": "**Retention** is the most important number in F2P. **D1, D7 and D30** show how many players from one install day come back after 1, 7 and 30 days." },
         { "t": "how", "text": "An old rule of thumb for a healthy casual game is **40 / 20 / 10** (D1 / D7 / D30). It varies a lot by genre. **Churn** means players who stop playing. **Churn points** are where they leave: a tutorial step, level 12, the first lost battle." },
         { "t": "see", "text": "What each number usually points to:\n- weak D1: the first session or core fun is broken\n- weak D7 with fine D1: goals and unlock pacing\n- weak D30: the long-term meta, social play and events" },
-        { "t": "f2p", "text": "Retention drops steeply at first, then flattens into a tail. The height of that tail is where long-term revenue lives." }
+        { "t": "f2p", "fig": "retention-curve", "text": "Retention drops steeply at first, then flattens into a tail. The height of that tail is where long-term revenue lives." }
       ],
       "check": { "q": "D1 is fine but D7 is weak. Where do you look first?", "options": ["Goals and unlock pacing in the first week", "The store icon and screenshots", "The first 10 seconds of the tutorial"], "answer": 0, "why": "A good D1 means the start works. Weak D7 points to the mid-game goals and pacing." }
     },
@@ -218,7 +218,7 @@
       "min": 3,
       "deep": "Economy design",
       "cards": [
-        { "t": "idea", "text": "A game economy works like plumbing. Currency flows in through **faucets** (rewards) and out through **sinks** (things to spend on). **Balance them, and every reward feels valuable.**" },
+        { "t": "idea", "fig": "faucets-sinks", "text": "A game economy works like plumbing. Currency flows in through **faucets** (rewards) and out through **sinks** (things to spend on). **Balance them, and every reward feels valuable.**" },
         { "t": "how", "text": "Most games have a **soft currency** (earned by playing, like coins) and a **hard currency** (mostly bought, like gems). Hard currency gives one price list for very different items, and lets free players taste premium items." },
         { "t": "see", "text": "Kinds of sinks:\n- upgrades with rising costs\n- consumables like boosters and revives\n- speed-ups and extra builders\n- cosmetics, which never run out" },
         { "t": "f2p", "text": "**Every faucet needs a sink players actually want.** A currency with nothing worth buying is just noise in the corner of the screen. Also show real prices clearly: \"Is 280 gems a lot?\" shouldn't be a puzzle." },

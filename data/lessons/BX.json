@@ -16,7 +16,7 @@
       "deep": "document ladder",
       "cards": [
         { "t": "idea", "text": "The back of the book is a toolbox: samples, templates and idea lists. **Each design document is a different zoom level of the same game**, for a different reader." },
-        { "t": "how", "text": "- **One-sheet:** sells the idea in one page\n- **Ten-pager:** covers all the big topics\n- **Pitch deck:** wins approval\n- **GDD:** holds everything, and keeps changing" },
+        { "t": "how", "fig": "doc-ladder", "text": "- **One-sheet:** sells the idea in one page\n- **Ten-pager:** covers all the big topics\n- **Pitch deck:** wins approval\n- **GDD:** holds everything, and keeps changing" },
         { "t": "see", "text": "The sample game Farm Wars appears as a one-sheet, a ten-pager and a pitch deck. You can watch one idea climb the ladder." },
         { "t": "f2p", "text": "Mobile studios usually go: concept one-pager, pitch deck with market data and KPI targets, prototype, feature one-pagers in a wiki, then soft launch." },
         { "t": "hook", "text": "One-sheet is a satellite photo. The GDD is street view with every lamppost labelled." }

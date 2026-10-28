@@ -111,7 +111,7 @@
       "deep": "Telegraphing",
       "cards": [
         { "t": "idea", "text": "Let enemies have cool, varied attacks. But **every attack must be telegraphed** with a readable warning, so observant players can respond." },
-        { "t": "how", "text": "A tell can be a wind-up animation, a glow, a sound, a flash, or a marker on the ground. Players learn the tell, then react. That's what makes them feel skilful." },
+        { "t": "how", "fig": "telegraph", "text": "A tell can be a wind-up animation, a glow, a sound, a flash, or a marker on the ground. Players learn the tell, then react. That's what makes them feel skilful." },
         { "t": "see", "text": "An attack with no warning isn't hard. It's a coin flip, and players hate losing to luck." },
         { "t": "f2p", "text": "On mobile, every damaging attack needs a wind-up plus a ground marker or aim line that stays visible under the thumb. Players glance at small screens quickly." },
         { "t": "hook", "text": "No tell, no hell." }
@@ -192,7 +192,7 @@
       "deep": "Size Matters",
       "cards": [
         { "t": "idea", "text": "Build the boss fight from **learnable patterns** with four parts, and make it escalate like a dance. **Always let the player land the final blow.**" },
-        { "t": "how", "text": "- **Primary attack:** its main move.\n- **Invulnerable attack:** a move you must avoid, not fight.\n- **Vulnerable state:** a moment it's open to damage.\n- **Opportunity:** what the player does in that moment.\nEach round, the pattern gets faster or adds a move." },
+        { "t": "how", "fig": "boss-dance", "text": "- **Primary attack:** its main move.\n- **Invulnerable attack:** a move you must avoid, not fight.\n- **Vulnerable state:** a moment it's open to damage.\n- **Opportunity:** what the player does in that moment.\nEach round, the pattern gets faster or adds a move." },
         { "t": "see", "text": "Big bosses cause camera headaches: keep the boss and the player both in view. And never let the boss die from a cutscene or a random hit. The player swings last." },
         { "t": "f2p", "text": "On mobile, pin the boss health bar at the top with phase markers. Make weak points glow, and make vulnerable windows obvious." },
         { "t": "hook", "text": "PIVO: Primary, Invulnerable, Vulnerable, Opportunity. The player swings last. Always." }

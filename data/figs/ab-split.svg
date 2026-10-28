@@ -1,0 +1,9 @@
+<svg viewBox="0 0 320 190" role="img" aria-label="An A/B test: players are split at random into group A, which keeps the current version, and group B, which gets the change; then one main metric and guardrails are compared"><title>A/B test</title>
+<circle cx="160" cy="30" r="20" class="f-gold-soft"/><text x="160" y="35" text-anchor="middle" class="t-ink t-sm">players</text>
+<path class="s-ink" d="M146,48 L90,82 M174,48 L230,82"/><text x="160" y="72" text-anchor="middle" class="t-sm">random split</text>
+<rect x="34" y="84" width="112" height="46" rx="10" class="f-acc-soft"/><text x="90" y="104" text-anchor="middle" class="t-acc">A · control</text><text x="90" y="120" text-anchor="middle" class="t-sm">current version</text>
+<rect x="174" y="84" width="112" height="46" rx="10" class="f-go-soft"/><text x="230" y="104" text-anchor="middle" class="t-go">B · variant</text><text x="230" y="120" text-anchor="middle" class="t-sm">the one change</text>
+<path class="s-ink" d="M90,132 L150,152 M230,132 L170,152"/>
+<rect x="60" y="152" width="200" height="34" rx="8" class="f-card" stroke="var(--ink)" stroke-width="1.5"/>
+<text x="160" y="166" text-anchor="middle" class="t-ink t-sm">compare: main metric</text><text x="160" y="180" text-anchor="middle" class="t-sm">+ guardrails that must not drop</text>
+</svg>

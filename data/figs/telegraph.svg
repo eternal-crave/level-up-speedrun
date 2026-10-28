@@ -1,0 +1,8 @@
+<svg viewBox="0 0 320 170" role="img" aria-label="Attack timeline: first a wind-up tell such as a glow or ground marker, then the hit, then a recovery window where the player can punish"><title>Every attack needs a warning</title>
+<text x="10" y="18" class="t-ink">One enemy attack, over time</text>
+<rect x="20" y="40" width="130" height="34" rx="6" class="f-gold-soft"/><rect x="150" y="40" width="48" height="34" class="f-hot"/><rect x="198" y="40" width="102" height="34" rx="6" class="f-go-soft"/>
+<text x="85" y="62" text-anchor="middle" class="t-gold">TELL</text><text x="174" y="62" text-anchor="middle" font-weight="700" fill="#fff">HIT</text><text x="249" y="62" text-anchor="middle" class="t-go">RECOVER</text>
+<g class="t-sm"><text x="20" y="92">wind-up, glow, sound,</text><text x="20" y="106">marker on the ground</text><text x="150" y="92">dodge</text><text x="150" y="106">or block</text><text x="210" y="92">your turn:</text><text x="210" y="106">punish it</text></g>
+<line class="s-line" x1="20" y1="124" x2="300" y2="124"/><text x="300" y="138" text-anchor="end" class="t-sm">time →</text>
+<text x="20" y="160" class="t-sm">no tell = a coin flip, and players hate losing to luck</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg viewBox="0 0 320 196" role="img" aria-label="A level map seen from above: a path winds from the start past a statue and a bridge toward a tall castle, each landmark visible from the last"><title>Weenies pull players forward</title>
+<path d="M30,176 C70,150 60,120 110,112 S170,96 180,70 S230,40 270,34" fill="none" stroke="var(--line)" stroke-width="14" stroke-linecap="round"/>
+<path d="M30,176 C70,150 60,120 110,112 S170,96 180,70 S230,40 270,34" class="s-acc" stroke-dasharray="2 7"/>
+<circle cx="30" cy="176" r="8" class="f-acc"/><text x="44" y="186" class="t-acc t-sm">you</text>
+<text x="104" y="106" text-anchor="middle" font-size="20">🗿</text><text x="120" y="130" class="t-sm">statue</text>
+<text x="182" y="66" text-anchor="middle" font-size="20">🌉</text><text x="198" y="90" class="t-sm">bridge</text>
+<text x="272" y="36" text-anchor="middle" font-size="28">🏰</text><text x="246" y="62" class="t-gold t-sm">the big weenie</text>
+<g class="t-sm"><text x="10" y="18">each landmark is visible</text><text x="10" y="32">from the one before</text></g>
+</svg>

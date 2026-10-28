@@ -30,7 +30,7 @@
       "deep": "Six kinds of cutscenes",
       "cards": [
         { "t": "idea", "text": "Cutscenes range from Hollywood-style film to fully playable moments. **Pick the type that fits your style, budget and schedule.**" },
-        { "t": "how", "text": "- **FMV:** live-action film with real actors\n- **Animated:** hand-drawn or stop-motion\n- **Flash:** still images with simple movement\n- **Prerendered:** high-quality CG\n- **Puppet show:** game models with a movie camera\n- **Scripted event:** the player keeps control" },
+        { "t": "how", "fig": "cutscene-spectrum", "text": "- **FMV:** live-action film with real actors\n- **Animated:** hand-drawn or stop-motion\n- **Flash:** still images with simple movement\n- **Prerendered:** high-quality CG\n- **Puppet show:** game models with a movie camera\n- **Scripted event:** the player keeps control" },
         { "t": "see", "text": "Since Half-Life and Call of Duty, scripted events became the favourite way to tell stories, because play never stops." },
         { "t": "f2p", "text": "**Groundhog Day problem:** a scene that replays every time you retry makes players furious. Show it once, then skip it automatically on retries." },
         { "t": "hook", "text": "Film, Frames, Flash, Fancy render, Puppets, Play: from most Hollywood to most game." }
