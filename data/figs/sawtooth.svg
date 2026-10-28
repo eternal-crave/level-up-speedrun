@@ -1,0 +1,9 @@
+<svg viewBox="0 0 320 190" role="img" aria-label="Difficulty rises in a saw-tooth: a gradual climb, a spike, then a breather, repeating"><title>Saw-tooth difficulty</title>
+<line class="s-line" x1="22" y1="158" x2="305" y2="158"/><line class="s-line" x1="22" y1="20" x2="22" y2="158"/>
+<text x="26" y="16" class="t-sm">difficulty ↑</text><text x="246" y="174" class="t-sm">levels →</text>
+<polyline class="s-acc" points="26,148 56,138 86,128 100,82 112,140 142,122 172,112 186,62 198,126 228,108 258,98 272,38 284,112 304,96"/>
+<circle cx="100" cy="82" r="5" class="f-hot"/><circle cx="186" cy="62" r="5" class="f-hot"/><circle cx="272" cy="38" r="5" class="f-hot"/>
+<circle cx="112" cy="140" r="5" class="f-go"/><circle cx="198" cy="126" r="5" class="f-go"/><circle cx="284" cy="112" r="5" class="f-go"/>
+<text x="70" y="74" class="t-hot t-sm">spike</text><text x="118" y="152" class="t-go t-sm">breather</text>
+<text x="22" y="186" class="t-sm">red = hard level · green = easy win after it</text>
+</svg>

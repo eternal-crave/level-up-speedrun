@@ -124,7 +124,14 @@ for (const m of modules) {
       for (const sent of String(c.text).replace(/\*\*/g, "").replace(/\n- /g, ". ").replace(/\n/g, ". ").split(/(?<=[.!?:]["”']?)\s+/)) { const k = wordsOf(sent); if (k > 25) lessonWarn.push(`${where} [${c.t}]: ${k}-word sentence: "${sent.slice(0, 60)}…"`); }
       if (/\be\.g\.|\bi\.e\.|\band\/or\b/i.test(c.text)) lessonWarn.push(`${where} [${c.t}]: avoid e.g./i.e./and-or`);
     }
-    m.lessons.push({ id: String(x.id), title: String(x.title || ""), min: +x.min || 3, deep: deepHeads, cards: cards.map((c) => ({ t: c.t, text: String(c.text) })), check: { q: String(ck.q || ""), options: (ck.options || []).map(String), answer: ck.answer | 0, why: String(ck.why || "") } });
+    // optional diagram: "fig": "<name>" inlines data/figs/<name>.svg (themed by app.css classes)
+    const figOf = (c) => {
+      if (!c.fig) return undefined;
+      const ff = path.join(ROOT, "data", "figs", String(c.fig) + ".svg");
+      if (!fs.existsSync(ff)) { problems.push(`${where} [${c.t}]: figure "${c.fig}" not found in data/figs`); return undefined; }
+      return fs.readFileSync(ff, "utf8").replace(/<\?xml[^>]*>\s*/, "").trim();
+    };
+    m.lessons.push({ id: String(x.id), title: String(x.title || ""), min: +x.min || 3, deep: deepHeads, cards: cards.map((c) => ({ t: c.t, text: String(c.text), fig: figOf(c) })), check: { q: String(ck.q || ""), options: (ck.options || []).map(String), answer: ck.answer | 0, why: String(ck.why || "") } });
   }
 }
 if (lessonWarn.length) console.log("lesson style warnings:\n  " + lessonWarn.join("\n  "));

@@ -31,7 +31,7 @@
       "deep": "Classic Story Structure",
       "cards": [
         { "t": "idea", "text": "The most basic story: **a hero wants something, problems keep getting worse, and a final win earns the prize.** Every story has a beginning, a middle and an end." },
-        { "t": "how", "text": "Rogers' stick-figure comic: a hero loves a princess in a tower. Lightning splits the ground. He tries to jump and falls in. Rain floods the pit. A dragon rises. He leaps off the dragon's head and wins the kiss." },
+        { "t": "how", "fig": "story-beats", "text": "Rogers' stick-figure comic: a hero loves a princess in a tower. Lightning splits the ground. He tries to jump and falls in. Rain floods the pit. A dragon rises. He leaps off the dragon's head and wins the kiss." },
         { "t": "see", "text": "Risk keeps rising until the last problem, then it's released. That's the same shape as a good difficulty curve, with the boss at step seven." },
         { "t": "f2p", "text": "A 7-day event can follow this arc. Day 1 sets the goal. Day 2 a storm wrecks it. Day 3 the first fix fails. It builds to a boss stage and the big reward." },
         { "t": "hook", "text": "Desire, Disaster, Try, Fail, Flip, Worse, Worst, Win, Prize." }
@@ -71,7 +71,7 @@
       "min": 3,
       "deep": "Triangle of Weirdness",
       "cards": [
-        { "t": "idea", "text": "The **Triangle of Weirdness** has three corners: **characters, activities and world.** Make only **one** of them weird, or players won't get it." },
+        { "t": "idea", "fig": "weird-triangle", "text": "The **Triangle of Weirdness** has three corners: **characters, activities and world.** Make only **one** of them weird, or players won't get it." },
         { "t": "how", "text": "A normal person in a weird world works. A weird creature doing normal things in a normal world works. Weird characters doing weird things in a weird world confuses everyone." },
         { "t": "see", "text": "Rogers points to very creative films and games that audiences didn't \"get\", like the 1984 film Dune. They broke the triangle." },
         { "t": "f2p", "text": "An ad has about 3 seconds to be understood. One weird corner is a hook. Three weird corners is noise, and the viewer scrolls past." },

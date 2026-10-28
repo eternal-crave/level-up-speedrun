@@ -97,7 +97,7 @@
       "deep": "Gacha",
       "cards": [
         { "t": "idea", "text": "The average cost of a random prize hides the real problem: **the unlucky players**. They're the angry ones." },
-        { "t": "how", "text": "Say an item has a 1% chance per pull. On average it takes 100 pulls. But about **37%** of players still don't have it after 100 pulls. One in ten players needs **230 pulls or more**." },
+        { "t": "how", "fig": "pity-tail", "text": "Say an item has a 1% chance per pull. On average it takes 100 pulls. But about **37%** of players still don't have it after 100 pulls. One in ten players needs **230 pulls or more**." },
         { "t": "see", "text": "With pity at 80 pulls, **nobody** goes past 80. The worst case becomes known and plannable." },
         { "t": "f2p", "text": "Economy designers calculate how many free pulls a non-payer earns per banner. A patient free player should be able to get some featured items by saving, or they feel locked out and leave." },
         { "t": "hook", "text": "A gacha without pity is a slot machine wearing a cute hat." }
@@ -139,7 +139,7 @@
       "cards": [
         { "t": "idea", "text": "Decide **who should finish the pass, and when.** A common target: a regular player (about 5 days a week) finishes a few days before the season ends." },
         { "t": "how", "text": "Example: 50 tiers × 1,000 XP = 50,000 XP. A regular player plays 21 of 30 days, so they need about 2,400 XP per day. Split it between daily missions, play and weekly missions." },
-        { "t": "see", "text": "Reward rhythm: small, small, medium, small, small, **BIG**. Every tier gives something. The best reward sits at the end, and the first premium tier pays off right away." },
+        { "t": "see", "fig": "pass-rhythm", "text": "Reward rhythm: small, small, medium, small, small, **BIG**. Every tier gives something. The best reward sits at the end, and the first premium tier pays off right away." },
         { "t": "f2p", "text": "Pitfalls: too grindy (a second job), too easy (no value), power rewards in PvP (feels required), and too many passes at once. Help late joiners with weekly missions and XP boosts." }
       ],
       "check": { "q": "What should the first premium tier give?", "options": ["Something great right away", "Nothing, to build tension", "Only small coins"], "answer": 0, "why": "The purchase should visibly pay off immediately." }
@@ -191,7 +191,7 @@
       "deep": "LiveOps",
       "cards": [
         { "t": "idea", "text": "LiveOps is **layered rhythm**: daily, weekly, every two weeks, monthly, quarterly and yearly beats." },
-        { "t": "how", "text": "- **Daily:** missions, login reward, daily deals\n- **Weekly:** weekend events, leaderboards\n- **Monthly:** new season and pass\n- **Quarterly:** big updates\n- **Yearly:** the anniversary" },
+        { "t": "how", "fig": "liveops-rhythm", "text": "- **Daily:** missions, login reward, daily deals\n- **Weekly:** weekend events, leaderboards\n- **Monthly:** new season and pass\n- **Quarterly:** big updates\n- **Yearly:** the anniversary" },
         { "t": "see", "text": "At any moment: one main event, one or two side events, plus always-on systems. The player should understand \"what's happening now\" in one glance." },
         { "t": "f2p", "text": "Avoid event soup: ten timers stress players. Alternate the mood (competitive, then co-op, then relaxing) and leave quiet weeks so big events feel bigger." },
         { "t": "hook", "text": "Tick-Tock-Drum-Gong-Boom-Cake: daily, weekly, rotation, monthly, quarterly, yearly." }

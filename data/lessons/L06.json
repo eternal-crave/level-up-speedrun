@@ -185,7 +185,7 @@
       "deep": "composition",
       "cards": [
         { "t": "idea", "text": "You're the director now. **Good composition** and **keeping screen direction consistent** make shots look intentional and keep players oriented." },
-        { "t": "how", "text": "**Rule of thirds:** draw two lines across and two down, like tic-tac-toe. Put the most important subject where lines cross, not dead centre. **Don't cross the line:** keep the camera on one side of the action, so left stays left." },
+        { "t": "how", "fig": "rule-thirds", "text": "**Rule of thirds:** draw two lines across and two down, like tic-tac-toe. Put the most important subject where lines cross, not dead centre. **Don't cross the line:** keep the camera on one side of the action, so left stays left." },
         { "t": "see", "text": "If one shot shows the hero running left and the next shot is from the other side, he suddenly seems to run right. Players get confused about where they're going." },
         { "t": "f2p", "text": "Use thirds in store screenshots and ad frames: the hero on one third, the action or reward on another. It instantly looks more professional." },
         { "t": "hook", "text": "Tic-tac-toe your shot, and treat the line like a velvet rope." }

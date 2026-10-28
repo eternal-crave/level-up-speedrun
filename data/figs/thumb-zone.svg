@@ -1,0 +1,11 @@
+<svg viewBox="0 0 320 210" role="img" aria-label="Phone held in one hand: the bottom of the screen is easy to reach, the middle is a stretch, the top is hard"><title>The thumb zone</title>
+<defs><clipPath id="tzc"><rect x="96" y="14" width="104" height="186" rx="16"/></clipPath></defs>
+<g clip-path="url(#tzc)"><rect x="96" y="14" width="104" height="186" class="f-hot-soft"/>
+<circle cx="200" cy="200" r="118" class="f-gold-soft"/><circle cx="200" cy="200" r="78" class="f-go-soft"/></g>
+<rect x="96" y="14" width="104" height="186" rx="16" class="s-ink"/>
+<rect x="118" y="160" width="60" height="22" rx="11" class="f-acc"/><text x="148" y="175" text-anchor="middle" font-size="11" fill="var(--accent-ink)" font-weight="700">PLAY</text>
+<path class="s-ink" stroke-dasharray="4 4" d="M232,206 Q230,150 182,128"/><text x="236" y="150" class="t-sm">thumb</text>
+<text x="210" y="40" class="t-hot">hard</text><text x="210" y="54" class="t-sm">settings, rare</text>
+<text x="18" y="112" class="t-gold">stretch</text><text x="18" y="126" class="t-sm">secondary</text>
+<text x="18" y="176" class="t-go">easy</text><text x="18" y="190" class="t-sm">main buttons</text>
+</svg>

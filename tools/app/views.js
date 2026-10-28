@@ -508,7 +508,7 @@ function viewLesson(mod, n) {
       <div class="row"><a class="btn sm ghost" href="#${mod}">Back to ${esc(m.label)}</a>${L.deep.length ? `<button class="btn sm ghost" data-act="deep" data-mod="${mod}" data-head="${esc(L.deep[0])}">📚 Go deeper</button>` : ""}</div></div>`;
   } else if (lsn.card < L.cards.length) {
     const c = L.cards[lsn.card], [emo, lab] = LCARD[c.t] || ["💡", ""];
-    body = `<div class="lcard lcard-${c.t}"><div class="lcard-lab">${emo} ${lab}</div><div class="lcard-text">${fmtLesson(c.text)}</div></div>
+    body = `<div class="lcard lcard-${c.t}"><div class="lcard-lab">${emo} ${lab}</div><div class="lcard-text">${fmtLesson(c.text)}</div>${c.fig ? `<figure class="lfig">${c.fig}</figure>` : ""}</div>
       <div class="lnav row">${lsn.card > 0 ? `<button class="btn ghost" data-act="lback">←</button>` : ""}<button class="btn primary lgo" data-act="lnext">${lsn.card + 1 < L.cards.length ? "Next" : "Quick check"} →</button></div>`;
   } else {
     const ck = L.check, picked = lsn.picked;

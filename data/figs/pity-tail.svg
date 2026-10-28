@@ -1,0 +1,7 @@
+<svg viewBox="0 0 320 180" role="img" aria-label="Chance of still missing a 1 percent item: 61 percent after 50 pulls, 37 after 100, 13 after 200, 10 after 230. With pity at 80, nobody goes past 80."><title>Averages lie, tails rage</title>
+<text x="8" y="16" class="t-ink">Still no 1% item after N pulls</text>
+<g class="t-sm"><text x="8" y="44">50 pulls</text><text x="8" y="70">100 pulls</text><text x="8" y="96">200 pulls</text><text x="8" y="122">230 pulls</text></g>
+<g class="f-hot"><rect x="76" y="32" width="134" height="16" rx="3"/><rect x="76" y="58" width="81" height="16" rx="3"/><rect x="76" y="84" width="29" height="16" rx="3"/><rect x="76" y="110" width="22" height="16" rx="3"/></g>
+<g class="t-ink t-sm"><text x="216" y="44">61%</text><text x="163" y="70">37%</text><text x="111" y="96">13%</text><text x="104" y="122">1 in 10</text></g>
+<rect x="8" y="140" width="304" height="32" rx="8" class="f-go-soft"/><text x="18" y="160" class="t-go">With pity at 80: worst case is 80. Period.</text>
+</svg>

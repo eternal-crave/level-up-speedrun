@@ -1,0 +1,12 @@
+<svg viewBox="0 0 320 200" role="img" aria-label="Triangle of Weirdness: characters, activities and world; make only one corner weird"><title>Triangle of Weirdness</title>
+<polygon class="s-ink" points="160,28 52,150 268,150"/>
+<circle cx="160" cy="28" r="14" class="f-card" stroke="var(--ink)" stroke-width="2"/>
+<circle cx="52" cy="150" r="14" class="f-card" stroke="var(--ink)" stroke-width="2"/>
+<circle cx="268" cy="150" r="16" class="f-gold"/>
+<text x="268" y="155" text-anchor="middle" font-size="14">✨</text>
+<text x="160" y="33" text-anchor="middle" class="t-ink">C</text><text x="52" y="155" text-anchor="middle" class="t-ink">A</text>
+<text x="186" y="24" class="t-ink">Characters</text><text x="186" y="38" class="t-sm">normal</text>
+<text x="18" y="182" class="t-ink">Activities</text><text x="18" y="196" class="t-sm">normal</text>
+<text x="226" y="182" class="t-gold">World</text><text x="226" y="196" class="t-sm">the weird one</text>
+<text x="160" y="110" text-anchor="middle" class="t-sm">make only ONE</text><text x="160" y="124" text-anchor="middle" class="t-sm">corner weird</text>
+</svg>

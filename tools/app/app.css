@@ -550,6 +550,25 @@ a, button, select, summary, .tab, [data-act] { touch-action: manipulation; -webk
 .lcard-text { font-size: 1.05rem; line-height: 1.55; display: grid; gap: 10px; }
 .lcard-text ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
 .lcard-idea .lcard-text { font-size: 1.15rem; }
+/* lesson diagrams: original SVGs in data/figs, coloured by theme tokens */
+.lfig { margin: 4px 0 0; padding: 10px; background: var(--card-2); border: 1.5px solid var(--line); border-radius: var(--r-sm); }
+.lfig svg { display: block; width: 100%; height: auto; max-height: 17rem; font-family: var(--f-body); }
+.lfig text { fill: var(--ink-2); font-size: 12px; }
+.lfig .t-ink { fill: var(--ink); font-weight: 700; }
+.lfig .t-acc { fill: var(--accent); font-weight: 700; }
+.lfig .t-hot { fill: var(--hot); font-weight: 700; }
+.lfig .t-go { fill: var(--go); font-weight: 700; }
+.lfig .t-gold { fill: var(--gold); font-weight: 700; }
+.lfig .t-sm { font-size: 10.5px; }
+.lfig .s-ink { stroke: var(--ink); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.lfig .s-line { stroke: var(--line); fill: none; stroke-width: 1.5; }
+.lfig .s-acc { stroke: var(--accent); fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.lfig .s-hot { stroke: var(--hot); fill: none; stroke-width: 3; stroke-linecap: round; }
+.lfig .f-acc { fill: var(--accent); } .lfig .f-acc-soft { fill: var(--accent-soft); }
+.lfig .f-gold { fill: var(--gold); } .lfig .f-gold-soft { fill: var(--gold-soft); }
+.lfig .f-hot { fill: var(--hot); } .lfig .f-hot-soft { fill: var(--hot-soft); }
+.lfig .f-go { fill: var(--go); } .lfig .f-go-soft { fill: var(--go-soft); }
+.lfig .f-card { fill: var(--card); } .lfig .f-line { fill: var(--line); }
 .lq { font-size: 1.1rem; font-weight: 700; }
 .lend { justify-items: center; text-align: center; align-content: center; }
 .lnav { display: grid; gap: 10px; }

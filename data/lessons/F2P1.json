@@ -128,7 +128,7 @@
         { "t": "idea", "text": "The **meta loop** is the long-term reason to keep playing: a collection, a base, a rank or a season. **The core loop is what you do. The meta loop is why you care.**" },
         { "t": "how", "text": "The loops feed each other. The core loop produces resources, and the meta spends them. The meta then changes how the core plays: new cards bring new strategies." },
         { "t": "see", "text": "Candy Crush and Royal Match have the same core: match-3. Royal Match adds a castle you rebuild with the stars you win. Same action, a different \"why\"." },
-        { "t": "f2p", "text": "Which loop drives which number:\n- core loop quality: D1\n- mid-term goals: D7\n- meta, social and events: D30 and beyond" },
+        { "t": "f2p", "fig": "loops", "text": "Which loop drives which number:\n- core loop quality: D1\n- mid-term goals: D7\n- meta, social and events: D30 and beyond" },
         { "t": "hook", "text": "The meta loop is the reason the hamster cares about the wheel." }
       ],
       "check": { "q": "Which loop mostly drives D30 retention?", "options": ["The meta, social and event layers", "The tutorial and first levels", "The loading and title screens"], "answer": 0, "why": "Long-term goals and people to play with are what keep players for a month and more." }
@@ -207,7 +207,7 @@
       "cards": [
         { "t": "idea", "text": "Pace progression like a long TV series. **The early game is a highlight reel, the mid game has a steady rhythm, and the late game runs on systems and events.**" },
         { "t": "how", "text": "- Early: something new almost every session.\n- Mid: a meaningful unlock every few sessions, with goals visible ahead.\n- Late: novelty comes from events, seasons and social play.\nAlways show what's next: \"unlocks at level 8\", a locked area, a hero's shadow." },
-        { "t": "see", "text": "Difficulty should look like a **saw tooth**: harder, harder, a spike, then an easier breather, then harder again. Like a gym session, not max weight on every lift." },
+        { "t": "see", "fig": "sawtooth", "text": "Difficulty should look like a **saw tooth**: harder, harder, a spike, then an easier breather, then harder again. Like a gym session, not max weight on every lift." },
         { "t": "f2p", "text": "What players feel is **time**, not XP. Plan time-to-level directly: \"level 5 in the first session, level 10 by day 3\". Fast-growing XP curves look gentle early and explode later." }
       ],
       "check": { "q": "What shape should difficulty follow?", "options": ["A saw tooth: rising, a spike, a breather", "Flat all the way, so nobody gets stuck", "Always harder, with no breaks at all"], "answer": 0, "why": "Breathers after spikes keep players motivated without burning them out." }

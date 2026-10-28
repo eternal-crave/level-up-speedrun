@@ -1,0 +1,8 @@
+<svg viewBox="0 0 320 210" role="img" aria-label="Three nested loops: the core loop in seconds, the meta loop over days, and social and event layers over weeks"><title>Core, meta and social loops</title>
+<circle cx="190" cy="105" r="96" class="f-gold-soft"/><circle cx="190" cy="105" r="66" class="f-go-soft"/><circle cx="190" cy="105" r="36" class="f-acc-soft"/>
+<circle cx="190" cy="105" r="96" class="s-line"/><circle cx="190" cy="105" r="66" class="s-line"/><circle cx="190" cy="105" r="36" class="s-line"/>
+<text x="190" y="102" text-anchor="middle" class="t-acc">Core</text><text x="190" y="116" text-anchor="middle" class="t-sm">seconds</text>
+<text x="190" y="58" text-anchor="middle" class="t-go">Meta</text><text x="190" y="162" text-anchor="middle" class="t-sm">days</text>
+<text x="190" y="26" text-anchor="middle" class="t-gold">Social + events</text><text x="190" y="194" text-anchor="middle" class="t-sm">weeks</text>
+<g class="t-sm"><text x="4" y="90">D1 ← core</text><text x="4" y="108">D7 ← meta</text><text x="4" y="126">D30 ← social</text></g>
+</svg>

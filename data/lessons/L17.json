@@ -115,7 +115,7 @@
       "deep": "Vertical slice",
       "cards": [
         { "t": "idea", "text": "Two ways to build: a **vertical slice** (one piece near-final) or a **horizontal layer** (the whole game rough, then polished). Pick one and go." },
-        { "t": "how", "text": "- **Vertical slice:** one level at about 80% of final quality. It's a demo and a model for the rest.\n- **Horizontal layer:** every level in rough gray boxes, then polish once it plays well." },
+        { "t": "how", "fig": "slice-layer", "text": "- **Vertical slice:** one level at about 80% of final quality. It's a demo and a model for the rest.\n- **Horizontal layer:** every level in rough gray boxes, then polish once it plays well." },
         { "t": "see", "text": "A slice can take months and cause crunch. Gray boxes need imagination to judge, and Rogers says that's rarer than you'd think." },
         { "t": "f2p", "text": "Don't hide behind \"the fun will emerge\". Unplanned economies create exploits and inflation. Plan the rules, then test how they interact." },
         { "t": "hook", "text": "A slice shows how the pie tastes. A layer shows if it fits the table." }

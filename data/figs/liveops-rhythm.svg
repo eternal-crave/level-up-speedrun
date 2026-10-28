@@ -1,0 +1,11 @@
+<svg viewBox="0 0 320 206" role="img" aria-label="LiveOps beats over twelve weeks: daily, weekly, events every two weeks, monthly, quarterly, and the yearly anniversary"><title>Layered LiveOps rhythm</title>
+<g class="t-sm"><text x="8" y="30">Daily</text><text x="8" y="58">Weekly</text><text x="8" y="86">Events</text><text x="8" y="114">Monthly</text><text x="8" y="142">Quarterly</text><text x="8" y="170">Yearly</text></g>
+<g class="t-sm" text-anchor="end"><text x="314" y="30">tick</text><text x="314" y="58">tock</text><text x="314" y="86">drum</text><text x="314" y="114">gong</text><text x="314" y="142">boom</text><text x="314" y="170">cake</text></g>
+<line x1="72" y1="26" x2="282" y2="26" stroke="var(--ink-3)" stroke-width="3" stroke-dasharray="1 4" stroke-linecap="round"/>
+<g class="f-acc"><rect x="72" y="50" width="4" height="12"/><rect x="89.5" y="50" width="4" height="12"/><rect x="107" y="50" width="4" height="12"/><rect x="124.5" y="50" width="4" height="12"/><rect x="142" y="50" width="4" height="12"/><rect x="159.5" y="50" width="4" height="12"/><rect x="177" y="50" width="4" height="12"/><rect x="194.5" y="50" width="4" height="12"/><rect x="212" y="50" width="4" height="12"/><rect x="229.5" y="50" width="4" height="12"/><rect x="247" y="50" width="4" height="12"/><rect x="264.5" y="50" width="4" height="12"/></g>
+<g class="f-go"><rect x="72" y="78" width="30" height="12" rx="3"/><rect x="107" y="78" width="30" height="12" rx="3"/><rect x="142" y="78" width="30" height="12" rx="3"/><rect x="177" y="78" width="30" height="12" rx="3"/><rect x="212" y="78" width="30" height="12" rx="3"/><rect x="247" y="78" width="30" height="12" rx="3"/></g>
+<g class="f-gold"><rect x="72" y="104" width="66" height="16" rx="4"/><rect x="142" y="104" width="66" height="16" rx="4"/><rect x="212" y="104" width="66" height="16" rx="4"/></g>
+<rect x="262" y="132" width="20" height="18" rx="4" class="f-hot"/>
+<text x="72" y="174" font-size="14">🎂</text><text x="92" y="172" class="t-sm">once a year: the anniversary</text>
+<line class="s-line" x1="72" y1="186" x2="282" y2="186"/><text x="72" y="198" class="t-sm">week 1</text><text x="282" y="198" class="t-sm" text-anchor="end">week 12</text>
+</svg>

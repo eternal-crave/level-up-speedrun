@@ -1,0 +1,11 @@
+<svg viewBox="0 0 320 170" role="img" aria-label="Battle pass reward rhythm: small, small, medium, small, small, big, repeating, with the chase reward at the final tier"><title>Pass reward rhythm</title>
+<text x="10" y="22" class="t-ink">Every tier gives something</text>
+<line class="s-line" x1="10" y1="130" x2="310" y2="130"/>
+<g class="f-acc-soft" stroke="var(--accent)" stroke-width="1.5">
+<rect x="14" y="116" width="14" height="14"/><rect x="34" y="116" width="14" height="14"/><rect x="54" y="104" width="14" height="26"/><rect x="74" y="116" width="14" height="14"/><rect x="94" y="116" width="14" height="14"/>
+<rect x="134" y="116" width="14" height="14"/><rect x="154" y="116" width="14" height="14"/><rect x="174" y="104" width="14" height="26"/><rect x="194" y="116" width="14" height="14"/><rect x="214" y="116" width="14" height="14"/></g>
+<g class="f-gold"><rect x="114" y="82" width="14" height="48"/><rect x="234" y="82" width="14" height="48"/></g>
+<rect x="268" y="40" width="30" height="90" rx="3" class="f-hot"/><text x="283" y="34" text-anchor="middle" font-size="16" class="t-hot">★</text>
+<text x="14" y="148" class="t-sm">small · small · medium · small · small · BIG</text>
+<text x="246" y="162" class="t-hot t-sm">chase reward</text>
+</svg>

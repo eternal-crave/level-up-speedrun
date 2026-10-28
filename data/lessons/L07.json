@@ -179,7 +179,7 @@
       "min": 3,
       "deep": "Touch Controls Field Guide",
       "cards": [
-        { "t": "idea", "text": "Many people hold their phone in one hand and tap with the thumb. **Put frequent actions where the thumb naturally rests: the bottom of the screen.** The top is a stretch." },
+        { "t": "idea", "fig": "thumb-zone", "text": "Many people hold their phone in one hand and tap with the thumb. **Put frequent actions where the thumb naturally rests: the bottom of the screen.** The top is a stretch." },
         { "t": "how", "text": "Joystick types:\n- **fixed:** always in the same place, predictable\n- **floating:** appears wherever the thumb lands, very forgiving\n- **tap-to-move:** tap a destination, great for casual play\n- **twin-stick:** left moves, right aims and attacks" },
         { "t": "see", "text": "In Brawl Stars, tapping the attack button auto-aims at the nearest enemy, while dragging it aims by hand. One control serves both beginners and experts. Among Us lets players choose joystick or tap-to-move." },
         { "t": "f2p", "text": "Hyper-casual and most casual games: one thumb, portrait. Mid-core action and strategy: two thumbs, landscape. Decide early, because it shapes the whole screen layout." }

@@ -86,3 +86,4 @@ L00, L01, L02, L04, F2P1, L13, L12, L09, L08, L07, L05, L06, L10, L11, L14, F2P2
 - [x] Fix: lesson check options are shuffled per visit (every file stores the right answer at index 0, so unshuffled checks could be passed without reading)
 - [x] Rewrote wrong answers in 157 checks so length no longer gives the answer away (lint rule added)
 - [x] Final quality pass: tightened the length rule to 1.2× and evened out 92 more checks (lint clean)
+- [x] Diagrams: cards can carry `"fig": "<name>"` → `data/figs/<name>.svg` (original drawings, themed by `.lfig` classes in app.css, 320px-wide viewBox, phone-checked). First 10: story-beats, weird-triangle, sawtooth, thumb-zone, liveops-rhythm, loops, pity-tail, rule-thirds, pass-rhythm, slice-layer. The book's own illustrations are NOT copied (copyright; the repo is public).
