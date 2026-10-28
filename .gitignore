@@ -4,3 +4,4 @@ tools/dist/
 .claude/
 # scratch test pages
 app/_*.html
+*.pdf

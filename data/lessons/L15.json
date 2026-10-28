@@ -13,7 +13,7 @@
     {
       "id": "L15-l01",
       "title": "Sound can't wait until the end",
-      "min": 3,
+      "min": 3, "book": 394,
       "deep": "Why music can't wait",
       "cards": [
         { "t": "idea", "text": "Music and sound change how an experience feels. Teams often leave them until the end because they need lots of coordination. **That's a mistake: plan audio early.**" },
@@ -27,7 +27,7 @@
     {
       "id": "L15-l02",
       "title": "Rent the hit or own the score",
-      "min": 3,
+      "min": 3, "book": 395,
       "deep": "Licensed vs original",
       "cards": [
         { "t": "idea", "text": "Music is either **licensed** (existing songs you pay to use) or **original** (written for your game). **Never ship music you don't have the rights to.**" },
@@ -40,7 +40,7 @@
     {
       "id": "L15-l03",
       "title": "Speak musician",
-      "min": 3,
+      "min": 3, "book": 396,
       "deep": "Speak musician",
       "cards": [
         { "t": "idea", "text": "To direct music, you need **the words** to say what you want, plus **reference tracks** to show it." },
@@ -54,7 +54,7 @@
     {
       "id": "L15-l04",
       "title": "Best song first",
-      "min": 3,
+      "min": 3, "book": 398,
       "deep": "music needs list",
       "cards": [
         { "t": "idea", "text": "List **every place that needs music**, then decide what you can afford. **Put your best piece on the start screen.**" },
@@ -67,7 +67,7 @@
     {
       "id": "L15-l05",
       "title": "Music that reacts",
-      "min": 3,
+      "min": 3, "book": 398,
       "deep": "Dynamic scoring",
       "cards": [
         { "t": "idea", "text": "A **dynamic score** changes with the action: mystery, warning, combat, chase, victory. A **leitmotif** gives a character or situation its own tune." },
@@ -81,7 +81,7 @@
     {
       "id": "L15-l06",
       "title": "The pause before the drop",
-      "min": 3,
+      "min": 3, "book": 399,
       "deep": "power of silence",
       "cards": [
         { "t": "idea", "text": "Sometimes the best \"music\" is the world itself, and sometimes it's **silence**." },
@@ -95,7 +95,7 @@
     {
       "id": "L15-l07",
       "title": "Every tap deserves a thump",
-      "min": 3,
+      "min": 3, "book": 402,
       "deep": "Sounds Like a Game",
       "cards": [
         { "t": "idea", "text": "Sound effects are **feedback**. Build the sound list together with the characters' moves, and make every action audible." },
@@ -108,7 +108,7 @@
     {
       "id": "L15-l08",
       "title": "Real isn't always right",
-      "min": 3,
+      "min": 3, "book": 402,
       "deep": "Sounds Like a Game",
       "cards": [
         { "t": "idea", "text": "Real recordings often sound wrong in a game. **Sweeten** them: mix sounds until they feel right." },
@@ -122,7 +122,7 @@
     {
       "id": "L15-l09",
       "title": "Whisper, shout, whistle",
-      "min": 3,
+      "min": 3, "book": 403,
       "deep": "Sound priority",
       "cards": [
         { "t": "idea", "text": "Too many sounds at once becomes noise. Sort every sound into **local, distant or priority**, so important sounds always cut through." },
@@ -136,7 +136,7 @@
     {
       "id": "L15-l10",
       "title": "If it only beeps, it's a secret",
-      "min": 3,
+      "min": 3, "book": 403,
       "deep": "Sound and music AS gameplay",
       "cards": [
         { "t": "idea", "text": "Whole genres are built on music, from Dance Dance Revolution to Band Hero. But **never rely on sound alone: echo every audio cue with visuals.**" },

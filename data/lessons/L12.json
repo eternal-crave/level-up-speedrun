@@ -13,7 +13,7 @@
     {
       "id": "L12-l01",
       "title": "Four kinds of stuff fill a level",
-      "min": 3,
+      "min": 3, "book": 331,
       "deep": "Intro",
       "cards": [
         { "t": "idea", "text": "An empty level is just a hallway. **Walking is not gameplay.** Fill levels with four kinds of stuff: **mechanics, hazards, props and puzzles.**" },
@@ -26,7 +26,7 @@
     {
       "id": "L12-l02",
       "title": "Doors, switches and levers",
-      "min": 3,
+      "min": 3, "book": 334,
       "deep": "Intro",
       "cards": [
         { "t": "idea", "text": "Even a door is a design decision. **How the player opens it should match the character**, and the method should **stay the same for the whole game.**" },
@@ -40,7 +40,7 @@
     {
       "id": "L12-l03",
       "title": "Hazards must look dangerous and be fair",
-      "min": 3,
+      "min": 3, "book": 336,
       "deep": "Death Trap",
       "cards": [
         { "t": "idea", "text": "A **hazard** is a mechanic that hurts. Unlike enemies, hazards aren't smart. So they **must move in predictable patterns** and **must clearly look dangerous.**" },
@@ -54,7 +54,7 @@
     {
       "id": "L12-l04",
       "title": "Challenge, not difficulty",
-      "min": 3,
+      "min": 3, "book": 338,
       "deep": "Death Trap",
       "cards": [
         { "t": "idea", "text": "**Challenge** builds skill: it puts obstacles in front of you that skill can beat. **Difficulty** just punishes. **Aim for challenge.**" },
@@ -67,7 +67,7 @@
     {
       "id": "L12-l05",
       "title": "Timing puzzles: wait for it… go!",
-      "min": 3,
+      "min": 3, "book": 339,
       "deep": "Time to Die",
       "cards": [
         { "t": "idea", "text": "A **timing puzzle** is a hazard that moves, like spinning blades or a flame jet. It creates tension: wait… wait… now! **It only feels fair if the player can read the pattern.**" },
@@ -81,7 +81,7 @@
     {
       "id": "L12-l06",
       "title": "Props, breakables and the crate problem",
-      "min": 3,
+      "min": 3, "book": 340,
       "deep": "Time to Die",
       "cards": [
         { "t": "idea", "text": "**Props** make a level feel like a real place: desks, cars, statues, trees. **Let players interact with them**, and breakable props can drop treasure or open new paths." },
@@ -95,7 +95,7 @@
     {
       "id": "L12-l07",
       "title": "Compose your level like music",
-      "min": 3,
+      "min": 3, "book": 343,
       "deep": "Music of Mechanics",
       "cards": [
         { "t": "idea", "text": "Placing mechanics, hazards and enemies is like **composing music.** Bring in each instrument one at a time, let it be learned, then layer them toward a big finish. Done well, this creates **flow**." },
@@ -109,7 +109,7 @@
     {
       "id": "L12-l08",
       "title": "A few mechanics, many combinations",
-      "min": 3,
+      "min": 3, "book": 344,
       "deep": "Music of Mechanics",
       "cards": [
         { "t": "idea", "text": "You don't need many mechanics. **Three good ones can make dozens of combinations.** The magic is in how you combine them." },
@@ -123,7 +123,7 @@
     {
       "id": "L12-l09",
       "title": "Checkpoints: a calm spot to restart",
-      "min": 3,
+      "min": 3, "book": 346,
       "deep": "Calm Spot",
       "cards": [
         { "t": "idea", "text": "**Checkpoints** let players save progress, catch their breath and rethink. They can be visible or invisible, but they must be **safe and automatic.**" },
@@ -136,7 +136,7 @@
     {
       "id": "L12-l10",
       "title": "Puzzles: show the door, then the key",
-      "min": 3,
+      "min": 3, "book": 348,
       "deep": "Riddle Me This",
       "cards": [
         { "t": "idea", "text": "Rogers' definition: **a puzzle is a challenge with a right answer.** The player must know what they're trying to do and what they'll get. **Show them the door, then send them after the key.**" },
@@ -150,7 +150,7 @@
     {
       "id": "L12-l11",
       "title": "Four ways to solve, and fair hints",
-      "min": 3,
+      "min": 3, "book": 349,
       "deep": "Riddle Me This",
       "cards": [
         { "t": "idea", "text": "Players solve puzzles by **reason, knowledge, skill or luck.** The best puzzles allow all four. And **moving forward is something the player is owed, not a prize they earn.**" },
@@ -164,7 +164,7 @@
     {
       "id": "L12-l12",
       "title": "Minigames and microgames",
-      "min": 3,
+      "min": 3, "book": 351,
       "deep": "Minigames",
       "cards": [
         { "t": "idea", "text": "A **minigame** is a small, simple game for variety or to represent an activity. A **microgame** lasts only seconds. Rogers believes almost any activity can become a minigame." },

@@ -13,7 +13,7 @@
     {
       "id": "L03-l01",
       "title": "Story is salt, gameplay is meat",
-      "min": 3,
+      "min": 3, "book": 41,
       "deep": "Beginning, Middle, End",
       "cards": [
         { "t": "idea", "text": "Designers argue about story versus gameplay forever. Rogers' answer: **a game doesn't need a story, yet it always has one.** Use story to season the play, not to drown it." },
@@ -27,7 +27,7 @@
     {
       "id": "L03-l02",
       "title": "Nine beats of a classic story",
-      "min": 3,
+      "min": 3, "book": 48,
       "deep": "Classic Story Structure",
       "cards": [
         { "t": "idea", "text": "The most basic story: **a hero wants something, problems keep getting worse, and a final win earns the prize.** Every story has a beginning, a middle and an end." },
@@ -41,7 +41,7 @@
     {
       "id": "L03-l03",
       "title": "The player writes the diary",
-      "min": 3,
+      "min": 3, "book": 42,
       "deep": "Story vs Narrative",
       "cards": [
         { "t": "idea", "text": "A **story** is what the writer tells. A **narrative** is what the player actually experiences, in order. **Every play session creates a narrative**, so make the likely ones fun." },
@@ -55,7 +55,7 @@
     {
       "id": "L03-l04",
       "title": "Almost anything can be a game",
-      "min": 3,
+      "min": 3, "book": 43,
       "deep": "Almost Anything",
       "cards": [
         { "t": "idea", "text": "Don't let the topic limit you. **Almost any subject can become gameplay**, even a children's fairy tale." },
@@ -68,7 +68,7 @@
     {
       "id": "L03-l05",
       "title": "Only one weird corner",
-      "min": 3,
+      "min": 3, "book": 45,
       "deep": "Triangle of Weirdness",
       "cards": [
         { "t": "idea", "fig": "weird-triangle", "text": "The **Triangle of Weirdness** has three corners: **characters, activities and world.** Make only **one** of them weird, or players won't get it." },
@@ -82,7 +82,7 @@
     {
       "id": "L03-l06",
       "title": "Three kinds of story fans",
-      "min": 3,
+      "min": 3, "book": 46,
       "deep": "Three Kinds of Story Audience",
       "cards": [
         { "t": "idea", "text": "Players split by how much they care about story. **Serve all three types**, and keep the story working for the gameplay." },
@@ -96,7 +96,7 @@
     {
       "id": "L03-l07",
       "title": "Start late, keep moving",
-      "min": 3,
+      "min": 3, "book": 46,
       "deep": "Three Kinds of Story Audience",
       "cards": [
         { "t": "idea", "text": "**Start the story as late in the action as you can**, and keep it moving. Screenwriters change the plot or action about every 15 minutes." },
@@ -109,7 +109,7 @@
     {
       "id": "L03-l08",
       "title": "Suspense beats surprise",
-      "min": 3,
+      "min": 3, "book": 47,
       "deep": "Surprise, Suspense",
       "cards": [
         { "t": "idea", "text": "**Surprise** gives a quick shock. **Suspense** keeps players tense for much longer. Show the danger coming." },
@@ -123,7 +123,7 @@
     {
       "id": "L03-l09",
       "title": "Predictable can be great",
-      "min": 3,
+      "min": 3, "book": 47,
       "deep": "Surprise, Suspense",
       "cards": [
         { "t": "idea", "text": "You don't need clever twists. **People enjoy predictable stories when the \"how\" is fun.** Guessing right makes players feel smart." },
@@ -136,7 +136,7 @@
     {
       "id": "L03-l10",
       "title": "End when players feel satisfied",
-      "min": 3,
+      "min": 3, "book": 48,
       "deep": "Wrap It Up",
       "cards": [
         { "t": "idea", "text": "**End the game when the player feels satisfied** and has done what they came to do. Then give them reasons to stay in a world they love." },
@@ -149,7 +149,7 @@
     {
       "id": "L03-l11",
       "title": "A short name sticks",
-      "min": 3,
+      "min": 3, "book": 50,
       "deep": "Naming Your Game",
       "cards": [
         { "t": "idea", "text": "The title is part of your story and your marketing. **Keep it short, choose its type on purpose, and name the game early.**" },
@@ -163,7 +163,7 @@
     {
       "id": "L03-l12",
       "title": "Give characters a first act",
-      "min": 3,
+      "min": 3, "book": 51,
       "deep": "Creating Characters",
       "cards": [
         { "t": "idea", "text": "Players need time to **bond with a character before anything bad happens** to them. Otherwise a death means nothing." },
@@ -176,7 +176,7 @@
     {
       "id": "L03-l13",
       "title": "Personality drives play",
-      "min": 3,
+      "min": 3, "book": 53,
       "deep": "Creating Characters",
       "cards": [
         { "t": "idea", "text": "**A character's job and personality should drive what they do.** Humor and gameplay both come from who the character is." },
@@ -189,7 +189,7 @@
     {
       "id": "L03-l14",
       "title": "Kids deserve real stories",
-      "min": 3,
+      "min": 3, "book": 54,
       "deep": "Writing for Kids",
       "cards": [
         { "t": "idea", "text": "Writing for kids doesn't mean writing badly. **The common mistake is making the story too simple.**" },
@@ -202,7 +202,7 @@
     {
       "id": "L03-l15",
       "title": "Cooking in someone else's kitchen",
-      "min": 3,
+      "min": 3, "book": 55,
       "deep": "Writing for Licenses",
       "cards": [
         { "t": "idea", "text": "A **licensed game** uses someone else's characters or world. **Respect the owner's rules, but a good partnership still leaves room to create.**" },

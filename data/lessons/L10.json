@@ -12,7 +12,7 @@
     {
       "id": "L10-l01",
       "title": "Combat has three verbs: hit, move, guard",
-      "min": 3,
+      "min": 3, "book": 244,
       "deep": "Elements of Combat",
       "cards": [
         { "t": "idea", "text": "A military thinker said every fighting action is one of three things: **hitting, moving or guarding.** Design all three, not just attacks." },
@@ -26,7 +26,7 @@
     {
       "id": "L10-l02",
       "title": "Fighting style comes from personality",
-      "min": 3,
+      "min": 3, "book": 246,
       "deep": "400 Quatloos",
       "cards": [
         { "t": "idea", "text": "Combat style should express **who the character is**, and **the weapon decides how they fight.**" },
@@ -40,7 +40,7 @@
     {
       "id": "L10-l03",
       "title": "Ranges, heights and the attack matrix",
-      "min": 3,
+      "min": 3, "book": 247,
       "deep": "400 Quatloos",
       "cards": [
         { "t": "idea", "text": "The right attack depends on **how far away and how high** the target is. Spread attacks across ranges and heights, and track them all in an **attack matrix.**" },
@@ -54,7 +54,7 @@
     {
       "id": "L10-l04",
       "title": "Combat feel: timing and feedback",
-      "min": 3,
+      "min": 3, "book": 249,
       "deep": "400 Quatloos",
       "cards": [
         { "t": "idea", "text": "**Timing** is one of the biggest keys to great combat. Inputs should feel instant. And **a hit must look, sound and feel like a hit**: the feedback is the reward." },
@@ -68,7 +68,7 @@
     {
       "id": "L10-l05",
       "title": "Make players look cool",
-      "min": 3,
+      "min": 3, "book": 253,
       "deep": "400 Quatloos",
       "cards": [
         { "t": "idea", "text": "People want games that **make them look cool.** Finishers, lock-on and smart targeting turn normal players into action heroes. Use them carefully." },
@@ -95,7 +95,7 @@
     {
       "id": "L10-l07",
       "title": "Moving: the goal is not to get hit",
-      "min": 3,
+      "min": 3, "book": 255,
       "deep": "On Moving",
       "cards": [
         { "t": "idea", "text": "In any martial art, **moving matters as much as attacking.** The goal of a real fight is not to get hit. Give players moves that escape damage, and moves that combine with attacks." },
@@ -109,7 +109,7 @@
     {
       "id": "L10-l08",
       "title": "Guarding: blocks, shields and armour",
-      "min": 3,
+      "min": 3, "book": 259,
       "deep": "On Guarding",
       "cards": [
         { "t": "idea", "text": "**Blocks must be instant.** How long a shield lasts decides whether players use it. Armour can protect, inform, unlock abilities and let players customise their look." },
@@ -123,7 +123,7 @@
     {
       "id": "L10-l09",
       "title": "Shooting is rhythm: the Three As",
-      "min": 3,
+      "min": 3, "book": 263,
       "deep": "Bang Bang",
       "cards": [
         { "t": "idea", "text": "\"Aim and pull the trigger\" hides a big design space. Ranged combat is about creating a **rhythm**, and the **Three As** control it: **Action, Aiming and Ammo.**" },
@@ -137,7 +137,7 @@
     {
       "id": "L10-l10",
       "title": "One weapon, one job",
-      "min": 3,
+      "min": 3, "book": 267,
       "deep": "Best Gun for You",
       "cards": [
         { "t": "idea", "text": "Start from **real-world weapon roles**, then make every weapon **useful and different.** Each gets a clear job, and any overlap comes with a trade-off." },
@@ -151,7 +151,7 @@
     {
       "id": "L10-l11",
       "title": "Rails, mounted guns and vehicles",
-      "min": 2,
+      "min": 2, "book": 271,
       "deep": "Run and Gun",
       "cards": [
         { "t": "idea", "text": "Many shooting moments take movement away from the player: shooting galleries, mounted guns, vehicles and rails. Then the work is **readability, fair target timing and spectacle.**" },
@@ -164,7 +164,7 @@
     {
       "id": "L10-l12",
       "title": "Explosions, poison and disabling attacks",
-      "min": 3,
+      "min": 3, "book": 274,
       "deep": "Not Just Shooting",
       "cards": [
         { "t": "idea", "text": "**Variety is fun.** Grenades, smart bombs, fire and poison each need clear warning, feedback and limits. If you take control away from the player, do it carefully, and **always leave a way to fight back.**" },
@@ -178,7 +178,7 @@
     {
       "id": "L10-l13",
       "title": "Health: how much and how to show it",
-      "min": 3,
+      "min": 3, "book": 276,
       "deep": "Doesn't It Hurt",
       "cards": [
         { "t": "idea", "text": "Combat only matters if the player has **something to lose.** Size health with simple maths, **show it so it can't be missed**, and pick a way to regain it that fits your pace." },
@@ -192,7 +192,7 @@
     {
       "id": "L10-l14",
       "title": "Death is a door, not a wall",
-      "min": 3,
+      "min": 3, "book": 278,
       "deep": "Death",
       "cards": [
         { "t": "idea", "text": "Lives and game-over screens came from **arcades selling coin plays.** In a game the player already owns, death should **teach and motivate**, never waste time or punish twice." },

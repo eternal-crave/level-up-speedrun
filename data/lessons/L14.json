@@ -13,7 +13,7 @@
     {
       "id": "L14-l01",
       "title": "Co-op turns competitive fast",
-      "min": 3,
+      "min": 3, "book": 382,
       "deep": "Intro",
       "cards": [
         { "t": "idea", "text": "When humans play together, even co-op games turn competitive. Before designing multiplayer, decide **how players connect** and **how they relate**: compete, cooperate, or share a space with different goals." },
@@ -27,7 +27,7 @@
     {
       "id": "L14-l02",
       "title": "The menu of multiplayer modes",
-      "min": 3,
+      "min": 3, "book": 383,
       "deep": "game-mode menu",
       "cards": [
         { "t": "idea", "text": "Multiplayer modes are a menu of motivations. **Each mode answers: what do players want from each other?** Combine and rotate them for variety." },
@@ -40,7 +40,7 @@
     {
       "id": "L14-l03",
       "title": "Don't let the rich get richer",
-      "min": 3,
+      "min": 3, "book": 384,
       "deep": "game-mode menu",
       "cards": [
         { "t": "idea", "text": "**Systems that reward the leader** make the leader snowball, and everyone else gives up. **Systems that help those behind** keep races tense." },
@@ -53,7 +53,7 @@
     {
       "id": "L14-l04",
       "title": "How many players is right?",
-      "min": 3,
+      "min": 3, "book": 385,
       "deep": "Right Number",
       "cards": [
         { "t": "idea", "text": "There's no magic number. **The right player count is whatever your core gameplay needs.** Too many breaks a duel. Too few makes a world feel empty." },
@@ -67,7 +67,7 @@
     {
       "id": "L14-l05",
       "title": "The social toolkit from online RPGs",
-      "min": 3,
+      "min": 3, "book": 389,
       "deep": "MMORPGs",
       "cards": [
         { "t": "idea", "text": "Big online RPGs (MMORPGs) invented a **social toolkit** that players now expect, and F2P inherited it: guilds, raids, crafting, trading, collections and player housing." },

@@ -14,7 +14,7 @@
     {
       "id": "L01-l01",
       "title": "What makes something a game?",
-      "min": 3,
+      "min": 3, "book": 2,
       "deep": "What is a game",
       "cards": [
         { "t": "idea", "text": "A game needs only three things: **at least one player, rules, and a way to win.** A video game is simply a game you play on a screen." },
@@ -28,7 +28,7 @@
     {
       "id": "L01-l02",
       "title": "Say the goal in one sentence",
-      "min": 3,
+      "min": 3, "book": 3,
       "deep": "objective test",
       "cards": [
         { "t": "idea", "text": "You should be able to explain your game's **goal in one short, clear sentence.** If you can't, the design has a problem." },
@@ -42,7 +42,7 @@
     {
       "id": "L01-l03",
       "title": "New hardware creates new kinds of games",
-      "min": 3,
+      "min": 3, "book": 5,
       "deep": "brief history",
       "cards": [
         { "t": "idea", "text": "Video game history is a race with technology. **Every new kind of hardware created new genres and new ways to earn money.** The book's lesson: adapt or get left behind." },
@@ -56,7 +56,7 @@
     {
       "id": "L01-l04",
       "title": "How mobile free-to-play happened",
-      "min": 3,
+      "min": 3, "book": 8,
       "deep": "brief history",
       "cards": [
         { "t": "idea", "text": "Phones combined everything before them: a screen, controls, a store and the internet in your pocket. Today **mobile is the biggest part of the games industry**, about half of all game revenue." },
@@ -69,7 +69,7 @@
     {
       "id": "L01-l05",
       "title": "Genres are about what you do",
-      "min": 3,
+      "min": 3, "book": 10,
       "deep": "Game genres",
       "cards": [
         { "t": "idea", "text": "A **genre** names the style of play: what you actually do. It's not the setting. A fantasy game and a sci-fi game can be the same genre." },
@@ -82,7 +82,7 @@
     {
       "id": "L01-l06",
       "title": "Hybrids: how new hits are born",
-      "min": 3,
+      "min": 3, "book": 5,
       "deep": "Game genres",
       "cards": [
         { "t": "idea", "text": "Genres keep mixing. A **hybrid** combines two or more genres, and **many mobile hits are hybrids.** Think of genres as LEGO bricks you can combine, not fixed labels." },
@@ -96,7 +96,7 @@
     {
       "id": "L01-l07",
       "title": "Who makes games: the team",
-      "min": 3,
+      "min": 3, "book": 15,
       "deep": "Who makes this stuff",
       "cards": [
         { "t": "idea", "text": "Games started as one-person projects. Today they're made by **teams of specialists**, like a film crew. Each job keeps splitting into narrower jobs as games grow." },
@@ -109,7 +109,7 @@
     {
       "id": "L01-l08",
       "title": "What a game designer really does",
-      "min": 3,
+      "min": 3, "book": 15,
       "deep": "Who makes this stuff",
       "cards": [
         { "t": "idea", "text": "Whatever the job title, a designer **creates the ideas and rules of a game.** A designer can explain **why** something works or fails, and is responsible for whether the game is **fun**." },
@@ -123,7 +123,7 @@
     {
       "id": "L01-l09",
       "title": "Publishers: the other side of games",
-      "min": 3,
+      "min": 3, "book": 20,
       "deep": "publishing",
       "cards": [
         { "t": "idea", "text": "Many people never notice a second career path: **publishing.** Publishers pay for games, manage their production, handle legal work, and market and sell them." },

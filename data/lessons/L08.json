@@ -13,7 +13,7 @@
     {
       "id": "L08-l01",
       "title": "The HUD: the game's sign language",
-      "min": 3,
+      "min": 3, "book": 172,
       "deep": "HUD zone",
       "cards": [
         { "t": "idea", "text": "The **HUD** is named after the display projected onto fighter-jet windows. Rogers' definition is broad: **anything visual that gives the player information is HUD.**" },
@@ -27,7 +27,7 @@
     {
       "id": "L08-l02",
       "title": "Health bars come in many shapes",
-      "min": 3,
+      "min": 3, "book": 172,
       "deep": "Health bar",
       "cards": [
         { "t": "idea", "text": "A **health bar** shows how close the player is to losing. It's the most flexible HUD element: a bar, hearts, an orb, a shield or even a heartbeat sound." },
@@ -40,7 +40,7 @@
     {
       "id": "L08-l03",
       "title": "Aiming and gauges on a touchscreen",
-      "min": 3,
+      "min": 3, "book": 173,
       "deep": ["Targeting", "Ammo gauge"],
       "cards": [
         { "t": "idea", "text": "Thumbs aren't precise, so on mobile **aim assist isn't optional.** And the scarcer a resource is, **the bigger and closer its gauge should be.**" },
@@ -54,7 +54,7 @@
     {
       "id": "L08-l04",
       "title": "Inventory: never lose the player's stuff",
-      "min": 3,
+      "min": 3, "book": 181,
       "deep": "Inventory",
       "cards": [
         { "t": "idea", "text": "An **inventory** lets players see and use what they've collected. Rules: fast access, a nice place to admire loot, readable items, room to grow, and **never lose the player's stuff.**" },
@@ -67,7 +67,7 @@
     {
       "id": "L08-l05",
       "title": "Make scoring big and flashy",
-      "min": 3,
+      "min": 3, "book": 176,
       "deep": "Score",
       "cards": [
         { "t": "idea", "text": "Games make players feel clumsy in a hundred ways, but rarely make them feel brilliant. **When the player scores, make it BIG and FLASHY.** You can't overdo congratulating the player." },
@@ -81,7 +81,7 @@
     {
       "id": "L08-l06",
       "title": "Maps and context prompts",
-      "min": 3,
+      "min": 3, "book": 177,
       "deep": ["Radar/map", "Context-sensitive"],
       "cards": [
         { "t": "idea", "text": "A good map answers three questions at a glance: **Where am I? Which way am I facing? Where's the good stuff?** A **context prompt** appears exactly when the player is near something they can use." },
@@ -94,7 +94,7 @@
     {
       "id": "L08-l07",
       "title": "The clean screen",
-      "min": 3,
+      "min": 3, "book": 179,
       "deep": "clean screen",
       "cards": [
         { "t": "idea", "text": "Games want to look like movies but still need to inform. Two strategies: **fade the HUD when it isn't needed**, or **remove it and let the world itself communicate.**" },
@@ -107,7 +107,7 @@
     {
       "id": "L08-l08",
       "title": "Icon design: keep your symbols simple",
-      "min": 3,
+      "min": 3, "book": 181,
       "deep": "Icon Has",
       "cards": [
         { "t": "idea", "text": "Every icon must be **instantly readable.** Rogers' master rule: **KYSS, Keep Your Symbols Simple.**" },
@@ -121,7 +121,7 @@
     {
       "id": "L08-l09",
       "title": "Icons and buttons on a phone",
-      "min": 3,
+      "min": 3, "book": 182,
       "deep": "Icon Has",
       "cards": [
         { "t": "idea", "text": "On phones, icons matter more than anywhere else. **The most important button should be the biggest thing on screen**, and every button needs a generous touch area." },
@@ -134,7 +134,7 @@
     {
       "id": "L08-l10",
       "title": "Quick-time events, used responsibly",
-      "min": 3,
+      "min": 3, "book": 184,
       "deep": "QTE",
       "cards": [
         { "t": "idea", "text": "A **quick-time event (QTE)** suddenly asks you to press a button in time, or suffer. Players love them or hate them. **Use them only for big cinematic moments.**" },
@@ -148,7 +148,7 @@
     {
       "id": "L08-l11",
       "title": "Where to put things on screen",
-      "min": 3,
+      "min": 3, "book": 186,
       "deep": "where to stick",
       "cards": [
         { "t": "idea", "text": "**Keep the center of the screen for the action.** Put the most important information top-left. Don't fill all the edges." },
@@ -161,7 +161,7 @@
     {
       "id": "L08-l12",
       "title": "The Three-Press Rule and the first screens",
-      "min": 3,
+      "min": 3, "book": 189,
       "deep": ["where to stick", "other screens than the HUD"],
       "cards": [
         { "t": "idea", "text": "Rogers' very important rule: **no screen in the game may ever be more than three presses away.** Players want the good stuff, not a maze of menus." },
@@ -174,7 +174,7 @@
     {
       "id": "L08-l13",
       "title": "Pause, save and loading screens",
-      "min": 3,
+      "min": 3, "book": 191,
       "deep": "pause that refreshes",
       "cards": [
         { "t": "idea", "text": "**Plan the pause screen as carefully as a level.** It's a hub for saving, options, map and inventory. Players should never feel they miss part of the game by pausing." },
@@ -187,7 +187,7 @@
     {
       "id": "L08-l14",
       "title": "Fonts that people can read",
-      "min": 3,
+      "min": 3, "book": 195,
       "deep": "fonts",
       "cards": [
         { "t": "idea", "text": "Fonts follow the same rules as icons: **legible and clear first, themed second.** Avoid overly fancy fonts that are hard to read." },
@@ -201,7 +201,7 @@
     {
       "id": "L08-l15",
       "title": "The mobile home screen and red dots",
-      "min": 3,
+      "min": 3, "book": 177,
       "deep": "Mobile UI Toolkit",
       "cards": [
         { "t": "idea", "text": "Every rule in this level applies to the mobile **home screen (lobby).** **The biggest button is PLAY**, important info sits in the corners, and every feature is one tap from home." },

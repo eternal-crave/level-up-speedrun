@@ -12,7 +12,7 @@
     {
       "id": "L11-l01",
       "title": "Decide what an enemy does before how it looks",
-      "min": 3,
+      "min": 3, "book": 282,
       "deep": "Form Follows Function",
       "cards": [
         { "t": "idea", "text": "The golden rule again: **form follows function.** Decide what an enemy **does** before anyone draws it. Code, animation and art all depend on that decision." },
@@ -26,7 +26,7 @@
     {
       "id": "L11-l02",
       "title": "Size changes everything",
-      "min": 2,
+      "min": 2, "book": 284,
       "deep": "Size",
       "cards": [
         { "t": "idea", "text": "An enemy's size decides **how you fight it, how much damage it takes, how it reacts to hits** and how proud you feel beating it." },
@@ -39,7 +39,7 @@
     {
       "id": "L11-l03",
       "title": "Ten enemy behaviours",
-      "min": 3,
+      "min": 3, "book": 287,
       "deep": "Behavior",
       "cards": [
         { "t": "idea", "text": "Behaviour is the soul of an enemy. **Don't repeat behaviours. Combine ones that complement each other**, so groups of enemies become combat puzzles." },
@@ -52,7 +52,7 @@
     {
       "id": "L11-l04",
       "title": "Speed, size and strength trade off",
-      "min": 3,
+      "min": 3, "book": 292,
       "deep": ["Speed", "Movement Style"],
       "cards": [
         { "t": "idea", "text": "Speed makes enemies scarier and harder to hit. But **speed, size and strength trade off.** An enemy with all three feels cheap." },
@@ -66,7 +66,7 @@
     {
       "id": "L11-l05",
       "title": "How enemies think and get around",
-      "min": 2,
+      "min": 2, "book": 293,
       "deep": "Pathing AI",
       "cards": [
         { "t": "idea", "text": "Sit down with your programmer and decide **how enemies move around the level and how they think.** **Waypoints**, set points they travel between, are the usual tool." },
@@ -79,7 +79,7 @@
     {
       "id": "L11-l06",
       "title": "Great entrances and juicy deaths",
-      "min": 3,
+      "min": 3, "book": 295,
       "deep": "Bring on the Bad Guys",
       "cards": [
         { "t": "idea", "text": "How an enemy **enters** and **leaves** matters as much as how it fights. A great entrance says \"new, exciting, dangerous!\" A fair spawn and a juicy death make fighting fun." },
@@ -93,7 +93,7 @@
     {
       "id": "L11-l07",
       "title": "Give players reasons to fight",
-      "min": 3,
+      "min": 3, "book": 299,
       "deep": "Fought, Not Avoided",
       "cards": [
         { "t": "idea", "text": "If players **avoid** an enemy because it's too hard, too cheap or too annoying, the design failed. **Give players reasons to want the fight.**" },
@@ -107,7 +107,7 @@
     {
       "id": "L11-l08",
       "title": "Every attack needs a warning",
-      "min": 3,
+      "min": 3, "book": 291,
       "deep": "Telegraphing",
       "cards": [
         { "t": "idea", "text": "Let enemies have cool, varied attacks. But **every attack must be telegraphed** with a readable warning, so observant players can respond." },
@@ -121,7 +121,7 @@
     {
       "id": "L11-l09",
       "title": "Annoy without damage, and balance health",
-      "min": 3,
+      "min": 3, "book": 317,
       "deep": "Grief Without Damage",
       "cards": [
         { "t": "idea", "text": "Not every enemy attack has to take health. **\"Grief\" attacks** disrupt, delay or annoy instead, adding variety. And every enemy must be killable, with health balanced against the player's attacks." },
@@ -134,7 +134,7 @@
     {
       "id": "L11-l10",
       "title": "Building your own enemies",
-      "min": 3,
+      "min": 3, "book": 314,
       "deep": "Bestiary",
       "cards": [
         { "t": "idea", "text": "In games, **anything can be an enemy.** Pick from the classics, or invent foes from your theme and story. Tie them together visually, reuse smartly, and make sure they belong in your world." },
@@ -148,7 +148,7 @@
     {
       "id": "L11-l11",
       "title": "Make the player hate the villain",
-      "min": 3,
+      "min": 3, "book": 316,
       "deep": "I Hate You",
       "cards": [
         { "t": "idea", "text": "Introduce your main villain memorably, and **make the player hate them** in ways that hurt the player's gameplay. Keep the villain alive to return." },
@@ -162,7 +162,7 @@
     {
       "id": "L11-l12",
       "title": "Enemies that aren't monsters",
-      "min": 2,
+      "min": 2, "book": 317,
       "deep": "Non-Enemy Enemies",
       "cards": [
         { "t": "idea", "text": "You can push and punish players without anything to fight. Four \"enemies\" that aren't monsters: **gremlins, tormentors, time and other humans.**" },
@@ -174,7 +174,7 @@
     {
       "id": "L11-l13",
       "title": "What makes a great boss",
-      "min": 3,
+      "min": 3, "book": 320,
       "deep": ["World's Greatest Boss Battle", "Who's the Boss"],
       "cards": [
         { "t": "idea", "text": "A boss is not just a big monster with lots of health. **It's a carefully built machine that tests what the player has learned**, and it must be built on a **finished** player moveset." },
@@ -188,7 +188,7 @@
     {
       "id": "L11-l14",
       "title": "Boss patterns: the dance",
-      "min": 3,
+      "min": 3, "book": 324,
       "deep": "Size Matters",
       "cards": [
         { "t": "idea", "text": "Build the boss fight from **learnable patterns** with four parts, and make it escalate like a dance. **Always let the player land the final blow.**" },
@@ -215,7 +215,7 @@
     {
       "id": "L11-l16",
       "title": "Drama beats scale",
-      "min": 2,
+      "min": 2, "book": 328,
       "deep": "Why Not to Create",
       "cards": [
         { "t": "idea", "text": "Bosses have real downsides: they're expensive, they can break pacing, and they can become walls that stop players. One fix: **replace a big creature with big drama.**" },

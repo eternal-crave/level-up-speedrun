@@ -12,7 +12,7 @@
     {
       "id": "L02-l01",
       "title": "Great ideas often sound stupid",
-      "min": 3,
+      "min": 3, "book": 24,
       "deep": ["Intro", "Where to Get Them"],
       "cards": [
         { "t": "idea", "text": "**Never throw away an idea just because it sounds silly.** Many of the biggest games sound ridiculous when you describe them simply." },
@@ -26,7 +26,7 @@
     {
       "id": "L02-l02",
       "title": "Five ways to find new ideas",
-      "min": 3,
+      "min": 3, "book": 25,
       "deep": "Where to Get Them",
       "cards": [
         { "t": "idea", "text": "If you only take ideas from the same games everyone plays, you'll make the same game everyone makes. **Feed your brain unusual inputs.**" },
@@ -40,7 +40,7 @@
     {
       "id": "L02-l03",
       "title": "Most great games build on older games",
-      "min": 3,
+      "min": 3, "book": 28,
       "deep": "Where to Get Them",
       "cards": [
         { "t": "idea", "text": "Truly new ideas are rare. **Most great games take an older game and add one smart step.** Rogers says if you think something is brand new, you probably haven't been looking closely." },
@@ -53,7 +53,7 @@
     {
       "id": "L02-l04",
       "title": "A fun idea vs an idea that sells",
-      "min": 2,
+      "min": 2, "book": 26,
       "deep": "Where to Get Them",
       "cards": [
         { "t": "idea", "text": "A good idea is not always a **marketable** idea. Marketing may call your concept a \"designer's idea\": fun for you, but hard to sell to the public." },
@@ -65,7 +65,7 @@
     {
       "id": "L02-l05",
       "title": "What players want: good games and a fantasy",
-      "min": 3,
+      "min": 3, "book": 29,
       "deep": "What Do Gamers Want",
       "cards": [
         { "t": "idea", "text": "Players can't tell you what they want until they see it. Underneath, they want one simple thing: **good games**. Good games let them feel like someone they can't be in real life." },
@@ -78,7 +78,7 @@
     {
       "id": "L02-l06",
       "title": "Choose your audience early",
-      "min": 3,
+      "min": 3, "book": 29,
       "deep": "What Do Gamers Want",
       "cards": [
         { "t": "idea", "text": "Decide early **who the game is for**: how casual or hardcore they are, and how old they are. Every later choice depends on it." },
@@ -91,7 +91,7 @@
     {
       "id": "L02-l07",
       "title": "Nobody can promise that an idea will be fun",
-      "min": 3,
+      "min": 3, "book": 31,
       "deep": "I Hate",
       "cards": [
         { "t": "idea", "text": "\"Is it fun?\" is the hardest question in design. **Nobody can promise that an idea will turn out fun.**" },
@@ -104,7 +104,7 @@
     {
       "id": "L02-l08",
       "title": "The Theory of Un-Fun",
-      "min": 3,
+      "min": 3, "book": 31,
       "deep": "I Hate",
       "cards": [
         { "t": "idea", "text": "Instead of chasing fun, **start with a fun core and remove everything that isn't fun.** Rogers calls this the Theory of Un-Fun." },
@@ -118,7 +118,7 @@
     {
       "id": "L02-l09",
       "title": "Eight kinds of fun",
-      "min": 3,
+      "min": 3, "book": 30,
       "deep": "I Hate",
       "cards": [
         { "t": "idea", "text": "Designer Marc LeBlanc lists **eight kinds of fun.** Rogers finds the list interesting but hard to use day to day. It's still useful words for describing what a game offers." },
@@ -132,7 +132,7 @@
     {
       "id": "L02-l10",
       "title": "How to brainstorm well",
-      "min": 3,
+      "min": 3, "book": 32,
       "deep": "Brainstorming",
       "cards": [
         { "t": "idea", "text": "A **brainstorm** creates lots of ideas fast. The rule: **no idea is bad yet.** Judging comes later." },
@@ -158,7 +158,7 @@
     {
       "id": "L02-l12",
       "title": "Getting unstuck, then cutting hard",
-      "min": 3,
+      "min": 3, "book": 36,
       "deep": "Writer",
       "cards": [
         { "t": "idea", "text": "Everyone gets stuck. Get unstuck, then **cut your idea list without mercy** and ask someone with no stake for an honest opinion." },
@@ -171,7 +171,7 @@
     {
       "id": "L02-l13",
       "title": "Test mobile ideas before you build them",
-      "min": 3,
+      "min": 3, "book": 25,
       "deep": "Ideation Toolkit",
       "cards": [
         { "t": "idea", "text": "A mobile idea is a set of bets. **Who** plays? **Why** do they play? **Where does it fit in the market?** **Does it work in a 3-minute session?** Check those bets before you spend months building." },

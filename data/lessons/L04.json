@@ -14,7 +14,7 @@
     {
       "id": "L04-l01",
       "title": "Making a game is like cooking chili",
-      "min": 3,
+      "min": 3, "book": 58,
       "deep": "chili recipe",
       "cards": [
         { "t": "idea", "text": "Rogers compares making a game to cooking chili. You need a **recipe** (the design documents), **ingredients and tools** (people and software), and **the right order of steps**." },
@@ -28,7 +28,7 @@
     {
       "id": "L04-l02",
       "title": "Four documents, each building on the last",
-      "min": 3,
+      "min": 3, "book": 59,
       "deep": "four preproduction documents",
       "cards": [
         { "t": "idea", "text": "You don't write a 300-page design document from nothing. You climb **four steps: one-sheet, then ten-pager, then beat chart, then the GDD.** Each grows out of the one before." },
@@ -42,7 +42,7 @@
     {
       "id": "L04-l03",
       "title": "The one-sheet: your game on one page",
-      "min": 3,
+      "min": 3, "book": 60,
       "deep": "One-Sheet",
       "cards": [
         { "t": "idea", "text": "The **one-sheet** is a one-page summary that teammates and publishers will actually read. It must be interesting, informative and above all **short**." },
@@ -56,7 +56,7 @@
     {
       "id": "L04-l04",
       "title": "Pick your age rating first",
-      "min": 3,
+      "min": 3, "book": 61,
       "deep": "ESRB",
       "cards": [
         { "t": "idea", "text": "Your **age rating** decides who can buy the game, where it's sold and how it's marketed. **Choose your target rating early and design toward it.**" },
@@ -69,7 +69,7 @@
     {
       "id": "L04-l05",
       "title": "Comps and USPs: \"it's like this, but special\"",
-      "min": 3,
+      "min": 3, "book": 62,
       "deep": "Competitive products",
       "cards": [
         { "t": "idea", "text": "**Comps** tell readers \"it's like these games\". **USPs** tell them \"but here's why it's special\". Choose **successful** comps, and write about **five USPs that are truly unique.**" },
@@ -83,7 +83,7 @@
     {
       "id": "L04-l06",
       "title": "The ten-pager: the backbone of your game",
-      "min": 3,
+      "min": 3, "book": 62,
       "deep": "Ten-Pager",
       "cards": [
         { "t": "idea", "text": "The **ten-pager** shows the backbone of your game in broad strokes. People who might **pay for the game** will read it, so it must be **readable, visual and interesting.**" },
@@ -97,7 +97,7 @@
     {
       "id": "L04-l07",
       "title": "The Rule of Threes",
-      "min": 2,
+      "min": 2, "book": 63,
       "deep": "Rule of Threes",
       "cards": [
         { "t": "idea", "text": "**Three is a magic number.** When you give examples, give three. People understand and remember groups of three best." },
@@ -111,7 +111,7 @@
     {
       "id": "L04-l08",
       "title": "What each page of the ten-pager answers",
-      "min": 3,
+      "min": 3, "book": 64,
       "deep": "page by page",
       "cards": [
         { "t": "idea", "text": "Every page of the ten-pager **answers one question a reader has.** Together they show the whole game without drowning anyone in detail." },
@@ -124,7 +124,7 @@
     {
       "id": "L04-l09",
       "title": "Nobody reads the GDD, but you will",
-      "min": 3,
+      "min": 3, "book": 74,
       "deep": "Game Design Document",
       "cards": [
         { "t": "idea", "text": "The **GDD** describes everything in the game. Most of the team won't read it, because it's long and scary. **Write it anyway: you'll need to read it yourself.**" },
@@ -138,7 +138,7 @@
     {
       "id": "L04-l10",
       "title": "Be specific: words are powerful",
-      "min": 3,
+      "min": 3, "book": 75,
       "deep": "Game Design Document",
       "cards": [
         { "t": "idea", "text": "**Communication is the most important part of a designer's job.** Use specific words, especially for characters and mechanics. If the right word doesn't exist, invent one." },
@@ -151,7 +151,7 @@
     {
       "id": "L04-l11",
       "title": "Five ways to start a game",
-      "min": 3,
+      "min": 3, "book": 76,
       "deep": "Gameplay progression",
       "cards": [
         { "t": "idea", "text": "**Progression** is how the game unfolds for the player over time. Decide on purpose **how the player starts**, and know **how the game ends.**" },
@@ -165,7 +165,7 @@
     {
       "id": "L04-l12",
       "title": "The beat chart: your whole game on one sheet",
-      "min": 3,
+      "min": 3, "book": 78,
       "deep": "Beat Chart",
       "cards": [
         { "t": "idea", "text": "A **beat chart** maps every level of your game on one sheet. Put the levels side by side and **problems become visible before anything is built.**" },
@@ -179,7 +179,7 @@
     {
       "id": "L04-l13",
       "title": "Be a designer people want to work with",
-      "min": 3,
+      "min": 3, "book": 81,
       "deep": "schmuck",
       "cards": [
         { "t": "idea", "text": "Good documents are worthless if you're hard to work with. Rogers lists **nine habits of a responsible designer.** They sound like common sense, but common sense isn't common." },

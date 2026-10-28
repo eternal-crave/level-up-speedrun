@@ -131,7 +131,9 @@ for (const m of modules) {
       if (!fs.existsSync(ff)) { problems.push(`${where} [${c.t}]: figure "${c.fig}" not found in data/figs`); return undefined; }
       return fs.readFileSync(ff, "utf8").replace(/<\?xml[^>]*>\s*/, "").trim();
     };
-    m.lessons.push({ id: String(x.id), title: String(x.title || ""), min: +x.min || 3, deep: deepHeads, cards: cards.map((c) => ({ t: c.t, text: String(c.text), fig: figOf(c) })), check: { q: String(ck.q || ""), options: (ck.options || []).map(String), answer: ck.answer | 0, why: String(ck.why || "") } });
+    // "book": printed page in the 2010 edition (the app adds the PDF offset)
+    if (x.book != null && !(Number.isInteger(x.book) && x.book > 0 && x.book < 500)) problems.push(`${where}: book page must be a printed page number`);
+    m.lessons.push({ id: String(x.id), title: String(x.title || ""), min: +x.min || 3, book: Number.isInteger(x.book) ? x.book : undefined, deep: deepHeads, cards: cards.map((c) => ({ t: c.t, text: String(c.text), fig: figOf(c) })), check: { q: String(ck.q || ""), options: (ck.options || []).map(String), answer: ck.answer | 0, why: String(ck.why || "") } });
   }
 }
 if (lessonWarn.length) console.log("lesson style warnings:\n  " + lessonWarn.join("\n  "));

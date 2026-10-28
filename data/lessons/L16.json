@@ -12,7 +12,7 @@
     {
       "id": "L16-l01",
       "title": "Could this be gameplay?",
-      "min": 3,
+      "min": 3, "book": 407,
       "deep": "question to ask first",
       "cards": [
         { "t": "idea", "text": "Cutscenes look great, but many players skip them. **Before making one, ask: could this moment happen in gameplay instead?**" },
@@ -26,7 +26,7 @@
     {
       "id": "L16-l02",
       "title": "Six kinds of cutscenes",
-      "min": 3,
+      "min": 3, "book": 408,
       "deep": "Six kinds of cutscenes",
       "cards": [
         { "t": "idea", "text": "Cutscenes range from Hollywood-style film to fully playable moments. **Pick the type that fits your style, budget and schedule.**" },
@@ -40,7 +40,7 @@
     {
       "id": "L16-l03",
       "title": "Make sure they see it",
-      "min": 3,
+      "min": 3, "book": 409,
       "deep": "actually see",
       "cards": [
         { "t": "idea", "text": "A scripted event the player doesn't see is wasted money. **Stage it like a theme-park ride: control where they look.**" },
@@ -54,7 +54,7 @@
     {
       "id": "L16-l04",
       "title": "Plan the script: outline, scenes, play",
-      "min": 3,
+      "min": 3, "book": 410,
       "deep": "Eight Easy Steps",
       "cards": [
         { "t": "idea", "text": "Game writers are writing professionals. The first steps of a script are **outline, break it into scenes, and decide what's played versus watched.**" },
@@ -67,7 +67,7 @@
     {
       "id": "L16-l05",
       "title": "Write short, then read it aloud",
-      "min": 3,
+      "min": 3, "book": 411,
       "deep": "Eight Easy Steps",
       "cards": [
         { "t": "idea", "text": "Be brief. Show with action more than words. **Then read every line out loud**, because lines that look fine on paper often sound clumsy." },
@@ -81,7 +81,7 @@
     {
       "id": "L16-l06",
       "title": "Spell your screams on purpose",
-      "min": 3,
+      "min": 3, "book": 413,
       "deep": "VO script spreadsheet",
       "cards": [
         { "t": "idea", "text": "Voice actors read **exactly what's written**. Prepare a clean spreadsheet: one line per row, a file name and notes on how to say it." },
@@ -95,7 +95,7 @@
     {
       "id": "L16-l07",
       "title": "Recording real voices",
-      "min": 3,
+      "min": 3, "book": 414,
       "deep": "Temp tracks",
       "cards": [
         { "t": "idea", "text": "Record a cheap **temp track** to check timing, then hire **professional actors** through a **voice director**." },

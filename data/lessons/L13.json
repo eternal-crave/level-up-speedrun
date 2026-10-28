@@ -13,7 +13,7 @@
     {
       "id": "L13-l01",
       "title": "Power-ups: instant joy, with a catch",
-      "min": 3,
+      "min": 3, "book": 356,
       "deep": "Playing with Power",
       "cards": [
         { "t": "idea", "text": "A **power-up** is concentrated action. Touch it and you're instantly faster, stronger or tougher. **The effect is immediate** (the joy) and **usually temporary** (the catch)." },
@@ -26,7 +26,7 @@
     {
       "id": "L13-l02",
       "title": "The four families of power-ups",
-      "min": 3,
+      "min": 3, "book": 356,
       "deep": "Playing with Power",
       "cards": [
         { "t": "idea", "text": "Every power-up fits one of four families: **defensive, offensive, movement and game changers.**" },
@@ -40,7 +40,7 @@
     {
       "id": "L13-l03",
       "title": "Boosters: help, not ransom",
-      "min": 3,
+      "min": 3, "book": 368,
       "deep": "Playing with Power",
       "cards": [
         { "t": "idea", "text": "In casual F2P, power-ups became **boosters**: the biggest kind of item players use up and buy again. **The line: boosters should feel like help, never like a ransom.**" },
@@ -53,7 +53,7 @@
     {
       "id": "L13-l04",
       "title": "Love the player",
-      "min": 3,
+      "min": 3, "book": 362,
       "deep": "Love Thy Player",
       "cards": [
         { "t": "idea", "text": "A Japanese director told Rogers every designer's motto should be **\"love the player\"**. Rogers' version: **the designer is a gentle hand always pushing the player upward.**" },
@@ -67,7 +67,7 @@
     {
       "id": "L13-l05",
       "title": "If it feels too long or too hard, it is",
-      "min": 3,
+      "min": 3, "book": 363,
       "deep": "Love Thy Player",
       "cards": [
         { "t": "idea", "text": "Rogers' rule: **if a level or fight feels too long, too hard or boring to you, it probably is.** Trust that feeling and cut." },
@@ -80,7 +80,7 @@
     {
       "id": "L13-l06",
       "title": "Never design for player deaths",
-      "min": 3,
+      "min": 3, "book": 364,
       "deep": "Love Thy Player",
       "cards": [
         { "t": "idea", "text": "**Never measure a design by how often players die.** \"Rewarding\" players with damage or death teaches them to stop playing." },
@@ -93,7 +93,7 @@
     {
       "id": "L13-l07",
       "title": "Greed: the strongest motivator",
-      "min": 3,
+      "min": 3, "book": 365,
       "deep": "More Wealth",
       "cards": [
         { "t": "idea", "text": "**Greed and reward** are the two strongest tools for keeping players playing. Rogers' rule: **never underestimate the player's greed**, but use it for good." },
@@ -106,7 +106,7 @@
     {
       "id": "L13-l08",
       "title": "The four rules of rewards",
-      "min": 3,
+      "min": 3, "book": 367,
       "deep": "More Wealth",
       "cards": [
         { "t": "idea", "text": "A **reward** is what the player is working toward. **No victory should come without one.** Rogers gives four rules." },
@@ -119,7 +119,7 @@
     {
       "id": "L13-l09",
       "title": "Praise and celebration",
-      "min": 3,
+      "min": 3, "book": 377,
       "deep": "More Wealth",
       "cards": [
         { "t": "idea", "text": "Games are great at making players feel bad and bad at praise. **Nothing makes people cooperate like praise**, so make the player feel like the best person in the world." },
@@ -132,7 +132,7 @@
     {
       "id": "L13-l10",
       "title": "Scores, achievements and surprises",
-      "min": 3,
+      "min": 3, "book": 368,
       "deep": "More Wealth",
       "cards": [
         { "t": "idea", "text": "Some rewards are about **pride**, not power. A high score, an achievement or a surprise moment keeps players playing for bragging rights and joy." },
@@ -145,7 +145,7 @@
     {
       "id": "L13-l11",
       "title": "Treasure needs an economy",
-      "min": 3,
+      "min": 3, "book": 370,
       "deep": "More Wealth",
       "cards": [
         { "t": "idea", "text": "Collecting treasure feels great, but **treasure means nothing without things to spend it on.** Plan the economy across the whole game." },
@@ -158,7 +158,7 @@
     {
       "id": "L13-l12",
       "title": "The ten aisles of a game shop",
-      "min": 3,
+      "min": 3, "book": 372,
       "deep": "More Wealth",
       "cards": [
         { "t": "idea", "text": "Make the shop fit your game: a garage in a racing game, a vending machine in a shooter. Rogers lists **ten kinds of things a game can sell.**" },
@@ -171,7 +171,7 @@
     {
       "id": "L13-l13",
       "title": "Progression is a reward too",
-      "min": 2,
+      "min": 2, "book": 378,
       "deep": "More Wealth",
       "cards": [
         { "t": "idea", "text": "Simply moving forward is a reward. Players have many other things to do with their free time. **A gripping story, great levels, cool bosses and satisfying upgrades** make them choose your game." },
@@ -183,7 +183,7 @@
     {
       "id": "L13-l14",
       "title": "Reward schedules: fixed and surprise",
-      "min": 3,
+      "min": 3, "book": 368,
       "deep": "Reward & Economy Toolkit",
       "cards": [
         { "t": "idea", "text": "*When* you give rewards matters as much as *what* you give. **Fixed schedules build trust and habits. Variable ones create excitement.** Mix them." },
@@ -209,7 +209,7 @@
     {
       "id": "L13-l16",
       "title": "Delight or manipulation?",
-      "min": 3,
+      "min": 3, "book": 365,
       "deep": "Reward & Economy Toolkit",
       "cards": [
         { "t": "idea", "text": "Rogers' compass: love the player, never underestimate their greed, but **use it for good.** If a mechanic only works because players don't understand it, it's on the wrong side." },

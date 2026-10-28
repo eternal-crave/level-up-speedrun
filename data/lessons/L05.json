@@ -13,7 +13,7 @@
     {
       "id": "L05-l01",
       "title": "Lock the Three Cs early",
-      "min": 3,
+      "min": 3, "book": 83,
       "deep": "Three Cs and",
       "cards": [
         { "t": "idea", "text": "Most of a design changes during production. Three basics must not: **Character, Camera and Control.** Settle them early, then protect them." },
@@ -27,7 +27,7 @@
     {
       "id": "L05-l02",
       "title": "Form follows function, and three traits",
-      "min": 3,
+      "min": 3, "book": 90,
       "deep": "Looks That Talk",
       "cards": [
         { "t": "idea", "text": "The very important rule of character design: **form follows function.** The look should come from what the character does. Start by choosing **three personality traits.**" },
@@ -41,7 +41,7 @@
     {
       "id": "L05-l03",
       "title": "Shapes and silhouettes tell the story",
-      "min": 3,
+      "min": 3, "book": 84,
       "deep": "Looks That Talk",
       "cards": [
         { "t": "idea", "text": "Shapes carry personality. **Circles feel friendly, squares feel strong, triangles feel dangerous or heroic.** And every character needs a **strong silhouette**." },
@@ -55,7 +55,7 @@
     {
       "id": "L05-l04",
       "title": "Colour and texture separate characters",
-      "min": 2,
+      "min": 2, "book": 85,
       "deep": "Looks That Talk",
       "cards": [
         { "t": "idea", "text": "**Colour and texture** are more ways to tell characters apart. But personality, not looks, decides whether a character feels good or evil." },
@@ -68,7 +68,7 @@
     {
       "id": "L05-l05",
       "title": "Funny, heroic or badass",
-      "min": 3,
+      "min": 3, "book": 86,
       "deep": "Personality",
       "cards": [
         { "t": "idea", "text": "Rogers sees three kinds of game hero: **humorous, heroic and badass.** Each needs careful building, or you get a lame character. **Personality should drive everything the character does.**" },
@@ -81,7 +81,7 @@
     {
       "id": "L05-l06",
       "title": "Guide behaviour without preaching",
-      "min": 3,
+      "min": 3, "book": 88,
       "deep": "Personality",
       "cards": [
         { "t": "idea", "text": "Preaching morality at players is bad form. **Reward the behaviour you want, and let players feel good about it themselves.**" },
@@ -95,7 +95,7 @@
     {
       "id": "L05-l07",
       "title": "Let players name and customise",
-      "min": 3,
+      "min": 3, "book": 90,
       "deep": "Names and Customization",
       "cards": [
         { "t": "idea", "text": "Letting players **name and customise** a character creates **ownership**, and ownership turns into caring." },
@@ -109,7 +109,7 @@
     {
       "id": "L05-l08",
       "title": "Signature items, and realistic vs stylised",
-      "min": 3,
+      "min": 3, "book": 90,
       "deep": "Signature Gear",
       "cards": [
         { "t": "idea", "text": "Some things should **never** be customisable: the **signature item or look** that makes a character who they are. Then choose **realistic or stylised** art for your game and budget." },
@@ -123,7 +123,7 @@
     {
       "id": "L05-l09",
       "title": "The hero is the ruler of the world",
-      "min": 3,
+      "min": 3, "book": 93,
       "deep": "Character Metrics",
       "cards": [
         { "t": "idea", "text": "All gameplay flows from the main character. **The hero's size and abilities become the metrics**, the measuring system the whole world is built on. Players learn them by eye, so never break them." },
@@ -137,7 +137,7 @@
     {
       "id": "L05-l10",
       "title": "Where the character touches the world",
-      "min": 2,
+      "min": 2, "book": 94,
       "deep": "Touching",
       "cards": [
         { "t": "idea", "text": "**Collision** is how the game decides where the character touches the world. Fewer collision points run faster. If you use one main point, **the torso** works best." },
@@ -150,7 +150,7 @@
     {
       "id": "L05-l11",
       "title": "Walking isn't gameplay; speed is a choice",
-      "min": 3,
+      "min": 3, "book": 97,
       "deep": ["Walking Is NOT", "Vehicles, Weight"],
       "cards": [
         { "t": "idea", "text": "**Walking by itself isn't gameplay.** Decide how fast your game is, give each way of moving a **clear purpose**, and make the speed differences big." },
@@ -164,7 +164,7 @@
     {
       "id": "L05-l12",
       "title": "Idles: the art of doing nothing",
-      "min": 2,
+      "min": 2, "book": 99,
       "deep": "Idles",
       "cards": [
         { "t": "idea", "text": "When the player stops, the character shouldn't freeze. An **idle animation** shows personality. Keep it **short and easy to interrupt.**" },
@@ -178,7 +178,7 @@
     {
       "id": "L05-l13",
       "title": "The five phases of a jump",
-      "min": 3,
+      "min": 3, "book": 101,
       "deep": "Five Phases",
       "cards": [
         { "t": "idea", "text": "The jump is the most misunderstood basic move. Get each phase right, and use **\"game physics\"**: real physics, adjusted to feel good." },
@@ -192,7 +192,7 @@
     {
       "id": "L05-l14",
       "title": "Design gaps for nervous humans",
-      "min": 3,
+      "min": 3, "book": 101,
       "deep": "Five Jump Types",
       "cards": [
         { "t": "idea", "text": "Players don't jump from the very edge, and they don't aim for the far edge. **They jump from a little way back and aim well inside the landing.** Design gaps for that." },
@@ -206,7 +206,7 @@
     {
       "id": "L05-l15",
       "title": "Ledges, falls and shadows",
-      "min": 3,
+      "min": 3, "book": 104,
       "deep": ["Hoists and Teeters", "What Goes Up", "Me and My Shadow"],
       "cards": [
         { "t": "idea", "text": "Help players move safely around edges. **Hoists** (grab a ledge and pull up) and **teeters** (wobbling at an edge) save lives. **Falls must be readable**, and every character needs a **shadow**." },
@@ -220,7 +220,7 @@
     {
       "id": "L05-l16",
       "title": "Water and four-legged heroes",
-      "min": 2,
+      "min": 2, "book": 109,
       "deep": ["Water's Fine", "Four-Legged"],
       "cards": [
         { "t": "idea", "text": "Water confuses players. **Use one clear water rule per area** and warn about danger. Non-human heroes need **their own metrics.**" },
@@ -234,7 +234,7 @@
     {
       "id": "L05-l17",
       "title": "The character is the best HUD",
-      "min": 3,
+      "min": 3, "book": 110,
       "deep": "Character as the HUD",
       "cards": [
         { "t": "idea", "text": "Players spend most of their time **looking at the character**. So use the character to show status: health, power, upgrades and gear." },
@@ -248,7 +248,7 @@
     {
       "id": "L05-l18",
       "title": "Companions and big casts",
-      "min": 3,
+      "min": 3, "book": 113,
       "deep": ["Second Playable", "Big Casts"],
       "cards": [
         { "t": "idea", "text": "A second character can be playable or an AI companion. **The best pairs are opposites that need each other.** With many heroes, **make sure no two play the same.**" },
@@ -261,7 +261,7 @@
     {
       "id": "L05-l19",
       "title": "Every NPC needs a job",
-      "min": 3,
+      "min": 3, "book": 116,
       "deep": "People in Your Neighborhood",
       "cards": [
         { "t": "idea", "text": "NPCs exist **to help or hinder the player.** Every one must answer: **\"What does the player need to succeed?\"**" },

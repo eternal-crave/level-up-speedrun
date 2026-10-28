@@ -27,7 +27,7 @@
     {
       "id": "L06-l02",
       "title": "Static cameras need juice",
-      "min": 3,
+      "min": 3, "book": 122,
       "deep": "Static camera",
       "cards": [
         { "t": "idea", "text": "A **static camera** never moves. You control exactly what the player sees. It's old-school, but **it's still the king of puzzle and board games.**" },
@@ -41,7 +41,7 @@
     {
       "id": "L06-l03",
       "title": "Scrolling: a window over a bigger world",
-      "min": 3,
+      "min": 3, "book": 123,
       "deep": "Scrollable camera",
       "cards": [
         { "t": "idea", "text": "A **scrollable camera** is a window you slide over a bigger world. You keep the clarity of a fixed screen and add the fun of exploring." },
@@ -55,7 +55,7 @@
     {
       "id": "L06-l04",
       "title": "Parallax and the forced scroll",
-      "min": 3,
+      "min": 3, "book": 124,
       "deep": "Parallax",
       "cards": [
         { "t": "idea", "text": "**Parallax scrolling** slides background layers at different speeds, making a flat world feel deep. **Forced scrolling** keeps moving whether the player wants it or not." },
@@ -69,7 +69,7 @@
     {
       "id": "L06-l05",
       "title": "First person, and motion sickness",
-      "min": 3,
+      "min": 3, "book": 129,
       "deep": "First person camera",
       "cards": [
         { "t": "idea", "text": "**First person** gives the most immersion and precise aiming. But you lose awareness of your surroundings, you don't see your hero, and some players feel sick." },
@@ -83,7 +83,7 @@
     {
       "id": "L06-l06",
       "title": "Third person, and four camera traps",
-      "min": 3,
+      "min": 3, "book": 131,
       "deep": "Third person camera",
       "cards": [
         { "t": "idea", "text": "A camera behind the hero shows both the hero and the world. But a good **follow cam** may be the hardest thing a team builds. Treat it like a person who needs a spotter." },
@@ -97,7 +97,7 @@
     {
       "id": "L06-l07",
       "title": "Let, lock or lend the camera",
-      "min": 3,
+      "min": 3, "book": 136,
       "deep": "Giving Up Control",
       "cards": [
         { "t": "idea", "text": "Players who control the camera point it into walls and miss your best moments. You have three choices: **let** them control it, **lock** it yourself, or **lend** it only when needed." },
@@ -111,7 +111,7 @@
     {
       "id": "L06-l08",
       "title": "2.5D, isometric and God view",
-      "min": 3,
+      "min": 3, "book": 138,
       "deep": ["Two and a Half D", "Isometric camera"],
       "cards": [
         { "t": "idea", "text": "**2.5D** puts 3D models under 2D camera rules: modern looks with old-school readability. **Isometric** is the \"toy box\" view, angled from above, so layouts read instantly." },
@@ -125,7 +125,7 @@
     {
       "id": "L06-l09",
       "title": "Top-down, flying, swimming and tunnels",
-      "min": 3,
+      "min": 3, "book": 141,
       "deep": ["Top-down camera", "Special case", "Tunnel vision"],
       "cards": [
         { "t": "idea", "text": "Looking straight **down** is old-fashioned but still great for arcade action, if you don't need depth or a close look at the hero. Special movement, like flying, swimming and tunnels, needs its own camera plan." },
@@ -139,7 +139,7 @@
     {
       "id": "L06-l10",
       "title": "Shot sizes: the 5-second film school",
-      "min": 3,
+      "min": 3, "book": 142,
       "deep": "Camera shot guide",
       "cards": [
         { "t": "idea", "text": "Film has shared names for how much of a subject fills the frame. **Use shot sizes to control emotion, information and drama**, in cutscenes and in play." },
@@ -153,7 +153,7 @@
     {
       "id": "L06-l11",
       "title": "Camera angles change how things feel",
-      "min": 2,
+      "min": 2, "book": 146,
       "deep": "Camera angle guide",
       "cards": [
         { "t": "idea", "text": "Where the camera sits compared with the subject changes how it feels. **Low angles make things powerful. High angles make them small and weak.**" },
@@ -167,7 +167,7 @@
     {
       "id": "L06-l12",
       "title": "Camera moves",
-      "min": 2,
+      "min": 2, "book": 146,
       "deep": "Camera movement guide",
       "cards": [
         { "t": "idea", "text": "How the camera moves is an art in itself. **Borrow film's standard moves** to make cameras and cutscenes feel cinematic." },
@@ -181,7 +181,7 @@
     {
       "id": "L06-l13",
       "title": "Composition: thirds and the line",
-      "min": 3,
+      "min": 3, "book": 149,
       "deep": "composition",
       "cards": [
         { "t": "idea", "text": "You're the director now. **Good composition** and **keeping screen direction consistent** make shots look intentional and keep players oriented." },
@@ -195,7 +195,7 @@
     {
       "id": "L06-l14",
       "title": "Point the camera at the objective",
-      "min": 3,
+      "min": 3, "book": 150,
       "deep": "objective",
       "cards": [
         { "t": "idea", "text": "The camera's job is to tell the player **what to look at**: the puzzle, the enemy, the exit, the best view. **Show everything they need, and don't make them guess.**" },
@@ -209,7 +209,7 @@
     {
       "id": "L06-l15",
       "title": "Never lose sight of the hero",
-      "min": 2,
+      "min": 2, "book": 150,
       "deep": "Never let the character",
       "cards": [
         { "t": "idea", "text": "Players must **always know where their character is.** If walls or objects hide the hero, use tricks to show them anyway." },
@@ -223,7 +223,7 @@
     {
       "id": "L06-l16",
       "title": "Cameras for several players",
-      "min": 2,
+      "min": 2, "book": 152,
       "deep": "Multiple player cameras",
       "cards": [
         { "t": "idea", "text": "One camera for several players needs a plan: **split the screen, zoom out to fit everyone, or show small extra views.**" },

@@ -12,7 +12,7 @@
     {
       "id": "BX-l01",
       "title": "The document ladder",
-      "min": 3,
+      "min": 3, "book": 431,
       "deep": "document ladder",
       "cards": [
         { "t": "idea", "text": "The back of the book is a toolbox: samples, templates and idea lists. **Each design document is a different zoom level of the same game**, for a different reader." },
@@ -26,7 +26,7 @@
     {
       "id": "BX-l02",
       "title": "The one-sheet",
-      "min": 3,
+      "min": 3, "book": 431,
       "deep": "One-Sheet Sample",
       "cards": [
         { "t": "idea", "text": "A **one-sheet** fits the whole game on one page. It keeps the team aligned and can be handed to managers, marketing and partners." },
@@ -40,7 +40,7 @@
     {
       "id": "BX-l03",
       "title": "The ten-pager",
-      "min": 3,
+      "min": 3, "book": 435,
       "deep": "Ten-Page",
       "cards": [
         { "t": "idea", "text": "The **ten-pager** covers every big topic of the game. **\"Ten\" is a checklist of topics, not a strict page count.**" },
@@ -54,7 +54,7 @@
     {
       "id": "BX-l04",
       "title": "The GDD is alive",
-      "min": 3,
+      "min": 3, "book": 447,
       "deep": "Design Document Template",
       "cards": [
         { "t": "idea", "text": "The **GDD** is the everything-document the team builds from. The template is a big checklist, so nothing gets forgotten. **Fill what you can, mark the rest TBD, and keep it updated.**" },
@@ -82,7 +82,7 @@
     {
       "id": "BX-l06",
       "title": "The parts bin of mechanics",
-      "min": 3,
+      "min": 3, "book": 465,
       "deep": "Mechanics and Hazards",
       "cards": [
         { "t": "idea", "text": "The **mechanics and hazards list** (about 35 items) is the parts bin for levels: things that move you, hurt you, or that you interact with." },
@@ -96,7 +96,7 @@
     {
       "id": "BX-l07",
       "title": "One sheet per enemy",
-      "min": 3,
+      "min": 3, "book": 467,
       "deep": "Enemy Design Template",
       "cards": [
         { "t": "idea", "text": "The **enemy template** turns a cool sketch into something buildable: who it is, how it moves and attacks, how it dies, and **every asset it needs**." },
@@ -110,7 +110,7 @@
     {
       "id": "BX-l08",
       "title": "A boss needs a stage",
-      "min": 3,
+      "min": 3, "book": 470,
       "deep": "Boss Design Template",
       "cards": [
         { "t": "idea", "text": "The **boss template** is the enemy template plus **weak spots**, a **health bar**, and a second page for the **arena**. A boss fight is an enemy and a level designed together." },
@@ -124,7 +124,7 @@
     {
       "id": "BX-l09",
       "title": "The nine-slide pitch",
-      "min": 3,
+      "min": 3, "book": 479,
       "deep": "High Concept Pitch",
       "cards": [
         { "t": "idea", "text": "The **nine-slide pitch** answers a decision maker's questions in order, with big art and few words." },
@@ -138,7 +138,7 @@
     {
       "id": "BX-l10",
       "title": "The F2P pitch deck",
-      "min": 3,
+      "min": 3, "book": 478,
       "deep": "High Concept Pitch",
       "cards": [
         { "t": "idea", "text": "A mobile pitch keeps the book's structure but adds **market data, monetization, target KPIs and an ad plan**. The 2010 \"download plans\" slide became LiveOps, now at the centre." },

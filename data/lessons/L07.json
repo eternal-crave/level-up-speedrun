@@ -12,7 +12,7 @@
     {
       "id": "L07-l01",
       "title": "Real humans are playing your game",
-      "min": 3,
+      "min": 3, "book": 156,
       "deep": "Humans are playing",
       "cards": [
         { "t": "idea", "text": "Controls are for real human hands. **If the people who made the game need a special grip to beat it, the controls are wrong, not the players.**" },
@@ -26,7 +26,7 @@
     {
       "id": "L07-l02",
       "title": "Map controls with meaning",
-      "min": 3,
+      "min": 3, "book": 157,
       "deep": "Mapping strategies",
       "cards": [
         { "t": "idea", "text": "Decide control rules up front, so players build muscle memory without thinking. Map controls by **where the hands rest, what the action means, how it looks in real life, and what players already know.**" },
@@ -40,7 +40,7 @@
     {
       "id": "L07-l03",
       "title": "Fit the controls to the players",
-      "min": 3,
+      "min": 3, "book": 158,
       "deep": "Know your audience",
       "cards": [
         { "t": "idea", "text": "Different players have different hands and habits. **Match control complexity to your audience, and let players change the controls when you can.**" },
@@ -54,7 +54,7 @@
     {
       "id": "L07-l04",
       "title": "The dance of the buttons, not mashing",
-      "min": 3,
+      "min": 3, "book": 159,
       "deep": ["Dance, Monkey", "Gamers' thumb"],
       "cards": [
         { "t": "idea", "text": "Good controls feel like a **dance**: varied, flowing and simple. Controls that are too complex or too repetitive turn into **button mashing**: hitting everything and hoping." },
@@ -67,7 +67,7 @@
     {
       "id": "L07-l05",
       "title": "Never let a button do nothing",
-      "min": 3,
+      "min": 3, "book": 162,
       "deep": "Mashing as a teacher",
       "cards": [
         { "t": "idea", "text": "New players press every button to see what happens, because nobody reads the manual. **Reward that curiosity, and never let a button do nothing.**" },
@@ -81,7 +81,7 @@
     {
       "id": "L07-l06",
       "title": "Make the input mirror the action",
-      "min": 3,
+      "min": 3, "book": 162,
       "deep": "Real-world mapping",
       "cards": [
         { "t": "idea", "text": "Controls feel right when **the input copies the action**: the movement, the button's position, or the controls players already know from the genre." },
@@ -109,7 +109,7 @@
     {
       "id": "L07-l08",
       "title": "Press equals act",
-      "min": 3,
+      "min": 3, "book": 164,
       "deep": "Press = act",
       "cards": [
         { "t": "idea", "text": "Rogers' very important rule: **when the button is pressed, the action must happen.** Nothing angers players faster than waiting for a beautiful animation to finish." },
@@ -123,7 +123,7 @@
     {
       "id": "L07-l09",
       "title": "Character or camera: pick one and keep it",
-      "min": 3,
+      "min": 3, "book": 164,
       "deep": "Character or Camera",
       "cards": [
         { "t": "idea", "text": "Controls can be **relative to the character** or **relative to the camera.** **Pick one for the whole game and stick with it.** Switching between them confuses everyone." },
@@ -137,7 +137,7 @@
     {
       "id": "L07-l10",
       "title": "Vibration and motion sensors",
-      "min": 3,
+      "min": 3, "book": 166,
       "deep": "Shake, Rattle",
       "cards": [
         { "t": "idea", "text": "Controllers and phones can talk back with **vibration** and sense motion with a **gyroscope**. Give vibration a **consistent language**, and always tell players about motion controls." },
@@ -150,7 +150,7 @@
     {
       "id": "L07-l11",
       "title": "Motion controls: make them feel real",
-      "min": 3,
+      "min": 3, "book": 168,
       "deep": "Motion controls",
       "cards": [
         { "t": "idea", "text": "Motion controls work best when they **copy real actions and feel physically right.** Timing, speed and resistance make a virtual sword feel like a sword instead of \"floaty\"." },
@@ -163,7 +163,7 @@
     {
       "id": "L07-l12",
       "title": "The touch gesture vocabulary",
-      "min": 3,
+      "min": 3, "book": 167,
       "deep": "Touch Controls Field Guide",
       "cards": [
         { "t": "idea", "text": "A touchscreen has no buttons to feel, and your finger covers what it touches. **Give each gesture one clear meaning.**" },
@@ -176,7 +176,7 @@
     {
       "id": "L07-l13",
       "title": "Joysticks and thumb zones",
-      "min": 3,
+      "min": 3, "book": 164,
       "deep": "Touch Controls Field Guide",
       "cards": [
         { "t": "idea", "fig": "thumb-zone", "text": "Many people hold their phone in one hand and tap with the thumb. **Put frequent actions where the thumb naturally rests: the bottom of the screen.** The top is a stretch." },
@@ -189,7 +189,7 @@
     {
       "id": "L07-l14",
       "title": "Fat fingers and forgiving input",
-      "min": 3,
+      "min": 3, "book": 158,
       "deep": "Touch Controls Field Guide",
       "cards": [
         { "t": "idea", "text": "Fingers are big and imprecise. **Make touch targets large, and make the game read the player's intent, not exact pixels.**" },

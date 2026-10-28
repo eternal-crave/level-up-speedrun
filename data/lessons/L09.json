@@ -25,7 +25,7 @@
     {
       "id": "L09-l02",
       "title": "Clichéd themes, and how to twist them",
-      "min": 3,
+      "min": 3, "book": 206,
       "deep": "Cliché",
       "cards": [
         { "t": "idea", "text": "Some level themes are used so often they're clichés: ice world, lava world, haunted house. **They became clichés for good reasons.** You can still use them if you add a twist." },
@@ -38,7 +38,7 @@
     {
       "id": "L09-l03",
       "title": "Every level has two names",
-      "min": 2,
+      "min": 2, "book": 207,
       "deep": "Name Game",
       "cards": [
         { "t": "idea", "text": "Each level has **two names**: a short, precise **file name** for the team, and an exciting **player-facing name** that gives a first impression." },
@@ -51,7 +51,7 @@
     {
       "id": "L09-l04",
       "title": "Design top-down, like Disneyland",
-      "min": 3,
+      "min": 3, "book": 209,
       "deep": "Disneyland",
       "cards": [
         { "t": "idea", "text": "Theme parks are masters at telling stories with space. **Design top-down: the world, then each land, then each ride, then each scene.** Start with a map of the whole world." },
@@ -65,7 +65,7 @@
     {
       "id": "L09-l05",
       "title": "Give every level a goal, and build anticipation",
-      "min": 3,
+      "min": 3, "book": 211,
       "deep": "Disneyland",
       "cards": [
         { "t": "idea", "text": "Ask two questions about every level: **What story does it tell?** And **what is the player trying to achieve here?** Then build excitement before you deliver." },
@@ -78,7 +78,7 @@
     {
       "id": "L09-l06",
       "title": "Plan levels with a beat chart",
-      "min": 3,
+      "min": 3, "book": 214,
       "deep": "Beat Chart",
       "cards": [
         { "t": "idea", "text": "A **beat chart** puts your whole game on one grid: one column per level, one row per element. **In a few hours it exposes problems before anyone builds anything.**" },
@@ -92,7 +92,7 @@
     {
       "id": "L09-l07",
       "title": "Build fewer systems and reuse them hard",
-      "min": 3,
+      "min": 3, "book": 217,
       "deep": "Re-using",
       "cards": [
         { "t": "idea", "text": "Each gameplay system (driving, shooting, stealth) is expensive to build. **Build fewer systems and use them a lot.** Rogers' rule: **if a system is used fewer than three times, it isn't worth having.**" },
@@ -106,7 +106,7 @@
     {
       "id": "L09-l08",
       "title": "Alleys and islands",
-      "min": 3,
+      "min": 3, "book": 219,
       "deep": "Alleys, Islands",
       "cards": [
         { "t": "idea", "text": "3D levels come in two basic shapes. An **alley** guides the player along a path to a goal. An **island** is an open space the player explores in any order." },
@@ -120,7 +120,7 @@
     {
       "id": "L09-l09",
       "title": "Weenies: landmarks that pull players forward",
-      "min": 3,
+      "min": 3, "book": 221,
       "deep": "Alleys, Islands",
       "cards": [
         { "t": "idea", "text": "Disney's designers placed big landmarks, like Sleeping Beauty's Castle, to pull visitors forward. Walt called them **\"weenies\"**, after the hot dog animal trainers wave to lead a dog. **Use them to guide players.**" },
@@ -133,7 +133,7 @@
     {
       "id": "L09-l10",
       "title": "Draw levels to scale",
-      "min": 3,
+      "min": 3, "book": 226,
       "deep": "Scale, Paths",
       "cards": [
         { "t": "idea", "text": "Draw your level on paper first, at the right **scale**. **The player is usually one square** on the grid, and everything else is drawn relative to them." },
@@ -146,7 +146,7 @@
     {
       "id": "L09-l11",
       "title": "Steer players with light and shape",
-      "min": 3,
+      "min": 3, "book": 226,
       "deep": "Scale, Paths",
       "cards": [
         { "t": "idea", "text": "Guide players with the space itself, not with signs. **Players move toward light** and miss dark areas. **Diagonal lines** pull the eye in a direction." },
@@ -159,7 +159,7 @@
     {
       "id": "L09-l12",
       "title": "Walking is never gameplay",
-      "min": 3,
+      "min": 3, "book": 226,
       "deep": "Scale, Paths",
       "cards": [
         { "t": "idea", "text": "Rogers' rule: **walking is never gameplay.** Never waste the player's time with empty wandering. Give an active character active things to do." },
@@ -173,7 +173,7 @@
     {
       "id": "L09-l13",
       "title": "Show before and after, let the brain fill in the middle",
-      "min": 3,
+      "min": 3, "book": 232,
       "deep": "Illusional Narrative",
       "cards": [
         { "t": "idea", "text": "**Illusional narrative:** show the player the **before** and the **after**, and their brain fills in the **during**. It's cheap, flexible storytelling." },
@@ -187,7 +187,7 @@
     {
       "id": "L09-l14",
       "title": "Graybox first, then pace it out",
-      "min": 3,
+      "min": 3, "book": 238,
       "deep": "Gray Matters",
       "cards": [
         { "t": "idea", "text": "Before any art, **build the level from plain grey boxes and play it.** Fix scale, camera and pacing while changes are still cheap." },
@@ -200,7 +200,7 @@
     {
       "id": "L09-l15",
       "title": "Vary the feeling: big moments, small moments",
-      "min": 3,
+      "min": 3, "book": 235,
       "deep": "Gray Matters",
       "cards": [
         { "t": "idea", "text": "**Change the player's emotion every 15 to 20 minutes.** Geometry alone can take them from mystery to fear to panic to wonder." },
@@ -213,7 +213,7 @@
     {
       "id": "L09-l16",
       "title": "The training level: build it first",
-      "min": 3,
+      "min": 3, "book": 239,
       "deep": "Training Level",
       "cards": [
         { "t": "idea", "text": "The training level is the player's **first impression** and arguably the most important level. Yet it's usually built last and rushed. **Build it first, or make the whole game teach.**" },

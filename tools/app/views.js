@@ -522,7 +522,113 @@ function viewLesson(mod, n) {
     <div class="ldots" aria-hidden="true">${dots}</div>
     <h1 class="ltitle">${esc(L.title)}</h1>
     ${body}
+    ${L.book ? `<button class="btn sm ghost lbook" data-act="book" data-p="${L.book}">📖 In the book · p. ${L.book}</button>` : ""}
   </section>`;
+}
+
+/* ---------- your own copy of the book: the PDF stays in this browser (IndexedDB), PDF.js draws one page ---------- */
+const BOOK_OFFSET = 24; // PDF page = printed page + 24 in the 2010 Wiley PDF
+const PDFJS = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/";
+const book = { has: null, doc: null, mem: null, page: 1, zoom: 1, task: null };
+function bookIO(op, val) {
+  // op: "get" | "put" | "del". Falls back to memory when the browser blocks IndexedDB.
+  return new Promise((ok, no) => {
+    let r;
+    try { r = indexedDB.open("lus-book", 1); } catch (e) { return no(e); }
+    r.onupgradeneeded = () => r.result.createObjectStore("f");
+    r.onerror = () => no(r.error);
+    r.onsuccess = () => {
+      const st = r.result.transaction("f", op === "get" ? "readonly" : "readwrite").objectStore("f");
+      const q = op === "put" ? st.put(val, "pdf") : op === "del" ? st.delete("pdf") : st.get("pdf");
+      q.onsuccess = () => ok(q.result);
+      q.onerror = () => no(q.error);
+    };
+  }).catch((e) => {
+    if (op === "put") { book.mem = val; return "mem"; }
+    if (op === "del") { book.mem = null; return; }
+    if (book.mem) return book.mem;
+    throw e;
+  });
+}
+async function bookData() { return book.mem || (await bookIO("get").catch(() => null)); }
+async function bookHas() { if (book.has == null) book.has = !!(await bookData()); return book.has; }
+function loadScript(src) { return new Promise((ok, no) => { const s = document.createElement("script"); s.src = src; s.onload = ok; s.onerror = () => no(new Error("couldn't load the PDF reader (offline?)")); document.head.appendChild(s); }); }
+async function pdfjs() {
+  if (!window.pdfjsLib) {
+    // the worker script first: PDF.js then runs it on the main thread, which avoids cross-origin worker rules
+    await loadScript(PDFJS + "pdf.worker.min.js");
+    await loadScript(PDFJS + "pdf.min.js");
+    window.pdfjsLib.GlobalWorkerOptions.workerSrc = PDFJS + "pdf.worker.min.js";
+  }
+  return window.pdfjsLib;
+}
+async function bookDoc() {
+  if (book.doc) return book.doc;
+  const data = await bookData();
+  if (!data) return null;
+  const lib = await pdfjs();
+  book.doc = await lib.getDocument({ data: new Uint8Array(data.slice(0)) }).promise;
+  return book.doc;
+}
+function bookPickHtml(again) {
+  return `<p class="small">${again ? "Replace it with another copy:" : "Pick your <b>Level Up!</b> PDF once on this device. It stays in this browser only: it's never uploaded or synced to your account."}</p>
+    <div><label class="btn sm ${again ? "ghost" : "primary"}">${again ? "Replace PDF…" : "📖 Choose PDF…"}<input type="file" accept="application/pdf,.pdf" id="book-file" hidden></label></div>
+    <p class="small muted" id="book-st"></p>`;
+}
+async function openBook(page) {
+  book.page = page || book.page;
+  let el = $("#bookv");
+  if (!el) { el = document.createElement("div"); el.id = "bookv"; el.className = "bookv"; el.setAttribute("role", "dialog"); el.setAttribute("aria-label", "Book page"); document.body.appendChild(el); }
+  if (!(await bookHas())) {
+    el.innerHTML = `<div class="bookv-bar"><b class="small">📖 Your copy of the book</b><button class="btn sm" data-act="book-close" aria-label="Close">✕</button></div><div class="bookv-body"><div class="card stack bookv-add">${bookPickHtml(false)}</div></div>`;
+    return;
+  }
+  el.innerHTML = `<div class="bookv-bar"><button class="btn sm ghost" data-act="book-prev" aria-label="Previous page">←</button><span class="mono small">p. <b id="bookv-p">${book.page}</b></span><button class="btn sm ghost" data-act="book-next" aria-label="Next page">→</button><button class="btn sm ghost" data-act="book-zoom" aria-label="Zoom">${book.zoom > 1 ? "🔍−" : "🔍+"}</button><button class="btn sm" data-act="book-close" aria-label="Close">✕</button></div>
+    <div class="bookv-body"><p class="small muted" id="bookv-msg">Opening your book…</p><canvas id="bookv-c" class="${book.zoom > 1 ? "zoom" : ""}"></canvas></div>`;
+  bookRender();
+}
+async function bookRender() {
+  const msg = $("#bookv-msg"), cv = $("#bookv-c");
+  if (!cv) return;
+  try {
+    const doc = await bookDoc();
+    const n = book.page + BOOK_OFFSET;
+    if (n < 1 || n > doc.numPages) { msg.textContent = "That page isn't in this PDF."; return; }
+    if (book.task) book.task.cancel();
+    const pg = await doc.getPage(n);
+    const w = Math.min(cv.parentElement.clientWidth - 24, 736) * book.zoom;
+    const vp = pg.getViewport({ scale: (w / pg.getViewport({ scale: 1 }).width) * (window.devicePixelRatio || 1) });
+    cv.width = vp.width; cv.height = vp.height;
+    book.task = pg.render({ canvasContext: cv.getContext("2d"), viewport: vp });
+    await book.task.promise;
+    book.task = null;
+    msg.textContent = "";
+    $("#bookv-p").textContent = book.page;
+  } catch (e) {
+    if (e && e.name === "RenderingCancelledException") return;
+    msg.textContent = "Couldn't open the book: " + (e && e.message ? e.message : e);
+  }
+}
+async function bookAdd(f) {
+  const st = $("#book-st");
+  if (!f) return;
+  if (st) st.textContent = "Saving on this device…";
+  try {
+    const buf = await f.arrayBuffer();
+    const where = await bookIO("put", buf);
+    book.has = true; book.doc = null;
+    toast(where === "mem" ? "This browser blocks storage: the book works until you close the page" : "Book saved on this device");
+    if ($("#bookv")) openBook(); else render();
+  } catch (e) { if (st) st.textContent = "Couldn't save it here: " + e.message; }
+}
+async function fillBookMe() {
+  const el = $("#book-me");
+  if (!el) return;
+  const data = await bookData();
+  el.innerHTML = data
+    ? `<p class="small">✅ Saved on this device · ${(data.byteLength / 1048576).toFixed(1)} MB. Lessons show a <b>📖 In the book</b> button that opens the matching page.</p>
+       <div class="row"><button class="btn sm" data-act="book" data-p="1">Open the book</button><button class="btn sm ghost" data-act="book-del">Remove from this device</button></div>${bookPickHtml(true)}`
+    : bookPickHtml(false);
 }
 function learnTabHtml(id) {
   const m = BY[id], ls = lessonsOf(id), done = ls.filter(lessonDone).length, nx = nextLessonIdx(id);
@@ -731,6 +837,7 @@ function viewMe() {
   for (let d = new Date(startD); d <= end; d.setDate(d.getDate() + 1)) { const v = P.days[dkey(d)] || 0; cells.push(`<i class="${v >= 120 ? "l3" : v >= 50 ? "l2" : v > 0 ? "l1" : ""}" title="${dkey(d)}: ${v} XP"></i>`); }
   const read = MODS.filter((m) => P.read[m.id]).length;
   const qdone = Object.keys(P.quests).filter((id) => QUEST[id]).length;
+  queueMicrotask(fillBookMe); // runs after render() has placed this view
   return `<section class="card hero">
       <div class="eyebrow">Player card</div>
       <div class="row"><div class="hud-lvl" style="min-width:64px;height:64px;font-size:1.3rem"><span><small>LV</small>${l}</span></div><div><h1 class="h2">${esc(titleOf(l))}</h1><p class="mono small">${P.xp} XP total · ${xpAt(l + 1) - P.xp} to LV ${l + 1}</p></div></div>
@@ -760,6 +867,7 @@ function viewMe() {
       </div>
       ${syncNote()}
     </section>
+    <section class="card"><div class="eyebrow">📖 Your book</div><div id="book-me" class="stack"><p class="small muted">Checking this device…</p></div></section>
     <section class="card"><div class="eyebrow">Backup</div>
       <div class="row"><button class="btn sm" data-act="export">📋 Copy progress</button><button class="btn sm ghost" data-act="reveal" data-target="import-box">📥 Import…</button></div>
       <div id="import-box" hidden class="stack"><label class="lbl" for="import-ta">Paste a progress backup</label><textarea id="import-ta"></textarea><button class="btn sm hot" data-act="import">Replace my progress with this backup</button></div>
@@ -771,7 +879,7 @@ function viewMe() {
       <div><button class="btn sm hot" data-act="reveal" data-target="reset-box">🗑 Delete my progress…</button></div>
       <div id="reset-box" hidden class="stack"><label class="lbl" for="reset-in">Type RESET to confirm</label><input type="text" id="reset-in" autocomplete="off" autocapitalize="characters" spellcheck="false"><button class="btn hot block" data-act="reset">Delete everything and start over</button></div>
     </section>
-    <p class="small muted" style="text-align:center">Notes are original study material based on <em>Level Up! The Guide to Great Video Game Design</em> by Scott Rogers (Wiley, 2010). Get the book; it's full of drawings this app can't show you.</p>`;
+    <p class="small muted" style="text-align:center">Notes are original study material based on <em>Level Up! The Guide to Great Video Game Design</em> by Scott Rogers (Wiley, 2010). Get the book; it's full of drawings this app can't copy. Add your own PDF above to see them next to the lessons.</p>`;
 }
 
 /* ---------- account ---------- */
@@ -843,6 +951,12 @@ window.addEventListener("hashchange", () => {
 /* ---------- actions ---------- */
 const ACT = {
   "close-overlay": (t) => t.closest(".lvlup").remove(),
+  book: (t) => openBook(+t.dataset.p),
+  "book-prev": () => { if (book.page + BOOK_OFFSET > 1) { book.page--; bookRender(); } },
+  "book-next": () => { book.page++; bookRender(); },
+  "book-zoom": (t) => { book.zoom = book.zoom > 1 ? 1 : 2; t.textContent = book.zoom > 1 ? "🔍−" : "🔍+"; $("#bookv-c").classList.toggle("zoom", book.zoom > 1); bookRender(); },
+  "book-close": () => { if (book.task) book.task.cancel(); const el = $("#bookv"); if (el) el.remove(); },
+  "book-del": async () => { await bookIO("del").catch(() => {}); book.mem = null; book.has = false; book.doc = null; toast("Book removed from this device"); fillBookMe(); },
   xray: (t) => { const n = t.nextElementSibling; n.hidden = !n.hidden; t.setAttribute("aria-expanded", String(!n.hidden)); },
   reveal: (t) => { const el = document.getElementById(t.dataset.target); if (el) { el.hidden = !el.hidden; if (t.textContent.includes("Tap to reveal")) { t.remove(); gain(2); } } },
   pace: (t) => { P.settings.pace = t.dataset.pace; P.onboarded = true; P.startDay = P.startDay || dkey(); saveP(); gain(10, "Run started"); render(); },
@@ -1001,6 +1115,7 @@ document.addEventListener("click", (e) => {
 });
 document.addEventListener("change", (e) => {
   const t = e.target;
+  if (t.id === "book-file") { bookAdd(t.files && t.files[0]); return; }
   if (t.dataset && t.dataset.set) {
     const k = t.dataset.set;
     P.settings[k] = k === "newPerDay" ? +t.value : k === "sound" ? t.value === "1" : t.value;
@@ -1015,6 +1130,12 @@ document.addEventListener("input", (e) => {
   if (t.dataset && t.dataset.draft) { clearTimeout(draftT); draftT = setTimeout(() => LS.raw("lus.draft." + t.dataset.draft, t.value), 400); }
 });
 document.addEventListener("keydown", (e) => {
+  if ($("#bookv")) {
+    if (e.key === "Escape") ACT["book-close"]();
+    else if (e.key === "ArrowRight") ACT["book-next"]();
+    else if (e.key === "ArrowLeft") ACT["book-prev"]();
+    return;
+  }
   if (current === "lesson" && lsn && !e.target.closest("textarea,input,select")) {
     if (e.key === "ArrowRight" && !lsn.done && lsn.card < lessonsOf(lsn.mod)[lsn.i].cards.length) { e.preventDefault(); ACT.lnext(); }
     else if (e.key === "ArrowLeft") { e.preventDefault(); ACT.lback(); }

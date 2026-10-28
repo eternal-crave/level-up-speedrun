@@ -13,7 +13,7 @@
     {
       "id": "L17-l01",
       "title": "The pitch: steak, not the whole cow",
-      "min": 3,
+      "min": 3, "book": 417,
       "deep": "what a pitch is",
       "cards": [
         { "t": "idea", "text": "A finished design isn't a finished game. Someone must fund it first. **A pitch is a short, tasty version of your design document**, without the small details." },
@@ -27,7 +27,7 @@
     {
       "id": "L17-l02",
       "title": "Nobody cares about your lore yet",
-      "min": 3,
+      "min": 3, "book": 418,
       "deep": "Stupid Little World",
       "cards": [
         { "t": "idea", "text": "Treat a pitch like an artist's portfolio: **show your best, and don't bury people.** Above all, don't drown them in story details." },
@@ -41,7 +41,7 @@
     {
       "id": "L17-l03",
       "title": "Six rules for pitching",
-      "min": 3,
+      "min": 3, "book": 420,
       "deep": "six rules of thumb",
       "cards": [
         { "t": "idea", "text": "Rogers' rules: **pitch to the right people, in the right room, well rehearsed, knowing your game deeply, with one idea.** Even great tech alone can be worth pitching." },
@@ -55,7 +55,7 @@
     {
       "id": "L17-l04",
       "title": "Playable beats slides",
-      "min": 3,
+      "min": 3, "book": 420,
       "deep": "pitch equation",
       "cards": [
         { "t": "idea", "text": "What sells a game best, in order: **a playable demo, then a design document, then a presentation, then just talking.**" },
@@ -69,7 +69,7 @@
     {
       "id": "L17-l05",
       "title": "Games are made by people",
-      "min": 3,
+      "min": 3, "book": 421,
       "deep": "Haaaard Business",
       "cards": [
         { "t": "idea", "text": "Making games is hard, and even great games can flop. **Most games that go badly were badly planned.** Plan for real humans." },
@@ -83,7 +83,7 @@
     {
       "id": "L17-l06",
       "title": "Be a PLANNER",
-      "min": 3,
+      "min": 3, "book": 422,
       "deep": "troubleshooting list",
       "cards": [
         { "t": "idea", "text": "Rogers' checklist for keeping production alive: **plan for problems, lock the design early, don't overpromise, break your own game, and respect cultures.**" },
@@ -97,7 +97,7 @@
     {
       "id": "L17-l07",
       "title": "Cut early, cut carefully",
-      "min": 3,
+      "min": 3, "book": 422,
       "deep": "Cutting content",
       "cards": [
         { "t": "idea", "text": "Every game cuts content. That's normal. **Cut as much as possible early, for the right reasons, and never pull out something many systems depend on.**" },
@@ -111,7 +111,7 @@
     {
       "id": "L17-l08",
       "title": "Slice or layer",
-      "min": 3,
+      "min": 3, "book": 423,
       "deep": "Vertical slice",
       "cards": [
         { "t": "idea", "text": "Two ways to build: a **vertical slice** (one piece near-final) or a **horizontal layer** (the whole game rough, then polished). Pick one and go." },
@@ -125,7 +125,7 @@
     {
       "id": "L17-l09",
       "title": "Sequels: your chance to fix it",
-      "min": 3,
+      "min": 3, "book": 426,
       "deep": "sequel rulebook",
       "cards": [
         { "t": "idea", "text": "Publishers like sequels because they're safer bets. **A sequel is your chance to get it right**, not a lazy repeat." },
@@ -139,7 +139,7 @@
     {
       "id": "L17-l10",
       "title": "Four rules for a long career",
-      "min": 3,
+      "min": 3, "book": 429,
       "deep": "Continue?",
       "cards": [
         { "t": "idea", "text": "Rogers ends the book with \"three\" rules. There are actually four: **rest, be fair, keep playing games, and enjoy it.**" },
