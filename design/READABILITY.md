@@ -77,7 +77,7 @@ The other 12 lessons have no `see` card.
 
 ### "Words you'll meet" (pre-training)
 
-Each module starts with a list of 6 to 8 key words with plain meanings. The app shows it on the Learn tab before lesson 1 ([views.js:646-648](../tools/app/views.js#L646-L648)).
+Each module starts with a list of 6 to 8 key words with plain meanings. The app shows it on the Learn tab before lesson 1 ([views.js:730-732](../tools/app/views.js#L730-L732)).
 The list stays open until you tap "✓ Got these words". On a new level, the Today plan makes this the warm-up step.
 
 There are 143 entries in total, with 126 different words. Words like "FTUE" and "GDD" are taught again in each module that needs them.
@@ -88,7 +88,7 @@ Every lesson ends with "🎯 Quick check" ([views.js:517-522](../tools/app/views
 
 - You pick one of 3 options. The order is shuffled (see [QUALITY-GATES.md](QUALITY-GATES.md#fair-quizzes)).
 - The app marks your pick right or wrong and shows the `why` sentence.
-- A wrong answer still finishes the lesson. You get 15 XP if you were right and 10 XP if not ([views.js:1079](../tools/app/views.js#L1079)).
+- A wrong answer still finishes the lesson. You get 15 XP if you were right and 10 XP if not ([views.js:1168](../tools/app/views.js#L1168)).
 - The done screen says: "Now you know the right answer. Recalling it next time is what makes it stick."
 
 This makes a mistake part of learning, not a failure.
@@ -99,7 +99,7 @@ The `deep` field holds part of a `## ` heading from the notes. The build finds t
 
 - On the done screen, "📚 Go deeper" opens the Learn tab at that notes section ([views.js:512](../tools/app/views.js#L512)).
 - The notes are split into closed sections, one per heading ([views.js:348-389](../tools/app/views.js#L348-L389)).
-- `openDeep()` opens only the section you asked for and scrolls to it ([views.js:659-667](../tools/app/views.js#L659-L667)).
+- `openDeep()` opens only the section you asked for and scrolls to it ([views.js:743-751](../tools/app/views.js#L743-L751)).
 
 All 307 lessons have a `deep` link, and all of them match a heading.
 
@@ -173,7 +173,7 @@ Counted over all 21 files in `data/lessons/`:
 
 ## How it is shown in the app
 
-- Route `#learn/<MOD>/<n>` opens `viewLesson()` ([views.js:499-531](../tools/app/views.js#L499-L531)).
+- Route `#learn/<MOD>/<n>` opens `viewLesson()` ([views.js:499-532](../tools/app/views.js#L499-L532)).
 - Dots at the top show the cards plus the check, so you always see how much is left.
 - The header says "Lesson n of N · ~3 min".
 - "Next →" moves on. "←" goes back, but only after the first card. The arrow keys also work.

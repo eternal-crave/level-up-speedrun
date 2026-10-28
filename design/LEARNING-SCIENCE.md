@@ -12,7 +12,7 @@ The same sources are in [LESSONS-PLAYBOOK.md:42-48](../tools/LESSONS-PLAYBOOK.md
 | Mayer: segmenting | One card per screen, you control the pace | [views.js:513-516](../tools/app/views.js#L513-L516) |
 | Mayer: signaling | One bold key term per card | `**bold**` in the card text |
 | Mayer: coherence | Trivia moves to "Go deeper" | [views.js:512](../tools/app/views.js#L512) |
-| Mayer: pre-training | "Words you'll meet" before lesson 1 | [views.js:646-648](../tools/app/views.js#L646-L648) |
+| Mayer: pre-training | "Words you'll meet" before lesson 1 | [views.js:730-732](../tools/app/views.js#L730-L732) |
 | Mayer: personalization | Talk to "you" | Writing rule in the playbook |
 | Dunlosky: retrieval practice | A check at the end of every lesson | [views.js:517-522](../tools/app/views.js#L517-L522) |
 | Dunlosky: spacing | Spaced flashcards | [core.js:249-270](../tools/app/core.js#L249-L270) |
@@ -82,7 +82,7 @@ Rereading and highlighting rated low.
 **What we did.**
 
 - **Retrieval after every lesson.** Every one of the 307 lessons ends with a one-question check. The answer comes with a short "why".
-- **Retrieval for each level.** The boss fight is a quiz on the whole level ([views.js:669-775](../tools/app/views.js#L669-L775)).
+- **Retrieval for each level.** The boss fight is a quiz on the whole level ([views.js:753-859](../tools/app/views.js#L753-L859)).
 - **Spacing.** Flashcards use a spaced schedule ([core.js:249-270](../tools/app/core.js#L249-L270)). Each card stores its due day, interval and ease. "Again" resets the card. "Easy" makes the next gap longer.
 - **Spacing in the daily plan.** The Today warm-up shows due flashcards first. If cards were the warm-up, the last step asks you to recall answers. See [ATTENTION-AND-ADHD-UX.md](ATTENTION-AND-ADHD-UX.md).
 - **No rereading loop.** The notes are still there, but the app never asks you to reread them as a study step.

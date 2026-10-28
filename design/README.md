@@ -53,7 +53,7 @@ All numbers were counted from `data/lessons/*.json` and git history on 2026-10-2
 | Lesson data | `data/lessons/<MOD>.json` (one file per module) |
 | Full notes ("Go deeper") | `notes/<MOD>-*.md` |
 | Writing rules and research | [tools/LESSONS-PLAYBOOK.md](../tools/LESSONS-PLAYBOOK.md) |
-| Lesson checks (lint) | [tools/build.mjs:93-142](../tools/build.mjs#L93-L142) |
+| Lesson checks (lint) | [tools/build.mjs:93-172](../tools/build.mjs#L93-L172) |
 | App logic (progress, plan, XP) | [tools/app/core.js](../tools/app/core.js) |
 | Screens (lesson, Today, map, book) | [tools/app/views.js](../tools/app/views.js) |
 | Styles (phone sizes, diagrams) | [tools/app/app.css](../tools/app/app.css) |

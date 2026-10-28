@@ -526,6 +526,7 @@ function viewLesson(mod, n) {
     <div class="ldots" aria-hidden="true">${dots}</div>
     <h1 class="ltitle">${esc(L.title)}</h1>
     ${body}
+    ${L.art && ART ? artStrip(L) : ""}
     ${L.book ? `<button class="btn sm ghost lbook" data-act="book" data-p="${L.book}">📖 In the book · p. ${L.book}</button>` : ""}
   </section>`;
 }
@@ -620,7 +621,7 @@ async function bookAdd(f) {
   try {
     const buf = await f.arrayBuffer();
     const where = await bookIO("put", buf);
-    book.has = true; book.doc = null;
+    book.has = true; book.doc = null; artReset();
     toast(where === "mem" ? "This browser blocks storage: the book works until you close the page" : "Book saved on this device");
     if ($("#bookv")) openBook(); else render();
   } catch (e) { if (st) st.textContent = "Couldn't save it here: " + e.message; }
@@ -631,8 +632,90 @@ async function fillBookMe() {
   const data = await bookData();
   el.innerHTML = data
     ? `<p class="small">✅ Saved on this device · ${(data.byteLength / 1048576).toFixed(1)} MB. Lessons show a <b>📖 In the book</b> button that opens the matching page.</p>
-       <div class="row"><button class="btn sm" data-act="book" data-p="1">Open the book</button><button class="btn sm ghost" data-act="book-del">Remove from this device</button></div>${bookPickHtml(true)}`
+       <div class="row"><button class="btn sm" data-act="book" data-p="1">Open the book</button>${ART ? `<a class="btn sm" href="#art">🎨 All ${ART.items.length} drawings</a>` : ""}<button class="btn sm ghost" data-act="book-del">Remove from this device</button></div>${bookPickHtml(true)}`
     : bookPickHtml(false);
+}
+/* ---------- the book's own illustrations: cropped from the reader's PDF on this device (C.art holds positions only) ---------- */
+const ART = C.art || null;
+const art = { urls: new Map(), q: Promise.resolve(), set: [], at: 0, obs: null };
+const artLesson = {}; // illustration -> [module, lesson number] of the first lesson that shows it
+if (ART) for (const m of MODS) (m.lessons || []).forEach((l, i) => (l.art || []).forEach((k) => { if (!(k in artLesson)) artLesson[k] = [m.id, i + 1]; }));
+const artRatio = (k) => (ART.items[k][3] * ART.page[0]) / (ART.items[k][4] * ART.page[1]);
+const artPage = (k) => ART.items[k][0] - ART.offset; // printed page; 0 or less in the front matter
+const artOf = (id) => ART ? ART.mod.flatMap((m, k) => (m === id ? [k] : [])) : [];
+function artCrop(k, big) {
+  // one render at a time; "s" = thumbnail, "L" = full width. Kept as blob URLs so re-renders of the view are instant.
+  const key = k + (big ? "L" : "s");
+  if (art.urls.has(key)) return Promise.resolve(art.urls.get(key));
+  const job = art.q.then(async () => {
+    if (art.urls.has(key)) return art.urls.get(key);
+    const doc = await bookDoc();
+    if (!doc) throw new Error("no book on this device");
+    const [n, x, y, w, h] = ART.items[k], pad = 0.006;
+    const x0 = Math.max(0, x - pad), y0 = Math.max(0, y - pad), cw = Math.min(1, x + w + pad) - x0, ch = Math.min(1, y + h + pad) - y0;
+    const pg = await doc.getPage(n), base = pg.getViewport({ scale: 1 }), dpr = Math.min(window.devicePixelRatio || 1, big ? 3 : 2);
+    const s = Math.min(big ? (Math.min(innerWidth - 32, 720) * dpr) / (cw * base.width) : (220 * dpr) / Math.max(cw * base.width, ch * base.height), 4);
+    const cv = document.createElement("canvas");
+    cv.width = Math.ceil(cw * base.width * s); cv.height = Math.ceil(ch * base.height * s);
+    const ctx = cv.getContext("2d");
+    ctx.fillStyle = "#fff"; ctx.fillRect(0, 0, cv.width, cv.height);
+    await pg.render({ canvasContext: ctx, viewport: pg.getViewport({ scale: s, offsetX: -x0 * base.width * s, offsetY: -y0 * base.height * s }) }).promise;
+    const url = URL.createObjectURL(await new Promise((ok) => cv.toBlob(ok)));
+    art.urls.set(key, url);
+    return url;
+  });
+  art.q = job.catch(() => {});
+  return job;
+}
+function artReset() { art.urls.forEach((u) => URL.revokeObjectURL(u)); art.urls.clear(); }
+function artThumb(k) {
+  const u = art.urls.get(k + "s");
+  return `<button class="art-t" data-act="art" data-k="${k}" style="aspect-ratio:${artRatio(k).toFixed(3)}" aria-label="Illustration from page ${artPage(k)}">${u ? `<img src="${u}" alt="">` : ""}</button>`;
+}
+function artStrip(L) {
+  queueMicrotask(fillArt);
+  if (book.has === false) return `<p class="small muted lart-none">🎨 ${L.art.length} of the book's drawings go with this lesson. <a href="#me">Add your PDF in Me</a> to see them.</p>`;
+  return `<div class="lart" data-ks="${L.art.join(",")}"><div class="eyebrow">🎨 From the book</div><div class="lart-row">${L.art.map(artThumb).join("")}</div></div>`;
+}
+async function fillArt() {
+  const has = await bookHas();
+  if (!has) { if ($(".lart")) render(); const nb = $("#art-nobook"); if (nb) { nb.hidden = false; $$(".art-grp, .art-chips").forEach((e) => (e.hidden = true)); } return; }
+  if (art.obs) art.obs.disconnect();
+  art.obs = new IntersectionObserver((es) => es.forEach((e) => {
+    if (!e.isIntersecting) return;
+    art.obs.unobserve(e.target);
+    const el = e.target;
+    artCrop(+el.dataset.k).then((u) => { if (!el.querySelector("img")) el.innerHTML = `<img src="${u}" alt="">`; }).catch(() => el.classList.add("bad"));
+  }), { rootMargin: "300px" });
+  $$(".art-t").forEach((el) => { if (!el.querySelector("img")) art.obs.observe(el); });
+}
+function viewArt(id) {
+  if (!ART) return `<section class="card"><p>This build has no illustration data.</p></section>`;
+  const mods = MODS.filter((m) => ART.mod.includes(m.id)), show = id && BY[id] ? [BY[id]] : mods;
+  queueMicrotask(fillArt);
+  return `<section class="stack">
+    <div class="row between"><a class="btn sm ghost" href="${id && BY[id] ? "#" + id : "#me"}">← ${id && BY[id] ? esc(BY[id].label) : "Me"}</a><span class="mono small muted">${ART.items.length} drawings</span></div>
+    <h1 class="h2">🎨 The book's illustrations</h1>
+    <p class="small muted">Scott Rogers' own drawings, cut out of your PDF on this device. Tap one to see it big.</p>
+    <div class="card stack" id="art-nobook" hidden>${bookPickHtml(false)}</div>
+    <div class="art-chips"><a class="pill ${id ? "" : "on"}" href="#art">All</a>${mods.map((m) => `<a class="pill ${m.id === id ? "on" : ""}" href="#art/${m.id}">${m.emoji} ${esc(m.label)}</a>`).join("")}</div>
+    ${show.map((m) => { const ks = artOf(m.id); return `<section class="stack art-grp"><div class="eyebrow">${m.emoji} ${esc(m.label)} · ${esc(m.title)} · ${ks.length}</div><div class="art-grid" data-ks="${ks.join(",")}">${ks.map(artThumb).join("")}</div></section>`; }).join("")}
+  </section>`;
+}
+async function openArt(k, set) {
+  art.set = set && set.length ? set : [k];
+  art.at = Math.max(0, art.set.indexOf(k));
+  let el = $("#artv");
+  if (!el) { el = document.createElement("div"); el.id = "artv"; el.className = "bookv artv"; el.setAttribute("role", "dialog"); el.setAttribute("aria-label", "Illustration"); document.body.appendChild(el); }
+  const L = artLesson[k], inLesson = L && location.hash === `#learn/${L[0]}/${L[1]}`, many = art.set.length > 1, p = artPage(k);
+  el.innerHTML = `<div class="bookv-bar">${many ? `<button class="btn sm ghost" data-act="art-step" data-d="-1" aria-label="Previous drawing">←</button><span class="mono small">${art.at + 1}/${art.set.length}</span><button class="btn sm ghost" data-act="art-step" data-d="1" aria-label="Next drawing">→</button>` : "<span></span>"}<button class="btn sm" data-act="art-close" aria-label="Close">✕</button></div>
+    <div class="bookv-body stack"><p class="small muted" id="artv-msg">Cutting it out of your book…</p><img id="artv-img" alt="Illustration from page ${p}" hidden>
+      <div class="row artv-go">${p > 0 ? `<button class="btn sm" data-act="book" data-p="${p}">📖 Whole page · p. ${p}</button>` : ""}${L && !inLesson ? `<a class="btn sm ghost" href="#learn/${L[0]}/${L[1]}">Go to its lesson →</a>` : ""}</div></div>`;
+  try {
+    const u = await artCrop(k, true);
+    if (art.set[art.at] !== k || !$("#artv-img")) return;
+    $("#artv-img").src = u; $("#artv-img").hidden = false; $("#artv-msg").remove();
+  } catch (e) { const m = $("#artv-msg"); if (m) m.textContent = "Couldn't cut it out: " + (e && e.message ? e.message : e); }
 }
 function learnTabHtml(id) {
   const m = BY[id], ls = lessonsOf(id), done = ls.filter(lessonDone).length, nx = nextLessonIdx(id);
@@ -643,6 +726,7 @@ function learnTabHtml(id) {
       ${meter(ls.length ? done / ls.length : 0)}
       ${nx >= 0 ? `<a class="btn primary block lgo" href="#learn/${id}/${nx + 1}">${done ? "Continue" : "Start"}: ${esc(ls[nx].title)} →</a>` : `<p>All lessons done. Lock it in with the boss fight.</p><button class="btn primary" data-act="ltab" data-id="${id}" data-tab="boss">⚔️ Fight the boss</button>`}
     </div>
+    ${artOf(id).length ? `<a class="card tight row between art-link" href="#art/${id}"><span>🎨 <b>${artOf(id).length} drawings</b> from this chapter of the book</span><span aria-hidden="true">→</span></a>` : ""}
     ${m.words.length ? `<details class="card words" ${wordsOK ? "" : "open"}><summary><b>🔤 Words you'll meet</b> <span class="small muted">${m.words.length} words · 1 min</span></summary>
       <dl class="wlist">${m.words.map((w) => `<div><dt>${esc(w.w)}</dt><dd>${esc(w.d)}</dd></div>`).join("")}</dl>
       ${wordsOK ? "" : `<button class="btn sm go" data-act="wordsok" data-id="${id}">✓ Got these words</button>`}</details>` : ""}
@@ -928,15 +1012,16 @@ function render() {
   renderGate();
   const h = decodeURIComponent((location.hash || "#today").slice(1));
   const lm = h.match(/^learn\/([A-Za-z0-9]+)\/(\d+)$/);
-  current = lm && BY[lm[1]] ? "lesson" : BY[h] ? h : ["today", "feed", "map", "cards", "me"].includes(h) ? h : "today";
-  const tabKey = BY[current] || current === "lesson" ? "map" : current;
+  const am = h.match(/^art(?:\/([A-Za-z0-9]+))?$/);
+  current = lm && BY[lm[1]] ? "lesson" : am ? "art" : BY[h] ? h : ["today", "feed", "map", "cards", "me"].includes(h) ? h : "today";
+  const tabKey = BY[current] || current === "lesson" ? "map" : current === "art" ? "me" : current;
   $$(".tab").forEach((t) => t.setAttribute("aria-current", t.dataset.tab === tabKey ? "page" : "false"));
   const mainEl = $("#main");
   mainEl.classList.toggle("full", current === "feed");
   if (current !== "feed" && feed.obs) { feed.obs.disconnect(); feed.obs = null; }
   if (current === "feed") { mainEl.innerHTML = viewFeed(); mountFeed(); }
   else {
-    const html = current === "lesson" ? viewLesson(lm[1], +lm[2]) : current === "today" ? viewToday() : current === "map" ? viewMap() : current === "cards" ? viewCards() : current === "me" ? viewMe() : viewLevel(current);
+    const html = current === "lesson" ? viewLesson(lm[1], +lm[2]) : current === "art" ? viewArt(am[1]) : current === "today" ? viewToday() : current === "map" ? viewMap() : current === "cards" ? viewCards() : current === "me" ? viewMe() : viewLevel(current);
     mainEl.innerHTML = `<div class="view" id="view">${tipHtml(BY[current] ? "level" : current)}${html}</div>`;
   }
   if (current === "feed" && !(P.tips && P.tips.feed)) { P.tips = { ...(P.tips || {}), feed: 1 }; saveP(); later(() => toast("Swipe up for the next bite. Tap 👍 when it clicks."), 400); }
@@ -948,6 +1033,7 @@ let lastHash = location.hash;
 window.addEventListener("hashchange", () => {
   const scroll = location.hash !== lastHash;
   lastHash = location.hash;
+  for (const id of ["#artv", "#bookv"]) { const el = $(id); if (el) el.remove(); }
   render();
   if (scroll) $("#main").scrollTop = 0;
 });
@@ -960,7 +1046,10 @@ const ACT = {
   "book-next": () => { book.page++; bookRender(); },
   "book-zoom": (t) => { book.zoom = book.zoom > 1 ? 1 : 2; t.textContent = book.zoom > 1 ? "🔍−" : "🔍+"; $("#bookv-c").classList.toggle("zoom", book.zoom > 1); bookRender(); },
   "book-close": () => { if (book.task) book.task.cancel(); const el = $("#bookv"); if (el) el.remove(); },
-  "book-del": async () => { await bookIO("del").catch(() => {}); book.mem = null; book.has = false; book.doc = null; toast("Book removed from this device"); fillBookMe(); },
+  "book-del": async () => { await bookIO("del").catch(() => {}); book.mem = null; book.has = false; book.doc = null; artReset(); toast("Book removed from this device"); fillBookMe(); },
+  art: (t) => { const box = t.closest("[data-ks]"); openArt(+t.dataset.k, box ? box.dataset.ks.split(",").map(Number) : null); },
+  "art-step": (t) => { const n = art.set.length; art.at = (art.at + +t.dataset.d + n) % n; openArt(art.set[art.at], art.set); },
+  "art-close": () => { const el = $("#artv"); if (el) el.remove(); },
   xray: (t) => { const n = t.nextElementSibling; n.hidden = !n.hidden; t.setAttribute("aria-expanded", String(!n.hidden)); },
   reveal: (t) => { const el = document.getElementById(t.dataset.target); if (el) { el.hidden = !el.hidden; if (t.textContent.includes("Tap to reveal")) { t.remove(); gain(2); } } },
   pace: (t) => { P.settings.pace = t.dataset.pace; P.onboarded = true; P.startDay = P.startDay || dkey(); saveP(); gain(10, "Run started"); render(); },
@@ -1139,6 +1228,11 @@ document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") ACT["book-close"]();
     else if (e.key === "ArrowRight") ACT["book-next"]();
     else if (e.key === "ArrowLeft") ACT["book-prev"]();
+    return;
+  }
+  if ($("#artv")) {
+    if (e.key === "Escape") ACT["art-close"]();
+    else if ((e.key === "ArrowRight" || e.key === "ArrowLeft") && art.set.length > 1) ACT["art-step"]({ dataset: { d: e.key === "ArrowRight" ? 1 : -1 } });
     return;
   }
   if (current === "lesson" && lsn && !e.target.closest("textarea,input,select")) {

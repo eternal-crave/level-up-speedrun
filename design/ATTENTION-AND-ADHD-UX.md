@@ -131,7 +131,7 @@ Buttons stay at least 44 px to 48 px tall, so they are easy to tap.
 
 ### Other phone fixes
 
-- **Desktop-site warning** (`99f1ade`). If Chrome shows the desktop version on a phone, everything looks tiny. The app notices this and says how to switch it off ([views.js:1195-1209](../tools/app/views.js#L1195-L1209)).
+- **Desktop-site warning** (`99f1ade`). If Chrome shows the desktop version on a phone, everything looks tiny. The app notices this and says how to switch it off ([views.js:1289-1303](../tools/app/views.js#L1289-L1303)).
 - **Installable** (`8a798a7`). The site has a manifest and icons, so you can add it to the home screen. There is no offline cache.
 - **Loading screen** (`d67fca5`). "Loading your run..." shows while the app starts. If start-up fails, a clear message replaces the blank page ([shell.html:20-30](../tools/app/shell.html#L20-L30)).
 
@@ -148,7 +148,7 @@ The app hides what you do not need yet, and shows it when you ask.
 ## The app is an F2P game, on purpose
 
 The learner is studying F2P design. So the app uses real F2P systems, pointed at learning instead of spending.
-The Me tab explains each one in a "🩻 Design X-Ray" card ([core.js:487-497](../tools/app/core.js#L487-L497), [views.js:861-864](../tools/app/views.js#L861-L864)):
+The Me tab explains each one in a "🩻 Design X-Ray" card ([core.js:487-497](../tools/app/core.js#L487-L497), [views.js:945-948](../tools/app/views.js#L945-L948)):
 
 > "Every hook here is a real retention or monetization mechanic, pointed at learning instead of your wallet."
 
@@ -158,7 +158,7 @@ The Me tab explains each one in a "🩻 Design X-Ray" card ([core.js:487-497](..
 | **Daily chest** | Opens when all 3 steps are done. Random XP: 25, 40, 70 or 120. A 25% chance of a streak freeze. | [core.js:426-440](../tools/app/core.js#L426-L440) |
 | **XP and levels** | Level = square root of (XP ÷ 40), plus 1. 15 titles, from "N00b" to "Legendary Designer". | [core.js:202-205](../tools/app/core.js#L202-L205) |
 | **Saga map** | A winding path of levels. Nothing is locked. The next level glows. | [views.js:303-339](../tools/app/views.js#L303-L339) |
-| **Hearts and revive** | 3 hearts in a boss fight. At 0 hearts you get one free revive. | [views.js:669-775](../tools/app/views.js#L669-L775) |
+| **Hearts and revive** | 3 hearts in a boss fight. At 0 hearts you get one free revive. | [views.js:753-859](../tools/app/views.js#L753-L859) |
 | **Feed** | Short bites to swipe. A pop quiz every 7 bites, a reward every 15. | [views.js:183-300](../tools/app/views.js#L183-L300) |
 | **Badges** | 26 badges, +20 XP each. | [core.js:442-485](../tools/app/core.js#L442-L485) |
 

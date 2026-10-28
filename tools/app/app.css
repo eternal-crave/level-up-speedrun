@@ -558,6 +558,23 @@ a, button, select, summary, .tab, [data-act] { touch-action: manipulation; -webk
 .bookv-body canvas { display: block; width: 100%; max-width: 46rem; height: auto; margin: 0 auto; background: #fff; border-radius: 6px; box-shadow: 0 2px 12px var(--shadow); }
 .bookv-body canvas.zoom { width: 200%; max-width: none; }
 .bookv-add { max-width: 30rem; margin: 0 auto; }
+/* the book's own drawings, cut out of the reader's PDF (white paper on both themes, like the page itself) */
+.lart { display: grid; gap: 6px; }
+.lart-row { display: flex; gap: 10px; overflow-x: auto; padding: 2px 2px 8px; scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch; }
+.lart-row .art-t { height: 7.5rem; flex: none; scroll-snap-align: start; }
+.art-t { display: block; padding: 6px; background: #fff; border: 2px solid var(--ink); border-radius: var(--r-sm); box-shadow: 0 2px 0 var(--ink); cursor: zoom-in; max-width: 100%; }
+.art-t img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.art-t:empty { background: var(--card-2); border-style: dashed; }
+.art-t.bad { opacity: .4; }
+.art-chips { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; }
+.art-chips .pill { flex: none; text-decoration: none; color: inherit; }
+.art-chips .pill.on { background: var(--ink); color: var(--paper); }
+.art-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)); gap: 10px; align-items: start; }
+.art-grid .art-t { width: 100%; max-height: 15rem; }
+.art-link { text-decoration: none; color: inherit; }
+.artv .bookv-body { align-content: start; justify-items: center; }
+#artv-img { display: block; width: 100%; max-width: 46rem; height: auto; background: #fff; border-radius: 6px; padding: 8px; box-shadow: 0 2px 12px var(--shadow); }
+.artv-go { justify-content: center; }
 /* lesson diagrams: original SVGs in data/figs, coloured by theme tokens */
 .lfig { margin: 4px 0 0; padding: 10px; background: var(--card-2); border: 1.5px solid var(--line); border-radius: var(--r-sm); }
 /* defaults are inherited, not set on <text>, so a fill or font-size written in the SVG (an emoji icon, white text on a dot) still wins */

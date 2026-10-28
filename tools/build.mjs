@@ -139,6 +139,36 @@ for (const m of modules) {
     m.lessons.push({ id: String(x.id), title: String(x.title || ""), min: +x.min || 3, book: Number.isInteger(x.book) ? x.book : undefined, deep: deepHeads, cards: cards.map((c) => ({ t: c.t, text: String(c.text), fig: figOf(c) })), check: { q: String(ck.q || ""), options: (ck.options || []).map(String), answer: ck.answer | 0, why: String(ck.why || "") } });
   }
 }
+// ---- book illustrations: positions only (data/book/art.json); the app crops them from the reader's own PDF.
+// Each one belongs to the chapter whose printed pages hold it, and shows in the lessons whose book page is
+// the nearest one to it in that chapter (3 pages at most). Every one is also in the gallery.
+let ART = null;
+const artFile = path.join(ROOT, "data", "book", "art.json");
+if (fs.existsSync(artFile)) {
+  const A = JSON.parse(rd("data/book/art.json")), OFF = 24, NEAR = 3;
+  const items = (A.art || []).filter((r) => Array.isArray(r) && r.length === 5 && r.every((v) => typeof v === "number"));
+  if (items.length !== (A.art || []).length) problems.push("book/art.json: every row must be [pdf page, left, top, width, height]");
+  const spans = modules.filter((m) => m.kind === "book").map((m) => ({ m, r: String(m.bookPages).split(",").map((s) => s.split(/[–-]/).map((v) => parseInt(v, 10))).filter(([a, b]) => a > 0 && b >= a) }));
+  const front = spans.find((s) => !s.r.length); // roman-numbered intro pages
+  const modOf = (p) => {
+    if (p < 1) return front && front.m;
+    const hit = spans.find((s) => s.r.some(([a, b]) => p >= a && p <= b));
+    if (hit) return hit.m;
+    let best = null; // pages between chapters (openers) go to the chapter before
+    for (const s of spans) for (const [a] of s.r) if (a <= p && (!best || a > best.a)) best = { a, m: s.m };
+    return best && best.m;
+  };
+  const mods = items.map(([n], k) => {
+    const p = n - OFF, m = modOf(p);
+    if (!m) return "";
+    const pages = [...new Set(m.lessons.filter((l) => l.book).map((l) => l.book))];
+    let near = null;
+    for (const b of pages) if (near == null || Math.abs(b - p) < Math.abs(near - p) || (Math.abs(b - p) === Math.abs(near - p) && b < near)) near = b;
+    if (near != null && Math.abs(near - p) <= NEAR) for (const l of m.lessons) if (l.book === near) (l.art = l.art || []).push(k);
+    return m.id;
+  });
+  ART = { page: A.page, offset: OFF, items, mod: mods };
+}
 if (lessonWarn.length) console.log("lesson style warnings:\n  " + lessonWarn.join("\n  "));
 // structure problems stop the build before anything is written, so a broken course never reaches docs/ or the artifact
 if (problems.length) { console.error("PROBLEMS (nothing was written):\n- " + problems.join("\n- ")); process.exit(1); }
@@ -150,6 +180,7 @@ const COURSE = {
   route: { f2p: ROUTE_F2P.filter((i) => ids.has(i)), book: ROUTE_BOOK.filter((i) => ids.has(i)) },
   schedule: Object.fromEntries(Object.entries(SCHEDULE).map(([k, w]) => [k, w.map((ws) => ws.filter((i) => ids.has(i))).filter((ws) => ws.length)])),
   capstone: CAPSTONE, bosses: BOSSES,
+  art: ART,
 };
 
 // ---- app
